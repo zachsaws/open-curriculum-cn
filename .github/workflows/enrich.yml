@@ -5,6 +5,8 @@ on:
     paths:
       - 'data/graph/**'
       - 'src/pipeline/**'
+      - 'web/**'
+      - 'api/**'
   push:
     branches: [main]
     paths:
@@ -13,7 +15,7 @@ on:
 
 jobs:
   validate:
-    name: 校验 JSON + enrich
+    name: 校验 JSON + enrich + 测试
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,27 +27,27 @@ jobs:
 
       - name: 装依赖
         run: |
-          pip install -e . || true
-          pip install fastapi uvicorn httpx || true
+          python -m pip install --upgrade pip
+          pip install jsonschema fastapi uvicorn httpx pytest networkx pydantic pypinyin || true
 
-      - name: JSON schema 验证
+      - name: JSON schema 验证 (V3.2)
         run: |
           python .github/scripts/validate_json.py
-
-      - name: 跑 enrich (PR 不跑, push 跑)
-        if: github.event_name == 'push'
-        run: |
-          for s in math chinese english physics chemistry biology history geography morality_law science info_tech art pe_health labor; do
-            python src/pipeline/enrich_subject.py --subject $s --round 1 || echo "FAILED: $s"
-          done
 
       - name: 14 学科自评汇总
         run: |
           python .github/scripts/summarize_reviews.py
 
-      - name: 单元测试 (API)
+      - name: 跑测试 (38 tests: full + v32)
         run: |
-          python api/tests/test_api.py
+          python -m pytest api/tests/test_full.py api/tests/test_v32.py -v --tb=short
+
+      - name: 跑 enrich (仅 push 触发)
+        if: github.event_name == 'push'
+        run: |
+          for s in math chinese english physics chemistry biology history geography morality_law science info_tech art pe_health labor; do
+            python src/pipeline/enrich_subject.py --subject $s --round 1 || echo "FAILED: $s"
+          done
 
   comment:
     name: 写 PR 评论

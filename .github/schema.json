@@ -34,7 +34,12 @@
     "src_stage": {"type": ["string", "null"]},
     "src_domain_ocr": {"type": ["string", "null"]},
     "review_round": {"type": "integer"},
-    "review_status": {"type": "string", "enum": ["pending", "passed", "failed"]}
+    "review_status": {"type": "string", "enum": ["pending", "passed", "failed"]},
+    "type": {"type": "string", "enum": ["CONCEPTUAL", "PROCEDURAL", "FACTUAL"]},
+    "age_range_start": {"type": "integer", "minimum": 5, "maximum": 18},
+    "age_range_end": {"type": "integer", "minimum": 5, "maximum": 18},
+    "centrality": {"type": "number", "minimum": 0, "maximum": 1},
+    "assessment_prompt": {"type": "string", "minLength": 10}
   },
   "additionalProperties": true
 }

@@ -10,7 +10,13 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_G12_FI_01"
+      ],
       "key_concepts": [
+        "观看儿童影片"
+      ],
+      "key_concepts_titles": [
         "观看儿童影片"
       ],
       "summary_zh": "1-2 年级：孩子在本阶段学习艺术「影视」领域，包括「观看儿童影片」等内容，核心要点涉及「在第一学段 (1~2 年级)教学情境中; 观看简单的儿童影片」等。\n本阶段共 1 个核心概念，重点包括「观看儿童影片」等。",
@@ -24,7 +30,15 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ART_G12_DR_01",
+        "ART_G12_DR_02"
+      ],
       "key_concepts": [
+        "简单的戏剧游戏",
+        "故事表演"
+      ],
+      "key_concepts_titles": [
         "简单的戏剧游戏",
         "故事表演"
       ],
@@ -39,7 +53,13 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_A6_01"
+      ],
       "key_concepts": [
+        "艺术与生活"
+      ],
+      "key_concepts_titles": [
         "艺术与生活"
       ],
       "summary_zh": "1-2 年级：孩子在本阶段学习艺术「综合」领域，包括「艺术与生活」等内容，核心要点涉及「感受艺术与生活的联系; 教学策略建议」等。\n本阶段共 1 个核心概念，重点包括「艺术与生活」等。",
@@ -53,7 +73,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 8,
+      "key_concept_ids": [
+        "ART_A2_03",
+        "ART_A2_01",
+        "ART_A2_02"
+      ],
       "key_concepts": [
+        "绘画创作",
+        "认识色彩",
+        "线条与形状"
+      ],
+      "key_concepts_titles": [
         "绘画创作",
         "认识色彩",
         "线条与形状"
@@ -69,7 +99,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ART_A3_01",
+        "ART_G12_DA_01",
+        "ART_G12_DA_02"
+      ],
       "key_concepts": [
+        "舞蹈律动",
+        "学习舞蹈基本功",
+        "简单的舞蹈组合"
+      ],
+      "key_concepts_titles": [
         "舞蹈律动",
         "学习舞蹈基本功",
         "简单的舞蹈组合"
@@ -85,7 +125,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 15,
+      "key_concept_ids": [
+        "ART_A1_01",
+        "ART_A1_02",
+        "ART_A1_03"
+      ],
       "key_concepts": [
+        "感受音乐节奏",
+        "学唱简单歌曲",
+        "认识常见乐器"
+      ],
+      "key_concepts_titles": [
         "感受音乐节奏",
         "学唱简单歌曲",
         "认识常见乐器"
@@ -101,7 +151,13 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_A5_01"
+      ],
       "key_concepts": [
+        "影视欣赏"
+      ],
+      "key_concepts_titles": [
         "影视欣赏"
       ],
       "summary_zh": "3-4 年级：孩子在本阶段学习艺术「影视」领域，包括「影视欣赏」等内容，核心要点涉及「欣赏优秀影视作品; HEN + BRR」等。\n本阶段共 1 个核心概念，重点包括「影视欣赏」等。",
@@ -115,7 +171,13 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_A4_01"
+      ],
       "key_concepts": [
+        "戏剧表演体验"
+      ],
+      "key_concepts_titles": [
         "戏剧表演体验"
       ],
       "summary_zh": "3-4 年级：孩子在本阶段学习艺术「戏剧」领域，包括「戏剧表演体验」等内容，核心要点涉及「教学策略建议; 进行简单的戏剧表演」等。\n本阶段共 1 个核心概念，重点包括「戏剧表演体验」等。",
@@ -129,7 +191,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ART_A6_02",
+        "ART_G34_CM_01"
+      ],
       "key_concepts": [
+        "艺术与文化",
+        "艺术与情感"
+      ],
+      "key_concepts_titles": [
         "艺术与文化",
         "艺术与情感"
       ],
@@ -144,7 +214,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 10,
+      "key_concept_ids": [
+        "ART_G34_AR_01",
+        "ART_A2_04",
+        "ART_A2_05"
+      ],
       "key_concepts": [
+        "中国画: 写意",
+        "手工与立体造型",
+        "美术欣赏"
+      ],
+      "key_concepts_titles": [
         "中国画: 写意",
         "手工与立体造型",
         "美术欣赏"
@@ -160,7 +240,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ART_A3_02",
+        "ART_G34_DA_01",
+        "ART_G34_DA_02"
+      ],
       "key_concepts": [
+        "民族舞蹈体验",
+        "集体舞编排",
+        "民族舞学习"
+      ],
+      "key_concepts_titles": [
         "民族舞蹈体验",
         "集体舞编排",
         "民族舞学习"
@@ -176,7 +266,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 9,
+      "key_concept_ids": [
+        "ART_A1_04",
+        "ART_A1_06",
+        "ART_G34_MU_03"
+      ],
       "key_concepts": [
+        "识谱基础",
+        "音乐欣赏",
+        "口风琴演奏"
+      ],
+      "key_concepts_titles": [
         "识谱基础",
         "音乐欣赏",
         "口风琴演奏"
@@ -192,7 +292,13 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_G56_CM_01"
+      ],
       "key_concepts": [
+        "艺术与社会发展"
+      ],
+      "key_concepts_titles": [
         "艺术与社会发展"
       ],
       "summary_zh": "5-6 年级：孩子在本阶段学习艺术「综合」领域，包括「艺术与社会发展」等内容，核心要点涉及「理解艺术与社会发展的关系; 在第三学段 (5~6 年级)教学情境中」等。\n本阶段共 1 个核心概念，重点包括「艺术与社会发展」等。",
@@ -206,7 +312,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 6,
+      "key_concept_ids": [
+        "ART_A2_06",
+        "ART_A2_07",
+        "ART_G56_AR_01"
+      ],
       "key_concepts": [
+        "中国画基础",
+        "设计基础",
+        "中国画技法"
+      ],
+      "key_concepts_titles": [
         "中国画基础",
         "设计基础",
         "中国画技法"
@@ -222,7 +338,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 5,
+      "key_concept_ids": [
+        "ART_A1_05",
+        "ART_G56_MU_01",
+        "ART_G56_MU_02"
+      ],
       "key_concepts": [
+        "音乐创作体验",
+        "有感情地演唱",
+        "演唱技巧训练"
+      ],
+      "key_concepts_titles": [
         "音乐创作体验",
         "有感情地演唱",
         "演唱技巧训练"
@@ -238,7 +364,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ART_A5_02",
+        "ART_G79_FI_01"
+      ],
       "key_concepts": [
+        "短视频创作",
+        "影视作品分析"
+      ],
+      "key_concepts_titles": [
         "短视频创作",
         "影视作品分析"
       ],
@@ -253,7 +387,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_A4_02"
+      ],
       "key_concepts": [
+        "课本剧编排"
+      ],
+      "key_concepts_titles": [
         "课本剧编排"
       ],
       "summary_zh": "7-9 年级：孩子在本阶段学习艺术「戏剧」领域，包括「课本剧编排」等内容，核心要点涉及「教学策略建议; 参与课本剧/课本剧编排」等。\n本阶段共 1 个核心概念，重点包括「课本剧编排」等。",
@@ -267,7 +407,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ART_G79_AR_01",
+        "ART_G79_AR_02",
+        "ART_G79_AR_03"
+      ],
       "key_concepts": [
+        "美术创作",
+        "美术评价",
+        "中外美术鉴赏"
+      ],
+      "key_concepts_titles": [
         "美术创作",
         "美术评价",
         "中外美术鉴赏"
@@ -283,7 +433,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ART_A3_03"
+      ],
       "key_concepts": [
+        "舞蹈编排"
+      ],
+      "key_concepts_titles": [
         "舞蹈编排"
       ],
       "summary_zh": "7-9 年级：孩子通过舞蹈基本动作和表演，体验身体表达的艺术。\n本阶段共 1 个核心概念，重点包括「舞蹈编排」等。",
@@ -297,7 +453,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ART_G79_MU_01",
+        "ART_G79_MU_02"
+      ],
       "key_concepts": [
+        "中外音乐鉴赏",
+        "音乐与社会"
+      ],
+      "key_concepts_titles": [
         "中外音乐鉴赏",
         "音乐与社会"
       ],
@@ -312,7 +476,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 7,
+      "key_concept_ids": [
+        "B_G12_CP_01",
+        "B_G12_CP_02",
+        "B_G12_CP_03"
+      ],
       "key_concepts": [
+        "细胞是生物体结构和功能的基本单",
+        "植物细胞具有不同于动物细胞的结",
+        "细胞不同结构的功能各不相同"
+      ],
+      "key_concepts_titles": [
         "细胞是生物体结构和功能的基本单",
         "植物细胞具有不同于动物细胞的结",
         "细胞不同结构的功能各不相同"
@@ -328,7 +502,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 9,
+      "key_concept_ids": [
+        "B_B5_02",
+        "B_B5_01",
+        "B_B5_04"
+      ],
       "key_concepts": [
+        "免疫与计划免疫",
+        "传染病及其预防",
+        "用药与急救"
+      ],
+      "key_concepts_titles": [
         "免疫与计划免疫",
         "传染病及其预防",
         "用药与急救"
@@ -344,7 +528,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 15,
+      "key_concept_ids": [
+        "B_B4_04",
+        "B_B4_05",
+        "B_B4_06"
+      ],
       "key_concepts": [
+        "DNA 是遗传物质",
+        "基因与性状",
+        "基因的传递"
+      ],
+      "key_concepts_titles": [
         "DNA 是遗传物质",
         "基因与性状",
         "基因的传递"
@@ -360,7 +554,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 8,
+      "key_concept_ids": [
+        "B_B3_03",
+        "B_B3_04",
+        "B_B3_05"
+      ],
       "key_concepts": [
+        "生态系统的能量流动",
+        "生态系统的物质循环",
+        "生态系统的自我调节"
+      ],
+      "key_concepts_titles": [
         "生态系统的能量流动",
         "生态系统的物质循环",
         "生态系统的自我调节"
@@ -376,7 +580,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 16,
+      "key_concept_ids": [
+        "B_B1_03",
+        "B_B1_08",
+        "B_B1_10"
+      ],
       "key_concepts": [
+        "细胞分裂与分化",
+        "人体的血液循环",
+        "人体的神经系统"
+      ],
+      "key_concepts_titles": [
         "细胞分裂与分化",
         "人体的血液循环",
         "人体的神经系统"
@@ -392,7 +606,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 8,
+      "key_concept_ids": [
+        "B_B2_01",
+        "B_B2_02",
+        "B_B2_03"
+      ],
       "key_concepts": [
+        "生物分类",
+        "植物的主要类群",
+        "动物的主要类群"
+      ],
+      "key_concepts_titles": [
         "生物分类",
         "植物的主要类群",
         "动物的主要类群"
@@ -408,7 +632,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 8,
+      "key_concept_ids": [
+        "B_G79_CP_04",
+        "B_G79_CP_05",
+        "B_B6_01"
+      ],
       "key_concepts": [
+        "生物技术: 克隆",
+        "生物技术: 转基因",
+        "模型制作"
+      ],
+      "key_concepts_titles": [
         "生物技术: 克隆",
         "生物技术: 转基因",
         "模型制作"
@@ -424,7 +658,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 9,
+      "key_concept_ids": [
+        "CH_G12_EX_01",
+        "CH_G12_EX_02",
+        "CH_G12_EX_03"
+      ],
       "key_concepts": [
+        "初步学会配制一定溶质质量分数的",
+        "熟悉化学实验室安全警示标志",
+        "学会试剂的取用"
+      ],
+      "key_concepts_titles": [
         "初步学会配制一定溶质质量分数的",
         "熟悉化学实验室安全警示标志",
         "学会试剂的取用"
@@ -440,7 +684,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 5,
+      "key_concept_ids": [
+        "CH_C5_01",
+        "CH_C5_02",
+        "CH_C5_03"
+      ],
       "key_concepts": [
+        "化学与可持续发展",
+        "化学与健康",
+        "化学与材料"
+      ],
+      "key_concepts_titles": [
         "化学与可持续发展",
         "化学与健康",
         "化学与材料"
@@ -456,7 +710,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 5,
+      "key_concept_ids": [
+        "CH_C6_04",
+        "CH_C6_03",
+        "CH_G79_EX_01"
+      ],
       "key_concepts": [
+        "常见气体的制取",
+        "化学实验基本操作",
+        "蒸发结晶"
+      ],
+      "key_concepts_titles": [
         "常见气体的制取",
         "化学实验基本操作",
         "蒸发结晶"
@@ -472,7 +736,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "CH_G79_MI_01",
+        "CH_C6_02",
+        "CH_C6_01"
+      ],
       "key_concepts": [
+        "化学键",
+        "原子的结构",
+        "分子与原子"
+      ],
+      "key_concepts_titles": [
         "化学键",
         "原子的结构",
         "分子与原子"
@@ -488,7 +762,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 9,
+      "key_concept_ids": [
+        "CH_C4_02",
+        "CH_C4_03",
+        "CH_C4_04"
+      ],
       "key_concepts": [
+        "质量守恒定律",
+        "化学反应的实质",
+        "化学反应类型"
+      ],
+      "key_concepts_titles": [
         "质量守恒定律",
         "化学反应的实质",
         "化学反应类型"
@@ -504,7 +788,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 5,
+      "key_concept_ids": [
+        "CH_C1_04",
+        "CH_C1_02",
+        "CH_C1_03"
+      ],
       "key_concepts": [
+        "酸碱盐",
+        "纯净物与混合物",
+        "单质与化合物"
+      ],
+      "key_concepts_titles": [
         "酸碱盐",
         "纯净物与混合物",
         "单质与化合物"
@@ -520,7 +814,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 16,
+      "key_concept_ids": [
+        "CH_C2_02",
+        "CH_C2_03",
+        "CH_C2_05"
+      ],
       "key_concepts": [
+        "金属活动性顺序",
+        "金属的冶炼",
+        "常见的酸"
+      ],
+      "key_concepts_titles": [
         "金属活动性顺序",
         "金属的冶炼",
         "常见的酸"
@@ -536,7 +840,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 10,
+      "key_concept_ids": [
+        "CH_C3_02",
+        "CH_C3_04",
+        "CH_C3_06"
+      ],
       "key_concepts": [
+        "元素周期表",
+        "化学方程式",
+        "化学式计算"
+      ],
+      "key_concepts_titles": [
         "元素周期表",
         "化学方程式",
         "化学式计算"
@@ -552,7 +866,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "CN_C1_WR_01",
+        "CN_C1_WR_02",
+        "CN_G12_WR_01"
+      ],
       "key_concepts": [
+        "写自己想说的话",
+        "写想象中的事物",
+        "用词写句子"
+      ],
+      "key_concepts_titles": [
         "写自己想说的话",
         "写想象中的事物",
         "用词写句子"
@@ -568,7 +892,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "CN_C1_SP_01",
+        "CN_C1_SP_02",
+        "CN_G12_OC_01"
+      ],
       "key_concepts": [
+        "学说普通话",
+        "用礼貌语言交流",
+        "请教"
+      ],
+      "key_concepts_titles": [
         "学说普通话",
         "用礼貌语言交流",
         "请教"
@@ -584,7 +918,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 13,
+      "key_concept_ids": [
+        "CN_C1_PR_04",
+        "CN_C1_PR_01",
+        "CN_C1_PR_02"
+      ],
       "key_concepts": [
+        "阅读有关公共生活短文",
+        "阅读有关个人生活家庭生活短文",
+        "运用文明礼貌语言与家人沟通"
+      ],
+      "key_concepts_titles": [
         "阅读有关公共生活短文",
         "阅读有关个人生活家庭生活短文",
         "运用文明礼貌语言与家人沟通"
@@ -600,7 +944,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 12,
+      "key_concept_ids": [
+        "CN_C1_LR_01",
+        "CN_C1_LR_02",
+        "CN_C1_LR_03"
+      ],
       "key_concepts": [
+        "阅读儿歌/童谣/童话",
+        "阅读儿童故事",
+        "讲述故事"
+      ],
+      "key_concepts_titles": [
         "阅读儿歌/童谣/童话",
         "阅读儿童故事",
         "讲述故事"
@@ -616,7 +970,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 32,
+      "key_concept_ids": [
+        "CN_C1_AL_03",
+        "CN_C1_AL_04",
+        "CN_C1_AL_07"
+      ],
       "key_concepts": [
+        "学习部首检字法",
+        "分类整理课内外认识的字",
+        "学习音序检字法"
+      ],
+      "key_concepts_titles": [
         "学习部首检字法",
         "分类整理课内外认识的字",
         "学习音序检字法"
@@ -632,7 +996,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 15,
+      "key_concept_ids": [
+        "CN_C2_WR_01",
+        "CN_C2_WR_02",
+        "CN_C2_WR_03"
+      ],
       "key_concepts": [
+        "写清楚一件事",
+        "能写读书笔记",
+        "能写常见的应用文"
+      ],
+      "key_concepts_titles": [
         "写清楚一件事",
         "能写读书笔记",
         "能写常见的应用文"
@@ -648,7 +1022,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "CN_C2_SP_01",
+        "CN_G34_OC_01"
+      ],
       "key_concepts": [
+        "讲述见闻说出感受",
+        "讨论"
+      ],
+      "key_concepts_titles": [
         "讲述见闻说出感受",
         "讨论"
       ],
@@ -663,7 +1045,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 6,
+      "key_concept_ids": [
+        "CN_C2_PR_01",
+        "CN_C2_PR_02",
+        "CN_C2_PR_03"
+      ],
       "key_concepts": [
+        "阅读现代叙事/说明/抒情文",
+        "获取整合有价值信息",
+        "根据交际情境清楚得体表达"
+      ],
+      "key_concepts_titles": [
         "阅读现代叙事/说明/抒情文",
         "获取整合有价值信息",
         "根据交际情境清楚得体表达"
@@ -679,7 +1071,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "CN_C2_BO_01",
+        "CN_G34_BR_01",
+        "CN_G34_BR_02"
+      ],
       "key_concepts": [
+        "整本书阅读:寓言/童话/故事",
+        "读一本书的策略",
+        "分享读后感"
+      ],
+      "key_concepts_titles": [
         "整本书阅读:寓言/童话/故事",
         "读一本书的策略",
         "分享读后感"
@@ -695,7 +1097,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 9,
+      "key_concept_ids": [
+        "CN_C2_LR_01",
+        "CN_C2_LR_02",
+        "CN_C2_LR_03"
+      ],
       "key_concepts": [
+        "阅读表现自然/社会/艺术之美的作品",
+        "阅读英雄模范事迹作品",
+        "用口头和书面表达自己的感受"
+      ],
+      "key_concepts_titles": [
         "阅读表现自然/社会/艺术之美的作品",
         "阅读英雄模范事迹作品",
         "用口头和书面表达自己的感受"
@@ -711,7 +1123,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 22,
+      "key_concept_ids": [
+        "CN_C2_AL_01",
+        "CN_C2_AL_02",
+        "CN_C2_AL_03"
+      ],
       "key_concepts": [
+        "独立识字与写字",
+        "梳理常用汉字形音义联系",
+        "关注校园内外汉字和标点正确使用"
+      ],
+      "key_concepts_titles": [
         "独立识字与写字",
         "梳理常用汉字形音义联系",
         "关注校园内外汉字和标点正确使用"
@@ -727,7 +1149,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 11,
+      "key_concept_ids": [
+        "CN_G56_WR_02",
+        "CN_G56_WR_04",
+        "CN_G56_WR_06"
+      ],
       "key_concepts": [
+        "写人: 典型事例",
+        "写景: 借景抒情",
+        "想象作文: 科幻"
+      ],
+      "key_concepts_titles": [
         "写人: 典型事例",
         "写景: 借景抒情",
         "想象作文: 科幻"
@@ -743,7 +1175,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "CN_G56_OC_02",
+        "CN_C3_SP_01",
+        "CN_G56_OC_01"
+      ],
       "key_concepts": [
+        "辩论",
+        "复述转述讲述",
+        "即席发言"
+      ],
+      "key_concepts_titles": [
         "辩论",
         "复述转述讲述",
         "即席发言"
@@ -759,7 +1201,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 5,
+      "key_concept_ids": [
+        "CN_G56_PR_01",
+        "CN_C3_PR_01",
+        "CN_C3_PR_02"
+      ],
       "key_concepts": [
+        "把握说明对象特征",
+        "阅读叙事/说明/非连续性文本",
+        "倾听阅读观察获取信息"
+      ],
+      "key_concepts_titles": [
         "把握说明对象特征",
         "阅读叙事/说明/非连续性文本",
         "倾听阅读观察获取信息"
@@ -775,7 +1227,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 4,
+      "key_concept_ids": [
+        "CN_C3_TH_01",
+        "CN_G56_CR_01",
+        "CN_G56_CR_02"
+      ],
       "key_concepts": [
+        "阅读思辨性文本",
+        "阅读议论文",
+        "把握作者观点"
+      ],
+      "key_concepts_titles": [
         "阅读思辨性文本",
         "阅读议论文",
         "把握作者观点"
@@ -791,7 +1253,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "CN_C3_BO_01",
+        "CN_G56_BR_01",
+        "CN_G56_BR_02"
+      ],
       "key_concepts": [
+        "整本书阅读:长篇文学名著",
+        "欣赏作品人物形象",
+        "作品内容探讨"
+      ],
+      "key_concepts_titles": [
         "整本书阅读:长篇文学名著",
         "欣赏作品人物形象",
         "作品内容探讨"
@@ -807,7 +1279,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 7,
+      "key_concept_ids": [
+        "CN_C3_LR_01",
+        "CN_C3_LR_02",
+        "CN_C3_LR_03"
+      ],
       "key_concepts": [
+        "阅读表现革命传统的文艺作品",
+        "欣赏文学语言",
+        "尝试诗歌小说创作"
+      ],
+      "key_concepts_titles": [
         "阅读表现革命传统的文艺作品",
         "欣赏文学语言",
         "尝试诗歌小说创作"
@@ -823,7 +1305,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 10,
+      "key_concept_ids": [
+        "CN_C3_AL_01",
+        "CN_C3_AL_02",
+        "CN_G56_AL_01"
+      ],
       "key_concepts": [
+        "主动通过多种方式独立识字",
+        "丰富词语积累注意感情色彩",
+        "理解文章中关键词句"
+      ],
+      "key_concepts_titles": [
         "主动通过多种方式独立识字",
         "丰富词语积累注意感情色彩",
         "理解文章中关键词句"
@@ -839,7 +1331,13 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 1,
+      "key_concept_ids": [
+        "CN_C3_XS_01"
+      ],
       "key_concepts": [
+        "跨学科语文学习活动"
+      ],
+      "key_concepts_titles": [
         "跨学科语文学习活动"
       ],
       "summary_zh": "5-6 年级：孩子在本阶段学习语文「跨学科学习」领域，包括「跨学科语文学习活动」等内容，核心要点涉及「体会读书的快乐; 阅读富有童趣的图画书等浅易的读物」等。\n本阶段共 1 个核心概念，重点包括「跨学科语文学习活动」等。",
@@ -853,7 +1351,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 11,
+      "key_concept_ids": [
+        "CN_G79_WR_03",
+        "CN_G79_WR_05",
+        "CN_G79_WR_06"
+      ],
       "key_concepts": [
+        "构思: 巧设线索",
+        "语言: 生动形象",
+        "论点论据论证"
+      ],
+      "key_concepts_titles": [
         "构思: 巧设线索",
         "语言: 生动形象",
         "论点论据论证"
@@ -869,7 +1377,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "CN_C4_SP_01",
+        "CN_G79_OC_01"
+      ],
       "key_concepts": [
+        "自信负责地表达自己的观点",
+        "即席演讲"
+      ],
+      "key_concepts_titles": [
         "自信负责地表达自己的观点",
         "即席演讲"
       ],
@@ -884,7 +1400,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "CN_C4_PR_01",
+        "CN_C4_PR_02",
+        "CN_G79_PR_01"
+      ],
       "key_concepts": [
+        "阅读比较复杂的文本",
+        "根据需要调整表达内容和方式",
+        "阅读新闻和通讯"
+      ],
+      "key_concepts_titles": [
         "阅读比较复杂的文本",
         "根据需要调整表达内容和方式",
         "阅读新闻和通讯"
@@ -900,7 +1426,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "CN_G79_CR_01",
+        "CN_C4_TH_01",
+        "CN_C4_TH_02"
+      ],
       "key_concepts": [
+        "理清论证思路",
+        "阅读古今中外思辨性文本",
+        "阐述观点有理有据"
+      ],
+      "key_concepts_titles": [
         "理清论证思路",
         "阅读古今中外思辨性文本",
         "阐述观点有理有据"
@@ -916,7 +1452,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "CN_G79_BR_01",
+        "CN_C4_BO_01"
+      ],
       "key_concepts": [
+        "欣赏作品艺术特色",
+        "整本书阅读:学术著作/文学经典"
+      ],
+      "key_concepts_titles": [
         "欣赏作品艺术特色",
         "整本书阅读:学术著作/文学经典"
       ],
@@ -931,7 +1475,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 6,
+      "key_concept_ids": [
+        "CN_G79_LR_01",
+        "CN_G79_LR_02",
+        "CN_G79_LR_03"
+      ],
       "key_concepts": [
+        "理解作品的思想内容",
+        "把握作品的情感倾向",
+        "对作品作出自己的评价"
+      ],
+      "key_concepts_titles": [
         "理解作品的思想内容",
         "把握作品的情感倾向",
         "对作品作出自己的评价"
@@ -947,7 +1501,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 13,
+      "key_concept_ids": [
+        "CN_C4_AL_01",
+        "CN_C4_AL_02",
+        "CN_C4_AL_03"
+      ],
       "key_concepts": [
+        "策划开展语言文字活动",
+        "梳理语言现象欣赏语言技巧",
+        "学习按词类梳理字词"
+      ],
+      "key_concepts_titles": [
         "策划开展语言文字活动",
         "梳理语言现象欣赏语言技巧",
         "学习按词类梳理字词"
@@ -963,7 +1527,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "CN_C4_XS_01"
+      ],
       "key_concepts": [
+        "跨学科专题研究"
+      ],
+      "key_concepts_titles": [
         "跨学科专题研究"
       ],
       "summary_zh": "7-9 年级：孩子在本阶段学习语文「跨学科学习」领域，包括「跨学科专题研究」等内容，核心要点涉及「认识有关人的身体与行为、天地四方、自然万物等方面的常; 围绕跨学科主题开展专题研究」等。\n本阶段共 1 个核心概念，重点包括「跨学科专题研究」等。",
@@ -977,7 +1547,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_E1_TP_01",
+        "EN_E1_TP_02",
+        "EN_G12_TH_01"
+      ],
       "key_concepts": [
+        "主题:我与家庭",
+        "主题:我与学校",
+        "我的身体"
+      ],
+      "key_concepts_titles": [
         "主题:我与家庭",
         "主题:我与学校",
         "我的身体"
@@ -993,7 +1573,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 3,
+      "key_concept_ids": [
+        "EN_E1_ST_01",
+        "EN_G12_LS_01",
+        "EN_G12_LS_02"
+      ],
       "key_concepts": [
+        "模仿跟读",
+        "图片理解策略",
+        "动作辅助策略"
+      ],
+      "key_concepts_titles": [
         "模仿跟读",
         "图片理解策略",
         "动作辅助策略"
@@ -1009,7 +1599,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "EN_E1_CU_01",
+        "EN_G12_CU_01",
+        "EN_G12_CU_02"
+      ],
       "key_concepts": [
+        "中外文化差异感知",
+        "英语国家问候礼仪",
+        "中外节日的差异"
+      ],
+      "key_concepts_titles": [
         "中外文化差异感知",
         "英语国家问候礼仪",
         "中外节日的差异"
@@ -1025,7 +1625,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 22,
+      "key_concept_ids": [
+        "EN_E1_VB_01",
+        "EN_E1_VB_02",
+        "EN_G12_VO_01"
+      ],
       "key_concepts": [
+        "日常生活词汇",
+        "主题词汇:动物/颜色/数字/食物",
+        "教室物品词汇"
+      ],
+      "key_concepts_titles": [
         "日常生活词汇",
         "主题词汇:动物/颜色/数字/食物",
         "教室物品词汇"
@@ -1041,7 +1651,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 13,
+      "key_concept_ids": [
+        "EN_G12_GR_05",
+        "EN_E1_GR_01",
+        "EN_E1_GR_02"
+      ],
       "key_concepts": [
+        "一般过去时基础",
+        "基本句型:主谓/主谓宾",
+        "一般现在时"
+      ],
+      "key_concepts_titles": [
         "一般过去时基础",
         "基本句型:主谓/主谓宾",
         "一般现在时"
@@ -1057,7 +1677,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 8,
+      "key_concept_ids": [
+        "EN_E1_TX_01",
+        "EN_G12_DI_01",
+        "EN_G12_DI_02"
+      ],
       "key_concepts": [
+        "听说简单对话/小故事",
+        "听懂并执行指令",
+        "听懂对话主旨"
+      ],
+      "key_concepts_titles": [
         "听说简单对话/小故事",
         "听懂并执行指令",
         "听懂对话主旨"
@@ -1073,7 +1703,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 19,
+      "key_concept_ids": [
+        "EN_E1_SK_01",
+        "EN_E1_SK_02",
+        "EN_E1_SK_03"
+      ],
       "key_concepts": [
+        "听懂简单指令",
+        "口头表达简单信息",
+        "初步英语书写"
+      ],
+      "key_concepts_titles": [
         "听懂简单指令",
         "口头表达简单信息",
         "初步英语书写"
@@ -1089,7 +1729,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 14,
+      "key_concept_ids": [
+        "EN_E1_PH_03",
+        "EN_E1_PH_01",
+        "EN_E1_PH_02"
+      ],
       "key_concepts": [
+        "简单拼读规则",
+        "26 个英文字母的认读",
+        "基本发音规则"
+      ],
+      "key_concepts_titles": [
         "简单拼读规则",
         "26 个英文字母的认读",
         "基本发音规则"
@@ -1105,7 +1755,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_E2_TP_01",
+        "EN_E2_TP_02",
+        "EN_G34_TH_01"
+      ],
       "key_concepts": [
+        "主题:我与社会",
+        "主题:自然与环境",
+        "社会服务"
+      ],
+      "key_concepts_titles": [
         "主题:我与社会",
         "主题:自然与环境",
         "社会服务"
@@ -1121,7 +1781,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "EN_E2_ST_01",
+        "EN_G34_LS_01",
+        "EN_G34_LS_02"
+      ],
       "key_concepts": [
+        "借助图片上下文理解",
+        "通过上下文猜词",
+        "使用工具书"
+      ],
+      "key_concepts_titles": [
         "借助图片上下文理解",
         "通过上下文猜词",
         "使用工具书"
@@ -1137,7 +1807,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 5,
+      "key_concept_ids": [
+        "EN_E2_CU_01",
+        "EN_G34_CU_03",
+        "EN_G34_CU_04"
+      ],
       "key_concepts": [
+        "节日与饮食文化",
+        "英美国家校园生活",
+        "中外礼仪差异"
+      ],
+      "key_concepts_titles": [
         "节日与饮食文化",
         "英美国家校园生活",
         "中外礼仪差异"
@@ -1153,7 +1833,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 15,
+      "key_concept_ids": [
+        "EN_E2_VB_01",
+        "EN_E2_VB_02",
+        "EN_G34_VO_06"
+      ],
       "key_concepts": [
+        "校园与家庭生活词汇",
+        "词性变化",
+        "城市设施词汇"
+      ],
+      "key_concepts_titles": [
         "校园与家庭生活词汇",
         "词性变化",
         "城市设施词汇"
@@ -1169,7 +1859,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 14,
+      "key_concept_ids": [
+        "EN_E2_GR_01",
+        "EN_E2_GR_02",
+        "EN_E2_GR_03"
+      ],
       "key_concepts": [
+        "现在进行时/一般过去时",
+        "一般将来时/be going to",
+        "there be 句型"
+      ],
+      "key_concepts_titles": [
         "现在进行时/一般过去时",
         "一般将来时/be going to",
         "there be 句型"
@@ -1185,7 +1885,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 6,
+      "key_concept_ids": [
+        "EN_E2_TX_01",
+        "EN_E2_TX_02",
+        "EN_G34_DI_01"
+      ],
       "key_concepts": [
+        "阅读简单短文",
+        "提取关键信息",
+        "阅读短文找主旨"
+      ],
+      "key_concepts_titles": [
         "阅读简单短文",
         "提取关键信息",
         "阅读短文找主旨"
@@ -1201,7 +1911,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 16,
+      "key_concept_ids": [
+        "EN_E2_SK_01",
+        "EN_E2_SK_02",
+        "EN_E2_SK_03"
+      ],
       "key_concepts": [
+        "听懂短文",
+        "角色扮演对话",
+        "书写简单短文"
+      ],
+      "key_concepts_titles": [
         "听懂短文",
         "角色扮演对话",
         "书写简单短文"
@@ -1217,7 +1937,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_E2_PH_01",
+        "EN_E2_PH_02",
+        "EN_E2_PH_03"
+      ],
       "key_concepts": [
+        "元音字母发音规则",
+        "辅音字母发音规则",
+        "句子重音与节奏"
+      ],
+      "key_concepts_titles": [
         "元音字母发音规则",
         "辅音字母发音规则",
         "句子重音与节奏"
@@ -1233,7 +1963,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 9,
+      "key_concept_ids": [
+        "EN_E3_TP_02",
+        "EN_G56_TH_07",
+        "EN_E3_TP_01"
+      ],
       "key_concepts": [
+        "主题:世界与科技",
+        "可持续发展",
+        "主题:健康与体育"
+      ],
+      "key_concepts_titles": [
         "主题:世界与科技",
         "可持续发展",
         "主题:健康与体育"
@@ -1249,7 +1989,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "EN_E3_ST_01",
+        "EN_G56_LS_01",
+        "EN_G56_LS_02"
+      ],
       "key_concepts": [
+        "归纳与分类",
+        "制定学习计划",
+        "使用学习资源"
+      ],
+      "key_concepts_titles": [
         "归纳与分类",
         "制定学习计划",
         "使用学习资源"
@@ -1265,7 +2015,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 6,
+      "key_concept_ids": [
+        "EN_E3_CU_02",
+        "EN_E3_CU_01",
+        "EN_G56_CU_01"
+      ],
       "key_concepts": [
+        "中外文学史代表作家",
+        "中国主要城市与自然环境",
+        "英美文学常识"
+      ],
+      "key_concepts_titles": [
         "中外文学史代表作家",
         "中国主要城市与自然环境",
         "英美文学常识"
@@ -1281,7 +2041,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 24,
+      "key_concept_ids": [
+        "EN_E3_VB_02",
+        "EN_E3_VB_03",
+        "EN_G56_VO_12"
+      ],
       "key_concepts": [
+        "构词法:前缀/后缀/词根",
+        "短语动词与固定搭配",
+        "后缀 -able/-ible"
+      ],
+      "key_concepts_titles": [
         "构词法:前缀/后缀/词根",
         "短语动词与固定搭配",
         "后缀 -able/-ible"
@@ -1297,7 +2067,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 10,
+      "key_concept_ids": [
+        "EN_E3_GR_01",
+        "EN_E3_GR_02",
+        "EN_E3_GR_03"
+      ],
       "key_concepts": [
+        "现在完成时",
+        "过去进行时/过去完成时",
+        "被动语态基础"
+      ],
+      "key_concepts_titles": [
         "现在完成时",
         "过去进行时/过去完成时",
         "被动语态基础"
@@ -1313,7 +2093,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_E3_TX_02",
+        "EN_G56_DI_03",
+        "EN_G56_DI_04"
+      ],
       "key_concepts": [
+        "识别语篇类型",
+        "阅读议论文",
+        "推断作者意图"
+      ],
+      "key_concepts_titles": [
         "识别语篇类型",
         "阅读议论文",
         "推断作者意图"
@@ -1329,7 +2119,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 13,
+      "key_concept_ids": [
+        "EN_E3_SK_02",
+        "EN_G56_SK_02",
+        "EN_G56_SK_04"
+      ],
       "key_concepts": [
+        "围绕主题表达观点",
+        "做听力笔记",
+        "讨论社会现象"
+      ],
+      "key_concepts_titles": [
         "围绕主题表达观点",
         "做听力笔记",
         "讨论社会现象"
@@ -1345,7 +2145,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_E3_PH_01",
+        "EN_E3_PH_02",
+        "EN_E3_PH_03"
+      ],
       "key_concepts": [
+        "国际音标认读",
+        "连读与失去爆破",
+        "语调与意群"
+      ],
+      "key_concepts_titles": [
         "国际音标认读",
         "连读与失去爆破",
         "语调与意群"
@@ -1361,7 +2171,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "EN_E4_TP_01",
+        "EN_G79_TH_01",
+        "EN_G79_TH_02"
+      ],
       "key_concepts": [
+        "主题:全球议题",
+        "国际理解",
+        "多元文化"
+      ],
+      "key_concepts_titles": [
         "主题:全球议题",
         "国际理解",
         "多元文化"
@@ -1377,7 +2197,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "EN_E4_ST_01",
+        "EN_G79_LS_01",
+        "EN_G79_LS_02"
+      ],
       "key_concepts": [
+        "元认知与自主学习",
+        "自我评估学习效果",
+        "调整学习策略"
+      ],
+      "key_concepts_titles": [
         "元认知与自主学习",
         "自我评估学习效果",
         "调整学习策略"
@@ -1393,7 +2223,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 5,
+      "key_concept_ids": [
+        "EN_E4_CU_01",
+        "EN_E4_CU_02",
+        "EN_G79_CU_01"
+      ],
       "key_concepts": [
+        "中外文化内涵与价值观",
+        "用英语讲好中国故事",
+        "英美国家价值观"
+      ],
+      "key_concepts_titles": [
         "中外文化内涵与价值观",
         "用英语讲好中国故事",
         "英美国家价值观"
@@ -1409,7 +2249,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_E4_VB_01",
+        "EN_E4_VB_02",
+        "EN_G79_VO_01"
+      ],
       "key_concepts": [
+        "2000+ 词汇量",
+        "词义辨析与一词多义",
+        "累计词汇 2600 词"
+      ],
+      "key_concepts_titles": [
         "2000+ 词汇量",
         "词义辨析与一词多义",
         "累计词汇 2600 词"
@@ -1425,7 +2275,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 14,
+      "key_concept_ids": [
+        "EN_G79_GR_01",
+        "EN_G79_GR_02",
+        "EN_G79_GR_03"
+      ],
       "key_concepts": [
+        "宾语从句: 时态呼应",
+        "定语从句: 关系副词",
+        "同位语从句"
+      ],
+      "key_concepts_titles": [
         "宾语从句: 时态呼应",
         "定语从句: 关系副词",
         "同位语从句"
@@ -1441,7 +2301,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 7,
+      "key_concept_ids": [
+        "EN_G79_DI_03",
+        "EN_G79_DI_04",
+        "EN_E4_TX_01"
+      ],
       "key_concepts": [
+        "推断作者态度",
+        "评价文章内容",
+        "阅读原版文学作品"
+      ],
+      "key_concepts_titles": [
         "推断作者态度",
         "评价文章内容",
         "阅读原版文学作品"
@@ -1457,7 +2327,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 13,
+      "key_concept_ids": [
+        "EN_G79_SK_03",
+        "EN_G79_SK_04",
+        "EN_G79_SK_08"
+      ],
       "key_concepts": [
+        "参与英语辩论",
+        "做正式英语演讲",
+        "写完整议论文"
+      ],
+      "key_concepts_titles": [
         "参与英语辩论",
         "做正式英语演讲",
         "写完整议论文"
@@ -1473,7 +2353,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "EN_E4_PH_01",
+        "EN_G79_PH_01"
+      ],
       "key_concepts": [
+        "重音/节奏/语调综合运用",
+        "语音综合运用"
+      ],
+      "key_concepts_titles": [
         "重音/节奏/语调综合运用",
         "语音综合运用"
       ],
@@ -1488,7 +2376,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 5,
+      "key_concept_ids": [
+        "G_G79_WO_01",
+        "G_G79_WO_02",
+        "G_G79_WO_03"
+      ],
       "key_concepts": [
+        "东亚",
+        "南亚",
+        "西亚"
+      ],
+      "key_concepts_titles": [
         "东亚",
         "南亚",
         "西亚"
@@ -1504,7 +2402,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 27,
+      "key_concept_ids": [
+        "G_G10_03",
+        "G_G10_04",
+        "G_G10_05"
+      ],
       "key_concepts": [
+        "中国的地形",
+        "中国的气候",
+        "中国的河流与湖泊"
+      ],
+      "key_concepts_titles": [
         "中国的地形",
         "中国的气候",
         "中国的河流与湖泊"
@@ -1520,7 +2428,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "G_G5_02",
+        "G_G5_03",
+        "G_G5_01"
+      ],
       "key_concepts": [
+        "亚洲自然环境",
+        "亚洲分区",
+        "亚洲位置与范围"
+      ],
+      "key_concepts_titles": [
         "亚洲自然环境",
         "亚洲分区",
         "亚洲位置与范围"
@@ -1536,7 +2454,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "G_G4_01",
+        "G_G79_CO_01"
+      ],
       "key_concepts": [
+        "国际经济合作",
+        "人类命运共同体"
+      ],
+      "key_concepts_titles": [
         "国际经济合作",
         "人类命运共同体"
       ],
@@ -1551,7 +2477,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 10,
+      "key_concept_ids": [
+        "G_G6_05",
+        "G_G6_01",
+        "G_G6_02"
+      ],
       "key_concepts": [
+        "中东",
+        "日本",
+        "东南亚"
+      ],
+      "key_concepts_titles": [
         "中东",
         "日本",
         "东南亚"
@@ -1567,7 +2503,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 15,
+      "key_concept_ids": [
+        "G_G1_05",
+        "G_G1_02",
+        "G_G1_03"
+      ],
       "key_concepts": [
+        "等高线地形图",
+        "经纬网",
+        "地球自转与公转"
+      ],
+      "key_concepts_titles": [
         "等高线地形图",
         "经纬网",
         "地球自转与公转"
@@ -1583,7 +2529,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 13,
+      "key_concept_ids": [
+        "G_G2_03",
+        "G_G2_02",
+        "G_G2_04"
+      ],
       "key_concepts": [
+        "主要气候类型",
+        "气温与降水",
+        "气候与人类活动"
+      ],
+      "key_concepts_titles": [
         "主要气候类型",
         "气温与降水",
         "气候与人类活动"
@@ -1599,7 +2555,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 12,
+      "key_concept_ids": [
+        "G_G3_03",
+        "G_G3_04",
+        "G_G3_01"
+      ],
       "key_concepts": [
+        "聚落形态",
+        "发展中国家与发达国家",
+        "人口与人种"
+      ],
+      "key_concepts_titles": [
         "聚落形态",
         "发展中国家与发达国家",
         "人口与人种"
@@ -1615,7 +2581,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "G_G9_01",
+        "G_G9_02",
+        "G_G79_PO_01"
+      ],
       "key_concepts": [
+        "南极地区",
+        "北极地区",
+        "极地保护"
+      ],
+      "key_concepts_titles": [
         "南极地区",
         "北极地区",
         "极地保护"
@@ -1631,7 +2607,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 29,
+      "key_concept_ids": [
+        "H_H4_WB_01",
+        "H_H4_WB_02",
+        "H_H4_WB_03"
+      ],
       "key_concepts": [
+        "文艺复兴",
+        "新航路开辟",
+        "工业革命"
+      ],
+      "key_concepts_titles": [
         "文艺复兴",
         "新航路开辟",
         "工业革命"
@@ -1647,7 +2633,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 56,
+      "key_concept_ids": [
+        "H_H1_CA_01",
+        "H_H1_CA_02",
+        "H_H1_CA_03"
+      ],
       "key_concepts": [
+        "早期中华文明",
+        "夏商周时期",
+        "春秋战国"
+      ],
+      "key_concepts_titles": [
         "早期中华文明",
         "夏商周时期",
         "春秋战国"
@@ -1663,7 +2659,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 16,
+      "key_concept_ids": [
+        "H_H3_CR_04",
+        "H_H3_CR_05",
+        "H_H3_CR_01"
+      ],
       "key_concepts": [
+        "改革开放",
+        "中国特色社会主义进入新时代",
+        "新中国成立与巩固"
+      ],
+      "key_concepts_titles": [
         "改革开放",
         "中国特色社会主义进入新时代",
         "新中国成立与巩固"
@@ -1679,7 +2685,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 35,
+      "key_concept_ids": [
+        "H_H2_CM_01",
+        "H_H2_CM_03",
+        "H_H2_CM_04"
+      ],
       "key_concepts": [
+        "鸦片战争",
+        "洋务运动",
+        "甲午战争与戊戌变法"
+      ],
+      "key_concepts_titles": [
         "鸦片战争",
         "洋务运动",
         "甲午战争与戊戌变法"
@@ -1695,7 +2711,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 6,
+      "key_concept_ids": [
+        "IT_I1_01",
+        "IT_G12_DA_01",
+        "IT_G12_DA_02"
+      ],
       "key_concepts": [
+        "信息与信息社会",
+        "信息的普遍性",
+        "信息的价值"
+      ],
+      "key_concepts_titles": [
         "信息与信息社会",
         "信息的普遍性",
         "信息的价值"
@@ -1711,7 +2737,13 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 1,
+      "key_concept_ids": [
+        "IT_G12_AL_01"
+      ],
       "key_concepts": [
+        "计算思维"
+      ],
+      "key_concepts_titles": [
         "计算思维"
       ],
       "summary_zh": "1-2 年级：孩子在本阶段学习信息科技「算法」领域，包括「计算思维」等内容，核心要点涉及「理解计算思维的基本思想; 在第一学段 (1~2 年级)教学情境中」等。\n本阶段共 1 个核心概念，重点包括「计算思维」等。",
@@ -1725,7 +2757,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "IT_I1_02",
+        "IT_G34_DA_02",
+        "IT_G34_DA_01"
+      ],
       "key_concepts": [
+        "数据的获取与整理",
+        "数据的可靠性",
+        "简单的数据分析"
+      ],
+      "key_concepts_titles": [
         "数据的获取与整理",
         "数据的可靠性",
         "简单的数据分析"
@@ -1741,7 +2783,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "IT_I7_02",
+        "IT_G34_SR_01",
+        "IT_G34_SR_02"
+      ],
       "key_concepts": [
+        "数字公民",
+        "合理使用网络",
+        "网络谣言辨识"
+      ],
+      "key_concepts_titles": [
         "数字公民",
         "合理使用网络",
         "网络谣言辨识"
@@ -1757,7 +2809,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 7,
+      "key_concept_ids": [
+        "IT_I2_02",
+        "IT_I2_03",
+        "IT_I2_04"
+      ],
       "key_concepts": [
+        "算法的描述",
+        "顺序结构",
+        "分支结构"
+      ],
+      "key_concepts_titles": [
         "算法的描述",
         "顺序结构",
         "分支结构"
@@ -1773,7 +2835,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 9,
+      "key_concept_ids": [
+        "IT_I5_01",
+        "IT_G34_SY_02",
+        "IT_I5_03"
+      ],
       "key_concepts": [
+        "计算机硬件",
+        "信息的表示",
+        "文件管理"
+      ],
+      "key_concepts_titles": [
         "计算机硬件",
         "信息的表示",
         "文件管理"
@@ -1789,7 +2861,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "IT_I3_01",
+        "IT_G34_PG_03",
+        "IT_G34_PG_01"
+      ],
       "key_concepts": [
+        "图形化编程",
+        "小程序设计",
+        "认识源代码"
+      ],
+      "key_concepts_titles": [
         "图形化编程",
         "小程序设计",
         "认识源代码"
@@ -1805,7 +2887,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 5,
+      "key_concept_ids": [
+        "IT_I4_01",
+        "IT_G34_NW_01",
+        "IT_G34_NW_02"
+      ],
       "key_concepts": [
+        "网络基础",
+        "网络分类",
+        "IP 地址和域名"
+      ],
+      "key_concepts_titles": [
         "网络基础",
         "网络分类",
         "IP 地址和域名"
@@ -1821,7 +2913,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 4,
+      "key_concept_ids": [
+        "IT_G56_AI_02",
+        "IT_I6_01",
+        "IT_I6_03"
+      ],
       "key_concepts": [
+        "大语言模型",
+        "人工智能基础",
+        "智能应用"
+      ],
+      "key_concepts_titles": [
         "大语言模型",
         "人工智能基础",
         "智能应用"
@@ -1837,7 +2939,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 9,
+      "key_concept_ids": [
+        "IT_G56_DA_05",
+        "IT_I1_03",
+        "IT_G56_DA_01"
+      ],
       "key_concepts": [
+        "数据库: 表的设计",
+        "数据编码",
+        "数据预处理"
+      ],
+      "key_concepts_titles": [
         "数据库: 表的设计",
         "数据编码",
         "数据预处理"
@@ -1853,7 +2965,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "IT_I7_01",
+        "IT_G56_SR_01",
+        "IT_G56_SR_02"
+      ],
       "key_concepts": [
+        "信息伦理",
+        "AI 与社会",
+        "技术伦理"
+      ],
+      "key_concepts_titles": [
         "信息伦理",
         "AI 与社会",
         "技术伦理"
@@ -1869,7 +2991,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 5,
+      "key_concept_ids": [
+        "IT_I2_05",
+        "IT_G56_AL_01",
+        "IT_G56_AL_02"
+      ],
       "key_concepts": [
+        "循环结构",
+        "算法效率分析",
+        "搜索算法: 二分查找"
+      ],
+      "key_concepts_titles": [
         "循环结构",
         "算法效率分析",
         "搜索算法: 二分查找"
@@ -1885,7 +3017,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "IT_G56_SY_01",
+        "IT_I5_02",
+        "IT_G56_SY_02"
+      ],
       "key_concepts": [
+        "信息系统的开发",
+        "操作系统",
+        "项目管理"
+      ],
+      "key_concepts_titles": [
         "信息系统的开发",
         "操作系统",
         "项目管理"
@@ -1901,7 +3043,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 7,
+      "key_concept_ids": [
+        "IT_G56_PG_03",
+        "IT_G56_PG_04",
+        "IT_G56_PG_01"
+      ],
       "key_concepts": [
+        "面向对象: 继承",
+        "面向对象: 多态",
+        "面向对象: 类和实例"
+      ],
+      "key_concepts_titles": [
         "面向对象: 继承",
         "面向对象: 多态",
         "面向对象: 类和实例"
@@ -1917,7 +3069,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "IT_G56_NW_01",
+        "IT_I4_03",
+        "IT_G56_NW_02"
+      ],
       "key_concepts": [
+        "网络分层模型",
+        "网络安全",
+        "云计算"
+      ],
+      "key_concepts_titles": [
         "网络分层模型",
         "网络安全",
         "云计算"
@@ -1933,7 +3095,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "IT_I6_02",
+        "IT_G79_AI_01",
+        "IT_G79_AI_02"
+      ],
       "key_concepts": [
+        "机器学习体验",
+        "监督学习和无监督学习",
+        "AI 项目实践"
+      ],
+      "key_concepts_titles": [
         "机器学习体验",
         "监督学习和无监督学习",
         "AI 项目实践"
@@ -1949,7 +3121,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 6,
+      "key_concept_ids": [
+        "IT_I1_05",
+        "IT_G79_DA_02",
+        "IT_G79_DA_01"
+      ],
       "key_concepts": [
+        "数据分析与预测",
+        "数据挖掘初步",
+        "数据库基础"
+      ],
+      "key_concepts_titles": [
         "数据分析与预测",
         "数据挖掘初步",
         "数据库基础"
@@ -1965,7 +3147,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "IT_G79_SR_01",
+        "IT_G79_SR_02"
+      ],
       "key_concepts": [
+        "算法: 问题的步又分解一算法的",
+        "聚焦课程目标和课程内容的关键问"
+      ],
+      "key_concepts_titles": [
         "算法: 问题的步又分解一算法的",
         "聚焦课程目标和课程内容的关键问"
       ],
@@ -1980,7 +3170,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "IT_G79_AL_01",
+        "IT_G79_AL_02",
+        "IT_I2_06"
+      ],
       "key_concepts": [
+        "时间复杂度",
+        "动态规划初步",
+        "算法的效率"
+      ],
+      "key_concepts_titles": [
         "时间复杂度",
         "动态规划初步",
         "算法的效率"
@@ -1996,7 +3196,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 9,
+      "key_concept_ids": [
+        "IT_G79_PG_02",
+        "IT_G79_PG_05",
+        "IT_I3_02"
+      ],
       "key_concepts": [
+        "继承和多态",
+        "二叉树",
+        "Python 编程基础"
+      ],
+      "key_concepts_titles": [
         "继承和多态",
         "二叉树",
         "Python 编程基础"
@@ -2012,7 +3222,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "IT_I4_04"
+      ],
       "key_concepts": [
+        "物联网"
+      ],
+      "key_concepts_titles": [
         "物联网"
       ],
       "summary_zh": "7-9 年级：孩子在本阶段学习信息科技「网络」领域，包括「物联网」等内容，核心要点涉及「通过实例感受万物互联的场景; 知道物联网与互联网的异」等。\n本阶段共 1 个核心概念，重点包括「物联网」等。",
@@ -2026,7 +3242,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 3,
+      "key_concept_ids": [
+        "L_L9_01",
+        "L_G12_VL_01",
+        "L_G12_VL_02"
+      ],
       "key_concepts": [
+        "校园公益劳动",
+        "参与校园公益",
+        "帮助同学"
+      ],
+      "key_concepts_titles": [
         "校园公益劳动",
         "参与校园公益",
         "帮助同学"
@@ -2042,7 +3268,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "L_L4_01",
+        "L_G12_AP_01",
+        "L_G12_AP_02"
+      ],
       "key_concepts": [
+        "种植体验",
+        "认识常见植物",
+        "种植小盆栽"
+      ],
+      "key_concepts_titles": [
         "种植体验",
         "认识常见植物",
         "种植小盆栽"
@@ -2058,7 +3294,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "L_L2_01",
+        "L_G12_OR_01",
+        "L_G12_OR_02"
+      ],
       "key_concepts": [
+        "物品整理与收纳",
+        "整理衣柜",
+        "整理玩具"
+      ],
+      "key_concepts_titles": [
         "物品整理与收纳",
         "整理衣柜",
         "整理玩具"
@@ -2074,7 +3320,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "L_G12_NT_01",
+        "L_G12_NT_02",
+        "L_G12_NT_03"
+      ],
       "key_concepts": [
+        "完成比较简单的个人物品整理与清",
+        "关心、照顾身边常见动植物",
+        "懂得在劳动中遵规守约"
+      ],
+      "key_concepts_titles": [
         "完成比较简单的个人物品整理与清",
         "关心、照顾身边常见动植物",
         "懂得在劳动中遵规守约"
@@ -2090,7 +3346,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 13,
+      "key_concept_ids": [
+        "L_L1_01",
+        "L_L1_02",
+        "L_L1_03"
+      ],
       "key_concepts": [
+        "个人清洁与整理",
+        "教室清洁",
+        "家务劳动"
+      ],
+      "key_concepts_titles": [
         "个人清洁与整理",
         "教室清洁",
         "家务劳动"
@@ -2106,7 +3372,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "L_L3_01",
+        "L_G12_CK_01",
+        "L_G12_CK_02"
+      ],
       "key_concepts": [
+        "认识食材",
+        "择菜洗菜",
+        "简单的食物搭配"
+      ],
+      "key_concepts_titles": [
         "认识食材",
         "择菜洗菜",
         "简单的食物搭配"
@@ -2122,7 +3398,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "L_L6_01",
+        "L_G34_TC_01",
+        "L_G34_TC_02"
+      ],
       "key_concepts": [
+        "传统工艺体验",
+        "刺绣初步",
+        "木艺初步"
+      ],
+      "key_concepts_titles": [
         "传统工艺体验",
         "刺绣初步",
         "木艺初步"
@@ -2138,7 +3424,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "L_L9_02",
+        "L_G34_VL_01"
+      ],
       "key_concepts": [
+        "社区志愿服务",
+        "社区公益活动"
+      ],
+      "key_concepts_titles": [
         "社区志愿服务",
         "社区公益活动"
       ],
@@ -2153,7 +3447,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "L_L4_02",
+        "L_G34_AP_01",
+        "L_G34_AP_02"
+      ],
       "key_concepts": [
+        "养殖体验",
+        "种植蔬菜",
+        "认识农作物"
+      ],
+      "key_concepts_titles": [
         "养殖体验",
         "种植蔬菜",
         "认识农作物"
@@ -2169,7 +3473,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "L_L5_01",
+        "L_L5_02",
+        "L_G34_IP_01"
+      ],
       "key_concepts": [
+        "工具使用",
+        "简单产品制作",
+        "产品包装"
+      ],
+      "key_concepts_titles": [
         "工具使用",
         "简单产品制作",
         "产品包装"
@@ -2185,7 +3499,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "L_L2_02",
+        "L_G34_OR_01"
+      ],
       "key_concepts": [
+        "空间规划",
+        "整理房间"
+      ],
+      "key_concepts_titles": [
         "空间规划",
         "整理房间"
       ],
@@ -2200,7 +3522,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "L_L8_01",
+        "L_G34_SE_01",
+        "L_G34_SE_02"
+      ],
       "key_concepts": [
+        "服务性劳动",
+        "快递员",
+        "收银员"
+      ],
+      "key_concepts_titles": [
         "服务性劳动",
         "快递员",
         "收银员"
@@ -2216,7 +3548,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 5,
+      "key_concept_ids": [
+        "L_L1_04",
+        "L_G34_CH_04",
+        "L_G34_CH_01"
+      ],
       "key_concepts": [
+        "公共卫生",
+        "清洗衣物",
+        "家庭清洁"
+      ],
+      "key_concepts_titles": [
         "公共卫生",
         "清洗衣物",
         "家庭清洁"
@@ -2232,7 +3574,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 8,
+      "key_concept_ids": [
+        "L_L3_02",
+        "L_G34_CK_01",
+        "L_G34_CK_02"
+      ],
       "key_concepts": [
+        "简单烹饪",
+        "做简单早餐",
+        "做家常菜"
+      ],
+      "key_concepts_titles": [
         "简单烹饪",
         "做简单早餐",
         "做家常菜"
@@ -2248,7 +3600,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "L_L10_01",
+        "L_G34_WE_01"
+      ],
       "key_concepts": [
+        "认识职业",
+        "医院志愿者"
+      ],
+      "key_concepts_titles": [
         "认识职业",
         "医院志愿者"
       ],
@@ -2263,7 +3623,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 9,
+      "key_concept_ids": [
+        "L_L7_01",
+        "L_L7_02",
+        "L_G56_NT_01"
+      ],
       "key_concepts": [
+        "3D 打印体验",
+        "智能家居体验",
+        "3D 打印初步"
+      ],
+      "key_concepts_titles": [
         "3D 打印体验",
         "智能家居体验",
         "3D 打印初步"
@@ -2279,7 +3649,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "L_L3_03",
+        "L_G56_CK_01",
+        "L_G56_CK_02"
+      ],
       "key_concepts": [
+        "营养搭配",
+        "做复杂家常菜",
+        "制订营养食谱"
+      ],
+      "key_concepts_titles": [
         "营养搭配",
         "做复杂家常菜",
         "制订营养食谱"
@@ -2295,7 +3675,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "L_G79_OR_01"
+      ],
       "key_concepts": [
+        "关注课外"
+      ],
+      "key_concepts_titles": [
         "关注课外"
       ],
       "summary_zh": "7-9 年级：孩子在本阶段学习劳动「整理与收纳」领域，包括「关注课外」等内容，核心要点涉及「关注课外、校外劳动实践体验的有效拓展; 选择项目内容」等。\n本阶段共 1 个核心概念，重点包括「关注课外」等。",
@@ -2309,7 +3695,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "L_G79_NT_02",
+        "L_G79_NT_01"
+      ],
       "key_concepts": [
+        "创新创业初步",
+        "人工智能应用"
+      ],
+      "key_concepts_titles": [
         "创新创业初步",
         "人工智能应用"
       ],
@@ -2324,7 +3718,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "L_L10_02",
+        "L_G79_WE_01",
+        "L_G79_WE_02"
+      ],
       "key_concepts": [
+        "职业角色体验",
+        "职业规划初步",
+        "职业精神"
+      ],
+      "key_concepts_titles": [
         "职业角色体验",
         "职业规划初步",
         "职业精神"
@@ -2340,7 +3744,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 21,
+      "key_concept_ids": [
+        "M_G1_GM_05",
+        "M_G1_GM_06",
+        "M_G1_GM_08"
+      ],
       "key_concepts": [
+        "用简单图形拼图",
+        "立体图形与对应平面图形",
+        "长度单位换算"
+      ],
+      "key_concepts_titles": [
         "用简单图形拼图",
         "立体图形与对应平面图形",
         "长度单位换算"
@@ -2356,7 +3770,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 20,
+      "key_concept_ids": [
+        "M_G1_NS_03",
+        "M_G1_NS_10",
+        "M_G1_NS_11"
+      ],
       "key_concepts": [
+        "用算盘表示多位数",
+        "百以内加减法口算",
+        "两位数三位数加减法"
+      ],
+      "key_concepts_titles": [
         "用算盘表示多位数",
         "百以内加减法口算",
         "两位数三位数加减法"
@@ -2372,7 +3796,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 15,
+      "key_concept_ids": [
+        "M_G1_QR_01",
+        "M_G1_QR_07",
+        "M_G12_QR_07"
+      ],
       "key_concepts": [
+        "用数或符号表达变化规律",
+        "模型意识",
+        "两步计算的实际问题"
+      ],
+      "key_concepts_titles": [
         "用数或符号表达变化规律",
         "模型意识",
         "两步计算的实际问题"
@@ -2388,7 +3822,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 10,
+      "key_concept_ids": [
+        "M_G1_ST_03",
+        "M_G1_ST_01",
+        "M_G1_ST_02"
+      ],
       "key_concepts": [
+        "数据意识",
+        "数据分类方法",
+        "用文字图画表格记录分类"
+      ],
+      "key_concepts_titles": [
         "数据意识",
         "数据分类方法",
         "用文字图画表格记录分类"
@@ -2404,7 +3848,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 8,
+      "key_concept_ids": [
+        "M_G1_PR_05",
+        "M_G1_PR_06",
+        "M_G1_PR_01"
+      ],
       "key_concepts": [
+        "主题活动:身体上的尺子",
+        "主题活动:数学连环画",
+        "主题活动:数学游戏分享"
+      ],
+      "key_concepts_titles": [
         "主题活动:身体上的尺子",
         "主题活动:数学连环画",
         "主题活动:数学游戏分享"
@@ -2420,7 +3874,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 23,
+      "key_concept_ids": [
+        "M_G2_GM_06",
+        "M_G2_GM_07",
+        "M_G2_GM_08"
+      ],
       "key_concepts": [
+        "三角形三边关系",
+        "平行四边形面积",
+        "三角形面积"
+      ],
+      "key_concepts_titles": [
         "三角形三边关系",
         "平行四边形面积",
         "三角形面积"
@@ -2436,7 +3900,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 26,
+      "key_concept_ids": [
+        "M_G2_NS_03",
+        "M_G2_NS_14",
+        "M_G2_NS_17"
+      ],
       "key_concepts": [
+        "多位数的乘除法",
+        "乘法对加法的分配律",
+        "公倍数与最小公倍数"
+      ],
+      "key_concepts_titles": [
         "多位数的乘除法",
         "乘法对加法的分配律",
         "公倍数与最小公倍数"
@@ -2452,7 +3926,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 19,
+      "key_concept_ids": [
+        "M_G2_QR_05",
+        "M_G2_QR_02",
+        "M_G2_QR_03"
+      ],
       "key_concepts": [
+        "等量的等量相等",
+        "常见数量关系:总量=分量+分量",
+        "常见数量关系:总价=单价×数量"
+      ],
+      "key_concepts_titles": [
         "等量的等量相等",
         "常见数量关系:总量=分量+分量",
         "常见数量关系:总价=单价×数量"
@@ -2468,7 +3952,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 11,
+      "key_concept_ids": [
+        "M_G2_ST_04",
+        "M_G2_ST_01",
+        "M_G2_ST_02"
+      ],
       "key_concepts": [
+        "平均数意义",
+        "数据收集与整理",
+        "条形统计图"
+      ],
+      "key_concepts_titles": [
         "平均数意义",
         "数据收集与整理",
         "条形统计图"
@@ -2484,7 +3978,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 7,
+      "key_concept_ids": [
+        "M_G2_PR_01",
+        "M_G2_PR_02",
+        "M_G34_IP_02"
+      ],
       "key_concepts": [
+        "主题活动:曹冲称象",
+        "主题活动:寻找身体上的数学秘密",
+        "项目学习: 班级营养午餐"
+      ],
+      "key_concepts_titles": [
         "主题活动:曹冲称象",
         "主题活动:寻找身体上的数学秘密",
         "项目学习: 班级营养午餐"
@@ -2500,7 +4004,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 16,
+      "key_concept_ids": [
+        "M_G3_GM_04",
+        "M_G3_GM_07",
+        "M_G3_GM_08"
+      ],
       "key_concepts": [
+        "圆的面积",
+        "圆柱表面积",
+        "圆柱体积"
+      ],
+      "key_concepts_titles": [
         "圆的面积",
         "圆柱表面积",
         "圆柱体积"
@@ -2516,7 +4030,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 18,
+      "key_concept_ids": [
+        "M_G3_NS_01",
+        "M_G3_NS_02",
+        "M_G3_NS_03"
+      ],
       "key_concepts": [
+        "分数意义",
+        "分数基本性质",
+        "约分与通分"
+      ],
+      "key_concepts_titles": [
         "分数意义",
         "分数基本性质",
         "约分与通分"
@@ -2532,7 +4056,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 13,
+      "key_concept_ids": [
+        "M_G3_QR_02",
+        "M_G3_QR_03",
+        "M_G3_QR_05"
+      ],
       "key_concepts": [
+        "简易方程",
+        "等式性质",
+        "解决问题策略:假设"
+      ],
+      "key_concepts_titles": [
         "简易方程",
         "等式性质",
         "解决问题策略:假设"
@@ -2548,7 +4082,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 12,
+      "key_concept_ids": [
+        "M_G3_ST_03",
+        "M_G3_ST_04",
+        "M_G3_ST_05"
+      ],
       "key_concepts": [
+        "扇形统计图",
+        "中位数",
+        "众数"
+      ],
+      "key_concepts_titles": [
         "扇形统计图",
         "中位数",
         "众数"
@@ -2564,7 +4108,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 4,
+      "key_concept_ids": [
+        "M_G3_PR_01",
+        "M_G3_PR_02",
+        "M_G56_IP_01"
+      ],
       "key_concepts": [
+        "主题活动:校园中的数学",
+        "主题活动:节约用水",
+        "数学游戏: 24 点"
+      ],
+      "key_concepts_titles": [
         "主题活动:校园中的数学",
         "主题活动:节约用水",
         "数学游戏: 24 点"
@@ -2580,7 +4134,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 44,
+      "key_concept_ids": [
+        "M_G79_GG_01",
+        "M_G79_GG_07",
+        "M_G79_GG_08"
+      ],
       "key_concepts": [
+        "反证法",
+        "正弦",
+        "余弦"
+      ],
+      "key_concepts_titles": [
         "反证法",
         "正弦",
         "余弦"
@@ -2596,7 +4160,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 21,
+      "key_concept_ids": [
+        "M_G79_NS_02",
+        "M_G4_NS_07",
+        "M_G4_NS_11"
+      ],
       "key_concepts": [
+        "整式除法",
+        "平方根与算术平方根",
+        "二次根式"
+      ],
+      "key_concepts_titles": [
         "整式除法",
         "平方根与算术平方根",
         "二次根式"
@@ -2612,7 +4186,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 19,
+      "key_concept_ids": [
+        "M_G4_QR_02",
+        "M_G4_QR_03",
+        "M_G4_QR_04"
+      ],
       "key_concepts": [
+        "二元一次方程组",
+        "一元一次不等式",
+        "一元一次不等式组"
+      ],
+      "key_concepts_titles": [
         "二元一次方程组",
         "一元一次不等式",
         "一元一次不等式组"
@@ -2628,7 +4212,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 27,
+      "key_concept_ids": [
+        "M_G4_ST_05",
+        "M_G4_ST_07",
+        "M_G4_ST_10"
+      ],
       "key_concepts": [
+        "频数分布表与直方图",
+        "极差/方差/标准差",
+        "古典概型"
+      ],
+      "key_concepts_titles": [
         "频数分布表与直方图",
         "极差/方差/标准差",
         "古典概型"
@@ -2644,7 +4238,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "M_G4_PR_01",
+        "M_G79_IP_01",
+        "M_G79_IP_02"
+      ],
       "key_concepts": [
+        "项目式学习",
+        "数学建模: 最短路径",
+        "数学建模: 增长率问题"
+      ],
+      "key_concepts_titles": [
         "项目式学习",
         "数学建模: 最短路径",
         "数学建模: 增长率问题"
@@ -2660,7 +4264,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G1_03",
+        "ML_G12_IA_01",
+        "ML_G12_IA_02"
+      ],
       "key_concepts": [
+        "珍惜友谊",
+        "学会交朋友",
+        "学会宽容"
+      ],
+      "key_concepts_titles": [
         "珍惜友谊",
         "学会交朋友",
         "学会宽容"
@@ -2676,7 +4290,15 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_G12_HE_01",
+        "ML_G12_HE_02"
+      ],
       "key_concepts": [
+        "身体健康",
+        "心理健康"
+      ],
+      "key_concepts_titles": [
         "身体健康",
         "心理健康"
       ],
@@ -2691,7 +4313,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "ML_ML_G2_02",
+        "ML_G12_MO_01",
+        "ML_G12_MO_02"
+      ],
       "key_concepts": [
+        "诚实守信",
+        "诚实",
+        "守信"
+      ],
+      "key_concepts_titles": [
         "诚实守信",
         "诚实",
         "守信"
@@ -2707,7 +4339,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "ML_ML_G1_05",
+        "ML_G12_SA_01",
+        "ML_G12_SA_02"
+      ],
       "key_concepts": [
+        "自我保护意识",
+        "交通安全",
+        "校园安全"
+      ],
+      "key_concepts_titles": [
         "自我保护意识",
         "交通安全",
         "校园安全"
@@ -2723,7 +4365,15 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G2_01",
+        "ML_G12_HJ_01"
+      ],
       "key_concepts": [
+        "家乡的变化",
+        "家乡的物产"
+      ],
+      "key_concepts_titles": [
         "家乡的变化",
         "家乡的物产"
       ],
@@ -2738,7 +4388,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G1_04",
+        "ML_G12_FM_01",
+        "ML_G12_FM_02"
+      ],
       "key_concepts": [
+        "我爱我的家",
+        "尊敬长辈",
+        "自己的事自己做"
+      ],
+      "key_concepts_titles": [
         "我爱我的家",
         "尊敬长辈",
         "自己的事自己做"
@@ -2754,7 +4414,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 7,
+      "key_concept_ids": [
+        "ML_ML_G1_01",
+        "ML_G12_GR_01",
+        "ML_G12_GR_02"
+      ],
       "key_concepts": [
+        "适应新学校",
+        "我是小学生",
+        "我爱学做人"
+      ],
+      "key_concepts_titles": [
         "适应新学校",
         "我是小学生",
         "我爱学做人"
@@ -2770,7 +4440,15 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G2_03",
+        "ML_G12_CO_01"
+      ],
       "key_concepts": [
+        "不乱花钱",
+        "合理消费"
+      ],
+      "key_concepts_titles": [
         "不乱花钱",
         "合理消费"
       ],
@@ -2785,7 +4463,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G2_04",
+        "ML_G12_EN_01",
+        "ML_G12_EN_02"
+      ],
       "key_concepts": [
+        "爱护环境",
+        "垃圾分类",
+        "节约资源"
+      ],
+      "key_concepts_titles": [
         "爱护环境",
         "垃圾分类",
         "节约资源"
@@ -2801,7 +4489,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G1_02",
+        "ML_G12_RU_01",
+        "ML_G12_RU_02"
+      ],
       "key_concepts": [
+        "遵守学校规则",
+        "遵守课堂纪律",
+        "遵守交通规则"
+      ],
+      "key_concepts_titles": [
         "遵守学校规则",
         "遵守课堂纪律",
         "遵守交通规则"
@@ -2817,7 +4515,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G4_01",
+        "ML_G34_IA_01"
+      ],
       "key_concepts": [
+        "与同伴友好相处",
+        "尊重他人"
+      ],
+      "key_concepts_titles": [
         "与同伴友好相处",
         "尊重他人"
       ],
@@ -2832,7 +4538,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G4_04",
+        "ML_G34_HE_01",
+        "ML_G34_HE_02"
+      ],
       "key_concepts": [
+        "健康看电视",
+        "健康的生活方式",
+        "爱护身体"
+      ],
+      "key_concepts_titles": [
         "健康看电视",
         "健康的生活方式",
         "爱护身体"
@@ -2848,7 +4564,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G3_01",
+        "ML_G34_SC_01"
+      ],
       "key_concepts": [
+        "我们的学校生活",
+        "班级生活"
+      ],
+      "key_concepts_titles": [
         "我们的学校生活",
         "班级生活"
       ],
@@ -2863,7 +4587,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G3_02",
+        "ML_G34_SA_01",
+        "ML_G34_SA_02"
+      ],
       "key_concepts": [
+        "安全记心中",
+        "用电安全",
+        "网络安全"
+      ],
+      "key_concepts_titles": [
         "安全记心中",
         "用电安全",
         "网络安全"
@@ -2879,7 +4613,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G3_03",
+        "ML_G34_FM_01",
+        "ML_G34_FM_02"
+      ],
       "key_concepts": [
+        "家是最温暖的地方",
+        "孝敬父母",
+        "和睦的家庭"
+      ],
+      "key_concepts_titles": [
         "家是最温暖的地方",
         "孝敬父母",
         "和睦的家庭"
@@ -2895,7 +4639,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G3_04",
+        "ML_G34_LG_01",
+        "ML_G34_LG_02"
+      ],
       "key_concepts": [
+        "心中的110",
+        "法律是什么",
+        "未成年保护"
+      ],
+      "key_concepts_titles": [
         "心中的110",
         "法律是什么",
         "未成年保护"
@@ -2911,7 +4665,15 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G4_02",
+        "ML_G34_CO_01"
+      ],
       "key_concepts": [
+        "做聪明的消费者",
+        "学会理财"
+      ],
+      "key_concepts_titles": [
         "做聪明的消费者",
         "学会理财"
       ],
@@ -2926,7 +4688,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G4_03",
+        "ML_G34_NW_01",
+        "ML_G34_NW_02"
+      ],
       "key_concepts": [
+        "网络新世界",
+        "合理使用网络",
+        "网络道德"
+      ],
+      "key_concepts_titles": [
         "网络新世界",
         "合理使用网络",
         "网络道德"
@@ -2942,7 +4714,13 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 1,
+      "key_concept_ids": [
+        "ML_ML_G5_02"
+      ],
       "key_concepts": [
+        "主动拒绝烟酒"
+      ],
+      "key_concepts_titles": [
         "主动拒绝烟酒"
       ],
       "summary_zh": "5-6 年级：孩子在本阶段学习道德与法治「健康」领域，包括「主动拒绝烟酒」等内容，核心要点涉及「请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?; 主动拒绝烟酒等不良嗜好」等。\n本阶段共 1 个核心概念，重点包括「主动拒绝烟酒」等。",
@@ -2956,7 +4734,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 5,
+      "key_concept_ids": [
+        "ML_ML_G5_03",
+        "ML_ML_G5_04",
+        "ML_G56_NT_02"
+      ],
       "key_concepts": [
+        "中华民族一家亲",
+        "我们神圣的国土",
+        "国家机构"
+      ],
+      "key_concepts_titles": [
         "中华民族一家亲",
         "我们神圣的国土",
         "国家机构"
@@ -2972,7 +4760,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G5_01",
+        "ML_G56_PS_01",
+        "ML_G56_PS_02"
+      ],
       "key_concepts": [
+        "面对挫折",
+        "青春期的心理变化",
+        "情绪管理"
+      ],
+      "key_concepts_titles": [
         "面对挫折",
         "青春期的心理变化",
         "情绪管理"
@@ -2988,7 +4786,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G6_04",
+        "ML_G56_CU_01",
+        "ML_G56_CU_02"
+      ],
       "key_concepts": [
+        "人类文明的瑰宝",
+        "中华文化",
+        "文化遗产"
+      ],
+      "key_concepts_titles": [
         "人类文明的瑰宝",
         "中华文化",
         "文化遗产"
@@ -3004,7 +4812,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 5,
+      "key_concept_ids": [
+        "ML_ML_G6_02",
+        "ML_ML_G6_03",
+        "ML_G56_LG_01"
+      ],
       "key_concepts": [
+        "宪法是根本法",
+        "公民的权利与义务",
+        "宪法"
+      ],
+      "key_concepts_titles": [
         "宪法是根本法",
         "公民的权利与义务",
         "宪法"
@@ -3020,7 +4838,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G6_01",
+        "ML_G56_SO_01",
+        "ML_G56_SO_02"
+      ],
       "key_concepts": [
+        "尊重多样性",
+        "社会生活",
+        "公共生活"
+      ],
+      "key_concepts_titles": [
         "尊重多样性",
         "社会生活",
         "公共生活"
@@ -3036,7 +4864,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 10,
+      "key_concept_ids": [
+        "ML_ML_G8_03",
+        "ML_ML_G9_01",
+        "ML_ML_G9_02"
+      ],
       "key_concepts": [
+        "国家利益至上",
+        "踏上强国之路",
+        "创新驱动发展"
+      ],
+      "key_concepts_titles": [
         "国家利益至上",
         "踏上强国之路",
         "创新驱动发展"
@@ -3052,7 +4890,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "ML_ML_G7_04",
+        "ML_ML_G7_02",
+        "ML_G79_PS_01"
+      ],
       "key_concepts": [
+        "做情绪的主人",
+        "青春的脚步",
+        "情绪调节"
+      ],
+      "key_concepts_titles": [
         "做情绪的主人",
         "青春的脚步",
         "情绪调节"
@@ -3068,7 +4916,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G7_01",
+        "ML_G79_GR_01"
+      ],
       "key_concepts": [
+        "中学序曲",
+        "人生规划"
+      ],
+      "key_concepts_titles": [
         "中学序曲",
         "人生规划"
       ],
@@ -3083,7 +4939,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_G79_CU_01",
+        "ML_G79_CU_02",
+        "ML_G79_CU_03"
+      ],
       "key_concepts": [
+        "中华优秀传统文化",
+        "革命文化",
+        "社会主义先进文化"
+      ],
+      "key_concepts_titles": [
         "中华优秀传统文化",
         "革命文化",
         "社会主义先进文化"
@@ -3099,7 +4965,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G8_02",
+        "ML_ML_G8_04",
+        "ML_ML_G8_01"
+      ],
       "key_concepts": [
+        "依法治国",
+        "公民的基本权利和义务",
+        "遵守社会规则"
+      ],
+      "key_concepts_titles": [
         "依法治国",
         "公民的基本权利和义务",
         "遵守社会规则"
@@ -3115,7 +4991,15 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 2,
+      "key_concept_ids": [
+        "ML_ML_G7_03",
+        "ML_G79_LF_01"
+      ],
       "key_concepts": [
+        "珍爱我们的生命",
+        "生命教育"
+      ],
+      "key_concepts_titles": [
         "珍爱我们的生命",
         "生命教育"
       ],
@@ -3130,7 +5014,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G9_03",
+        "ML_G79_EC_01",
+        "ML_G79_EC_02"
+      ],
       "key_concepts": [
+        "走向共同富裕",
+        "基本经济制度",
+        "分配制度"
+      ],
+      "key_concepts_titles": [
         "走向共同富裕",
         "基本经济制度",
         "分配制度"
@@ -3146,7 +5040,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "ML_ML_G9_05",
+        "ML_G79_RE_01",
+        "ML_G79_RE_02"
+      ],
       "key_concepts": [
+        "少年的担当",
+        "社会责任",
+        "历史责任"
+      ],
+      "key_concepts_titles": [
         "少年的担当",
         "社会责任",
         "历史责任"
@@ -3162,7 +5066,15 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 2,
+      "key_concept_ids": [
+        "PE_G12_GY_01",
+        "PE_G12_GY_02"
+      ],
       "key_concepts": [
+        "基本队列队形",
+        "基本徒手操"
+      ],
+      "key_concepts_titles": [
         "基本队列队形",
         "基本徒手操"
       ],
@@ -3177,7 +5089,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 9,
+      "key_concept_ids": [
+        "PE_PE5_01",
+        "PE_PE5_02",
+        "PE_PE5_03"
+      ],
       "key_concepts": [
+        "认识身体",
+        "营养与饮食",
+        "运动与健康"
+      ],
+      "key_concepts_titles": [
         "认识身体",
         "营养与饮食",
         "运动与健康"
@@ -3193,7 +5115,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 20,
+      "key_concept_ids": [
+        "PE_PE1_02",
+        "PE_PE1_03",
+        "PE_PE1_04"
+      ],
       "key_concepts": [
+        "跳跃",
+        "投掷",
+        "体操基本动作"
+      ],
+      "key_concepts_titles": [
         "跳跃",
         "投掷",
         "体操基本动作"
@@ -3209,7 +5141,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "PE_PE2_01",
+        "PE_PE2_02",
+        "PE_G12_BA_01"
+      ],
       "key_concepts": [
+        "小篮球",
+        "小足球",
+        "拍篮球"
+      ],
+      "key_concepts_titles": [
         "小篮球",
         "小足球",
         "拍篮球"
@@ -3225,7 +5167,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 7,
+      "key_concept_ids": [
+        "PE_PE5_05",
+        "PE_PE5_07",
+        "PE_G34_HE_01"
+      ],
       "key_concepts": [
+        "心理健康",
+        "安全与急救",
+        "合理膳食"
+      ],
+      "key_concepts_titles": [
         "心理健康",
         "安全与急救",
         "合理膳食"
@@ -3241,7 +5193,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 8,
+      "key_concept_ids": [
+        "PE_PE1_05",
+        "PE_G34_BM_03",
+        "PE_G34_BM_06"
+      ],
       "key_concepts": [
+        "技巧运动",
+        "侧手翻",
+        "蹲踞式跳远"
+      ],
+      "key_concepts_titles": [
         "技巧运动",
         "侧手翻",
         "蹲踞式跳远"
@@ -3257,7 +5219,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 4,
+      "key_concept_ids": [
+        "PE_PE4_03",
+        "PE_G34_ET_01",
+        "PE_G34_ET_02"
+      ],
       "key_concepts": [
+        "武术基本功",
+        "跳绳: 短绳",
+        "踢毽子"
+      ],
+      "key_concepts_titles": [
         "武术基本功",
         "跳绳: 短绳",
         "踢毽子"
@@ -3273,7 +5245,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "PE_PE4_01",
+        "PE_G34_AQ_02",
+        "PE_G34_AQ_01"
+      ],
       "key_concepts": [
+        "游泳基础",
+        "蛙泳基本动作",
+        "熟悉水性"
+      ],
+      "key_concepts_titles": [
         "游泳基础",
         "蛙泳基本动作",
         "熟悉水性"
@@ -3289,7 +5271,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "PE_PE2_03",
+        "PE_PE2_04",
+        "PE_PE2_05"
+      ],
       "key_concepts": [
+        "排球",
+        "乒乓球",
+        "羽毛球"
+      ],
+      "key_concepts_titles": [
         "排球",
         "乒乓球",
         "羽毛球"
@@ -3305,7 +5297,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "PE_PE3_01",
+        "PE_PE3_02",
+        "PE_PE3_03"
+      ],
       "key_concepts": [
+        "短跑",
+        "中长跑",
+        "接力跑"
+      ],
+      "key_concepts_titles": [
         "短跑",
         "中长跑",
         "接力跑"
@@ -3321,7 +5323,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 3,
+      "key_concept_ids": [
+        "PE_PE5_04",
+        "PE_G56_HE_01",
+        "PE_G56_HE_02"
+      ],
       "key_concepts": [
+        "青春期健康",
+        "青春期生理变化",
+        "运动损伤的预防"
+      ],
+      "key_concepts_titles": [
         "青春期健康",
         "青春期生理变化",
         "运动损伤的预防"
@@ -3337,7 +5349,15 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 2,
+      "key_concept_ids": [
+        "PE_PE4_02",
+        "PE_G56_IS_01"
+      ],
       "key_concepts": [
+        "滑冰/滑雪",
+        "滑冰基本动作"
+      ],
+      "key_concepts_titles": [
         "滑冰/滑雪",
         "滑冰基本动作"
       ],
@@ -3352,7 +5372,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 9,
+      "key_concept_ids": [
+        "PE_PE1_06",
+        "PE_G56_BM_01",
+        "PE_G56_BM_02"
+      ],
       "key_concepts": [
+        "支撑跳跃",
+        "单杠: 悬垂",
+        "单杠: 摆动"
+      ],
+      "key_concepts_titles": [
         "支撑跳跃",
         "单杠: 悬垂",
         "单杠: 摆动"
@@ -3368,7 +5398,15 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 2,
+      "key_concept_ids": [
+        "PE_G56_BA_01",
+        "PE_G56_BA_02"
+      ],
       "key_concepts": [
+        "篮球: 传接球",
+        "足球: 射门"
+      ],
+      "key_concepts_titles": [
         "篮球: 传接球",
         "足球: 射门"
       ],
@@ -3383,7 +5421,15 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 2,
+      "key_concept_ids": [
+        "PE_PE3_04",
+        "PE_G56_AT_01"
+      ],
       "key_concepts": [
+        "跳高跳远",
+        "铅球: 滑步推"
+      ],
+      "key_concepts_titles": [
         "跳高跳远",
         "铅球: 滑步推"
       ],
@@ -3398,7 +5444,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "PE_G79_HE_01"
+      ],
       "key_concepts": [
+        "健康生活方式"
+      ],
+      "key_concepts_titles": [
         "健康生活方式"
       ],
       "summary_zh": "7-9 年级：孩子在本阶段学习体育与健康「健康教育」领域，包括「健康生活方式」等内容，核心要点涉及「了解正确的身体姿势; 能做出正确的坐、立、行和读写姿」等。\n本阶段共 1 个核心概念，重点包括「健康生活方式」等。",
@@ -3412,7 +5464,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 3,
+      "key_concept_ids": [
+        "PE_G79_BM_01",
+        "PE_G79_BM_02",
+        "PE_G79_BM_03"
+      ],
       "key_concepts": [
+        "力量训练",
+        "速度训练",
+        "柔韧训练"
+      ],
+      "key_concepts_titles": [
         "力量训练",
         "速度训练",
         "柔韧训练"
@@ -3428,7 +5490,13 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 1,
+      "key_concept_ids": [
+        "PE_G79_BA_01"
+      ],
       "key_concepts": [
+        "篮球比赛"
+      ],
+      "key_concepts_titles": [
         "篮球比赛"
       ],
       "summary_zh": "7-9 年级：孩子在本阶段学习体育与健康「球类」领域，包括「篮球比赛」等内容，核心要点涉及「能参与篮球比赛; 了解正确的身体姿势」等。\n本阶段共 1 个核心概念，重点包括「篮球比赛」等。",
@@ -3442,7 +5510,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "P_G12_EX_01",
+        "P_G12_EX_02",
+        "P_G12_EX_03"
+      ],
       "key_concepts": [
+        "调查当地水资源的利用和保护状况",
+        "能运用物态变化知识",
+        "能描述固态、液态和气态三种物态"
+      ],
+      "key_concepts_titles": [
         "调查当地水资源的利用和保护状况",
         "能运用物态变化知识",
         "能描述固态、液态和气态三种物态"
@@ -3458,7 +5536,13 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 1,
+      "key_concept_ids": [
+        "P_G12_MA_01"
+      ],
       "key_concepts": [
+        "调查当地农田或城市绿化灌溉的主"
+      ],
+      "key_concepts_titles": [
         "调查当地农田或城市绿化灌溉的主"
       ],
       "summary_zh": "1-2 年级：孩子从物体的尺度、质量、密度等基本属性出发，理解物质的多样性和结构。\n本阶段共 1 个核心概念，重点包括「调查当地农田或城市绿化灌溉的主」等。",
@@ -3472,7 +5556,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 9,
+      "key_concept_ids": [
+        "P_P3_05",
+        "P_P3_06",
+        "P_P3_07"
+      ],
       "key_concepts": [
+        "光的反射定律",
+        "平面镜成像",
+        "光的折射"
+      ],
+      "key_concepts_titles": [
         "光的反射定律",
         "平面镜成像",
         "光的折射"
@@ -3488,7 +5582,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "P_P3_01",
+        "P_P3_02",
+        "P_P3_03"
+      ],
       "key_concepts": [
+        "声音的产生与传播",
+        "声音的特性:音调/响度/音色",
+        "噪声与防护"
+      ],
+      "key_concepts_titles": [
         "声音的产生与传播",
         "声音的特性:音调/响度/音色",
         "噪声与防护"
@@ -3504,7 +5608,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 9,
+      "key_concept_ids": [
+        "P_P6_01",
+        "P_P6_02",
+        "P_P6_03"
+      ],
       "key_concepts": [
+        "科学探究方法",
+        "实验设计能力",
+        "数据处理与误差分析"
+      ],
+      "key_concepts_titles": [
         "科学探究方法",
         "实验设计能力",
         "数据处理与误差分析"
@@ -3520,7 +5634,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 15,
+      "key_concept_ids": [
+        "P_P1_07",
+        "P_P1_08",
+        "P_P1_09"
+      ],
       "key_concepts": [
+        "密度",
+        "分子动理论",
+        "原子结构"
+      ],
+      "key_concepts_titles": [
         "密度",
         "分子动理论",
         "原子结构"
@@ -3536,7 +5660,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 25,
+      "key_concept_ids": [
+        "P_P4_02",
+        "P_P4_03",
+        "P_P4_04"
+      ],
       "key_concepts": [
+        "电流/电压/电阻",
+        "欧姆定律",
+        "串并联电路"
+      ],
+      "key_concepts_titles": [
         "电流/电压/电阻",
         "欧姆定律",
         "串并联电路"
@@ -3552,7 +5686,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 13,
+      "key_concept_ids": [
+        "P_P5_02",
+        "P_G79_EN_03",
+        "P_G79_EN_05"
+      ],
       "key_concepts": [
+        "能量转化与守恒",
+        "机械能转化",
+        "比热容"
+      ],
+      "key_concepts_titles": [
         "能量转化与守恒",
         "机械能转化",
         "比热容"
@@ -3568,7 +5712,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 4,
+      "key_concept_ids": [
+        "P_P7_02",
+        "P_P7_01",
+        "P_P7_03"
+      ],
       "key_concepts": [
+        "物理学与工程实践",
+        "物理学与日常生活",
+        "物理学与社会发展"
+      ],
+      "key_concepts_titles": [
         "物理学与工程实践",
         "物理学与日常生活",
         "物理学与社会发展"
@@ -3584,7 +5738,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 36,
+      "key_concept_ids": [
+        "P_G79_MI_07",
+        "P_P2_10",
+        "P_P2_12"
+      ],
       "key_concepts": [
+        "力的分解",
+        "牛顿第一定律",
+        "压强"
+      ],
+      "key_concepts_titles": [
         "力的分解",
         "牛顿第一定律",
         "压强"
@@ -3600,7 +5764,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 6,
+      "key_concept_ids": [
+        "SC_S1_ES_01",
+        "SC_S1_ES_02",
+        "SC_S1_ES_03"
+      ],
       "key_concepts": [
+        "观察天气",
+        "太阳与月亮的观察",
+        "四季变化"
+      ],
+      "key_concepts_titles": [
         "观察天气",
         "太阳与月亮的观察",
         "四季变化"
@@ -3616,7 +5790,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 5,
+      "key_concept_ids": [
+        "SC_S1_TE_01",
+        "SC_S1_TE_02",
+        "SC_G12_TE_01"
+      ],
       "key_concepts": [
+        "制作简单模型",
+        "使用简单工具",
+        "简单的设计"
+      ],
+      "key_concepts_titles": [
         "制作简单模型",
         "使用简单工具",
         "简单的设计"
@@ -3632,7 +5816,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 14,
+      "key_concept_ids": [
+        "SC_G12_MS_08",
+        "SC_S1_MS_01",
+        "SC_S1_MS_02"
+      ],
       "key_concepts": [
+        "水的三态变化",
+        "认识物体特征",
+        "比较物体轻重大小"
+      ],
+      "key_concepts_titles": [
         "水的三态变化",
         "认识物体特征",
         "比较物体轻重大小"
@@ -3648,7 +5842,17 @@
       "stage_start": 1,
       "stage_end": 2,
       "concept_count": 9,
+      "key_concept_ids": [
+        "SC_S1_LS_05",
+        "SC_S1_LS_01",
+        "SC_S1_LS_02"
+      ],
       "key_concepts": [
+        "植物的生长发育",
+        "认识周围的植物",
+        "认识常见的动物"
+      ],
+      "key_concepts_titles": [
         "植物的生长发育",
         "认识周围的植物",
         "认识常见的动物"
@@ -3664,7 +5868,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 6,
+      "key_concept_ids": [
+        "SC_S2_ES_01",
+        "SC_S2_ES_02",
+        "SC_S2_ES_03"
+      ],
       "key_concepts": [
+        "地球的形状与运动",
+        "地球上的水",
+        "岩石与土壤"
+      ],
+      "key_concepts_titles": [
         "地球的形状与运动",
         "地球上的水",
         "岩石与土壤"
@@ -3680,7 +5894,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 3,
+      "key_concept_ids": [
+        "SC_S2_TE_01",
+        "SC_G34_TE_01",
+        "SC_G34_TE_02"
+      ],
       "key_concepts": [
+        "设计与制作",
+        "技术与工程创 | 国古代技术与",
+        "科学、技术、| @初步说明-一"
+      ],
+      "key_concepts_titles": [
         "设计与制作",
         "技术与工程创 | 国古代技术与",
         "科学、技术、| @初步说明-一"
@@ -3696,7 +5920,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 20,
+      "key_concept_ids": [
+        "SC_S2_MS_04",
+        "SC_S2_MS_05",
+        "SC_S2_MS_01"
+      ],
       "key_concepts": [
+        "声音的产生与传播",
+        "光的传播与反射",
+        "固体液体气体的特征"
+      ],
+      "key_concepts_titles": [
         "声音的产生与传播",
         "光的传播与反射",
         "固体液体气体的特征"
@@ -3712,7 +5946,17 @@
       "stage_start": 3,
       "stage_end": 4,
       "concept_count": 14,
+      "key_concept_ids": [
+        "SC_S2_LS_03",
+        "SC_S2_LS_01",
+        "SC_S2_LS_02"
+      ],
       "key_concepts": [
+        "人体的呼吸/消化/循环",
+        "植物的一生",
+        "动物的生命周期"
+      ],
+      "key_concepts_titles": [
         "人体的呼吸/消化/循环",
         "植物的一生",
         "动物的生命周期"
@@ -3728,7 +5972,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 9,
+      "key_concept_ids": [
+        "SC_S3_ES_01",
+        "SC_S3_ES_02",
+        "SC_S3_ES_03"
+      ],
       "key_concepts": [
+        "宇宙中的地球",
+        "天气与气候",
+        "地表变化"
+      ],
+      "key_concepts_titles": [
         "宇宙中的地球",
         "天气与气候",
         "地表变化"
@@ -3744,7 +5998,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 9,
+      "key_concept_ids": [
+        "SC_S3_TE_01",
+        "SC_S3_TE_02",
+        "SC_G56_TE_01"
+      ],
       "key_concepts": [
+        "工程设计流程",
+        "技术与伦理",
+        "技术的作用"
+      ],
+      "key_concepts_titles": [
         "工程设计流程",
         "技术与伦理",
         "技术的作用"
@@ -3760,7 +6024,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 10,
+      "key_concept_ids": [
+        "SC_S3_MS_01",
+        "SC_S3_MS_02",
+        "SC_S3_MS_03"
+      ],
       "key_concepts": [
+        "物质的结构",
+        "化学反应",
+        "能量的多种形式"
+      ],
+      "key_concepts_titles": [
         "物质的结构",
         "化学反应",
         "能量的多种形式"
@@ -3776,7 +6050,17 @@
       "stage_start": 5,
       "stage_end": 6,
       "concept_count": 10,
+      "key_concept_ids": [
+        "SC_S3_LS_02",
+        "SC_S3_LS_03",
+        "SC_G56_LS_06"
+      ],
       "key_concepts": [
+        "遗传与进化",
+        "生态系统",
+        "进化"
+      ],
+      "key_concepts_titles": [
         "遗传与进化",
         "生态系统",
         "进化"
@@ -3792,7 +6076,17 @@
       "stage_start": 7,
       "stage_end": 9,
       "concept_count": 6,
+      "key_concept_ids": [
+        "SC_G79_TE_01",
+        "SC_G79_TE_02",
+        "SC_G79_TE_03"
+      ],
       "key_concepts": [
+        "植物能制造和获取养分来维持自身",
+        "地球上存在动物",
+        "空气与水 | @认识空气是无色"
+      ],
+      "key_concepts_titles": [
         "植物能制造和获取养分来维持自身",
         "地球上存在动物",
         "空气与水 | @认识空气是无色"

@@ -120,6 +120,7 @@ def main():
     for (s, stg, dom), ns in sorted(buckets.items()):
         # 选最难的 3 个关键概念作为示例
         sorted_n = sorted(ns, key=lambda x: -x.get("difficulty", 1))
+        key_concept_ids = [n["id"] for n in sorted_n[:3]]
         key_concepts = [n["title"] for n in sorted_n[:3]]
         # 模板生成
         subj_zh, _ = SUBJ_ZH.get(s, (s, s))
@@ -138,7 +139,9 @@ def main():
             "stage_start": stg[0],
             "stage_end": stg[1],
             "concept_count": len(ns),
+            "key_concept_ids": key_concept_ids,  # V3.2.2: 跨文件引用
             "key_concepts": key_concepts,
+            "key_concepts_titles": key_concepts,  # V3.2.2: 显式命名
             "summary_zh": summary,
             "summary_en": f"Stage {stg_en}: {base_desc}",
         })

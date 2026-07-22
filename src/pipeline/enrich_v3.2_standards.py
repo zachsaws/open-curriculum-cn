@@ -76,19 +76,16 @@ def main():
                 g = n.get("grade_start", 1)
                 ks = STAGE_CODE.get(g, "KS1")
                 dom = n.get("domain", "其他")
-                # 域 code: 拼音首字母
-                from pypinyin import lazy_pinyin
-                try:
-                    dom_pinyin = "".join(lazy_pinyin(dom[:4]))[:6].upper() or "GEN"
-                except Exception:
-                    dom_pinyin = "GEN"
-                # code: M-KS1-NS-01 (M=subj_code, KS1=stage, NS=domain_abbr, 01=idx in stage+domain)
-                # 简化: 用 n.id 本身就够 unique, 这里补一个独立 code
-                topic_code = f"{subj_code}-{ks}-{dom_pinyin}-{n['id'].split('_')[-1]}"
+                # V3.2.2: 用 (subject_code-stage-id) 作 key, 跟 all_v3.2.json 的节点 id 对齐
+                # 旧 key 形如 cn-compulsory-2022:001-KS1-TUXING-01, 502 个重复
+                # 新 key 形如 cn-compulsory-2022:math-G1-M_G1_NS_01, unique by id
+                nid = n["id"]
+                topic_code = f"{subj_code}-{ks}-{nid.split('_')[1]}-{nid}"
                 topics.append({
                     "key": f"{slug}:{topic_code}",
                     "code": topic_code,
                     "data": {
+                        "id": nid,  # V3.2.2: 跨文件引用 id
                         "title": n.get("title", ""),
                         "description": n.get("content_req", "")[:200],
                         "subject": subj_zh,

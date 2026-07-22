@@ -1,0 +1,22 @@
+CC0 1.0 — Database (结构化数据层)
+=====================================
+
+本作品 (Open Curriculum CN) 的"数据库"层 (即 all_v3.2.json / clusters.json /
+curriculum-standards.json / manifest.json 这类结构化数据, 不含其底层课标原文)
+采用 CC0 1.0 Universal 公共领域贡献许可发布。
+
+CC0 1.0 Universal 全文: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+这意味着:
+  - 你可以自由使用、修改、分发这些结构化数据
+  - 无需署名
+  - 无需相同方式共享
+  - 用于任何目的, 包括商业用途
+
+注意:
+  - 本数据库中引用的原始课标原文 (2022 义教课标) 版权归中华人民共和国教育部所有,
+    任何"全文转载"使用请遵守教育部相关规定
+  - 本作品的"创作内容"层 (cluster summary / edge reason / assessment prompt /
+    图表与文字描述) 仍遵循 CC-BY-SA 4.0 许可 (见 LICENSE 文件)
+
+SPDX-License-Identifier: CC0-1.0
