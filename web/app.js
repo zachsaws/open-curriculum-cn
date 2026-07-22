@@ -96,6 +96,7 @@ function initGraph() {
   console.log('Wrap size:', r.width, 'x', r.height);
 
   // 准备 cytoscape 数据
+  // 兼容两种 edges 格式: V0.5 list [from, to, type] 或 V0.6 dict {from, to, type}
   const elements = [
     ...DATA.nodes.map(n => ({
       group: 'nodes',
@@ -103,9 +104,20 @@ function initGraph() {
     })),
     ...DATA.edges.map((e, i) => ({
       group: 'edges',
-      data: { id: 'e' + i, source: e[0], target: e[1], type: e[2] || 'hard' },
+      data: {
+        id: 'e' + i,
+        source: Array.isArray(e) ? e[0] : e.from,
+        target: Array.isArray(e) ? e[1] : e.to,
+        type: Array.isArray(e) ? (e[2] || 'hard') : (e.type === 0 ? 'soft' : 'hard'),
+      },
     })),
   ];
+
+  const nodeCount = DATA.nodes.length;
+  // 大图 (500+) 优化: 缩小节点,默认不显示 label,加 zoom-based label
+  const isLarge = nodeCount > 400;
+  const nodeSize = isLarge ? 8 : 14;
+  const baseFont = isLarge ? '10px' : '12px';
 
   cy = cytoscape({
     container: cyContainer,
@@ -118,14 +130,14 @@ function initGraph() {
             const s = ele.data('subject');
             return PALETTE[s] || '#5b8def';
           },
-          'width': 20,
-          'height': 20,
-          'label': 'data(title)',
+          'width': nodeSize,
+          'height': nodeSize,
+          'label': isLarge ? '' : 'data(title)',  // 大图默认不显示 label
           'color': '#e6e9f2',
-          'font-size': '12px',
+          'font-size': baseFont,
           'font-family': '-apple-system, "PingFang SC", sans-serif',
           'text-valign': 'bottom',
-          'text-margin-y': 6,
+          'text-margin-y': 4,
           'text-outline-color': '#0a0d18',
           'text-outline-width': 3,
           'opacity': 1,
@@ -134,10 +146,10 @@ function initGraph() {
       {
         selector: 'edge',
         style: {
-          'width': 0.6,
+          'width': isLarge ? 0.4 : 0.6,
           'line-color': 'rgba(180,195,235,0.35)',
           'curve-style': 'bezier',
-          'opacity': 0.6,
+          'opacity': isLarge ? 0.35 : 0.6,
         },
       },
       {
@@ -146,25 +158,98 @@ function initGraph() {
           'border-color': '#fff',
           'border-width': 2,
           'border-opacity': 1,
+          'label': 'data(title)',  // 选中时显示 label
+          'font-size': '13px',
+          'z-index': 99,
+        },
+      },
+      {
+        selector: 'node.hover',
+        style: {
+          'label': 'data(title)',
+          'font-size': '12px',
+          'z-index': 50,
         },
       },
     ],
-    layout: {
+    layout: isLarge ? {
+      // 大图: 先 random 撒开,再 cose 收敛
+      name: 'preset',
+      positions: {},
+      fit: true,
+    } : {
       name: 'cose',
       animate: false,
-      // 拉开节点
       nodeRepulsion: 80000,
       idealEdgeLength: 100,
       edgeElasticity: 0.45,
       gravity: 0.25,
-      numIter: 100,
+      numIter: 1000,
       fit: true,
       padding: 50,
     },
+    // 大图走两步 layout
+    ...(isLarge ? { ready: undefined } : {}),
     wheelSensitivity: 0.2,
-    minZoom: 0.3,
+    minZoom: 0.15,
     maxZoom: 5,
   });
+
+  // Hover 显示 label
+  cy.on('mouseover', 'node', evt => {
+    evt.target.addClass('hover');
+  });
+  cy.on('mouseout', 'node', evt => {
+    evt.target.removeClass('hover');
+  });
+
+  // 大图两步 layout: 1) 按学科分块预设位置 2) cose 收敛
+  if (isLarge) {
+    setTimeout(() => {
+      const W = cy.width();
+      const H = cy.height();
+      const padding = 60;
+      // 把 GROUPS 按数量排序, 数量多的学科占地大
+      const subjStats = GROUPS.map(s => ({
+        s,
+        n: DATA.nodes.filter(x => x.subject === s).length,
+      }));
+      // 按学科块面积比分配位置
+      const total = subjStats.reduce((a, b) => a + b.n, 0);
+      const usableW = W - padding * 2;
+      const usableH = H - padding * 2;
+      // 排成 4 列 N 行, 按数量从大到小排
+      subjStats.sort((a, b) => b.n - a.n);
+      const COLS = 4;
+      const cellW = usableW / COLS;
+      const rows = Math.ceil(subjStats.length / COLS);
+      const cellH = usableH / rows;
+      const pos = {};
+      subjStats.forEach((s, idx) => {
+        const col = idx % COLS;
+        const row = Math.floor(idx / COLS);
+        // 学科块中心
+        const cx = padding + cellW * (col + 0.5);
+        const cy_ = padding + cellH * (row + 0.5);
+        // 学科内按 grade 排
+        const ownNodes = cy.nodes().filter(n => n.data('subject') === s.s);
+        const cols2 = Math.ceil(Math.sqrt(s.n * (cellW / cellH)));
+        ownNodes.forEach((n, i) => {
+          const c = i % cols2;
+          const r = Math.floor(i / cols2);
+          const rows2 = Math.ceil(s.n / cols2);
+          const subW = cellW * 0.85;
+          const subH = cellH * 0.85;
+          pos[n.id()] = {
+            x: cx - subW / 2 + (c + 0.5) * subW / cols2 + (Math.random() - 0.5) * 4,
+            y: cy_ - subH / 2 + (r + 0.5) * subH / rows2 + (Math.random() - 0.5) * 4,
+          };
+        });
+      });
+      cy.layout({ name: 'preset', positions: pos, fit: true, padding: padding }).run();
+      console.log('Big layout done —', DATA.nodes.length, 'nodes');
+    }, 200);
+  }
 
   cy.on('tap', 'node', evt => {
     showCard(evt.target.data());
@@ -234,6 +319,55 @@ function showCard(node) {
 document.querySelector('#card .close').onclick = () => {
   document.getElementById('card').classList.remove('on');
   cy.elements().unselect();
+};
+
+// 切换 label 显示
+let labelsOn = false;
+document.getElementById('toggleLabels').onclick = () => {
+  labelsOn = !labelsOn;
+  cy.nodes().forEach(n => {
+    n.style('label', labelsOn ? n.data('title') : '');
+  });
+  document.getElementById('toggleLabels').textContent = labelsOn ? '隐藏标签' : '显示标签';
+};
+
+// 重排 — 按学科分块
+document.getElementById('reLayout').onclick = () => {
+  const W = cy.width();
+  const H = cy.height();
+  const padding = 60;
+  const subjStats = GROUPS.map(s => ({
+    s,
+    n: cy.nodes().filter(x => x.data('subject') === s).length,
+  }));
+  subjStats.sort((a, b) => b.n - a.n);
+  const COLS = 4;
+  const usableW = W - padding * 2;
+  const usableH = H - padding * 2;
+  const cellW = usableW / COLS;
+  const rows = Math.ceil(subjStats.length / COLS);
+  const cellH = usableH / rows;
+  const pos = {};
+  subjStats.forEach((s, idx) => {
+    const col = idx % COLS;
+    const row = Math.floor(idx / COLS);
+    const cx = padding + cellW * (col + 0.5);
+    const cy_ = padding + cellH * (row + 0.5);
+    const ownNodes = cy.nodes().filter(n => n.data('subject') === s.s);
+    const cols2 = Math.ceil(Math.sqrt(s.n * (cellW / cellH)));
+    ownNodes.forEach((n, i) => {
+      const c = i % cols2;
+      const r = Math.floor(i / cols2);
+      const rows2 = Math.ceil(s.n / cols2);
+      const subW = cellW * 0.85;
+      const subH = cellH * 0.85;
+      pos[n.id()] = {
+        x: cx - subW / 2 + (c + 0.5) * subW / cols2 + (Math.random() - 0.5) * 4,
+        y: cy_ - subH / 2 + (r + 0.5) * subH / rows2 + (Math.random() - 0.5) * 4,
+      };
+    });
+  });
+  cy.layout({ name: 'preset', positions: pos, fit: true, padding: padding }).run();
 };
 
 loadData();

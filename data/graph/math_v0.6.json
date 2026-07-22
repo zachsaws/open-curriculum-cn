@@ -1,0 +1,3563 @@
+{
+  "nodes": [
+    {
+      "id": "M_G1_NS_01",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "万以内数的认识",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "理解万以内数的意义，知道数位含义",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_02",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "数位与位值",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "理解个/十/百/千/万位上的数表示不同数值",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_03",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用算盘表示多位数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "能用算盘表示多位数,感悟位值制",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_04",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "比较符号 = < > 的含义",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "了解等号、大于号、小于号三种符号的含义",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_05",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "万以内数的大小比较",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "会比较万以内数的大小,感悟相等和不等关系",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_06",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "四则运算的意义",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 1,
+      "summary": "在情境中了解加减乘除四则运算的意义,感悟运算间关系",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_07",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "整数加减法的算理与算法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 1,
+      "summary": "探索加法和减法的算理与算法,会整数加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_08",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "表内乘除法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 1,
+      "summary": "探索乘法和除法的算理与算法,会简单整数乘除法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_09",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "20 以内加减法口算",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 1,
+      "summary": "熟练口算 20 以内数的加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_10",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "百以内加减法口算",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "口算简单的百以内数的加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_11",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "两位数三位数加减法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "能计算两位数和三位数的加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_12",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "减法是加法的逆运算",
+      "domain": "数与运算",
+      "subdomain": "运算关系",
+      "difficulty": 1,
+      "summary": "理解减法是加法的逆运算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_13",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "乘法是加法的简便运算",
+      "domain": "数与运算",
+      "subdomain": "运算关系",
+      "difficulty": 1,
+      "summary": "理解乘法是加法的简便运算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_14",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "除法是乘法的逆运算",
+      "domain": "数与运算",
+      "subdomain": "运算关系",
+      "difficulty": 1,
+      "summary": "理解除法是乘法的逆运算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_NS_15",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "符号意识与数感",
+      "domain": "数与运算",
+      "subdomain": "核心素养",
+      "difficulty": 1,
+      "summary": "形成初步的符号意识、数感、运算能力和推理意识",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_01",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用数或符号表达变化规律",
+      "domain": "数量关系",
+      "subdomain": "规律表达",
+      "difficulty": 2,
+      "summary": "用数或符号表达简单情境中的变化规律",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_02",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用数和运算解决简单问题",
+      "domain": "数量关系",
+      "subdomain": "解决问题",
+      "difficulty": 1,
+      "summary": "在简单生活情境中,运用数和运算解决问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_03",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "解释结果的实际意义",
+      "domain": "数量关系",
+      "subdomain": "应用意识",
+      "difficulty": 1,
+      "summary": "能解释结果的实际意义,形成初步的应用意识",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_04",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识人民币",
+      "domain": "数量关系",
+      "subdomain": "常见量",
+      "difficulty": 1,
+      "summary": "在实际情境中认识人民币,能进行简单单位换算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_05",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识时间单位时/分/秒",
+      "domain": "数量关系",
+      "subdomain": "常见量",
+      "difficulty": 1,
+      "summary": "认识时/分/秒,体会时间长短,懂得遵守时间",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_06",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识东/南/西/北四个方向",
+      "domain": "数量关系",
+      "subdomain": "位置",
+      "difficulty": 1,
+      "summary": "会用上下/前后/左后/东西南北描述位置",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_QR_07",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "模型意识",
+      "domain": "数量关系",
+      "subdomain": "核心素养",
+      "difficulty": 2,
+      "summary": "感悟加法模型和乘法模型,形成模型意识",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_01",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "辨认简单立体图形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 1,
+      "summary": "辨认长方体/正方体/圆柱/球等立体图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_02",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "辨认简单平面图形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 1,
+      "summary": "辨认长方形/正方形/平行四边形/三角形/圆等平面图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_03",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "描述图形特征",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 1,
+      "summary": "能直观描述立体/平面图形的特征",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_04",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "图形分类",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 1,
+      "summary": "根据特征对图形进行简单分类",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_05",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用简单图形拼图",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "会用简单图形拼图,识别组合图形中各部分",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_06",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "立体图形与对应平面图形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "能说出立体图形中某一个面对应的平面图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_07",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "长度单位米与厘米",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 1,
+      "summary": "认识长度单位米/厘米,体会统一度量单位的重要性",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_08",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "长度单位换算",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "能进行米/厘米之间的换算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_09",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "估测物体长度",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 1,
+      "summary": "能估测一些物体的长度,并进行测量",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_10",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "身体上的尺子",
+      "domain": "图形与几何",
+      "subdomain": "测量应用",
+      "difficulty": 2,
+      "summary": "用身体长度作为单位,测量物体,积累测量经验",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_11",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "空间观念",
+      "domain": "图形与几何",
+      "subdomain": "核心素养",
+      "difficulty": 1,
+      "summary": "形成初步的空间观念",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_GM_12",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "量感",
+      "domain": "图形与几何",
+      "subdomain": "核心素养",
+      "difficulty": 2,
+      "summary": "通过测量形成初步的量感",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_ST_01",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "数据分类方法",
+      "domain": "统计与概率",
+      "subdomain": "数据分类",
+      "difficulty": 1,
+      "summary": "经历按不同标准分类的过程,认识事物共性与区别",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_ST_02",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用文字图画表格记录分类",
+      "domain": "统计与概率",
+      "subdomain": "数据分类",
+      "difficulty": 1,
+      "summary": "用文字/图画/表格等方式记录并描述分类结果",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_ST_03",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "数据意识",
+      "domain": "统计与概率",
+      "subdomain": "核心素养",
+      "difficulty": 2,
+      "summary": "体会如何用数学语言表达现实世界,形成数据意识",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_PR_01",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题活动:数学游戏分享",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 1,
+      "summary": "回顾学前数学学习活动,激发学习兴趣",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_PR_02",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题活动:欢乐购物街",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 1,
+      "summary": "认识人民币,单位换算,了解货币意义,金融素养",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_PR_03",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题活动:时间在哪里",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 1,
+      "summary": "认识时/分/秒,体会时间意义,懂得遵守时间",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_PR_04",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题活动:我的教室",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 1,
+      "summary": "用上下/前后/左后/东/南/西/北描述物体相对位置",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_PR_05",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题活动:身体上的尺子",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 2,
+      "summary": "用身体长度单位测量物体,发展量感",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G1_PR_06",
+      "subject": "math",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题活动:数学连环画",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 2,
+      "summary": "用数学知识记录经历或故事",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_01",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "万以上数的认识",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "认识万以上的数,了解十进制计数法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_02",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "多位数的读写",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "能认/读/写多位整数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_03",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "多位数的乘除法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 3,
+      "summary": "探索并掌握多位数的乘除法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_04",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "小数的初步认识",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "结合具体情境初步认识小数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_05",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "分数的初步认识",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "结合具体情境初步认识分数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_06",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "分数单位",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "感悟分数单位",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_07",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "同分母分数加减法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "会同分母分数的加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_08",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "一位小数加减法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "会一位小数的加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_09",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "整数四则混合运算",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "理解四则运算意义,能进行整数四则混合运算(两步为主,不超过三步)",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_10",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "加法交换律",
+      "domain": "数与运算",
+      "subdomain": "运算律",
+      "difficulty": 2,
+      "summary": "探索并理解加法交换律",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_11",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "加法结合律",
+      "domain": "数与运算",
+      "subdomain": "运算律",
+      "difficulty": 2,
+      "summary": "探索并理解加法结合律",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_12",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "乘法交换律",
+      "domain": "数与运算",
+      "subdomain": "运算律",
+      "difficulty": 2,
+      "summary": "探索并理解乘法交换律",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_13",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "乘法结合律",
+      "domain": "数与运算",
+      "subdomain": "运算律",
+      "difficulty": 2,
+      "summary": "探索并理解乘法结合律",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_14",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "乘法对加法的分配律",
+      "domain": "数与运算",
+      "subdomain": "运算律",
+      "difficulty": 3,
+      "summary": "探索并理解乘法对加法的分配律",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_15",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "用字母表示运算律",
+      "domain": "数与运算",
+      "subdomain": "运算律",
+      "difficulty": 2,
+      "summary": "能用字母表示运算律,感知代数思维",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_16",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "用数描述事物特征",
+      "domain": "数与运算",
+      "subdomain": "应用",
+      "difficulty": 1,
+      "summary": "会运用数描述生活情境中事物的特征",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_17",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "公倍数与最小公倍数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "了解公倍数和最小公倍数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_18",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "公因数与最大公因数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "了解公因数和最大公因数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_19",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "奇数与偶数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "了解奇数和偶数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_20",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "质数与合数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "了解质数(或素数)和合数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_21",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "2/3/5 倍数特征",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "知道 2/3/5 的倍数的特征",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_NS_22",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "估算",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "在具体情境中,选择合适单位进行简单估算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_QR_01",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "计算器辅助计算",
+      "domain": "数量关系",
+      "subdomain": "计算工具",
+      "difficulty": 1,
+      "summary": "能借助计算器进行计算,解决简单实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_QR_02",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "常见数量关系:总量=分量+分量",
+      "domain": "数量关系",
+      "subdomain": "模型",
+      "difficulty": 2,
+      "summary": "在具体情境中认识总量=分量+分量",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_QR_03",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "常见数量关系:总价=单价×数量",
+      "domain": "数量关系",
+      "subdomain": "模型",
+      "difficulty": 2,
+      "summary": "认识总价=单价×数量",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_QR_04",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "常见数量关系:路程=速度×时间",
+      "domain": "数量关系",
+      "subdomain": "模型",
+      "difficulty": 2,
+      "summary": "认识路程=速度×时间",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_QR_05",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "等量的等量相等",
+      "domain": "数量关系",
+      "subdomain": "推理",
+      "difficulty": 3,
+      "summary": "在具体情境中了解等量的等量相等",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_QR_06",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "探索简单规律",
+      "domain": "数量关系",
+      "subdomain": "规律",
+      "difficulty": 2,
+      "summary": "经历探索简单规律的过程,形成推理意识",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_01",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "角的认识",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 1,
+      "summary": "结合生活情境认识角",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_02",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "角的度量",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会用量角器量角",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_03",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "角的分类",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "认识锐角/直角/钝角/平角/周角",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_04",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "三角形分类",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "按角或边对三角形进行分类",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_05",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "三角形内角和",
+      "domain": "图形与几何",
+      "subdomain": "性质",
+      "difficulty": 2,
+      "summary": "感知三角形内角和是 180°",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_06",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "三角形三边关系",
+      "domain": "图形与几何",
+      "subdomain": "性质",
+      "difficulty": 3,
+      "summary": "探索三角形任意两边之和大于第三边",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_07",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "平行四边形面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算平行四边形的面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_08",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "三角形面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算三角形的面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_09",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "梯形面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算梯形的面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_10",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "周长概念",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "理解周长的含义",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_11",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "长方形正方形周长",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会计算长方形和正方形的周长",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_12",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "面积概念",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "理解面积的含义",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_13",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "长方形正方形面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会计算长方形和正方形的面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_14",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "面积单位",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "认识平方厘米/平方分米/平方米",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_GM_15",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "面积单位换算",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "能进行面积单位之间的换算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_ST_01",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "数据收集与整理",
+      "domain": "统计与概率",
+      "subdomain": "数据收集",
+      "difficulty": 2,
+      "summary": "经历简单数据收集和整理/描述和分析的过程",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_ST_02",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "条形统计图",
+      "domain": "统计与概率",
+      "subdomain": "数据表达",
+      "difficulty": 2,
+      "summary": "认识条形统计图,会合理表示和分析数据",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_ST_03",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "读懂媒体统计图表",
+      "domain": "统计与概率",
+      "subdomain": "数据表达",
+      "difficulty": 1,
+      "summary": "能读懂报纸/电视/互联网中的简单统计图表",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_ST_04",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "平均数意义",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 3,
+      "summary": "探索平均数的意义,理解集中趋势",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_ST_05",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "平均数计算",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 2,
+      "summary": "能计算一组数据的平均数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_ST_06",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "统计图表与平均数的应用",
+      "domain": "统计与概率",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "在简单实际情境中,合理应用统计图表和平均数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_PR_01",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "主题活动:曹冲称象",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 3,
+      "summary": "用等量代换思想解决称重问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_PR_02",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "主题活动:寻找身体上的数学秘密",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 2,
+      "summary": "发现身体上的数学",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G2_PR_03",
+      "subject": "math",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "认识年月日与 24 时计时法",
+      "domain": "综合与实践",
+      "subdomain": "常见量",
+      "difficulty": 1,
+      "summary": "认识年/月/日,理解 24 时计时法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_01",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "分数意义",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "理解分数意义:把单位 1 平均分成若干份",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_02",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "分数基本性质",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "理解分数基本性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_03",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "约分与通分",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 3,
+      "summary": "会约分和通分",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_04",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "异分母分数加减法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 3,
+      "summary": "会异分母分数的加减法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_05",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "分数乘除法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 3,
+      "summary": "会分数乘除法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_06",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "小数乘除法",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 3,
+      "summary": "会小数乘除法",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_07",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "循环小数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "认识循环小数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_08",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "负数认识",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "结合具体情境认识负数,感悟对立统一",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_09",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "百分数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "认识百分数,感悟百分数的统计意义",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_10",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "分数小数百分数互化",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "能进行分数/小数/百分数之间的互化",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_11",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "比的意义与性质",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "理解比的意义和基本性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_12",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "比例",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "认识比例,理解比例的基本性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_13",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "正比例",
+      "domain": "数与运算",
+      "subdomain": "数量关系",
+      "difficulty": 3,
+      "summary": "理解正比例的意义,能判断正比例关系",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_NS_14",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "反比例",
+      "domain": "数与运算",
+      "subdomain": "数量关系",
+      "difficulty": 3,
+      "summary": "理解反比例的意义,能判断反比例关系",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_QR_01",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "用字母表示数",
+      "domain": "数量关系",
+      "subdomain": "代数",
+      "difficulty": 2,
+      "summary": "能用字母表示数,感悟代数思维",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_QR_02",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "简易方程",
+      "domain": "数量关系",
+      "subdomain": "方程",
+      "difficulty": 3,
+      "summary": "会用简易方程解决实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_QR_03",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "等式性质",
+      "domain": "数量关系",
+      "subdomain": "方程",
+      "difficulty": 3,
+      "summary": "理解等式的性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_QR_04",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "解决问题策略:列举",
+      "domain": "数量关系",
+      "subdomain": "策略",
+      "difficulty": 2,
+      "summary": "会用列举法解决实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_QR_05",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "解决问题策略:假设",
+      "domain": "数量关系",
+      "subdomain": "策略",
+      "difficulty": 3,
+      "summary": "会用假设法解决鸡兔同笼等问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_QR_06",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "解决问题策略:转化",
+      "domain": "数量关系",
+      "subdomain": "策略",
+      "difficulty": 3,
+      "summary": "会用转化法解决实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_01",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆的特征",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "认识圆,理解圆心/半径/直径",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_02",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆周率",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "知道圆周率,理解圆的周长/直径之比为定值",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_03",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆的周长",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会计算圆的周长",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_04",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆的面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算圆的面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_05",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "扇形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "认识扇形,能计算扇形面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_06",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆柱的认识",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "认识圆柱,理解其特征",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_07",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆柱表面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算圆柱的表面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_08",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆柱体积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算圆柱的体积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_09",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆锥的认识",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "认识圆锥,理解其特征",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_10",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "圆锥体积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算圆锥的体积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_11",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "观察物体三视图",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "能辨认不同方向(前/侧/上)的形状",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_12",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "长方体正方体表面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会计算长方体和正方体的表面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_13",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "长方体正方体体积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会计算长方体和正方体的体积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_GM_14",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "体积单位",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "认识体积单位:立方厘米/立方分米/立方米",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_01",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "复式条形统计图",
+      "domain": "统计与概率",
+      "subdomain": "数据表达",
+      "difficulty": 2,
+      "summary": "认识复式条形统计图,能读图分析",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_02",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "复式折线统计图",
+      "domain": "统计与概率",
+      "subdomain": "数据表达",
+      "difficulty": 2,
+      "summary": "认识复式折线统计图,能读图分析",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_03",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "扇形统计图",
+      "domain": "统计与概率",
+      "subdomain": "数据表达",
+      "difficulty": 3,
+      "summary": "认识扇形统计图,理解各部分占比",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_04",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "中位数",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 3,
+      "summary": "理解中位数的意义,会求一组数据的中位数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_05",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "众数",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 3,
+      "summary": "理解众数的意义,会求一组数据的众数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_06",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "可能性定性描述",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 2,
+      "summary": "用'一定/不可能/可能'等定性描述事件可能性",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_07",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "等可能事件",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 3,
+      "summary": "感受等可能事件,会判断游戏规则公平性",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_ST_08",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "数据意识与应用",
+      "domain": "统计与概率",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "在真实情境中,运用统计图表和统计量解决问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_PR_01",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "主题活动:校园中的数学",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 2,
+      "summary": "在校园情境中发现数学问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G3_PR_02",
+      "subject": "math",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "主题活动:节约用水",
+      "domain": "综合与实践",
+      "subdomain": "主题活动",
+      "difficulty": 2,
+      "summary": "用统计知识分析用水量",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_01",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "有理数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "理解有理数的意义,会分类",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_02",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "数轴",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "理解数轴,会用数轴上的点表示有理数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_03",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "相反数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 1,
+      "summary": "理解相反数的概念",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_04",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "绝对值",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "理解绝对值的概念和性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_05",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "整数指数幂",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 2,
+      "summary": "理解整数指数幂及其运算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_06",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "科学记数法",
+      "domain": "数与运算",
+      "subdomain": "数的应用",
+      "difficulty": 1,
+      "summary": "会用科学记数法表示大数或小数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_07",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "平方根与算术平方根",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 3,
+      "summary": "理解平方根和算术平方根",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_08",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "立方根",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "理解立方根",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_09",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "无理数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "理解无理数的客观存在",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_10",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "实数",
+      "domain": "数与运算",
+      "subdomain": "数的认识",
+      "difficulty": 2,
+      "summary": "理解实数概念,实数与数轴上的点一一对应",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_11",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "二次根式",
+      "domain": "数与运算",
+      "subdomain": "数的运算",
+      "difficulty": 3,
+      "summary": "理解二次根式,会进行运算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_12",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "代数式",
+      "domain": "数与运算",
+      "subdomain": "代数",
+      "difficulty": 2,
+      "summary": "理解代数式,会用代数式表示数量关系",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_13",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "整式:单项式与多项式",
+      "domain": "数与运算",
+      "subdomain": "代数",
+      "difficulty": 2,
+      "summary": "理解单项式和多项式",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_14",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "合并同类项",
+      "domain": "数与运算",
+      "subdomain": "代数",
+      "difficulty": 2,
+      "summary": "会合并同类项",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_15",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "因式分解",
+      "domain": "数与运算",
+      "subdomain": "代数",
+      "difficulty": 3,
+      "summary": "会用提公因式法/公式法进行因式分解",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_16",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "分式",
+      "domain": "数与运算",
+      "subdomain": "代数",
+      "difficulty": 3,
+      "summary": "理解分式,会进行分式运算",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_NS_17",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "分式方程",
+      "domain": "数与运算",
+      "subdomain": "方程",
+      "difficulty": 3,
+      "summary": "会解分式方程",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_01",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "一元一次方程",
+      "domain": "数量关系",
+      "subdomain": "方程",
+      "difficulty": 2,
+      "summary": "理解一元一次方程,会求解",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_02",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "二元一次方程组",
+      "domain": "数量关系",
+      "subdomain": "方程",
+      "difficulty": 3,
+      "summary": "理解二元一次方程组,会用代入/加减消元法求解",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_03",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "一元一次不等式",
+      "domain": "数量关系",
+      "subdomain": "不等式",
+      "difficulty": 3,
+      "summary": "会解一元一次不等式",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_04",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "一元一次不等式组",
+      "domain": "数量关系",
+      "subdomain": "不等式",
+      "difficulty": 3,
+      "summary": "会解一元一次不等式组",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_05",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "一元二次方程",
+      "domain": "数量关系",
+      "subdomain": "方程",
+      "difficulty": 3,
+      "summary": "会用直接开平方法/配方法/公式法/因式分解法解一元二次方程",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_06",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "根的判别式",
+      "domain": "数量关系",
+      "subdomain": "方程",
+      "difficulty": 3,
+      "summary": "理解根的判别式,判断根的情况",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_07",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "函数概念",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 2,
+      "summary": "理解函数概念,体会对应思想",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_08",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "函数图象",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 2,
+      "summary": "会画函数图象,能从图象获取信息",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_09",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "一次函数",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 3,
+      "summary": "理解一次函数,会画图象,会用待定系数法求解析式",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_10",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "反比例函数",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 3,
+      "summary": "理解反比例函数,会画图象,能解决实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_11",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "二次函数",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 3,
+      "summary": "理解二次函数,会画图象,理解顶点式/一般式",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_12",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "正比例函数",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 2,
+      "summary": "理解正比例函数是一次函数的特例",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_QR_13",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "函数应用",
+      "domain": "数量关系",
+      "subdomain": "函数",
+      "difficulty": 3,
+      "summary": "用函数解决实际最值/区间等问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_01",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "相交线",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解相交线,邻补角,对顶角",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_02",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "垂线",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解垂线,点到直线距离",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_03",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "平行线",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解平行线,平行公理,平行线判定与性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_04",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "三角形全等",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "理解全等三角形,SAS/ASA/AAS/SSS 判定",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_05",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "等腰三角形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "理解等腰三角形性质与判定",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_06",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "等边三角形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解等边三角形性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_07",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "直角三角形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解直角三角形性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_08",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "勾股定理",
+      "domain": "图形与几何",
+      "subdomain": "性质",
+      "difficulty": 3,
+      "summary": "理解勾股定理,会用其解决实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_09",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "勾股定理逆定理",
+      "domain": "图形与几何",
+      "subdomain": "性质",
+      "difficulty": 3,
+      "summary": "理解勾股定理逆定理",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_10",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "三角形相似",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "理解相似三角形,会用判定定理",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_11",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "平行四边形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解平行四边形性质与判定",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_12",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "矩形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解矩形性质与判定",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_13",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "菱形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解菱形性质与判定",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_14",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "正方形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解正方形性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_15",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "梯形",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解梯形,等腰梯形性质",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_16",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "多边形内角和",
+      "domain": "图形与几何",
+      "subdomain": "性质",
+      "difficulty": 2,
+      "summary": "理解多边形内角和与外角和",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_17",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "圆:圆心角/弧/弦",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "理解圆心角/弧/弦/弦心距的关系",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_18",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "圆周角",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "理解圆周角定理",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_19",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "圆的切线",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 3,
+      "summary": "理解圆的切线,切线性质与判定",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_20",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "弧长与扇形面积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算弧长和扇形面积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_21",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "投影与视图",
+      "domain": "图形与几何",
+      "subdomain": "图形认识",
+      "difficulty": 2,
+      "summary": "理解投影,三视图",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_22",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "立体图形表面积与体积",
+      "domain": "图形与几何",
+      "subdomain": "测量",
+      "difficulty": 3,
+      "summary": "会计算柱/锥/球等立体图形表面积与体积",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_23",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "尺规作图",
+      "domain": "图形与几何",
+      "subdomain": "操作",
+      "difficulty": 2,
+      "summary": "会用尺规作基本图形:作角/垂直/平行/角平分线",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_24",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "轴对称",
+      "domain": "图形与几何",
+      "subdomain": "图形变换",
+      "difficulty": 2,
+      "summary": "理解轴对称,画轴对称图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_25",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "平移",
+      "domain": "图形与几何",
+      "subdomain": "图形变换",
+      "difficulty": 2,
+      "summary": "理解平移,会在方格纸上画平移图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_26",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "旋转",
+      "domain": "图形与几何",
+      "subdomain": "图形变换",
+      "difficulty": 2,
+      "summary": "理解旋转,会在方格纸上画旋转图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_27",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "中心对称",
+      "domain": "图形与几何",
+      "subdomain": "图形变换",
+      "difficulty": 2,
+      "summary": "理解中心对称,会画中心对称图形",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_28",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "图形的相似",
+      "domain": "图形与几何",
+      "subdomain": "图形变换",
+      "difficulty": 3,
+      "summary": "理解相似图形,位似",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_29",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "锐角三角函数",
+      "domain": "图形与几何",
+      "subdomain": "三角函数",
+      "difficulty": 3,
+      "summary": "理解正弦/余弦/正切函数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_30",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "解直角三角形",
+      "domain": "图形与几何",
+      "subdomain": "应用",
+      "difficulty": 3,
+      "summary": "会用三角函数解直角三角形实际问题",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_31",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "坐标与图形位置",
+      "domain": "图形与几何",
+      "subdomain": "坐标",
+      "difficulty": 2,
+      "summary": "用坐标描述图形位置",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_GM_32",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "坐标与图形运动",
+      "domain": "图形与几何",
+      "subdomain": "坐标",
+      "difficulty": 3,
+      "summary": "用坐标描述图形的平移/旋转/轴对称",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_01",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "全面调查",
+      "domain": "统计与概率",
+      "subdomain": "数据收集",
+      "difficulty": 2,
+      "summary": "理解全面调查",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_02",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "抽样调查",
+      "domain": "统计与概率",
+      "subdomain": "数据收集",
+      "difficulty": 2,
+      "summary": "理解抽样调查,样本/总体",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_03",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "总体/个体/样本/样本容量",
+      "domain": "统计与概率",
+      "subdomain": "数据收集",
+      "difficulty": 2,
+      "summary": "理解总体/个体/样本/样本容量",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_04",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "频数与频率",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 2,
+      "summary": "理解频数/频率",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_05",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "频数分布表与直方图",
+      "domain": "统计与概率",
+      "subdomain": "数据表达",
+      "difficulty": 3,
+      "summary": "会画频数分布表和频数分布直方图",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_06",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "中位数/众数/平均数",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 2,
+      "summary": "会求一组数据的中位数/众数/平均数",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_07",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "极差/方差/标准差",
+      "domain": "统计与概率",
+      "subdomain": "数据描述",
+      "difficulty": 3,
+      "summary": "会计算极差/方差/标准差,理解数据离散程度",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_08",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "随机事件",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 2,
+      "summary": "理解必然事件/不可能事件/随机事件",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_09",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "概率意义",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 2,
+      "summary": "理解概率的意义,感悟概率的统计定义",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_10",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "古典概型",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 3,
+      "summary": "会用古典概型求等可能事件概率",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_11",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "用频率估计概率",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 3,
+      "summary": "会用大量重复试验频率估计概率",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_ST_12",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "用列举法求概率",
+      "domain": "统计与概率",
+      "subdomain": "概率",
+      "difficulty": 2,
+      "summary": "会用列表/树状图列举法求概率",
+      "source": "2022 义教数学课标 OCR"
+    },
+    {
+      "id": "M_G4_PR_01",
+      "subject": "math",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "项目式学习",
+      "domain": "综合与实践",
+      "subdomain": "项目学习",
+      "difficulty": 3,
+      "summary": "用项目式方法解决跨学科实际问题",
+      "source": "2022 义教数学课标 OCR"
+    }
+  ],
+  "edges": [
+    {
+      "from": "M_G1_NS_01",
+      "to": "M_G1_NS_05",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_02",
+      "to": "M_G1_NS_01",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_02",
+      "to": "M_G1_NS_05",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_04",
+      "to": "M_G1_NS_05",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_09",
+      "to": "M_G1_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_09",
+      "to": "M_G1_NS_11",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_07",
+      "to": "M_G1_NS_11",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_06",
+      "to": "M_G1_NS_12",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_06",
+      "to": "M_G1_NS_13",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_06",
+      "to": "M_G1_NS_14",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_08",
+      "to": "M_G1_NS_14",
+      "type": 1
+    },
+    {
+      "from": "M_G1_QR_04",
+      "to": "M_G1_PR_02",
+      "type": 1
+    },
+    {
+      "from": "M_G1_QR_05",
+      "to": "M_G1_PR_03",
+      "type": 1
+    },
+    {
+      "from": "M_G1_QR_06",
+      "to": "M_G1_PR_04",
+      "type": 1
+    },
+    {
+      "from": "M_G1_QR_02",
+      "to": "M_G1_QR_03",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_01",
+      "to": "M_G1_GM_03",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_02",
+      "to": "M_G1_GM_03",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_03",
+      "to": "M_G1_GM_04",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_07",
+      "to": "M_G1_GM_08",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_07",
+      "to": "M_G1_GM_09",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_01",
+      "to": "M_G1_GM_06",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_02",
+      "to": "M_G1_GM_06",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_01",
+      "to": "M_G2_NS_01",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_08",
+      "to": "M_G2_NS_03",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_11",
+      "to": "M_G2_NS_09",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_12",
+      "to": "M_G2_NS_09",
+      "type": 0
+    },
+    {
+      "from": "M_G1_NS_13",
+      "to": "M_G2_NS_11",
+      "type": 1
+    },
+    {
+      "from": "M_G1_NS_14",
+      "to": "M_G2_NS_12",
+      "type": 1
+    },
+    {
+      "from": "M_G1_QR_07",
+      "to": "M_G2_QR_02",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_07",
+      "to": "M_G2_GM_02",
+      "type": 1
+    },
+    {
+      "from": "M_G1_GM_02",
+      "to": "M_G2_GM_04",
+      "type": 1
+    },
+    {
+      "from": "M_G1_ST_01",
+      "to": "M_G2_ST_01",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_02",
+      "to": "M_G2_NS_03",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_09",
+      "to": "M_G2_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_09",
+      "to": "M_G2_NS_11",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_09",
+      "to": "M_G2_NS_12",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_09",
+      "to": "M_G2_NS_13",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_09",
+      "to": "M_G2_NS_14",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_10",
+      "to": "M_G2_NS_15",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_11",
+      "to": "M_G2_NS_15",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_12",
+      "to": "M_G2_NS_15",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_13",
+      "to": "M_G2_NS_15",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_14",
+      "to": "M_G2_NS_15",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_04",
+      "to": "M_G2_NS_08",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_05",
+      "to": "M_G2_NS_07",
+      "type": 1
+    },
+    {
+      "from": "M_G2_QR_05",
+      "to": "M_G2_PR_01",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_01",
+      "to": "M_G2_GM_02",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_01",
+      "to": "M_G2_GM_03",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_02",
+      "to": "M_G2_GM_03",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_04",
+      "to": "M_G2_GM_05",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_10",
+      "to": "M_G2_GM_11",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_12",
+      "to": "M_G2_GM_13",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_14",
+      "to": "M_G2_GM_15",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_12",
+      "to": "M_G2_GM_07",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "M_G2_GM_07",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "M_G2_GM_08",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_07",
+      "to": "M_G2_GM_09",
+      "type": 1
+    },
+    {
+      "from": "M_G2_ST_01",
+      "to": "M_G2_ST_02",
+      "type": 1
+    },
+    {
+      "from": "M_G2_ST_02",
+      "to": "M_G2_ST_04",
+      "type": 1
+    },
+    {
+      "from": "M_G2_ST_04",
+      "to": "M_G2_ST_05",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_07",
+      "to": "M_G3_NS_04",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_08",
+      "to": "M_G3_NS_06",
+      "type": 1
+    },
+    {
+      "from": "M_G2_NS_15",
+      "to": "M_G3_QR_01",
+      "type": 1
+    },
+    {
+      "from": "M_G2_QR_05",
+      "to": "M_G3_QR_03",
+      "type": 1
+    },
+    {
+      "from": "M_G2_GM_05",
+      "to": "M_G3_GM_01",
+      "type": 0
+    },
+    {
+      "from": "M_G2_ST_05",
+      "to": "M_G3_ST_01",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_05",
+      "to": "M_G3_NS_04",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_01",
+      "to": "M_G3_NS_03",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_02",
+      "to": "M_G3_NS_03",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_03",
+      "to": "M_G3_NS_04",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_09",
+      "to": "M_G3_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_01",
+      "to": "M_G3_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_05",
+      "to": "M_G3_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_11",
+      "to": "M_G3_NS_12",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_12",
+      "to": "M_G3_NS_13",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_12",
+      "to": "M_G3_NS_14",
+      "type": 1
+    },
+    {
+      "from": "M_G3_QR_01",
+      "to": "M_G3_QR_02",
+      "type": 1
+    },
+    {
+      "from": "M_G3_QR_03",
+      "to": "M_G3_QR_02",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_01",
+      "to": "M_G3_GM_02",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_02",
+      "to": "M_G3_GM_03",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_01",
+      "to": "M_G3_GM_04",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_02",
+      "to": "M_G3_GM_04",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_06",
+      "to": "M_G3_GM_07",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_07",
+      "to": "M_G3_GM_08",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_09",
+      "to": "M_G3_GM_10",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_01",
+      "to": "M_G3_ST_02",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_02",
+      "to": "M_G3_ST_03",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_05",
+      "to": "M_G4_NS_16",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_05",
+      "to": "M_G4_NS_11",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_04",
+      "to": "M_G4_NS_16",
+      "type": 1
+    },
+    {
+      "from": "M_G3_NS_08",
+      "to": "M_G4_NS_01",
+      "type": 1
+    },
+    {
+      "from": "M_G3_QR_02",
+      "to": "M_G4_QR_01",
+      "type": 1
+    },
+    {
+      "from": "M_G3_QR_03",
+      "to": "M_G4_QR_01",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_05",
+      "to": "M_G4_GM_17",
+      "type": 1
+    },
+    {
+      "from": "M_G3_GM_04",
+      "to": "M_G4_GM_20",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_01",
+      "to": "M_G4_ST_01",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_04",
+      "to": "M_G4_ST_06",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_05",
+      "to": "M_G4_ST_06",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_07",
+      "to": "M_G4_ST_08",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_07",
+      "to": "M_G4_ST_10",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_06",
+      "to": "M_G4_ST_09",
+      "type": 1
+    },
+    {
+      "from": "M_G3_ST_06",
+      "to": "M_G4_ST_08",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_01",
+      "to": "M_G4_NS_07",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_01",
+      "to": "M_G4_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_07",
+      "to": "M_G4_NS_09",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_08",
+      "to": "M_G4_NS_09",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_09",
+      "to": "M_G4_NS_10",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_10",
+      "to": "M_G4_NS_11",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_12",
+      "to": "M_G4_NS_13",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_13",
+      "to": "M_G4_NS_14",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_13",
+      "to": "M_G4_NS_15",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_13",
+      "to": "M_G4_NS_16",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_16",
+      "to": "M_G4_NS_17",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_01",
+      "to": "M_G4_QR_02",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_01",
+      "to": "M_G4_QR_03",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_01",
+      "to": "M_G4_QR_05",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_05",
+      "to": "M_G4_QR_06",
+      "type": 1
+    },
+    {
+      "from": "M_G4_NS_15",
+      "to": "M_G4_QR_05",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_07",
+      "to": "M_G4_QR_08",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_08",
+      "to": "M_G4_QR_09",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_08",
+      "to": "M_G4_QR_10",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_08",
+      "to": "M_G4_QR_11",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_09",
+      "to": "M_G4_QR_12",
+      "type": 1
+    },
+    {
+      "from": "M_G4_QR_09",
+      "to": "M_G4_QR_11",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_01",
+      "to": "M_G4_GM_02",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_02",
+      "to": "M_G4_GM_03",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_03",
+      "to": "M_G4_GM_11",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_04",
+      "to": "M_G4_GM_05",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_05",
+      "to": "M_G4_GM_06",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_05",
+      "to": "M_G4_GM_07",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_07",
+      "to": "M_G4_GM_08",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_08",
+      "to": "M_G4_GM_09",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_04",
+      "to": "M_G4_GM_10",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_11",
+      "to": "M_G4_GM_12",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_11",
+      "to": "M_G4_GM_13",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_12",
+      "to": "M_G4_GM_14",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_13",
+      "to": "M_G4_GM_14",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_11",
+      "to": "M_G4_GM_15",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_16",
+      "to": "M_G4_GM_17",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_17",
+      "to": "M_G4_GM_18",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_17",
+      "to": "M_G4_GM_19",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_07",
+      "to": "M_G4_GM_29",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_29",
+      "to": "M_G4_GM_30",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_31",
+      "to": "M_G4_GM_32",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_24",
+      "to": "M_G4_GM_27",
+      "type": 1
+    },
+    {
+      "from": "M_G4_GM_10",
+      "to": "M_G4_GM_28",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_01",
+      "to": "M_G4_ST_02",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_02",
+      "to": "M_G4_ST_03",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_03",
+      "to": "M_G4_ST_04",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_04",
+      "to": "M_G4_ST_05",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_06",
+      "to": "M_G4_ST_07",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_08",
+      "to": "M_G4_ST_09",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_09",
+      "to": "M_G4_ST_10",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_09",
+      "to": "M_G4_ST_11",
+      "type": 1
+    },
+    {
+      "from": "M_G4_ST_10",
+      "to": "M_G4_ST_12",
+      "type": 1
+    }
+  ]
+}
