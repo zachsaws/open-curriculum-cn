@@ -327,6 +327,10 @@
   /* 概念地图模式：右侧偏移 */
   body.map-mode #cy-container { margin-left: 280px; width: calc(100% - 280px); }
   body.map-mode #map-panel { display: flex !important; }
+  /* 概念地图模式: header 和 search 避免被树遮挡 (P0-10/11) */
+  body.map-mode .header { padding-left: 296px; transition: padding 0.2s; }
+  body.map-mode .search { left: 296px; }
+  body.map-mode .stats { left: 296px; }
 
   /* V3.2 卡片增强: 评估 + 元信息 + 边 reason */
   .meta-row { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0; }
@@ -356,6 +360,7 @@
   .rel-tag.rel-progresses_to { background: rgba(151,201,111,0.2); color: #c5e08c; }
   .rel-tag.rel-relates_to { background: rgba(180,195,235,0.15); color: #b8c0d8; }
   .reason-txt { flex: 1; }
+  .soft-hint { font-size: 9px; color: #8a92a8; margin-left: 6px; font-weight: 400; }
 
   /* 加载状态 */
   #loading {
@@ -425,7 +430,7 @@
 </div>
 
 <div id="wrap">
-  <div id="cy-container" style="width:100%; height:100%;" tabindex="0" role="application" aria-label="概念关系图, 758 节点, 14 学科, 鼠标拖拽平移, 滚轮缩放, 单击节点查看详情"></div>
+  <div id="cy-container" style="width:100%; height:100%;" tabindex="0" role="application" aria-label="概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖拽平移, 滚轮缩放, 单击节点查看详情"></div>
 </div>
 
 <div class="header">

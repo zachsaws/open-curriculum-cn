@@ -137,6 +137,7 @@ const I18N = {
   'en': {
     app_title: '2022 New Curriculum Knowledge Graph',
     app_subtitle: 'Open Curriculum CN · 1:1 reproduction of <a href="https://withmarble.com/curriculum/" target="_blank">Marble</a> paradigm · data from <a href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">PRC MoE 2022 Compulsory Curriculum Standards</a> · CC-BY-SA 4.0',
+    app_subtitle: 'Open Curriculum CN · 1:1 reproduction of <a href="https://withmarble.com/curriculum/" target="_blank">Marble</a> paradigm · data from <a href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">PRC MoE 2022 Compulsory Curriculum Standards</a> · CC-BY-SA 4.0',
     stats_concepts: 'Concepts',
     stats_edges: 'Edges',
     stats_subjects: 'Subjects',
@@ -356,17 +357,26 @@ const CONCEPT_EN = {
 
 function tConcept(n) {
   // 返回当前语言的概念标题
-  // 优先: 节点数据 title_en 字段
+  // 优先: 节点数据 title_en / title_tw 字段
   // 兜底: CONCEPT_EN 字典
-  // 最后: 原 title
+  // V3.2.2 兜底: title_pinyin (英文), title (繁中)
   if (!n) return '';
   if (currentLang === 'en') {
     if (n.title_en) return n.title_en;
     if (CONCEPT_EN[n.id]) return CONCEPT_EN[n.id];
-    // 用 pinyin 转换兜底
+    if (n.title_pinyin) return n.title_pinyin;  // V3.2.2: EN 模式 pinyin
     return n.title || '';
   }
-  if (currentLang === 'zh-TW' && n.title_tw) return n.title_tw;
+  if (currentLang === 'zh-TW') {
+    if (n.title_tw) return n.title_tw;
+    if (n.title) {
+      // V3.2.2: 用 SIMP_TO_TRAD 字典 (1175+ 字) 转换
+      if (window.SIMP_TO_TRAD) {
+        return n.title.split('').map(c => window.SIMP_TO_TRAD[c] || c).join('');
+      }
+      return n.title;
+    }
+  }
   return n.title || '';
 }
 

@@ -399,14 +399,14 @@ function initGraph() {
           'z-index': 50,
         },
       },
-      // 概念地图模式: 分支淡化
+      // 概念地图模式: 分支淡化 (V3.2.2 P0-9 修: 0.08 → 0.3 避免全黑屏)
       {
         selector: 'node.branch-dim',
-        style: { 'opacity': 0.08 },
+        style: { 'opacity': 0.3 },
       },
       {
         selector: 'edge.branch-dim',
-        style: { 'opacity': 0.03 },
+        style: { 'opacity': 0.1 },
       },
       {
         selector: 'node.branch-hl',
@@ -666,11 +666,22 @@ function showCard(node) {
   // sec 标签 — 用 data-i18n attr 配 t() 字符串拼接 (避免 innerHTML 改 span.k)
   const preLabel = document.querySelector('.sec-pre .label');
   const nextLabel = document.querySelector('.sec-next .label');
-  // 重建: <span data-i18n="card_prereq">直接先决</span> · <span class="k" id="card-pre-k">N</span>
-  const preEdges = cy.edges().filter(e => e.target().data('id') === node.id);
-  const nextEdges = cy.edges().filter(e => e.source().data('id') === node.id);
-  preLabel.innerHTML = `<span data-i18n="card_prereq">${window.t('card_prereq')}</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>`;
-  nextLabel.innerHTML = `<span data-i18n="card_unlocks">${window.t('card_unlocks')}</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>`;
+  // V3.2.2: 严格区分硬先决 (prerequisite + progresses_to) vs 软关联 (relates_to)
+  // 卡片"直接先决 / 解锁后继"只显示硬先决; 软关联另外显示
+  const allPre = cy.edges().filter(e => e.target().data('id') === node.id);
+  const allNext = cy.edges().filter(e => e.source().data('id') === node.id);
+  const preEdges = allPre.filter(e => {
+    const r = e.data('rel') || 'prerequisite';
+    return r !== 'relates_to';
+  });
+  const nextEdges = allNext.filter(e => {
+    const r = e.data('rel') || 'prerequisite';
+    return r !== 'relates_to';
+  });
+  const softPre = allPre.filter(e => (e.data('rel') || 'prerequisite') === 'relates_to');
+  const softNext = allNext.filter(e => (e.data('rel') || 'prerequisite') === 'relates_to');
+  preLabel.innerHTML = `<span data-i18n="card_prereq">${window.t('card_prereq')}</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>${softPre.length ? ` <span class="soft-hint">(+${softPre.length} 软关联)</span>` : ''}`;
+  nextLabel.innerHTML = `<span data-i18n="card_unlocks">${window.t('card_unlocks')}</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>${softNext.length ? ` <span class="soft-hint">(+${softNext.length} 软关联)</span>` : ''}`;
 
   // V3.2: 边的 reason (人话解释)
   const fillReasons = (container, edges, side) => {
