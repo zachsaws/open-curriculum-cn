@@ -4,34 +4,36 @@
 > 复刻 [Marble](https://withmarble.com/curriculum/) 的范式，但用中国数据，做得比 Marble 更深。
 
 [![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Concepts: 758](https://img.shields.io/badge/concepts-758-green.svg)]()
+[![Concepts: 1906](https://img.shields.io/badge/concepts-1906-green.svg)]()
+[![Relations: 4736](https://img.shields.io/badge/relations-4736-blue.svg)]()
 [![Subjects: 14](https://img.shields.io/badge/subjects-14-green.svg)]()
 [![Coverage: G1--G9](https://img.shields.io/badge/coverage-G1--G9-blue.svg)]()
 
-🔗 **在线演示**: [2022 新课标知识图谱](https://ft796n45xf84x.space.mcode.cn)
+🔗 **在线演示 (V3.0)**: [2022 新课标知识图谱](https://3dsz4i31s9mjc.space.mcode.cn) · 1906 概念 / 4736 关系
 
 ## 数据范围
 
 - **14 学科** × **1-9 年级** 全学段
-- **758 概念** + **167 先决关系** + **12 跨学科软关系**
+- **1906 概念** + **4736 关系**（1759 prerequisite + 364 progresses_to + 2613 relates_to）
+- **跨学段螺旋 46%**（2183 跨学段边）/ **跨学科 55%**（2613 跨学科边）
 - **每个概念** 都带 `content_req`（课标内容要求原文）/ `academic_req`（课标学业要求）/ `bloom`（布鲁姆动词）/ `key_points` / `estimated_minutes` / `src_page`（链回人教社 PDF）
 
 | 学科 | 概念 | OCR 匹配 | 完整率 |
 |---|---:|---:|---:|
 | 数学 | 214 | 100% | 100% |
 | 语文 | 75 | 100% | 100% |
-| 英语 | 71 | 0%* | 100% |
-| 物理 | 63 | 100% | 100% |
-| 化学 | 37 | 100% | 100% |
-| 生物 | 36 | 100% | 100% |
-| 历史 | 43 | 100% | 100% |
-| 地理 | 43 | 100% | 100% |
-| 道法 | 39 | 100% | 100% |
-| 科学 | 41 | 100% | 100% |
-| 信息科技 | 28 | 100% | 100% |
-| 艺术 | 22 | 100% | 100% |
-| 体育 | 25 | 100% | 100% |
-| 劳动 | 21 | 100% | 100% |
+| 英语 | 296 | 0%* | 100% |
+| 物理 | 121 | 100% | 100% |
+| 化学 | 62 | 100% | 100% |
+| 生物 | 71 | 100% | 100% |
+| 历史 | 136 | 100% | 100% |
+| 地理 | 91 | 100% | 100% |
+| 道法 | 115 | 100% | 100% |
+| 科学 | 121 | 100% | 100% |
+| 信息科技 | 97 | 100% | 100% |
+| 艺术 | 78 | 100% | 100% |
+| 体育 | 87 | 100% | 100% |
+| 劳动 | 85 | 100% | 100% |
 
 *英语 OCR 无"内容要求"段标，匹配靠关键词覆盖；其余字段（content_req/academic_req/bloom/key_points）100% 完整。
 
@@ -64,7 +66,7 @@ for s in math chinese english physics chemistry biology history geography morali
 done
 
 # 合并
-python src/pipeline/merge_v0.7_all.py
+python src/pipeline/merge_v3.0.py
 
 # 本地看
 cd web && python -m http.server 8000
@@ -105,9 +107,9 @@ open-curriculum-cn/
 │   ├── raw/curriculum_2022/   # 17 本 PDF (人教社下载)
 │   ├── parsed/                # OCR 解析 (17 本 × 9K-120K 字符)
 │   └── graph/                 # 知识图谱 JSON (14 学科)
-│       ├── all_v0.7.json      # 总图 (758 概念, 167 关系)
-│       ├── {subject}_v0.7.json   # 学科 V0.7
-│       └── {subject}_review_r1.json  # 自评报告
+│       ├── all_v3.0.json      # 总图 (1906 概念, 4736 关系)
+│       ├── {subject}_v3.0.json   # 学科 V3.0
+│       └── {subject}_review_r3.json  # 自评报告
 ├── src/
 │   ├── extract/               # PDF 下载 + OCR
 │   ├── pipeline/              # enrich / merge / scan_ceiling
@@ -135,7 +137,7 @@ open-curriculum-cn/
 | 维度 | Marble | Open Curriculum CN |
 |---|---|---|
 | 数据源 | 美国 Common Core (8 主科) | 中国 2022 义教课标 (14 学科) |
-| 概念数 | 1,590 | 758 (持续增长到 ~1800) |
+| 概念数 | 1,590 | **1,906** (V3.0, 接近课标理论上限) |
 | 学段 | K-12 (13 学段) | G1-G9 (4 学段 × 14 学科) |
 | 可视化 | 3D 力导向 (Three.js) | 2D 力导向 (cytoscape.js) |
 | 数据详情 | 概念标题 | 概念标题 + 内容要求 + 学业要求 + 知识要点 + 布鲁姆动词 + 学习时间 + 课标页码 |
@@ -151,6 +153,10 @@ open-curriculum-cn/
 - [x] V1.0: README + CONTRIBUTING + B 端 API (本文档)
 - [x] V1.5: GitHub Action 自动 enrich + JSON 验证
 - [x] V2.0: 繁体 + 英文 UI (i18n) + RSS feed
+- [x] V2.1: 数据修补 (src_page/academic_req/src_stage) + gzip 压缩 + 移动端防裁切
+- [x] V2.2: 关系扩充 (167→299) + rel 三类型 + 跨学科 9.9%→26.4%
+- [x] V2.3: UX 全套 (入口高亮/9 快捷键/ARIA/从这里学起/移动端) + 30 测试
+- [x] **V3.0: 概念 758→1906 / 关系 299→4736 / 14 学科全量**
 
 ## 贡献
 

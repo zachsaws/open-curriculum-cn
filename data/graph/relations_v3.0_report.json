@@ -1,0 +1,65 @@
+{
+  "version": "v3.0",
+  "generated_at": "2026-07-22T17:33:24",
+  "summary": {
+    "total_nodes": 1906,
+    "total_edges": 4736,
+    "by_rel": {
+      "prerequisite": 1759,
+      "progresses_to": 364,
+      "relates_to": 2613
+    },
+    "pass_target_500": true
+  },
+  "by_source": {
+    "curriculum": 2092,
+    "domain_logic": 2512,
+    "2022-math-NS": 3,
+    "2022-math-GM": 5,
+    "2022-math-QR": 6,
+    "2022-math-ST": 3,
+    "2022-math-PR": 2,
+    "2022-chinese-AL": 3,
+    "2022-chinese-LR": 3,
+    "2022-english-PH": 3,
+    "2022-english-GR": 3,
+    "2022-cross-MP": 10,
+    "2022-cross-MC": 9,
+    "2022-cross-MB": 10,
+    "2022-cross-MI": 7,
+    "2022-cross-MG": 8,
+    "2022-cross-MH": 2,
+    "2022-cross-CH": 7,
+    "2022-cross-CE": 4,
+    "2022-cross-EC": 2,
+    "2022-cross-PC": 6,
+    "2022-cross-PB": 6,
+    "2022-cross-BC": 4,
+    "2022-cross-IA": 4,
+    "2022-cross-SP": 6,
+    "2022-cross-SX": 1,
+    "2022-cross-SB": 1,
+    "2022-cross-PP": 3,
+    "2022-cross-AM": 2,
+    "2022-cross-LB": 2,
+    "2022-cross-LC": 1,
+    "2022-cross-LP": 1,
+    "2022-cross-GB": 2,
+    "2022-cross-MLB": 1,
+    "2022-cross-MLH": 2
+  },
+  "by_weight": {
+    "1.0": 1759,
+    "0.8": 364,
+    "0.5": 2613
+  },
+  "field_coverage": {
+    "weight": 4736,
+    "to": 4736,
+    "id": 4736,
+    "rationale": 4736,
+    "rel": 4736,
+    "source": 4736,
+    "from": 4736
+  }
+}
