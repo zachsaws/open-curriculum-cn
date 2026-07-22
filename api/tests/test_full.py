@@ -1,5 +1,5 @@
 """
-完整测试套件 V2 — V0 数据 + 关系 + i18n + 性能
+完整测试套件 V3 — V3.0 数据 + 关系 + i18n + 性能
 跑: python -m pytest api/tests/test_full.py -v
 """
 import json
@@ -13,7 +13,7 @@ from fastapi.testclient import TestClient
 from api.server import app
 from api.web_server import app as web_app
 
-DATA = json.load(open(Path(__file__).parent.parent.parent / "data" / "graph" / "all_v0.8.json"))
+DATA = json.load(open(Path(__file__).parent.parent.parent / "data" / "graph" / "all_v3.0.json"))
 client = TestClient(app)
 web = TestClient(web_app)
 

@@ -1,0 +1,17 @@
+{
+  "subject": "morality_law",
+  "round": 3,
+  "total_concepts": 115,
+  "content_req_matched": 115,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 11,
+  "academic_req_matched_pct": 9.6,
+  "content_req_full": 115,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 2.8,
+  "cross_stage_mismatch": 70,
+  "ocr_threshold": 3,
+  "full_threshold": 60,
+  "verdict": "PASS"
+}

@@ -1,0 +1,1055 @@
+{
+  "nodes": [
+    {
+      "id": "B_B1_01",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "细胞是生命基本单位",
+      "domain": "生物体结构",
+      "subdomain": "细胞",
+      "difficulty": 1,
+      "summary": "认识细胞是生命活动的基本单位",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。认识细胞是生命活动的基本单位",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "认识细胞是生命活动的基本单位"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_02",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "动植物细胞结构",
+      "domain": "生物体结构",
+      "subdomain": "细胞",
+      "difficulty": 2,
+      "summary": "了解动植物细胞的结构与区别",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解动植物细胞的结构与区别",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解动植物细胞的结构与区别"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_03",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "细胞分裂与分化",
+      "domain": "生物体结构",
+      "subdomain": "细胞",
+      "difficulty": 3,
+      "summary": "理解细胞分裂和分化形成组织",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解细胞分裂和分化形成组织",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解",
+        "形成"
+      ],
+      "key_points": [
+        "理解细胞分裂和分化形成组织",
+        "细胞是生物体结构和功能的基本单位"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_04",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "生物体的结构层次",
+      "domain": "生物体结构",
+      "subdomain": "组织",
+      "difficulty": 2,
+      "summary": "理解细胞→组织→器官→系统→个体",
+      "source": "2022 义教课标",
+      "content_req": "识别给定生物材料所属的结构层次，并阐明生物体在结构和。理解细胞→组织→器官→系统→个体",
+      "src_page": 17,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "识别给定生物材料所属的结构层次，并阐明生物体在结构和 识别给定生物材料所属的结构层次，并阐明生物体在结构和 识别给定生物材料所属的结构层次，并阐明生物体在结构和",
+      "bloom": [
+        "理解",
+        "识别"
+      ],
+      "key_points": [
+        "识别给定生物材料所属的结构层次",
+        "理解细胞→组织→器官→系统→个体",
+        "并阐明生物体在结构和"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_05",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "单细胞生物",
+      "domain": "生物体结构",
+      "subdomain": "生物",
+      "difficulty": 2,
+      "summary": "了解草履虫/变形虫等单细胞生物",
+      "source": "2022 义教课标",
+      "content_req": "细菌是单细胞生物，无成形的细胞核。了解草履虫/变形虫等单细胞生物",
+      "src_page": 19,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "识别动植物细胞的结构并说出其异同点，说明细胞是生物体 运用示意图或模型等方式，展示和说明细胞各结构的功能及 识别给定生物材料所属的结构层次，并阐明生物体在结构和",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解草履虫/变形虫等单细胞生物",
+        "细菌是单细胞生物",
+        "无成形的细胞核"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_06",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "人体的消化系统",
+      "domain": "生物体结构",
+      "subdomain": "系统",
+      "difficulty": 2,
+      "summary": "了解人体消化系统的组成和功能",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解人体消化系统的组成和功能",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解人体消化系统的组成和功能",
+        "细胞是生物体结构和功能的基本单位"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_07",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "人体的呼吸系统",
+      "domain": "生物体结构",
+      "subdomain": "系统",
+      "difficulty": 2,
+      "summary": "了解人体呼吸系统",
+      "source": "2022 义教课标",
+      "content_req": "运用图示或模型表示生态系统中各生物成分之间的营养。了解人体呼吸系统",
+      "src_page": 22,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "运用图示或模型表示生态系统中各生物成分之间的营养 运用图示或模型表示生态系统中各生物成分之间的营养",
+      "bloom": [
+        "了解",
+        "运用"
+      ],
+      "key_points": [
+        "运用图示或模型表示生态系统中各生物成分之间的营养",
+        "了解人体呼吸系统"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_08",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "人体的血液循环",
+      "domain": "生物体结构",
+      "subdomain": "系统",
+      "difficulty": 3,
+      "summary": "了解血液循环路径",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解血液循环路径",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解血液循环路径"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_09",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "人体的泌尿系统",
+      "domain": "生物体结构",
+      "subdomain": "系统",
+      "difficulty": 2,
+      "summary": "了解人体泌尿系统",
+      "source": "2022 义教课标",
+      "content_req": "运用图示或模型表示生态系统中各生物成分之间的营养。了解人体泌尿系统",
+      "src_page": 22,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "运用图示或模型表示生态系统中各生物成分之间的营养 运用图示或模型表示生态系统中各生物成分之间的营养",
+      "bloom": [
+        "了解",
+        "运用"
+      ],
+      "key_points": [
+        "运用图示或模型表示生态系统中各生物成分之间的营养",
+        "了解人体泌尿系统"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B1_10",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "人体的神经系统",
+      "domain": "生物体结构",
+      "subdomain": "系统",
+      "difficulty": 3,
+      "summary": "了解神经系统的组成和功能",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解神经系统的组成和功能",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解神经系统的组成和功能",
+        "细胞是生物体结构和功能的基本单位"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B2_01",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "生物分类",
+      "domain": "生物多样性",
+      "subdomain": "分类",
+      "difficulty": 2,
+      "summary": "理解生物分类等级:界门纲目科属种",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解生物分类等级:界门纲目科属种",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解",
+        "分类"
+      ],
+      "key_points": [
+        "理解生物分类等级:界门纲目科属种",
+        "细胞是生物体结构和功能的基本单位"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B2_02",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "植物的主要类群",
+      "domain": "生物多样性",
+      "subdomain": "植物",
+      "difficulty": 2,
+      "summary": "了解藻类/苔藓/蕨类/裸子/被子植物",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解藻类/苔藓/蕨类/裸子/被子植物",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解藻类/苔藓/蕨类/裸子/被子植物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B2_03",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "动物的主要类群",
+      "domain": "生物多样性",
+      "subdomain": "动物",
+      "difficulty": 2,
+      "summary": "了解无脊椎动物/脊椎动物主要类群",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解无脊椎动物/脊椎动物主要类群",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解无脊椎动物/脊椎动物主要类群"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B2_04",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 7,
+      "title": "保护生物多样性",
+      "domain": "生物多样性",
+      "subdomain": "保护",
+      "difficulty": 2,
+      "summary": "理解保护生物多样性的意义",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解保护生物多样性的意义",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解保护生物多样性的意义"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B3_01",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "生态系统的组成",
+      "domain": "生物与环境",
+      "subdomain": "生态",
+      "difficulty": 2,
+      "summary": "理解生态系统的生物成分和非生物成分",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解生态系统的生物成分和非生物成分",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解生态系统的生物成分和非生物成分"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B3_02",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "食物链和食物网",
+      "domain": "生物与环境",
+      "subdomain": "生态",
+      "difficulty": 2,
+      "summary": "理解食物链和食物网",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解食物链和食物网",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解食物链和食物网"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B3_03",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "生态系统的能量流动",
+      "domain": "生物与环境",
+      "subdomain": "生态",
+      "difficulty": 3,
+      "summary": "理解能量沿食物链单向流动",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解能量沿食物链单向流动",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "理解能量沿食物链单向流动",
+        "细胞是生物体结构和功能的基本单位"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B3_04",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "生态系统的物质循环",
+      "domain": "生物与环境",
+      "subdomain": "生态",
+      "difficulty": 3,
+      "summary": "理解碳循环/氮循环",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解碳循环/氮循环",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解碳循环/氮循环"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B3_05",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "生态系统的自我调节",
+      "domain": "生物与环境",
+      "subdomain": "生态",
+      "difficulty": 3,
+      "summary": "理解生态系统的稳定性",
+      "source": "2022 义教课标",
+      "content_req": "分析某生态系统受到破坏的具体实例，盖明生态系统的自我。理解生态系统的稳定性",
+      "src_page": 23,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "分析某生态系统受到破坏的具体实例，盖明生态系统的自我 分析某生态系统受到破坏的具体实例，盖明生态系统的自我",
+      "bloom": [
+        "理解",
+        "分析"
+      ],
+      "key_points": [
+        "分析某生态系统受到破坏的具体实例",
+        "理解生态系统的稳定性",
+        "盖明生态系统的自我"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B3_06",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "生物圈",
+      "domain": "生物与环境",
+      "subdomain": "生态",
+      "difficulty": 2,
+      "summary": "了解生物圈是最大的生态系统",
+      "source": "2022 义教课标",
+      "content_req": "分析人类活动对生态环境造成破坏的实例，形成保护生物圈。了解生物圈是最大的生态系统",
+      "src_page": 23,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "从物质循环与能量变化的角度，阐明植物在生物圈中的",
+      "bloom": [
+        "了解",
+        "形成",
+        "分析"
+      ],
+      "key_points": [
+        "分析人类活动对生态环境造成破坏的实例",
+        "形成保护生物圈",
+        "了解生物圈是最大的生态系统"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_01",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "植物的有性生殖",
+      "domain": "生命的延续",
+      "subdomain": "生殖",
+      "difficulty": 2,
+      "summary": "了解植物开花/传粉/受精/结果过程",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解植物开花/传粉/受精/结果过程",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解植物开花/传粉/受精/结果过程"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_02",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "动物的生殖和发育",
+      "domain": "生命的延续",
+      "subdomain": "生殖",
+      "difficulty": 2,
+      "summary": "了解昆虫/两栖/鸟类的生殖发育",
+      "source": "2022 义教课标",
+      "content_req": "叶芽通过细胞的分裂和分化发育成共和叶。了解昆虫/两栖/鸟类的生殖发育",
+      "src_page": 24,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "叶芽通过细胞的分裂和分化发育成共 叶芽通过细胞的分裂和分化发育成",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解昆虫/两栖/鸟类的生殖发育",
+        "叶芽通过细胞的分裂和分化发育成共和叶"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_03",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "人的生殖和发育",
+      "domain": "生命的延续",
+      "subdomain": "生殖",
+      "difficulty": 2,
+      "summary": "了解人的生殖系统和发育过程",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解人的生殖系统和发育过程",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解人的生殖系统和发育过程"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_04",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "DNA 是遗传物质",
+      "domain": "生命的延续",
+      "subdomain": "遗传",
+      "difficulty": 3,
+      "summary": "理解 DNA 是主要的遗传物质",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解 DNA 是主要的遗传物质",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解 DNA 是主要的遗传物质"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_05",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "基因与性状",
+      "domain": "生命的延续",
+      "subdomain": "遗传",
+      "difficulty": 3,
+      "summary": "理解基因控制生物的性状",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解基因控制生物的性状",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解基因控制生物的性状"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_06",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "基因的传递",
+      "domain": "生命的延续",
+      "subdomain": "遗传",
+      "difficulty": 3,
+      "summary": "理解基因从亲代到子代的传递",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解基因从亲代到子代的传递",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解基因从亲代到子代的传递"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_07",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "人的性别决定",
+      "domain": "生命的延续",
+      "subdomain": "遗传",
+      "difficulty": 2,
+      "summary": "了解人的性别决定 XY 机制",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解人的性别决定 XY 机制",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解人的性别决定 XY 机制"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_08",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "遗传病与优生优育",
+      "domain": "生命的延续",
+      "subdomain": "健康",
+      "difficulty": 2,
+      "summary": "了解遗传病和优生优育",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解遗传病和优生优育",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解遗传病和优生优育"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B4_09",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "生命的起源与进化",
+      "domain": "生命的延续",
+      "subdomain": "进化",
+      "difficulty": 3,
+      "summary": "了解生命起源和生物进化",
+      "source": "2022 义教课标",
+      "content_req": "运用进化与适应的观点，解释生物多样性的原因。。了解生命起源和生物进化",
+      "src_page": 34,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "运用进化与适应的观点，解释生物多样性的原因。 运用进化与适应的观点，解释生物多样性的原因。 运用结构与功能相适应、生物与环境相适应的观点，阐明基",
+      "bloom": [
+        "了解",
+        "运用"
+      ],
+      "key_points": [
+        "运用进化与适应的观点",
+        "了解生命起源和生物进化",
+        "解释生物多样性的原因"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B5_01",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "传染病及其预防",
+      "domain": "健康",
+      "subdomain": "疾病",
+      "difficulty": 2,
+      "summary": "了解传染病的传播途径和预防",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解传染病的传播途径和预防",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解传染病的传播途径和预防"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B5_02",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "免疫与计划免疫",
+      "domain": "健康",
+      "subdomain": "免疫",
+      "difficulty": 3,
+      "summary": "理解免疫系统和计划免疫",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。理解免疫系统和计划免疫",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "理解免疫系统和计划免疫"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B5_03",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "健康的生活方式",
+      "domain": "健康",
+      "subdomain": "生活方式",
+      "difficulty": 1,
+      "summary": "养成健康生活方式",
+      "source": "2022 义教课标",
+      "content_req": "运用示意图或模型等方式，展示和说明细胞各结构的功能及。养成健康生活方式",
+      "src_page": 17,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "通过列表等多种方式，对不同生物类群的形态结构、生活环",
+      "bloom": [
+        "能",
+        "运用",
+        "说明"
+      ],
+      "key_points": [
+        "展示和说明细胞各结构的功能及",
+        "运用示意图或模型等方式",
+        "养成健康生活方式"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B5_04",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "用药与急救",
+      "domain": "健康",
+      "subdomain": "急救",
+      "difficulty": 2,
+      "summary": "了解安全用药和急救常识",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。了解安全用药和急救常识",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "了解安全用药和急救常识"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B6_01",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 8,
+      "title": "模型制作",
+      "domain": "跨学科实践",
+      "subdomain": "动手",
+      "difficulty": 2,
+      "summary": "制作生物模型(如细胞/眼球)",
+      "source": "2022 义教课标",
+      "content_req": "模型制作类跨学科实践活动: 针对特定的生物学内容，运。制作生物模型(如细胞/眼球)",
+      "src_page": 35,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "模型制作类跨学科实践活动: 针对特定的生物学内容，运 模型制作类跨学科实践活动: 针对特定的生物学内容，运 指导学生设计实践活动方案，在合作交流的基础上完善活动",
+      "bloom": [
+        "制作"
+      ],
+      "key_points": [
+        "模型制作类跨学科实践活动: 针对特定的生物学内容",
+        "制作生物模型(如细胞/眼球)"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B6_02",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 8,
+      "title": "植物栽培与动物饲养",
+      "domain": "跨学科实践",
+      "subdomain": "实践",
+      "difficulty": 2,
+      "summary": "栽培植物/饲养动物",
+      "source": "2022 义教课标",
+      "content_req": "植物栽培和动物饲养类跨学科实践活动: 植物栽培和动物。栽培植物/饲养动物",
+      "src_page": 36,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "识别动植物细胞的结构并说出其异同点，说明细胞是生物体 运用示意图或模型等方式，展示和说明细胞各结构的功能及 识别给定生物材料所属的结构层次，并阐明生物体在结构和",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "植物栽培和动物饲养类跨学科实践活动: 植物栽培和动物",
+        "栽培植物/饲养动物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "B_B6_03",
+      "subject": "biology",
+      "stage": 4,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "发酵食品制作",
+      "domain": "跨学科实践",
+      "subdomain": "实践",
+      "difficulty": 2,
+      "summary": "制作酸奶/馒头等发酵食品",
+      "source": "2022 义教课标",
+      "content_req": "细胞是生物体结构和功能的基本单位。制作酸奶/馒头等发酵食品",
+      "src_page": 16,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "细胞是生物体结构和功能的基本单位 细胞是生物体结构和功能的基本单位",
+      "bloom": [
+        "能",
+        "制作"
+      ],
+      "key_points": [
+        "细胞是生物体结构和功能的基本单位",
+        "制作酸奶/馒头等发酵食品"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

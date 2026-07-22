@@ -1,0 +1,17 @@
+{
+  "subject": "chinese",
+  "round": 3,
+  "total_concepts": 209,
+  "content_req_matched": 209,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 0,
+  "academic_req_matched_pct": 0.0,
+  "content_req_full": 209,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 3.1,
+  "cross_stage_mismatch": 72,
+  "ocr_threshold": 15,
+  "full_threshold": 80,
+  "verdict": "PASS"
+}

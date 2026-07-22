@@ -1,0 +1,82 @@
+{
+  "scanned_at": "2026-07-22T17:27:57.871164",
+  "total_ceiling": 1337,
+  "corrected_ceiling": 1998,
+  "subjects": {
+    "english": {
+      "v3_count": 296,
+      "concepts_ceiling": 383,
+      "ratio_pct": 77.3
+    },
+    "science": {
+      "v3_count": 121,
+      "concepts_ceiling": 187,
+      "ratio_pct": 64.7
+    },
+    "info_tech": {
+      "v3_count": 97,
+      "concepts_ceiling": 144,
+      "ratio_pct": 67.4
+    },
+    "math": {
+      "v3_count": 337,
+      "concepts_ceiling": 134,
+      "ratio_pct": 251.5
+    },
+    "biology": {
+      "v3_count": 71,
+      "concepts_ceiling": 110,
+      "ratio_pct": 64.5
+    },
+    "chinese": {
+      "v3_count": 209,
+      "concepts_ceiling": 90,
+      "ratio_pct": 232.2
+    },
+    "pe_health": {
+      "v3_count": 87,
+      "concepts_ceiling": 87,
+      "ratio_pct": 100.0
+    },
+    "physics": {
+      "v3_count": 121,
+      "concepts_ceiling": 83,
+      "ratio_pct": 145.8
+    },
+    "history": {
+      "v3_count": 136,
+      "concepts_ceiling": 49,
+      "ratio_pct": 277.6
+    },
+    "chemistry": {
+      "v3_count": 62,
+      "concepts_ceiling": 37,
+      "ratio_pct": 167.6
+    },
+    "geography": {
+      "v3_count": 91,
+      "concepts_ceiling": 14,
+      "ratio_pct": 650.0
+    },
+    "labor": {
+      "v3_count": 85,
+      "concepts_ceiling": 12,
+      "ratio_pct": 708.3
+    },
+    "art": {
+      "v3_count": 78,
+      "concepts_ceiling": 4,
+      "ratio_pct": 1950.0
+    },
+    "morality_law": {
+      "v3_count": 115,
+      "concepts_ceiling": 3,
+      "ratio_pct": 3833.3
+    }
+  },
+  "total_v3_concepts": 1906,
+  "total_v3_edges": 3964,
+  "total_v0_8_concepts": 758,
+  "growth": 1148,
+  "growth_pct": 151.5
+}

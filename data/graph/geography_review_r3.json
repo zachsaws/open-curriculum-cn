@@ -1,0 +1,17 @@
+{
+  "subject": "geography",
+  "round": 3,
+  "total_concepts": 91,
+  "content_req_matched": 91,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 10,
+  "academic_req_matched_pct": 11.0,
+  "content_req_full": 91,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 3.5,
+  "cross_stage_mismatch": 0,
+  "ocr_threshold": 3,
+  "full_threshold": 60,
+  "verdict": "PASS"
+}

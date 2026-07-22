@@ -1,0 +1,17 @@
+{
+  "subject": "info_tech",
+  "round": 3,
+  "total_concepts": 97,
+  "content_req_matched": 97,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 3,
+  "academic_req_matched_pct": 3.1,
+  "content_req_full": 97,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 3.8,
+  "cross_stage_mismatch": 43,
+  "ocr_threshold": 3,
+  "full_threshold": 60,
+  "verdict": "PASS"
+}

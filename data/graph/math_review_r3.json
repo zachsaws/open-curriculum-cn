@@ -1,0 +1,17 @@
+{
+  "subject": "math",
+  "round": 3,
+  "total_concepts": 337,
+  "content_req_matched": 337,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 145,
+  "academic_req_matched_pct": 43.0,
+  "content_req_full": 337,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 3.8,
+  "cross_stage_mismatch": 19,
+  "ocr_threshold": 15,
+  "full_threshold": 80,
+  "verdict": "PASS"
+}

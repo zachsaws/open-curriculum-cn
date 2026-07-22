@@ -1,0 +1,1081 @@
+{
+  "nodes": [
+    {
+      "id": "CH_C1_01",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "物质的多样性",
+      "domain": "物质的多样性",
+      "subdomain": "分类",
+      "difficulty": 1,
+      "summary": "认识物质是多样的,可按组成/性质分类",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。认识物质是多样的,可按组成/性质分类",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "认识",
+        "能",
+        "分类"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "认识物质是多样的",
+        "可按组成/性质分类"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C1_02",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "纯净物与混合物",
+      "domain": "物质的多样性",
+      "subdomain": "分类",
+      "difficulty": 2,
+      "summary": "理解纯净物和混合物的区别",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解纯净物和混合物的区别",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解纯净物和混合物的区别"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C1_03",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "单质与化合物",
+      "domain": "物质的多样性",
+      "subdomain": "分类",
+      "difficulty": 2,
+      "summary": "理解单质和化合物",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解单质和化合物",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解单质和化合物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C1_04",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "酸碱盐",
+      "domain": "物质的多样性",
+      "subdomain": "分类",
+      "difficulty": 3,
+      "summary": "认识常见的酸/碱/盐",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。认识常见的酸/碱/盐",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "认识常见的酸/碱/盐"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C1_05",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "氧化物",
+      "domain": "物质的多样性",
+      "subdomain": "分类",
+      "difficulty": 2,
+      "summary": "认识氧化物",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。认识氧化物",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "认识氧化物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_01",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "金属的物理性质",
+      "domain": "物质的性质与应用",
+      "subdomain": "金属",
+      "difficulty": 2,
+      "summary": "了解金属的物理性质(导电/导热/延展)",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解金属的物理性质(导电/导热/延展)",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解金属的物理性质(导电/导热/延展)"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_02",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "金属活动性顺序",
+      "domain": "物质的性质与应用",
+      "subdomain": "金属",
+      "difficulty": 3,
+      "summary": "理解金属活动性顺序",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解金属活动性顺序",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解金属活动性顺序"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_03",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "金属的冶炼",
+      "domain": "物质的性质与应用",
+      "subdomain": "金属",
+      "difficulty": 3,
+      "summary": "了解金属冶炼的基本原理",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解金属冶炼的基本原理",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解金属冶炼的基本原理"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_04",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "金属的腐蚀与防护",
+      "domain": "物质的性质与应用",
+      "subdomain": "金属",
+      "difficulty": 2,
+      "summary": "了解金属腐蚀的原因和防护方法",
+      "source": "2022 义教课标",
+      "content_req": "熟悉化学实验室安全警示标志，学会正确使用安全防护设。了解金属腐蚀的原因和防护方法",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "熟悉化学实验室安全警示标志，学会正确使用安全防护设",
+      "bloom": [
+        "了解",
+        "会",
+        "实验"
+      ],
+      "key_points": [
+        "熟悉化学实验室安全警示标志",
+        "学会正确使用安全防护设",
+        "了解金属腐蚀的原因和防护方法"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_05",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "常见的酸",
+      "domain": "物质的性质与应用",
+      "subdomain": "酸",
+      "difficulty": 3,
+      "summary": "了解常见酸(盐酸/硫酸)的性质",
+      "source": "2022 义教课标",
+      "content_req": "常见的酸、碱、盐。了解常见酸(盐酸/硫酸)的性质",
+      "src_page": 26,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "熟悉化学实验室安全警示标志，学会正确使用安全防护设 学会试剂的取用、简单仪器的使用及连接、加热等实验基本 初步学会在教师指导下根据实验需要选择实验试剂和仪器，",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解常见酸(盐酸/硫酸)的性质",
+        "常见的酸、碱、盐"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_06",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "常见的碱",
+      "domain": "物质的性质与应用",
+      "subdomain": "碱",
+      "difficulty": 3,
+      "summary": "了解常见碱(NaOH/Ca(OH)2)的性质",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解常见碱(NaOH/Ca(OH)2)的性质",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "用及性质与用途的关系; 能利用常见物质的性质，分析、解释一些简",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解常见碱(NaOH/Ca(OH)2)的性质"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_07",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "酸碱中和反应",
+      "domain": "物质的性质与应用",
+      "subdomain": "反应",
+      "difficulty": 3,
+      "summary": "理解酸碱中和反应",
+      "source": "2022 义教课标",
+      "content_req": "化学反应及质量守恒定律。理解酸碱中和反应",
+      "src_page": 34,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会通过化学反应实现物质转化的意义和价值，发展核心素养。",
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解酸碱中和反应",
+        "化学反应及质量守恒定律"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_08",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "pH 测定",
+      "domain": "物质的性质与应用",
+      "subdomain": "测量",
+      "difficulty": 2,
+      "summary": "会用 pH 试纸测定溶液酸碱度",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。会用 pH 试纸测定溶液酸碱度",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "会",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "会用 pH 试纸测定溶液酸碱度"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_09",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "常见的盐",
+      "domain": "物质的性质与应用",
+      "subdomain": "盐",
+      "difficulty": 3,
+      "summary": "了解常见盐(NaCl/Na2CO3)的性质",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解常见盐(NaCl/Na2CO3)的性质",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "用及性质与用途的关系; 能利用常见物质的性质，分析、解释一些简",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解常见盐(NaCl/Na2CO3)的性质"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_10",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "复分解反应",
+      "domain": "物质的性质与应用",
+      "subdomain": "反应",
+      "difficulty": 3,
+      "summary": "理解复分解反应",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解复分解反应",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解复分解反应"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C2_11",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化肥",
+      "domain": "物质的性质与应用",
+      "subdomain": "应用",
+      "difficulty": 1,
+      "summary": "了解常见化肥(氮/磷/钾)",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解常见化肥(氮/磷/钾)",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解常见化肥(氮/磷/钾)"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C3_01",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "元素",
+      "domain": "物质组成与表示",
+      "subdomain": "元素",
+      "difficulty": 2,
+      "summary": "理解元素概念,记忆常见元素符号",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解元素概念,记忆常见元素符号",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解元素概念",
+        "记忆常见元素符号"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C3_02",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "元素周期表",
+      "domain": "物质组成与表示",
+      "subdomain": "周期律",
+      "difficulty": 3,
+      "summary": "了解元素周期表结构",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解元素周期表结构",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解元素周期表结构"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C3_03",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学式",
+      "domain": "物质组成与表示",
+      "subdomain": "表示",
+      "difficulty": 2,
+      "summary": "会用化学式表示物质组成",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。会用化学式表示物质组成",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "会",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "会用化学式表示物质组成"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C3_04",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学方程式",
+      "domain": "物质组成与表示",
+      "subdomain": "表示",
+      "difficulty": 3,
+      "summary": "会写简单的化学方程式",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。会写简单的化学方程式",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "能根据化学方程式进行简单的计算，并解决生产生活中的简单问题。",
+      "bloom": [
+        "会",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "会写简单的化学方程式"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C3_05",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "相对原子质量",
+      "domain": "物质组成与表示",
+      "subdomain": "计算",
+      "difficulty": 2,
+      "summary": "理解相对原子质量",
+      "source": "2022 义教课标",
+      "content_req": "初步学会配制一定溶质质量分数的溶液。。理解相对原子质量",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "初步学会配制一定溶质质量分数的溶液。",
+      "bloom": [
+        "会",
+        "理解"
+      ],
+      "key_points": [
+        "初步学会配制一定溶质质量分数的溶液",
+        "理解相对原子质量"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C3_06",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学式计算",
+      "domain": "物质组成与表示",
+      "subdomain": "计算",
+      "difficulty": 3,
+      "summary": "会根据化学式进行相关计算",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。会根据化学式进行相关计算",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "会",
+        "能",
+        "计算"
+      ],
+      "key_points": [
+        "会根据化学式进行相关计算",
+        "科学探究的能力"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_01",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "物质的变化",
+      "domain": "物质变化与化学反应",
+      "subdomain": "变化",
+      "difficulty": 2,
+      "summary": "区分物理变化和化学变化",
+      "source": "2022 义教课标",
+      "content_req": "物质的变化与转化。区分物理变化和化学变化",
+      "src_page": 33,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "知道物质是在不断变化的，物质变化分为物理变化和化学变化;",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "物质的变化与转化",
+        "区分物理变化和化学变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_02",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "质量守恒定律",
+      "domain": "物质变化与化学反应",
+      "subdomain": "守恒",
+      "difficulty": 3,
+      "summary": "理解质量守恒定律",
+      "source": "2022 义教课标",
+      "content_req": "化学反应及质量守恒定律。理解质量守恒定律",
+      "src_page": 34,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "熟悉化学实验室安全警示标志，学会正确使用安全防护设 学会试剂的取用、简单仪器的使用及连接、加热等实验基本 初步学会在教师指导下根据实验需要选择实验试剂和仪器，",
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解质量守恒定律",
+        "化学反应及质量守恒定律"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_03",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学反应的实质",
+      "domain": "物质变化与化学反应",
+      "subdomain": "微观",
+      "difficulty": 3,
+      "summary": "从分子原子角度理解化学反应",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。从分子原子角度理解化学反应",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "从分子原子角度理解化学反应"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_04",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学反应类型",
+      "domain": "物质变化与化学反应",
+      "subdomain": "分类",
+      "difficulty": 3,
+      "summary": "了解化合/分解/置换/复分解四种基本反应类型",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解化合/分解/置换/复分解四种基本反应类型",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解化合/分解/置换/复分解四种基本反应类型"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_05",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "氧化反应与还原反应",
+      "domain": "物质变化与化学反应",
+      "subdomain": "反应",
+      "difficulty": 3,
+      "summary": "理解氧化反应和还原反应",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解氧化反应和还原反应",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解氧化反应和还原反应"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_06",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "燃烧与灭火",
+      "domain": "物质变化与化学反应",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "了解燃烧条件和灭火原理",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解燃烧条件和灭火原理",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解燃烧条件和灭火原理"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C4_07",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学反应中的能量变化",
+      "domain": "物质变化与化学反应",
+      "subdomain": "能量",
+      "difficulty": 2,
+      "summary": "了解化学反应中能量变化",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解化学反应中能量变化",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解化学反应中能量变化",
+        "科学探究的能力"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C5_01",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学与可持续发展",
+      "domain": "化学与社会",
+      "subdomain": "STS",
+      "difficulty": 2,
+      "summary": "理解化学对可持续发展的作用",
+      "source": "2022 义教课标",
+      "content_req": "以课程标准为依据，促进学生核心素养发展。理解化学对可持续发展的作用",
+      "src_page": 57,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "以课程标准为依据，促进学生核心素养发展 以课程标准为依据，促进学生核心素养发展 发展科学探究能力和创新意识。",
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解化学对可持续发展的作用",
+        "以课程标准为依据",
+        "促进学生核心素养发展"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C5_02",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学与健康",
+      "domain": "化学与社会",
+      "subdomain": "健康",
+      "difficulty": 2,
+      "summary": "了解化学与食品安全/医药",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解化学与食品安全/医药",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解化学与食品安全/医药"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C5_03",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学与材料",
+      "domain": "化学与社会",
+      "subdomain": "材料",
+      "difficulty": 2,
+      "summary": "了解常见化学材料(塑料/合成纤维/橡胶)",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解常见化学材料(塑料/合成纤维/橡胶)",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解常见化学材料(塑料/合成纤维/橡胶)"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C5_04",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学与环境",
+      "domain": "化学与社会",
+      "subdomain": "环境",
+      "difficulty": 2,
+      "summary": "了解化学与环境保护",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解化学与环境保护",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解化学与环境保护"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C6_01",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "分子与原子",
+      "domain": "微观",
+      "subdomain": "粒子",
+      "difficulty": 2,
+      "summary": "理解分子和原子的区别",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。理解分子和原子的区别",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "理解分子和原子的区别"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C6_02",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "原子的结构",
+      "domain": "微观",
+      "subdomain": "粒子",
+      "difficulty": 3,
+      "summary": "了解原子结构(质子/中子/电子)",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。了解原子结构(质子/中子/电子)",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "了解原子结构(质子/中子/电子)"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C6_03",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "化学实验基本操作",
+      "domain": "实验",
+      "subdomain": "技能",
+      "difficulty": 2,
+      "summary": "掌握化学实验基本操作",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。掌握化学实验基本操作",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "能",
+        "掌握",
+        "实验"
+      ],
+      "key_points": [
+        "掌握化学实验基本操作",
+        "科学探究的能力"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CH_C6_04",
+      "subject": "chemistry",
+      "stage": 4,
+      "grade_start": 9,
+      "grade_end": 9,
+      "title": "常见气体的制取",
+      "domain": "实验",
+      "subdomain": "技能",
+      "difficulty": 3,
+      "summary": "会制取 O2/CO2 等常见气体",
+      "source": "2022 义教课标",
+      "content_req": "科学探究的能力。会制取 O2/CO2 等常见气体",
+      "src_page": 20,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "科学探究的能力",
+      "bloom": [
+        "会",
+        "能"
+      ],
+      "key_points": [
+        "科学探究的能力",
+        "会制取 O2/CO2 等常见气体"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

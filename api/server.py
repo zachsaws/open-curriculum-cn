@@ -21,14 +21,19 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 ROOT = Path(__file__).parent.parent
-# V0.8: 优先读 all_v0.8.json, 兼容 v0.7
-_DATA_CANDIDATES = ["all_v0.8.json", "all_v0.7.json"]
+# V3.0: 优先读 all_v3.0.json, 兼容 v0.8
+_DATA_CANDIDATES = ["all_v3.0.json", "all_v0.8.json", "all_v0.7.json"]
 DATA_FILE = next(
     (ROOT / "data" / "graph" / n for n in _DATA_CANDIDATES
      if (ROOT / "data" / "graph" / n).exists()),
-    ROOT / "data" / "graph" / "all_v0.8.json",
+    ROOT / "data" / "graph" / "all_v3.0.json",
 )
-DATA_VERSION = "v0.8.0" if "v0.8" in DATA_FILE.name else "v0.7.5"
+if "v3.0" in DATA_FILE.name:
+    DATA_VERSION = "v3.0.0"
+elif "v0.8" in DATA_FILE.name:
+    DATA_VERSION = "v0.8.0"
+else:
+    DATA_VERSION = "v0.7.5"
 
 # 加载数据
 def load_data():

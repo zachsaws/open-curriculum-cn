@@ -1,0 +1,622 @@
+{
+  "nodes": [
+    {
+      "id": "ART_A1_01",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "感受音乐节奏",
+      "domain": "音乐",
+      "subdomain": "感受",
+      "difficulty": 1,
+      "summary": "感受音乐节奏/节拍/速度",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。感受音乐节奏/节拍/速度",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "感受"
+      ],
+      "key_points": [
+        "感受音乐节奏/节拍/速度",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A1_02",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "学唱简单歌曲",
+      "domain": "音乐",
+      "subdomain": "演唱",
+      "difficulty": 1,
+      "summary": "学唱简单歌曲",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。学唱简单歌曲",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "学唱简单歌曲"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A1_03",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 6,
+      "title": "认识常见乐器",
+      "domain": "音乐",
+      "subdomain": "乐器",
+      "difficulty": 1,
+      "summary": "认识常见乐器和音色",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。认识常见乐器和音色",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识常见乐器和音色",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A1_04",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "识谱基础",
+      "domain": "音乐",
+      "subdomain": "识谱",
+      "difficulty": 2,
+      "summary": "认识简谱/五线谱基础",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。认识简谱/五线谱基础",
+      "src_page": 64,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识简谱/五线谱基础",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A1_05",
+      "subject": "art",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "音乐创作体验",
+      "domain": "音乐",
+      "subdomain": "创作",
+      "difficulty": 3,
+      "summary": "尝试简单的音乐创作",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。尝试简单的音乐创作",
+      "src_page": 41,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "尝试简单的音乐创作"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A1_06",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "音乐欣赏",
+      "domain": "音乐",
+      "subdomain": "欣赏",
+      "difficulty": 2,
+      "summary": "欣赏中外优秀音乐作品",
+      "source": "2022 义教课标",
+      "content_req": "HEN + BRR。欣赏中外优秀音乐作品",
+      "src_page": 14,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "欣赏"
+      ],
+      "key_points": [
+        "欣赏中外优秀音乐作品",
+        "HEN + BRR"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_01",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "认识色彩",
+      "domain": "美术",
+      "subdomain": "色彩",
+      "difficulty": 1,
+      "summary": "认识三原色/三间色",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。认识三原色/三间色",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识三原色/三间色",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_02",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "线条与形状",
+      "domain": "美术",
+      "subdomain": "造型",
+      "difficulty": 1,
+      "summary": "运用线条和形状进行绘画",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。运用线条和形状进行绘画",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "运用"
+      ],
+      "key_points": [
+        "运用线条和形状进行绘画",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_03",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 6,
+      "title": "绘画创作",
+      "domain": "美术",
+      "subdomain": "创作",
+      "difficulty": 2,
+      "summary": "进行简单的绘画创作",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。进行简单的绘画创作",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "进行简单的绘画创作"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_04",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "手工与立体造型",
+      "domain": "美术",
+      "subdomain": "手工",
+      "difficulty": 2,
+      "summary": "进行手工和立体造型",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。进行手工和立体造型",
+      "src_page": 64,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "进行手工和立体造型"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_05",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "美术欣赏",
+      "domain": "美术",
+      "subdomain": "欣赏",
+      "difficulty": 2,
+      "summary": "欣赏中外优秀美术作品",
+      "source": "2022 义教课标",
+      "content_req": "HEN + BRR。欣赏中外优秀美术作品",
+      "src_page": 14,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "知特点，精选中外美术作品，通过专题欣赏、随堂欣赏和现场欣赏等",
+      "bloom": [
+        "欣赏"
+      ],
+      "key_points": [
+        "欣赏中外优秀美术作品",
+        "HEN + BRR"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_06",
+      "subject": "art",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "中国画基础",
+      "domain": "美术",
+      "subdomain": "国画",
+      "difficulty": 3,
+      "summary": "了解中国画基本技法",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。了解中国画基本技法",
+      "src_page": 41,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解中国画基本技法",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A2_07",
+      "subject": "art",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "设计基础",
+      "domain": "美术",
+      "subdomain": "设计",
+      "difficulty": 3,
+      "summary": "了解平面设计/工业设计",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。了解平面设计/工业设计",
+      "src_page": 41,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解",
+        "设计"
+      ],
+      "key_points": [
+        "了解平面设计/工业设计",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A3_01",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "舞蹈律动",
+      "domain": "舞蹈",
+      "subdomain": "律动",
+      "difficulty": 1,
+      "summary": "随音乐进行身体律动",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。随音乐进行身体律动",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "随音乐进行身体律动"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A3_02",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "民族舞蹈体验",
+      "domain": "舞蹈",
+      "subdomain": "民族",
+      "difficulty": 2,
+      "summary": "体验民族舞蹈",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。体验民族舞蹈",
+      "src_page": 64,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "道具有助于学生更快地进入舞蹈表演情境，更好地体验民族舞蹈的韵",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "体验民族舞蹈"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A3_03",
+      "subject": "art",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "舞蹈编排",
+      "domain": "舞蹈",
+      "subdomain": "编排",
+      "difficulty": 3,
+      "summary": "参与简单舞蹈编排",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。参与简单舞蹈编排",
+      "src_page": 34,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "参与简单舞蹈编排"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A4_01",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "戏剧表演体验",
+      "domain": "戏剧",
+      "subdomain": "表演",
+      "difficulty": 2,
+      "summary": "进行简单的戏剧表演",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。进行简单的戏剧表演",
+      "src_page": 64,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "进行简单的戏剧表演"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A4_02",
+      "subject": "art",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "课本剧编排",
+      "domain": "戏剧",
+      "subdomain": "综合",
+      "difficulty": 3,
+      "summary": "参与课本剧/课本剧编排",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。参与课本剧/课本剧编排",
+      "src_page": 34,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "参与课本剧/课本剧编排"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A5_01",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "影视欣赏",
+      "domain": "影视",
+      "subdomain": "欣赏",
+      "difficulty": 2,
+      "summary": "欣赏优秀影视作品",
+      "source": "2022 义教课标",
+      "content_req": "HEN + BRR。欣赏优秀影视作品",
+      "src_page": 14,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "形谱、乐谱或其他方式记录编创的作品。",
+      "bloom": [
+        "欣赏"
+      ],
+      "key_points": [
+        "欣赏优秀影视作品",
+        "HEN + BRR"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A5_02",
+      "subject": "art",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "短视频创作",
+      "domain": "影视",
+      "subdomain": "创作",
+      "difficulty": 3,
+      "summary": "尝试简单的短视频创作",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。尝试简单的短视频创作",
+      "src_page": 34,
+      "src_stage": "第四学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "教学策略建议",
+        "尝试简单的短视频创作"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A6_01",
+      "subject": "art",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 9,
+      "title": "艺术与生活",
+      "domain": "综合",
+      "subdomain": "联系",
+      "difficulty": 1,
+      "summary": "感受艺术与生活的联系",
+      "source": "2022 义教课标",
+      "content_req": "教学策略建议。感受艺术与生活的联系",
+      "src_page": 24,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "感受"
+      ],
+      "key_points": [
+        "感受艺术与生活的联系",
+        "教学策略建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "ART_A6_02",
+      "subject": "art",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "艺术与文化",
+      "domain": "综合",
+      "subdomain": "文化",
+      "difficulty": 2,
+      "summary": "了解艺术与文化的关系",
+      "source": "2022 义教课标",
+      "content_req": "HEN + BRR。了解艺术与文化的关系",
+      "src_page": 14,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "教学策略建议 教学策略建议 教学策略建议",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解艺术与文化的关系",
+        "HEN + BRR"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

@@ -255,6 +255,66 @@ def main():
         for it in r['sample_items']:
             print(f"  ({it['num']}) {it['text'][:100]}")
 
+    # ============================================================================
+    # V3.0 实际概念数 (从 data/graph/all_v3.0.json 读)
+    # ============================================================================
+    GRAPH_DIR = Path(__file__).parent.parent.parent / "data" / "graph"
+    print("\n" + "=" * 80)
+    print("📊 V3.0 实际概念数")
+    print("=" * 80)
+    all_v3 = GRAPH_DIR / 'all_v3.0.json'
+    v3_stats = {
+        'scanned_at': None,
+        'total_ceiling': total_ceiling,
+        'corrected_ceiling': corrected,
+        'subjects': {},
+    }
+    if all_v3.exists():
+        with open(all_v3) as f:
+            d = json.load(f)
+        from collections import Counter
+        by_subject = Counter(n['subject'] for n in d['nodes'])
+        v3_stats['total_v3_concepts'] = len(d['nodes'])
+        v3_stats['total_v3_edges'] = len(d['edges'])
+        v3_stats['total_v0_8_concepts'] = total_current
+        v3_stats['growth'] = len(d['nodes']) - total_current
+        v3_stats['growth_pct'] = round((len(d['nodes']) - total_current) / total_current * 100, 1)
+        print(f"  V3.0 总数: {len(d['nodes'])} 节点 (V0.8 758 → +{len(d['nodes']) - total_current})")
+        print(f"  V3.0 关系: {len(d['edges'])}")
+        print(f"\n  {'学科':<14} {'V3.0':<6} {'理论上限':<10} {'达标率':<8}")
+        for r in results:
+            s = r['subject']
+            v3_count = by_subject.get(s, 0)
+            ceil = r['concepts_ceiling']
+            ratio = (v3_count / ceil * 100) if ceil else 0
+            v3_stats['subjects'][s] = {
+                'v3_count': v3_count,
+                'concepts_ceiling': ceil,
+                'ratio_pct': round(ratio, 1),
+            }
+            print(f"  {s:<14} {v3_count:<6} {ceil:<10} {ratio:.1f}%")
+    else:
+        print(f"  ⚠️ {all_v3} 不存在, 请先跑 expand_concepts.py + merge_v3.0.py")
+
+    # 达标检查
+    if all_v3.exists():
+        v3_total = len(d['nodes'])
+        target = 1800
+        print(f"\n  V3.0 目标: ≥ {target}")
+        print(f"  实际: {v3_total}")
+        if v3_total >= target:
+            print(f"  ✅ 达标 (+{v3_total - target})")
+        else:
+            print(f"  ❌ 差 {target - v3_total}")
+
+    # 写 v3.0_stats.json
+    from datetime import datetime
+    v3_stats['scanned_at'] = datetime.now().isoformat()
+    stats_path = GRAPH_DIR / 'v3.0_stats.json'
+    with open(stats_path, "w", encoding="utf-8") as f:
+        json.dump(v3_stats, f, ensure_ascii=False, indent=2)
+    print(f"\n  📁 v3.0_stats.json: {stats_path}")
+
 
 if __name__ == "__main__":
     main()

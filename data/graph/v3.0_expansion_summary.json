@@ -1,0 +1,72 @@
+{
+  "math": {
+    "before": 214,
+    "added": 123,
+    "after": 337
+  },
+  "chinese": {
+    "before": 75,
+    "added": 134,
+    "after": 209
+  },
+  "english": {
+    "before": 71,
+    "added": 225,
+    "after": 296
+  },
+  "physics": {
+    "before": 63,
+    "added": 58,
+    "after": 121
+  },
+  "chemistry": {
+    "before": 37,
+    "added": 25,
+    "after": 62
+  },
+  "biology": {
+    "before": 36,
+    "added": 35,
+    "after": 71
+  },
+  "history": {
+    "before": 43,
+    "added": 93,
+    "after": 136
+  },
+  "geography": {
+    "before": 43,
+    "added": 48,
+    "after": 91
+  },
+  "morality_law": {
+    "before": 39,
+    "added": 76,
+    "after": 115
+  },
+  "science": {
+    "before": 41,
+    "added": 80,
+    "after": 121
+  },
+  "info_tech": {
+    "before": 28,
+    "added": 69,
+    "after": 97
+  },
+  "art": {
+    "before": 22,
+    "added": 56,
+    "after": 78
+  },
+  "pe_health": {
+    "before": 25,
+    "added": 62,
+    "after": 87
+  },
+  "labor": {
+    "before": 21,
+    "added": 64,
+    "after": 85
+  }
+}
