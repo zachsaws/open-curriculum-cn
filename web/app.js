@@ -58,6 +58,9 @@ async function loadData() {
   initGraph();
   setupSearch();
   setupLangSwitch();
+  setupKeyboardShortcuts();
+  setupCardActions();
+  setupKbdModal();
   // 启动后计算根节点
   setTimeout(() => updateRootCount(), 2000);
   loading.classList.add('done');
@@ -79,8 +82,12 @@ function setupLangSwitch() {
       }
       // 1) 切换 UI 文本 + 图例 (subject 名 / search / header / 按钮)
       setLang(lang);
-      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('on'));
+      document.querySelectorAll('.lang-switch button').forEach(b => {
+        b.classList.remove('on');
+        b.setAttribute('aria-selected', 'false');
+      });
       btn.classList.add('on');
+      btn.setAttribute('aria-selected', 'true');
       // 显式重画图例 (applyI18n 里的 buildLegend 调用因 module scope 看不到, 手动调)
       if (typeof buildLegend === 'function') buildLegend();
       // 2) 转换所有概念标题 (zh-TW 简→繁; 其他语言 恢复原文)
@@ -115,7 +122,13 @@ function buildLegend() {
     const el = document.createElement('div');
     el.className = 'chip';
     el.dataset.subject = s;
+    el.dataset.idx = i;
     el.title = window.t ? window.t('btn_fly_to') : '双击飞到该学科';
+    // V2.3 a11y: chip 改为可聚焦 + aria
+    el.setAttribute('role', 'button');
+    el.setAttribute('tabindex', '0');
+    el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');
+    el.setAttribute('aria-label', `${window.t('btn_chip_toggle') || '切换'} ${window.tSubject(s)} ${counts[i]} ${window.t('chip_count_unit') || '个概念'}`);
     el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${window.tSubject(s)}</span><span class="ct">${counts[i]}</span>`;
     el.onclick = (e) => {
       // 双击才飞向该学科, 单击只切换显隐
@@ -124,9 +137,17 @@ function buildLegend() {
         return;
       }
       el.classList.toggle('off');
+      el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');
       updateFilter();
     };
     el.ondblclick = () => flyToSubject(s);
+    // 键盘: Enter / Space 触发单击
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        el.click();
+      }
+    });
     legend.appendChild(el);
   });
 }
@@ -162,23 +183,40 @@ function updateFilter() {
   }
 }
 
-// 计算缺先决根节点 (无入度的节点) = 学习的"入口"概念
-function updateRootCount() {
-  if (!cy) return 0;
-  const roots = cy.nodes().filter(n => n.indegree() === 0 && n.data('subject'));
-  document.getElementById('rCount').textContent = roots.length;
-  return roots.length;
+// 计算"可学起入口" — V2.3 缩窄定义为 (indegree=0 && grade_start<=2)
+// 课标 G1-2 阶段概念 = 真正"零基础可学", 无 G1-2 之前的学段
+// 历史: V2.2 用纯 indegree=0 → 629/758 节点 (83%) 高亮, 视觉无意义
+function isLearnableEntry(n) {
+  return n.indegree() === 0 && (n.data('grade_start') || 99) <= 2;
 }
 
-// 切换根节点高亮
+function updateRootCount() {
+  if (!cy) return 0;
+  const entries = cy.nodes().filter(isLearnableEntry);
+  const totalRoots = cy.nodes().filter(n => n.indegree() === 0).length;
+  document.getElementById('rCount').textContent = entries.length;
+  // 副标题: "可学起入口" (G1-2 阶段无先决), 总根数是参考
+  const sub = document.getElementById('rCountSub');
+  if (sub) sub.textContent = `/${totalRoots}`;
+  return entries.length;
+}
+
+// 切换根节点高亮 — V2.3 缩窄到 G1-2 阶段无先决
 function toggleRootsHighlight() {
   if (!cy) return;
   window._rootsHighlighted = !window._rootsHighlighted;
   cy.nodes().removeClass('root-node');
   if (window._rootsHighlighted) {
-    cy.nodes().filter(n => n.indegree() === 0).addClass('root-node');
+    cy.nodes().filter(isLearnableEntry).addClass('root-node');
   }
   document.getElementById('toggleRoots').textContent = window.t(window._rootsHighlighted ? 'btn_roots_off' : 'btn_roots');
+  document.getElementById('toggleRoots').setAttribute('aria-pressed', String(!!window._rootsHighlighted));
+  // V2.3 浮动按钮联动
+  if (window._rootsHighlighted) {
+    renderStartHereButtons();
+  } else {
+    removeStartHereButtons();
+  }
 }
 
 // 搜索功能
@@ -443,6 +481,7 @@ function initGraph() {
 
   console.log('initGraph done, nodes:', cy.nodes().length);
   window.cy = cy;  // 调试用
+  setupCyViewSync();
 }
 
 function showCard(node) {
@@ -580,16 +619,277 @@ function showCard(node) {
   fillRows(document.getElementById('card-next-rows'), nextEdges, 'next');
 
   card.classList.add('on');
+  card.setAttribute('aria-hidden', 'false');
   cy.elements().unselect();
   const me = cy.getElementById(node.id);
   if (me.length) me.select();
+  // 渲染完面板后, 浮动按钮跟着 cy 节点坐标更新位置
+  scheduleStartHereButtonUpdate();
 }
 
-document.querySelector('#card .close').onclick = () => {
-  document.getElementById('card').classList.remove('on');
+// V2.3 "从这里学起" — 浮动按钮 + 下游 BFS 路径高亮
+// 入口高亮开启后, 在每条黄色"可学起入口"节点上方显示一个小按钮
+// 点击后, 从该节点向下 BFS N 层, 用动画高亮学习路径
+function isLearnableEntryNode(nodeData) {
+  // 客户端再判一次 (cy 实例可能有部分属性)
+  if (!nodeData) return false;
+  const me = cy && cy.getElementById(nodeData.id);
+  if (!me || !me.length) return false;
+  return isLearnableEntry(me);
+}
+
+let _startHereButtons = [];
+function removeStartHereButtons() {
+  _startHereButtons.forEach(b => b.remove());
+  _startHereButtons = [];
+}
+
+function renderStartHereButtons() {
+  if (!cy || !window._rootsHighlighted) {
+    removeStartHereButtons();
+    return;
+  }
+  removeStartHereButtons();
+  const entries = cy.nodes().filter(isLearnableEntry);
+  entries.forEach(n => {
+    const pos = n.renderedPosition();
+    if (!pos) return;
+    const btn = document.createElement('button');
+    btn.className = 'start-here-btn';
+    btn.textContent = window.t('btn_start_here') || '从这里学起 →';
+    btn.setAttribute('aria-label', `${window.t('btn_start_here_aria') || '从此概念开始学习'}: ${n.data('title')}`);
+    btn.dataset.nodeId = n.id();
+    // cy 节点 renderedPosition 是 canvas 像素, 直接定位 fixed
+    const contRect = cyContainer.getBoundingClientRect();
+    btn.style.left = (contRect.left + pos.x) + 'px';
+    btn.style.top = (contRect.top + pos.y) + 'px';
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      // 高亮下游路径
+      const me = cy.getElementById(n.id());
+      if (me.length) {
+        showCard(me.data());  // 打开详情面板
+        // 立即高亮下游 3 层
+        highlightDownstream(me, 3);
+        // 标记按钮已点击
+        _startHereButtons.forEach(b => b.classList.remove('started'));
+        btn.classList.add('started');
+        btn.textContent = window.t('btn_started') || '已展开 ✓';
+      }
+    };
+    document.body.appendChild(btn);
+    _startHereButtons.push(btn);
+  });
+}
+
+// 浮动按钮随 cy 缩放/平移同步
+let _startHereScheduled = false;
+function scheduleStartHereButtonUpdate() {
+  if (_startHereScheduled) return;
+  _startHereScheduled = true;
+  requestAnimationFrame(() => {
+    _startHereScheduled = false;
+    if (!cy) return;
+    // 重新计算所有浮动按钮位置
+    const contRect = cyContainer.getBoundingClientRect();
+    _startHereButtons.forEach(btn => {
+      const id = btn.dataset.nodeId;
+      const n = cy.getElementById(id);
+      if (!n.length) { btn.remove(); return; }
+      const pos = n.renderedPosition();
+      btn.style.left = (contRect.left + pos.x) + 'px';
+      btn.style.top = (contRect.top + pos.y) + 'px';
+    });
+  });
+}
+
+// cy 视图变化时同步浮动按钮
+function setupCyViewSync() {
+  if (!cy) return;
+  cy.on('pan zoom viewport', scheduleStartHereButtonUpdate);
+}
+
+// V2.3 下游 BFS 路径高亮 — 从起点向下展开 N 层, 高亮节点 + 边
+// 沿用现有 .path-node / .path-edge CSS class
+function highlightDownstream(startNode, depth) {
+  if (!cy || !startNode || !startNode.length) return;
+  // 清旧
+  cy.elements().removeClass('path-node path-edge');
+  const visited = new Set([startNode.id()]);
+  const pathEdges = new Set();
+  let frontier = [startNode];
+  for (let d = 0; d < depth; d++) {
+    const nextFrontier = [];
+    frontier.forEach(n => {
+      const out = n.outgoers('edge');
+      out.forEach(e => {
+        const t = e.target();
+        if (!visited.has(t.id())) {
+          visited.add(t.id());
+          nextFrontier.push(t);
+          pathEdges.add(e.id());
+        }
+      });
+    });
+    if (nextFrontier.length === 0) break;
+    frontier = nextFrontier;
+  }
+  // 应用高亮 class
+  cy.nodes().forEach(n => {
+    if (visited.has(n.id())) n.addClass('path-node');
+  });
+  pathEdges.forEach(eid => {
+    const e = cy.getElementById(eid);
+    if (e.length) e.addClass('path-edge');
+  });
+  // 平滑飞到该子图
+  const allHighlighted = cy.nodes().filter('.path-node').union(cy.edges().filter('.path-edge'));
+  if (allHighlighted.length > 1) {
+    cy.animate({ fit: { eles: allHighlighted, padding: 100 }, duration: 700 });
+  }
+  return visited.size - 1;  // 返回展开节点数 (不含起点)
+}
+
+// 详情面板里的"查看下游 3 层"按钮 + ARIA 状态同步
+function setupCardActions() {
+  const btn = document.getElementById('card-btn-path');
+  if (!btn) return;
+  btn.onclick = () => {
+    if (!window._currentNode) return;
+    const me = cy.getElementById(window._currentNode.id);
+    if (!me.length) return;
+    const count = highlightDownstream(me, 3);
+    btn.textContent = `${window.t('btn_expanded') || '已展开'} ${count} ${window.t('btn_concepts') || '个概念'} (按 Esc 清除)`;
+  };
+}
+
+document.querySelector('#card .close').onclick = () => closeCard();
+
+// 关闭详情面板 — 统一入口 (Esc 也会调用)
+function closeCard() {
+  const card = document.getElementById('card');
+  card.classList.remove('on');
+  card.setAttribute('aria-hidden', 'true');
+  if (cy) {
+    cy.elements().unselect();
+    cy.elements().removeClass('neighbor-highlight neighbor-dim path-node path-edge');
+  }
   window._currentNode = null;
-  cy.elements().unselect();
-};
+  removeStartHereButtons();
+}
+
+// V2.3 键盘快捷键 — 在搜索框聚焦时不抢键
+function setupKeyboardShortcuts() {
+  document.addEventListener('keydown', (e) => {
+    // 模态打开时, Esc 关 modal 而不是面板
+    const modal = document.getElementById('kbdModal');
+    if (modal && modal.classList.contains('on')) {
+      if (e.key === 'Escape' || e.key === '?') {
+        e.preventDefault();
+        closeKbdModal();
+      }
+      return;
+    }
+    // 输入框/textarea/contenteditable 元素内不抢键
+    const tag = (e.target.tagName || '').toUpperCase();
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || e.target.isContentEditable) return;
+    // 修饰键组合让给浏览器
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+
+    const k = e.key;
+    if (k === '/') {
+      e.preventDefault();
+      document.getElementById('searchInput').focus();
+      document.getElementById('searchInput').select();
+      return;
+    }
+    if (k === '?') {
+      e.preventDefault();
+      openKbdModal();
+      return;
+    }
+    if (k === 'Escape') {
+      e.preventDefault();
+      // 优先关详情面板; 否则清搜索
+      const card = document.getElementById('card');
+      if (card.classList.contains('on')) {
+        closeCard();
+      } else {
+        const input = document.getElementById('searchInput');
+        if (input.value) {
+          input.value = '';
+          document.getElementById('searchResults').classList.remove('on');
+          if (cy) cy.elements().removeClass('search-hit');
+        }
+      }
+      return;
+    }
+    if (k === 'l' || k === 'L') {
+      e.preventDefault();
+      document.getElementById('toggleLabels').click();
+      return;
+    }
+    if (k === 'r') {
+      e.preventDefault();
+      document.getElementById('toggleRoots').click();
+      return;
+    }
+    if (k === 'R') {
+      e.preventDefault();
+      document.getElementById('reLayout').click();
+      return;
+    }
+    if (k === '0') {
+      e.preventDefault();
+      // 全部学科显隐切换
+      const chips = document.querySelectorAll('.chip');
+      const allOn = Array.from(chips).every(c => !c.classList.contains('off'));
+      chips.forEach(c => {
+        c.classList.toggle('off', allOn);
+        c.setAttribute('aria-pressed', allOn ? 'false' : 'true');
+      });
+      updateFilter();
+      return;
+    }
+    if (/^[1-9]$/.test(k)) {
+      e.preventDefault();
+      const idx = parseInt(k, 10) - 1;
+      const chip = document.querySelector(`.chip[data-idx="${idx}"]`);
+      if (chip) chip.click();
+      return;
+    }
+  });
+}
+
+// V2.3 键盘快捷键 modal
+function setupKbdModal() {
+  const modal = document.getElementById('kbdModal');
+  const closeBtn = document.getElementById('kbdModalClose');
+  const showBtn = document.getElementById('showKbd');
+  if (showBtn) showBtn.onclick = openKbdModal;
+  if (closeBtn) closeBtn.onclick = closeKbdModal;
+  // 点 modal 背景关闭
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeKbdModal();
+    });
+  }
+}
+function openKbdModal() {
+  const modal = document.getElementById('kbdModal');
+  if (modal) {
+    modal.classList.add('on');
+    modal.setAttribute('aria-hidden', 'false');
+    setTimeout(() => document.getElementById('kbdModalClose').focus(), 50);
+  }
+}
+function closeKbdModal() {
+  const modal = document.getElementById('kbdModal');
+  if (modal) {
+    modal.classList.remove('on');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+}
 
 // 切换 label 显示
 document.getElementById('toggleLabels').onclick = () => {
@@ -598,6 +898,7 @@ document.getElementById('toggleLabels').onclick = () => {
     n.style('label', window._labelsOn ? n.data('title') : '');
   });
   document.getElementById('toggleLabels').textContent = window.t(window._labelsOn ? 'btn_labels_hide' : 'btn_labels');
+  document.getElementById('toggleLabels').setAttribute('aria-pressed', String(!!window._labelsOn));
 };
 
 // 重排 — 按学科分块

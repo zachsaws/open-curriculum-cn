@@ -36,6 +36,19 @@ const I18N = {
     err_no_data: '未找到图谱数据 (graph.json)<br><br>数据仍在采集中',
     search_count_suffix: '匹配 (按 ESC 关闭)',
     chip_off: '已隐藏',
+    // V2.3 新增
+    btn_chip_toggle: '切换',
+    chip_count_unit: '个概念',
+    btn_start_here: '从这里学起 →',
+    btn_start_here_aria: '从此概念开始学习',
+    btn_started: '已展开 ✓',
+    btn_expanded: '已展开',
+    btn_concepts: '个概念',
+    kbd_hint: '在搜索框内输入时, 快捷键不触发',
+    kbd_close: '关闭 (Esc)',
+    lang_zh_cn: '简',
+    lang_zh_tw: '繁',
+    lang_en: 'EN',
   },
   'zh-TW': {
     app_title: '2022 新課標知識圖譜',
@@ -71,6 +84,19 @@ const I18N = {
     err_no_data: '未找到圖譜資料 (graph.json)<br><br>資料仍在採集中',
     search_count_suffix: '匹配 (按 ESC 關閉)',
     chip_off: '已隱藏',
+    // V2.3 新增
+    btn_chip_toggle: '切換',
+    chip_count_unit: '個概念',
+    btn_start_here: '從這裡學起 →',
+    btn_start_here_aria: '從此概念開始學習',
+    btn_started: '已展開 ✓',
+    btn_expanded: '已展開',
+    btn_concepts: '個概念',
+    kbd_hint: '在搜尋框內輸入時, 快捷鍵不觸發',
+    kbd_close: '關閉 (Esc)',
+    lang_zh_cn: '簡',
+    lang_zh_tw: '繁',
+    lang_en: 'EN',
   },
   'en': {
     app_title: '2022 New Curriculum Knowledge Graph',
@@ -106,6 +132,19 @@ const I18N = {
     err_no_data: 'Graph data not found (graph.json)<br><br>Data is still being collected',
     search_count_suffix: 'matches (press ESC to close)',
     chip_off: 'hidden',
+    // V2.3 new keys
+    btn_chip_toggle: 'Toggle',
+    chip_count_unit: 'concepts',
+    btn_start_here: 'Start from here →',
+    btn_start_here_aria: 'Start learning from this concept',
+    btn_started: 'Expanded ✓',
+    btn_expanded: 'Expanded',
+    btn_concepts: 'concepts',
+    kbd_hint: 'Shortcuts are disabled while typing in the search box',
+    kbd_close: 'Close (Esc)',
+    lang_zh_cn: 'CN',
+    lang_zh_tw: 'TW',
+    lang_en: 'EN',
   },
 };
 
@@ -162,6 +201,14 @@ function applyI18n() {
           el.textContent = I18N[currentLang][key];
         }
       }
+    }
+  });
+
+  // V2.3 data-i18n-label 扫描: 短标签 (lang-switch 按钮等)
+  document.querySelectorAll('[data-i18n-label]').forEach(el => {
+    const key = el.getAttribute('data-i18n-label');
+    if (I18N[currentLang][key] !== undefined) {
+      el.textContent = I18N[currentLang][key];
     }
   });
 
