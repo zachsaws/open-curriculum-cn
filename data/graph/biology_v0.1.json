@@ -1,0 +1,375 @@
+{
+ "version": "0.1.0",
+ "subject": "biology",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 11,
+ "edge_count": 13,
+ "nodes": [
+  {
+   "id": "bi-7-cell",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "细胞是生命基本单位",
+   "title_en": "",
+   "domain": "生物体结构",
+   "subdomain": "cell",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803680",
+   "updated_at": "2026-07-22T12:01:57.803681"
+  },
+  {
+   "id": "bi-7-cell-structure",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "细胞结构",
+   "title_en": "",
+   "domain": "生物体结构",
+   "subdomain": "cell",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803682",
+   "updated_at": "2026-07-22T12:01:57.803682"
+  },
+  {
+   "id": "bi-7-tissue",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "组织",
+   "title_en": "",
+   "domain": "生物体结构",
+   "subdomain": "tissue",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803683",
+   "updated_at": "2026-07-22T12:01:57.803684"
+  },
+  {
+   "id": "bi-7-organ",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "器官与系统",
+   "title_en": "",
+   "domain": "生物体结构",
+   "subdomain": "organ",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803685",
+   "updated_at": "2026-07-22T12:01:57.803685"
+  },
+  {
+   "id": "bi-7-plant-types",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "植物的主要类群",
+   "title_en": "",
+   "domain": "生物多样性",
+   "subdomain": "plant",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803686",
+   "updated_at": "2026-07-22T12:01:57.803687"
+  },
+  {
+   "id": "bi-7-animal-types",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "动物的主要类群",
+   "title_en": "",
+   "domain": "生物多样性",
+   "subdomain": "animal",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803688",
+   "updated_at": "2026-07-22T12:01:57.803688"
+  },
+  {
+   "id": "bi-7-microorganism",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "微生物",
+   "title_en": "",
+   "domain": "生物多样性",
+   "subdomain": "micro",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803689",
+   "updated_at": "2026-07-22T12:01:57.803690"
+  },
+  {
+   "id": "bi-8-genetics",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "生物的遗传和变异",
+   "title_en": "",
+   "domain": "遗传进化",
+   "subdomain": "genetics",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803690",
+   "updated_at": "2026-07-22T12:01:57.803691"
+  },
+  {
+   "id": "bi-8-evolution",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "生命的进化",
+   "title_en": "",
+   "domain": "遗传进化",
+   "subdomain": "evolution",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803692",
+   "updated_at": "2026-07-22T12:01:57.803692"
+  },
+  {
+   "id": "bi-8-ecology",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "生态系统",
+   "title_en": "",
+   "domain": "生态系统",
+   "subdomain": "ecology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803693",
+   "updated_at": "2026-07-22T12:01:57.803694"
+  },
+  {
+   "id": "bi-8-health",
+   "subject": "biology",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "健康地生活",
+   "title_en": "",
+   "domain": "健康",
+   "subdomain": "health",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803694",
+   "updated_at": "2026-07-22T12:01:57.803695"
+  }
+ ],
+ "edges": [
+  [
+   "bi-7-cell",
+   "bi-7-cell-structure",
+   1
+  ],
+  [
+   "bi-7-cell-structure",
+   "bi-7-tissue",
+   1
+  ],
+  [
+   "bi-7-tissue",
+   "bi-7-organ",
+   1
+  ],
+  [
+   "bi-7-cell",
+   "bi-7-plant-types",
+   1
+  ],
+  [
+   "bi-7-cell",
+   "bi-7-animal-types",
+   1
+  ],
+  [
+   "bi-7-cell",
+   "bi-7-microorganism",
+   1
+  ],
+  [
+   "bi-7-cell-structure",
+   "bi-8-genetics",
+   1
+  ],
+  [
+   "bi-7-tissue",
+   "bi-8-genetics",
+   1
+  ],
+  [
+   "bi-7-animal-types",
+   "bi-8-evolution",
+   1
+  ],
+  [
+   "bi-7-plant-types",
+   "bi-8-evolution",
+   1
+  ],
+  [
+   "bi-8-genetics",
+   "bi-8-evolution",
+   1
+  ],
+  [
+   "bi-8-evolution",
+   "bi-8-ecology",
+   1
+  ],
+  [
+   "bi-8-ecology",
+   "bi-8-health",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.803696",
+ "license": "CC-BY-SA 4.0"
+}

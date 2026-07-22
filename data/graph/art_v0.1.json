@@ -1,0 +1,200 @@
+{
+ "version": "0.1.0",
+ "subject": "art",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 6,
+ "edge_count": 5,
+ "nodes": [
+  {
+   "id": "ar-1-song",
+   "subject": "art",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "学唱歌",
+   "title_en": "",
+   "domain": "音乐",
+   "subdomain": "singing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.804102",
+   "updated_at": "2026-07-22T12:01:57.804110"
+  },
+  {
+   "id": "ar-1-draw",
+   "subject": "art",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "绘画基础",
+   "title_en": "",
+   "domain": "美术",
+   "subdomain": "drawing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.804112",
+   "updated_at": "2026-07-22T12:01:57.804112"
+  },
+  {
+   "id": "ar-3-instrument",
+   "subject": "art",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "认识乐器",
+   "title_en": "",
+   "domain": "音乐",
+   "subdomain": "instrument",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.804113",
+   "updated_at": "2026-07-22T12:01:57.804114"
+  },
+  {
+   "id": "ar-3-color",
+   "subject": "art",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "色彩运用",
+   "title_en": "",
+   "domain": "美术",
+   "subdomain": "color",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.804114",
+   "updated_at": "2026-07-22T12:01:57.804115"
+  },
+  {
+   "id": "ar-5-compose",
+   "subject": "art",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "简单作曲",
+   "title_en": "",
+   "domain": "音乐",
+   "subdomain": "compose",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.804116",
+   "updated_at": "2026-07-22T12:01:57.804117"
+  },
+  {
+   "id": "ar-5-sculpture",
+   "subject": "art",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "雕塑基础",
+   "title_en": "",
+   "domain": "美术",
+   "subdomain": "sculpture",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.804117",
+   "updated_at": "2026-07-22T12:01:57.804118"
+  }
+ ],
+ "edges": [
+  [
+   "ar-1-song",
+   "ar-1-draw",
+   1
+  ],
+  [
+   "ar-1-draw",
+   "ar-3-color",
+   1
+  ],
+  [
+   "ar-1-song",
+   "ar-3-instrument",
+   1
+  ],
+  [
+   "ar-3-instrument",
+   "ar-5-compose",
+   1
+  ],
+  [
+   "ar-3-color",
+   "ar-5-sculpture",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.804119",
+ "license": "CC-BY-SA 4.0"
+}

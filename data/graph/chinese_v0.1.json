@@ -1,0 +1,860 @@
+{
+ "version": "0.1.0",
+ "subject": "chinese",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 26,
+ "edge_count": 29,
+ "nodes": [
+  {
+   "id": "ch-1-pinyin",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "汉语拼音",
+   "title_en": "",
+   "domain": "识字",
+   "subdomain": "pinyin",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.801458",
+   "updated_at": "2026-07-22T12:01:57.801468"
+  },
+  {
+   "id": "ch-1-char-1600",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "认识常用汉字 1600 个",
+   "title_en": "",
+   "domain": "识字",
+   "subdomain": "chars",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.801471",
+   "updated_at": "2026-07-22T12:01:57.801472"
+  },
+  {
+   "id": "ch-1-write-800",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "会写 800 个常用字",
+   "title_en": "",
+   "domain": "写字",
+   "subdomain": "writing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.801474",
+   "updated_at": "2026-07-22T12:01:57.801475"
+  },
+  {
+   "id": "ch-1-read-50k",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "课外阅读 5 万字",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.801476",
+   "updated_at": "2026-07-22T12:01:57.801476"
+  },
+  {
+   "id": "ch-1-recite-50",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "背诵优秀诗文 50 篇",
+   "title_en": "",
+   "domain": "古诗文",
+   "subdomain": "recitation",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.801477",
+   "updated_at": "2026-07-22T12:01:57.801478"
+  },
+  {
+   "id": "ch-2-char-2500",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "累计认识 2500 汉字",
+   "title_en": "",
+   "domain": "识字",
+   "subdomain": "chars",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801479",
+   "updated_at": "2026-07-22T12:01:57.801479"
+  },
+  {
+   "id": "ch-2-write-1600",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "会写 1600 汉字",
+   "title_en": "",
+   "domain": "写字",
+   "subdomain": "writing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801480",
+   "updated_at": "2026-07-22T12:01:57.801480"
+  },
+  {
+   "id": "ch-2-mute-read",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "默读不出声",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801481",
+   "updated_at": "2026-07-22T12:01:57.801482"
+  },
+  {
+   "id": "ch-2-read-40k",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "课外阅读 40 万字",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801483",
+   "updated_at": "2026-07-22T12:01:57.801483"
+  },
+  {
+   "id": "ch-2-recite-50",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "背诵优秀诗文 50 篇(累计 100)",
+   "title_en": "",
+   "domain": "古诗文",
+   "subdomain": "recitation",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801484",
+   "updated_at": "2026-07-22T12:01:57.801484"
+  },
+  {
+   "id": "ch-2-whole-book",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 6,
+   "title": "整本书阅读",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "whole_book",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801485",
+   "updated_at": "2026-07-22T12:01:57.801486"
+  },
+  {
+   "id": "ch-3-char-3000",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "累计认识 3000 汉字",
+   "title_en": "",
+   "domain": "识字",
+   "subdomain": "chars",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801487",
+   "updated_at": "2026-07-22T12:01:57.801487"
+  },
+  {
+   "id": "ch-3-write-2500",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "会写 2500 汉字",
+   "title_en": "",
+   "domain": "写字",
+   "subdomain": "writing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801488",
+   "updated_at": "2026-07-22T12:01:57.801489"
+  },
+  {
+   "id": "ch-3-mute-300wpm",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "默读 300 字/分钟",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801489",
+   "updated_at": "2026-07-22T12:01:57.801490"
+  },
+  {
+   "id": "ch-3-read-100k",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "课外阅读 100 万字",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801491",
+   "updated_at": "2026-07-22T12:01:57.801491"
+  },
+  {
+   "id": "ch-3-recite-60",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "背诵优秀诗文 60 篇(累计 160)",
+   "title_en": "",
+   "domain": "古诗文",
+   "subdomain": "recitation",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801492",
+   "updated_at": "2026-07-22T12:01:57.801492"
+  },
+  {
+   "id": "ch-3-browse",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "浏览搜集信息",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "browse",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801493",
+   "updated_at": "2026-07-22T12:01:57.801494"
+  },
+  {
+   "id": "ch-3-composition-16",
+   "subject": "chinese",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "习作 16 次/学年",
+   "title_en": "",
+   "domain": "写作",
+   "subdomain": "composition",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801495",
+   "updated_at": "2026-07-22T12:01:57.801495"
+  },
+  {
+   "id": "ch-7-char-3500",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "累计认识 3500 汉字",
+   "title_en": "",
+   "domain": "识字",
+   "subdomain": "chars",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801496",
+   "updated_at": "2026-07-22T12:01:57.801497"
+  },
+  {
+   "id": "ch-7-mute-500wpm",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "默读 500 字/分钟",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801498",
+   "updated_at": "2026-07-22T12:01:57.801498"
+  },
+  {
+   "id": "ch-7-classic-novels",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "每学年读 2-3 部名著",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "whole_book",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801499",
+   "updated_at": "2026-07-22T12:01:57.801499"
+  },
+  {
+   "id": "ch-7-composition-14",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "作文 14 次/学年",
+   "title_en": "",
+   "domain": "写作",
+   "subdomain": "composition",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801501",
+   "updated_at": "2026-07-22T12:01:57.801502"
+  },
+  {
+   "id": "ch-7-ancient-prose",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "文言文阅读",
+   "title_en": "",
+   "domain": "古诗文",
+   "subdomain": "classical_chinese",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801502",
+   "updated_at": "2026-07-22T12:01:57.801503"
+  },
+  {
+   "id": "ch-7-poetry",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "古诗词鉴赏",
+   "title_en": "",
+   "domain": "古诗文",
+   "subdomain": "poetry",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801504",
+   "updated_at": "2026-07-22T12:01:57.801504"
+  },
+  {
+   "id": "ch-7-rhetoric",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "修辞手法",
+   "title_en": "",
+   "domain": "写作",
+   "subdomain": "rhetoric",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801505",
+   "updated_at": "2026-07-22T12:01:57.801505"
+  },
+  {
+   "id": "ch-7-critical-reading",
+   "subject": "chinese",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "批判性阅读",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "critical",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.801506",
+   "updated_at": "2026-07-22T12:01:57.801507"
+  }
+ ],
+ "edges": [
+  [
+   "ch-1-pinyin",
+   "ch-1-char-1600",
+   1
+  ],
+  [
+   "ch-1-pinyin",
+   "ch-1-write-800",
+   1
+  ],
+  [
+   "ch-1-char-1600",
+   "ch-1-write-800",
+   1
+  ],
+  [
+   "ch-1-write-800",
+   "ch-1-read-50k",
+   1
+  ],
+  [
+   "ch-1-write-800",
+   "ch-2-char-2500",
+   1
+  ],
+  [
+   "ch-2-char-2500",
+   "ch-2-write-1600",
+   1
+  ],
+  [
+   "ch-2-write-1600",
+   "ch-2-mute-read",
+   1
+  ],
+  [
+   "ch-2-mute-read",
+   "ch-2-read-40k",
+   1
+  ],
+  [
+   "ch-2-read-40k",
+   "ch-2-whole-book",
+   1
+  ],
+  [
+   "ch-2-recite-50",
+   "ch-2-read-40k",
+   1
+  ],
+  [
+   "ch-2-write-1600",
+   "ch-3-char-3000",
+   1
+  ],
+  [
+   "ch-3-char-3000",
+   "ch-3-write-2500",
+   1
+  ],
+  [
+   "ch-3-write-2500",
+   "ch-3-mute-300wpm",
+   1
+  ],
+  [
+   "ch-3-mute-300wpm",
+   "ch-3-read-100k",
+   1
+  ],
+  [
+   "ch-2-whole-book",
+   "ch-3-read-100k",
+   1
+  ],
+  [
+   "ch-2-recite-50",
+   "ch-3-recite-60",
+   1
+  ],
+  [
+   "ch-3-write-2500",
+   "ch-3-composition-16",
+   1
+  ],
+  [
+   "ch-3-write-2500",
+   "ch-3-browse",
+   1
+  ],
+  [
+   "ch-3-composition-16",
+   "ch-7-composition-14",
+   1
+  ],
+  [
+   "ch-3-write-2500",
+   "ch-7-char-3500",
+   1
+  ],
+  [
+   "ch-3-mute-300wpm",
+   "ch-7-mute-500wpm",
+   1
+  ],
+  [
+   "ch-3-read-100k",
+   "ch-7-classic-novels",
+   1
+  ],
+  [
+   "ch-2-whole-book",
+   "ch-7-classic-novels",
+   1
+  ],
+  [
+   "ch-3-recite-60",
+   "ch-7-poetry",
+   1
+  ],
+  [
+   "ch-7-classic-novels",
+   "ch-7-ancient-prose",
+   1
+  ],
+  [
+   "ch-7-classic-novels",
+   "ch-7-rhetoric",
+   1
+  ],
+  [
+   "ch-7-rhetoric",
+   "ch-7-composition-14",
+   1
+  ],
+  [
+   "ch-7-mute-500wpm",
+   "ch-7-critical-reading",
+   1
+  ],
+  [
+   "ch-7-ancient-prose",
+   "ch-7-critical-reading",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.801537",
+ "license": "CC-BY-SA 4.0"
+}

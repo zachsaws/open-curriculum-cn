@@ -1,0 +1,328 @@
+{
+ "version": "0.1.0",
+ "subject": "geography",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 10,
+ "edge_count": 9,
+ "nodes": [
+  {
+   "id": "ge-7-earth",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "地球与地图",
+   "title_en": "",
+   "domain": "自然地理",
+   "subdomain": "earth",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803086",
+   "updated_at": "2026-07-22T12:01:57.803087"
+  },
+  {
+   "id": "ge-7-weather-climate",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "天气与气候",
+   "title_en": "",
+   "domain": "自然地理",
+   "subdomain": "climate",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803088",
+   "updated_at": "2026-07-22T12:01:57.803089"
+  },
+  {
+   "id": "ge-7-landforms",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "地形地貌",
+   "title_en": "",
+   "domain": "自然地理",
+   "subdomain": "landform",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803090",
+   "updated_at": "2026-07-22T12:01:57.803090"
+  },
+  {
+   "id": "ge-7-rivers-lakes",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "河流与湖泊",
+   "title_en": "",
+   "domain": "自然地理",
+   "subdomain": "hydrology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803091",
+   "updated_at": "2026-07-22T12:01:57.803092"
+  },
+  {
+   "id": "ge-7-population",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "人口与民族",
+   "title_en": "",
+   "domain": "人文地理",
+   "subdomain": "population",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803093",
+   "updated_at": "2026-07-22T12:01:57.803093"
+  },
+  {
+   "id": "ge-7-china-overview",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 8,
+   "title": "中国地理概况",
+   "title_en": "",
+   "domain": "中国地理",
+   "subdomain": "china",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.803094",
+   "updated_at": "2026-07-22T12:01:57.803095"
+  },
+  {
+   "id": "ge-8-china-regions",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "中国分区",
+   "title_en": "",
+   "domain": "中国地理",
+   "subdomain": "china",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803096",
+   "updated_at": "2026-07-22T12:01:57.803096"
+  },
+  {
+   "id": "ge-8-world-overview",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "世界地理概况",
+   "title_en": "",
+   "domain": "世界地理",
+   "subdomain": "world",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803097",
+   "updated_at": "2026-07-22T12:01:57.803097"
+  },
+  {
+   "id": "ge-8-world-regions",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "世界分区",
+   "title_en": "",
+   "domain": "世界地理",
+   "subdomain": "world",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803098",
+   "updated_at": "2026-07-22T12:01:57.803099"
+  },
+  {
+   "id": "ge-9-economic",
+   "subject": "geography",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "经济发展与差异",
+   "title_en": "",
+   "domain": "人文地理",
+   "subdomain": "economy",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803100",
+   "updated_at": "2026-07-22T12:01:57.803100"
+  }
+ ],
+ "edges": [
+  [
+   "ge-7-earth",
+   "ge-7-weather-climate",
+   1
+  ],
+  [
+   "ge-7-weather-climate",
+   "ge-7-landforms",
+   1
+  ],
+  [
+   "ge-7-landforms",
+   "ge-7-rivers-lakes",
+   1
+  ],
+  [
+   "ge-7-rivers-lakes",
+   "ge-7-china-overview",
+   1
+  ],
+  [
+   "ge-7-population",
+   "ge-7-china-overview",
+   1
+  ],
+  [
+   "ge-7-china-overview",
+   "ge-8-china-regions",
+   1
+  ],
+  [
+   "ge-7-earth",
+   "ge-8-world-overview",
+   1
+  ],
+  [
+   "ge-8-world-overview",
+   "ge-8-world-regions",
+   1
+  ],
+  [
+   "ge-8-china-regions",
+   "ge-9-economic",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.803101",
+ "license": "CC-BY-SA 4.0"
+}

@@ -1,0 +1,237 @@
+{
+ "version": "0.1.0",
+ "subject": "chemistry",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 7,
+ "edge_count": 7,
+ "nodes": [
+  {
+   "id": "ch-9-matter",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "物质构成的奥秘",
+   "title_en": "",
+   "domain": "物质构成",
+   "subdomain": "matter",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803497",
+   "updated_at": "2026-07-22T12:01:57.803498"
+  },
+  {
+   "id": "ch-9-atom",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "原子结构",
+   "title_en": "",
+   "domain": "物质构成",
+   "subdomain": "atom",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803499",
+   "updated_at": "2026-07-22T12:01:57.803499"
+  },
+  {
+   "id": "ch-9-element",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "元素与元素周期表",
+   "title_en": "",
+   "domain": "物质构成",
+   "subdomain": "element",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803500",
+   "updated_at": "2026-07-22T12:01:57.803501"
+  },
+  {
+   "id": "ch-9-compound",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "化合物",
+   "title_en": "",
+   "domain": "物质构成",
+   "subdomain": "compound",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803502",
+   "updated_at": "2026-07-22T12:01:57.803502"
+  },
+  {
+   "id": "ch-9-reaction",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "化学反应基本规律",
+   "title_en": "",
+   "domain": "化学反应",
+   "subdomain": "reaction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803503",
+   "updated_at": "2026-07-22T12:01:57.803504"
+  },
+  {
+   "id": "ch-9-acid-base",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "常见的酸碱盐",
+   "title_en": "",
+   "domain": "化学反应",
+   "subdomain": "acid_base",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803505",
+   "updated_at": "2026-07-22T12:01:57.803505"
+  },
+  {
+   "id": "ch-9-metal",
+   "subject": "chemistry",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "金属和金属材料",
+   "title_en": "",
+   "domain": "物质构成",
+   "subdomain": "metal",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803506",
+   "updated_at": "2026-07-22T12:01:57.803507"
+  }
+ ],
+ "edges": [
+  [
+   "ch-9-matter",
+   "ch-9-atom",
+   1
+  ],
+  [
+   "ch-9-atom",
+   "ch-9-element",
+   1
+  ],
+  [
+   "ch-9-element",
+   "ch-9-compound",
+   1
+  ],
+  [
+   "ch-9-compound",
+   "ch-9-reaction",
+   1
+  ],
+  [
+   "ch-9-reaction",
+   "ch-9-acid-base",
+   1
+  ],
+  [
+   "ch-9-element",
+   "ch-9-metal",
+   1
+  ],
+  [
+   "ch-9-reaction",
+   "ch-9-metal",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.803508",
+ "license": "CC-BY-SA 4.0"
+}

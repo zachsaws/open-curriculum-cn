@@ -1,0 +1,478 @@
+{
+ "version": "0.1.0",
+ "subject": "science",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 15,
+ "edge_count": 12,
+ "nodes": [
+  {
+   "id": "sc-1-plant-observe",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "观察植物",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "biology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802262",
+   "updated_at": "2026-07-22T12:01:57.802263"
+  },
+  {
+   "id": "sc-1-animal-observe",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "观察动物",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "biology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802264",
+   "updated_at": "2026-07-22T12:01:57.802265"
+  },
+  {
+   "id": "sc-1-body-parts",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "认识身体部位",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "body",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802266",
+   "updated_at": "2026-07-22T12:01:57.802267"
+  },
+  {
+   "id": "sc-1-weather",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "观察天气",
+   "title_en": "",
+   "domain": "地球科学",
+   "subdomain": "earth",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802268",
+   "updated_at": "2026-07-22T12:01:57.802269"
+  },
+  {
+   "id": "sc-1-materials",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "常见材料(纸/木/塑料)",
+   "title_en": "",
+   "domain": "物质科学",
+   "subdomain": "matter",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802270",
+   "updated_at": "2026-07-22T12:01:57.802271"
+  },
+  {
+   "id": "sc-3-animal-classify",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "动物分类",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "biology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802272",
+   "updated_at": "2026-07-22T12:01:57.802272"
+  },
+  {
+   "id": "sc-3-plant-life",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "植物的一生",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "biology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802274",
+   "updated_at": "2026-07-22T12:01:57.802274"
+  },
+  {
+   "id": "sc-3-water-cycle",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "水循环",
+   "title_en": "",
+   "domain": "地球科学",
+   "subdomain": "earth",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802275",
+   "updated_at": "2026-07-22T12:01:57.802276"
+  },
+  {
+   "id": "sc-3-states-of-matter",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "物质三态",
+   "title_en": "",
+   "domain": "物质科学",
+   "subdomain": "matter",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802277",
+   "updated_at": "2026-07-22T12:01:57.802278"
+  },
+  {
+   "id": "sc-3-magnets",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "磁铁",
+   "title_en": "",
+   "domain": "物质科学",
+   "subdomain": "physics",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802279",
+   "updated_at": "2026-07-22T12:01:57.802279"
+  },
+  {
+   "id": "sc-5-cell",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "细胞",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "biology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802281",
+   "updated_at": "2026-07-22T12:01:57.802281"
+  },
+  {
+   "id": "sc-5-ecosystem",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "生态系统",
+   "title_en": "",
+   "domain": "生命科学",
+   "subdomain": "biology",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802282",
+   "updated_at": "2026-07-22T12:01:57.802283"
+  },
+  {
+   "id": "sc-5-solar-system",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "太阳系",
+   "title_en": "",
+   "domain": "地球科学",
+   "subdomain": "earth",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802284",
+   "updated_at": "2026-07-22T12:01:57.802285"
+  },
+  {
+   "id": "sc-5-simple-machines",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "简单机械",
+   "title_en": "",
+   "domain": "物质科学",
+   "subdomain": "physics",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802286",
+   "updated_at": "2026-07-22T12:01:57.802287"
+  },
+  {
+   "id": "sc-5-energy-forms",
+   "subject": "science",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "能量的形式",
+   "title_en": "",
+   "domain": "物质科学",
+   "subdomain": "physics",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802288",
+   "updated_at": "2026-07-22T12:01:57.802288"
+  }
+ ],
+ "edges": [
+  [
+   "sc-1-plant-observe",
+   "sc-3-plant-life",
+   1
+  ],
+  [
+   "sc-1-animal-observe",
+   "sc-3-animal-classify",
+   1
+  ],
+  [
+   "sc-1-body-parts",
+   "sc-5-cell",
+   1
+  ],
+  [
+   "sc-1-weather",
+   "sc-3-water-cycle",
+   1
+  ],
+  [
+   "sc-1-materials",
+   "sc-3-states-of-matter",
+   1
+  ],
+  [
+   "sc-1-materials",
+   "sc-3-magnets",
+   1
+  ],
+  [
+   "sc-3-animal-classify",
+   "sc-5-ecosystem",
+   1
+  ],
+  [
+   "sc-3-plant-life",
+   "sc-5-ecosystem",
+   1
+  ],
+  [
+   "sc-3-water-cycle",
+   "sc-5-solar-system",
+   1
+  ],
+  [
+   "sc-3-states-of-matter",
+   "sc-5-energy-forms",
+   1
+  ],
+  [
+   "sc-3-magnets",
+   "sc-5-simple-machines",
+   1
+  ],
+  [
+   "sc-3-states-of-matter",
+   "sc-5-simple-machines",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.802290",
+ "license": "CC-BY-SA 4.0"
+}

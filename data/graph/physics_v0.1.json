@@ -1,0 +1,370 @@
+{
+ "version": "0.1.0",
+ "subject": "physics",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 11,
+ "edge_count": 12,
+ "nodes": [
+  {
+   "id": "ph-8-mechanics-intro",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "机械运动",
+   "title_en": "",
+   "domain": "力学",
+   "subdomain": "mechanics",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803283",
+   "updated_at": "2026-07-22T12:01:57.803284"
+  },
+  {
+   "id": "ph-8-force",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "力",
+   "title_en": "",
+   "domain": "力学",
+   "subdomain": "force",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803285",
+   "updated_at": "2026-07-22T12:01:57.803285"
+  },
+  {
+   "id": "ph-8-pressure",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "压强",
+   "title_en": "",
+   "domain": "力学",
+   "subdomain": "pressure",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803286",
+   "updated_at": "2026-07-22T12:01:57.803287"
+  },
+  {
+   "id": "ph-8-floating",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "浮力",
+   "title_en": "",
+   "domain": "力学",
+   "subdomain": "buoyancy",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803288",
+   "updated_at": "2026-07-22T12:01:57.803288"
+  },
+  {
+   "id": "ph-8-work-power",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "功和机械能",
+   "title_en": "",
+   "domain": "力学",
+   "subdomain": "energy",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803289",
+   "updated_at": "2026-07-22T12:01:57.803289"
+  },
+  {
+   "id": "ph-8-heat",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "内能",
+   "title_en": "",
+   "domain": "热学",
+   "subdomain": "heat",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.803290",
+   "updated_at": "2026-07-22T12:01:57.803291"
+  },
+  {
+   "id": "ph-9-electricity",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "电路基础",
+   "title_en": "",
+   "domain": "电学",
+   "subdomain": "electricity",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803292",
+   "updated_at": "2026-07-22T12:01:57.803292"
+  },
+  {
+   "id": "ph-9-ohm",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "欧姆定律",
+   "title_en": "",
+   "domain": "电学",
+   "subdomain": "ohm",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803293",
+   "updated_at": "2026-07-22T12:01:57.803294"
+  },
+  {
+   "id": "ph-9-power",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "电功率",
+   "title_en": "",
+   "domain": "电学",
+   "subdomain": "power",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803295",
+   "updated_at": "2026-07-22T12:01:57.803295"
+  },
+  {
+   "id": "ph-9-magnetism",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "电与磁",
+   "title_en": "",
+   "domain": "电学",
+   "subdomain": "magnetism",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803296",
+   "updated_at": "2026-07-22T12:01:57.803296"
+  },
+  {
+   "id": "ph-9-wave",
+   "subject": "physics",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "信息的传递(波)",
+   "title_en": "",
+   "domain": "光学",
+   "subdomain": "wave",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.803297",
+   "updated_at": "2026-07-22T12:01:57.803298"
+  }
+ ],
+ "edges": [
+  [
+   "ph-8-mechanics-intro",
+   "ph-8-force",
+   1
+  ],
+  [
+   "ph-8-force",
+   "ph-8-pressure",
+   1
+  ],
+  [
+   "ph-8-force",
+   "ph-8-floating",
+   1
+  ],
+  [
+   "ph-8-pressure",
+   "ph-8-floating",
+   1
+  ],
+  [
+   "ph-8-force",
+   "ph-8-work-power",
+   1
+  ],
+  [
+   "ph-8-mechanics-intro",
+   "ph-8-work-power",
+   1
+  ],
+  [
+   "ph-8-work-power",
+   "ph-8-heat",
+   1
+  ],
+  [
+   "ph-9-electricity",
+   "ph-9-ohm",
+   1
+  ],
+  [
+   "ph-9-electricity",
+   "ph-9-power",
+   1
+  ],
+  [
+   "ph-9-ohm",
+   "ph-9-power",
+   1
+  ],
+  [
+   "ph-9-power",
+   "ph-9-magnetism",
+   1
+  ],
+  [
+   "ph-8-heat",
+   "ph-9-wave",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.803299",
+ "license": "CC-BY-SA 4.0"
+}

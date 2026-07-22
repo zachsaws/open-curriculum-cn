@@ -1,0 +1,360 @@
+{
+ "version": "0.1.0",
+ "subject": "history",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 11,
+ "edge_count": 10,
+ "nodes": [
+  {
+   "id": "hi-7-prehistory",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "中国古代史前",
+   "title_en": "",
+   "domain": "中国古代史",
+   "subdomain": "ancient",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802877",
+   "updated_at": "2026-07-22T12:01:57.802878"
+  },
+  {
+   "id": "hi-7-xia-shang-zhou",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "夏商周",
+   "title_en": "",
+   "domain": "中国古代史",
+   "subdomain": "ancient",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802879",
+   "updated_at": "2026-07-22T12:01:57.802880"
+  },
+  {
+   "id": "hi-7-qin-han",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "秦汉",
+   "title_en": "",
+   "domain": "中国古代史",
+   "subdomain": "ancient",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802881",
+   "updated_at": "2026-07-22T12:01:57.802881"
+  },
+  {
+   "id": "hi-7-tang-song",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "唐宋",
+   "title_en": "",
+   "domain": "中国古代史",
+   "subdomain": "ancient",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802882",
+   "updated_at": "2026-07-22T12:01:57.802883"
+  },
+  {
+   "id": "hi-7-yuan-ming-qing",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "元明清",
+   "title_en": "",
+   "domain": "中国古代史",
+   "subdomain": "ancient",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802884",
+   "updated_at": "2026-07-22T12:01:57.802884"
+  },
+  {
+   "id": "hi-7-near-ancient",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 8,
+   "title": "中国近代史",
+   "title_en": "",
+   "domain": "中国近代史",
+   "subdomain": "modern",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802885",
+   "updated_at": "2026-07-22T12:01:57.802886"
+  },
+  {
+   "id": "hi-7-contemporary",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "中国现代史",
+   "title_en": "",
+   "domain": "中国现代史",
+   "subdomain": "contemporary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.802887",
+   "updated_at": "2026-07-22T12:01:57.802887"
+  },
+  {
+   "id": "hi-8-world-ancient",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "世界古代史",
+   "title_en": "",
+   "domain": "世界史",
+   "subdomain": "world",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802888",
+   "updated_at": "2026-07-22T12:01:57.802888"
+  },
+  {
+   "id": "hi-8-world-modern",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "世界近代史",
+   "title_en": "",
+   "domain": "世界史",
+   "subdomain": "world",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.802889",
+   "updated_at": "2026-07-22T12:01:57.802890"
+  },
+  {
+   "id": "hi-8-world-contemp",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "世界现代史",
+   "title_en": "",
+   "domain": "世界史",
+   "subdomain": "world",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.802891",
+   "updated_at": "2026-07-22T12:01:57.802891"
+  },
+  {
+   "id": "hi-9-revolution",
+   "subject": "history",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "革命史专题",
+   "title_en": "",
+   "domain": "中国现代史",
+   "subdomain": "revolution",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.802892",
+   "updated_at": "2026-07-22T12:01:57.802893"
+  }
+ ],
+ "edges": [
+  [
+   "hi-7-prehistory",
+   "hi-7-xia-shang-zhou",
+   1
+  ],
+  [
+   "hi-7-xia-shang-zhou",
+   "hi-7-qin-han",
+   1
+  ],
+  [
+   "hi-7-qin-han",
+   "hi-7-tang-song",
+   1
+  ],
+  [
+   "hi-7-tang-song",
+   "hi-7-yuan-ming-qing",
+   1
+  ],
+  [
+   "hi-7-yuan-ming-qing",
+   "hi-7-near-ancient",
+   1
+  ],
+  [
+   "hi-7-near-ancient",
+   "hi-7-contemporary",
+   1
+  ],
+  [
+   "hi-7-prehistory",
+   "hi-8-world-ancient",
+   1
+  ],
+  [
+   "hi-8-world-ancient",
+   "hi-8-world-modern",
+   1
+  ],
+  [
+   "hi-8-world-modern",
+   "hi-8-world-contemp",
+   1
+  ],
+  [
+   "hi-7-contemporary",
+   "hi-9-revolution",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.802894",
+ "license": "CC-BY-SA 4.0"
+}

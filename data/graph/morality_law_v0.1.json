@@ -1,0 +1,466 @@
+{
+ "version": "0.1.0",
+ "subject": "morality_law",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 14,
+ "edge_count": 15,
+ "nodes": [
+  {
+   "id": "ml-1-self",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "认识自己",
+   "title_en": "",
+   "domain": "自我认识",
+   "subdomain": "self",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802536",
+   "updated_at": "2026-07-22T12:01:57.802537"
+  },
+  {
+   "id": "ml-1-family",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "我爱我家",
+   "title_en": "",
+   "domain": "家庭",
+   "subdomain": "family",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802538",
+   "updated_at": "2026-07-22T12:01:57.802539"
+  },
+  {
+   "id": "ml-1-friends",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 2,
+   "title": "我和同学",
+   "title_en": "",
+   "domain": "交往",
+   "subdomain": "social",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T12:01:57.802540",
+   "updated_at": "2026-07-22T12:01:57.802540"
+  },
+  {
+   "id": "ml-3-school",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "我们的学校",
+   "title_en": "",
+   "domain": "学校",
+   "subdomain": "school",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802541",
+   "updated_at": "2026-07-22T12:01:57.802542"
+  },
+  {
+   "id": "ml-3-hometown",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "家乡的抚育",
+   "title_en": "",
+   "domain": "家乡",
+   "subdomain": "hometown",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802543",
+   "updated_at": "2026-07-22T12:01:57.802543"
+  },
+  {
+   "id": "ml-3-public-life",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "公共生活",
+   "title_en": "",
+   "domain": "社会",
+   "subdomain": "public",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.802544",
+   "updated_at": "2026-07-22T12:01:57.802545"
+  },
+  {
+   "id": "ml-5-constitution",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "宪法是根本法",
+   "title_en": "",
+   "domain": "法治",
+   "subdomain": "law",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802546",
+   "updated_at": "2026-07-22T12:01:57.802546"
+  },
+  {
+   "id": "ml-5-citizen-rights",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "公民权利与义务",
+   "title_en": "",
+   "domain": "法治",
+   "subdomain": "rights",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802547",
+   "updated_at": "2026-07-22T12:01:57.802547"
+  },
+  {
+   "id": "ml-5-china-profile",
+   "subject": "morality_law",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "中国概况",
+   "title_en": "",
+   "domain": "国情",
+   "subdomain": "china",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.802548",
+   "updated_at": "2026-07-22T12:01:57.802549"
+  },
+  {
+   "id": "ml-7-political-system",
+   "subject": "morality_law",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "我国政治制度",
+   "title_en": "",
+   "domain": "政治",
+   "subdomain": "politics",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802550",
+   "updated_at": "2026-07-22T12:01:57.802550"
+  },
+  {
+   "id": "ml-7-economy",
+   "subject": "morality_law",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "经济发展",
+   "title_en": "",
+   "domain": "经济",
+   "subdomain": "economy",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802551",
+   "updated_at": "2026-07-22T12:01:57.802552"
+  },
+  {
+   "id": "ml-7-culture",
+   "subject": "morality_law",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "文化传承",
+   "title_en": "",
+   "domain": "文化",
+   "subdomain": "culture",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802553",
+   "updated_at": "2026-07-22T12:01:57.802553"
+  },
+  {
+   "id": "ml-7-rule-of-law",
+   "subject": "morality_law",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "全面依法治国",
+   "title_en": "",
+   "domain": "法治",
+   "subdomain": "law",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.802554",
+   "updated_at": "2026-07-22T12:01:57.802555"
+  },
+  {
+   "id": "ml-7-philosophy",
+   "subject": "morality_law",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "哲学入门",
+   "title_en": "",
+   "domain": "哲学",
+   "subdomain": "philosophy",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T12:01:57.802556",
+   "updated_at": "2026-07-22T12:01:57.802556"
+  }
+ ],
+ "edges": [
+  [
+   "ml-1-self",
+   "ml-1-family",
+   1
+  ],
+  [
+   "ml-1-self",
+   "ml-1-friends",
+   1
+  ],
+  [
+   "ml-1-family",
+   "ml-3-school",
+   1
+  ],
+  [
+   "ml-1-friends",
+   "ml-3-school",
+   1
+  ],
+  [
+   "ml-3-school",
+   "ml-3-hometown",
+   1
+  ],
+  [
+   "ml-3-school",
+   "ml-3-public-life",
+   1
+  ],
+  [
+   "ml-3-hometown",
+   "ml-5-china-profile",
+   1
+  ],
+  [
+   "ml-3-public-life",
+   "ml-5-citizen-rights",
+   1
+  ],
+  [
+   "ml-5-constitution",
+   "ml-5-citizen-rights",
+   1
+  ],
+  [
+   "ml-5-china-profile",
+   "ml-7-political-system",
+   1
+  ],
+  [
+   "ml-5-citizen-rights",
+   "ml-7-political-system",
+   1
+  ],
+  [
+   "ml-5-citizen-rights",
+   "ml-7-rule-of-law",
+   1
+  ],
+  [
+   "ml-7-political-system",
+   "ml-7-economy",
+   1
+  ],
+  [
+   "ml-7-political-system",
+   "ml-7-culture",
+   1
+  ],
+  [
+   "ml-7-culture",
+   "ml-7-philosophy",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.802558",
+ "license": "CC-BY-SA 4.0"
+}

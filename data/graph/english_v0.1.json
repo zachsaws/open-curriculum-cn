@@ -1,0 +1,680 @@
+{
+ "version": "0.1.0",
+ "subject": "english",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 21,
+ "edge_count": 20,
+ "nodes": [
+  {
+   "id": "en-3-alphabet",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "26 个字母",
+   "title_en": "",
+   "domain": "字母",
+   "subdomain": "alphabet",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801934",
+   "updated_at": "2026-07-22T12:01:57.801936"
+  },
+  {
+   "id": "en-3-greeting",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "日常问候",
+   "title_en": "",
+   "domain": "口语",
+   "subdomain": "speaking",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801938",
+   "updated_at": "2026-07-22T12:01:57.801938"
+  },
+  {
+   "id": "en-3-numbers",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "数字 1-100",
+   "title_en": "",
+   "domain": "词汇",
+   "subdomain": "vocabulary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801940",
+   "updated_at": "2026-07-22T12:01:57.801940"
+  },
+  {
+   "id": "en-3-color-shape",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "颜色和形状",
+   "title_en": "",
+   "domain": "词汇",
+   "subdomain": "vocabulary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801941",
+   "updated_at": "2026-07-22T12:01:57.801942"
+  },
+  {
+   "id": "en-3-family",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "家庭成员称呼",
+   "title_en": "",
+   "domain": "词汇",
+   "subdomain": "vocabulary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801943",
+   "updated_at": "2026-07-22T12:01:57.801943"
+  },
+  {
+   "id": "en-3-simple-sentence",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "简单句",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "sentence",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T12:01:57.801945",
+   "updated_at": "2026-07-22T12:01:57.801945"
+  },
+  {
+   "id": "en-5-vocab-500",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "核心词汇 500",
+   "title_en": "",
+   "domain": "词汇",
+   "subdomain": "vocabulary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801946",
+   "updated_at": "2026-07-22T12:01:57.801946"
+  },
+  {
+   "id": "en-5-present-tense",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "一般现在时",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "grammar",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801947",
+   "updated_at": "2026-07-22T12:01:57.801948"
+  },
+  {
+   "id": "en-5-past-tense",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "一般过去时",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "grammar",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801949",
+   "updated_at": "2026-07-22T12:01:57.801949"
+  },
+  {
+   "id": "en-5-future-tense",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "一般将来时",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "grammar",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801950",
+   "updated_at": "2026-07-22T12:01:57.801950"
+  },
+  {
+   "id": "en-5-reading-50w",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "阅读量 5 万词",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801951",
+   "updated_at": "2026-07-22T12:01:57.801952"
+  },
+  {
+   "id": "en-5-composition-50w",
+   "subject": "english",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 6,
+   "title": "短文写作 50 词",
+   "title_en": "",
+   "domain": "写作",
+   "subdomain": "writing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T12:01:57.801952",
+   "updated_at": "2026-07-22T12:01:57.801953"
+  },
+  {
+   "id": "en-7-vocab-1600",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "中考词汇 1600",
+   "title_en": "",
+   "domain": "词汇",
+   "subdomain": "vocabulary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801954",
+   "updated_at": "2026-07-22T12:01:57.801954"
+  },
+  {
+   "id": "en-7-tense-system",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "时态系统(8 种)",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "grammar",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801955",
+   "updated_at": "2026-07-22T12:01:57.801955"
+  },
+  {
+   "id": "en-7-clauses",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "从句(宾/定/状)",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "grammar",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801956",
+   "updated_at": "2026-07-22T12:01:57.801957"
+  },
+  {
+   "id": "en-7-passive",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "被动语态",
+   "title_en": "",
+   "domain": "语法",
+   "subdomain": "grammar",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801958",
+   "updated_at": "2026-07-22T12:01:57.801958"
+  },
+  {
+   "id": "en-7-reading-100k",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "阅读量 10 万词",
+   "title_en": "",
+   "domain": "阅读",
+   "subdomain": "reading",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801959",
+   "updated_at": "2026-07-22T12:01:57.801959"
+  },
+  {
+   "id": "en-7-composition-100w",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "作文 100 词",
+   "title_en": "",
+   "domain": "写作",
+   "subdomain": "writing",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801960",
+   "updated_at": "2026-07-22T12:01:57.801961"
+  },
+  {
+   "id": "en-7-listening",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "听力理解",
+   "title_en": "",
+   "domain": "听力",
+   "subdomain": "listening",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801962",
+   "updated_at": "2026-07-22T12:01:57.801962"
+  },
+  {
+   "id": "en-7-oral",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 9,
+   "title": "口语交际",
+   "title_en": "",
+   "domain": "口语",
+   "subdomain": "speaking",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T12:01:57.801963",
+   "updated_at": "2026-07-22T12:01:57.801963"
+  },
+  {
+   "id": "en-9-vocab-2000",
+   "subject": "english",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "高考词汇 2000",
+   "title_en": "",
+   "domain": "词汇",
+   "subdomain": "vocabulary",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "部编版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T12:01:57.801964",
+   "updated_at": "2026-07-22T12:01:57.801965"
+  }
+ ],
+ "edges": [
+  [
+   "en-3-alphabet",
+   "en-3-greeting",
+   1
+  ],
+  [
+   "en-3-alphabet",
+   "en-3-numbers",
+   1
+  ],
+  [
+   "en-3-alphabet",
+   "en-3-color-shape",
+   1
+  ],
+  [
+   "en-3-alphabet",
+   "en-3-family",
+   1
+  ],
+  [
+   "en-3-greeting",
+   "en-3-simple-sentence",
+   1
+  ],
+  [
+   "en-3-simple-sentence",
+   "en-5-vocab-500",
+   1
+  ],
+  [
+   "en-5-vocab-500",
+   "en-5-present-tense",
+   1
+  ],
+  [
+   "en-5-present-tense",
+   "en-5-past-tense",
+   1
+  ],
+  [
+   "en-5-past-tense",
+   "en-5-future-tense",
+   1
+  ],
+  [
+   "en-5-vocab-500",
+   "en-5-reading-50w",
+   1
+  ],
+  [
+   "en-5-vocab-500",
+   "en-5-composition-50w",
+   1
+  ],
+  [
+   "en-5-past-tense",
+   "en-7-tense-system",
+   1
+  ],
+  [
+   "en-5-future-tense",
+   "en-7-tense-system",
+   1
+  ],
+  [
+   "en-5-reading-50w",
+   "en-7-reading-100k",
+   1
+  ],
+  [
+   "en-5-composition-50w",
+   "en-7-composition-100w",
+   1
+  ],
+  [
+   "en-7-tense-system",
+   "en-7-clauses",
+   1
+  ],
+  [
+   "en-7-clauses",
+   "en-7-passive",
+   1
+  ],
+  [
+   "en-7-tense-system",
+   "en-7-listening",
+   1
+  ],
+  [
+   "en-7-tense-system",
+   "en-7-oral",
+   1
+  ],
+  [
+   "en-7-vocab-1600",
+   "en-9-vocab-2000",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T12:01:57.801967",
+ "license": "CC-BY-SA 4.0"
+}
