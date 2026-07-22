@@ -10,7 +10,7 @@
   "content_req_full_pct": 100.0,
   "bloom_coverage_pct": 100.0,
   "key_points_avg": 2.2,
-  "cross_stage_mismatch": 4,
+  "cross_stage_mismatch": 5,
   "ocr_threshold": 15,
   "full_threshold": 80,
   "verdict": "PASS"

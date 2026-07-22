@@ -42,17 +42,19 @@
       "difficulty": 1,
       "summary": "观察常见动物,描述其特征",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。观察常见动物,描述其特征",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察常见动物,描述其特征",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
+        "能",
+        "知道",
         "描述"
       ],
       "key_points": [
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
         "描述其特征",
-        "生物具有区别于非生物的特征",
         "观察常见动物"
       ],
       "estimated_minutes": 15,
@@ -71,17 +73,19 @@
       "difficulty": 1,
       "summary": "认识自己身体的主要部位",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。认识自己身体的主要部位",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。认识自己身体的主要部位",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
-        "认识"
+        "认识",
+        "能",
+        "知道"
       ],
       "key_points": [
-        "认识自己身体的主要部位",
-        "生物具有区别于非生物的特征"
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
+        "认识自己身体的主要部位"
       ],
       "estimated_minutes": 15,
       "review_round": 1,
@@ -99,16 +103,17 @@
       "difficulty": 1,
       "summary": "养成勤洗手等良好卫生习惯",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。养成勤洗手等良好卫生习惯",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。养成勤洗手等良好卫生习惯",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
-        "了解"
+        "能",
+        "知道"
       ],
       "key_points": [
-        "生物具有区别于非生物的特征",
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
         "养成勤洗手等良好卫生习惯"
       ],
       "estimated_minutes": 15,
@@ -127,16 +132,17 @@
       "difficulty": 2,
       "summary": "观察植物从种子到成熟的过程",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。观察植物从种子到成熟的过程",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察植物从种子到成熟的过程",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
-        "了解"
+        "能",
+        "知道"
       ],
       "key_points": [
-        "生物具有区别于非生物的特征",
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
         "观察植物从种子到成熟的过程"
       ],
       "estimated_minutes": 25,
@@ -216,17 +222,19 @@
       "difficulty": 1,
       "summary": "观察水,了解水的无色无味透明",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。观察水,了解水的无色无味透明",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察水,了解水的无色无味透明",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
-        "了解"
+        "了解",
+        "能",
+        "知道"
       ],
       "key_points": [
-        "了解水的无色无味透明",
-        "生物具有区别于非生物的特征"
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
+        "了解水的无色无味透明"
       ],
       "estimated_minutes": 15,
       "review_round": 1,
@@ -244,17 +252,19 @@
       "difficulty": 1,
       "summary": "通过实验证明空气的存在",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。通过实验证明空气的存在",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。通过实验证明空气的存在",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
+        "能",
+        "知道",
         "实验"
       ],
       "key_points": [
-        "通过实验证明空气的存在",
-        "生物具有区别于非生物的特征"
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
+        "通过实验证明空气的存在"
       ],
       "estimated_minutes": 15,
       "review_round": 1,
@@ -272,16 +282,17 @@
       "difficulty": 1,
       "summary": "观察并记录天气变化",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。观察并记录天气变化",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察并记录天气变化",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": "能说出常见的天气现象，知道天气变化的影响，认识到土壤为众多",
       "bloom": [
-        "了解"
+        "能",
+        "知道"
       ],
       "key_points": [
-        "生物具有区别于非生物的特征",
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
         "观察并记录天气变化"
       ],
       "estimated_minutes": 15,
@@ -300,16 +311,17 @@
       "difficulty": 1,
       "summary": "观察太阳和月亮的形状变化",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。观察太阳和月亮的形状变化",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察太阳和月亮的形状变化",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
-        "了解"
+        "能",
+        "知道"
       ],
       "key_points": [
-        "生物具有区别于非生物的特征",
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
         "观察太阳和月亮的形状变化"
       ],
       "estimated_minutes": 15,
@@ -328,17 +340,19 @@
       "difficulty": 1,
       "summary": "感受四季变化及对生活的影响",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。感受四季变化及对生活的影响",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。感受四季变化及对生活的影响",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
+        "能",
+        "知道",
         "感受"
       ],
       "key_points": [
-        "感受四季变化及对生活的影响",
-        "生物具有区别于非生物的特征"
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
+        "感受四季变化及对生活的影响"
       ],
       "estimated_minutes": 15,
       "review_round": 1,
@@ -356,17 +370,19 @@
       "difficulty": 2,
       "summary": "利用身边材料制作简单模型",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。利用身边材料制作简单模型",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。利用身边材料制作简单模型",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": "能借助动画演示或动手制作简单模型，模拟地球、月球和太阳的相",
       "bloom": [
+        "能",
+        "知道",
         "制作"
       ],
       "key_points": [
-        "利用身边材料制作简单模型",
-        "生物具有区别于非生物的特征"
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
+        "利用身边材料制作简单模型"
       ],
       "estimated_minutes": 25,
       "review_round": 1,
@@ -384,16 +400,17 @@
       "difficulty": 1,
       "summary": "安全使用剪刀/尺子等简单工具",
       "source": "2022 义教课标",
-      "content_req": "生物具有区别于非生物的特征。安全使用剪刀/尺子等简单工具",
+      "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。安全使用剪刀/尺子等简单工具",
       "src_page": 1,
       "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [
-        "了解"
+        "能",
+        "知道"
       ],
       "key_points": [
-        "生物具有区别于非生物的特征",
+        "知道动能、声能、光能、热能、电能、磁能等都是能的",
         "安全使用剪刀/尺子等简单工具"
       ],
       "estimated_minutes": 15,
@@ -1005,17 +1022,18 @@
       "difficulty": 3,
       "summary": "认识杠杆/滑轮/斜面等简单机械",
       "source": "2022 义教课标",
-      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识杠杆/滑轮/斜面等简单机械",
+      "content_req": "知道简单机械〈杠杆、滑轮、轮轴、斜面) 及其在生产。认识杠杆/滑轮/斜面等简单机械",
       "src_page": 1,
-      "src_stage": "第三学段",
+      "src_stage": "第一学段",
       "src_domain_ocr": null,
       "academic_req": "知道常见的简单机械〈杠杆、滑轮、轮轴、和斜面) 及其应用;能举",
       "bloom": [
-        "认识"
+        "认识",
+        "知道"
       ],
       "key_points": [
-        "认识杠杆/滑轮/斜面等简单机械",
-        "电磁相 | 四列举党用的不同形状的磁铁"
+        "知道简单机械〈杠杆、滑轮、轮轴、斜面) 及其在生产",
+        "认识杠杆/滑轮/斜面等简单机械"
       ],
       "estimated_minutes": 40,
       "review_round": 1,

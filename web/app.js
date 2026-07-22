@@ -52,6 +52,9 @@ async function loadData() {
 
   buildLegend();
   initGraph();
+  setupSearch();
+  // 启动后计算根节点
+  setTimeout(() => updateRootCount(), 2000);
   loading.classList.add('done');
 }
 
@@ -64,11 +67,30 @@ function buildLegend() {
     el.className = 'chip';
     el.dataset.subject = s;
     el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${SUBJECT_CN[s] || s}</span><span class="ct">${counts[i]}</span>`;
-    el.onclick = () => {
+    el.onclick = (e) => {
+      // 双击才飞向该学科, 单击只切换显隐
+      if (e.shiftKey) {
+        flyToSubject(s);
+        return;
+      }
       el.classList.toggle('off');
       updateFilter();
     };
+    el.ondblclick = () => flyToSubject(s);
     legend.appendChild(el);
+  });
+}
+
+function flyToSubject(s) {
+  if (!cy) return;
+  const nodes = cy.nodes().filter(n => n.data('subject') === s);
+  if (nodes.length === 0) return;
+  // 计算中心 + 缩放
+  const bb = nodes.boundingBox();
+  cy.animate({
+    center: { x: (bb.x1 + bb.x2) / 2, y: (bb.y1 + bb.y2) / 2 },
+    zoom: 1.2,
+    duration: 600,
   });
 }
 
@@ -78,7 +100,7 @@ function updateFilter() {
   chips.forEach(chip => {
     if (!chip.classList.contains('off')) newActive.add(chip.dataset.subject);
   });
-  activeGroups = newActive;
+  activeGroups = new Set(newActive);
   if (cy) {
     cy.nodes().forEach(n => {
       if (activeGroups.has(n.data('subject'))) {
@@ -88,6 +110,103 @@ function updateFilter() {
       }
     });
   }
+}
+
+// 计算缺先决根节点 (无入度的节点) = 学习的"入口"概念
+function updateRootCount() {
+  if (!cy) return 0;
+  const roots = cy.nodes().filter(n => n.indegree() === 0 && n.data('subject'));
+  document.getElementById('rCount').textContent = roots.length;
+  return roots.length;
+}
+
+// 切换根节点高亮
+let rootsHighlighted = false;
+function toggleRootsHighlight() {
+  if (!cy) return;
+  rootsHighlighted = !rootsHighlighted;
+  cy.nodes().removeClass('root-node');
+  if (rootsHighlighted) {
+    cy.nodes().filter(n => n.indegree() === 0).addClass('root-node');
+  }
+  document.getElementById('toggleRoots').textContent = rootsHighlighted ? '取消高亮' : '高亮入口';
+}
+
+// 搜索功能
+function setupSearch() {
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+  let debounce = null;
+  input.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => doSearch(input.value.trim()), 120);
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      input.value = '';
+      results.classList.remove('on');
+      cy.elements().removeClass('search-hit');
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.search')) results.classList.remove('on');
+  });
+}
+
+function doSearch(q) {
+  const results = document.getElementById('searchResults');
+  if (!q || q.length < 1) {
+    results.classList.remove('on');
+    cy.elements().removeClass('search-hit');
+    return;
+  }
+  const ql = q.toLowerCase();
+  const hits = DATA.nodes.filter(n => {
+    if (!activeGroups.has(n.subject)) return false;
+    return (n.title || '').toLowerCase().includes(ql)
+        || (n.id || '').toLowerCase().includes(ql)
+        || (n.subdomain || '').toLowerCase().includes(ql)
+        || (n.domain || '').toLowerCase().includes(ql)
+        || (n.summary || '').toLowerCase().includes(ql);
+  }).slice(0, 30);
+
+  // 高亮
+  cy.elements().removeClass('search-hit');
+  const hitIds = new Set(hits.map(n => n.id));
+  cy.nodes().forEach(n => {
+    if (hitIds.has(n.id())) n.addClass('search-hit');
+  });
+
+  // 渲染结果列表
+  if (hits.length === 0) {
+    results.innerHTML = '<div class="r-empty">无匹配概念</div>';
+  } else {
+    let html = `<div class="r-count">${hits.length} 匹配 (按 ESC 关闭)</div>`;
+    hits.forEach((n) => {
+      html += `<div class="r-item" data-id="${n.id}">
+        <span class="r-dot" style="background:${PALETTE[n.subject] || '#888'}"></span>
+        <span class="r-t">${n.title}</span>
+        <span class="r-m">G${n.grade_start}${n.grade_end !== n.grade_start ? '-' + n.grade_end : ''}</span>
+      </div>`;
+    });
+    results.innerHTML = html;
+    // 绑定点击
+    results.querySelectorAll('.r-item').forEach(el => {
+      el.onclick = () => {
+        const id = el.dataset.id;
+        const n = cy.getElementById(id);
+        if (n.length) {
+          results.classList.remove('on');
+          document.getElementById('searchInput').value = '';
+          showCard(n.data());
+          cy.animate({ center: { eles: n }, zoom: 2.5 }, { duration: 500 });
+          cy.elements().unselect();
+          n.select();
+        }
+      };
+    });
+  }
+  results.classList.add('on');
 }
 
 function initGraph() {
@@ -253,10 +372,17 @@ function initGraph() {
 
   cy.on('tap', 'node', evt => {
     showCard(evt.target.data());
+    // 高亮 1-2 层邻居
+    cy.elements().removeClass('neighbor-highlight').removeClass('neighbor-dim');
+    const n = evt.target;
+    const neighborhood = n.neighborhood().union(n);
+    cy.elements().not(neighborhood).addClass('neighbor-dim');
+    neighborhood.addClass('neighbor-highlight');
   });
   cy.on('tap', evt => {
     if (evt.target === cy) {
       document.getElementById('card').classList.remove('on');
+      cy.elements().removeClass('neighbor-highlight').removeClass('neighbor-dim');
     }
   });
 
@@ -421,7 +547,7 @@ document.getElementById('toggleLabels').onclick = () => {
 };
 
 // 重排 — 按学科分块
-document.getElementById('reLayout').onclick = () => {
+function relayout() {
   const W = cy.width();
   const H = cy.height();
   const padding = 60;
@@ -457,6 +583,10 @@ document.getElementById('reLayout').onclick = () => {
     });
   });
   cy.layout({ name: 'preset', positions: pos, fit: true, padding: padding }).run();
-};
+}
+document.getElementById('reLayout').onclick = relayout;
+
+// 切换根节点高亮
+document.getElementById('toggleRoots').onclick = toggleRootsHighlight;
 
 loadData();

@@ -176,6 +176,26 @@ def extract_ocr_items(pages):
                         'examples': examples,
                         'source': '字面1.1',
                     })
+            # 第三种格式: @ 行 (第四学段常用)
+            for ln_m in re.finditer(r'(?:^|\n)\s*[@@]\s*([\u4e00-\u9fa5][^。\n@]{8,200})', snippet):
+                body = ln_m.group(1).strip()
+                examples = re.findall(r'[\(（]\s*例\s*(\d+)\s*[\)）]', body)
+                examples = [f'例{e}' for e in examples]
+                body = re.sub(r'\s*[\(（]\s*例\s*\d+\s*[\)）]\s*', '', body)
+                if len(body) >= 6:
+                    abs_pos = i + len(kw) + ln_m.start()
+                    page_num = full_text[:abs_pos].count('\f') + 1
+                    items.append({
+                        'stage': stage,
+                        'domain': None,
+                        'num': '@',
+                        'text': body,
+                        'page': page_num,
+                        'line_idx': 0,
+                        'section': section,
+                        'examples': examples,
+                        'source': '字面@',
+                    })
             idx = i + len(kw)
 
     # 2. 段标式: 找 【内容要求】/【学业要求】 + 后续 800 字 (补强)
@@ -233,6 +253,26 @@ def extract_ocr_items(pages):
                         'section': section,
                         'examples': examples,
                         'source': '段标1.1',
+                    })
+            # @ 行格式 (第四学段常用, 数学/物理 P61+)
+            for ln_m in re.finditer(r'(?:^|\n)\s*[@@]\s*([\u4e00-\u9fa5][^。\n@]{8,200})', snippet):
+                body = ln_m.group(1).strip()
+                examples = re.findall(r'[\(（]\s*例\s*(\d+)\s*[\)）]', body)
+                examples = [f'例{e}' for e in examples]
+                body = re.sub(r'\s*[\(（]\s*例\s*\d+\s*[\)）]\s*', '', body)
+                if len(body) >= 6:
+                    abs_pos = i + len(kw_block) + ln_m.start()
+                    page_num = full_text[:abs_pos].count('\f') + 1
+                    items.append({
+                        'stage': stage,
+                        'domain': None,
+                        'num': '@',
+                        'text': body,
+                        'page': page_num,
+                        'line_idx': 0,
+                        'section': section,
+                        'examples': examples,
+                        'source': '段标@',
                     })
             idx = i + len(kw_block)
 
