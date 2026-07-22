@@ -154,6 +154,19 @@
   .search .r-empty { padding: 12px; text-align: center; color: #5a6278; font-size: 12px; }
   .search .r-count { padding: 6px 10px; color: #5a6278; font-size: 10px; font-family: "SF Mono", monospace; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 4px; }
 
+  /* 语言切换 */
+  .lang-switch {
+    position: fixed; top: 20px; right: 220px; z-index: 13;
+    display: flex; gap: 4px;
+  }
+  .lang-switch button {
+    background: rgba(20, 24, 38, 0.85); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08); color: #8a92a8;
+    padding: 4px 10px; font-size: 11px; cursor: pointer;
+    border-radius: 4px; font-family: "SF Mono", monospace;
+  }
+  .lang-switch button.on { color: #e6e9f2; border-color: #6b8cff; background: rgba(107,140,255,0.2); }
+
   /* 节点状态: 搜索命中 / 根节点 / 邻居高亮 */
   .root-node {
     border-width: 3px !important;
@@ -206,6 +219,12 @@
 <div class="header">
   <h1>2022 新课标知识图谱</h1>
   <div class="sub">Open Curriculum CN · 1:1 复刻 <a href="https://withmarble.com/curriculum/" target="_blank" style="color:#6b8cff;text-decoration:none">Marble</a> 范式 · 数据来自 <a href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank" style="color:#6b8cff;text-decoration:none">教育部 2022 义教新课标</a> · CC-BY-SA 4.0</div>
+</div>
+
+<div class="lang-switch">
+  <button data-lang="zh-CN" class="on" id="lang-zh-CN">简</button>
+  <button data-lang="zh-TW" id="lang-zh-TW">繁</button>
+  <button data-lang="en" id="lang-en">EN</button>
 </div>
 
 <div class="stats">
@@ -274,6 +293,7 @@
 </div>
 
 <script src="./cytoscape.min.js"></script>
+<script src="./i18n.js"></script>
 <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Open Curriculum CN Concept",
+  "type": "object",
+  "required": ["id", "subject", "title"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(M|CN|EN|P|CH|B|H|G|SC|ML|IT|ART|PE|L)_[A-Z0-9_]+$",
+      "description": "唯一 ID, 格式: {学科}_{内部}"
+    },
+    "subject": {
+      "type": "string",
+      "enum": ["math", "chinese", "english", "physics", "chemistry", "biology", "history", "geography", "morality_law", "science", "info_tech", "art", "pe_health", "labor"]
+    },
+    "stage": {"type": "integer", "minimum": 1, "maximum": 5},
+    "grade_start": {"type": "integer", "minimum": 1, "maximum": 9},
+    "grade_end": {"type": "integer", "minimum": 1, "maximum": 9},
+    "title": {"type": "string", "minLength": 1, "maxLength": 100},
+    "domain": {"type": "string"},
+    "subdomain": {"type": "string"},
+    "difficulty": {"type": "integer", "minimum": 1, "maximum": 5},
+    "summary": {"type": "string", "maxLength": 500},
+    "content_req": {"type": "string", "minLength": 1},
+    "academic_req": {"type": ["string", "null"]},
+    "examples": {"type": "array", "items": {"type": "string"}},
+    "key_points": {"type": "array", "items": {"type": "string"}},
+    "bloom": {
+      "type": "array",
+      "items": {"type": "string", "enum": ["了解", "认识", "会", "能", "掌握", "理解", "经历", "探索", "知道", "发现", "感悟", "体会", "形成", "运用", "分析", "比较", "计算", "推导", "说明", "设计", "制作", "实验", "调查", "识别", "分类", "描述", "表达", "欣赏", "朗读", "背诵", "复述", "讲述", "默写", "拼读", "认读", "识记", "感受", "应用", "迁移", "拓展"]}
+    },
+    "estimated_minutes": {"type": "integer", "minimum": 5, "maximum": 300},
+    "src_page": {"type": ["integer", "null"]},
+    "src_stage": {"type": ["string", "null"]},
+    "src_domain_ocr": {"type": ["string", "null"]},
+    "review_round": {"type": "integer"},
+    "review_status": {"type": "string", "enum": ["pending", "passed", "failed"]}
+  },
+  "additionalProperties": true
+}

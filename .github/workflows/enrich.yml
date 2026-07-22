@@ -1,0 +1,73 @@
+name: enrich + validate
+
+on:
+  pull_request:
+    paths:
+      - 'data/graph/**'
+      - 'src/pipeline/**'
+  push:
+    branches: [main]
+    paths:
+      - 'data/graph/**'
+      - 'src/pipeline/**'
+
+jobs:
+  validate:
+    name: 校验 JSON + enrich
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 装依赖
+        run: |
+          pip install -e . || true
+          pip install fastapi uvicorn httpx || true
+
+      - name: JSON schema 验证
+        run: |
+          python .github/scripts/validate_json.py
+
+      - name: 跑 enrich (PR 不跑, push 跑)
+        if: github.event_name == 'push'
+        run: |
+          for s in math chinese english physics chemistry biology history geography morality_law science info_tech art pe_health labor; do
+            python src/pipeline/enrich_subject.py --subject $s --round 1 || echo "FAILED: $s"
+          done
+
+      - name: 14 学科自评汇总
+        run: |
+          python .github/scripts/summarize_reviews.py
+
+      - name: 单元测试 (API)
+        run: |
+          python api/tests/test_api.py
+
+  comment:
+    name: 写 PR 评论
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - name: 读自评结果
+        id: review
+        run: |
+          echo "summary<<EOF" >> $GITHUB_OUTPUT
+          python .github/scripts/summarize_reviews.py >> $GITHUB_OUTPUT 2>&1 || echo "no reviews yet" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      - name: 评论
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const summary = `${{ steps.review.outputs.summary }}`;
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## 14 学科 enrich 自评\n\n\`\`\`\n${summary}\n\`\`\``
+            });

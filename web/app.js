@@ -53,9 +53,40 @@ async function loadData() {
   buildLegend();
   initGraph();
   setupSearch();
+  setupLangSwitch();
   // 启动后计算根节点
   setTimeout(() => updateRootCount(), 2000);
   loading.classList.add('done');
+}
+
+function setupLangSwitch() {
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.onclick = () => {
+      const lang = btn.dataset.lang;
+      setLang(lang);
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('on'));
+      btn.classList.add('on');
+      // 如果是繁体, 自动繁化所有概念标题
+      if (lang === 'zh-TW') {
+        cy.nodes().forEach(n => {
+          const orig = n.data('title');
+          if (orig && !n.data('title_trad')) {
+            n.data('title_trad', simpToTrad(orig));
+          }
+        });
+        cy.nodes().forEach(n => {
+          n.data('title', n.data('title_trad') || n.data('title'));
+        });
+      } else {
+        // 切回简体/英文时, 恢复原文
+        cy.nodes().forEach(n => {
+          if (n.data('title_orig')) n.data('title', n.data('title_orig'));
+        });
+      }
+      // 重画图例 (学科学英文)
+      if (typeof buildLegend === 'function') buildLegend();
+    };
+  });
 }
 
 function buildLegend() {
