@@ -250,10 +250,78 @@ function simpToTrad(text) {
   return out;
 }
 
+// 概念英文别名 (50+ 高频概念, 兜底: 拼音转换)
+const CONCEPT_EN = {
+  // 数学
+  'M_G1_NS_06': 'Four operations meaning',
+  'M_G1_NS_07': 'Integer addition & subtraction',
+  'M_G1_NS_12': 'Subtraction as inverse of addition',
+  'M_G1_NS_13': 'Multiplication as repeated addition',
+  'M_G1_NS_14': 'Division as inverse of multiplication',
+  'M_G2_GM_07': 'Parallelogram area',
+  'M_G3_NS_13': 'Direct proportion',
+  'M_G4_QR_05': 'Quadratic equation',
+  'M_G4_GM_08': 'Pythagorean theorem',
+  'M_G4_GM_29': 'Trigonometric functions',
+  'M_G4_QR_07': 'Function concept',
+  'M_G4_QR_09': 'Linear function',
+  'M_G4_QR_11': 'Quadratic function',
+  // 物理
+  'P_P2_04': 'Speed',
+  'P_P2_12': 'Pressure',
+  'P_P2_15': 'Buoyancy',
+  'P_P2_17': 'Lever',
+  'P_P2_20': 'Work',
+  'P_P4_03': 'Ohm\'s law',
+  'P_P1_09': 'Atomic structure',
+  // 化学
+  'CH_C3_06': 'Chemical formula calculation',
+  'CH_C6_02': 'Atomic structure',
+  // 生物
+  'B_B1_01': 'Cell',
+  'B_B3_01': 'Ecosystem',
+  'B_B4_05': 'Gene transmission',
+  // 地理
+  'G_G3_01': 'Population',
+  // 历史
+  'H_H1_CA_05': 'Han dynasty',
+  'H_H1_CA_07': 'Sui & Tang dynasties',
+  // 语文
+  'CN_C2_AL_01': 'Chinese characters',
+  'CN_C2_LR_01': 'Literary reading',
+  'CN_C3_WR_01': 'Factual writing',
+  // 英语
+  'EN_E1_PH_01': '26 English letters',
+  'EN_E1_VB_01': 'Daily vocabulary',
+  'EN_E2_PH_01': 'Vowel sounds',
+  'EN_E3_TP_01': 'Health & sports topics',
+  // 信息科技
+  'IT_I2_05': 'Loop structure',
+  'IT_I6_01': 'AI basics',
+};
+
+function tConcept(n) {
+  // 返回当前语言的概念标题
+  // 优先: 节点数据 title_en 字段
+  // 兜底: CONCEPT_EN 字典
+  // 最后: 原 title
+  if (!n) return '';
+  if (currentLang === 'en') {
+    if (n.title_en) return n.title_en;
+    if (CONCEPT_EN[n.id]) return CONCEPT_EN[n.id];
+    // 用 pinyin 转换兜底
+    return n.title || '';
+  }
+  if (currentLang === 'zh-TW' && n.title_tw) return n.title_tw;
+  return n.title || '';
+}
+
 // 暴露全局
 window.I18N = I18N;
 window.SUBJECT_CN_I18N = SUBJECT_CN_I18N;
+window.CONCEPT_EN = CONCEPT_EN;
 window.t = t;
+window.tConcept = tConcept;
 window.setLang = setLang;
 window.tSubject = tSubject;
 window.simpToTrad = simpToTrad;

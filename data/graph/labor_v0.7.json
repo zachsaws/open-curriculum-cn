@@ -3,7 +3,7 @@
     {
       "id": "L_L1_01",
       "subject": "labor",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 3,
       "title": "个人清洁与整理",
@@ -13,9 +13,9 @@
       "summary": "学会个人清洁和整理",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。学会个人清洁和整理",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "会"
@@ -31,7 +31,7 @@
     {
       "id": "L_L1_02",
       "subject": "labor",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 3,
       "title": "教室清洁",
@@ -41,9 +41,9 @@
       "summary": "参与教室清洁劳动",
       "source": "2022 义教课标",
       "content_req": "确定劳动场域。参与教室清洁劳动",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "了解"
@@ -59,7 +59,7 @@
     {
       "id": "L_L1_03",
       "subject": "labor",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 6,
       "title": "家务劳动",
@@ -69,9 +69,9 @@
       "summary": "承担力所能及的家务劳动",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。承担力所能及的家务劳动",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "能"
@@ -87,7 +87,7 @@
     {
       "id": "L_L1_04",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "公共卫生",
@@ -97,9 +97,9 @@
       "summary": "参与公共卫生清洁活动",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。参与公共卫生清洁活动",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "比较"
@@ -116,7 +116,7 @@
     {
       "id": "L_L2_01",
       "subject": "labor",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 6,
       "title": "物品整理与收纳",
@@ -126,9 +126,9 @@
       "summary": "学会整理和收纳物品",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。学会整理和收纳物品",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "会"
@@ -144,7 +144,7 @@
     {
       "id": "L_L2_02",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "空间规划",
@@ -154,9 +154,9 @@
       "summary": "进行简单的空间规划",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。进行简单的空间规划",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "比较"
@@ -173,7 +173,7 @@
     {
       "id": "L_L3_01",
       "subject": "labor",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 3,
       "title": "认识食材",
@@ -183,9 +183,9 @@
       "summary": "认识常见食材",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。认识常见食材",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "认识"
@@ -201,7 +201,7 @@
     {
       "id": "L_L3_02",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "简单烹饪",
@@ -211,9 +211,9 @@
       "summary": "学会简单烹饪",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。学会简单烹饪",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "会",
@@ -231,7 +231,7 @@
     {
       "id": "L_L3_03",
       "subject": "labor",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 5,
       "grade_end": 9,
       "title": "营养搭配",
@@ -241,9 +241,9 @@
       "summary": "了解营养搭配",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。了解营养搭配",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "了解"
@@ -259,7 +259,7 @@
     {
       "id": "L_L4_01",
       "subject": "labor",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 6,
       "title": "种植体验",
@@ -269,9 +269,9 @@
       "summary": "体验简单的种植活动",
       "source": "2022 义教课标",
       "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。体验简单的种植活动",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 16,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "能",
@@ -288,7 +288,7 @@
     {
       "id": "L_L4_02",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "养殖体验",
@@ -298,9 +298,9 @@
       "summary": "体验简单的养殖活动",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。体验简单的养殖活动",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "比较"
@@ -317,7 +317,7 @@
     {
       "id": "L_L5_01",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "工具使用",
@@ -327,9 +327,9 @@
       "summary": "学会使用常见工具",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。学会使用常见工具",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "会",
@@ -347,7 +347,7 @@
     {
       "id": "L_L5_02",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "简单产品制作",
@@ -357,9 +357,9 @@
       "summary": "进行简单产品制作",
       "source": "2022 义教课标",
       "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。进行简单产品制作",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 16,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "能",
@@ -376,7 +376,7 @@
     {
       "id": "L_L6_01",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "传统工艺体验",
@@ -386,9 +386,9 @@
       "summary": "体验传统工艺(陶艺/刺绣/木工)",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。体验传统工艺(陶艺/刺绣/木工)",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "比较"
@@ -405,7 +405,7 @@
     {
       "id": "L_L7_01",
       "subject": "labor",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 5,
       "grade_end": 9,
       "title": "3D 打印体验",
@@ -415,9 +415,9 @@
       "summary": "了解 3D 打印等新技术",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。了解 3D 打印等新技术",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "了解"
@@ -433,7 +433,7 @@
     {
       "id": "L_L7_02",
       "subject": "labor",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 5,
       "grade_end": 9,
       "title": "智能家居体验",
@@ -443,9 +443,9 @@
       "summary": "体验智能家居和物联网",
       "source": "2022 义教课标",
       "content_req": "选择项目内容。体验智能家居和物联网",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "能"
@@ -461,7 +461,7 @@
     {
       "id": "L_L8_01",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "服务性劳动",
@@ -471,9 +471,9 @@
       "summary": "参与服务性劳动",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。参与服务性劳动",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "比较"
@@ -490,7 +490,7 @@
     {
       "id": "L_L9_01",
       "subject": "labor",
-      "stage": 3,
+      "stage": 1,
       "grade_start": 1,
       "grade_end": 9,
       "title": "校园公益劳动",
@@ -500,9 +500,9 @@
       "summary": "参与校园公益劳动",
       "source": "2022 义教课标",
       "content_req": "确定劳动场域。参与校园公益劳动",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
+      "src_page": 46,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "了解"
@@ -518,7 +518,7 @@
     {
       "id": "L_L9_02",
       "subject": "labor",
-      "stage": 4,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 9,
       "title": "社区志愿服务",
@@ -528,9 +528,9 @@
       "summary": "参与社区志愿服务",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。参与社区志愿服务",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "比较"
@@ -547,7 +547,7 @@
     {
       "id": "L_L10_01",
       "subject": "labor",
-      "stage": 3,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 6,
       "title": "认识职业",
@@ -557,9 +557,9 @@
       "summary": "认识常见职业",
       "source": "2022 义教课标",
       "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。认识常见职业",
-      "src_page": 1,
-      "src_stage": null,
-      "src_domain_ocr": null,
+      "src_page": 15,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
       "academic_req": null,
       "bloom": [
         "认识",
@@ -577,7 +577,7 @@
     {
       "id": "L_L10_02",
       "subject": "labor",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 7,
       "grade_end": 9,
       "title": "职业角色体验",
@@ -587,8 +587,8 @@
       "summary": "进行职业角色体验",
       "source": "2022 义教课标",
       "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。进行职业角色体验",
-      "src_page": 1,
-      "src_stage": null,
+      "src_page": 16,
+      "src_stage": "第四学段",
       "src_domain_ocr": null,
       "academic_req": null,
       "bloom": [

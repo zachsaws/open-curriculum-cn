@@ -22263,837 +22263,2060 @@
     {
       "from": "M_G1_NS_01",
       "to": "M_G1_NS_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_02",
       "to": "M_G1_NS_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_02",
       "to": "M_G1_NS_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_04",
       "to": "M_G1_NS_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_09",
       "to": "M_G1_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_09",
       "to": "M_G1_NS_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_07",
       "to": "M_G1_NS_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_06",
       "to": "M_G1_NS_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_06",
       "to": "M_G1_NS_13",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_06",
       "to": "M_G1_NS_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_08",
       "to": "M_G1_NS_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_QR_04",
       "to": "M_G1_PR_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_QR_05",
       "to": "M_G1_PR_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_QR_06",
       "to": "M_G1_PR_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_QR_02",
       "to": "M_G1_QR_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_01",
       "to": "M_G1_GM_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_02",
       "to": "M_G1_GM_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_03",
       "to": "M_G1_GM_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_07",
       "to": "M_G1_GM_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_07",
       "to": "M_G1_GM_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_01",
       "to": "M_G1_GM_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_02",
       "to": "M_G1_GM_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_01",
       "to": "M_G2_NS_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_08",
       "to": "M_G2_NS_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_11",
       "to": "M_G2_NS_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_12",
       "to": "M_G2_NS_09",
-      "type": 0
+      "type": 0,
+      "rel": "progresses_to"
     },
     {
       "from": "M_G1_NS_13",
       "to": "M_G2_NS_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_NS_14",
       "to": "M_G2_NS_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_QR_07",
       "to": "M_G2_QR_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_07",
       "to": "M_G2_GM_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_GM_02",
       "to": "M_G2_GM_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G1_ST_01",
       "to": "M_G2_ST_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_02",
       "to": "M_G2_NS_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_09",
       "to": "M_G2_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_09",
       "to": "M_G2_NS_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_09",
       "to": "M_G2_NS_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_09",
       "to": "M_G2_NS_13",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_09",
       "to": "M_G2_NS_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_10",
       "to": "M_G2_NS_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_11",
       "to": "M_G2_NS_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_12",
       "to": "M_G2_NS_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_13",
       "to": "M_G2_NS_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_14",
       "to": "M_G2_NS_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_04",
       "to": "M_G2_NS_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_05",
       "to": "M_G2_NS_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_QR_05",
       "to": "M_G2_PR_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_01",
       "to": "M_G2_GM_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_01",
       "to": "M_G2_GM_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_02",
       "to": "M_G2_GM_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_04",
       "to": "M_G2_GM_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_10",
       "to": "M_G2_GM_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_12",
       "to": "M_G2_GM_13",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_14",
       "to": "M_G2_GM_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_12",
       "to": "M_G2_GM_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_13",
       "to": "M_G2_GM_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_13",
       "to": "M_G2_GM_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_07",
       "to": "M_G2_GM_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_ST_01",
       "to": "M_G2_ST_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_ST_02",
       "to": "M_G2_ST_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_ST_04",
       "to": "M_G2_ST_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_07",
       "to": "M_G3_NS_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_08",
       "to": "M_G3_NS_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_NS_15",
       "to": "M_G3_QR_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_QR_05",
       "to": "M_G3_QR_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_GM_05",
       "to": "M_G3_GM_01",
-      "type": 0
+      "type": 0,
+      "rel": "progresses_to"
     },
     {
       "from": "M_G2_ST_05",
       "to": "M_G3_ST_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_05",
       "to": "M_G3_NS_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_01",
       "to": "M_G3_NS_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_02",
       "to": "M_G3_NS_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_03",
       "to": "M_G3_NS_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_09",
       "to": "M_G3_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_01",
       "to": "M_G3_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_05",
       "to": "M_G3_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_11",
       "to": "M_G3_NS_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_12",
       "to": "M_G3_NS_13",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_12",
       "to": "M_G3_NS_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_QR_01",
       "to": "M_G3_QR_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_QR_03",
       "to": "M_G3_QR_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_01",
       "to": "M_G3_GM_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_02",
       "to": "M_G3_GM_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_01",
       "to": "M_G3_GM_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_02",
       "to": "M_G3_GM_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_06",
       "to": "M_G3_GM_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_07",
       "to": "M_G3_GM_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_09",
       "to": "M_G3_GM_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_01",
       "to": "M_G3_ST_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_02",
       "to": "M_G3_ST_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_05",
       "to": "M_G4_NS_16",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_05",
       "to": "M_G4_NS_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_04",
       "to": "M_G4_NS_16",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_NS_08",
       "to": "M_G4_NS_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_QR_02",
       "to": "M_G4_QR_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_QR_03",
       "to": "M_G4_QR_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_05",
       "to": "M_G4_GM_17",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_GM_04",
       "to": "M_G4_GM_20",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_01",
       "to": "M_G4_ST_01",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_04",
       "to": "M_G4_ST_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_05",
       "to": "M_G4_ST_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_07",
       "to": "M_G4_ST_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_07",
       "to": "M_G4_ST_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_06",
       "to": "M_G4_ST_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G3_ST_06",
       "to": "M_G4_ST_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_01",
       "to": "M_G4_NS_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_01",
       "to": "M_G4_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_07",
       "to": "M_G4_NS_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_08",
       "to": "M_G4_NS_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_09",
       "to": "M_G4_NS_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_10",
       "to": "M_G4_NS_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_12",
       "to": "M_G4_NS_13",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_13",
       "to": "M_G4_NS_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_13",
       "to": "M_G4_NS_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_13",
       "to": "M_G4_NS_16",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_16",
       "to": "M_G4_NS_17",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_01",
       "to": "M_G4_QR_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_01",
       "to": "M_G4_QR_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_01",
       "to": "M_G4_QR_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_05",
       "to": "M_G4_QR_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_NS_15",
       "to": "M_G4_QR_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_07",
       "to": "M_G4_QR_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_08",
       "to": "M_G4_QR_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_08",
       "to": "M_G4_QR_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_08",
       "to": "M_G4_QR_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_09",
       "to": "M_G4_QR_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_QR_09",
       "to": "M_G4_QR_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_01",
       "to": "M_G4_GM_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_02",
       "to": "M_G4_GM_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_03",
       "to": "M_G4_GM_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_04",
       "to": "M_G4_GM_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_05",
       "to": "M_G4_GM_06",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_05",
       "to": "M_G4_GM_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_07",
       "to": "M_G4_GM_08",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_08",
       "to": "M_G4_GM_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_04",
       "to": "M_G4_GM_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_11",
       "to": "M_G4_GM_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_11",
       "to": "M_G4_GM_13",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_12",
       "to": "M_G4_GM_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_13",
       "to": "M_G4_GM_14",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_11",
       "to": "M_G4_GM_15",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_16",
       "to": "M_G4_GM_17",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_17",
       "to": "M_G4_GM_18",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_17",
       "to": "M_G4_GM_19",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_07",
       "to": "M_G4_GM_29",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_29",
       "to": "M_G4_GM_30",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_31",
       "to": "M_G4_GM_32",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_24",
       "to": "M_G4_GM_27",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_GM_10",
       "to": "M_G4_GM_28",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_01",
       "to": "M_G4_ST_02",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_02",
       "to": "M_G4_ST_03",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_03",
       "to": "M_G4_ST_04",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_04",
       "to": "M_G4_ST_05",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_06",
       "to": "M_G4_ST_07",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_08",
       "to": "M_G4_ST_09",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_09",
       "to": "M_G4_ST_10",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_09",
       "to": "M_G4_ST_11",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G4_ST_10",
       "to": "M_G4_ST_12",
-      "type": 1
+      "type": 1,
+      "rel": "prerequisite"
     },
     {
       "from": "M_G2_QR_04",
       "to": "P_P2_04",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "M_G2_GM_07",
       "to": "P_P2_12",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "M_G2_GM_13",
       "to": "P_P2_17",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "M_G3_NS_13",
       "to": "P_P2_23",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "M_G3_NS_09",
       "to": "CH_C3_06",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "M_G2_ST_05",
       "to": "B_B3_03",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "M_G3_NS_11",
       "to": "IT_I2_05",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "P_P1_09",
       "to": "CH_C6_02",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "CN_C4_BO_01",
       "to": "H_H1_CA_05",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "SC_S2_MS_04",
       "to": "B_B1_10",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "G_G3_01",
       "to": "B_B2_01",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
     },
     {
       "from": "IT_I6_01",
       "to": "ART_A5_02",
-      "type": 0
+      "type": 0,
+      "rel": "relates_to"
+    },
+    {
+      "from": "M_G1_NS_07",
+      "to": "M_G2_NS_03",
+      "rel": "progresses_to",
+      "rationale": "整数加减法 → 多位数乘除法 (G1-2 整数运算螺旋到 G3-4)",
+      "weight": 0.95,
+      "source": "2022-math-NS"
+    },
+    {
+      "from": "M_G2_NS_09",
+      "to": "M_G3_QR_02",
+      "rel": "progresses_to",
+      "rationale": "整数四则混合运算 → 简易方程 (代数思维起点)",
+      "weight": 0.9,
+      "source": "2022-math-NS"
+    },
+    {
+      "from": "M_G3_NS_01",
+      "to": "M_G4_NS_16",
+      "rel": "progresses_to",
+      "rationale": "分数意义 → 分式 (分数的代数推广, G5-6 → G7-9)",
+      "weight": 0.9,
+      "source": "2022-math-NS"
+    },
+    {
+      "from": "M_G1_GM_01",
+      "to": "M_G2_GM_04",
+      "rel": "progresses_to",
+      "rationale": "辨认立体图形 → 三角形分类 (从立体到平面, G1-2 → G3-4)",
+      "weight": 0.85,
+      "source": "2022-math-GM"
+    },
+    {
+      "from": "M_G2_GM_04",
+      "to": "M_G3_GM_01",
+      "rel": "progresses_to",
+      "rationale": "三角形分类 → 圆的特征 (从直线形到曲线形)",
+      "weight": 0.85,
+      "source": "2022-math-GM"
+    },
+    {
+      "from": "M_G3_GM_01",
+      "to": "M_G4_GM_17",
+      "rel": "progresses_to",
+      "rationale": "圆的特征 → 圆心角/弧/弦/扇形 (G5-6 → G7-9 圆知识深化)",
+      "weight": 0.95,
+      "source": "2022-math-GM"
+    },
+    {
+      "from": "M_G1_GM_07",
+      "to": "M_G2_GM_13",
+      "rel": "progresses_to",
+      "rationale": "长度单位 → 长方形面积 (度量从一维到二维)",
+      "weight": 0.95,
+      "source": "2022-math-GM"
+    },
+    {
+      "from": "M_G3_GM_07",
+      "to": "M_G4_GM_22",
+      "rel": "progresses_to",
+      "rationale": "圆柱表面积 → 立体图形表面积与体积 (G5-6 → G7-9 立体几何螺旋)",
+      "weight": 0.85,
+      "source": "2022-math-GM"
+    },
+    {
+      "from": "M_G1_QR_05",
+      "to": "M_G2_QR_04",
+      "rel": "progresses_to",
+      "rationale": "认识时间 → 路程=速度×时间 (时间单位是速度公式前置)",
+      "weight": 0.85,
+      "source": "2022-math-QR"
+    },
+    {
+      "from": "M_G2_QR_04",
+      "to": "M_G3_NS_13",
+      "rel": "progresses_to",
+      "rationale": "速度公式 → 正比例 (速度是比例的现实原型)",
+      "weight": 0.95,
+      "source": "2022-math-QR"
+    },
+    {
+      "from": "M_G3_NS_13",
+      "to": "M_G4_QR_09",
+      "rel": "progresses_to",
+      "rationale": "正比例 → 一次函数 (正比例是函数的特例)",
+      "weight": 0.95,
+      "source": "2022-math-QR"
+    },
+    {
+      "from": "M_G1_QR_01",
+      "to": "M_G2_NS_15",
+      "rel": "progresses_to",
+      "rationale": "用数或符号表达变化规律 → 用字母表示运算律 (G1-2 → G3-4 代数起点)",
+      "weight": 0.9,
+      "source": "2022-math-QR"
+    },
+    {
+      "from": "M_G2_NS_15",
+      "to": "M_G4_NS_12",
+      "rel": "progresses_to",
+      "rationale": "用字母表示运算律 → 代数式 (G3-4 → G7-9 代数抽象)",
+      "weight": 0.85,
+      "source": "2022-math-QR"
+    },
+    {
+      "from": "M_G1_ST_01",
+      "to": "M_G2_ST_04",
+      "rel": "progresses_to",
+      "rationale": "数据分类 → 平均数 (从分类到度量集中趋势)",
+      "weight": 0.85,
+      "source": "2022-math-ST"
+    },
+    {
+      "from": "M_G2_ST_04",
+      "to": "M_G3_ST_04",
+      "rel": "progresses_to",
+      "rationale": "平均数 → 中位数 (集中趋势量螺旋增加)",
+      "weight": 0.85,
+      "source": "2022-math-ST"
+    },
+    {
+      "from": "M_G3_ST_04",
+      "to": "M_G4_ST_07",
+      "rel": "progresses_to",
+      "rationale": "中位数 → 极差/方差/标准差 (集中趋势 → 离散程度, G5-6 → G7-9)",
+      "weight": 0.9,
+      "source": "2022-math-ST"
+    },
+    {
+      "from": "M_G2_PR_01",
+      "to": "M_G3_PR_01",
+      "rel": "progresses_to",
+      "rationale": "主题活动:曹冲称象 → 校园中的数学 (G3-4 → G5-6 实践主题螺旋)",
+      "weight": 0.8,
+      "source": "2022-math-PR"
+    },
+    {
+      "from": "M_G3_PR_01",
+      "to": "M_G4_PR_01",
+      "rel": "progresses_to",
+      "rationale": "校园中的数学 → 项目式学习 (G5-6 → G7-9 综合实践深化)",
+      "weight": 0.85,
+      "source": "2022-math-PR"
+    },
+    {
+      "from": "M_G1_QR_02",
+      "to": "M_G2_QR_02",
+      "rel": "progresses_to",
+      "rationale": "用数和运算解决简单问题 → 常见数量关系 (G1-2 → G3-4 抽象化)",
+      "weight": 0.85,
+      "source": "2022-math-QR"
+    },
+    {
+      "from": "CN_C1_AL_01",
+      "to": "CN_C2_AL_01",
+      "rel": "progresses_to",
+      "rationale": "认识常用字(身体行为天地自然) → 独立识字与写字 (G1-2 → G3-4)",
+      "weight": 0.95,
+      "source": "2022-chinese-AL"
+    },
+    {
+      "from": "CN_C2_AL_01",
+      "to": "CN_C3_AL_01",
+      "rel": "progresses_to",
+      "rationale": "独立识字 → 主动通过多种方式独立识字 (G3-4 → G5-6)",
+      "weight": 0.9,
+      "source": "2022-chinese-AL"
+    },
+    {
+      "from": "CN_C3_AL_01",
+      "to": "CN_C4_AL_01",
+      "rel": "progresses_to",
+      "rationale": "主动识字 → 策划开展语言文字活动 (G5-6 → G7-9 螺旋)",
+      "weight": 0.85,
+      "source": "2022-chinese-AL"
+    },
+    {
+      "from": "CN_C1_LR_01",
+      "to": "CN_C2_LR_01",
+      "rel": "progresses_to",
+      "rationale": "阅读儿歌童话 → 阅读表现自然社会的作品 (G1-2 → G3-4 文学螺旋)",
+      "weight": 0.9,
+      "source": "2022-chinese-LR"
+    },
+    {
+      "from": "CN_C2_LR_01",
+      "to": "CN_C3_LR_01",
+      "rel": "progresses_to",
+      "rationale": "表现自然社会 → 革命传统作品 (G3-4 → G5-6 阅读深度螺旋)",
+      "weight": 0.85,
+      "source": "2022-chinese-LR"
+    },
+    {
+      "from": "CN_C3_LR_01",
+      "to": "CN_C4_LR_01",
+      "rel": "progresses_to",
+      "rationale": "革命传统作品 → 文学欣赏 (G5-6 → G7-9 文学阅读能力螺旋)",
+      "weight": 0.9,
+      "source": "2022-chinese-LR"
+    },
+    {
+      "from": "EN_E1_PH_01",
+      "to": "EN_E2_PH_01",
+      "rel": "progresses_to",
+      "rationale": "26 个英文字母的认读 → 元音字母发音规则 (G1-2 → G3-4)",
+      "weight": 0.95,
+      "source": "2022-english-PH"
+    },
+    {
+      "from": "EN_E2_PH_01",
+      "to": "EN_E3_PH_01",
+      "rel": "progresses_to",
+      "rationale": "元音字母发音规则 → 国际音标认读 (G3-4 → G5-6)",
+      "weight": 0.95,
+      "source": "2022-english-PH"
+    },
+    {
+      "from": "EN_E3_PH_01",
+      "to": "EN_E4_PH_01",
+      "rel": "progresses_to",
+      "rationale": "国际音标认读 → 重音/节奏/语调综合运用 (G5-6 → G7-9 螺旋)",
+      "weight": 0.9,
+      "source": "2022-english-PH"
+    },
+    {
+      "from": "EN_E1_GR_02",
+      "to": "EN_E2_GR_01",
+      "rel": "progresses_to",
+      "rationale": "一般现在时 → 现在进行时 (G1-2 → G3-4 时态螺旋)",
+      "weight": 0.95,
+      "source": "2022-english-GR"
+    },
+    {
+      "from": "EN_E2_GR_01",
+      "to": "EN_E3_GR_01",
+      "rel": "progresses_to",
+      "rationale": "现在进行时 → 现在完成时 (G3-4 → G5-6 时态螺旋)",
+      "weight": 0.9,
+      "source": "2022-english-GR"
+    },
+    {
+      "from": "EN_E3_GR_01",
+      "to": "EN_E4_GR_03",
+      "rel": "progresses_to",
+      "rationale": "现在完成时 → 状语从句 (G5-6 → G7-9 语法综合)",
+      "weight": 0.85,
+      "source": "2022-english-GR"
+    },
+    {
+      "from": "M_G2_NS_15",
+      "to": "P_P2_22",
+      "rel": "relates_to",
+      "rationale": "用字母表示运算律 → 机械效率 (字母表达式迁移)",
+      "weight": 0.7,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G3_NS_13",
+      "to": "P_P2_04",
+      "rel": "relates_to",
+      "rationale": "正比例 → 速度 (v=s/t 是正比例)",
+      "weight": 0.85,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G4_QR_07",
+      "to": "P_P2_04",
+      "rel": "relates_to",
+      "rationale": "函数 → 速度 (速度公式是函数原型)",
+      "weight": 0.8,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G4_QR_09",
+      "to": "P_P4_01",
+      "rel": "relates_to",
+      "rationale": "一次函数 → 简单电路 (U=IR 是一次函数)",
+      "weight": 0.8,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G4_QR_11",
+      "to": "P_P2_23",
+      "rel": "relates_to",
+      "rationale": "二次函数 → 动能势能 (E=mv²/2 或 E=mgh)",
+      "weight": 0.75,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G4_GM_29",
+      "to": "P_P2_17",
+      "rel": "relates_to",
+      "rationale": "锐角三角函数 → 杠杆 (三角比用于力臂计算)",
+      "weight": 0.7,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G3_NS_11",
+      "to": "P_P4_02",
+      "rel": "relates_to",
+      "rationale": "比的意义 → 电流/电压/电阻 (U/I 是比)",
+      "weight": 0.8,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "P_P2_20",
+      "rel": "relates_to",
+      "rationale": "长方形面积 → 功 (W=F·s 的几何理解)",
+      "weight": 0.7,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "P_P2_21",
+      "rel": "relates_to",
+      "rationale": "长方形面积 → 功率 (P=W/t 距离/时间应用)",
+      "weight": 0.7,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G1_GM_07",
+      "to": "P_P1_07",
+      "rel": "relates_to",
+      "rationale": "长度单位 → 密度 (ρ=m/V 需长度/体积单位)",
+      "weight": 0.8,
+      "source": "2022-cross-MP"
+    },
+    {
+      "from": "M_G3_NS_11",
+      "to": "CH_C3_03",
+      "rel": "relates_to",
+      "rationale": "比的意义 → 化学式 (化学式是元素质量比)",
+      "weight": 0.85,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G3_NS_13",
+      "to": "CH_C4_07",
+      "rel": "relates_to",
+      "rationale": "正比例 → 化学反应中的能量 (热量计算 Q=cmΔt)",
+      "weight": 0.75,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G4_QR_09",
+      "to": "CH_C3_03",
+      "rel": "relates_to",
+      "rationale": "一次函数 → 化学式 (浓度-体积关系)",
+      "weight": 0.7,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G3_NS_09",
+      "to": "CH_C2_05",
+      "rel": "relates_to",
+      "rationale": "百分数 → 常见的酸 (浓度是百分数)",
+      "weight": 0.8,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G3_NS_12",
+      "to": "CH_C3_04",
+      "rel": "relates_to",
+      "rationale": "比例 → 化学方程式 (方程式配平是比例)",
+      "weight": 0.9,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G2_NS_15",
+      "to": "CH_C3_03",
+      "rel": "relates_to",
+      "rationale": "用字母表示运算律 → 化学式 (字母+数字表示)",
+      "weight": 0.7,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G3_NS_05",
+      "to": "CH_C3_06",
+      "rel": "relates_to",
+      "rationale": "分数乘除法 → 化学式计算 (1/2 H₂O 等系数)",
+      "weight": 0.8,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G2_ST_04",
+      "to": "CH_C3_05",
+      "rel": "relates_to",
+      "rationale": "平均数 → 相对原子质量 (加权平均)",
+      "weight": 0.6,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G4_QR_07",
+      "to": "CH_C3_04",
+      "rel": "relates_to",
+      "rationale": "函数 → 化学方程式 (反应速率函数关系)",
+      "weight": 0.7,
+      "source": "2022-cross-MC"
+    },
+    {
+      "from": "M_G3_NS_13",
+      "to": "B_B3_01",
+      "rel": "relates_to",
+      "rationale": "正比例 → 生态系统 (种群数量模型)",
+      "weight": 0.75,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G3_NS_12",
+      "to": "B_B4_05",
+      "rel": "relates_to",
+      "rationale": "比例 → 基因传递 (孟德尔 3:1 1:1 比例)",
+      "weight": 0.9,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G2_ST_05",
+      "to": "B_B3_01",
+      "rel": "relates_to",
+      "rationale": "平均数 → 生态系统 (种群数量用平均数)",
+      "weight": 0.8,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G2_ST_02",
+      "to": "B_B2_01",
+      "rel": "relates_to",
+      "rationale": "条形统计图 → 生物分类 (分类图表是数据可视化)",
+      "weight": 0.6,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G4_ST_08",
+      "to": "B_B4_07",
+      "rel": "relates_to",
+      "rationale": "随机事件 → 性别决定 (50% 概率)",
+      "weight": 0.7,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G4_ST_10",
+      "to": "B_B4_06",
+      "rel": "relates_to",
+      "rationale": "古典概型 → 基因传递 (孟德尔分离定律是概率)",
+      "weight": 0.9,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G3_NS_08",
+      "to": "B_B3_03",
+      "rel": "relates_to",
+      "rationale": "负数 → 能量流动 (能量收支正负)",
+      "weight": 0.5,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G3_NS_13",
+      "to": "B_B1_04",
+      "rel": "relates_to",
+      "rationale": "正比例 → 结构层次 (细胞→组织→器官 是包含关系)",
+      "weight": 0.5,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G4_QR_07",
+      "to": "B_B1_07",
+      "rel": "relates_to",
+      "rationale": "函数 → 呼吸系统 (呼吸速率函数)",
+      "weight": 0.6,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "B_B1_01",
+      "rel": "relates_to",
+      "rationale": "面积 → 细胞 (细胞表面积/体积比)",
+      "weight": 0.65,
+      "source": "2022-cross-MB"
+    },
+    {
+      "from": "M_G4_QR_09",
+      "to": "IT_I3_03",
+      "rel": "relates_to",
+      "rationale": "一次函数 → 变量与数据类型 (函数即变量映射)",
+      "weight": 0.8,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G3_ST_05",
+      "to": "IT_I1_04",
+      "rel": "relates_to",
+      "rationale": "平均数 → 数据可视化 (平均数是描述统计基础)",
+      "weight": 0.85,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G2_ST_02",
+      "to": "IT_I1_04",
+      "rel": "relates_to",
+      "rationale": "条形统计图 → 数据可视化 (统计图是 IT 基础)",
+      "weight": 0.9,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G2_ST_05",
+      "to": "IT_I1_05",
+      "rel": "relates_to",
+      "rationale": "平均数 → 数据分析与预测",
+      "weight": 0.8,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G2_QR_04",
+      "to": "IT_I1_05",
+      "rel": "relates_to",
+      "rationale": "速度公式 → 数据分析与预测 (建模原型)",
+      "weight": 0.7,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G3_QR_01",
+      "to": "IT_I3_03",
+      "rel": "relates_to",
+      "rationale": "用字母表示数 → 变量与数据类型 (变量概念在 math 先出)",
+      "weight": 0.9,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G4_QR_07",
+      "to": "IT_I3_04",
+      "rel": "relates_to",
+      "rationale": "函数 → 函数与模块 (数学函数是编程函数先决)",
+      "weight": 0.9,
+      "source": "2022-cross-MI"
+    },
+    {
+      "from": "M_G2_ST_05",
+      "to": "G_G10_06",
+      "rel": "relates_to",
+      "rationale": "平均数 → 中国农业 (农业产量/人均数据)",
+      "weight": 0.8,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G3_NS_13",
+      "to": "G_G3_01",
+      "rel": "relates_to",
+      "rationale": "正比例 → 人口 (人口增长模型)",
+      "weight": 0.75,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G2_QR_04",
+      "to": "G_G2_02",
+      "rel": "relates_to",
+      "rationale": "速度公式 → 气温与降水 (距离/速度用于地理测算)",
+      "weight": 0.7,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "G_G10_03",
+      "rel": "relates_to",
+      "rationale": "长方形面积 → 中国地形 (国土面积计算)",
+      "weight": 0.8,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G2_ST_04",
+      "to": "G_G2_02",
+      "rel": "relates_to",
+      "rationale": "平均数 → 气温与降水 (气候数据用平均)",
+      "weight": 0.8,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G2_ST_02",
+      "to": "G_G3_01",
+      "rel": "relates_to",
+      "rationale": "条形统计图 → 人口 (人口数据图)",
+      "weight": 0.8,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G2_GM_13",
+      "to": "G_G1_05",
+      "rel": "relates_to",
+      "rationale": "面积 → 等高线 (面积/比例尺)",
+      "weight": 0.7,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G3_ST_01",
+      "to": "G_G10_06",
+      "rel": "relates_to",
+      "rationale": "复式条形统计图 → 中国农业 (农业数据)",
+      "weight": 0.6,
+      "source": "2022-cross-MG"
+    },
+    {
+      "from": "M_G2_ST_01",
+      "to": "H_H1_CA_01",
+      "rel": "relates_to",
+      "rationale": "数据收集 → 早期中华文明 (史料数据收集)",
+      "weight": 0.5,
+      "source": "2022-cross-MH"
+    },
+    {
+      "from": "M_G3_QR_04",
+      "to": "H_H2_CM_01",
+      "rel": "relates_to",
+      "rationale": "列举策略 → 鸦片战争 (历史事件因果列举)",
+      "weight": 0.4,
+      "source": "2022-cross-MH"
+    },
+    {
+      "from": "CN_C2_AL_01",
+      "to": "H_H1_CA_05",
+      "rel": "relates_to",
+      "rationale": "独立识字 → 汉代 (汉代文字演变)",
+      "weight": 0.7,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C2_LR_01",
+      "to": "H_H1_CA_07",
+      "rel": "relates_to",
+      "rationale": "阅读自然社会 → 隋唐盛世 (文学反映社会)",
+      "weight": 0.8,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C3_LR_01",
+      "to": "H_H2_CM_01",
+      "rel": "relates_to",
+      "rationale": "革命传统文艺作品 → 鸦片战争 (文学反映历史)",
+      "weight": 0.8,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C3_LR_01",
+      "to": "H_H2_CM_05",
+      "rel": "relates_to",
+      "rationale": "革命传统作品 → 辛亥革命 (同上)",
+      "weight": 0.8,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C4_LR_01",
+      "to": "H_H1_CA_10",
+      "rel": "relates_to",
+      "rationale": "文学欣赏 → 古代科技文化 (文学反映科技史)",
+      "weight": 0.7,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C4_TH_01",
+      "to": "H_H4_WB_04",
+      "rel": "relates_to",
+      "rationale": "思辨性阅读 → 启蒙运动 (思辨能力迁移)",
+      "weight": 0.6,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C3_BO_01",
+      "to": "H_H1_CA_07",
+      "rel": "relates_to",
+      "rationale": "整本书阅读 → 隋唐盛世 (经典名著时代背景)",
+      "weight": 0.7,
+      "source": "2022-cross-CH"
+    },
+    {
+      "from": "CN_C1_AL_05",
+      "to": "EN_E1_PH_01",
+      "rel": "relates_to",
+      "rationale": "汉语拼音 → 英文字母 (拼音/字母系统迁移)",
+      "weight": 0.9,
+      "source": "2022-cross-CE"
+    },
+    {
+      "from": "CN_C2_PR_02",
+      "to": "EN_E2_TX_02",
+      "rel": "relates_to",
+      "rationale": "获取整合信息 → 提取关键信息 (G3-4 阅读策略同段)",
+      "weight": 0.8,
+      "source": "2022-cross-CE"
+    },
+    {
+      "from": "CN_C2_WR_01",
+      "to": "EN_E2_SK_03",
+      "rel": "relates_to",
+      "rationale": "写清楚一件事 → 书写简单短文 (写作能力迁移)",
+      "weight": 0.8,
+      "source": "2022-cross-CE"
+    },
+    {
+      "from": "CN_C1_LR_01",
+      "to": "EN_E1_TX_01",
+      "rel": "relates_to",
+      "rationale": "阅读儿歌童话 → 听说对话故事 (语篇阅读能力)",
+      "weight": 0.7,
+      "source": "2022-cross-CE"
+    },
+    {
+      "from": "EN_E3_CU_02",
+      "to": "CN_C2_AL_01",
+      "rel": "relates_to",
+      "rationale": "中外文化 → 汉字 (跨文化理解中文字)",
+      "weight": 0.7,
+      "source": "2022-cross-EC"
+    },
+    {
+      "from": "EN_E3_TP_02",
+      "to": "CN_C3_WR_01",
+      "rel": "relates_to",
+      "rationale": "世界与科技 → 记实作文 (科技题材写作)",
+      "weight": 0.65,
+      "source": "2022-cross-EC"
+    },
+    {
+      "from": "P_P4_03",
+      "to": "CH_C3_04",
+      "rel": "relates_to",
+      "rationale": "欧姆定律 → 化学方程式 (定量关系迁移)",
+      "weight": 0.7,
+      "source": "2022-cross-PC"
+    },
+    {
+      "from": "P_P1_08",
+      "to": "CH_C6_01",
+      "rel": "relates_to",
+      "rationale": "分子动理论 → 分子与原子 (分子概念物理先出)",
+      "weight": 0.8,
+      "source": "2022-cross-PC"
+    },
+    {
+      "from": "P_P1_07",
+      "to": "CH_C1_02",
+      "rel": "relates_to",
+      "rationale": "密度 → 纯净物与混合物 (物质属性认识)",
+      "weight": 0.7,
+      "source": "2022-cross-PC"
+    },
+    {
+      "from": "P_P1_03",
+      "to": "CH_C4_01",
+      "rel": "relates_to",
+      "rationale": "物态变化 → 物质的变化 (物理变化→化学变化衔接)",
+      "weight": 0.9,
+      "source": "2022-cross-PC"
+    },
+    {
+      "from": "P_P5_02",
+      "to": "CH_C4_02",
+      "rel": "relates_to",
+      "rationale": "能量守恒 → 质量守恒 (守恒定律跨学科)",
+      "weight": 0.8,
+      "source": "2022-cross-PC"
+    },
+    {
+      "from": "P_P2_22",
+      "to": "CH_C3_06",
+      "rel": "relates_to",
+      "rationale": "机械效率 → 化学式计算 (效率概念迁移)",
+      "weight": 0.5,
+      "source": "2022-cross-PC"
+    },
+    {
+      "from": "P_P2_15",
+      "to": "B_B1_07",
+      "rel": "relates_to",
+      "rationale": "流体压强与流速 → 血液循环 (血压流速)",
+      "weight": 0.85,
+      "source": "2022-cross-PB"
+    },
+    {
+      "from": "B_B1_01",
+      "to": "CH_C6_01",
+      "rel": "relates_to",
+      "rationale": "细胞 → 分子与原子 (生物体由分子构成)",
+      "weight": 0.75,
+      "source": "2022-cross-BC"
+    },
+    {
+      "from": "B_B1_04",
+      "to": "CH_C3_01",
+      "rel": "relates_to",
+      "rationale": "结构层次 → 元素 (生物体由元素组成)",
+      "weight": 0.7,
+      "source": "2022-cross-BC"
+    },
+    {
+      "from": "B_B1_07",
+      "to": "CH_C2_05",
+      "rel": "relates_to",
+      "rationale": "呼吸系统 → 常见的酸 (CO₂ 溶于水是碳酸)",
+      "weight": 0.6,
+      "source": "2022-cross-BC"
+    },
+    {
+      "from": "B_B3_04",
+      "to": "CH_C4_02",
+      "rel": "relates_to",
+      "rationale": "物质循环 → 质量守恒 (碳循环是守恒实例)",
+      "weight": 0.9,
+      "source": "2022-cross-BC"
+    },
+    {
+      "from": "IT_I1_04",
+      "to": "ART_A2_05",
+      "rel": "relates_to",
+      "rationale": "数据可视化 → 美术欣赏 (数据可视化是设计技能)",
+      "weight": 0.65,
+      "source": "2022-cross-IA"
+    },
+    {
+      "from": "IT_I6_02",
+      "to": "ART_A5_02",
+      "rel": "relates_to",
+      "rationale": "机器学习 → 短视频创作",
+      "weight": 0.7,
+      "source": "2022-cross-IA"
+    },
+    {
+      "from": "IT_I1_04",
+      "to": "ART_A2_07",
+      "rel": "relates_to",
+      "rationale": "数据可视化 → 设计基础",
+      "weight": 0.7,
+      "source": "2022-cross-IA"
+    },
+    {
+      "from": "IT_I3_04",
+      "to": "ART_A2_05",
+      "rel": "relates_to",
+      "rationale": "函数与模块 → 美术欣赏 (模块化思维迁移)",
+      "weight": 0.55,
+      "source": "2022-cross-IA"
+    },
+    {
+      "from": "SC_S2_MS_05",
+      "to": "P_P3_05",
+      "rel": "relates_to",
+      "rationale": "光的反射 → 光的反射定律 (小学科学→初中物理)",
+      "weight": 0.9,
+      "source": "2022-cross-SP"
+    },
+    {
+      "from": "SC_S2_MS_05",
+      "to": "P_P3_07",
+      "rel": "relates_to",
+      "rationale": "光的反射 → 折射",
+      "weight": 0.8,
+      "source": "2022-cross-SP"
+    },
+    {
+      "from": "SC_S2_MS_05",
+      "to": "P_P3_08",
+      "rel": "relates_to",
+      "rationale": "光的反射 → 凸透镜",
+      "weight": 0.8,
+      "source": "2022-cross-SP"
+    },
+    {
+      "from": "SC_S3_MS_05",
+      "to": "P_P2_17",
+      "rel": "relates_to",
+      "rationale": "简单机械 → 杠杆",
+      "weight": 0.9,
+      "source": "2022-cross-SP"
+    },
+    {
+      "from": "SC_S3_MS_05",
+      "to": "P_P2_19",
+      "rel": "relates_to",
+      "rationale": "简单机械 → 斜面",
+      "weight": 0.9,
+      "source": "2022-cross-SP"
+    },
+    {
+      "from": "SC_S3_MS_04",
+      "to": "P_P4_01",
+      "rel": "relates_to",
+      "rationale": "简单电路 → 简单电路",
+      "weight": 0.9,
+      "source": "2022-cross-SP"
+    },
+    {
+      "from": "SC_S1_TE_01",
+      "to": "M_G1_QR_07",
+      "rel": "relates_to",
+      "rationale": "制作模型 → 模型意识 (模型认知跨学科)",
+      "weight": 0.7,
+      "source": "2022-cross-SX"
+    },
+    {
+      "from": "SC_S3_LS_01",
+      "to": "B_B5_01",
+      "rel": "relates_to",
+      "rationale": "微生物 → 传染病 (微生物是传染病源)",
+      "weight": 0.8,
+      "source": "2022-cross-SB"
+    },
+    {
+      "from": "PE_PE3_02",
+      "to": "B_B1_07",
+      "rel": "relates_to",
+      "rationale": "中长跑 → 呼吸系统 (运动与呼吸)",
+      "weight": 0.9,
+      "source": "2022-cross-PB"
+    },
+    {
+      "from": "PE_PE3_02",
+      "to": "B_B1_08",
+      "rel": "relates_to",
+      "rationale": "中长跑 → 血液循环 (运动与心肺)",
+      "weight": 0.9,
+      "source": "2022-cross-PB"
+    },
+    {
+      "from": "PE_PE3_02",
+      "to": "B_B1_09",
+      "rel": "relates_to",
+      "rationale": "中长跑 → 泌尿系统 (运动与代谢)",
+      "weight": 0.8,
+      "source": "2022-cross-PB"
+    },
+    {
+      "from": "PE_PE5_04",
+      "to": "B_B4_03",
+      "rel": "relates_to",
+      "rationale": "青春期健康 → 人的生殖 (健康与生殖)",
+      "weight": 0.9,
+      "source": "2022-cross-PB"
+    },
+    {
+      "from": "PE_PE5_07",
+      "to": "B_B5_04",
+      "rel": "relates_to",
+      "rationale": "急救 → 用药与急救 (急救知识跨学科)",
+      "weight": 0.9,
+      "source": "2022-cross-PB"
+    },
+    {
+      "from": "PE_PE3_01",
+      "to": "P_P2_04",
+      "rel": "relates_to",
+      "rationale": "短跑 → 速度 (跑步速度)",
+      "weight": 0.8,
+      "source": "2022-cross-PP"
+    },
+    {
+      "from": "PE_PE3_04",
+      "to": "P_P2_20",
+      "rel": "relates_to",
+      "rationale": "跳高跳远 → 功 (跳的能量)",
+      "weight": 0.7,
+      "source": "2022-cross-PP"
+    },
+    {
+      "from": "PE_PE3_04",
+      "to": "P_P2_23",
+      "rel": "relates_to",
+      "rationale": "跳高跳远 → 动能与势能 (势能转化)",
+      "weight": 0.8,
+      "source": "2022-cross-PP"
+    },
+    {
+      "from": "ART_A1_01",
+      "to": "M_G1_QR_01",
+      "rel": "relates_to",
+      "rationale": "音乐节奏 → 用数或符号表达规律 (节奏=规律)",
+      "weight": 0.6,
+      "source": "2022-cross-AM"
+    },
+    {
+      "from": "ART_A2_07",
+      "to": "M_G4_GM_11",
+      "rel": "relates_to",
+      "rationale": "设计基础 → 平行四边形 (设计几何)",
+      "weight": 0.5,
+      "source": "2022-cross-AM"
+    },
+    {
+      "from": "L_L1_04",
+      "to": "B_B5_01",
+      "rel": "relates_to",
+      "rationale": "公共卫生 → 传染病 (公共卫生与疾病)",
+      "weight": 0.8,
+      "source": "2022-cross-LB"
+    },
+    {
+      "from": "L_L3_02",
+      "to": "B_B1_06",
+      "rel": "relates_to",
+      "rationale": "简单烹饪 → 消化系统 (烹饪与消化)",
+      "weight": 0.7,
+      "source": "2022-cross-LB"
+    },
+    {
+      "from": "L_L3_02",
+      "to": "CH_C5_02",
+      "rel": "relates_to",
+      "rationale": "简单烹饪 → 化学与健康 (烹饪与食品化学)",
+      "weight": 0.6,
+      "source": "2022-cross-LC"
+    },
+    {
+      "from": "L_L1_03",
+      "to": "PE_PE5_03",
+      "rel": "relates_to",
+      "rationale": "家务劳动 → 运动与健康 (劳动与健康)",
+      "weight": 0.6,
+      "source": "2022-cross-LP"
+    },
+    {
+      "from": "G_G2_03",
+      "to": "B_B3_06",
+      "rel": "relates_to",
+      "rationale": "主要气候类型 → 生物圈 (气候决定生物分布)",
+      "weight": 0.8,
+      "source": "2022-cross-GB"
+    },
+    {
+      "from": "G_G2_03",
+      "to": "B_B2_02",
+      "rel": "relates_to",
+      "rationale": "主要气候类型 → 植物主要类群 (气候→植被)",
+      "weight": 0.8,
+      "source": "2022-cross-GB"
+    },
+    {
+      "from": "ML_ML_G2_04",
+      "to": "B_B3_04",
+      "rel": "relates_to",
+      "rationale": "爱护环境 → 物质循环 (环保意识)",
+      "weight": 0.7,
+      "source": "2022-cross-MLB"
+    },
+    {
+      "from": "ML_ML_G9_01",
+      "to": "H_H3_CR_04",
+      "rel": "relates_to",
+      "rationale": "改革开放 → 改革开放 (同步进行)",
+      "weight": 0.9,
+      "source": "2022-cross-MLH"
+    },
+    {
+      "from": "ML_ML_G9_04",
+      "to": "H_H4_WC_06",
+      "rel": "relates_to",
+      "rationale": "国际责任 → 经济全球化 (国际责任)",
+      "weight": 0.8,
+      "source": "2022-cross-MLH"
     }
   ]
 }

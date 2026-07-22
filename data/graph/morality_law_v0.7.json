@@ -13,10 +13,10 @@
       "summary": "喜欢新学校,认识新同学",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。喜欢新学校,认识新同学",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "认识"
       ],
@@ -42,10 +42,10 @@
       "summary": "了解学校基本规则并遵守",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解学校基本规则并遵守",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "了解"
       ],
@@ -70,10 +70,10 @@
       "summary": "学会交朋友,珍惜友谊",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。学会交朋友,珍惜友谊",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "会"
       ],
@@ -99,10 +99,10 @@
       "summary": "感受家庭温暖,爱家人",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。感受家庭温暖,爱家人",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "感受"
       ],
@@ -127,10 +127,10 @@
       "summary": "树立安全意识,学会自我保护",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。树立安全意识,学会自我保护",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "会"
       ],
@@ -146,7 +146,7 @@
     {
       "id": "ML_ML_G2_01",
       "subject": "morality_law",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 2,
       "grade_end": 2,
       "title": "家乡的变化",
@@ -156,10 +156,10 @@
       "summary": "感受家乡变化,热爱家乡",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。感受家乡变化,热爱家乡",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "感受"
       ],
@@ -175,7 +175,7 @@
     {
       "id": "ML_ML_G2_02",
       "subject": "morality_law",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 2,
       "grade_end": 2,
       "title": "诚实守信",
@@ -185,10 +185,10 @@
       "summary": "做诚实的人,讲信用",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。做诚实的人,讲信用",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "了解"
       ],
@@ -203,7 +203,7 @@
     {
       "id": "ML_ML_G2_03",
       "subject": "morality_law",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 2,
       "grade_end": 2,
       "title": "不乱花钱",
@@ -213,10 +213,10 @@
       "summary": "养成合理消费习惯",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。养成合理消费习惯",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "了解"
       ],
@@ -231,7 +231,7 @@
     {
       "id": "ML_ML_G2_04",
       "subject": "morality_law",
-      "stage": 2,
+      "stage": 1,
       "grade_start": 2,
       "grade_end": 2,
       "title": "爱护环境",
@@ -241,10 +241,10 @@
       "summary": "爱护环境,从身边小事做起",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。爱护环境,从身边小事做起",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第一学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "感激他们的劳动给人们生 | ”的社会贡献。 道德教育 | ”的劳动成果。 识，增强环境保护意识。",
       "bloom": [
         "了解"
       ],
@@ -270,10 +270,10 @@
       "summary": "参与集体生活,融入学校",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。参与集体生活,融入学校",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "了解"
       ],
@@ -299,10 +299,10 @@
       "summary": "了解安全常识,远离危险",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解安全常识,远离危险",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "了解"
       ],
@@ -328,10 +328,10 @@
       "summary": "理解家庭关系,孝顺父母",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。理解家庭关系,孝顺父母",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "理解"
       ],
@@ -357,10 +357,10 @@
       "summary": "了解报警求助,初步法律启蒙",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解报警求助,初步法律启蒙",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "了解"
       ],
@@ -376,7 +376,7 @@
     {
       "id": "ML_ML_G4_01",
       "subject": "morality_law",
-      "stage": 3,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 4,
       "title": "与同伴友好相处",
@@ -386,10 +386,10 @@
       "summary": "学会与同伴友好相处",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。学会与同伴友好相处",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "会"
       ],
@@ -404,7 +404,7 @@
     {
       "id": "ML_ML_G4_02",
       "subject": "morality_law",
-      "stage": 3,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 4,
       "title": "做聪明的消费者",
@@ -414,10 +414,10 @@
       "summary": "了解消费者权益,做聪明消费者",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解消费者权益,做聪明消费者",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "了解"
       ],
@@ -433,7 +433,7 @@
     {
       "id": "ML_ML_G4_03",
       "subject": "morality_law",
-      "stage": 3,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 4,
       "title": "网络新世界",
@@ -443,10 +443,10 @@
       "summary": "认识网络利弊,养成良好网络习惯",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。认识网络利弊,养成良好网络习惯",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "认识"
       ],
@@ -462,7 +462,7 @@
     {
       "id": "ML_ML_G4_04",
       "subject": "morality_law",
-      "stage": 3,
+      "stage": 2,
       "grade_start": 4,
       "grade_end": 4,
       "title": "健康看电视",
@@ -472,10 +472,10 @@
       "summary": "合理看电视,保护视力",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。合理看电视,保护视力",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第二学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "会调控情绪和与人沟通的方法，积极参加劳动和集体活动，尊重普通 感受革命故事所体现的革命传统意义，为中华优秀传统文化感到自 道德教育 | “愿意反思自己的生活 | 。",
       "bloom": [
         "了解"
       ],
@@ -501,10 +501,10 @@
       "summary": "学会面对挫折,增强心理韧性",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。学会面对挫折,增强心理韧性",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "会"
       ],
@@ -530,10 +530,10 @@
       "summary": "主动拒绝烟酒等不良嗜好",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。主动拒绝烟酒等不良嗜好",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "了解"
       ],
@@ -558,10 +558,10 @@
       "summary": "了解中华民族多元一体",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解中华民族多元一体",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "了解"
       ],
@@ -586,10 +586,10 @@
       "summary": "认识国家版图,树立国土意识",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。认识国家版图,树立国土意识",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "认识"
       ],
@@ -605,7 +605,7 @@
     {
       "id": "ML_ML_G6_01",
       "subject": "morality_law",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 6,
       "grade_end": 6,
       "title": "尊重多样性",
@@ -615,10 +615,10 @@
       "summary": "尊重文化多样性",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。尊重文化多样性",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "了解"
       ],
@@ -633,7 +633,7 @@
     {
       "id": "ML_ML_G6_02",
       "subject": "morality_law",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 6,
       "grade_end": 6,
       "title": "宪法是根本法",
@@ -643,10 +643,10 @@
       "summary": "初步了解宪法是国家根本法",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。初步了解宪法是国家根本法",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "了解"
       ],
@@ -661,7 +661,7 @@
     {
       "id": "ML_ML_G6_03",
       "subject": "morality_law",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 6,
       "grade_end": 6,
       "title": "公民的权利与义务",
@@ -671,10 +671,10 @@
       "summary": "了解公民基本权利与义务",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解公民基本权利与义务",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "了解"
       ],
@@ -689,7 +689,7 @@
     {
       "id": "ML_ML_G6_04",
       "subject": "morality_law",
-      "stage": 4,
+      "stage": 3,
       "grade_start": 6,
       "grade_end": 6,
       "title": "人类文明的瑰宝",
@@ -699,10 +699,10 @@
       "summary": "了解世界文明瑰宝",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解世界文明瑰宝",
-      "src_page": 1,
-      "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_page": 62,
+      "src_stage": "第三学段",
+      "src_domain_ocr": "对应学段",
+      "academic_req": "现中华民族伟大复兴而努力学习。 理变化，体会青春期的| “青春期的心理特征与性心理特点。 理知识，正确对待两性 | ”以及青春期性心理的特点和规律;",
       "bloom": [
         "了解"
       ],
@@ -727,10 +727,10 @@
       "summary": "适应中学新阶段",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。适应中学新阶段",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -755,10 +755,10 @@
       "summary": "了解青春期的身心变化",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解青春期的身心变化",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -783,10 +783,10 @@
       "summary": "珍爱生命,敬畏生命",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。珍爱生命,敬畏生命",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -812,10 +812,10 @@
       "summary": "学会管理情绪",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。学会管理情绪",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "会"
       ],
@@ -830,7 +830,7 @@
     {
       "id": "ML_ML_G8_01",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 8,
       "grade_end": 8,
       "title": "遵守社会规则",
@@ -840,10 +840,10 @@
       "summary": "理解社会规则的必要性",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。理解社会规则的必要性",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "会",
         "理解"
@@ -859,7 +859,7 @@
     {
       "id": "ML_ML_G8_02",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 8,
       "grade_end": 8,
       "title": "依法治国",
@@ -869,10 +869,10 @@
       "summary": "了解依法治国基本方略",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解依法治国基本方略",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -887,7 +887,7 @@
     {
       "id": "ML_ML_G8_03",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 8,
       "grade_end": 8,
       "title": "国家利益至上",
@@ -897,10 +897,10 @@
       "summary": "理解国家利益与个人利益关系",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。理解国家利益与个人利益关系",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "理解"
       ],
@@ -915,7 +915,7 @@
     {
       "id": "ML_ML_G8_04",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 8,
       "grade_end": 8,
       "title": "公民的基本权利和义务",
@@ -925,10 +925,10 @@
       "summary": "深入理解公民权利与义务",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。深入理解公民权利与义务",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "理解"
       ],
@@ -943,7 +943,7 @@
     {
       "id": "ML_ML_G9_01",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 9,
       "grade_end": 9,
       "title": "踏上强国之路",
@@ -953,10 +953,10 @@
       "summary": "了解改革开放伟大成就",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解改革开放伟大成就",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -971,7 +971,7 @@
     {
       "id": "ML_ML_G9_02",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 9,
       "grade_end": 9,
       "title": "创新驱动发展",
@@ -981,10 +981,10 @@
       "summary": "理解创新驱动发展战略",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。理解创新驱动发展战略",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "理解"
       ],
@@ -999,7 +999,7 @@
     {
       "id": "ML_ML_G9_03",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 9,
       "grade_end": 9,
       "title": "走向共同富裕",
@@ -1009,10 +1009,10 @@
       "summary": "了解共同富裕目标",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解共同富裕目标",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -1027,7 +1027,7 @@
     {
       "id": "ML_ML_G9_04",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 9,
       "grade_end": 9,
       "title": "中国担当",
@@ -1037,10 +1037,10 @@
       "summary": "了解中国国际担当",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。了解中国国际担当",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -1055,7 +1055,7 @@
     {
       "id": "ML_ML_G9_05",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 9,
       "grade_end": 9,
       "title": "少年的担当",
@@ -1065,10 +1065,10 @@
       "summary": "立志担当民族复兴大任",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。立志担当民族复兴大任",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "了解"
       ],
@@ -1083,7 +1083,7 @@
     {
       "id": "ML_ML_G9_06",
       "subject": "morality_law",
-      "stage": 5,
+      "stage": 4,
       "grade_start": 9,
       "grade_end": 9,
       "title": "中国梦",
@@ -1093,10 +1093,10 @@
       "summary": "理解中国梦的内涵",
       "source": "2022 义教课标",
       "content_req": "请解析这些命名中蕴含了中华优秀传统文化中的哪些元素?。理解中国梦的内涵",
-      "src_page": 1,
+      "src_page": 62,
       "src_stage": "第四学段",
-      "src_domain_ocr": null,
-      "academic_req": null,
+      "src_domain_ocr": "对应学段",
+      "academic_req": "成就，理解中国共产党在建设中国特色社会主义过程中的领导作用， 体建设;能够了解我国的主要国家机构和基本经济政治制度，了解公 识和评价社会生活现象，用法律维护自己作为未成年人的权益;能以",
       "bloom": [
         "理解"
       ],

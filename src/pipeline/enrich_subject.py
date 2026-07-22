@@ -75,6 +75,18 @@ def extract_ocr_items(pages):
     # 预先建全文索引
     full_text = '\n'.join(p['text'] for p in pages)
 
+    # 页偏移 (用每页的 'page' 字段)
+    page_offsets = [0]
+    for p in pages:
+        page_offsets.append(page_offsets[-1] + len(p['text']) + 1)
+
+    def page_at(pos):
+        """返回 pos 位置对应的 PDF 页号 (用 pages[i].page 字段)"""
+        for i in range(len(page_offsets) - 1):
+            if page_offsets[i] <= pos < page_offsets[i+1]:
+                return pages[i].get('page', i + 1)
+        return len(pages)
+
     # 学段位置: (start_pos, stage_name) — 多模式识别
     stage_positions = []
     # 模式 1: "第N学段 (X~Y 年级)" / "第N学段（X~Y 年级）"
@@ -140,7 +152,7 @@ def extract_ocr_items(pages):
                 examples = [f'例{e}' for e in examples]
                 if len(body) >= 6:
                     abs_pos = i + len(kw) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,
@@ -164,7 +176,7 @@ def extract_ocr_items(pages):
                 examples = [f'例{e}' for e in examples]
                 if len(body) >= 6 and not body.startswith(('第', '一', '二', '三', '四', '五', '六')):
                     abs_pos = i + len(kw) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,
@@ -184,7 +196,7 @@ def extract_ocr_items(pages):
                 body = re.sub(r'\s*[\(（]\s*例\s*\d+\s*[\)）]\s*', '', body)
                 if len(body) >= 6:
                     abs_pos = i + len(kw) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,
@@ -219,7 +231,7 @@ def extract_ocr_items(pages):
                 examples = [f'例{e}' for e in examples]
                 if len(body) >= 6:
                     abs_pos = i + len(kw_block) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,
@@ -242,7 +254,7 @@ def extract_ocr_items(pages):
                 examples = [f'例{e}' for e in examples]
                 if len(body) >= 6 and not body.startswith(('第', '一', '二', '三', '四', '五', '六')):
                     abs_pos = i + len(kw_block) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,
@@ -262,7 +274,7 @@ def extract_ocr_items(pages):
                 body = re.sub(r'\s*[\(（]\s*例\s*\d+\s*[\)）]\s*', '', body)
                 if len(body) >= 6:
                     abs_pos = i + len(kw_block) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,
@@ -292,7 +304,7 @@ def extract_ocr_items(pages):
                 body = re.split(r'[\(（]\s*\d', body, maxsplit=1)[0].strip()
                 if len(body) >= 6:
                     abs_pos = i + len(kw_block) + ln_m.start()
-                    page_num = full_text[:abs_pos].count('\f') + 1
+                    page_num = page_at(abs_pos)
                     items.append({
                         'stage': stage,
                         'domain': None,

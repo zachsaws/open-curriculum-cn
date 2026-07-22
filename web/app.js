@@ -467,6 +467,9 @@ function initGraph() {
     cy.elements().not(neighborhood).addClass('neighbor-dim');
     neighborhood.addClass('neighbor-highlight');
   });
+
+  // EN 模式: 节点 label 用英文 (兜底用 CONCEPT_EN 字典)
+  // 切换语言时由 applyI18n 重渲
   cy.on('tap', evt => {
     if (evt.target === cy) {
       document.getElementById('card').classList.remove('on');
@@ -490,7 +493,7 @@ function showCard(node) {
   window._currentNode = node;
   document.getElementById('card-sw').style.background = PALETTE[node.subject] || '#888';
   document.getElementById('card-cs').textContent = `${window.tSubject(node.subject)} · G${node.grade_start || ''}-${node.grade_end || ''} · ${node.domain || ''}`;
-  document.getElementById('card-ctl').textContent = node.title;
+  document.getElementById('card-ctl').textContent = window.tConcept ? window.tConcept(node) : node.title;
 
   // 标签行: bloom / difficulty / estimated_minutes / subdomain
   const tagRow = document.getElementById('card-tags');
