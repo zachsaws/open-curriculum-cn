@@ -315,15 +315,30 @@ function initGraph() {
       group: 'nodes',
       data: { ...n },
     })),
-    ...DATA.edges.map((e, i) => ({
-      group: 'edges',
-      data: {
-        id: 'e' + i,
-        source: Array.isArray(e) ? e[0] : e.from,
-        target: Array.isArray(e) ? e[1] : e.to,
-        type: Array.isArray(e) ? (e[2] || 'hard') : (e.type === 0 ? 'soft' : 'hard'),
-      },
-    })),
+    ...DATA.edges.map((e, i) => {
+      // 兼容 V2.2 [from, to, type] 数组 和 V3.0+ 对象
+      const fromId = Array.isArray(e) ? e[0] : e.from;
+      const toId = Array.isArray(e) ? e[1] : e.to;
+      const eType = Array.isArray(e) ? (e[2] || 'hard') : (e.type === 0 ? 'soft' : 'hard');
+      // 兼容 V2.2 source/rationale 字段 (cytoscape 强制 data.source/data.target, 不能 spread e 全部字段)
+      const { source, rationale, from, to, type, ...rest } = e;
+      return {
+        group: 'edges',
+        data: {
+          id: 'e' + i,
+          source: fromId,
+          target: toId,
+          type: eType,
+          // V3.2: 完整保留 rel / reason / weight + V2.2 source/rationale
+          rel: e.rel || (eType === 0 ? 'relates_to' : 'prerequisite'),
+          reason: e.reason || '',
+          weight: e.weight || (eType === 0 ? 0.5 : 1.0),
+          edge_source: source || 'curriculum',  // V2.2 source 改名, 避免和 cytoscape 内部冲突
+          rationale: rationale || '',
+          ...rest,
+        },
+      };
+    }),
   ];
 
   const nodeCount = DATA.nodes.length;
@@ -620,6 +635,34 @@ function showCard(node) {
     exBlock.style.display = 'none';
   }
 
+  // V3.2: 概念元信息 (type / age / centrality)
+  const metaBlock = document.getElementById('card-meta-block');
+  const meta = document.getElementById('card-meta');
+  const metaItems = [];
+  if (node.type) metaItems.push(`<span class="meta-tag type-${node.type.toLowerCase()}">${node.type}</span>`);
+  if (node.age_range_start) metaItems.push(`<span class="meta-tag">🎂 ${node.age_range_start}-${node.age_range_end || node.age_range_start} 岁</span>`);
+  if (node.centrality !== undefined) {
+    const centPct = Math.round(node.centrality * 100);
+    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能解锁)">⭐ 中心度 ${centPct}%</span>`);
+  }
+  if (node.bloom) metaItems.push(`<span class="meta-tag bloom-tag">${node.bloom}</span>`);
+  if (metaItems.length) {
+    meta.innerHTML = metaItems.join(' ');
+    metaBlock.style.display = '';
+  } else {
+    metaBlock.style.display = 'none';
+  }
+
+  // V3.2: 评估提示
+  const assBlock = document.getElementById('card-assessment-block');
+  const ass = document.getElementById('card-assessment');
+  if (node.assessment_prompt) {
+    ass.textContent = node.assessment_prompt;
+    assBlock.style.display = '';
+  } else {
+    assBlock.style.display = 'none';
+  }
+
   // sec 标签 — 用 data-i18n attr 配 t() 字符串拼接 (避免 innerHTML 改 span.k)
   const preLabel = document.querySelector('.sec-pre .label');
   const nextLabel = document.querySelector('.sec-next .label');
@@ -628,6 +671,25 @@ function showCard(node) {
   const nextEdges = cy.edges().filter(e => e.source().data('id') === node.id);
   preLabel.innerHTML = `<span data-i18n="card_prereq">${window.t('card_prereq')}</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>`;
   nextLabel.innerHTML = `<span data-i18n="card_unlocks">${window.t('card_unlocks')}</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>`;
+
+  // V3.2: 边的 reason (人话解释)
+  const fillReasons = (container, edges, side) => {
+    container.innerHTML = '';
+    const withReason = edges.filter(e => e.data('reason'));
+    if (!withReason.length) return;
+    withReason.slice(0, 3).forEach(e => {
+      const other = side === 'pre' ? e.source() : e.target();
+      const otherData = other.data();
+      const rel = e.data('rel') || 'relates_to';
+      const relLabels = { prerequisite: '先决', progresses_to: '进阶', relates_to: '关联' };
+      const d = document.createElement('div');
+      d.className = 'reason-row';
+      d.innerHTML = `<span class="rel-tag rel-${rel}">${relLabels[rel] || rel}</span><span class="reason-txt">${e.data('reason')}</span>`;
+      container.appendChild(d);
+    });
+  };
+  fillReasons(document.getElementById('card-pre-reasons'), preEdges, 'pre');
+  fillReasons(document.getElementById('card-next-reasons'), nextEdges, 'next');
 
   const fillRows = (container, edges, side) => {
     container.innerHTML = '';

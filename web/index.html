@@ -328,6 +328,35 @@
   body.map-mode #cy-container { margin-left: 280px; width: calc(100% - 280px); }
   body.map-mode #map-panel { display: flex !important; }
 
+  /* V3.2 卡片增强: 评估 + 元信息 + 边 reason */
+  .meta-row { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0; }
+  .meta-tag {
+    display: inline-block; padding: 3px 8px; border-radius: 4px;
+    background: rgba(255,255,255,0.05); color: #a5b8f5;
+    font-size: 10px; font-family: "SF Mono", monospace;
+  }
+  .meta-tag.type-conceptual { background: rgba(107,140,255,0.15); color: #a5b8f5; }
+  .meta-tag.type-procedural { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .meta-tag.type-factual { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  .meta-tag.bloom-tag { background: rgba(151,201,111,0.15); color: #c5e08c; }
+  .reason-list { margin: 6px 0; }
+  .reason-row {
+    display: flex; gap: 6px; align-items: flex-start;
+    padding: 4px 8px; margin-bottom: 4px;
+    background: rgba(255,255,255,0.03); border-left: 2px solid #6b8cff;
+    border-radius: 0 4px 4px 0;
+    font-size: 11px; line-height: 1.5; color: #c8cee0;
+  }
+  .rel-tag {
+    display: inline-block; padding: 1px 6px; border-radius: 3px;
+    font-size: 9px; font-family: "SF Mono", monospace;
+    flex-shrink: 0; margin-top: 2px;
+  }
+  .rel-tag.rel-prerequisite { background: rgba(123,201,111,0.2); color: #a5e08c; }
+  .rel-tag.rel-progresses_to { background: rgba(151,201,111,0.2); color: #c5e08c; }
+  .rel-tag.rel-relates_to { background: rgba(180,195,235,0.15); color: #b8c0d8; }
+  .reason-txt { flex: 1; }
+
   /* 加载状态 */
   #loading {
     position: fixed; inset: 0; z-index: 30;
@@ -487,12 +516,25 @@
     <div class="ex-row" id="card-examples"></div>
   </div>
 
+  <!-- V3.2: 评估提示 (带 {{name}} 占位符) -->
+  <div class="block" id="card-assessment-block" style="display:none">
+    <div class="block-title" data-i18n="card_assessment">🎯 评估提示</div>
+    <div class="block-body" id="card-assessment"></div>
+  </div>
+
+  <!-- V3.2: 概念元信息 (type / age / centrality) -->
+  <div class="block" id="card-meta-block" style="display:none">
+    <div class="meta-row" id="card-meta"></div>
+  </div>
+
   <div class="sec sec-pre">
     <div class="label"><span data-i18n="card_prereq">直接先决</span> · <span class="k" id="card-pre-k">0</span></div>
+    <div class="reason-list" id="card-pre-reasons"></div>
     <div class="rows" id="card-pre-rows"></div>
   </div>
   <div class="sec sec-next">
     <div class="label"><span data-i18n="card_unlocks">解锁后继</span> · <span class="k" id="card-next-k">0</span></div>
+    <div class="reason-list" id="card-next-reasons"></div>
     <div class="rows" id="card-next-rows"></div>
   </div>
 </div>

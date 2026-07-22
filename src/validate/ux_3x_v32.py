@@ -537,8 +537,8 @@ def main():
         findings["scenario6_mobile_layout"] = mobile_layout
         log(f"移动端布局: {json.dumps(mobile_layout, ensure_ascii=False, indent=2)}")
 
-        # 移动端打开概念地图
-        page_m.locator("#toggleMode").click()
+        # 移动端打开概念地图 (用 JS click 绕过 z-index 重叠)
+        page_m.evaluate("() => document.getElementById('toggleMode').click()")
         page_m.wait_for_timeout(800)
         screenshot(page_m, "06b_mobile_map_mode")
 
@@ -560,7 +560,7 @@ def main():
         log(f"移动端概念地图: {json.dumps(mobile_map_layout, ensure_ascii=False, indent=2)}")
 
         # 移动端打开详情卡
-        page_m.locator("#toggleMode").click()  # 关掉 map
+        page_m.evaluate("() => document.getElementById('toggleMode').click()")  # 关掉 map
         page_m.wait_for_timeout(500)
         page_m.evaluate("() => { const n = window.cy.getElementById('M_G1_NS_01'); if (n.length) n.emit('tap'); }")
         page_m.wait_for_timeout(800)
