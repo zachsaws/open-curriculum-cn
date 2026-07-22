@@ -224,6 +224,22 @@ def test_api_stats():
     print(f"✅ API 统计: {d['total_concepts']} 概念, {d['total_edges']} 关系")
 
 
+def test_api_health_v32():
+    """V3.2 health 端点: 字段填充 + DAG 状态"""
+    r = client.get("/api/health")
+    assert r.status_code == 200
+    h = r.json()
+    assert h["status"] == "ok", f"health status: {h['status']}"
+    assert h["dag"]["is_dag"] is True, f"DAG 失败: {h['dag']}"
+    # V3.2 字段 100% 填充
+    fc = h["field_coverage"]
+    must_100 = ["edge_reason_填充", "assessment_prompt_填充", "centrality_填充", "type_填充", "age_填充",
+                "bloom_覆盖", "src_page_真实", "key_points_填充"]
+    for k in must_100:
+        assert fc[k]["pct"] == 100.0, f"{k}: {fc[k]['pct']}%"
+    print(f"✅ API /api/health: status={h['status']}, {len([k for k,v in fc.items() if v['pct']==100.0])}/10 字段 100%")
+
+
 def test_api_subject_names_trilingual():
     """/api/subjects 返回简繁英三语"""
     r = client.get("/api/subjects")

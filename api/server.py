@@ -21,14 +21,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 ROOT = Path(__file__).parent.parent
-# V3.0: 优先读 all_v3.0.json, 兼容 v0.8
-_DATA_CANDIDATES = ["all_v3.0.json", "all_v0.8.json", "all_v0.7.json"]
+# V3.2: 优先读 all_v3.2.json, 兼容 v3.0 / v0.8 / v0.7
+_DATA_CANDIDATES = ["all_v3.2.json", "all_v3.0.json", "all_v0.8.json", "all_v0.7.json"]
 DATA_FILE = next(
     (ROOT / "data" / "graph" / n for n in _DATA_CANDIDATES
      if (ROOT / "data" / "graph" / n).exists()),
-    ROOT / "data" / "graph" / "all_v3.0.json",
+    ROOT / "data" / "graph" / "all_v3.2.json",
 )
-if "v3.0" in DATA_FILE.name:
+if "v3.2" in DATA_FILE.name:
+    DATA_VERSION = "v3.2.0"
+elif "v3.0" in DATA_FILE.name:
     DATA_VERSION = "v3.0.0"
 elif "v0.8" in DATA_FILE.name:
     DATA_VERSION = "v0.8.0"
@@ -150,6 +152,7 @@ def root():
             "/api/prerequisites/{id}",
             "/api/path",
             "/api/search",
+            "/api/health",
             "/rss.xml",
         ],
     }
@@ -171,6 +174,61 @@ def stats():
         "by_subject": dict(by_subj),
         "by_stage": {f"G{(s-1)*2+1}-{(s-1)*2+2 if s<4 else 9}": v for s, v in sorted(by_stage.items()) if s > 0},
         "by_rel": dict(by_rel),
+    }
+
+
+@app.get("/api/health")
+def health():
+    """V3.2 健康检查: 字段填充率 + DAG 状态"""
+    nodes = DATA["nodes"]
+    edges = DATA["edges"]
+    # 字段填充率
+    field_stats = {
+        "content_req_完整": sum(1 for n in nodes if n.get("content_req") and len(n.get("content_req", "")) > 30),
+        "academic_req_填充": sum(1 for n in nodes if n.get("academic_req")),
+        "bloom_覆盖": sum(1 for n in nodes if n.get("bloom")),
+        "src_page_真实": sum(1 for n in nodes if n.get("src_page") and n["src_page"] != "N/A"),
+        "key_points_填充": sum(1 for n in nodes if n.get("key_points") and len(n.get("key_points", [])) > 0),
+        "edge_reason_填充": sum(1 for e in edges if e.get("reason")),
+        "assessment_prompt_填充": sum(1 for n in nodes if n.get("assessment_prompt")),
+        "centrality_填充": sum(1 for n in nodes if n.get("centrality") is not None),
+        "type_填充": sum(1 for n in nodes if n.get("type")),
+        "age_填充": sum(1 for n in nodes if n.get("age_range_start")),
+    }
+    # DAG 验证 (prerequisite 边)
+    pre = [e for e in edges if e.get("rel") == "prerequisite"]
+    in_deg = {n["id"]: 0 for n in nodes}
+    adj = {n["id"]: [] for n in nodes}
+    for e in pre:
+        adj[e["from"]].append(e["to"])
+        in_deg[e["to"]] = in_deg.get(e["to"], 0) + 1
+    from collections import deque
+    q = deque([n for n, d in in_deg.items() if d == 0])
+    visited = 0
+    while q:
+        u = q.popleft()
+        visited += 1
+        for v in adj[u]:
+            in_deg[v] -= 1
+            if in_deg[v] == 0:
+                q.append(v)
+    is_dag = visited == len(nodes)
+    return {
+        "status": "ok" if is_dag else "degraded",
+        "version": DATA_VERSION,
+        "data_file": DATA_FILE.name,
+        "totals": {
+            "concepts": len(nodes),
+            "edges": len(edges),
+            "prerequisite_edges": len(pre),
+        },
+        "field_coverage": {k: {"count": v, "pct": round(v * 100 / len(nodes) if k != "edge_reason_填充" else v * 100 / len(edges), 1)} for k, v in field_stats.items()},
+        "dag": {
+            "is_dag": is_dag,
+            "scope": "prerequisite edges only",
+            "visited": visited,
+            "total": len(nodes),
+        },
     }
 
 

@@ -51,14 +51,14 @@ def test_list_concepts():
 
 
 def test_list_concepts_by_stage():
-    r = client.get("/api/concepts?subject=math&stage=5&limit=10")  # 第四学段 (7-9) 在 V0.6 数据里 stage=5
+    r = client.get("/api/concepts?subject=math&stage=4&limit=10")  # V3.2: stage 1-4 (G7-9 = 4)
     assert r.status_code == 200
     data = r.json()
-    # 第四学段 (7-9) 应该有 ~75 个数学概念
+    # 第四学段 (G7-9) 数学应该有 ~75 个概念
     assert data["total"] >= 50
     for c in data["concepts"]:
-        assert c["stage"] == 5
-    print(f"✅ list_concepts stage=5 (G7-9): {data['total']} concepts")
+        assert c["stage"] == 4
+    print(f"✅ list_concepts stage=4 (G7-9): {data['total']} concepts")
 
 
 def test_get_concept():
