@@ -1,0 +1,265 @@
+{
+  "version": "v0.8",
+  "generated_at": "2026-07-23",
+  "summary": {
+    "total_nodes": 758,
+    "total_edges": 299,
+    "by_rel": {
+      "prerequisite": 153,
+      "progresses_to": 33,
+      "relates_to": 113
+    },
+    "by_structure": {
+      "intra_domain": 124,
+      "cross_stage": 62,
+      "cross_subject": 113
+    },
+    "total_orphans": 467,
+    "orphan_rate": 61.6,
+    "cross_subject_pairs_covered": 24,
+    "cross_subject_pairs_possible": 91,
+    "cross_subject_coverage_pct": 26.4
+  },
+  "errors": {
+    "self_loop": 0,
+    "dangling_from": 0,
+    "dangling_to": 0,
+    "invalid_rel": 0,
+    "duplicate": 0,
+    "backflow_prerequisite": 0
+  },
+  "error_details": {
+    "self_loop": [],
+    "dangling_from": [],
+    "dangling_to": [],
+    "invalid_rel": [],
+    "duplicate": [],
+    "backflow_prerequisite": []
+  },
+  "by_subject": {
+    "art": {
+      "nodes": 22,
+      "in_edges": 5,
+      "out_edges": 2,
+      "avg_in": 0.227,
+      "avg_out": 0.091,
+      "orphans": 18,
+      "orphan_rate_pct": 81.8
+    },
+    "biology": {
+      "nodes": 36,
+      "in_edges": 25,
+      "out_edges": 4,
+      "avg_in": 0.694,
+      "avg_out": 0.111,
+      "orphans": 17,
+      "orphan_rate_pct": 47.2
+    },
+    "chemistry": {
+      "nodes": 37,
+      "in_edges": 22,
+      "out_edges": 0,
+      "avg_in": 0.595,
+      "avg_out": 0.0,
+      "orphans": 24,
+      "orphan_rate_pct": 64.9
+    },
+    "chinese": {
+      "nodes": 75,
+      "in_edges": 8,
+      "out_edges": 18,
+      "avg_in": 0.107,
+      "avg_out": 0.24,
+      "orphans": 60,
+      "orphan_rate_pct": 80.0
+    },
+    "english": {
+      "nodes": 71,
+      "in_edges": 10,
+      "out_edges": 8,
+      "avg_in": 0.141,
+      "avg_out": 0.113,
+      "orphans": 58,
+      "orphan_rate_pct": 81.7
+    },
+    "geography": {
+      "nodes": 43,
+      "in_edges": 8,
+      "out_edges": 3,
+      "avg_in": 0.186,
+      "avg_out": 0.07,
+      "orphans": 37,
+      "orphan_rate_pct": 86.0
+    },
+    "history": {
+      "nodes": 43,
+      "in_edges": 12,
+      "out_edges": 0,
+      "avg_in": 0.279,
+      "avg_out": 0.0,
+      "orphans": 34,
+      "orphan_rate_pct": 79.1
+    },
+    "info_tech": {
+      "nodes": 28,
+      "in_edges": 8,
+      "out_edges": 5,
+      "avg_in": 0.286,
+      "avg_out": 0.179,
+      "orphans": 21,
+      "orphan_rate_pct": 75.0
+    },
+    "labor": {
+      "nodes": 21,
+      "in_edges": 0,
+      "out_edges": 4,
+      "avg_in": 0.0,
+      "avg_out": 0.19,
+      "orphans": 18,
+      "orphan_rate_pct": 85.7
+    },
+    "math": {
+      "nodes": 214,
+      "in_edges": 177,
+      "out_edges": 227,
+      "avg_in": 0.827,
+      "avg_out": 1.061,
+      "orphans": 47,
+      "orphan_rate_pct": 22.0
+    },
+    "morality_law": {
+      "nodes": 39,
+      "in_edges": 0,
+      "out_edges": 3,
+      "avg_in": 0.0,
+      "avg_out": 0.077,
+      "orphans": 36,
+      "orphan_rate_pct": 92.3
+    },
+    "pe_health": {
+      "nodes": 25,
+      "in_edges": 1,
+      "out_edges": 8,
+      "avg_in": 0.04,
+      "avg_out": 0.32,
+      "orphans": 19,
+      "orphan_rate_pct": 76.0
+    },
+    "physics": {
+      "nodes": 63,
+      "in_edges": 23,
+      "out_edges": 8,
+      "avg_in": 0.365,
+      "avg_out": 0.127,
+      "orphans": 43,
+      "orphan_rate_pct": 68.3
+    },
+    "science": {
+      "nodes": 41,
+      "in_edges": 0,
+      "out_edges": 9,
+      "avg_in": 0.0,
+      "avg_out": 0.22,
+      "orphans": 35,
+      "orphan_rate_pct": 85.4
+    }
+  },
+  "cross_subject_pairs": [
+    [
+      "art",
+      "info_tech"
+    ],
+    [
+      "art",
+      "math"
+    ],
+    [
+      "biology",
+      "chemistry"
+    ],
+    [
+      "biology",
+      "geography"
+    ],
+    [
+      "biology",
+      "labor"
+    ],
+    [
+      "biology",
+      "math"
+    ],
+    [
+      "biology",
+      "morality_law"
+    ],
+    [
+      "biology",
+      "pe_health"
+    ],
+    [
+      "biology",
+      "physics"
+    ],
+    [
+      "biology",
+      "science"
+    ],
+    [
+      "chemistry",
+      "labor"
+    ],
+    [
+      "chemistry",
+      "math"
+    ],
+    [
+      "chemistry",
+      "physics"
+    ],
+    [
+      "chinese",
+      "english"
+    ],
+    [
+      "chinese",
+      "history"
+    ],
+    [
+      "geography",
+      "math"
+    ],
+    [
+      "history",
+      "math"
+    ],
+    [
+      "history",
+      "morality_law"
+    ],
+    [
+      "info_tech",
+      "math"
+    ],
+    [
+      "labor",
+      "pe_health"
+    ],
+    [
+      "math",
+      "physics"
+    ],
+    [
+      "math",
+      "science"
+    ],
+    [
+      "pe_health",
+      "physics"
+    ],
+    [
+      "physics",
+      "science"
+    ]
+  ]
+}

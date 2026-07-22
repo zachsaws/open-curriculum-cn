@@ -2,10 +2,17 @@
 B 端 REST API — 2022 新课标知识图谱
 
 启动: uvicorn api.server:app --host 0.0.0.0 --port 8001
+
+V0.8 P0 修复:
+  Bug 1: /api/prerequisites 递归爆栈 → 改 iterative + visited
+  Bug 2: 邻接表每次请求都重建 → startup 一次构建 + lru_cache
+  Bug 3: get_concept 返回的边丢 type 字段 → 加 rel 字段
+  Bug 4: find_path 404 时无 progress → 返回 visited_count + suggested_intermediate
 """
 import json
 import re
-from collections import defaultdict
+from collections import defaultdict, deque
+from functools import lru_cache
 from pathlib import Path
 from typing import Optional
 
@@ -14,20 +21,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 ROOT = Path(__file__).parent.parent
-DATA_FILE = ROOT / "data" / "graph" / "all_v0.7.json"
-
-app = FastAPI(
-    title="Open Curriculum CN API",
-    description="基于 2022 义教新课标的中国 K12 知识图谱 REST API",
-    version="1.0.0",
+# V0.8: 优先读 all_v0.8.json, 兼容 v0.7
+_DATA_CANDIDATES = ["all_v0.8.json", "all_v0.7.json"]
+DATA_FILE = next(
+    (ROOT / "data" / "graph" / n for n in _DATA_CANDIDATES
+     if (ROOT / "data" / "graph" / n).exists()),
+    ROOT / "data" / "graph" / "all_v0.8.json",
 )
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+DATA_VERSION = "v0.8.0" if "v0.8" in DATA_FILE.name else "v0.7.5"
 
 # 加载数据
 def load_data():
@@ -41,13 +42,98 @@ DATA = load_data()
 if DATA is None:
     raise RuntimeError(f"数据文件不存在: {DATA_FILE}, 请先跑 enrich + merge")
 
+app = FastAPI(
+    title="Open Curriculum CN API",
+    description="基于 2022 义教新课标的中国 K12 知识图谱 REST API",
+    version=DATA_VERSION,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# ---------------------------------------------------------------------------
+# 邻接表 startup 一次构建 (Bug 2 修复)
+# 用 lru_cache 包装, 第一次调用即构建, 后续 O(1) 命中
+# ---------------------------------------------------------------------------
+@lru_cache(maxsize=1)
+def get_adjacency():
+    """返回 (_ADJ_TO, _ADJ_FROM) 两个邻接表 dict
+    _ADJ_TO[concept_id] = [from_id, ...]  (先决)
+    _ADJ_FROM[concept_id] = [to_id, ...]  (后继)
+    """
+    adj_to = defaultdict(list)
+    adj_from = defaultdict(list)
+    for e in DATA["edges"]:
+        rel = e.get("rel") or ("prerequisite" if e.get("type", 1) == 1 else "relates_to")
+        # 硬先决/同领域跨段 用于先决链 (prerequisite + progresses_to)
+        if rel in ("prerequisite", "progresses_to"):
+            adj_to[e["to"]].append(e["from"])
+            adj_from[e["from"]].append(e["to"])
+    return adj_to, adj_from
+
+
+# 启动时立即构建一次 (而不是 lazy)
+_ADJ_TO, _ADJ_FROM = get_adjacency()
+
+
+# ---------------------------------------------------------------------------
+# Bug 1 修复: 递归爆栈 — 改 iterative BFS + iterative depth
+# ---------------------------------------------------------------------------
+def _bfs_prereqs(concept_id):
+    """iterative BFS 找所有先决 (含 visited 防环)"""
+    visited = set()
+    queue = deque([concept_id])
+    while queue:
+        cur = queue.popleft()
+        for pre in _ADJ_TO.get(cur, []):
+            if pre not in visited and pre != concept_id:
+                visited.add(pre)
+                queue.append(pre)
+    return visited
+
+
+def _iterative_depth(all_prereqs):
+    """iterative 计算 depth: 用 Kahn 风格自底向上拓扑"""
+    # depth[n] = 0 if n 无先决, else max(depth[pre]) + 1
+    depth = {}
+    # 按入度分层处理
+    in_deg = {nid: 0 for nid in all_prereqs}
+    for nid in all_prereqs:
+        for pre in _ADJ_TO.get(nid, []):
+            if pre in all_prereqs:
+                in_deg[nid] += 1
+
+    queue = deque([nid for nid, d in in_deg.items() if d == 0])
+    for nid in queue:
+        depth[nid] = 0
+    while queue:
+        cur = queue.popleft()
+        d = depth[cur]
+        for nxt in _ADJ_FROM.get(cur, []):
+            if nxt not in all_prereqs:
+                continue
+            if nxt not in depth:
+                depth[nxt] = d + 1
+            else:
+                depth[nxt] = max(depth[nxt], d + 1)
+            in_deg[nxt] -= 1
+            if in_deg[nxt] == 0:
+                queue.append(nxt)
+    return depth
+
 
 @app.get("/")
 def root():
     return {
         "name": "Open Curriculum CN API",
-        "version": "1.0.0",
-        "data_version": "v0.7.5",
+        "version": DATA_VERSION,
+        "data_version": DATA_VERSION,
+        "data_file": DATA_FILE.name,
         "subjects": len(set(n["subject"] for n in DATA["nodes"])),
         "concepts": len(DATA["nodes"]),
         "edges": len(DATA["edges"]),
@@ -68,14 +154,18 @@ def root():
 def stats():
     by_subj = defaultdict(int)
     by_stage = defaultdict(int)
+    by_rel = defaultdict(int)
     for n in DATA["nodes"]:
         by_subj[n["subject"]] += 1
         by_stage[n.get("stage", 0)] += 1
+    for e in DATA["edges"]:
+        by_rel[e.get("rel") or ("prerequisite" if e.get("type", 1) == 1 else "relates_to")] += 1
     return {
         "total_concepts": len(DATA["nodes"]),
         "total_edges": len(DATA["edges"]),
         "by_subject": dict(by_subj),
         "by_stage": {f"G{(s-1)*2+1}-{(s-1)*2+2 if s<4 else 9}": v for s, v in sorted(by_stage.items()) if s > 0},
+        "by_rel": dict(by_rel),
     }
 
 
@@ -124,13 +214,20 @@ def list_concepts(
 
 @app.get("/api/concepts/{concept_id}")
 def get_concept(concept_id: str):
-    """单个概念详情"""
+    """单个概念详情 (V0.8 Bug 3 修复: 边的 rel 字段不再丢失)"""
     n = next((n for n in DATA["nodes"] if n["id"] == concept_id), None)
     if not n:
         raise HTTPException(404, f"概念不存在: {concept_id}")
-    # 包含先决/后继
-    pre = [{"from": e["from"], "to": e["to"]} for e in DATA["edges"] if e["to"] == concept_id]
-    post = [{"from": e["from"], "to": e["to"]} for e in DATA["edges"] if e["from"] == concept_id]
+    # 包含先决/后继 (保留 rel/weight/rationale 等元数据)
+    def _edge_full(e):
+        out = {"from": e["from"], "to": e["to"]}
+        for k in ("rel", "weight", "rationale", "source", "type"):
+            if k in e:
+                out[k] = e[k]
+        return out
+
+    pre = [_edge_full(e) for e in DATA["edges"] if e["to"] == concept_id]
+    post = [_edge_full(e) for e in DATA["edges"] if e["from"] == concept_id]
     return {
         **n,
         "prerequisites": pre,
@@ -142,67 +239,48 @@ def get_concept(concept_id: str):
 
 @app.get("/api/prerequisites/{concept_id}")
 def prerequisites(concept_id: str):
-    """概念的所有先决 (递归到根)"""
-    # 邻接表
-    adj = defaultdict(list)
-    for e in DATA["edges"]:
-        if e.get("type", 1) == 1:  # 只硬先决
-            adj[e["to"]].append(e["from"])
+    """概念的所有先决 (V0.8 Bug 1 修复: iterative BFS + iterative depth, 不会爆栈)"""
+    # 验证节点存在
+    if concept_id not in {n["id"] for n in DATA["nodes"]}:
+        raise HTTPException(404, f"概念不存在: {concept_id}")
 
-    # BFS 找所有祖先
-    all_prereqs = set()
-    queue = [concept_id]
-    while queue:
-        cur = queue.pop()
-        for pre in adj.get(cur, []):
-            if pre not in all_prereqs and pre != concept_id:
-                all_prereqs.add(pre)
-                queue.append(pre)
+    # 用 startup 预构建的邻接表 (Bug 2 修复)
+    # 1) BFS 找所有祖先
+    all_prereqs = _bfs_prereqs(concept_id)
 
-    # 找 max depth
-    depth = {}
-    def get_depth(nid):
-        if nid in depth:
-            return depth[nid]
-        if nid not in adj:
-            return depth.setdefault(nid, 0)
-        ps = adj[nid]
-        d = max((get_depth(p) for p in ps), default=-1) + 1
-        return depth.setdefault(nid, d)
-
-    for n in all_prereqs:
-        get_depth(n)
+    # 2) iterative depth (无递归, 无爆栈)
+    depth = _iterative_depth(all_prereqs)
 
     concepts = [n for n in DATA["nodes"] if n["id"] in all_prereqs]
     concepts.sort(key=lambda n: (depth.get(n["id"], 0), n["id"]))
     return {
         "concept_id": concept_id,
         "total_prereqs": len(all_prereqs),
-        "max_depth": max((depth.values() or [0])),
+        "max_depth": max(depth.values()) if depth else 0,
         "concepts": [{"id": n["id"], "title": n["title"], "depth": depth.get(n["id"], 0)} for n in concepts],
     }
 
 
 @app.get("/api/path")
 def find_path(from_id: str, to_id: str):
-    """找 from → to 学习路径 (BFS)"""
+    """找 from → to 学习路径 (BFS, V0.8 Bug 4 修复: 404 时返回 progress)"""
     if from_id == to_id:
         return {"path": [from_id], "length": 0}
 
-    # 邻接表
-    adj = defaultdict(list)
-    for e in DATA["edges"]:
-        if e.get("type", 1) == 1:
-            adj[e["from"]].append(e["to"])
+    # 节点存在性检查
+    node_ids = {n["id"] for n in DATA["nodes"]}
+    if from_id not in node_ids:
+        raise HTTPException(404, f"起点不存在: {from_id}")
+    if to_id not in node_ids:
+        raise HTTPException(404, f"终点不存在: {to_id}")
 
+    # 用 startup 预构建的 _ADJ_FROM (Bug 2 修复)
     # BFS
-    from collections import deque
     queue = deque([(from_id, [from_id])])
     visited = {from_id}
     while queue:
         cur, path = queue.popleft()
         if cur == to_id:
-            # 填充详情
             concepts = [next((n for n in DATA["nodes"] if n["id"] == nid), None) for nid in path]
             return {
                 "from": from_id,
@@ -211,11 +289,28 @@ def find_path(from_id: str, to_id: str):
                 "concepts": [{"id": c["id"], "title": c["title"]} for c in concepts if c],
                 "length": len(path) - 1,
             }
-        for nxt in adj.get(cur, []):
+        for nxt in _ADJ_FROM.get(cur, []):
             if nxt not in visited:
                 visited.add(nxt)
                 queue.append((nxt, path + [nxt]))
-    raise HTTPException(404, f"找不到从 {from_id} 到 {to_id} 的路径")
+
+    # 404 兜底 (Bug 4 修复: 返回 progress 信息帮教师诊断)
+    # 候选中间节点: from 的后继 ∩ to 的先决
+    from_succ = set(_ADJ_FROM.get(from_id, []))
+    to_prereq = set(_ADJ_TO.get(to_id, []))
+    suggested = list(from_succ & to_prereq)[:5]
+    raise HTTPException(
+        status_code=404,
+        detail={
+            "error": "no_path",
+            "from": from_id,
+            "to": to_id,
+            "visited_count": len(visited),
+            "visited_sample": sorted(visited)[:10],
+            "suggested_intermediate": suggested,
+            "hint": "考虑用 /api/related/ 查跨学科软关联边 (relates_to)",
+        },
+    )
 
 
 @app.get("/rss.xml")
