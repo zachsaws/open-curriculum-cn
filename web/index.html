@@ -70,10 +70,10 @@
 
   /* 详情面板 */
   #card {
-    position: fixed; right: 0; top: 0; bottom: 0; width: 480px;
+    position: fixed; right: 0; top: 0; bottom: 0; width: min(480px, calc(100vw - 40px));
     background: rgba(15, 18, 28, 0.96); backdrop-filter: blur(16px);
     border-left: 1px solid rgba(255,255,255,0.08);
-    padding: 20px 28px; overflow-y: auto; z-index: 15;
+    padding: 20px 24px; overflow-y: auto; z-index: 15;
     transform: translateX(100%); transition: transform 0.25s ease-out;
     display: flex; flex-direction: column; gap: 14px;
   }
@@ -209,7 +209,7 @@
 <body>
 <div id="loading">
   <div class="spinner"></div>
-  <div class="msg" id="loadingMsg">加载知识图谱...</div>
+  <div class="msg" id="loadingMsg" data-i18n="loading">加载知识图谱...</div>
 </div>
 
 <div id="wrap">
@@ -228,14 +228,14 @@
 </div>
 
 <div class="stats">
-  <div>概念数: <b id="nCount">-</b></div>
-  <div>关系数: <b id="eCount">-</b></div>
-  <div>学科数: <b id="gCount">-</b></div>
-  <div>缺先决根节点: <b id="rCount">-</b> (可学起)</div>
+  <div><span data-i18n="stats_concepts">概念数</span>: <b id="nCount">-</b></div>
+  <div><span data-i18n="stats_edges">关系数</span>: <b id="eCount">-</b></div>
+  <div><span data-i18n="stats_subjects">学科数</span>: <b id="gCount">-</b></div>
+  <div><span data-i18n="stats_roots_pre">缺先决根节点</span>: <b id="rCount">-</b> (<span data-i18n="stats_roots_label">可学起入口</span>)</div>
   <div style="margin-top:6px; display:flex; gap:6px;">
-    <button id="toggleLabels" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">显示标签</button>
-    <button id="toggleRoots" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">高亮入口</button>
-    <button id="reLayout" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">重排</button>
+    <button id="toggleLabels" data-i18n="btn_labels" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">显示标签</button>
+    <button id="toggleRoots" data-i18n="btn_roots" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">高亮入口</button>
+    <button id="reLayout" data-i18n="btn_relayout" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">重排</button>
   </div>
 </div>
 
@@ -263,36 +263,37 @@
   <div class="tag-row" id="card-tags"></div>
 
   <div class="block" id="card-content-req-block">
-    <div class="block-title">📋 课标内容要求 <span class="num" id="card-page-link"></span></div>
+    <div class="block-title"><span data-i18n="card_content_req">📋 课标内容要求</span> <span class="num" id="card-page-link"></span></div>
     <div class="block-body" id="card-content-req"></div>
   </div>
 
   <div class="block" id="card-academic-req-block">
-    <div class="block-title">🎯 课标学业要求</div>
+    <div class="block-title" data-i18n="card_academic_req">🎯 课标学业要求</div>
     <div class="block-body" id="card-academic-req"></div>
   </div>
 
   <div class="block" id="card-key-points-block">
-    <div class="block-title">💡 知识要点</div>
+    <div class="block-title" data-i18n="card_key_points">💡 知识要点</div>
     <div class="kp-list" id="card-key-points"></div>
   </div>
 
   <div class="block" id="card-examples-block" style="display:none">
-    <div class="block-title">📚 课标例题</div>
+    <div class="block-title" data-i18n="card_examples">📚 课标例题</div>
     <div class="ex-row" id="card-examples"></div>
   </div>
 
   <div class="sec sec-pre">
-    <div class="label">直接先决 · <span class="k" id="card-pre-k">0</span></div>
+    <div class="label"><span data-i18n="card_prereq">直接先决</span> · <span class="k" id="card-pre-k">0</span></div>
     <div class="rows" id="card-pre-rows"></div>
   </div>
   <div class="sec sec-next">
-    <div class="label">解锁后继 · <span class="k" id="card-next-k">0</span></div>
+    <div class="label"><span data-i18n="card_unlocks">解锁后继</span> · <span class="k" id="card-next-k">0</span></div>
     <div class="rows" id="card-next-rows"></div>
   </div>
 </div>
 
 <script src="./cytoscape.min.js"></script>
+<script src="./simp_to_trad.js"></script>
 <script src="./i18n.js"></script>
 <script type="module" src="app.js"></script>
 </body>

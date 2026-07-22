@@ -16,21 +16,21 @@ const PALETTE = {
   pe_health: '#ff7043', labor: '#9ccc65', integrated: '#78909c',
 };
 
-const SUBJECT_CN = {
-  math: '数学', chinese: '语文', english: '英语', science: '科学',
-  physics: '物理', chemistry: '化学', biology: '生物', history: '历史',
-  geography: '地理', morality_law: '道法', info_tech: '信息科技',
-  art: '艺术', pe_health: '体育', labor: '劳动', integrated: '综合实践',
-};
+// SUBJECT_CN 已弃用 — 改用 window.tSubject() (单一真源: i18n.js SUBJECT_CN_I18N)
 
 let DATA = null;
 let GROUPS = [];
 let GCOL = [];
 let cy;
 let activeGroups = new Set();
+// 当前打开的 card 节点 (供 applyI18n 重渲染用)
+window._currentNode = null;
+// 状态: 标签显示 / 根节点高亮 (供 applyI18n 决定按钮文字)
+window._labelsOn = false;
+window._rootsHighlighted = false;
 
 async function loadData() {
-  loadingMsg.textContent = '加载知识图谱...';
+  loadingMsg.textContent = window.t ? window.t('loading') : '加载知识图谱...';
   try {
     const res = await fetch('./data/graph.json');
     if (!res.ok) throw new Error('graph.json 不存在');
@@ -38,13 +38,17 @@ async function loadData() {
     console.log('Loaded', DATA.nodes.length, 'nodes,', DATA.edges.length, 'edges');
   } catch (e) {
     console.error(e);
-    loadingMsg.innerHTML = `<div class="err">未找到图谱数据 (graph.json)<br><br>数据仍在采集中</div>`;
+    loadingMsg.innerHTML = `<div class="err">${window.t ? window.t('err_no_data') : '未找到图谱数据 (graph.json)<br><br>数据仍在采集中'}</div>`;
     return;
   }
 
   GROUPS = [...new Set(DATA.nodes.map(n => n.subject))].sort();
   GCOL = GROUPS.map(s => PALETTE[s] || '#888');
   activeGroups = new Set(GROUPS);
+
+  // 启动时为每个节点存一份 title_orig (修复 i18n review Bug 7)
+  DATA.nodes.forEach(n => { n.title_orig = n.title; });
+  cy_nodes_initialized = true;
 
   document.getElementById('nCount').textContent = DATA.nodes.length.toLocaleString();
   document.getElementById('eCount').textContent = DATA.edges.length.toLocaleString();
@@ -59,32 +63,46 @@ async function loadData() {
   loading.classList.add('done');
 }
 
+let cy_nodes_initialized = false;
+
 function setupLangSwitch() {
   document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.onclick = () => {
       const lang = btn.dataset.lang;
+      // 切到繁体前, 先确保 title_orig 已存 (修复隐性 bug: 之前永不被存)
+      if (lang === 'zh-TW' && cy) {
+        cy.nodes().forEach(n => {
+          if (!n.data('title_orig') && n.data('title')) {
+            n.data('title_orig', n.data('title'));
+          }
+        });
+      }
+      // 1) 切换 UI 文本 + 图例 (subject 名 / search / header / 按钮)
       setLang(lang);
       document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
-      // 如果是繁体, 自动繁化所有概念标题
-      if (lang === 'zh-TW') {
-        cy.nodes().forEach(n => {
-          const orig = n.data('title');
-          if (orig && !n.data('title_trad')) {
-            n.data('title_trad', simpToTrad(orig));
-          }
-        });
-        cy.nodes().forEach(n => {
-          n.data('title', n.data('title_trad') || n.data('title'));
-        });
-      } else {
-        // 切回简体/英文时, 恢复原文
-        cy.nodes().forEach(n => {
-          if (n.data('title_orig')) n.data('title', n.data('title_orig'));
-        });
-      }
-      // 重画图例 (学科学英文)
+      // 显式重画图例 (applyI18n 里的 buildLegend 调用因 module scope 看不到, 手动调)
       if (typeof buildLegend === 'function') buildLegend();
+      // 2) 转换所有概念标题 (zh-TW 简→繁; 其他语言 恢复原文)
+      if (cy) {
+        if (lang === 'zh-TW') {
+          cy.nodes().forEach(n => {
+            const orig = n.data('title_orig') || n.data('title');
+            if (orig && !n.data('title_trad')) {
+              n.data('title_trad', simpToTrad(orig));
+            }
+            n.data('title', n.data('title_trad') || orig);
+          });
+        } else {
+          cy.nodes().forEach(n => {
+            if (n.data('title_orig')) n.data('title', n.data('title_orig'));
+          });
+        }
+      }
+      // 3) 标题转换后, 重渲染已打开的 showCard 让标题同步
+      if (window._currentNode && typeof showCard === 'function') {
+        showCard(window._currentNode);
+      }
     };
   });
 }
@@ -97,7 +115,8 @@ function buildLegend() {
     const el = document.createElement('div');
     el.className = 'chip';
     el.dataset.subject = s;
-    el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${SUBJECT_CN[s] || s}</span><span class="ct">${counts[i]}</span>`;
+    el.title = window.t ? window.t('btn_fly_to') : '双击飞到该学科';
+    el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${window.tSubject(s)}</span><span class="ct">${counts[i]}</span>`;
     el.onclick = (e) => {
       // 双击才飞向该学科, 单击只切换显隐
       if (e.shiftKey) {
@@ -152,15 +171,14 @@ function updateRootCount() {
 }
 
 // 切换根节点高亮
-let rootsHighlighted = false;
 function toggleRootsHighlight() {
   if (!cy) return;
-  rootsHighlighted = !rootsHighlighted;
+  window._rootsHighlighted = !window._rootsHighlighted;
   cy.nodes().removeClass('root-node');
-  if (rootsHighlighted) {
+  if (window._rootsHighlighted) {
     cy.nodes().filter(n => n.indegree() === 0).addClass('root-node');
   }
-  document.getElementById('toggleRoots').textContent = rootsHighlighted ? '取消高亮' : '高亮入口';
+  document.getElementById('toggleRoots').textContent = window.t(window._rootsHighlighted ? 'btn_roots_off' : 'btn_roots');
 }
 
 // 搜索功能
@@ -210,9 +228,10 @@ function doSearch(q) {
 
   // 渲染结果列表
   if (hits.length === 0) {
-    results.innerHTML = '<div class="r-empty">无匹配概念</div>';
+    results.innerHTML = `<div class="r-empty">${window.t('empty_concepts')}</div>`;
   } else {
-    let html = `<div class="r-count">${hits.length} 匹配 (按 ESC 关闭)</div>`;
+    const suffix = window.t('search_count_suffix');
+    let html = `<div class="r-count">${hits.length} ${suffix}</div>`;
     hits.forEach((n) => {
       html += `<div class="r-item" data-id="${n.id}">
         <span class="r-dot" style="background:${PALETTE[n.subject] || '#888'}"></span>
@@ -428,8 +447,10 @@ function initGraph() {
 
 function showCard(node) {
   const card = document.getElementById('card');
+  // 记录当前节点 (供 applyI18n 重渲染)
+  window._currentNode = node;
   document.getElementById('card-sw').style.background = PALETTE[node.subject] || '#888';
-  document.getElementById('card-cs').textContent = `${SUBJECT_CN[node.subject] || node.subject} · G${node.grade_start || ''}-${node.grade_end || ''} · ${node.domain || ''}`;
+  document.getElementById('card-cs').textContent = `${window.tSubject(node.subject)} · G${node.grade_start || ''}-${node.grade_end || ''} · ${node.domain || ''}`;
   document.getElementById('card-ctl').textContent = node.title;
 
   // 标签行: bloom / difficulty / estimated_minutes / subdomain
@@ -446,14 +467,14 @@ function showCard(node) {
   if (node.difficulty) {
     const t = document.createElement('span');
     t.className = 'tag diff-' + node.difficulty;
-    t.textContent = '难度 ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
+    t.textContent = window.t('card_difficulty') + ' ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
     tagRow.appendChild(t);
   }
   // estimated minutes
   if (node.estimated_minutes) {
     const t = document.createElement('span');
     t.className = 'tag min';
-    t.textContent = '⏱ ' + node.estimated_minutes + ' 分钟';
+    t.textContent = '⏱ ' + node.estimated_minutes + ' ' + window.t('card_minutes');
     tagRow.appendChild(t);
   }
   // subdomain
@@ -464,7 +485,7 @@ function showCard(node) {
     tagRow.appendChild(t);
   }
 
-  // 内容要求
+  // 内容要求 — 用 data-i18n 属性, applyI18n 会扫描
   const cr = document.getElementById('card-content-req');
   const crBlock = document.getElementById('card-content-req-block');
   if (node.content_req) {
@@ -476,12 +497,13 @@ function showCard(node) {
   // 页码链接
   const pageLink = document.getElementById('card-page-link');
   if (node.src_page) {
-    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} 课标原文 ↗</a>`;
+    const srcText = window.t('source_link');
+    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} ${srcText}</a>`;
   } else {
     pageLink.textContent = '';
   }
 
-  // 学业要求
+  // 学业要求 / 知识要点 / 例题 — 标题在 HTML 里已加 data-i18n, applyI18n 会扫
   const ar = document.getElementById('card-academic-req');
   const arBlock = document.getElementById('card-academic-req-block');
   if (node.academic_req) {
@@ -491,7 +513,6 @@ function showCard(node) {
     arBlock.style.display = 'none';
   }
 
-  // 知识要点
   const kp = document.getElementById('card-key-points');
   const kpBlock = document.getElementById('card-key-points-block');
   kp.innerHTML = '';
@@ -507,7 +528,6 @@ function showCard(node) {
     kpBlock.style.display = 'none';
   }
 
-  // 例题
   const exRow = document.getElementById('card-examples');
   const exBlock = document.getElementById('card-examples-block');
   exRow.innerHTML = '';
@@ -523,18 +543,21 @@ function showCard(node) {
     exBlock.style.display = 'none';
   }
 
-  // 计算 prerequisites & unlocks
+  // sec 标签 — 用 data-i18n attr 配 t() 字符串拼接 (避免 innerHTML 改 span.k)
+  const preLabel = document.querySelector('.sec-pre .label');
+  const nextLabel = document.querySelector('.sec-next .label');
+  // 重建: <span data-i18n="card_prereq">直接先决</span> · <span class="k" id="card-pre-k">N</span>
   const preEdges = cy.edges().filter(e => e.target().data('id') === node.id);
   const nextEdges = cy.edges().filter(e => e.source().data('id') === node.id);
-  document.getElementById('card-pre-k').textContent = preEdges.length;
-  document.getElementById('card-next-k').textContent = nextEdges.length;
+  preLabel.innerHTML = `<span data-i18n="card_prereq">${window.t('card_prereq')}</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>`;
+  nextLabel.innerHTML = `<span data-i18n="card_unlocks">${window.t('card_unlocks')}</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>`;
 
   const fillRows = (container, edges, side) => {
     container.innerHTML = '';
     if (!edges.length) {
       const d = document.createElement('div');
       d.className = 'empty';
-      d.textContent = side === 'pre' ? '没有先决概念' : '没有后继概念';
+      d.textContent = window.t(side === 'pre' ? 'card_no_prereq' : 'card_no_unlock');
       container.appendChild(d);
       return;
     }
@@ -564,17 +587,17 @@ function showCard(node) {
 
 document.querySelector('#card .close').onclick = () => {
   document.getElementById('card').classList.remove('on');
+  window._currentNode = null;
   cy.elements().unselect();
 };
 
 // 切换 label 显示
-let labelsOn = false;
 document.getElementById('toggleLabels').onclick = () => {
-  labelsOn = !labelsOn;
+  window._labelsOn = !window._labelsOn;
   cy.nodes().forEach(n => {
-    n.style('label', labelsOn ? n.data('title') : '');
+    n.style('label', window._labelsOn ? n.data('title') : '');
   });
-  document.getElementById('toggleLabels').textContent = labelsOn ? '隐藏标签' : '显示标签';
+  document.getElementById('toggleLabels').textContent = window.t(window._labelsOn ? 'btn_labels_hide' : 'btn_labels');
 };
 
 // 重排 — 按学科分块
@@ -619,5 +642,11 @@ document.getElementById('reLayout').onclick = relayout;
 
 // 切换根节点高亮
 document.getElementById('toggleRoots').onclick = toggleRootsHighlight;
+
+// 暴露关键函数到 window, 供 i18n.js applyI18n 调用
+// (i18n.js 是非模块 script, 看不到 module 内的 buildLegend/showCard)
+window.buildLegend = buildLegend;
+window.showCard = showCard;
+window.flyToSubject = flyToSubject;
 
 loadData();

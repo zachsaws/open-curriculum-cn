@@ -9,10 +9,19 @@ const I18N = {
     stats_edges: '关系数',
     stats_subjects: '学科数',
     stats_roots: '缺先决根节点 (可学起)',
+    stats_roots_pre: '缺先决根节点',
+    stats_roots_label: '可学起入口',
     btn_labels: '显示标签',
+    btn_labels_hide: '隐藏标签',
     btn_roots: '高亮入口',
+    btn_roots_off: '取消高亮',
     btn_relayout: '重排',
     search_placeholder: '搜索概念 ID / 标题 / 标签...',
+    empty_concepts: '无匹配概念',
+    btn_fly_to: '双击飞到该学科',
+    card_difficulty: '难度',
+    card_minutes: '分钟',
+    card_grade: '年级',
     card_content_req: '📋 课标内容要求',
     card_academic_req: '🎯 课标学业要求',
     card_key_points: '💡 知识要点',
@@ -23,6 +32,10 @@ const I18N = {
     card_no_unlock: '没有后继概念',
     grade_label: 'G',
     source_link: '课标原文 ↗',
+    loading: '加载知识图谱...',
+    err_no_data: '未找到图谱数据 (graph.json)<br><br>数据仍在采集中',
+    search_count_suffix: '匹配 (按 ESC 关闭)',
+    chip_off: '已隐藏',
   },
   'zh-TW': {
     app_title: '2022 新課標知識圖譜',
@@ -31,10 +44,19 @@ const I18N = {
     stats_edges: '關係數',
     stats_subjects: '學科數',
     stats_roots: '缺先決根節點 (可學起)',
+    stats_roots_pre: '缺先決根節點',
+    stats_roots_label: '可學起入口',
     btn_labels: '顯示標籤',
+    btn_labels_hide: '隱藏標籤',
     btn_roots: '高亮入口',
+    btn_roots_off: '取消高亮',
     btn_relayout: '重排',
     search_placeholder: '搜尋概念 ID / 標題 / 標籤...',
+    empty_concepts: '無匹配概念',
+    btn_fly_to: '雙擊飛到該學科',
+    card_difficulty: '難度',
+    card_minutes: '分鐘',
+    card_grade: '年級',
     card_content_req: '📋 課標內容要求',
     card_academic_req: '🎯 課標學業要求',
     card_key_points: '💡 知識要點',
@@ -45,6 +67,10 @@ const I18N = {
     card_no_unlock: '沒有後繼概念',
     grade_label: 'G',
     source_link: '課標原文 ↗',
+    loading: '載入知識圖譜...',
+    err_no_data: '未找到圖譜資料 (graph.json)<br><br>資料仍在採集中',
+    search_count_suffix: '匹配 (按 ESC 關閉)',
+    chip_off: '已隱藏',
   },
   'en': {
     app_title: '2022 New Curriculum Knowledge Graph',
@@ -53,10 +79,19 @@ const I18N = {
     stats_edges: 'Edges',
     stats_subjects: 'Subjects',
     stats_roots: 'Root nodes (no prereq)',
+    stats_roots_pre: 'Root nodes',
+    stats_roots_label: 'Learnable entry points',
     btn_labels: 'Show labels',
+    btn_labels_hide: 'Hide labels',
     btn_roots: 'Highlight roots',
+    btn_roots_off: 'Remove highlight',
     btn_relayout: 'Re-layout',
     search_placeholder: 'Search concept ID / title / tag...',
+    empty_concepts: 'No matching concepts',
+    btn_fly_to: 'Double-click to fly to this subject',
+    card_difficulty: 'Difficulty',
+    card_minutes: 'min',
+    card_grade: 'Grade',
     card_content_req: '📋 Curriculum Content Requirements',
     card_academic_req: '🎯 Curriculum Academic Requirements',
     card_key_points: '💡 Key Points',
@@ -67,25 +102,30 @@ const I18N = {
     card_no_unlock: 'No unlocks',
     grade_label: 'G',
     source_link: 'curriculum source ↗',
+    loading: 'Loading knowledge graph...',
+    err_no_data: 'Graph data not found (graph.json)<br><br>Data is still being collected',
+    search_count_suffix: 'matches (press ESC to close)',
+    chip_off: 'hidden',
   },
 };
 
-// 学科名翻译
+// 学科名翻译 (单一真源 — app.js / api/server.py 都从这里读)
 const SUBJECT_CN_I18N = {
-  'math': { 'zh-CN': '数学', 'zh-TW': '數學', 'en': 'Math' },
-  'chinese': { 'zh-CN': '语文', 'zh-TW': '語文', 'en': 'Chinese' },
-  'english': { 'zh-CN': '英语', 'zh-TW': '英語', 'en': 'English' },
-  'physics': { 'zh-CN': '物理', 'zh-TW': '物理', 'en': 'Physics' },
-  'chemistry': { 'zh-CN': '化学', 'zh-TW': '化學', 'en': 'Chemistry' },
-  'biology': { 'zh-CN': '生物', 'zh-TW': '生物', 'en': 'Biology' },
-  'history': { 'zh-CN': '历史', 'zh-TW': '歷史', 'en': 'History' },
-  'geography': { 'zh-CN': '地理', 'zh-TW': '地理', 'en': 'Geography' },
-  'morality_law': { 'zh-CN': '道法', 'zh-TW': '道法', 'en': 'Civics' },
-  'science': { 'zh-CN': '科学', 'zh-TW': '科學', 'en': 'Science' },
-  'info_tech': { 'zh-CN': '信息科技', 'zh-TW': '資訊科技', 'en': 'Info Tech' },
-  'art': { 'zh-CN': '艺术', 'zh-TW': '藝術', 'en': 'Arts' },
-  'pe_health': { 'zh-CN': '体育', 'zh-TW': '體育', 'en': 'PE' },
-  'labor': { 'zh-CN': '劳动', 'zh-TW': '勞動', 'en': 'Labor' },
+  'math':         { 'zh-CN': '数学',         'zh-TW': '數學',         'en': 'Math' },
+  'chinese':      { 'zh-CN': '语文',         'zh-TW': '語文',         'en': 'Chinese' },
+  'english':      { 'zh-CN': '英语',         'zh-TW': '英語',         'en': 'English' },
+  'physics':      { 'zh-CN': '物理',         'zh-TW': '物理',         'en': 'Physics' },
+  'chemistry':    { 'zh-CN': '化学',         'zh-TW': '化學',         'en': 'Chemistry' },
+  'biology':      { 'zh-CN': '生物',         'zh-TW': '生物',         'en': 'Biology' },
+  'history':      { 'zh-CN': '历史',         'zh-TW': '歷史',         'en': 'History' },
+  'geography':    { 'zh-CN': '地理',         'zh-TW': '地理',         'en': 'Geography' },
+  'morality_law': { 'zh-CN': '道德与法治',   'zh-TW': '道德與法治',   'en': 'Civics' },
+  'science':      { 'zh-CN': '科学',         'zh-TW': '科學',         'en': 'Science' },
+  'info_tech':    { 'zh-CN': '信息科技',     'zh-TW': '資訊科技',     'en': 'Info Tech' },
+  'art':          { 'zh-CN': '艺术',         'zh-TW': '藝術',         'en': 'Arts' },
+  'pe_health':    { 'zh-CN': '体育与健康',   'zh-TW': '體育與健康',   'en': 'PE & Health' },
+  'labor':        { 'zh-CN': '劳动',         'zh-TW': '勞動',         'en': 'Labor' },
+  'integrated':   { 'zh-CN': '综合实践',     'zh-TW': '綜合實踐',     'en': 'Integrated Practice' },
 };
 
 let currentLang = 'zh-CN';
@@ -105,14 +145,43 @@ function applyI18n() {
   document.querySelector('.header h1').textContent = I18N[currentLang].app_title;
   document.querySelector('.header .sub').innerHTML = I18N[currentLang].app_subtitle;
   document.getElementById('searchInput').placeholder = I18N[currentLang].search_placeholder;
-  document.getElementById('toggleLabels').textContent = I18N[currentLang].btn_labels;
-  document.getElementById('toggleRoots').textContent = I18N[currentLang].btn_roots;
-  document.getElementById('reLayout').textContent = I18N[currentLang].btn_relayout;
+
+  // 通用 data-i18n 扫描: 替换所有标记节点文本
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (I18N[currentLang][key] !== undefined) {
+      // 大部分节点直接 textContent, 但 app_subtitle 用 innerHTML 已在上面处理
+      if (key === 'app_subtitle') {
+        el.innerHTML = I18N[currentLang][key];
+      } else {
+        // 保留 children (例如 card-content-req-block 里的 <span class="num">)
+        // 但我们只在子元素是纯文本时用 textContent
+        // 简单策略: 如果有子元素 且 没有 child text nodes, 跳过
+        const childEls = Array.from(el.children);
+        if (childEls.length === 0) {
+          el.textContent = I18N[currentLang][key];
+        }
+      }
+    }
+  });
+
+  // 三按钮 — 依赖运行时状态 (window._labelsOn / window._rootsHighlighted)
+  if (document.getElementById('toggleLabels')) {
+    const on = typeof window._labelsOn !== 'undefined' && window._labelsOn;
+    document.getElementById('toggleLabels').textContent = I18N[currentLang][on ? 'btn_labels_hide' : 'btn_labels'];
+  }
+  if (document.getElementById('toggleRoots')) {
+    const on = typeof window._rootsHighlighted !== 'undefined' && window._rootsHighlighted;
+    document.getElementById('toggleRoots').textContent = I18N[currentLang][on ? 'btn_roots_off' : 'btn_roots'];
+  }
+  if (document.getElementById('reLayout')) {
+    document.getElementById('reLayout').textContent = I18N[currentLang].btn_relayout;
+  }
   // 重新渲染图例
   if (typeof buildLegend === 'function') buildLegend();
-  // 重新渲染 detail
-  if (typeof window._currentNode === 'function') {
-    // 略
+  // 重新渲染已打开的详情面板
+  if (typeof window._currentNode !== 'undefined' && window._currentNode && typeof showCard === 'function') {
+    showCard(window._currentNode);
   }
 }
 
@@ -120,35 +189,16 @@ function tSubject(s) {
   return SUBJECT_CN_I18N[s] ? SUBJECT_CN_I18N[s][currentLang] : s;
 }
 
-// 简易 简→繁 转换 (覆盖 2022 课标常用字)
-const SIMP_TO_TRAD = {
-  '数学': '數學', '语文': '語文', '英语': '英語', '物理': '物理', '化学': '化學',
-  '生物': '生物', '历史': '歷史', '地理': '地理', '科学': '科學', '艺术': '藝術',
-  '体育': '體育', '劳动': '勞動', '信息': '資訊', '道德': '道德', '法治': '法治',
-  '概念': '概念', '关系': '關係', '数据': '數據', '程序': '程式', '网络': '網路',
-  '万': '萬', '亿': '億', '区': '區', '长': '長', '短': '短', '高': '高', '低': '低',
-  '开': '開', '关': '關', '学': '學', '习': '習', '习': '習', '时': '時', '间': '間',
-  '后': '後', '前': '前', '内': '內', '外': '外', '中': '中', '上': '上', '下': '下',
-  '课': '課', '标': '標', '书': '書', '读': '讀', '写': '寫', '语': '語',
-  '认': '認', '识': '識', '议': '議', '论': '論', '说': '說', '请': '請',
-  '过': '過', '这': '這', '那': '那', '这': '這', '进': '進', '出': '出',
-  '会': '會', '议': '議', '议': '議', '应': '應', '当': '當', '对': '對',
-  '种': '種', '类': '類', '点': '點', '种': '種', '为': '為', '现': '現',
-  '发': '發', '展': '展', '产': '產', '业': '業', '业': '業', '务': '務',
-  '页': '頁', '图': '圖', '线': '線', '维': '維', '结': '結', '构': '構',
-  '体': '體', '验': '驗', '单': '單', '复': '複', '杂': '雜', '简': '簡',
-  '样': '樣', '种': '種', '样': '樣', '类': '類', '项': '項', '目': '目',
-  '价': '價', '值': '值', '计': '計', '算': '算', '确': '確', '定': '定',
-  '决': '決', '定': '定', '决': '決', '设': '設', '计': '計', '计': '計',
-  '计': '計', '划': '劃', '运': '運', '动': '動', '动': '動', '态': '態',
-  '变': '變', '化': '化', '变': '變', '换': '換', '转': '轉', '换': '換',
-};
+// 简易 简→繁 转换 — 用扩展字典 (simp_to_trad.js, 500+ 字)
+// simp_to_trad.js 已定义 const SIMP_TO_TRAD 并挂到 window
+// (本文件的 let SIMP_TO_TRAD 不能同名, 否则与 simp_to_trad.js 的 const 冲突)
+const _SIMP_TO_TRAD_DICT = (typeof window !== 'undefined' && window.SIMP_TO_TRAD) ? window.SIMP_TO_TRAD : {};
 
 function simpToTrad(text) {
   if (!text) return text;
   let out = '';
   for (const ch of text) {
-    out += SIMP_TO_TRAD[ch] || ch;
+    out += _SIMP_TO_TRAD_DICT[ch] || ch;
   }
   return out;
 }

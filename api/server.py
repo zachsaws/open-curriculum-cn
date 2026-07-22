@@ -174,14 +174,42 @@ def subjects():
     by_subj = defaultdict(lambda: {"count": 0, "concepts": []})
     for n in DATA["nodes"]:
         by_subj[n["subject"]]["count"] += 1
+    # V2.1 统一学科名 — 与 web/i18n.js SUBJECT_CN_I18N 同步
+    # 单一真源: web/i18n.js (前端), API 端保持简中名一致
     SUBJECT_CN = {
         "math": "数学", "chinese": "语文", "english": "英语", "physics": "物理",
         "chemistry": "化学", "biology": "生物", "history": "历史", "geography": "地理",
         "morality_law": "道德与法治", "science": "科学", "info_tech": "信息科技",
         "art": "艺术", "pe_health": "体育与健康", "labor": "劳动",
+        "integrated": "综合实践",
     }
+    SUBJECT_TW = {
+        "math": "數學", "chinese": "語文", "english": "英語", "physics": "物理",
+        "chemistry": "化學", "biology": "生物", "history": "歷史", "geography": "地理",
+        "morality_law": "道德與法治", "science": "科學", "info_tech": "資訊科技",
+        "art": "藝術", "pe_health": "體育與健康", "labor": "勞動",
+        "integrated": "綜合實踐",
+    }
+    SUBJECT_EN = {
+        "math": "Math", "chinese": "Chinese", "english": "English", "physics": "Physics",
+        "chemistry": "Chemistry", "biology": "Biology", "history": "History",
+        "geography": "Geography", "morality_law": "Civics", "science": "Science",
+        "info_tech": "Info Tech", "art": "Arts", "pe_health": "PE & Health",
+        "labor": "Labor", "integrated": "Integrated Practice",
+    }
+    SUBJECT_BY_LANG = {"zh-CN": SUBJECT_CN, "zh-TW": SUBJECT_TW, "en": SUBJECT_EN}
+
+    def _names(s: str, lang: str):
+        d = SUBJECT_BY_LANG.get(lang, SUBJECT_CN)
+        return {
+            "name_cn": SUBJECT_CN.get(s, s),
+            "name_tw": SUBJECT_TW.get(s, s),
+            "name_en": SUBJECT_EN.get(s, s),
+            "name": d.get(s, s),
+        }
+
     return {
-        s: {"name_cn": SUBJECT_CN.get(s, s), "concept_count": d["count"]}
+        s: {**_names(s, lang="zh-CN"), "concept_count": d["count"]}
         for s, d in sorted(by_subj.items())
     }
 
