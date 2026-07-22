@@ -1,0 +1,17 @@
+{
+  "subject": "physics",
+  "round": 1,
+  "total_concepts": 63,
+  "content_req_matched": 63,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 7,
+  "academic_req_matched_pct": 11.1,
+  "content_req_full": 63,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 2.5,
+  "cross_stage_mismatch": 0,
+  "ocr_threshold": 15,
+  "full_threshold": 80,
+  "verdict": "PASS"
+}

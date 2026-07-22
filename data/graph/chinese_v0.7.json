@@ -1,0 +1,2223 @@
+{
+  "nodes": [
+    {
+      "id": "CN_C1_AL_01",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识常用字(身体/行为/天地/自然)",
+      "domain": "语言文字积累",
+      "subdomain": "识字",
+      "difficulty": 1,
+      "summary": "认识有关人的身体/行为/天地四方/自然万物的常用字",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。认识有关人的身体/行为/天地四方/自然万物的常用字",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "认识有关人的身体/行为/天地四方/自然万物的常用字"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_02",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识家庭学校社会生活常用字",
+      "domain": "语言文字积累",
+      "subdomain": "识字",
+      "difficulty": 1,
+      "summary": "认识家庭生活/学校生活/社会生活的常用字",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。认识家庭生活/学校生活/社会生活的常用字",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "会"
+      ],
+      "key_points": [
+        "认识家庭生活/学校生活/社会生活的常用字",
+        "课堂教学评价建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_03",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "学习部首检字法",
+      "domain": "语言文字积累",
+      "subdomain": "识字",
+      "difficulty": 2,
+      "summary": "学习部首检字法,尝试发现汉字规律",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。学习部首检字法,尝试发现汉字规律",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "发现"
+      ],
+      "key_points": [
+        "尝试发现汉字规律",
+        "课堂教学评价建议",
+        "学习部首检字法"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_04",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "分类整理课内外认识的字",
+      "domain": "语言文字积累",
+      "subdomain": "识字",
+      "difficulty": 2,
+      "summary": "初步学习分类整理课内外认识的字,在生活中主动识字",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。初步学习分类整理课内外认识的字,在生活中主动识字",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "分类"
+      ],
+      "key_points": [
+        "初步学习分类整理课内外认识的字",
+        "课堂教学评价建议",
+        "在生活中主动识字"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_05",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认读汉语拼音",
+      "domain": "语言文字积累",
+      "subdomain": "拼音",
+      "difficulty": 1,
+      "summary": "认读拼音字母,拼读音节,认识声调",
+      "source": "2022 义教课标",
+      "content_req": "认读拼音字母，拼读音节，认识声调，借助汉语拼音认读汉。认读拼音字母,拼读音节,认识声调",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "拼读",
+        "认读"
+      ],
+      "key_points": [
+        "认读拼音字母",
+        "拼读音节",
+        "认识声调",
+        "借助汉语拼音认读汉"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_06",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "借助汉语拼音认读汉字",
+      "domain": "语言文字积累",
+      "subdomain": "拼音",
+      "difficulty": 1,
+      "summary": "借助汉语拼音认读汉字,学习音序检字法",
+      "source": "2022 义教课标",
+      "content_req": "认读拼音字母，拼读音节，认识声调，借助汉语拼音认读汉。借助汉语拼音认读汉字,学习音序检字法",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "拼读",
+        "认读"
+      ],
+      "key_points": [
+        "认读拼音字母",
+        "拼读音节",
+        "认识声调",
+        "借助汉语拼音认读汉",
+        "借助汉语拼音认读汉字"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_07",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "学习音序检字法",
+      "domain": "语言文字积累",
+      "subdomain": "识字工具",
+      "difficulty": 2,
+      "summary": "学习音序检字法",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。学习音序检字法",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "课堂教学评价建议",
+        "学习音序检字法"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_08",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "诵读积累成语谚语格言警句",
+      "domain": "语言文字积累",
+      "subdomain": "积累",
+      "difficulty": 1,
+      "summary": "诵读记录课内外学到的成语/谚语/格言警句/儿歌/短小的古诗",
+      "source": "2022 义教课标",
+      "content_req": "诵读、记录课内外学到的成语、庐语、格言警句、儿歌、短。诵读记录课内外学到的成语/谚语/格言警句/儿歌/短小的古诗",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "诵读、记录课内外学到的成语、庐语、格言警句、儿歌、短",
+        "诵读记录课内外学到的成语/谚语/格言警句/儿歌/短小的古诗"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_09",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "学习书写笔画简单的字",
+      "domain": "语言文字积累",
+      "subdomain": "写字",
+      "difficulty": 1,
+      "summary": "学习书写笔画简单的字,初步体会汉字结构特点",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。学习书写笔画简单的字,初步体会汉字结构特点",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "初步体会汉字结构特点",
+        "课堂教学评价建议",
+        "学习书写笔画简单的字"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_AL_10",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "养成良好书写习惯",
+      "domain": "语言文字积累",
+      "subdomain": "写字",
+      "difficulty": 1,
+      "summary": "重视写字姿势,掌握基本书写技能",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。重视写字姿势,掌握基本书写技能",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "掌握基本书写技能",
+        "课堂教学评价建议",
+        "重视写字姿势"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_PR_01",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "阅读有关个人生活家庭生活短文",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 1,
+      "summary": "阅读个人/家庭生活短文,感受美好亲情",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。阅读个人/家庭生活短文,感受美好亲情",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "感受"
+      ],
+      "key_points": [
+        "感受美好亲情",
+        "课堂教学评价建议",
+        "阅读个人/家庭生活短文"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_PR_02",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "运用文明礼貌语言与家人沟通",
+      "domain": "实用性阅读",
+      "subdomain": "口语",
+      "difficulty": 1,
+      "summary": "运用文明礼貌语言与家庭成员/亲朋好友交流,学会感恩",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。运用文明礼貌语言与家庭成员/亲朋好友交流,学会感恩",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "运用"
+      ],
+      "key_points": [
+        "运用文明礼貌语言与家庭成员/亲朋好友交流",
+        "学会感恩",
+        "课堂教学评价建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_PR_03",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "阅读有关学校生活短文",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 1,
+      "summary": "阅读学校生活短文,认识图文中相关汉字",
+      "source": "2022 义教课标",
+      "content_req": "阅读有关学校生活的短文，认识图文中相关的汉字; 学习与。阅读学校生活短文,认识图文中相关汉字",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识图文中相关的汉字",
+        "认识图文中相关汉字",
+        "阅读有关学校生活的短文",
+        "阅读学校生活短文"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_PR_04",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "阅读有关公共生活短文",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读公共生活短文,在生活中传递温暖",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。阅读公共生活短文,在生活中传递温暖",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "课堂教学评价建议",
+        "阅读公共生活短文",
+        "在生活中传递温暖"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_PR_05",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "讲述自己感兴趣的见闻",
+      "domain": "实用性阅读",
+      "subdomain": "口语",
+      "difficulty": 1,
+      "summary": "用书面或口头方式讲述自己感兴趣的见闻",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。用书面或口头方式讲述自己感兴趣的见闻",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "讲述"
+      ],
+      "key_points": [
+        "用书面或口头方式讲述自己感兴趣的见闻",
+        "课堂教学评价建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_PR_06",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用图画等方式表达所见所闻",
+      "domain": "实用性阅读",
+      "subdomain": "表达",
+      "difficulty": 1,
+      "summary": "用图画/符号/文字/语音等方式表达",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。用图画/符号/文字/语音等方式表达",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "表达"
+      ],
+      "key_points": [
+        "用图画/符号/文字/语音等方式表达",
+        "课堂教学评价建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_LR_01",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "阅读儿歌/童谣/童话",
+      "domain": "文学阅读",
+      "subdomain": "阅读",
+      "difficulty": 1,
+      "summary": "阅读儿歌/童谣/童话,感受阅读乐趣",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。阅读儿歌/童谣/童话,感受阅读乐趣",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "感受"
+      ],
+      "key_points": [
+        "感受阅读乐趣",
+        "课堂教学评价建议",
+        "阅读儿歌/童谣/童话"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_LR_02",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "阅读儿童故事",
+      "domain": "文学阅读",
+      "subdomain": "阅读",
+      "difficulty": 1,
+      "summary": "阅读革命故事/儿童故事,激发兴趣",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。阅读革命故事/儿童故事,激发兴趣",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "课堂教学评价建议",
+        "阅读革命故事/儿童故事",
+        "激发兴趣"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_LR_03",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "讲述故事",
+      "domain": "文学阅读",
+      "subdomain": "口语",
+      "difficulty": 1,
+      "summary": "讲述故事,表达自己的感受",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。讲述故事,表达自己的感受",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "表达",
+        "讲述",
+        "感受"
+      ],
+      "key_points": [
+        "表达自己的感受",
+        "讲述故事",
+        "课堂教学评价建议"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_LR_04",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "朗诵儿歌童谣古诗",
+      "domain": "文学阅读",
+      "subdomain": "朗读",
+      "difficulty": 1,
+      "summary": "朗诵儿歌/童谣/古诗",
+      "source": "2022 义教课标",
+      "content_req": "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜。朗诵儿歌/童谣/古诗",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜",
+        "朗诵儿歌/童谣/古诗"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_WR_01",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "写自己想说的话",
+      "domain": "写作",
+      "subdomain": "写话",
+      "difficulty": 1,
+      "summary": "对写话有兴趣,写自己想说的话",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。对写话有兴趣,写自己想说的话",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "课堂教学评价建议",
+        "对写话有兴趣",
+        "写自己想说的话"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_WR_02",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "写想象中的事物",
+      "domain": "写作",
+      "subdomain": "写话",
+      "difficulty": 1,
+      "summary": "写想象中的事物,体验表达的快乐",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。写想象中的事物,体验表达的快乐",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "表达"
+      ],
+      "key_points": [
+        "体验表达的快乐",
+        "课堂教学评价建议",
+        "写想象中的事物"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_SP_01",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "学说普通话",
+      "domain": "口语交际",
+      "subdomain": "口语",
+      "difficulty": 1,
+      "summary": "认真听他人讲话,学说普通话",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。认真听他人讲话,学说普通话",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "课堂教学评价建议",
+        "认真听他人讲话",
+        "学说普通话"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C1_SP_02",
+      "subject": "chinese",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "用礼貌语言交流",
+      "domain": "口语交际",
+      "subdomain": "口语",
+      "difficulty": 1,
+      "summary": "用礼貌语言与人交流",
+      "source": "2022 义教课标",
+      "content_req": "课堂教学评价建议。用礼貌语言与人交流",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "课堂教学评价建议",
+        "用礼貌语言与人交流"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_AL_01",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "独立识字与写字",
+      "domain": "语言文字积累",
+      "subdomain": "识字写字",
+      "difficulty": 2,
+      "summary": "在真实语言运用情境中独立识字与写字",
+      "source": "2022 义教课标",
+      "content_req": "在真实的语言文字运用情境中独立识字与写字，初步梳理常。在真实语言运用情境中独立识字与写字",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "运用"
+      ],
+      "key_points": [
+        "在真实的语言文字运用情境中独立识字与写字",
+        "在真实语言运用情境中独立识字与写字",
+        "初步梳理常"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_AL_02",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "梳理常用汉字形音义联系",
+      "domain": "语言文字积累",
+      "subdomain": "识字",
+      "difficulty": 2,
+      "summary": "初步梳理常用汉字形/音/义之间的联系",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。初步梳理常用汉字形/音/义之间的联系",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "初步梳理常用汉字形/音/义之间的联系"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_AL_03",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "关注校园内外汉字和标点正确使用",
+      "domain": "语言文字积累",
+      "subdomain": "规范",
+      "difficulty": 2,
+      "summary": "关注校园内外汉字和标点符号正确使用情况",
+      "source": "2022 义教课标",
+      "content_req": "关注校园内外汉字和标点符号的正确使用情况，整理自己的。关注校园内外汉字和标点符号正确使用情况",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "关注校园内外汉字和标点符号的正确使用情况",
+        "整理自己的",
+        "关注校园内外汉字和标点符号正确使用情况"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_AL_04",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "诵读积累成语典故中华文化名言",
+      "domain": "语言文字积累",
+      "subdomain": "积累",
+      "difficulty": 2,
+      "summary": "诵读积累成语典故/中华文化名言/短小古诗词/新鲜词语",
+      "source": "2022 义教课标",
+      "content_req": "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜。诵读积累成语典故/中华文化名言/短小古诗词/新鲜词语",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜",
+        "诵读积累成语典故/中华文化名言/短小古诗词/新鲜词语"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_AL_05",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "认识同义词反义词",
+      "domain": "语言文字积累",
+      "subdomain": "词汇",
+      "difficulty": 2,
+      "summary": "体会同义词/反义词等词语的作用",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。体会同义词/反义词等词语的作用",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会同义词/反义词等词语的作用",
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_PR_01",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "阅读现代叙事/说明/抒情文",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读现代叙事/说明/抒情类文章",
+      "source": "2022 义教课标",
+      "content_req": "学习阅读说明、有令写大自然的短文，感受、欣赏大自然的奇。阅读现代叙事/说明/抒情类文章",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "说明",
+        "欣赏",
+        "感受"
+      ],
+      "key_points": [
+        "感受、欣赏大自然的奇",
+        "学习阅读说明、有令写大自然的短文",
+        "阅读现代叙事/说明/抒情类文章"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_PR_02",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "获取整合有价值信息",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "通过倾听/阅读/观察获取整合有价值信息",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。通过倾听/阅读/观察获取整合有价值信息",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "通过倾听/阅读/观察获取整合有价值信息"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_PR_03",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "根据交际情境清楚得体表达",
+      "domain": "实用性阅读",
+      "subdomain": "口语",
+      "difficulty": 2,
+      "summary": "根据具体交际情境和交流对象,清楚得体表达",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。根据具体交际情境和交流对象,清楚得体表达",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "表达"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "清楚得体表达",
+        "根据具体交际情境和交流对象"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_LR_01",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "阅读表现自然/社会/艺术之美的作品",
+      "domain": "文学阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读表现自然之美/社会之美/艺术之美的优秀作品",
+      "source": "2022 义教课标",
+      "content_req": "阅读有关家庭生活、学校生活、社会生活的短文，学习用口。阅读表现自然之美/社会之美/艺术之美的优秀作品",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "阅读有关家庭生活、学校生活、社会生活的短文",
+        "阅读表现自然之美/社会之美/艺术之美的优秀作品",
+        "学习用口"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_LR_02",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "阅读英雄模范事迹作品",
+      "domain": "文学阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读表现革命传统/英雄模范事迹的作品",
+      "source": "2022 义教课标",
+      "content_req": "阅读反映革命传统的作品，如《可爱的中国》《小兵张嘎》。阅读表现革命传统/英雄模范事迹的作品",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "阅读反映革命传统的作品",
+        "如《可爱的中国》《小兵张嘎》",
+        "阅读表现革命传统/英雄模范事迹的作品"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_LR_03",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "用口头和书面表达自己的感受",
+      "domain": "文学阅读",
+      "subdomain": "表达",
+      "difficulty": 2,
+      "summary": "用口头和书面表达自己获得的感受和体验",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。用口头和书面表达自己获得的感受和体验",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "表达",
+        "感受"
+      ],
+      "key_points": [
+        "用口头和书面表达自己获得的感受和体验",
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_LR_04",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "尝试写诗歌",
+      "domain": "文学阅读",
+      "subdomain": "写作",
+      "difficulty": 2,
+      "summary": "尝试写诗歌/小小说等",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。尝试写诗歌/小小说等",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "尝试写诗歌/小小说等"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_WR_01",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "写清楚一件事",
+      "domain": "写作",
+      "subdomain": "习作",
+      "difficulty": 2,
+      "summary": "能写出清楚的一件事",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写出清楚的一件事",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "能写出清楚的一件事"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_WR_02",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "能写读书笔记",
+      "domain": "写作",
+      "subdomain": "习作",
+      "difficulty": 2,
+      "summary": "能写读书笔记",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写读书笔记",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "能写读书笔记"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_WR_03",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "能写常见的应用文",
+      "domain": "写作",
+      "subdomain": "应用文",
+      "difficulty": 2,
+      "summary": "能写常见的应用文",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写常见的应用文",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "能",
+        "应用"
+      ],
+      "key_points": [
+        "能写常见的应用文",
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_SP_01",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "讲述见闻说出感受",
+      "domain": "口语交际",
+      "subdomain": "口语",
+      "difficulty": 2,
+      "summary": "讲述见闻,说出自己的感受",
+      "source": "2022 义教课标",
+      "content_req": "在语言文字运用情境中，发现、感受和表现语言文字的魅。讲述见闻,说出自己的感受",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "发现",
+        "运用",
+        "讲述"
+      ],
+      "key_points": [
+        "发现、感受和表现语言文字的魅",
+        "在语言文字运用情境中",
+        "讲述见闻",
+        "说出自己的感受"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_AL_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "主动通过多种方式独立识字",
+      "domain": "语言文字积累",
+      "subdomain": "识字",
+      "difficulty": 3,
+      "summary": "主动通过多种方式独立识字,梳理学过的汉字",
+      "source": "2022 义教课标",
+      "content_req": "主动通过多种方式独立识字，按照汉字字形结构等规律梳理。主动通过多种方式独立识字,梳理学过的汉字",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "主动通过多种方式独立识字",
+        "按照汉字字形结构等规律梳理",
+        "梳理学过的汉字"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_AL_02",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "丰富词语积累注意感情色彩",
+      "domain": "语言文字积累",
+      "subdomain": "词汇",
+      "difficulty": 3,
+      "summary": "丰富自己的词语积累,注意词语的感情色彩",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。丰富自己的词语积累,注意词语的感情色彩",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物",
+        "丰富自己的词语积累",
+        "注意词语的感情色彩"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_AL_03",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "讲普通话写规范字调查",
+      "domain": "语言文字积累",
+      "subdomain": "规范",
+      "difficulty": 2,
+      "summary": "开展校园内外讲普通话/写规范字/正确使用标点的调查",
+      "source": "2022 义教课标",
+      "content_req": "开展校园内外讲普通话、写规范字、正确使用标点符号情况。开展校园内外讲普通话/写规范字/正确使用标点的调查",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "调查"
+      ],
+      "key_points": [
+        "开展校园内外讲普通话/写规范字/正确使用标点的调查",
+        "开展校园内外讲普通话、写规范字、正确使用标点符号情况"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_AL_04",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "诵读优秀诗文分类整理",
+      "domain": "语言文字积累",
+      "subdomain": "积累",
+      "difficulty": 2,
+      "summary": "诵读优秀诗文,分主题梳理成语典故/格言警句/对联",
+      "source": "2022 义教课标",
+      "content_req": "诵读优秀诗文，分主题梳理自己积累的成语典故、格言警。诵读优秀诗文,分主题梳理成语典故/格言警句/对联",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "诵读优秀诗文",
+        "分主题梳理自己积累的成语典故、格言警",
+        "分主题梳理成语典故/格言警句/对联"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_PR_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "阅读叙事/说明/非连续性文本",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读叙事性/说明性/非连续性文本",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。阅读叙事性/说明性/非连续性文本",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会",
+        "说明"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读叙事性/说明性/非连续性文本",
+        "阅读富有童趣的图画书等浅易的读物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_PR_02",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "倾听阅读观察获取信息",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "通过倾听/阅读/观察获取整合信息",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。通过倾听/阅读/观察获取整合信息",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物",
+        "通过倾听/阅读/观察获取整合信息"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_PR_03",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "有条理地表达",
+      "domain": "实用性阅读",
+      "subdomain": "口语",
+      "difficulty": 2,
+      "summary": "有条理地表达自己的观点",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。有条理地表达自己的观点",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会",
+        "表达"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "有条理地表达自己的观点",
+        "阅读富有童趣的图画书等浅易的读物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_LR_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "阅读表现革命传统的文艺作品",
+      "domain": "文学阅读",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读表现革命传统的诗歌/小说/戏剧等",
+      "source": "2022 义教课标",
+      "content_req": "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名。阅读表现革命传统的诗歌/小说/戏剧等",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名",
+        "阅读表现革命传统的诗歌/小说/戏剧等"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_LR_02",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "欣赏文学语言",
+      "domain": "文学阅读",
+      "subdomain": "欣赏",
+      "difficulty": 3,
+      "summary": "欣赏文学作品的语言/形象/情感",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。欣赏文学作品的语言/形象/情感",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会",
+        "欣赏"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "欣赏文学作品的语言/形象/情感",
+        "阅读富有童趣的图画书等浅易的读物"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_LR_03",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "尝试诗歌小说创作",
+      "domain": "文学阅读",
+      "subdomain": "写作",
+      "difficulty": 3,
+      "summary": "尝试写诗歌/短篇小说",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。尝试写诗歌/短篇小说",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物",
+        "尝试写诗歌/短篇小说"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_WR_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "写简单的记实作文",
+      "domain": "写作",
+      "subdomain": "习作",
+      "difficulty": 2,
+      "summary": "写简单的记实作文和想象作文",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。写简单的记实作文和想象作文",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物",
+        "写简单的记实作文和想象作文"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_WR_02",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "内容具体感情真实",
+      "domain": "写作",
+      "subdomain": "习作",
+      "difficulty": 2,
+      "summary": "内容具体,感情真实",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。内容具体,感情真实",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物",
+        "内容具体",
+        "感情真实"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_WR_03",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "能写读书笔记学写常见的应用文",
+      "domain": "写作",
+      "subdomain": "应用文",
+      "difficulty": 2,
+      "summary": "能写读书笔记,学写常见应用文",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。能写读书笔记,学写常见应用文",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "能",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "能写读书笔记",
+        "学写常见应用文",
+        "阅读富有童趣的图画书等浅易的读物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_SP_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "复述转述讲述",
+      "domain": "口语交际",
+      "subdomain": "口语",
+      "difficulty": 2,
+      "summary": "复述/转述/讲述见闻和感受",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。复述/转述/讲述见闻和感受",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会",
+        "复述"
+      ],
+      "key_points": [
+        "复述/转述/讲述见闻和感受",
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_TH_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "阅读思辨性文本",
+      "domain": "思辨性阅读",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读思辨性文本,学习有理有据地表达观点",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。阅读思辨性文本,学习有理有据地表达观点",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会",
+        "表达"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "学习有理有据地表达观点",
+        "阅读富有童趣的图画书等浅易的读物",
+        "阅读思辨性文本"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_AL_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "策划开展语言文字活动",
+      "domain": "语言文字积累",
+      "subdomain": "运用",
+      "difficulty": 3,
+      "summary": "围绕汉字/书法/成语典故/对联/诗文等策划开展语文学习活动",
+      "source": "2022 义教课标",
+      "content_req": "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜。围绕汉字/书法/成语典故/对联/诗文等策划开展语文学习活动",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜",
+        "围绕汉字/书法/成语典故/对联/诗文等策划开展语文学习活动"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_AL_02",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "梳理语言现象欣赏语言技巧",
+      "domain": "语言文字积累",
+      "subdomain": "欣赏",
+      "difficulty": 3,
+      "summary": "梳理学过的语言现象,欣赏优秀作品的语言表达技巧",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。梳理学过的语言现象,欣赏优秀作品的语言表达技巧",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "表达",
+        "欣赏"
+      ],
+      "key_points": [
+        "欣赏优秀作品的语言表达技巧",
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "梳理学过的语言现象"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_AL_03",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "学习按词类梳理字词",
+      "domain": "语言文字积累",
+      "subdomain": "语法",
+      "difficulty": 3,
+      "summary": "学习按词类梳理字词,整理典型语法/修辞应用实例",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。学习按词类梳理字词,整理典型语法/修辞应用实例",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "应用"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "整理典型语法/修辞应用实例",
+        "学习按词类梳理字词"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_AL_04",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "提升中华文化修养",
+      "domain": "语言文字积累",
+      "subdomain": "文化",
+      "difficulty": 3,
+      "summary": "分类整理欣赏交流所积累的词语名句诗文,提升中华文化修养",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。分类整理欣赏交流所积累的词语名句诗文,提升中华文化修养",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "分类",
+        "欣赏"
+      ],
+      "key_points": [
+        "分类整理欣赏交流所积累的词语名句诗文",
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "提升中华文化修养"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_PR_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "阅读比较复杂的文本",
+      "domain": "实用性阅读",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读比较复杂的叙事性/说明性/议论性文本",
+      "source": "2022 义教课标",
+      "content_req": "学习关于科学探究方面的文本，联系自己的科学学习经历，。阅读比较复杂的叙事性/说明性/议论性文本",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "经历",
+        "比较",
+        "说明"
+      ],
+      "key_points": [
+        "阅读比较复杂的叙事性/说明性/议论性文本",
+        "联系自己的科学学习经历",
+        "学习关于科学探究方面的文本"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_PR_02",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "根据需要调整表达内容和方式",
+      "domain": "实用性阅读",
+      "subdomain": "口语",
+      "difficulty": 3,
+      "summary": "根据交际需要,调整表达内容和方式",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。根据交际需要,调整表达内容和方式",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "表达"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "调整表达内容和方式",
+        "根据交际需要"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_LR_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "欣赏文学作品",
+      "domain": "文学阅读",
+      "subdomain": "欣赏",
+      "difficulty": 3,
+      "summary": "欣赏文学作品,有自己的情感体验和思考",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。欣赏文学作品,有自己的情感体验和思考",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "欣赏"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "欣赏文学作品",
+        "有自己的情感体验和思考"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_LR_02",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "理解作者立场观点态度",
+      "domain": "文学阅读",
+      "subdomain": "理解",
+      "difficulty": 3,
+      "summary": "理解作者立场/观点/态度",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。理解作者立场/观点/态度",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "理解"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "理解作者立场/观点/态度"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_LR_03",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "写文学评论",
+      "domain": "文学阅读",
+      "subdomain": "评论",
+      "difficulty": 3,
+      "summary": "尝试写文学评论",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。尝试写文学评论",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "尝试写文学评论"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_WR_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "写记叙文/抒情文/说明文/议论文",
+      "domain": "写作",
+      "subdomain": "习作",
+      "difficulty": 3,
+      "summary": "能写记叙文/抒情文/说明文/议论文",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写记叙文/抒情文/说明文/议论文",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "能",
+        "说明"
+      ],
+      "key_points": [
+        "能写记叙文/抒情文/说明文/议论文",
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_WR_02",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "立论明确论据充分",
+      "domain": "写作",
+      "subdomain": "议论文",
+      "difficulty": 3,
+      "summary": "立论明确,论据充分,论证合理",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。立论明确,论据充分,论证合理",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "立论明确",
+        "论据充分",
+        "论证合理"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_WR_03",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "学写应用文和文学创作",
+      "domain": "写作",
+      "subdomain": "综合",
+      "difficulty": 3,
+      "summary": "学写应用文,尝试文学创作",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。学写应用文,尝试文学创作",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "应用"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "学写应用文",
+        "尝试文学创作"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_SP_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "自信负责地表达自己的观点",
+      "domain": "口语交际",
+      "subdomain": "口语",
+      "difficulty": 3,
+      "summary": "自信负责地表达自己的观点",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。自信负责地表达自己的观点",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "表达"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "自信负责地表达自己的观点"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_TH_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "阅读古今中外思辨性文本",
+      "domain": "思辨性阅读",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读古今中外思辨性文本,学习批判性思维",
+      "source": "2022 义教课标",
+      "content_req": "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名。阅读古今中外思辨性文本,学习批判性思维",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名",
+        "阅读古今中外思辨性文本",
+        "学习批判性思维"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_TH_02",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "阐述观点有理有据",
+      "domain": "思辨性阅读",
+      "subdomain": "表达",
+      "difficulty": 3,
+      "summary": "阐述自己的观点,有理有据",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。阐述自己的观点,有理有据",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "阐述自己的观点",
+        "有理有据"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C2_BO_01",
+      "subject": "chinese",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "整本书阅读:寓言/童话/故事",
+      "domain": "整本书阅读",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读整本寓言/童话/故事",
+      "source": "2022 义教课标",
+      "content_req": "阅读自己喜欢的童话书，想象故事中的画面，学习讲述书中。阅读整本寓言/童话/故事",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "讲述"
+      ],
+      "key_points": [
+        "学习讲述书中",
+        "阅读自己喜欢的童话书",
+        "想象故事中的画面",
+        "阅读整本寓言/童话/故事"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_BO_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "整本书阅读:长篇文学名著",
+      "domain": "整本书阅读",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读长篇文学名著,做读书笔记",
+      "source": "2022 义教课标",
+      "content_req": "阅读儿童文学名著，如《稻草人》《爱的教育》等，感受作。阅读长篇文学名著,做读书笔记",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "感受"
+      ],
+      "key_points": [
+        "阅读儿童文学名著",
+        "如《稻草人》《爱的教育》等",
+        "阅读长篇文学名著",
+        "做读书笔记"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_BO_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "整本书阅读:学术著作/文学经典",
+      "domain": "整本书阅读",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读学术著作/文学经典,养成读书习惯",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。阅读学术著作/文学经典,养成读书习惯",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "阅读学术著作/文学经典",
+        "养成读书习惯"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C3_XS_01",
+      "subject": "chinese",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "跨学科语文学习活动",
+      "domain": "跨学科学习",
+      "subdomain": "综合",
+      "difficulty": 2,
+      "summary": "开展跨学科语文学习活动",
+      "source": "2022 义教课标",
+      "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。开展跨学科语文学习活动",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "体会"
+      ],
+      "key_points": [
+        "体会读书的快乐",
+        "阅读富有童趣的图画书等浅易的读物",
+        "开展跨学科语文学习活动"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "CN_C4_XS_01",
+      "subject": "chinese",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "跨学科专题研究",
+      "domain": "跨学科学习",
+      "subdomain": "研究",
+      "difficulty": 3,
+      "summary": "围绕跨学科主题开展专题研究",
+      "source": "2022 义教课标",
+      "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。围绕跨学科主题开展专题研究",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+        "围绕跨学科主题开展专题研究"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

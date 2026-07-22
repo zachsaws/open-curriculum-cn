@@ -1,0 +1,1168 @@
+{
+  "nodes": [
+    {
+      "id": "SC_S1_LS_01",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识周围的植物",
+      "domain": "生命科学",
+      "subdomain": "植物",
+      "difficulty": 1,
+      "summary": "观察周围常见植物,认识植物主要组成部分",
+      "source": "2022 义教课标",
+      "content_req": "植物能制造和获取养分来维持自身的生存。观察周围常见植物,认识植物主要组成部分",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "植物能制造和获取养分来维持自身的生存",
+        "认识植物主要组成部分",
+        "观察周围常见植物"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_LS_02",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识常见的动物",
+      "domain": "生命科学",
+      "subdomain": "动物",
+      "difficulty": 1,
+      "summary": "观察常见动物,描述其特征",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。观察常见动物,描述其特征",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "描述"
+      ],
+      "key_points": [
+        "描述其特征",
+        "生物具有区别于非生物的特征",
+        "观察常见动物"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_LS_03",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识自己的身体",
+      "domain": "生命科学",
+      "subdomain": "人体",
+      "difficulty": 1,
+      "summary": "认识自己身体的主要部位",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。认识自己身体的主要部位",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识自己身体的主要部位",
+        "生物具有区别于非生物的特征"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_LS_04",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "养成良好卫生习惯",
+      "domain": "生命科学",
+      "subdomain": "健康",
+      "difficulty": 1,
+      "summary": "养成勤洗手等良好卫生习惯",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。养成勤洗手等良好卫生习惯",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "生物具有区别于非生物的特征",
+        "养成勤洗手等良好卫生习惯"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_LS_05",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "植物的生长发育",
+      "domain": "生命科学",
+      "subdomain": "植物生长",
+      "difficulty": 2,
+      "summary": "观察植物从种子到成熟的过程",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。观察植物从种子到成熟的过程",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "生物具有区别于非生物的特征",
+        "观察植物从种子到成熟的过程"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_MS_01",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "认识物体特征",
+      "domain": "物质科学",
+      "subdomain": "物质特征",
+      "difficulty": 1,
+      "summary": "用感官观察物体,描述颜色/形状/大小",
+      "source": "2022 义教课标",
+      "content_req": "物质变 | @知道有些物体的形状或大小发生了变化，如被切成小。用感官观察物体,描述颜色/形状/大小",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": "能比较、分析植物〈花的颜色，叶的颜色、大小与形状等方面) 和",
+      "bloom": [
+        "知道",
+        "描述"
+      ],
+      "key_points": [
+        "物质变 | @知道有些物体的形状或大小发生了变化",
+        "描述颜色/形状/大小",
+        "如被切成小",
+        "用感官观察物体"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_MS_02",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "比较物体轻重大小",
+      "domain": "物质科学",
+      "subdomain": "测量",
+      "difficulty": 1,
+      "summary": "用简单工具比较物体的轻重/大小",
+      "source": "2022 义教课标",
+      "content_req": "物质变 | @知道有些物体的形状或大小发生了变化，如被切成小。用简单工具比较物体的轻重/大小",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": "能比较、分析植物〈花的颜色，叶的颜色、大小与形状等方面) 和",
+      "bloom": [
+        "知道",
+        "比较"
+      ],
+      "key_points": [
+        "物质变 | @知道有些物体的形状或大小发生了变化",
+        "用简单工具比较物体的轻重/大小",
+        "如被切成小"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_MS_03",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "水的基本特征",
+      "domain": "物质科学",
+      "subdomain": "水",
+      "difficulty": 1,
+      "summary": "观察水,了解水的无色无味透明",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。观察水,了解水的无色无味透明",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解水的无色无味透明",
+        "生物具有区别于非生物的特征"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_MS_04",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "空气的存在",
+      "domain": "物质科学",
+      "subdomain": "空气",
+      "difficulty": 1,
+      "summary": "通过实验证明空气的存在",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。通过实验证明空气的存在",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "实验"
+      ],
+      "key_points": [
+        "通过实验证明空气的存在",
+        "生物具有区别于非生物的特征"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_ES_01",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "观察天气",
+      "domain": "地球与宇宙",
+      "subdomain": "天气",
+      "difficulty": 1,
+      "summary": "观察并记录天气变化",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。观察并记录天气变化",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": "能说出常见的天气现象，知道天气变化的影响，认识到土壤为众多",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "生物具有区别于非生物的特征",
+        "观察并记录天气变化"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_ES_02",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "太阳与月亮的观察",
+      "domain": "地球与宇宙",
+      "subdomain": "天体",
+      "difficulty": 1,
+      "summary": "观察太阳和月亮的形状变化",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。观察太阳和月亮的形状变化",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "生物具有区别于非生物的特征",
+        "观察太阳和月亮的形状变化"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_ES_03",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "四季变化",
+      "domain": "地球与宇宙",
+      "subdomain": "季节",
+      "difficulty": 1,
+      "summary": "感受四季变化及对生活的影响",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。感受四季变化及对生活的影响",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "感受"
+      ],
+      "key_points": [
+        "感受四季变化及对生活的影响",
+        "生物具有区别于非生物的特征"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_TE_01",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "制作简单模型",
+      "domain": "技术与工程",
+      "subdomain": "动手",
+      "difficulty": 2,
+      "summary": "利用身边材料制作简单模型",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。利用身边材料制作简单模型",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": "能借助动画演示或动手制作简单模型，模拟地球、月球和太阳的相",
+      "bloom": [
+        "制作"
+      ],
+      "key_points": [
+        "利用身边材料制作简单模型",
+        "生物具有区别于非生物的特征"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S1_TE_02",
+      "subject": "science",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "使用简单工具",
+      "domain": "技术与工程",
+      "subdomain": "工具",
+      "difficulty": 1,
+      "summary": "安全使用剪刀/尺子等简单工具",
+      "source": "2022 义教课标",
+      "content_req": "生物具有区别于非生物的特征。安全使用剪刀/尺子等简单工具",
+      "src_page": 1,
+      "src_stage": "第一学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "生物具有区别于非生物的特征",
+        "安全使用剪刀/尺子等简单工具"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_LS_01",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "植物的一生",
+      "domain": "生命科学",
+      "subdomain": "植物",
+      "difficulty": 2,
+      "summary": "了解植物从种子萌发到结种的一生",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。了解植物从种子萌发到结种的一生",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解植物从种子萌发到结种的一生",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_LS_02",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "动物的生命周期",
+      "domain": "生命科学",
+      "subdomain": "动物",
+      "difficulty": 2,
+      "summary": "了解动物的生命周期(蚕/蝴蝶)",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。了解动物的生命周期(蚕/蝴蝶)",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解动物的生命周期(蚕/蝴蝶)",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_LS_03",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "人体的呼吸/消化/循环",
+      "domain": "生命科学",
+      "subdomain": "人体",
+      "difficulty": 3,
+      "summary": "初步了解人体呼吸/消化/循环系统",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。初步了解人体呼吸/消化/循环系统",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "初步了解人体呼吸/消化/循环系统",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_LS_04",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "生物与环境",
+      "domain": "生命科学",
+      "subdomain": "生态",
+      "difficulty": 2,
+      "summary": "认识生物与环境的相互关系",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。认识生物与环境的相互关系",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "认识生物与环境之间的密切关系，形成人与自然和谐共生的观念。",
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识生物与环境的相互关系",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_LS_05",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "保护生物多样性",
+      "domain": "生命科学",
+      "subdomain": "生态",
+      "difficulty": 2,
+      "summary": "认识生物多样性的价值",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。认识生物多样性的价值",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识生物多样性的价值",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_MS_01",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "固体液体气体的特征",
+      "domain": "物质科学",
+      "subdomain": "物态",
+      "difficulty": 2,
+      "summary": "认识固体/液体/气体的特征",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。认识固体/液体/气体的特征",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识固体/液体/气体的特征",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_MS_02",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "物质的变化",
+      "domain": "物质科学",
+      "subdomain": "变化",
+      "difficulty": 2,
+      "summary": "区分物理变化和化学变化",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。区分物理变化和化学变化",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "技术与工程创 | 国古代技术与工程方面的典型案例",
+        "区分物理变化和化学变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_MS_03",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "溶解现象",
+      "domain": "物质科学",
+      "subdomain": "溶解",
+      "difficulty": 2,
+      "summary": "观察物质在水中的溶解现象",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。观察物质在水中的溶解现象",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "技术与工程创 | 国古代技术与工程方面的典型案例",
+        "观察物质在水中的溶解现象"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_MS_04",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "声音的产生与传播",
+      "domain": "物质科学",
+      "subdomain": "声",
+      "difficulty": 3,
+      "summary": "探究声音的产生和传播",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。探究声音的产生和传播",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "技术与工程创 | 国古代技术与工程方面的典型案例",
+        "探究声音的产生和传播"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_MS_05",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "光的传播与反射",
+      "domain": "物质科学",
+      "subdomain": "光",
+      "difficulty": 3,
+      "summary": "探究光的传播和反射",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。探究光的传播和反射",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "技术与工程创 | 国古代技术与工程方面的典型案例",
+        "探究光的传播和反射"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_ES_01",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "地球的形状与运动",
+      "domain": "地球与宇宙",
+      "subdomain": "地球",
+      "difficulty": 3,
+      "summary": "了解地球是球形,自转和公转",
+      "source": "2022 义教课标",
+      "content_req": "力是改变物体运动状态的原因。了解地球是球形,自转和公转",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解地球是球形",
+        "力是改变物体运动状态的原因",
+        "自转和公转"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_ES_02",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "地球上的水",
+      "domain": "地球与宇宙",
+      "subdomain": "水循环",
+      "difficulty": 2,
+      "summary": "了解水的三态变化和水循环",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。了解水的三态变化和水循环",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解水的三态变化和水循环",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_ES_03",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "岩石与土壤",
+      "domain": "地球与宇宙",
+      "subdomain": "地质",
+      "difficulty": 2,
+      "summary": "观察常见岩石和土壤",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。观察常见岩石和土壤",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "能在教师指导下，通过口述、画图等方式，交流对天气和土壤的观",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "技术与工程创 | 国古代技术与工程方面的典型案例",
+        "观察常见岩石和土壤"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S2_TE_01",
+      "subject": "science",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "设计与制作",
+      "domain": "技术与工程",
+      "subdomain": "工程",
+      "difficulty": 2,
+      "summary": "经历简单的工程设计过程",
+      "source": "2022 义教课标",
+      "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。经历简单的工程设计过程",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "经历",
+        "设计"
+      ],
+      "key_points": [
+        "经历简单的工程设计过程",
+        "技术与工程创 | 国古代技术与工程方面的典型案例"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_LS_01",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "微生物",
+      "domain": "生命科学",
+      "subdomain": "微生物",
+      "difficulty": 2,
+      "summary": "认识细菌/病毒/真菌等微生物",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识细菌/病毒/真菌等微生物",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识细菌/病毒/真菌等微生物",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_LS_02",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "遗传与进化",
+      "domain": "生命科学",
+      "subdomain": "遗传",
+      "difficulty": 3,
+      "summary": "初步了解遗传现象和生物进化",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。初步了解遗传现象和生物进化",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "初步了解遗传现象和生物进化",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_LS_03",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "生态系统",
+      "domain": "生命科学",
+      "subdomain": "生态",
+      "difficulty": 3,
+      "summary": "理解生态系统的组成和食物链",
+      "source": "2022 义教课标",
+      "content_req": "生态系统由生物与非生物环境共同组成。理解生态系统的组成和食物链",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": "能综合细胞、 组织、器官、系统、个体、种群、群游、生态系统、",
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解生态系统的组成和食物链",
+        "生态系统由生物与非生物环境共同组成"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_MS_01",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "物质的结构",
+      "domain": "物质科学",
+      "subdomain": "微观",
+      "difficulty": 3,
+      "summary": "初步了解物质由微粒构成",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。初步了解物质由微粒构成",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "初步了解物质由微粒构成",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_MS_02",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "化学反应",
+      "domain": "物质科学",
+      "subdomain": "化学变化",
+      "difficulty": 3,
+      "summary": "观察化学反应,了解质量守恒",
+      "source": "2022 义教课标",
+      "content_req": "化学反应遵守质量守恒定律。观察化学反应,了解质量守恒",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": "识化学反应，能辨析常见的化合、分解、置换、复分解反应及氧化反应",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解质量守恒",
+        "化学反应遵守质量守恒定律",
+        "观察化学反应"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_MS_03",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "能量的多种形式",
+      "domain": "物质科学",
+      "subdomain": "能量",
+      "difficulty": 3,
+      "summary": "认识热/光/电/声/磁等能量形式",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识热/光/电/声/磁等能量形式",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "认识热/光/电/声/磁等能量形式",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_MS_04",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "简单电路",
+      "domain": "物质科学",
+      "subdomain": "电",
+      "difficulty": 3,
+      "summary": "连接简单电路,了解电流",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。连接简单电路,了解电流",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解电流",
+        "电磁相 | 四列举党用的不同形状的磁铁",
+        "连接简单电路"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_MS_05",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "简单机械",
+      "domain": "物质科学",
+      "subdomain": "机械",
+      "difficulty": 3,
+      "summary": "认识杠杆/滑轮/斜面等简单机械",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识杠杆/滑轮/斜面等简单机械",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": "知道常见的简单机械〈杠杆、滑轮、轮轴、和斜面) 及其应用;能举",
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识杠杆/滑轮/斜面等简单机械",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_ES_01",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "宇宙中的地球",
+      "domain": "地球与宇宙",
+      "subdomain": "宇宙",
+      "difficulty": 3,
+      "summary": "了解太阳系和宇宙",
+      "source": "2022 义教课标",
+      "content_req": "地球所处的宇宙环境。了解太阳系和宇宙",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解太阳系和宇宙",
+        "地球所处的宇宙环境"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_ES_02",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "天气与气候",
+      "domain": "地球与宇宙",
+      "subdomain": "气候",
+      "difficulty": 3,
+      "summary": "了解天气与气候的区别",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。了解天气与气候的区别",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解天气与气候的区别",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_ES_03",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "地表变化",
+      "domain": "地球与宇宙",
+      "subdomain": "地质",
+      "difficulty": 3,
+      "summary": "认识侵蚀/沉积等地表变化",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识侵蚀/沉积等地表变化",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识侵蚀/沉积等地表变化",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_TE_01",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "工程设计流程",
+      "domain": "技术与工程",
+      "subdomain": "工程",
+      "difficulty": 3,
+      "summary": "经历完整的工程设计-制作-测试流程",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。经历完整的工程设计-制作-测试流程",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": "能借助动画演示或动手制作简单模型，模拟地球、月球和太阳的相",
+      "bloom": [
+        "经历",
+        "设计",
+        "制作"
+      ],
+      "key_points": [
+        "经历完整的工程设计-制作-测试流程",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "SC_S3_TE_02",
+      "subject": "science",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "技术与伦理",
+      "domain": "技术与工程",
+      "subdomain": "伦理",
+      "difficulty": 2,
+      "summary": "认识技术使用中的伦理问题",
+      "source": "2022 义教课标",
+      "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识技术使用中的伦理问题",
+      "src_page": 1,
+      "src_stage": "第三学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识"
+      ],
+      "key_points": [
+        "认识技术使用中的伦理问题",
+        "电磁相 | 四列举党用的不同形状的磁铁"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

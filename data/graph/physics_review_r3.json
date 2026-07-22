@@ -1,0 +1,15 @@
+{
+  "subject": "physics",
+  "round": 3,
+  "total_concepts": 63,
+  "content_req_matched": 12,
+  "content_req_matched_pct": 19.0,
+  "academic_req_matched": 7,
+  "academic_req_matched_pct": 11.1,
+  "content_req_full": 20,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 1.6,
+  "cross_stage_mismatch": 0,
+  "verdict": "FAIL",
+  "issue": "content_req 匹配率 19.0% < 25%, 需修解析器"
+}

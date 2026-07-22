@@ -1,0 +1,17 @@
+{
+  "subject": "biology",
+  "round": 1,
+  "total_concepts": 36,
+  "content_req_matched": 36,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 2,
+  "academic_req_matched_pct": 5.6,
+  "content_req_full": 36,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 2.2,
+  "cross_stage_mismatch": 0,
+  "ocr_threshold": 15,
+  "full_threshold": 80,
+  "verdict": "PASS"
+}

@@ -1,0 +1,1792 @@
+{
+  "nodes": [
+    {
+      "id": "EN_E1_PH_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "26 个英文字母的认读",
+      "domain": "语音",
+      "subdomain": "字母",
+      "difficulty": 1,
+      "summary": "认读 26 个字母的大小写",
+      "source": "2022 义教课标",
+      "content_req": "认读 26 个字母的大小写",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "认读"
+      ],
+      "key_points": [
+        "认读 26 个字母的大小写"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_PH_02",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "基本发音规则",
+      "domain": "语音",
+      "subdomain": "发音",
+      "difficulty": 1,
+      "summary": "感知字母在单词中的基本发音",
+      "source": "2022 义教课标",
+      "content_req": "感知字母在单词中的基本发音",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "感知字母在单词中的基本发音"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_PH_03",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "简单拼读规则",
+      "domain": "语音",
+      "subdomain": "拼读",
+      "difficulty": 2,
+      "summary": "尝试拼读简单单词",
+      "source": "2022 义教课标",
+      "content_req": "尝试拼读简单单词",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "拼读"
+      ],
+      "key_points": [
+        "尝试拼读简单单词"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_PH_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "元音字母发音规则",
+      "domain": "语音",
+      "subdomain": "发音",
+      "difficulty": 2,
+      "summary": "了解元音字母在重读开闭音节中的发音",
+      "source": "2022 义教课标",
+      "content_req": "了解元音字母在重读开闭音节中的发音",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解元音字母在重读开闭音节中的发音"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_PH_02",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "辅音字母发音规则",
+      "domain": "语音",
+      "subdomain": "发音",
+      "difficulty": 2,
+      "summary": "了解常见辅音字母组合发音",
+      "source": "2022 义教课标",
+      "content_req": "了解常见辅音字母组合发音",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解常见辅音字母组合发音"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_PH_03",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "句子重音与节奏",
+      "domain": "语音",
+      "subdomain": "朗读",
+      "difficulty": 2,
+      "summary": "了解句子重音和节奏",
+      "source": "2022 义教课标",
+      "content_req": "了解句子重音和节奏",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解句子重音和节奏"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_PH_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "国际音标认读",
+      "domain": "语音",
+      "subdomain": "音标",
+      "difficulty": 3,
+      "summary": "认读国际音标",
+      "source": "2022 义教课标",
+      "content_req": "认读国际音标",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "认读"
+      ],
+      "key_points": [
+        "认读国际音标"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_PH_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "连读与失去爆破",
+      "domain": "语音",
+      "subdomain": "朗读",
+      "difficulty": 3,
+      "summary": "了解连读/失去爆破/弱读等朗读技巧",
+      "source": "2022 义教课标",
+      "content_req": "了解连读/失去爆破/弱读等朗读技巧",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "朗读"
+      ],
+      "key_points": [
+        "了解连读/失去爆破/弱读等朗读技巧"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_PH_03",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "语调与意群",
+      "domain": "语音",
+      "subdomain": "朗读",
+      "difficulty": 3,
+      "summary": "了解语调/意群/停顿",
+      "source": "2022 义教课标",
+      "content_req": "了解语调/意群/停顿",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解语调/意群/停顿"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_PH_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "重音/节奏/语调综合运用",
+      "domain": "语音",
+      "subdomain": "综合",
+      "difficulty": 3,
+      "summary": "综合运用重音/节奏/语调表达意义",
+      "source": "2022 义教课标",
+      "content_req": "综合运用重音/节奏/语调表达意义",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "运用",
+        "表达"
+      ],
+      "key_points": [
+        "综合运用重音/节奏/语调表达意义"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_VB_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "日常生活词汇",
+      "domain": "词汇",
+      "subdomain": "主题词汇",
+      "difficulty": 1,
+      "summary": "听说认读 600+ 日常生活词汇",
+      "source": "2022 义教课标",
+      "content_req": "听说认读 600+ 日常生活词汇",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "认读"
+      ],
+      "key_points": [
+        "听说认读 600+ 日常生活词汇"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_VB_02",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题词汇:动物/颜色/数字/食物",
+      "domain": "词汇",
+      "subdomain": "主题词汇",
+      "difficulty": 1,
+      "summary": "学习动物/颜色/数字/食物等主题词汇",
+      "source": "2022 义教课标",
+      "content_req": "学习动物/颜色/数字/食物等主题词汇",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "学习动物/颜色/数字/食物等主题词汇"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_VB_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "校园与家庭生活词汇",
+      "domain": "词汇",
+      "subdomain": "主题词汇",
+      "difficulty": 2,
+      "summary": "听说读写 1600+ 词汇,主题:校园/家庭/生活",
+      "source": "2022 义教课标",
+      "content_req": "听说读写 1600+ 词汇,主题:校园/家庭/生活",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "听说读写 1600+ 词汇",
+        "主题:校园/家庭/生活"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_VB_02",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "词性变化",
+      "domain": "词汇",
+      "subdomain": "构词",
+      "difficulty": 2,
+      "summary": "了解名词/动词/形容词等基本词性",
+      "source": "2022 义教课标",
+      "content_req": "了解名词/动词/形容词等基本词性",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解名词/动词/形容词等基本词性"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_VB_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "1600-2000 词汇量",
+      "domain": "词汇",
+      "subdomain": "词汇量",
+      "difficulty": 2,
+      "summary": "使用 1600-2000 词汇",
+      "source": "2022 义教课标",
+      "content_req": "使用 1600-2000 词汇",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用 1600-2000 词汇"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_VB_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "构词法:前缀/后缀/词根",
+      "domain": "词汇",
+      "subdomain": "构词",
+      "difficulty": 3,
+      "summary": "了解前缀/后缀/词根等构词法",
+      "source": "2022 义教课标",
+      "content_req": "了解前缀/后缀/词根等构词法",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解前缀/后缀/词根等构词法"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_VB_03",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "短语动词与固定搭配",
+      "domain": "词汇",
+      "subdomain": "搭配",
+      "difficulty": 3,
+      "summary": "学习短语动词和固定搭配",
+      "source": "2022 义教课标",
+      "content_req": "学习短语动词和固定搭配",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "学习短语动词和固定搭配"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_VB_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "2000+ 词汇量",
+      "domain": "词汇",
+      "subdomain": "词汇量",
+      "difficulty": 3,
+      "summary": "使用 2000+ 词汇,理解词义变化",
+      "source": "2022 义教课标",
+      "content_req": "使用 2000+ 词汇,理解词义变化",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解词义变化",
+        "使用 2000+ 词汇"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_VB_02",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "词义辨析与一词多义",
+      "domain": "词汇",
+      "subdomain": "语义",
+      "difficulty": 3,
+      "summary": "辨析近义词,理解一词多义",
+      "source": "2022 义教课标",
+      "content_req": "辨析近义词,理解一词多义",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解一词多义",
+        "辨析近义词"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_GR_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "基本句型:主谓/主谓宾",
+      "domain": "语法",
+      "subdomain": "句型",
+      "difficulty": 1,
+      "summary": "感知主谓/主谓宾等基本句型",
+      "source": "2022 义教课标",
+      "content_req": "感知主谓/主谓宾等基本句型",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "感知主谓/主谓宾等基本句型"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_GR_02",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "一般现在时",
+      "domain": "语法",
+      "subdomain": "时态",
+      "difficulty": 1,
+      "summary": "使用一般现在时描述日常",
+      "source": "2022 义教课标",
+      "content_req": "使用一般现在时描述日常",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "描述"
+      ],
+      "key_points": [
+        "使用一般现在时描述日常"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_GR_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "现在进行时/一般过去时",
+      "domain": "语法",
+      "subdomain": "时态",
+      "difficulty": 2,
+      "summary": "使用现在进行时/一般过去时",
+      "source": "2022 义教课标",
+      "content_req": "使用现在进行时/一般过去时",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用现在进行时/一般过去时"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_GR_02",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "一般将来时/be going to",
+      "domain": "语法",
+      "subdomain": "时态",
+      "difficulty": 2,
+      "summary": "使用一般将来时/be going to",
+      "source": "2022 义教课标",
+      "content_req": "使用一般将来时/be going to",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用一般将来时/be going to"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_GR_03",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "there be 句型",
+      "domain": "语法",
+      "subdomain": "句型",
+      "difficulty": 2,
+      "summary": "使用 there be 句型",
+      "source": "2022 义教课标",
+      "content_req": "使用 there be 句型",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用 there be 句型"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_GR_04",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "可数与不可数名词",
+      "domain": "语法",
+      "subdomain": "词类",
+      "difficulty": 2,
+      "summary": "区分可数与不可数名词",
+      "source": "2022 义教课标",
+      "content_req": "区分可数与不可数名词",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "区分可数与不可数名词"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_GR_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "现在完成时",
+      "domain": "语法",
+      "subdomain": "时态",
+      "difficulty": 3,
+      "summary": "使用现在完成时",
+      "source": "2022 义教课标",
+      "content_req": "使用现在完成时",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用现在完成时"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_GR_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "过去进行时/过去完成时",
+      "domain": "语法",
+      "subdomain": "时态",
+      "difficulty": 3,
+      "summary": "使用过去进行时/过去完成时",
+      "source": "2022 义教课标",
+      "content_req": "使用过去进行时/过去完成时",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用过去进行时/过去完成时"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_GR_03",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "被动语态基础",
+      "domain": "语法",
+      "subdomain": "语态",
+      "difficulty": 3,
+      "summary": "使用被动语态",
+      "source": "2022 义教课标",
+      "content_req": "使用被动语态",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用被动语态"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_GR_04",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "宾语从句基础",
+      "domain": "语法",
+      "subdomain": "从句",
+      "difficulty": 3,
+      "summary": "使用宾语从句",
+      "source": "2022 义教课标",
+      "content_req": "使用宾语从句",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用宾语从句"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_GR_05",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "定语从句基础",
+      "domain": "语法",
+      "subdomain": "从句",
+      "difficulty": 3,
+      "summary": "使用定语从句",
+      "source": "2022 义教课标",
+      "content_req": "使用定语从句",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用定语从句"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_GR_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "虚拟语气",
+      "domain": "语法",
+      "subdomain": "语气",
+      "difficulty": 3,
+      "summary": "了解虚拟语气",
+      "source": "2022 义教课标",
+      "content_req": "了解虚拟语气",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解虚拟语气"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_GR_02",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "非谓语动词",
+      "domain": "语法",
+      "subdomain": "非谓语",
+      "difficulty": 3,
+      "summary": "使用不定式/动名词/分词",
+      "source": "2022 义教课标",
+      "content_req": "使用不定式/动名词/分词",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用不定式/动名词/分词"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_GR_03",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "状语从句",
+      "domain": "语法",
+      "subdomain": "从句",
+      "difficulty": 3,
+      "summary": "使用时间/原因/条件/让步状语从句",
+      "source": "2022 义教课标",
+      "content_req": "使用时间/原因/条件/让步状语从句",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用时间/原因/条件/让步状语从句"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_GR_04",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "定语从句高级",
+      "domain": "语法",
+      "subdomain": "从句",
+      "difficulty": 3,
+      "summary": "运用定语从句",
+      "source": "2022 义教课标",
+      "content_req": "运用定语从句",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "运用"
+      ],
+      "key_points": [
+        "运用定语从句"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_GR_05",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "主谓一致",
+      "domain": "语法",
+      "subdomain": "句法",
+      "difficulty": 3,
+      "summary": "掌握主谓一致",
+      "source": "2022 义教课标",
+      "content_req": "掌握主谓一致",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "掌握"
+      ],
+      "key_points": [
+        "掌握主谓一致"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_TX_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "听说简单对话/小故事",
+      "domain": "语篇",
+      "subdomain": "听说",
+      "difficulty": 1,
+      "summary": "听懂/看懂简单对话/小故事",
+      "source": "2022 义教课标",
+      "content_req": "听懂/看懂简单对话/小故事",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "听懂/看懂简单对话/小故事"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_TX_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "阅读简单短文",
+      "domain": "语篇",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读图文并茂的简单短文",
+      "source": "2022 义教课标",
+      "content_req": "阅读图文并茂的简单短文",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "阅读图文并茂的简单短文"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_TX_02",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "提取关键信息",
+      "domain": "语篇",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "从短文中提取关键信息",
+      "source": "2022 义教课标",
+      "content_req": "从短文中提取关键信息",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "从短文中提取关键信息"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_TX_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "阅读较长语篇",
+      "domain": "语篇",
+      "subdomain": "阅读",
+      "difficulty": 2,
+      "summary": "阅读较长语篇,理解主旨",
+      "source": "2022 义教课标",
+      "content_req": "阅读较长语篇,理解主旨",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解主旨",
+        "阅读较长语篇"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_TX_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "识别语篇类型",
+      "domain": "语篇",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "识别记叙文/说明文/议论文等语篇类型",
+      "source": "2022 义教课标",
+      "content_req": "识别记叙文/说明文/议论文等语篇类型",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "说明",
+        "识别"
+      ],
+      "key_points": [
+        "识别记叙文/说明文/议论文等语篇类型"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_TX_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "阅读原版文学作品",
+      "domain": "语篇",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "阅读原版文学作品/新闻/科普文章",
+      "source": "2022 义教课标",
+      "content_req": "阅读原版文学作品/新闻/科普文章",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "阅读原版文学作品/新闻/科普文章"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_TX_02",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "理解作者意图与观点",
+      "domain": "语篇",
+      "subdomain": "阅读",
+      "difficulty": 3,
+      "summary": "理解作者意图/观点/态度",
+      "source": "2022 义教课标",
+      "content_req": "理解作者意图/观点/态度",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解作者意图/观点/态度"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_SK_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "听懂简单指令",
+      "domain": "语言技能",
+      "subdomain": "听力",
+      "difficulty": 1,
+      "summary": "听懂课堂指令和简单问题",
+      "source": "2022 义教课标",
+      "content_req": "听懂课堂指令和简单问题",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "听懂课堂指令和简单问题"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_SK_02",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "口头表达简单信息",
+      "domain": "语言技能",
+      "subdomain": "口语",
+      "difficulty": 1,
+      "summary": "用简单句口头表达",
+      "source": "2022 义教课标",
+      "content_req": "用简单句口头表达",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "表达"
+      ],
+      "key_points": [
+        "用简单句口头表达"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_SK_03",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "初步英语书写",
+      "domain": "语言技能",
+      "subdomain": "书写",
+      "difficulty": 1,
+      "summary": "正确书写字母和单词",
+      "source": "2022 义教课标",
+      "content_req": "正确书写字母和单词",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "正确书写字母和单词"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_SK_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "听懂短文",
+      "domain": "语言技能",
+      "subdomain": "听力",
+      "difficulty": 2,
+      "summary": "听懂语速较慢的短文",
+      "source": "2022 义教课标",
+      "content_req": "听懂语速较慢的短文",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "听懂语速较慢的短文"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_SK_02",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "角色扮演对话",
+      "domain": "语言技能",
+      "subdomain": "口语",
+      "difficulty": 2,
+      "summary": "进行角色扮演/对话交流",
+      "source": "2022 义教课标",
+      "content_req": "进行角色扮演/对话交流",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "进行角色扮演/对话交流"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_SK_03",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "书写简单短文",
+      "domain": "语言技能",
+      "subdomain": "写作",
+      "difficulty": 2,
+      "summary": "书写简单的短文",
+      "source": "2022 义教课标",
+      "content_req": "书写简单的短文",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "书写简单的短文"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_SK_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "听懂正常语速的语篇",
+      "domain": "语言技能",
+      "subdomain": "听力",
+      "difficulty": 2,
+      "summary": "听懂正常语速的语篇",
+      "source": "2022 义教课标",
+      "content_req": "听懂正常语速的语篇",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "听懂正常语速的语篇"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_SK_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "围绕主题表达观点",
+      "domain": "语言技能",
+      "subdomain": "口语",
+      "difficulty": 3,
+      "summary": "围绕主题表达自己的观点",
+      "source": "2022 义教课标",
+      "content_req": "围绕主题表达自己的观点",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "表达"
+      ],
+      "key_points": [
+        "围绕主题表达自己的观点"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_SK_03",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "写段落/简单作文",
+      "domain": "语言技能",
+      "subdomain": "写作",
+      "difficulty": 2,
+      "summary": "写段落和简单作文",
+      "source": "2022 义教课标",
+      "content_req": "写段落和简单作文",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "写段落和简单作文"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_SK_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "听懂原版材料",
+      "domain": "语言技能",
+      "subdomain": "听力",
+      "difficulty": 3,
+      "summary": "听懂原版音频/视频材料",
+      "source": "2022 义教课标",
+      "content_req": "听懂原版音频/视频材料",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "听懂原版音频/视频材料"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_SK_02",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "讨论与辩论",
+      "domain": "语言技能",
+      "subdomain": "口语",
+      "difficulty": 3,
+      "summary": "参与讨论/辩论/演讲",
+      "source": "2022 义教课标",
+      "content_req": "参与讨论/辩论/演讲",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "参与讨论/辩论/演讲"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_SK_03",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "写命题作文/应用文",
+      "domain": "语言技能",
+      "subdomain": "写作",
+      "difficulty": 3,
+      "summary": "写命题作文/应用文",
+      "source": "2022 义教课标",
+      "content_req": "写命题作文/应用文",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "应用"
+      ],
+      "key_points": [
+        "写命题作文/应用文"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_CU_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "中外文化差异感知",
+      "domain": "文化",
+      "subdomain": "文化意识",
+      "difficulty": 1,
+      "summary": "感知中外文化差异",
+      "source": "2022 义教课标",
+      "content_req": "感知中外文化差异",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "感知中外文化差异"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_CU_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "节日与饮食文化",
+      "domain": "文化",
+      "subdomain": "文化知识",
+      "difficulty": 2,
+      "summary": "了解中外节日/饮食/礼仪文化",
+      "source": "2022 义教课标",
+      "content_req": "了解中外节日/饮食/礼仪文化",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解中外节日/饮食/礼仪文化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_CU_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "中国主要城市与自然环境",
+      "domain": "文化",
+      "subdomain": "文化知识",
+      "difficulty": 2,
+      "summary": "用英语介绍中国主要城市与自然环境",
+      "source": "2022 义教课标",
+      "content_req": "用英语介绍中国主要城市与自然环境",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "用英语介绍中国主要城市与自然环境"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_CU_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "中外文学史代表作家",
+      "domain": "文化",
+      "subdomain": "文化知识",
+      "difficulty": 3,
+      "summary": "了解中外文学史上有代表性的作家和作品",
+      "source": "2022 义教课标",
+      "content_req": "了解中外文学史上有代表性的作家和作品",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解中外文学史上有代表性的作家和作品"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_CU_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "中外文化内涵与价值观",
+      "domain": "文化",
+      "subdomain": "文化意识",
+      "difficulty": 3,
+      "summary": "理解中外优秀文化的内涵,领会价值观",
+      "source": "2022 义教课标",
+      "content_req": "理解中外优秀文化的内涵,领会价值观",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "理解"
+      ],
+      "key_points": [
+        "理解中外优秀文化的内涵",
+        "领会价值观"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_CU_02",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "用英语讲好中国故事",
+      "domain": "文化",
+      "subdomain": "文化传播",
+      "difficulty": 3,
+      "summary": "用英语讲好中国故事,传播中华文化",
+      "source": "2022 义教课标",
+      "content_req": "用英语讲好中国故事,传播中华文化",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "用英语讲好中国故事",
+        "传播中华文化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_TP_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题:我与家庭",
+      "domain": "主题",
+      "subdomain": "人与自我",
+      "difficulty": 1,
+      "summary": "围绕'我与家庭'展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'我与家庭'展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "围绕'我与家庭'展开学习"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_TP_02",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "主题:我与学校",
+      "domain": "主题",
+      "subdomain": "人与自我",
+      "difficulty": 1,
+      "summary": "围绕'我与学校'展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'我与学校'展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "围绕'我与学校'展开学习"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_TP_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "主题:我与社会",
+      "domain": "主题",
+      "subdomain": "人与社会",
+      "difficulty": 2,
+      "summary": "围绕'我与社会'展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'我与社会'展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "围绕'我与社会'展开学习"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_TP_02",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "主题:自然与环境",
+      "domain": "主题",
+      "subdomain": "人与自然",
+      "difficulty": 2,
+      "summary": "围绕'自然与环境'展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'自然与环境'展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "围绕'自然与环境'展开学习"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_TP_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "主题:健康与体育",
+      "domain": "主题",
+      "subdomain": "人与自我",
+      "difficulty": 2,
+      "summary": "围绕'健康与体育'展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'健康与体育'展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "围绕'健康与体育'展开学习"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_TP_02",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "主题:世界与科技",
+      "domain": "主题",
+      "subdomain": "人与社会",
+      "difficulty": 3,
+      "summary": "围绕'世界与科技'展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'世界与科技'展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "围绕'世界与科技'展开学习"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_TP_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "主题:全球议题",
+      "domain": "主题",
+      "subdomain": "人与社会",
+      "difficulty": 3,
+      "summary": "围绕'全球议题'(气候变化/可持续发展等)展开学习",
+      "source": "2022 义教课标",
+      "content_req": "围绕'全球议题'(气候变化/可持续发展等)展开学习",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "围绕'全球议题'(气候变化/可持续发展等)展开学习"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E1_ST_01",
+      "subject": "english",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "title": "模仿跟读",
+      "domain": "学习策略",
+      "subdomain": "策略",
+      "difficulty": 1,
+      "summary": "使用模仿/跟读策略学习语音",
+      "source": "2022 义教课标",
+      "content_req": "使用模仿/跟读策略学习语音",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "使用模仿/跟读策略学习语音"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E2_ST_01",
+      "subject": "english",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "title": "借助图片上下文理解",
+      "domain": "学习策略",
+      "subdomain": "策略",
+      "difficulty": 2,
+      "summary": "借助图片/上下文理解词义",
+      "source": "2022 义教课标",
+      "content_req": "借助图片/上下文理解词义",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "借助图片/上下文理解词义"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E3_ST_01",
+      "subject": "english",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "title": "归纳与分类",
+      "domain": "学习策略",
+      "subdomain": "策略",
+      "difficulty": 3,
+      "summary": "使用归纳/分类策略学习语法词汇",
+      "source": "2022 义教课标",
+      "content_req": "使用归纳/分类策略学习语法词汇",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "分类"
+      ],
+      "key_points": [
+        "使用归纳/分类策略学习语法词汇"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "EN_E4_ST_01",
+      "subject": "english",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "元认知与自主学习",
+      "domain": "学习策略",
+      "subdomain": "元认知",
+      "difficulty": 3,
+      "summary": "制定学习计划,监控学习过程,反思学习效果",
+      "source": "2022 义教课标",
+      "content_req": "制定学习计划,监控学习过程,反思学习效果",
+      "src_page": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "制定学习计划",
+        "监控学习过程",
+        "反思学习效果"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,17 @@
+{
+  "subject": "science",
+  "round": 1,
+  "total_concepts": 41,
+  "content_req_matched": 41,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 10,
+  "academic_req_matched_pct": 24.4,
+  "content_req_full": 41,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 2.2,
+  "cross_stage_mismatch": 4,
+  "ocr_threshold": 15,
+  "full_threshold": 80,
+  "verdict": "PASS"
+}

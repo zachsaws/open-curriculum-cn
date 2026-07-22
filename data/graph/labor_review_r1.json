@@ -1,0 +1,18 @@
+{
+  "subject": "labor",
+  "round": 1,
+  "total_concepts": 21,
+  "content_req_matched": 21,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 0,
+  "academic_req_matched_pct": 0.0,
+  "content_req_full": 21,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 2.4,
+  "cross_stage_mismatch": 9,
+  "ocr_threshold": 3,
+  "full_threshold": 60,
+  "verdict": "PASS",
+  "issue": "⚠️ 跨学段错配 9 个 (advisory, OCR 提取问题)"
+}

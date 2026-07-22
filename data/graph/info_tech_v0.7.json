@@ -1,0 +1,841 @@
+{
+  "nodes": [
+    {
+      "id": "IT_I1_01",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 1,
+      "grade_end": 6,
+      "title": "信息与信息社会",
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "感知信息无处不在",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。感知信息无处不在",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "感知信息无处不在"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I1_02",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "数据的获取与整理",
+      "domain": "数据",
+      "subdomain": "数据处理",
+      "difficulty": 2,
+      "summary": "用表格/图表整理数据",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。用表格/图表整理数据",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "用表格/图表整理数据"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I1_03",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "数据编码",
+      "domain": "数据",
+      "subdomain": "编码",
+      "difficulty": 3,
+      "summary": "理解二进制/字符编码",
+      "source": "2022 义教课标",
+      "content_req": "结合真实情境，了解编码在生活中的应用，认识数据编码的。理解二进制/字符编码",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "认识",
+        "理解"
+      ],
+      "key_points": [
+        "了解编码在生活中的应用",
+        "认识数据编码的",
+        "理解二进制/字符编码",
+        "结合真实情境"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I1_04",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "数据可视化",
+      "domain": "数据",
+      "subdomain": "可视化",
+      "difficulty": 2,
+      "summary": "会用图表/词云等可视化数据",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。会用图表/词云等可视化数据",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "会用图表/词云等可视化数据",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I1_05",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "数据分析与预测",
+      "domain": "数据",
+      "subdomain": "分析",
+      "difficulty": 3,
+      "summary": "用数据进行分析和预测",
+      "source": "2022 义教课标",
+      "content_req": "考试性质和目的。用数据进行分析和预测",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "分析"
+      ],
+      "key_points": [
+        "用数据进行分析和预测",
+        "考试性质和目的"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I2_01",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "算法的概念",
+      "domain": "算法",
+      "subdomain": "概念",
+      "difficulty": 1,
+      "summary": "理解算法是解决问题的一系列步骤",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法是解决问题的一系列步骤",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解算法是解决问题的一系列步骤",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I2_02",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "算法的描述",
+      "domain": "算法",
+      "subdomain": "描述",
+      "difficulty": 2,
+      "summary": "用自然语言/流程图描述算法",
+      "source": "2022 义教课标",
+      "content_req": "算法: 问题的步又分解一算法的描述、执行与效率一解决问。用自然语言/流程图描述算法",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "描述"
+      ],
+      "key_points": [
+        "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+        "用自然语言/流程图描述算法"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I2_03",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "顺序结构",
+      "domain": "算法",
+      "subdomain": "结构",
+      "difficulty": 2,
+      "summary": "理解算法顺序结构",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法顺序结构",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解算法顺序结构",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I2_04",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "分支结构",
+      "domain": "算法",
+      "subdomain": "结构",
+      "difficulty": 2,
+      "summary": "理解算法分支结构 if",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法分支结构 if",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解算法分支结构 if",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I2_05",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "循环结构",
+      "domain": "算法",
+      "subdomain": "结构",
+      "difficulty": 3,
+      "summary": "理解算法循环结构 for/while",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法循环结构 for/while",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解算法循环结构 for/while",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I2_06",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "算法的效率",
+      "domain": "算法",
+      "subdomain": "效率",
+      "difficulty": 3,
+      "summary": "了解算法效率评价",
+      "source": "2022 义教课标",
+      "content_req": "主要环节评价。了解算法效率评价",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解算法效率评价",
+        "主要环节评价"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I3_01",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "图形化编程",
+      "domain": "编程",
+      "subdomain": "图形化",
+      "difficulty": 2,
+      "summary": "会用 Scratch 等图形化编程工具",
+      "source": "2022 义教课标",
+      "content_req": "在对简单问题的分析过程中，使用数字化工具组织并呈现收。会用 Scratch 等图形化编程工具",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "通过指导学生完成在线任务、学习使用各种网络工具等多种",
+      "bloom": [
+        "会",
+        "分析"
+      ],
+      "key_points": [
+        "在对简单问题的分析过程中",
+        "会用 Scratch 等图形化编程工具",
+        "使用数字化工具组织并呈现收"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I3_02",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "Python 编程基础",
+      "domain": "编程",
+      "subdomain": "Python",
+      "difficulty": 3,
+      "summary": "会用 Python 编写简单程序",
+      "source": "2022 义教课标",
+      "content_req": "考试性质和目的。会用 Python 编写简单程序",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "会用 Python 编写简单程序",
+        "考试性质和目的"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I3_03",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "变量与数据类型",
+      "domain": "编程",
+      "subdomain": "基础",
+      "difficulty": 3,
+      "summary": "理解变量和基本数据类型",
+      "source": "2022 义教课标",
+      "content_req": "考试性质和目的。理解变量和基本数据类型",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解变量和基本数据类型",
+        "考试性质和目的"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I3_04",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "函数与模块",
+      "domain": "编程",
+      "subdomain": "函数",
+      "difficulty": 3,
+      "summary": "会定义和使用函数",
+      "source": "2022 义教课标",
+      "content_req": "考试性质和目的。会定义和使用函数",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "会定义和使用函数",
+        "考试性质和目的"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I3_05",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "程序调试",
+      "domain": "编程",
+      "subdomain": "调试",
+      "difficulty": 3,
+      "summary": "会用调试工具发现并修正程序错误",
+      "source": "2022 义教课标",
+      "content_req": "考试性质和目的。会用调试工具发现并修正程序错误",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "发现"
+      ],
+      "key_points": [
+        "会用调试工具发现并修正程序错误",
+        "考试性质和目的"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I4_01",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "网络基础",
+      "domain": "网络",
+      "subdomain": "基础",
+      "difficulty": 2,
+      "summary": "了解计算机网络基础",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解计算机网络基础",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "计算"
+      ],
+      "key_points": [
+        "了解计算机网络基础",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I4_02",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "互联网应用",
+      "domain": "网络",
+      "subdomain": "应用",
+      "difficulty": 1,
+      "summary": "使用浏览器/邮件/搜索等",
+      "source": "2022 义教课标",
+      "content_req": "通过在线活动，分析互联网应用的特征，认识到互联网对社。使用浏览器/邮件/搜索等",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "分析",
+        "应用"
+      ],
+      "key_points": [
+        "分析互联网应用的特征",
+        "认识到互联网对社",
+        "通过在线活动",
+        "使用浏览器/邮件/搜索等"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I4_03",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "网络安全",
+      "domain": "网络",
+      "subdomain": "安全",
+      "difficulty": 2,
+      "summary": "了解网络安全常识",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解网络安全常识",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解网络安全常识",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I4_04",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "物联网",
+      "domain": "网络",
+      "subdomain": "前沿",
+      "difficulty": 3,
+      "summary": "了解物联网基本概念",
+      "source": "2022 义教课标",
+      "content_req": "通过实例感受万物互联的场景，知道物联网与互联网的异。了解物联网基本概念",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": "物联网技术的广泛应用将带来一些全新的挑战，如集成了多",
+      "bloom": [
+        "了解",
+        "知道",
+        "感受"
+      ],
+      "key_points": [
+        "通过实例感受万物互联的场景",
+        "知道物联网与互联网的异",
+        "了解物联网基本概念"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I5_01",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 4,
+      "grade_end": 6,
+      "title": "计算机硬件",
+      "domain": "系统",
+      "subdomain": "硬件",
+      "difficulty": 2,
+      "summary": "了解计算机硬件组成",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解计算机硬件组成",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "计算"
+      ],
+      "key_points": [
+        "了解计算机硬件组成",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I5_02",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "操作系统",
+      "domain": "系统",
+      "subdomain": "软件",
+      "difficulty": 2,
+      "summary": "了解操作系统的功能",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解操作系统的功能",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解操作系统的功能",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I5_03",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 3,
+      "grade_end": 6,
+      "title": "文件管理",
+      "domain": "系统",
+      "subdomain": "文件",
+      "difficulty": 1,
+      "summary": "会管理文件和文件夹",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。会管理文件和文件夹",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "会管理文件和文件夹",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I6_01",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "人工智能基础",
+      "domain": "AI",
+      "subdomain": "概念",
+      "difficulty": 2,
+      "summary": "了解人工智能基本概念",
+      "source": "2022 义教课标",
+      "content_req": "通过分析典型的人工智能应用场景，了解人工智能的基本特。了解人工智能基本概念",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "分析"
+      ],
+      "key_points": [
+        "通过分析典型的人工智能应用场景",
+        "了解人工智能的基本特",
+        "了解人工智能基本概念"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I6_02",
+      "subject": "info_tech",
+      "stage": 5,
+      "grade_start": 7,
+      "grade_end": 9,
+      "title": "机器学习体验",
+      "domain": "AI",
+      "subdomain": "体验",
+      "difficulty": 3,
+      "summary": "体验机器学习的基本流程",
+      "source": "2022 义教课标",
+      "content_req": "考试性质和目的。体验机器学习的基本流程",
+      "src_page": 1,
+      "src_stage": "第四学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "考试性质和目的",
+        "体验机器学习的基本流程"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I6_03",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "智能应用",
+      "domain": "AI",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "了解 AI 在生活/医疗/教育中的应用",
+      "source": "2022 义教课标",
+      "content_req": "结合真实情境，了解编码在生活中的应用，认识数据编码的。了解 AI 在生活/医疗/教育中的应用",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "认识",
+        "应用"
+      ],
+      "key_points": [
+        "了解编码在生活中的应用",
+        "了解 AI 在生活/医疗/教育中的应用",
+        "认识数据编码的",
+        "结合真实情境"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I7_01",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "信息伦理",
+      "domain": "社会责任",
+      "subdomain": "伦理",
+      "difficulty": 2,
+      "summary": "遵守信息伦理和法律法规",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。遵守信息伦理和法律法规",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "遵守信息伦理和法律法规"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "IT_I7_02",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "数字公民",
+      "domain": "社会责任",
+      "subdomain": "公民",
+      "difficulty": 2,
+      "summary": "养成健康的数字公民素养",
+      "source": "2022 义教课标",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。养成健康的数字公民素养",
+      "src_page": 1,
+      "src_stage": "第二学段",
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "养成健康的数字公民素养"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

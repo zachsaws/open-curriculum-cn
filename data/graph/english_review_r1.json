@@ -1,0 +1,17 @@
+{
+  "subject": "english",
+  "round": 1,
+  "total_concepts": 71,
+  "content_req_matched": 0,
+  "content_req_matched_pct": 0.0,
+  "academic_req_matched": 0,
+  "academic_req_matched_pct": 0.0,
+  "content_req_full": 71,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 1.1,
+  "cross_stage_mismatch": 0,
+  "ocr_threshold": 0,
+  "full_threshold": 60,
+  "verdict": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "subject": "chinese",
+  "round": 1,
+  "total_concepts": 75,
+  "content_req_matched": 75,
+  "content_req_matched_pct": 100.0,
+  "academic_req_matched": 0,
+  "academic_req_matched_pct": 0.0,
+  "content_req_full": 75,
+  "content_req_full_pct": 100.0,
+  "bloom_coverage_pct": 100.0,
+  "key_points_avg": 2.8,
+  "cross_stage_mismatch": 27,
+  "ocr_threshold": 15,
+  "full_threshold": 80,
+  "verdict": "PASS",
+  "issue": "⚠️ 跨学段错配 27 个 (advisory, OCR 提取问题)"
+}

@@ -1,0 +1,771 @@
+{
+  "nodes": [
+    {
+      "id": "PE_PE1_01",
+      "subject": "pe_health",
+      "stage": 2,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "走与跑",
+      "domain": "基本运动",
+      "subdomain": "田径",
+      "difficulty": 1,
+      "summary": "掌握正确的走和跑",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握正确的走和跑",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握正确的走和跑"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE1_02",
+      "subject": "pe_health",
+      "stage": 2,
+      "grade_start": 1,
+      "grade_end": 6,
+      "title": "跳跃",
+      "domain": "基本运动",
+      "subdomain": "田径",
+      "difficulty": 2,
+      "summary": "掌握立定跳远/助跑跳远",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握立定跳远/助跑跳远",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "识和文化，以及|见跳跃运动损伤",
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握立定跳远/助跑跳远"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE1_03",
+      "subject": "pe_health",
+      "stage": 2,
+      "grade_start": 1,
+      "grade_end": 6,
+      "title": "投掷",
+      "domain": "基本运动",
+      "subdomain": "田径",
+      "difficulty": 2,
+      "summary": "掌握投掷基本动作",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握投掷基本动作",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "重视跑与跳、跑与投掷、跳与投掷等不同动作之间的组合练",
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握投掷基本动作"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE1_04",
+      "subject": "pe_health",
+      "stage": 2,
+      "grade_start": 1,
+      "grade_end": 6,
+      "title": "体操基本动作",
+      "domain": "基本运动",
+      "subdomain": "体操",
+      "difficulty": 2,
+      "summary": "掌握队列/基本体操动作",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握队列/基本体操动作",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握队列/基本体操动作"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE1_05",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "技巧运动",
+      "domain": "基本运动",
+      "subdomain": "体操",
+      "difficulty": 3,
+      "summary": "掌握滚翻/倒立等技巧",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握滚翻/倒立等技巧",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握滚翻/倒立等技巧"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE1_06",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "支撑跳跃",
+      "domain": "基本运动",
+      "subdomain": "体操",
+      "difficulty": 3,
+      "summary": "掌握山羊/跳箱等支撑跳跃",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握山羊/跳箱等支撑跳跃",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握山羊/跳箱等支撑跳跃"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE2_01",
+      "subject": "pe_health",
+      "stage": 3,
+      "grade_start": 1,
+      "grade_end": 9,
+      "title": "小篮球",
+      "domain": "球类",
+      "subdomain": "篮球",
+      "difficulty": 2,
+      "summary": "掌握小篮球运球/传球/投篮",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握小篮球运球/传球/投篮",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握小篮球运球/传球/投篮"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE2_02",
+      "subject": "pe_health",
+      "stage": 3,
+      "grade_start": 1,
+      "grade_end": 9,
+      "title": "小足球",
+      "domain": "球类",
+      "subdomain": "足球",
+      "difficulty": 2,
+      "summary": "掌握小足球运球/传球/射门",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握小足球运球/传球/射门",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握小足球运球/传球/射门"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE2_03",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "排球",
+      "domain": "球类",
+      "subdomain": "排球",
+      "difficulty": 2,
+      "summary": "掌握排球垫球/传球",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握排球垫球/传球",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握排球垫球/传球"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE2_04",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 3,
+      "grade_end": 9,
+      "title": "乒乓球",
+      "domain": "球类",
+      "subdomain": "乒乓球",
+      "difficulty": 2,
+      "summary": "掌握乒乓球基本技术",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握乒乓球基本技术",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握乒乓球基本技术"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE2_05",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 3,
+      "grade_end": 9,
+      "title": "羽毛球",
+      "domain": "球类",
+      "subdomain": "羽毛球",
+      "difficulty": 2,
+      "summary": "掌握羽毛球基本技术",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握羽毛球基本技术",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握羽毛球基本技术"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE3_01",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 3,
+      "grade_end": 9,
+      "title": "短跑",
+      "domain": "田径",
+      "subdomain": "跑",
+      "difficulty": 2,
+      "summary": "掌握短跑起跑/加速/冲刺",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握短跑起跑/加速/冲刺",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握短跑起跑/加速/冲刺"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE3_02",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "中长跑",
+      "domain": "田径",
+      "subdomain": "跑",
+      "difficulty": 2,
+      "summary": "掌握中长跑节奏/呼吸",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握中长跑节奏/呼吸",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握中长跑节奏/呼吸"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE3_03",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "接力跑",
+      "domain": "田径",
+      "subdomain": "跑",
+      "difficulty": 2,
+      "summary": "掌握接力跑传接棒",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握接力跑传接棒",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握接力跑传接棒"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE3_04",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "跳高跳远",
+      "domain": "田径",
+      "subdomain": "跳",
+      "difficulty": 3,
+      "summary": "掌握跳高/跳远技术",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握跳高/跳远技术",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握跳高/跳远技术"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE4_01",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "游泳基础",
+      "domain": "水上",
+      "subdomain": "游泳",
+      "difficulty": 3,
+      "summary": "掌握游泳基本技能",
+      "source": "2022 义教课标",
+      "content_req": "体验移动性技能的具体内容和练习方法，如提吓走、高矮人。掌握游泳基本技能",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "注重体操类运动项目的结构化技能学练，避免单个动作的简",
+      "bloom": [
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "掌握游泳基本技能",
+        "体验移动性技能的具体内容和练习方法",
+        "如提吓走、高矮人"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE4_02",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "滑冰/滑雪",
+      "domain": "冰雪",
+      "subdomain": "冰雪",
+      "difficulty": 3,
+      "summary": "了解滑冰/滑雪基本技能",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解滑冰/滑雪基本技能",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解滑冰/滑雪基本技能",
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE4_03",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 3,
+      "grade_end": 9,
+      "title": "武术基本功",
+      "domain": "民族",
+      "subdomain": "武术",
+      "difficulty": 2,
+      "summary": "掌握武术基本功",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握武术基本功",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "掌握"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "掌握武术基本功"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_01",
+      "subject": "pe_health",
+      "stage": 2,
+      "grade_start": 1,
+      "grade_end": 3,
+      "title": "认识身体",
+      "domain": "健康教育",
+      "subdomain": "身体",
+      "difficulty": 1,
+      "summary": "认识自己的身体",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。认识自己的身体",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "认识",
+        "能"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "认识自己的身体"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_02",
+      "subject": "pe_health",
+      "stage": 3,
+      "grade_start": 1,
+      "grade_end": 9,
+      "title": "营养与饮食",
+      "domain": "健康教育",
+      "subdomain": "营养",
+      "difficulty": 1,
+      "summary": "了解营养均衡与食品安全",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解营养均衡与食品安全",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "了解营养均衡与食品安全"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_03",
+      "subject": "pe_health",
+      "stage": 3,
+      "grade_start": 1,
+      "grade_end": 9,
+      "title": "运动与健康",
+      "domain": "健康教育",
+      "subdomain": "健康",
+      "difficulty": 1,
+      "summary": "了解运动对健康的作用",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解运动对健康的作用",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "了解运动对健康的作用"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_04",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 5,
+      "grade_end": 9,
+      "title": "青春期健康",
+      "domain": "健康教育",
+      "subdomain": "青春期",
+      "difficulty": 2,
+      "summary": "了解青春期生理心理变化",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解青春期生理心理变化",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿",
+        "了解青春期生理心理变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_05",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 4,
+      "grade_end": 9,
+      "title": "心理健康",
+      "domain": "健康教育",
+      "subdomain": "心理",
+      "difficulty": 2,
+      "summary": "了解心理健康知识",
+      "source": "2022 义教课标",
+      "content_req": "了解并运用身体成分的基础知识和改善身体成分的多种练习。了解心理健康知识",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "了解并运用发展心肺耐力的基础知识和多种练习方",
+      "bloom": [
+        "了解",
+        "运用"
+      ],
+      "key_points": [
+        "了解并运用身体成分的基础知识和改善身体成分的多种练习",
+        "了解心理健康知识"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_06",
+      "subject": "pe_health",
+      "stage": 3,
+      "grade_start": 1,
+      "grade_end": 9,
+      "title": "常见疾病预防",
+      "domain": "健康教育",
+      "subdomain": "疾病",
+      "difficulty": 1,
+      "summary": "了解常见疾病预防",
+      "source": "2022 义教课标",
+      "content_req": "知道受伤外出血时及时止血的方法，知道预防溺水的知识和。了解常见疾病预防",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "理健康、疾病预防与突发公共卫生事件应对、安全应急与避险五个领",
+      "bloom": [
+        "了解",
+        "知道"
+      ],
+      "key_points": [
+        "知道受伤外出血时及时止血的方法",
+        "知道预防溺水的知识和",
+        "了解常见疾病预防"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "PE_PE5_07",
+      "subject": "pe_health",
+      "stage": 4,
+      "grade_start": 3,
+      "grade_end": 9,
+      "title": "安全与急救",
+      "domain": "健康教育",
+      "subdomain": "急救",
+      "difficulty": 2,
+      "summary": "了解安全常识和急救技能",
+      "source": "2022 义教课标",
+      "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解安全常识和急救技能",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解安全常识和急救技能",
+        "了解正确的身体姿势",
+        "能做出正确的坐、立、行和读写姿"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}

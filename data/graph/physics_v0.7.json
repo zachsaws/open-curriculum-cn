@@ -1,0 +1,1840 @@
+{
+  "nodes": [
+    {
+      "id": "P_P1_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "三种物态的基本特征",
+      "domain": "物质",
+      "subdomain": "物态",
+      "difficulty": 1,
+      "summary": "描述固态/液态/气态三种物态的基本特征",
+      "source": "2022 义教课标",
+      "content_req": "能描述固态、液态和气态三种物态的基本特征，并列举。描述固态/液态/气态三种物态的基本特征",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "能描述固态、液态和气态的基本特征及在相互转化过程中的",
+      "bloom": [
+        "能",
+        "描述"
+      ],
+      "key_points": [
+        "能描述固态、液态和气态三种物态的基本特征",
+        "描述固态/液态/气态三种物态的基本特征"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "温度与温度计",
+      "domain": "物质",
+      "subdomain": "测量",
+      "difficulty": 1,
+      "summary": "了解液体温度计原理,会用温度计测量",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解液体温度计原理,会用温度计测量",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "会"
+      ],
+      "key_points": [
+        "了解液体温度计原理",
+        "会用温度计测量",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "物态变化:熔化凝固",
+      "domain": "物质",
+      "subdomain": "物态变化",
+      "difficulty": 2,
+      "summary": "经历熔化/凝固实验探究,知道熔点凝固点",
+      "source": "2022 义教课标",
+      "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。经历熔化/凝固实验探究,知道熔点凝固点",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "经历",
+        "知道",
+        "实验"
+      ],
+      "key_points": [
+        "经历物态变化的实验探究过程",
+        "经历熔化/凝固实验探究",
+        "知道物质的熔点、雍固",
+        "知道熔点凝固点"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_04",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "物态变化:汽化液化",
+      "domain": "物质",
+      "subdomain": "物态变化",
+      "difficulty": 2,
+      "summary": "知道汽化/液化,了解沸点",
+      "source": "2022 义教课标",
+      "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。知道汽化/液化,了解沸点",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "经历",
+        "知道"
+      ],
+      "key_points": [
+        "经历物态变化的实验探究过程",
+        "知道物质的熔点、雍固",
+        "知道汽化/液化",
+        "了解沸点"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_05",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "物态变化:升华凝华",
+      "domain": "物质",
+      "subdomain": "物态变化",
+      "difficulty": 2,
+      "summary": "了解升华/凝华",
+      "source": "2022 义教课标",
+      "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。了解升华/凝华",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "经历",
+        "知道"
+      ],
+      "key_points": [
+        "经历物态变化的实验探究过程",
+        "知道物质的熔点、雍固",
+        "了解升华/凝华"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_06",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "水循环",
+      "domain": "物质",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "用物态变化知识说明自然界水循环",
+      "source": "2022 义教课标",
+      "content_req": "能运用物态变化知识，说明自然界中的水循环现象。用物态变化知识说明自然界水循环",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "能",
+        "运用",
+        "说明"
+      ],
+      "key_points": [
+        "能运用物态变化知识",
+        "说明自然界中的水循环现象",
+        "用物态变化知识说明自然界水循环"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_07",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "密度",
+      "domain": "物质",
+      "subdomain": "物理量",
+      "difficulty": 3,
+      "summary": "理解密度概念,会测量物质密度",
+      "source": "2022 义教课标",
+      "content_req": "蜡块会漂浮在水面上，举试用天平和量简测量蜡块的密度。。理解密度概念,会测量物质密度",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "理解"
+      ],
+      "key_points": [
+        "蜡块会漂浮在水面上",
+        "理解密度概念",
+        "会测量物质密度",
+        "举试用天平和量简测量蜡块的密度"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_08",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "分子动理论",
+      "domain": "物质",
+      "subdomain": "微观",
+      "difficulty": 3,
+      "summary": "知道分子动理论基本观点",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。知道分子动理论基本观点",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "知道"
+      ],
+      "key_points": [
+        "知道分子动理论基本观点",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P1_09",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "原子结构",
+      "domain": "物质",
+      "subdomain": "微观",
+      "difficulty": 3,
+      "summary": "初步了解原子结构",
+      "source": "2022 义教课标",
+      "content_req": "物质的结构和物质世界的尺度。初步了解原子结构",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "知道建构模型是物理研究的重要方法，了解原子的核式结构",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "初步了解原子结构",
+        "物质的结构和物质世界的尺度"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "机械运动与参照物",
+      "domain": "运动和相互作用",
+      "subdomain": "运动",
+      "difficulty": 2,
+      "summary": "知道机械运动,理解参照物",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。知道机械运动,理解参照物",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解",
+        "知道"
+      ],
+      "key_points": [
+        "知道机械运动",
+        "理解参照物",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "分子热运动",
+      "domain": "运动和相互作用",
+      "subdomain": "微观",
+      "difficulty": 2,
+      "summary": "了解分子热运动",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解分子热运动",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "了解机械运动、分子热运动、声和光、电和磁，了解重力、",
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解分子热运动",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "长度与时间测量",
+      "domain": "运动和相互作用",
+      "subdomain": "测量",
+      "difficulty": 1,
+      "summary": "会用刻度尺/秒表测量长度和时间",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。会用刻度尺/秒表测量长度和时间",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "会用刻度尺/秒表测量长度和时间",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_04",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "速度",
+      "domain": "运动和相互作用",
+      "subdomain": "运动",
+      "difficulty": 2,
+      "summary": "理解速度概念,会测速度",
+      "source": "2022 义教课标",
+      "content_req": "能用速度描述物体运动的快慢，并能进行简单计算。理解速度概念,会测速度",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "能用速度描述物体运动的快慢",
+        "并能进行简单计算",
+        "理解速度概念",
+        "会测速度"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_05",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "力的概念",
+      "domain": "运动和相互作用",
+      "subdomain": "力",
+      "difficulty": 2,
+      "summary": "理解力是物体间的相互作用",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解力是物体间的相互作用",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解力是物体间的相互作用",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_06",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "力的测量:弹簧测力计",
+      "domain": "运动和相互作用",
+      "subdomain": "测量",
+      "difficulty": 1,
+      "summary": "会用弹簧测力计测量力",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。会用弹簧测力计测量力",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会"
+      ],
+      "key_points": [
+        "会用弹簧测力计测量力",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_07",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "重力",
+      "domain": "运动和相互作用",
+      "subdomain": "力",
+      "difficulty": 2,
+      "summary": "理解重力,知道 g=9.8 N/kg",
+      "source": "2022 义教课标",
+      "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。理解重力,知道 g=9.8 N/kg",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "知道建构模型是物理研究的重要方法，了解原子的核式结构",
+      "bloom": [
+        "理解",
+        "经历",
+        "知道"
+      ],
+      "key_points": [
+        "经历物态变化的实验探究过程",
+        "知道物质的熔点、雍固",
+        "理解重力",
+        "知道 g=9.8 N/kg"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_08",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "力的三要素与图示",
+      "domain": "运动和相互作用",
+      "subdomain": "力",
+      "difficulty": 2,
+      "summary": "理解力的三要素,会画力的图示",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解力的三要素,会画力的图示",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "理解"
+      ],
+      "key_points": [
+        "理解力的三要素",
+        "会画力的图示",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_09",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "二力平衡",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 2,
+      "summary": "理解二力平衡条件",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解二力平衡条件",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解二力平衡条件",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_10",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "牛顿第一定律",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 3,
+      "summary": "理解牛顿第一定律,理解惯性",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解牛顿第一定律,理解惯性",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解牛顿第一定律",
+        "理解惯性",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_11",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "摩擦力",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 2,
+      "summary": "认识摩擦力,了解增大减小摩擦的方法",
+      "source": "2022 义教课标",
+      "content_req": "通过常见事例或实验，了解重力、弹力和摩擦力，认识。认识摩擦力,了解增大减小摩擦的方法",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "认识",
+        "实验"
+      ],
+      "key_points": [
+        "通过常见事例或实验",
+        "了解重力、弹力和摩擦力",
+        "认识摩擦力",
+        "了解增大减小摩擦的方法"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_12",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "压强",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 3,
+      "summary": "理解压强概念 p=F/S",
+      "source": "2022 义教课标",
+      "content_req": "探究液体压强与哪些因素有关。理解压强概念 p=F/S",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解压强概念 p=F/S",
+        "探究液体压强与哪些因素有关"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_13",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "液体压强",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 3,
+      "summary": "理解液体内部压强规律",
+      "source": "2022 义教课标",
+      "content_req": "探究液体压强与哪些因素有关。理解液体内部压强规律",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解液体内部压强规律",
+        "探究液体压强与哪些因素有关"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_14",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "大气压强",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 3,
+      "summary": "理解大气压强,了解大气压变化",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解大气压强,了解大气压变化",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "理解"
+      ],
+      "key_points": [
+        "理解大气压强",
+        "了解大气压变化",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_15",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "流体压强与流速",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 3,
+      "summary": "了解流体压强与流速关系",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解流体压强与流速关系",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解流体压强与流速关系",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_16",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "浮力",
+      "domain": "运动和相互作用",
+      "subdomain": "力学",
+      "difficulty": 3,
+      "summary": "理解阿基米德原理 F浮=ρ液gV排",
+      "source": "2022 义教课标",
+      "content_req": "了解液体温度计的工作原理。理解阿基米德原理 F浮=ρ液gV排",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "理解"
+      ],
+      "key_points": [
+        "了解液体温度计的工作原理",
+        "理解阿基米德原理 F浮=ρ液gV排"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_17",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "简单机械:杠杆",
+      "domain": "运动和相互作用",
+      "subdomain": "机械",
+      "difficulty": 3,
+      "summary": "理解杠杆原理,会画力臂",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解杠杆原理,会画力臂",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "理解"
+      ],
+      "key_points": [
+        "理解杠杆原理",
+        "会画力臂",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_18",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "简单机械:滑轮",
+      "domain": "运动和相互作用",
+      "subdomain": "机械",
+      "difficulty": 3,
+      "summary": "理解定滑轮/动滑轮/滑轮组",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解定滑轮/动滑轮/滑轮组",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解定滑轮/动滑轮/滑轮组",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_19",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "简单机械:斜面",
+      "domain": "运动和相互作用",
+      "subdomain": "机械",
+      "difficulty": 2,
+      "summary": "了解斜面原理",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解斜面原理",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解斜面原理",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_20",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "功",
+      "domain": "运动和相互作用",
+      "subdomain": "功",
+      "difficulty": 3,
+      "summary": "理解功的概念 W=Fs",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解功的概念 W=Fs",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解功的概念 W=Fs",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_21",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "功率",
+      "domain": "运动和相互作用",
+      "subdomain": "功",
+      "difficulty": 3,
+      "summary": "理解功率 P=W/t",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解功率 P=W/t",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解功率 P=W/t",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_22",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "机械效率",
+      "domain": "运动和相互作用",
+      "subdomain": "机械",
+      "difficulty": 3,
+      "summary": "理解机械效率概念",
+      "source": "2022 义教课标",
+      "content_req": "结合实例，认识功的概念。理解机械效率概念",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "认知水平出发，设计多种学习活动，重视物理概念的建构过程，促进",
+      "bloom": [
+        "认识",
+        "理解"
+      ],
+      "key_points": [
+        "认识功的概念",
+        "理解机械效率概念",
+        "结合实例"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P2_23",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "动能与势能",
+      "domain": "运动和相互作用",
+      "subdomain": "能",
+      "difficulty": 3,
+      "summary": "理解动能/势能",
+      "source": "2022 义教课标",
+      "content_req": "知道动能、势能和机械能。理解动能/势能",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "能",
+        "理解",
+        "知道"
+      ],
+      "key_points": [
+        "知道动能、势能和机械能",
+        "理解动能/势能"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "声音的产生与传播",
+      "domain": "声",
+      "subdomain": "基础",
+      "difficulty": 2,
+      "summary": "知道声音由振动产生,在介质中传播",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。知道声音由振动产生,在介质中传播",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "知道"
+      ],
+      "key_points": [
+        "知道声音由振动产生",
+        "物质的形态和变化",
+        "在介质中传播"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "声音的特性:音调/响度/音色",
+      "domain": "声",
+      "subdomain": "特性",
+      "difficulty": 2,
+      "summary": "区分音调/响度/音色",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。区分音调/响度/音色",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "物质的形态和变化",
+        "区分音调/响度/音色"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "噪声与防护",
+      "domain": "声",
+      "subdomain": "应用",
+      "difficulty": 1,
+      "summary": "了解噪声危害与防护",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解噪声危害与防护",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解噪声危害与防护",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 15,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_04",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "光的直线传播",
+      "domain": "光",
+      "subdomain": "基础",
+      "difficulty": 2,
+      "summary": "知道光在同种均匀介质中沿直线传播",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。知道光在同种均匀介质中沿直线传播",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "知道"
+      ],
+      "key_points": [
+        "知道光在同种均匀介质中沿直线传播",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_05",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "光的反射定律",
+      "domain": "光",
+      "subdomain": "反射",
+      "difficulty": 3,
+      "summary": "理解光的反射定律,会画光路图",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解光的反射定律,会画光路图",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "理解"
+      ],
+      "key_points": [
+        "理解光的反射定律",
+        "会画光路图",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_06",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "平面镜成像",
+      "domain": "光",
+      "subdomain": "反射",
+      "difficulty": 3,
+      "summary": "理解平面镜成像特点",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解平面镜成像特点",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解平面镜成像特点",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_07",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 8,
+      "title": "光的折射",
+      "domain": "光",
+      "subdomain": "折射",
+      "difficulty": 3,
+      "summary": "理解光的折射规律",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解光的折射规律",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解光的折射规律",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_08",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "凸透镜成像",
+      "domain": "光",
+      "subdomain": "透镜",
+      "difficulty": 3,
+      "summary": "理解凸透镜成像规律,了解照相机/投影仪/放大镜原理",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解凸透镜成像规律,了解照相机/投影仪/放大镜原理",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "理解"
+      ],
+      "key_points": [
+        "理解凸透镜成像规律",
+        "了解照相机/投影仪/放大镜原理",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P3_09",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "光的色散",
+      "domain": "光",
+      "subdomain": "颜色",
+      "difficulty": 2,
+      "summary": "了解光的色散,知道光的三基色",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解光的色散,知道光的三基色",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "知道"
+      ],
+      "key_points": [
+        "了解光的色散",
+        "知道光的三基色",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "简单电路",
+      "domain": "电磁",
+      "subdomain": "电路",
+      "difficulty": 2,
+      "summary": "认识电路基本元件,会连接简单电路",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。认识电路基本元件,会连接简单电路",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "会"
+      ],
+      "key_points": [
+        "认识电路基本元件",
+        "会连接简单电路",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "电流/电压/电阻",
+      "domain": "电磁",
+      "subdomain": "电学",
+      "difficulty": 3,
+      "summary": "理解电流/电压/电阻概念",
+      "source": "2022 义教课标",
+      "content_req": "用电流表和电压表测量电阻。理解电流/电压/电阻概念",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解电流/电压/电阻概念",
+        "用电流表和电压表测量电阻"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "欧姆定律",
+      "domain": "电磁",
+      "subdomain": "电学",
+      "difficulty": 3,
+      "summary": "理解欧姆定律 I=U/R",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解欧姆定律 I=U/R",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解欧姆定律 I=U/R",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_04",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "串并联电路",
+      "domain": "电磁",
+      "subdomain": "电路",
+      "difficulty": 3,
+      "summary": "理解串并联电路特点",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解串并联电路特点",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解串并联电路特点",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_05",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "电功与电功率",
+      "domain": "电磁",
+      "subdomain": "电学",
+      "difficulty": 3,
+      "summary": "理解电功/电功率概念",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解电功/电功率概念",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解电功/电功率概念",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_06",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "焦耳定律",
+      "domain": "电磁",
+      "subdomain": "电学",
+      "difficulty": 3,
+      "summary": "理解焦耳定律 Q=I²Rt",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解焦耳定律 Q=I²Rt",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解焦耳定律 Q=I²Rt",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_07",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "家庭电路",
+      "domain": "电磁",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "了解家庭电路组成和安全用电",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解家庭电路组成和安全用电",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解家庭电路组成和安全用电",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_08",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "磁现象与磁场",
+      "domain": "电磁",
+      "subdomain": "磁",
+      "difficulty": 2,
+      "summary": "认识磁现象,理解磁场",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。认识磁现象,理解磁场",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "认识",
+        "理解"
+      ],
+      "key_points": [
+        "认识磁现象",
+        "理解磁场",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_09",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "电流的磁效应",
+      "domain": "电磁",
+      "subdomain": "电磁",
+      "difficulty": 3,
+      "summary": "理解电流周围存在磁场",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解电流周围存在磁场",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解电流周围存在磁场",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_10",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "电磁铁",
+      "domain": "电磁",
+      "subdomain": "电磁",
+      "difficulty": 2,
+      "summary": "了解电磁铁原理",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。了解电磁铁原理",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解电磁铁原理",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_11",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "电动机",
+      "domain": "电磁",
+      "subdomain": "应用",
+      "difficulty": 3,
+      "summary": "了解电动机的原理",
+      "source": "2022 义教课标",
+      "content_req": "了解液体温度计的工作原理。了解电动机的原理",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解液体温度计的工作原理",
+        "了解电动机的原理"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_12",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "电磁感应",
+      "domain": "电磁",
+      "subdomain": "电磁",
+      "difficulty": 3,
+      "summary": "理解电磁感应现象",
+      "source": "2022 义教课标",
+      "content_req": "能运用物态变化知识，说明自然界中的水循环现象。理解电磁感应现象",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "知道物理学是对相关自然现象的描述与解释，物理学研究需",
+      "bloom": [
+        "能",
+        "理解",
+        "运用"
+      ],
+      "key_points": [
+        "能运用物态变化知识",
+        "说明自然界中的水循环现象",
+        "理解电磁感应现象"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P4_13",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "发电机",
+      "domain": "电磁",
+      "subdomain": "应用",
+      "difficulty": 3,
+      "summary": "了解发电机的原理",
+      "source": "2022 义教课标",
+      "content_req": "了解液体温度计的工作原理。了解发电机的原理",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "了解液体温度计的工作原理",
+        "了解发电机的原理"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P5_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "能量及其形式",
+      "domain": "能量",
+      "subdomain": "基础",
+      "difficulty": 2,
+      "summary": "了解能量及其不同形式",
+      "source": "2022 义教课标",
+      "content_req": "了解能量及其存在的不同形式。了解能量及其不同形式",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "key_points": [
+        "了解能量及其存在的不同形式",
+        "了解能量及其不同形式"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P5_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "能量转化与守恒",
+      "domain": "能量",
+      "subdomain": "守恒",
+      "difficulty": 3,
+      "summary": "理解能量守恒定律",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解能量守恒定律",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": "用能量守恒定律等解决问题的过程中，引导学生领悟从守恒的角度分",
+      "bloom": [
+        "能",
+        "理解"
+      ],
+      "key_points": [
+        "理解能量守恒定律",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P5_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "能源与可持续发展",
+      "domain": "能量",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "了解能源分类与可持续发展",
+      "source": "2022 义教课标",
+      "content_req": "能源与可持续发展。了解能源分类与可持续发展",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "能",
+        "分类"
+      ],
+      "key_points": [
+        "了解能源分类与可持续发展",
+        "能源与可持续发展"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P6_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "科学探究方法",
+      "domain": "实验探究",
+      "subdomain": "方法",
+      "difficulty": 3,
+      "summary": "理解科学探究基本方法",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。理解科学探究基本方法",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "理解"
+      ],
+      "key_points": [
+        "理解科学探究基本方法",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P6_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "实验设计能力",
+      "domain": "实验探究",
+      "subdomain": "能力",
+      "difficulty": 3,
+      "summary": "经历完整实验设计-操作-分析过程",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。经历完整实验设计-操作-分析过程",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "经历",
+        "分析",
+        "设计"
+      ],
+      "key_points": [
+        "经历完整实验设计-操作-分析过程",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P6_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "数据处理与误差分析",
+      "domain": "实验探究",
+      "subdomain": "分析",
+      "difficulty": 3,
+      "summary": "会处理实验数据,分析误差",
+      "source": "2022 义教课标",
+      "content_req": "物质的形态和变化。会处理实验数据,分析误差",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "会",
+        "分析",
+        "实验"
+      ],
+      "key_points": [
+        "会处理实验数据",
+        "分析误差",
+        "物质的形态和变化"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P7_01",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "物理学与日常生活",
+      "domain": "跨学科实践",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "用物理知识解释日常现象",
+      "source": "2022 义教课标",
+      "content_req": "物理学与日常生活。用物理知识解释日常现象",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "物理学与日常生活",
+        "用物理知识解释日常现象"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P7_02",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "物理学与工程实践",
+      "domain": "跨学科实践",
+      "subdomain": "工程",
+      "difficulty": 3,
+      "summary": "用物理知识解决工程问题",
+      "source": "2022 义教课标",
+      "content_req": "注重内容的综合性与实践性，加强知识之间的联系。用物理知识解决工程问题",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解"
+      ],
+      "key_points": [
+        "注重内容的综合性与实践性",
+        "加强知识之间的联系",
+        "用物理知识解决工程问题"
+      ],
+      "estimated_minutes": 40,
+      "review_round": 1,
+      "review_status": "pending"
+    },
+    {
+      "id": "P_P7_03",
+      "subject": "physics",
+      "stage": 5,
+      "grade_start": 8,
+      "grade_end": 9,
+      "title": "物理学与社会发展",
+      "domain": "跨学科实践",
+      "subdomain": "社会",
+      "difficulty": 2,
+      "summary": "了解物理对社会发展的影响",
+      "source": "2022 义教课标",
+      "content_req": "物理学与社会发展。了解物理对社会发展的影响",
+      "src_page": 1,
+      "src_stage": null,
+      "src_domain_ocr": null,
+      "academic_req": null,
+      "bloom": [
+        "了解",
+        "会"
+      ],
+      "key_points": [
+        "了解物理对社会发展的影响",
+        "物理学与社会发展"
+      ],
+      "estimated_minutes": 25,
+      "review_round": 1,
+      "review_status": "pending"
+    }
+  ],
+  "edges": []
+}
