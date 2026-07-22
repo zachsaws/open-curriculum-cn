@@ -272,14 +272,103 @@ function initGraph() {
 function showCard(node) {
   const card = document.getElementById('card');
   document.getElementById('card-sw').style.background = PALETTE[node.subject] || '#888';
-  document.getElementById('card-cs').textContent = `${SUBJECT_CN[node.subject] || node.subject} · ${node.stage || ''} · G${node.grade_start || ''}`;
+  document.getElementById('card-cs').textContent = `${SUBJECT_CN[node.subject] || node.subject} · G${node.grade_start || ''}-${node.grade_end || ''} · ${node.domain || ''}`;
   document.getElementById('card-ctl').textContent = node.title;
-  document.getElementById('card-cq').textContent = node.example || node.description || '';
+
+  // 标签行: bloom / difficulty / estimated_minutes / subdomain
+  const tagRow = document.getElementById('card-tags');
+  tagRow.innerHTML = '';
+  // bloom
+  (node.bloom || []).forEach(b => {
+    const t = document.createElement('span');
+    t.className = 'tag bloom';
+    t.textContent = '✦ ' + b;
+    tagRow.appendChild(t);
+  });
+  // difficulty
+  if (node.difficulty) {
+    const t = document.createElement('span');
+    t.className = 'tag diff-' + node.difficulty;
+    t.textContent = '难度 ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
+    tagRow.appendChild(t);
+  }
+  // estimated minutes
+  if (node.estimated_minutes) {
+    const t = document.createElement('span');
+    t.className = 'tag min';
+    t.textContent = '⏱ ' + node.estimated_minutes + ' 分钟';
+    tagRow.appendChild(t);
+  }
+  // subdomain
+  if (node.subdomain) {
+    const t = document.createElement('span');
+    t.className = 'tag min';
+    t.textContent = node.subdomain;
+    tagRow.appendChild(t);
+  }
+
+  // 内容要求
+  const cr = document.getElementById('card-content-req');
+  const crBlock = document.getElementById('card-content-req-block');
+  if (node.content_req) {
+    cr.textContent = node.content_req;
+    crBlock.style.display = '';
+  } else {
+    crBlock.style.display = 'none';
+  }
+  // 页码链接
+  const pageLink = document.getElementById('card-page-link');
+  if (node.src_page) {
+    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} 课标原文 ↗</a>`;
+  } else {
+    pageLink.textContent = '';
+  }
+
+  // 学业要求
+  const ar = document.getElementById('card-academic-req');
+  const arBlock = document.getElementById('card-academic-req-block');
+  if (node.academic_req) {
+    ar.textContent = node.academic_req;
+    arBlock.style.display = '';
+  } else {
+    arBlock.style.display = 'none';
+  }
+
+  // 知识要点
+  const kp = document.getElementById('card-key-points');
+  const kpBlock = document.getElementById('card-key-points-block');
+  kp.innerHTML = '';
+  if (node.key_points && node.key_points.length) {
+    node.key_points.forEach(p => {
+      const d = document.createElement('div');
+      d.className = 'kp';
+      d.textContent = p;
+      kp.appendChild(d);
+    });
+    kpBlock.style.display = '';
+  } else {
+    kpBlock.style.display = 'none';
+  }
+
+  // 例题
+  const exRow = document.getElementById('card-examples');
+  const exBlock = document.getElementById('card-examples-block');
+  exRow.innerHTML = '';
+  if (node.examples && node.examples.length) {
+    node.examples.forEach(e => {
+      const t = document.createElement('span');
+      t.className = 'ex';
+      t.textContent = e;
+      exRow.appendChild(t);
+    });
+    exBlock.style.display = '';
+  } else {
+    exBlock.style.display = 'none';
+  }
 
   // 计算 prerequisites & unlocks
   const preEdges = cy.edges().filter(e => e.target().data('id') === node.id);
   const nextEdges = cy.edges().filter(e => e.source().data('id') === node.id);
-  document.getElementById('card-count').textContent = preEdges.length;
   document.getElementById('card-pre-k').textContent = preEdges.length;
   document.getElementById('card-next-k').textContent = nextEdges.length;
 
