@@ -1,0 +1,69 @@
+{
+  "dataset": "Open Curriculum CN",
+  "taxonomyVersion": "v3.2",
+  "generatedAt": "2026-07-22T20:30:00.000Z",
+  "publisher": "智身科技 / 智身研究院",
+  "sourceData": "中华人民共和国教育部 2022 义务教育课程方案和课程标准",
+  "dataSourceUrls": [
+    "https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html"
+  ],
+  "codesOnlySources": [],
+  "textIncludedSources": [
+    "cn-compulsory-2022"
+  ],
+  "counts": {
+    "concepts": 1906,
+    "edges": 4736,
+    "subjects": 14,
+    "domains": 105,
+    "clusters": 241,
+    "curricula": 1
+  },
+  "countsBySubject": {
+    "math": 337,
+    "chinese": 209,
+    "english": 296,
+    "physics": 121,
+    "chemistry": 62,
+    "biology": 71,
+    "history": 136,
+    "geography": 91,
+    "morality_law": 115,
+    "science": 121,
+    "info_tech": 97,
+    "art": 78,
+    "pe_health": 87,
+    "labor": 85
+  },
+  "countsByRel": {
+    "prerequisite": 1744,
+    "relates_to": 2628,
+    "progresses_to": 364
+  },
+  "files": {
+    "all_v3.2": "all_v3.2.json (主图数据, 1906 节点 + 4736 边)",
+    "clusters": "clusters.json (241 域聚类 + 人话 summary)",
+    "curriculum-standards": "curriculum-standards.json (1 课标框架, 1906 课标 topic)",
+    "manifest": "manifest.json (本文件)"
+  },
+  "excluded": [
+    "无 (V3.2 全量, 14 学科 1906 概念 100% 填充)"
+  ],
+  "dataQuality": {
+    "content_req_完整": "78.1%",
+    "academic_req_填充": "13.8%",
+    "bloom_覆盖": "100.0%",
+    "src_page_真实": "100.0%",
+    "key_points_填充": "100.0%",
+    "edge_reason_填充": "100.0%",
+    "assessment_prompt_填充": "100.0%",
+    "centrality_填充": "100.0%",
+    "type_填充": "100.0%",
+    "age_填充": "100.0%"
+  },
+  "isDAG": true,
+  "dagScope": "prerequisite edges only (relates_to 是软关联不需要 DAG)",
+  "prerequisiteEdgesCount": 1744,
+  "cycleCount": 0,
+  "license": "CC-BY-SA 4.0 (数据库 + 内容)"
+}

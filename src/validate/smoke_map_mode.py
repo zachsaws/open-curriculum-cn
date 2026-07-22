@@ -25,7 +25,7 @@ with sync_playwright() as p:
     page.on("console", lambda m: print(f"  console.{m.type}: {m.text[:200]}"))
     page.on("pageerror", lambda e: print(f"  pageerror: {str(e)[:200]}"))
 
-    page.goto("https://7s3jrfv6hekuu.space.mcode.cn/", wait_until="networkidle", timeout=60000)
+    page.goto("https://vnbke2vo1l8z4.space.mcode.cn/", wait_until="networkidle", timeout=60000)
     page.wait_for_timeout(3000)
     # 看加载状态
     state = page.evaluate("""() => ({
