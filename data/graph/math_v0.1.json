@@ -1,0 +1,2450 @@
+{
+ "version": "0.1.0",
+ "subject": "math",
+ "scope": "义教 1-9 年级 (课标 2022 版)",
+ "node_count": 76,
+ "edge_count": 77,
+ "nodes": [
+  {
+   "id": "math-1-num-recognition",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "认识 0-9 数字",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.digit",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161516",
+   "updated_at": "2026-07-22T11:48:58.161524"
+  },
+  {
+   "id": "math-1-count-20",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "20 以内数数",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.count",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161528",
+   "updated_at": "2026-07-22T11:48:58.161529"
+  },
+  {
+   "id": "math-1-count-100",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "100 以内数数",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.count",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161532",
+   "updated_at": "2026-07-22T11:48:58.161533"
+  },
+  {
+   "id": "math-1-add-single",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "10 以内加法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161535",
+   "updated_at": "2026-07-22T11:48:58.161535"
+  },
+  {
+   "id": "math-1-sub-single",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "10 以内减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161537",
+   "updated_at": "2026-07-22T11:48:58.161537"
+  },
+  {
+   "id": "math-1-add-20",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "20 以内进位加法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161539",
+   "updated_at": "2026-07-22T11:48:58.161540"
+  },
+  {
+   "id": "math-1-sub-20",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "20 以内退位减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161541",
+   "updated_at": "2026-07-22T11:48:58.161542"
+  },
+  {
+   "id": "math-1-shape-basic",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "认识基本图形(长方/正方/圆/三角)",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.shape",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161543",
+   "updated_at": "2026-07-22T11:48:58.161543"
+  },
+  {
+   "id": "math-1-position",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "上下前后左右方位",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.position",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161545",
+   "updated_at": "2026-07-22T11:48:58.161545"
+  },
+  {
+   "id": "math-1-time-clock",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "认识钟表时间",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.time",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161547",
+   "updated_at": "2026-07-22T11:48:58.161547"
+  },
+  {
+   "id": "math-1-money-basic",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 1,
+   "grade_end": 1,
+   "title": "认识人民币",
+   "title_en": "",
+   "domain": "comprehensive",
+   "subdomain": "comprehensive.money",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 1,
+   "estimated_minutes": 35,
+   "created_at": "2026-07-22T11:48:58.161549",
+   "updated_at": "2026-07-22T11:48:58.161549"
+  },
+  {
+   "id": "math-2-add-100",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 2,
+   "grade_end": 2,
+   "title": "100 以内加减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition_subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 2,
+   "estimated_minutes": 40,
+   "created_at": "2026-07-22T11:48:58.161551",
+   "updated_at": "2026-07-22T11:48:58.161552"
+  },
+  {
+   "id": "math-2-mul-intro",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 2,
+   "grade_end": 2,
+   "title": "乘法口诀(1-9)",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.multiplication",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 2,
+   "estimated_minutes": 40,
+   "created_at": "2026-07-22T11:48:58.161553",
+   "updated_at": "2026-07-22T11:48:58.161553"
+  },
+  {
+   "id": "math-2-div-intro",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 2,
+   "grade_end": 2,
+   "title": "除法初步(平均分)",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.division",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 2,
+   "estimated_minutes": 40,
+   "created_at": "2026-07-22T11:48:58.161555",
+   "updated_at": "2026-07-22T11:48:58.161555"
+  },
+  {
+   "id": "math-2-length-cm-m",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 2,
+   "grade_end": 2,
+   "title": "长度单位: 厘米/米",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.measurement",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 2,
+   "estimated_minutes": 40,
+   "created_at": "2026-07-22T11:48:58.161557",
+   "updated_at": "2026-07-22T11:48:58.161557"
+  },
+  {
+   "id": "math-2-mass-kg",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 2,
+   "grade_end": 2,
+   "title": "质量单位: 千克",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.measurement",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 2,
+   "estimated_minutes": 40,
+   "created_at": "2026-07-22T11:48:58.161558",
+   "updated_at": "2026-07-22T11:48:58.161559"
+  },
+  {
+   "id": "math-2-shape-2d",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 2,
+   "grade_end": 2,
+   "title": "平面图形周长",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.perimeter",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 2,
+   "estimated_minutes": 40,
+   "created_at": "2026-07-22T11:48:58.161560",
+   "updated_at": "2026-07-22T11:48:58.161561"
+  },
+  {
+   "id": "math-3-add-10000",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "万以内加减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition_subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161562",
+   "updated_at": "2026-07-22T11:48:58.161563"
+  },
+  {
+   "id": "math-3-mul-multi",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "多位数乘法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.multiplication",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161564",
+   "updated_at": "2026-07-22T11:48:58.161565"
+  },
+  {
+   "id": "math-3-div-multi",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "多位数除法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.division",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161566",
+   "updated_at": "2026-07-22T11:48:58.161567"
+  },
+  {
+   "id": "math-3-frac-intro",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "分数初步认识",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.fraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161568",
+   "updated_at": "2026-07-22T11:48:58.161569"
+  },
+  {
+   "id": "math-3-frac-equiv",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "分数的等价(约分/通分)",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.fraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161570",
+   "updated_at": "2026-07-22T11:48:58.161571"
+  },
+  {
+   "id": "math-3-frac-addsub",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "分数加减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition_subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161572",
+   "updated_at": "2026-07-22T11:48:58.161573"
+  },
+  {
+   "id": "math-3-dec-intro",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "小数初步认识",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.decimal",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161574",
+   "updated_at": "2026-07-22T11:48:58.161574"
+  },
+  {
+   "id": "math-3-dec-addsub",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 4,
+   "title": "小数加减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition_subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161576",
+   "updated_at": "2026-07-22T11:48:58.161576"
+  },
+  {
+   "id": "math-3-shape-angle",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "角的认识",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.angle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161578",
+   "updated_at": "2026-07-22T11:48:58.161578"
+  },
+  {
+   "id": "math-3-shape-peri",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "周长计算",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.perimeter",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161579",
+   "updated_at": "2026-07-22T11:48:58.161580"
+  },
+  {
+   "id": "math-3-shape-area",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "长方形/正方形面积",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.area",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161581",
+   "updated_at": "2026-07-22T11:48:58.161582"
+  },
+  {
+   "id": "math-3-mass-ton",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "质量单位: 吨",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.measurement",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161583",
+   "updated_at": "2026-07-22T11:48:58.161584"
+  },
+  {
+   "id": "math-3-yr-mo-d",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 3,
+   "grade_end": 3,
+   "title": "年/月/日关系",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.time",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 3,
+   "estimated_minutes": 45,
+   "created_at": "2026-07-22T11:48:58.161585",
+   "updated_at": "2026-07-22T11:48:58.161586"
+  },
+  {
+   "id": "math-4-dec-mult",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "小数乘法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.multiplication",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161587",
+   "updated_at": "2026-07-22T11:48:58.161588"
+  },
+  {
+   "id": "math-4-dec-div",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "小数除法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.division",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161589",
+   "updated_at": "2026-07-22T11:48:58.161590"
+  },
+  {
+   "id": "math-4-frac-addsub",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "分数加减法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition_subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161591",
+   "updated_at": "2026-07-22T11:48:58.161591"
+  },
+  {
+   "id": "math-4-frac-mult",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "分数乘法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.multiplication",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161593",
+   "updated_at": "2026-07-22T11:48:58.161593"
+  },
+  {
+   "id": "math-4-frac-div",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "分数除法",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.division",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161595",
+   "updated_at": "2026-07-22T11:48:58.161595"
+  },
+  {
+   "id": "math-4-ang-meas",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "角的度量",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.angle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161634",
+   "updated_at": "2026-07-22T11:48:58.161635"
+  },
+  {
+   "id": "math-4-tri-area",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "三角形面积",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.area",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161636",
+   "updated_at": "2026-07-22T11:48:58.161637"
+  },
+  {
+   "id": "math-4-para-area",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "平行四边形面积",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.area",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161638",
+   "updated_at": "2026-07-22T11:48:58.161639"
+  },
+  {
+   "id": "math-4-stat-bar",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "条形统计图",
+   "title_en": "",
+   "domain": "statistics",
+   "subdomain": "statistics.chart",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161640",
+   "updated_at": "2026-07-22T11:48:58.161641"
+  },
+  {
+   "id": "math-4-op-law",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 4,
+   "grade_end": 4,
+   "title": "运算定律(交换/结合/分配)",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.law",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 4,
+   "estimated_minutes": 50,
+   "created_at": "2026-07-22T11:48:58.161642",
+   "updated_at": "2026-07-22T11:48:58.161643"
+  },
+  {
+   "id": "math-5-dec-mult-adv",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "小数乘除法(综合)",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.multiplication_division",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161644",
+   "updated_at": "2026-07-22T11:48:58.161645"
+  },
+  {
+   "id": "math-5-frac-addsub-adv",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "异分母分数加减",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.addition_subtraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161646",
+   "updated_at": "2026-07-22T11:48:58.161647"
+  },
+  {
+   "id": "math-5-frac-mult-adv",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "分数乘除法(综合)",
+   "title_en": "",
+   "domain": "operation",
+   "subdomain": "operation.multiplication_division",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161649",
+   "updated_at": "2026-07-22T11:48:58.161650"
+  },
+  {
+   "id": "math-5-vol-cuboid",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "长方体正方体体积",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.volume",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161651",
+   "updated_at": "2026-07-22T11:48:58.161652"
+  },
+  {
+   "id": "math-5-frac-dec-rel",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "分数小数互化",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.fraction",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161653",
+   "updated_at": "2026-07-22T11:48:58.161654"
+  },
+  {
+   "id": "math-5-pos-neg",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "负数初步",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.negative",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161655",
+   "updated_at": "2026-07-22T11:48:58.161656"
+  },
+  {
+   "id": "math-5-eqn-simple",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "简易方程(用字母表示数)",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.expression",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161657",
+   "updated_at": "2026-07-22T11:48:58.161658"
+  },
+  {
+   "id": "math-5-mult-vol",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 5,
+   "grade_end": 5,
+   "title": "体积单位(立方米/立方分米/立方厘米)",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.measurement",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 55,
+   "created_at": "2026-07-22T11:48:58.161659",
+   "updated_at": "2026-07-22T11:48:58.161660"
+  },
+  {
+   "id": "math-6-frac-pct",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "百分数",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.percent",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161661",
+   "updated_at": "2026-07-22T11:48:58.161662"
+  },
+  {
+   "id": "math-6-ratio",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "比的意义",
+   "title_en": "",
+   "domain": "ratio",
+   "subdomain": "ratio.ratio",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161663",
+   "updated_at": "2026-07-22T11:48:58.161664"
+  },
+  {
+   "id": "math-6-prop",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "正比例反比例",
+   "title_en": "",
+   "domain": "ratio",
+   "subdomain": "ratio.proportion",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161666",
+   "updated_at": "2026-07-22T11:48:58.161667"
+  },
+  {
+   "id": "math-6-cir-circ",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "圆的周长",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.perimeter",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161668",
+   "updated_at": "2026-07-22T11:48:58.161668"
+  },
+  {
+   "id": "math-6-cir-area",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "圆的面积",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.area",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161670",
+   "updated_at": "2026-07-22T11:48:58.161670"
+  },
+  {
+   "id": "math-6-cyli-vol",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "圆柱体积",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.volume",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161672",
+   "updated_at": "2026-07-22T11:48:58.161672"
+  },
+  {
+   "id": "math-6-stat-mean",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "平均数",
+   "title_en": "",
+   "domain": "statistics",
+   "subdomain": "statistics.mean",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161674",
+   "updated_at": "2026-07-22T11:48:58.161674"
+  },
+  {
+   "id": "math-6-spatial",
+   "subject": "math",
+   "stage": "primary",
+   "grade_start": 6,
+   "grade_end": 6,
+   "title": "观察物体(三视图)",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.shape",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 60,
+   "created_at": "2026-07-22T11:48:58.161675",
+   "updated_at": "2026-07-22T11:48:58.161676"
+  },
+  {
+   "id": "math-7-rat-num",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "有理数",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.rational",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161677",
+   "updated_at": "2026-07-22T11:48:58.161678"
+  },
+  {
+   "id": "math-7-abs-val",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "绝对值",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.absolute",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161679",
+   "updated_at": "2026-07-22T11:48:58.161680"
+  },
+  {
+   "id": "math-7-alg-expr",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "代数式",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.expression",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161681",
+   "updated_at": "2026-07-22T11:48:58.161682"
+  },
+  {
+   "id": "math-7-eqn-1d",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "一元一次方程",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.equation",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161683",
+   "updated_at": "2026-07-22T11:48:58.161684"
+  },
+  {
+   "id": "math-7-ineq-1d",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "一元一次不等式",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.inequality",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161685",
+   "updated_at": "2026-07-22T11:48:58.161686"
+  },
+  {
+   "id": "math-7-int-geom",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "直线/射线/线段",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.line",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161687",
+   "updated_at": "2026-07-22T11:48:58.161688"
+  },
+  {
+   "id": "math-7-angle-rel",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 7,
+   "title": "角的关系(对顶/邻补/垂直)",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.angle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161689",
+   "updated_at": "2026-07-22T11:48:58.161690"
+  },
+  {
+   "id": "math-7-tri-congr",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 7,
+   "grade_end": 8,
+   "title": "三角形全等",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.triangle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 65,
+   "created_at": "2026-07-22T11:48:58.161691",
+   "updated_at": "2026-07-22T11:48:58.161692"
+  },
+  {
+   "id": "math-8-fn-linear",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "一次函数",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.function",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161693",
+   "updated_at": "2026-07-22T11:48:58.161693"
+  },
+  {
+   "id": "math-8-sys-eq-2",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "二元一次方程组",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.equation",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161695",
+   "updated_at": "2026-07-22T11:48:58.161695"
+  },
+  {
+   "id": "math-8-ineq-sys",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "不等式组",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.inequality",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161697",
+   "updated_at": "2026-07-22T11:48:58.161697"
+  },
+  {
+   "id": "math-8-quad-eqn",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "一元二次方程",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.equation",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161699",
+   "updated_at": "2026-07-22T11:48:58.161699"
+  },
+  {
+   "id": "math-8-sqrt",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "二次根式",
+   "title_en": "",
+   "domain": "number",
+   "subdomain": "number.irrational",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161700",
+   "updated_at": "2026-07-22T11:48:58.161701"
+  },
+  {
+   "id": "math-8-quad-fn",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "二次函数",
+   "title_en": "",
+   "domain": "algebra",
+   "subdomain": "algebra.function",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T11:48:58.161702",
+   "updated_at": "2026-07-22T11:48:58.161703"
+  },
+  {
+   "id": "math-8-para-quad",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 8,
+   "title": "平行四边形性质",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.parallelogram",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161704",
+   "updated_at": "2026-07-22T11:48:58.161705"
+  },
+  {
+   "id": "math-8-geom-prove",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 8,
+   "grade_end": 9,
+   "title": "几何证明初步",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.triangle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 70,
+   "created_at": "2026-07-22T11:48:58.161706",
+   "updated_at": "2026-07-22T11:48:58.161707"
+  },
+  {
+   "id": "math-9-similar-tri",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "相似三角形",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.triangle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T11:48:58.161708",
+   "updated_at": "2026-07-22T11:48:58.161709"
+  },
+  {
+   "id": "math-9-circle-thm",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "圆定理(切线/弦/角)",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.circle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T11:48:58.161710",
+   "updated_at": "2026-07-22T11:48:58.161711"
+  },
+  {
+   "id": "math-9-trig-intro",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "三角函数初步",
+   "title_en": "",
+   "domain": "geometry",
+   "subdomain": "geometry.angle",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T11:48:58.161712",
+   "updated_at": "2026-07-22T11:48:58.161712"
+  },
+  {
+   "id": "math-9-stat-stoch",
+   "subject": "math",
+   "stage": "junior_high",
+   "grade_start": 9,
+   "grade_end": 9,
+   "title": "统计与概率综合",
+   "title_en": "",
+   "domain": "statistics",
+   "subdomain": "statistics.probability",
+   "core_literacy": [],
+   "textbook_versions": [
+    "人教版",
+    "北师大版"
+   ],
+   "example": "",
+   "description": "",
+   "source_refs": [
+    "2022-math-curriculum",
+    "preseed-v0.1"
+   ],
+   "tags": [],
+   "difficulty": 5,
+   "estimated_minutes": 75,
+   "created_at": "2026-07-22T11:48:58.161714",
+   "updated_at": "2026-07-22T11:48:58.161714"
+  }
+ ],
+ "edges": [
+  [
+   "math-1-num-recognition",
+   "math-1-count-20",
+   1
+  ],
+  [
+   "math-1-count-20",
+   "math-1-count-100",
+   1
+  ],
+  [
+   "math-1-num-recognition",
+   "math-1-add-single",
+   1
+  ],
+  [
+   "math-1-add-single",
+   "math-1-sub-single",
+   1
+  ],
+  [
+   "math-1-add-single",
+   "math-1-add-20",
+   1
+  ],
+  [
+   "math-1-add-20",
+   "math-1-sub-20",
+   1
+  ],
+  [
+   "math-1-count-100",
+   "math-2-add-100",
+   1
+  ],
+  [
+   "math-2-add-100",
+   "math-2-mul-intro",
+   1
+  ],
+  [
+   "math-2-add-100",
+   "math-2-div-intro",
+   1
+  ],
+  [
+   "math-2-mul-intro",
+   "math-2-div-intro",
+   1
+  ],
+  [
+   "math-1-shape-basic",
+   "math-2-shape-2d",
+   1
+  ],
+  [
+   "math-2-mul-intro",
+   "math-3-mul-multi",
+   1
+  ],
+  [
+   "math-2-div-intro",
+   "math-3-div-multi",
+   1
+  ],
+  [
+   "math-3-div-multi",
+   "math-3-frac-intro",
+   1
+  ],
+  [
+   "math-3-frac-intro",
+   "math-3-frac-equiv",
+   1
+  ],
+  [
+   "math-3-frac-equiv",
+   "math-3-frac-addsub",
+   1
+  ],
+  [
+   "math-2-add-100",
+   "math-3-add-10000",
+   1
+  ],
+  [
+   "math-3-add-10000",
+   "math-3-dec-addsub",
+   1
+  ],
+  [
+   "math-3-mul-multi",
+   "math-3-dec-addsub",
+   1
+  ],
+  [
+   "math-1-shape-basic",
+   "math-3-shape-angle",
+   1
+  ],
+  [
+   "math-2-shape-2d",
+   "math-3-shape-peri",
+   1
+  ],
+  [
+   "math-3-shape-peri",
+   "math-3-shape-area",
+   1
+  ],
+  [
+   "math-2-mass-kg",
+   "math-3-mass-ton",
+   1
+  ],
+  [
+   "math-3-dec-addsub",
+   "math-4-dec-mult",
+   1
+  ],
+  [
+   "math-3-dec-addsub",
+   "math-4-dec-div",
+   1
+  ],
+  [
+   "math-3-frac-addsub",
+   "math-4-frac-mult",
+   1
+  ],
+  [
+   "math-3-frac-addsub",
+   "math-4-frac-div",
+   1
+  ],
+  [
+   "math-3-shape-angle",
+   "math-4-ang-meas",
+   1
+  ],
+  [
+   "math-3-shape-area",
+   "math-4-tri-area",
+   1
+  ],
+  [
+   "math-3-shape-area",
+   "math-4-para-area",
+   1
+  ],
+  [
+   "math-3-add-10000",
+   "math-4-op-law",
+   1
+  ],
+  [
+   "math-4-dec-mult",
+   "math-5-dec-mult-adv",
+   1
+  ],
+  [
+   "math-4-dec-div",
+   "math-5-dec-mult-adv",
+   1
+  ],
+  [
+   "math-4-frac-addsub",
+   "math-5-frac-addsub-adv",
+   1
+  ],
+  [
+   "math-4-frac-mult",
+   "math-5-frac-mult-adv",
+   1
+  ],
+  [
+   "math-3-shape-peri",
+   "math-5-vol-cuboid",
+   1
+  ],
+  [
+   "math-3-shape-area",
+   "math-5-vol-cuboid",
+   1
+  ],
+  [
+   "math-3-frac-intro",
+   "math-5-frac-dec-rel",
+   1
+  ],
+  [
+   "math-4-dec-mult",
+   "math-5-frac-dec-rel",
+   1
+  ],
+  [
+   "math-4-op-law",
+   "math-5-eqn-simple",
+   1
+  ],
+  [
+   "math-2-mass-kg",
+   "math-5-mult-vol",
+   1
+  ],
+  [
+   "math-4-frac-mult",
+   "math-6-frac-pct",
+   1
+  ],
+  [
+   "math-4-dec-mult",
+   "math-6-frac-pct",
+   1
+  ],
+  [
+   "math-5-frac-dec-rel",
+   "math-6-ratio",
+   1
+  ],
+  [
+   "math-4-frac-mult",
+   "math-6-ratio",
+   1
+  ],
+  [
+   "math-6-ratio",
+   "math-6-prop",
+   1
+  ],
+  [
+   "math-3-shape-peri",
+   "math-6-cir-circ",
+   1
+  ],
+  [
+   "math-4-tri-area",
+   "math-6-cir-area",
+   1
+  ],
+  [
+   "math-5-vol-cuboid",
+   "math-6-cyli-vol",
+   1
+  ],
+  [
+   "math-3-add-10000",
+   "math-6-stat-mean",
+   1
+  ],
+  [
+   "math-1-shape-basic",
+   "math-6-spatial",
+   1
+  ],
+  [
+   "math-4-dec-mult",
+   "math-7-rat-num",
+   1
+  ],
+  [
+   "math-5-frac-dec-rel",
+   "math-7-rat-num",
+   1
+  ],
+  [
+   "math-5-eqn-simple",
+   "math-7-rat-num",
+   1
+  ],
+  [
+   "math-7-rat-num",
+   "math-7-abs-val",
+   1
+  ],
+  [
+   "math-4-op-law",
+   "math-7-alg-expr",
+   1
+  ],
+  [
+   "math-5-eqn-simple",
+   "math-7-eqn-1d",
+   1
+  ],
+  [
+   "math-7-alg-expr",
+   "math-7-eqn-1d",
+   1
+  ],
+  [
+   "math-7-eqn-1d",
+   "math-7-ineq-1d",
+   1
+  ],
+  [
+   "math-1-shape-basic",
+   "math-7-int-geom",
+   1
+  ],
+  [
+   "math-3-shape-angle",
+   "math-7-angle-rel",
+   1
+  ],
+  [
+   "math-7-angle-rel",
+   "math-7-tri-congr",
+   1
+  ],
+  [
+   "math-7-int-geom",
+   "math-7-tri-congr",
+   1
+  ],
+  [
+   "math-7-eqn-1d",
+   "math-8-sys-eq-2",
+   1
+  ],
+  [
+   "math-7-ineq-1d",
+   "math-8-ineq-sys",
+   1
+  ],
+  [
+   "math-7-alg-expr",
+   "math-8-fn-linear",
+   1
+  ],
+  [
+   "math-7-eqn-1d",
+   "math-8-fn-linear",
+   1
+  ],
+  [
+   "math-7-eqn-1d",
+   "math-8-quad-eqn",
+   1
+  ],
+  [
+   "math-7-tri-congr",
+   "math-8-para-quad",
+   1
+  ],
+  [
+   "math-7-tri-congr",
+   "math-8-geom-prove",
+   1
+  ],
+  [
+   "math-7-tri-congr",
+   "math-9-similar-tri",
+   1
+  ],
+  [
+   "math-8-para-quad",
+   "math-9-similar-tri",
+   1
+  ],
+  [
+   "math-8-quad-eqn",
+   "math-8-quad-fn",
+   1
+  ],
+  [
+   "math-7-int-geom",
+   "math-9-circle-thm",
+   1
+  ],
+  [
+   "math-8-geom-prove",
+   "math-9-trig-intro",
+   1
+  ],
+  [
+   "math-7-tri-congr",
+   "math-9-trig-intro",
+   1
+  ],
+  [
+   "math-8-fn-linear",
+   "math-9-stat-stoch",
+   1
+  ]
+ ],
+ "generated_at": "2026-07-22T11:48:58.161726",
+ "license": "CC-BY-SA 4.0"
+}

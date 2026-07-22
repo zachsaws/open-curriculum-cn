@@ -1,0 +1,13 @@
+.venv/
+web/node_modules/
+web/package*.json
+*.log
+__pycache__/
+*.pyc
+.DS_Store
+data/parsed/.DS_Store
+data/raw/.DS_Store
+data/logs/
+data/screenshots/
+data/parsed/*_ocr.json
+data/raw/
