@@ -19,6 +19,7 @@ const PALETTE = {
 // SUBJECT_CN 已弃用 — 改用 window.tSubject() (单一真源: i18n.js SUBJECT_CN_I18N)
 
 let DATA = null;
+window.DATA = null;
 let GROUPS = [];
 let GCOL = [];
 let cy;
@@ -28,6 +29,10 @@ window._currentNode = null;
 // 状态: 标签显示 / 根节点高亮 (供 applyI18n 决定按钮文字)
 window._labelsOn = false;
 window._rootsHighlighted = false;
+// 概念地图模式
+let mapMode = false;
+let mapBranchOnly = true;
+let mapSelectedNode = null; // 树中当前选中的概念 id
 
 async function loadData() {
   loadingMsg.textContent = window.t ? window.t('loading') : '加载知识图谱...';
@@ -35,6 +40,7 @@ async function loadData() {
     const res = await fetch('./data/graph.json');
     if (!res.ok) throw new Error('graph.json 不存在');
     DATA = await res.json();
+    window.DATA = DATA;
     console.log('Loaded', DATA.nodes.length, 'nodes,', DATA.edges.length, 'edges');
   } catch (e) {
     console.error(e);
@@ -376,6 +382,35 @@ function initGraph() {
           'label': 'data(title)',
           'font-size': '12px',
           'z-index': 50,
+        },
+      },
+      // 概念地图模式: 分支淡化
+      {
+        selector: 'node.branch-dim',
+        style: { 'opacity': 0.08 },
+      },
+      {
+        selector: 'edge.branch-dim',
+        style: { 'opacity': 0.03 },
+      },
+      {
+        selector: 'node.branch-hl',
+        style: {
+          'border-color': '#7bc96f',
+          'border-width': 3,
+          'border-opacity': 1,
+          'label': 'data(title)',
+          'font-size': '13px',
+          'z-index': 100,
+        },
+      },
+      {
+        selector: 'edge.branch-hl',
+        style: {
+          'line-color': '#7bc96f',
+          'width': 1.5,
+          'opacity': 0.9,
+          'z-index': 90,
         },
       },
     ],
@@ -947,10 +982,242 @@ document.getElementById('reLayout').onclick = relayout;
 // 切换根节点高亮
 document.getElementById('toggleRoots').onclick = toggleRootsHighlight;
 
+// ============================================================
+// 概念地图模式 — 左侧树状导航 (学科→学段→领域→概念)
+// ============================================================
+
+/** 学科 stage → 4 学段名 (按 grade_start) */
+function stageName(g) {
+  if (g <= 2) return [1, 2];    // 1-2 年级
+  if (g <= 4) return [3, 4];    // 3-4 年级
+  if (g <= 6) return [5, 6];    // 5-6 年级
+  return [7, 8, 9];             // 7-9 年级
+}
+
+/** 构建学科→学段→领域→概念 的树状结构 */
+function buildTreeData() {
+  // 学科顺序按 14 学科固定顺序
+  const SUBJ_ORDER = ['math','chinese','english','physics','chemistry','biology',
+    'history','geography','morality_law','science','info_tech','art','pe_health','labor'];
+  const tree = {};
+  for (const subj of SUBJ_ORDER) {
+    tree[subj] = { code: subj, name: window.tSubject(subj), stages: {} };
+  }
+  for (const n of DATA.nodes) {
+    const subj = n.subject;
+    if (!tree[subj]) continue;
+    const g = n.grade_start || 1;
+    const stgKey = stageName(g).join('-');
+    if (!tree[subj].stages[stgKey]) {
+      tree[subj].stages[stgKey] = { key: stgKey, grades: stageName(g), domains: {} };
+    }
+    const dom = n.domain || '其他';
+    if (!tree[subj].stages[stgKey].domains[dom]) {
+      tree[subj].stages[stgKey].domains[dom] = { name: dom, concepts: [] };
+    }
+    tree[subj].stages[stgKey].domains[dom].concepts.push(n);
+  }
+  return tree;
+}
+
+/** 渲染树到 #map-tree */
+function renderMapTree(expandAll = false) {
+  const tree = buildTreeData();
+  const container = document.getElementById('map-tree');
+  container.innerHTML = '';
+  const html = [];
+  for (const subj of Object.keys(tree)) {
+    const st = tree[subj];
+    const subjCount = Object.values(st.stages).reduce((a, s) =>
+      a + Object.values(s.domains).reduce((a2, d) => a2 + d.concepts.length, 0), 0);
+    const subjId = 'subj-' + subj;
+    html.push(rowHtml(subjId, st.name, subj, subjCount, 's', expandAll, true));
+    html.push(`<div class="tn-children ${expandAll ? 'open' : ''}" data-parent="${subjId}">`);
+    for (const stgKey of Object.keys(st.stages)) {
+      const s = st.stages[stgKey];
+      const stgId = `${subjId}-stg-${stgKey}`;
+      const stgCount = Object.values(s.domains).reduce((a, d) => a + d.concepts.length, 0);
+      const stgLabel = window.t('map_subtitle').includes('Subject') ? `G${s.grades.join('–')}` : `${s.grades.join('-')}年级`;
+      html.push(rowHtml(stgId, stgLabel, subj, stgCount, 'stg', expandAll));
+      html.push(`<div class="tn-children ${expandAll ? 'open' : ''}" data-parent="${stgId}">`);
+      for (const domName of Object.keys(s.domains)) {
+        const d = s.domains[domName];
+        const domId = `${stgId}-d-${cssId(domName)}`;
+        html.push(rowHtml(domId, domName, subj, d.concepts.length, 'd', expandAll));
+        html.push(`<div class="tn-children ${expandAll ? 'open' : ''}" data-parent="${domId}">`);
+        for (const c of d.concepts) {
+          const cId = `c-${c.id}`;
+          const selectedCls = (mapSelectedNode === c.id) ? ' selected' : '';
+          html.push(`<div class="tn-row c${selectedCls}" data-id="${c.id}" data-subject="${subj}" tabindex="0" role="treeitem">
+            <span class="tn-toggle leaf"></span>
+            <span class="tn-dot" style="background:${PALETTE[subj] || '#888'}"></span>
+            <span class="tn-label" title="${escapeHtml(c.title)}">${escapeHtml(c.title)}</span>
+          </div>`);
+        }
+        html.push(`</div>`);
+      }
+      html.push(`</div>`);
+    }
+    html.push(`</div>`);
+  }
+  container.innerHTML = html.join('');
+  bindMapTreeEvents();
+}
+
+function cssId(s) { return String(s).replace(/[^a-zA-Z0-9_-]/g, '_'); }
+
+function rowHtml(id, label, subj, count, cls, expandAll, isSubj = false) {
+  return `<div class="tn-row ${cls}" data-toggle="${id}" tabindex="0" role="treeitem" aria-expanded="${expandAll}">
+    <span class="tn-toggle">${isSubj ? (expandAll ? '▾' : '▸') : (expandAll ? '▾' : '▸')}</span>
+    ${isSubj ? `<span class="tn-dot" style="background:${PALETTE[subj] || '#888'}"></span>` : ''}
+    <span class="tn-label">${escapeHtml(label)}</span>
+    <span class="tn-count">${count}</span>
+  </div>`;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function bindMapTreeEvents() {
+  // 折叠/展开
+  document.querySelectorAll('#map-tree .tn-row[data-toggle]').forEach(r => {
+    r.addEventListener('click', e => {
+      const id = r.dataset.toggle;
+      const children = document.querySelector(`#map-tree .tn-children[data-parent="${id}"]`);
+      if (!children) return;
+      const isOpen = children.classList.toggle('open');
+      const tg = r.querySelector('.tn-toggle');
+      if (tg) tg.textContent = isOpen ? '▾' : '▸';
+      r.setAttribute('aria-expanded', isOpen);
+    });
+  });
+  // 概念点击 → 飞图 + 高亮
+  document.querySelectorAll('#map-tree .tn-row.c').forEach(r => {
+    r.addEventListener('click', e => {
+      e.stopPropagation();
+      const id = r.dataset.id;
+      selectMapNode(id);
+    });
+    r.addEventListener('dblclick', e => {
+      e.stopPropagation();
+      const id = r.dataset.id;
+      const ele = cy.getElementById(id);
+      if (ele.length) flyTo(ele, 600);
+    });
+  });
+}
+
+function selectMapNode(id) {
+  mapSelectedNode = id;
+  // 更新树的 selected 样式
+  document.querySelectorAll('#map-tree .tn-row.c').forEach(r => {
+    r.classList.toggle('selected', r.dataset.id === id);
+  });
+  // 滚到视口
+  const row = document.querySelector(`#map-tree .tn-row.c[data-id="${id}"]`);
+  if (row) row.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  // 高亮图上节点
+  highlightOnMap(id);
+  // 更新状态栏
+  const node = DATA.nodes.find(n => n.id === id);
+  if (node) {
+    document.getElementById('map-status').innerHTML =
+      `<b style="color:${PALETTE[node.subject] || '#fff'}">${escapeHtml(node.title)}</b> · ${window.t('map_focus')}`;
+  }
+}
+
+function flyTo(ele, duration = 400) {
+  if (!ele.length) return;
+  const pos = ele.position();
+  cy.animate({
+    center: { x: pos.x, y: pos.y },
+    zoom: Math.max(cy.zoom(), 1.2),
+  }, { duration });
+}
+
+function highlightOnMap(id) {
+  if (!cy) return;
+  // 计算该节点在 (主题/学段/领域) 分支的所有节点 id
+  const branch = computeBranch(id);
+  // 重置样式
+  cy.nodes().removeClass('branch-dim branch-hl');
+  cy.edges().removeClass('branch-dim branch-hl');
+  if (mapBranchOnly) {
+    cy.nodes().not(branch).addClass('branch-dim');
+    cy.edges().forEach(e => {
+      const inBranch = branch.has(e.data('from')) && branch.has(e.data('to'));
+      if (!inBranch) e.addClass('branch-dim');
+    });
+  }
+  // 高亮选中节点 + 直接先决/后继
+  const ele = cy.getElementById(id);
+  if (ele.length) {
+    ele.addClass('branch-hl');
+    if (!mapBranchOnly) {
+      ele.connectedEdges().addClass('branch-hl');
+    }
+  }
+}
+
+function computeBranch(id) {
+  // 主题/学段/领域 同分支 = 同 subject + 同 stageKey + 同 domain
+  const target = DATA.nodes.find(n => n.id === id);
+  if (!target) return new Set([id]);
+  const stgKey = stageName(target.grade_start || 1).join('-');
+  const branch = new Set();
+  for (const n of DATA.nodes) {
+    if (n.subject === target.subject &&
+        stageName(n.grade_start || 1).join('-') === stgKey &&
+        n.domain === target.domain) {
+      branch.add(n.id);
+    }
+  }
+  return branch;
+}
+
+/** 进入/退出 概念地图模式 */
+function toggleMapMode() {
+  mapMode = !mapMode;
+  document.body.classList.toggle('map-mode', mapMode);
+  const btn = document.getElementById('toggleMode');
+  if (mapMode) {
+    btn.textContent = window.t('btn_mode_force');
+    btn.setAttribute('aria-pressed', 'true');
+    btn.setAttribute('data-i18n', 'btn_mode_force');
+    // 重新调整 cy 容器大小
+    setTimeout(() => { if (cy) cy.resize(); }, 50);
+    renderMapTree(false);
+  } else {
+    btn.textContent = window.t('btn_mode_map');
+    btn.setAttribute('aria-pressed', 'false');
+    btn.setAttribute('data-i18n', 'btn_mode_map');
+    // 清除高亮
+    if (cy) {
+      cy.nodes().removeClass('branch-dim branch-hl');
+      cy.edges().removeClass('branch-dim branch-hl');
+      setTimeout(() => cy.resize(), 50);
+    }
+  }
+}
+
+document.getElementById('toggleMode').onclick = toggleMapMode;
+document.getElementById('mapExpandAll').onclick = () => renderMapTree(true);
+document.getElementById('mapCollapseAll').onclick = () => renderMapTree(false);
+document.getElementById('mapBranchOnly').onclick = function() {
+  mapBranchOnly = !mapBranchOnly;
+  this.setAttribute('aria-pressed', mapBranchOnly);
+  this.textContent = window.t(mapBranchOnly ? 'map_branch_only' : 'map_show_all');
+  this.setAttribute('data-i18n', mapBranchOnly ? 'map_branch_only' : 'map_show_all');
+  if (mapSelectedNode) highlightOnMap(mapSelectedNode);
+};
+
 // 暴露关键函数到 window, 供 i18n.js applyI18n 调用
 // (i18n.js 是非模块 script, 看不到 module 内的 buildLegend/showCard)
 window.buildLegend = buildLegend;
 window.showCard = showCard;
 window.flyToSubject = flyToSubject;
+window.toggleMapMode = toggleMapMode;
+window.renderMapTree = renderMapTree;
 
 loadData();
