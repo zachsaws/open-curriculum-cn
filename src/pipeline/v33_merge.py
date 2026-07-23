@@ -27,6 +27,7 @@ LLM_SUBJECTS = {
     'physics': 'data/graph/physics_v33_llm.json',  # 121/121 V3.3.3
     'labor': 'data/graph/labor_v33_llm.json',  # 85/85 V3.3.3
     'art': 'data/graph/art_v33_llm.json',  # 78/78 V3.3.3
+    'chemistry': 'data/graph/chemistry_v33_llm.json',  # 62/62 V3.3.3 (V3.3 最后一个学科)
 }
 
 llm_map = {}  # id -> {description, assessment_prompt}
