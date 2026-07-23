@@ -1,0 +1,3046 @@
+[
+  {
+    "id": "SC_S1_LS_01",
+    "title": "认识周围的植物",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 1,
+    "summary": "观察周围常见植物,认识植物主要组成部分",
+    "content_req": "植物能制造和获取养分来维持自身的生存。观察周围常见植物,认识植物主要组成部分",
+    "academic_req": null,
+    "key_points": [
+      "植物能制造和获取养分来维持自身的生存",
+      "认识植物主要组成部分",
+      "观察周围常见植物"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_LS_02",
+    "title": "认识常见的动物",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "动物",
+    "difficulty": 1,
+    "summary": "观察常见动物,描述其特征",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察常见动物,描述其特征",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "描述其特征",
+      "观察常见动物"
+    ],
+    "bloom": [
+      "能",
+      "知道",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_LS_03",
+    "title": "认识自己的身体",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "人体",
+    "difficulty": 1,
+    "summary": "认识自己身体的主要部位",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。认识自己身体的主要部位",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "认识自己身体的主要部位"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_LS_04",
+    "title": "养成良好卫生习惯",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "健康",
+    "difficulty": 1,
+    "summary": "养成勤洗手等良好卫生习惯",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。养成勤洗手等良好卫生习惯",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "养成勤洗手等良好卫生习惯"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_LS_05",
+    "title": "植物的生长发育",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "植物生长",
+    "difficulty": 2,
+    "summary": "观察植物从种子到成熟的过程",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察植物从种子到成熟的过程",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "观察植物从种子到成熟的过程"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_MS_01",
+    "title": "认识物体特征",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物质特征",
+    "difficulty": 1,
+    "summary": "用感官观察物体,描述颜色/形状/大小",
+    "content_req": "物质变 | @知道有些物体的形状或大小发生了变化，如被切成小。用感官观察物体,描述颜色/形状/大小",
+    "academic_req": "能比较、分析植物〈花的颜色，叶的颜色、大小与形状等方面) 和",
+    "key_points": [
+      "物质变 | @知道有些物体的形状或大小发生了变化",
+      "描述颜色/形状/大小",
+      "如被切成小",
+      "用感官观察物体"
+    ],
+    "bloom": [
+      "知道",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_MS_02",
+    "title": "比较物体轻重大小",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "测量",
+    "difficulty": 1,
+    "summary": "用简单工具比较物体的轻重/大小",
+    "content_req": "物质变 | @知道有些物体的形状或大小发生了变化，如被切成小。用简单工具比较物体的轻重/大小",
+    "academic_req": "能比较、分析植物〈花的颜色，叶的颜色、大小与形状等方面) 和",
+    "key_points": [
+      "物质变 | @知道有些物体的形状或大小发生了变化",
+      "用简单工具比较物体的轻重/大小",
+      "如被切成小"
+    ],
+    "bloom": [
+      "知道",
+      "比较"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_MS_03",
+    "title": "水的基本特征",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "水",
+    "difficulty": 1,
+    "summary": "观察水,了解水的无色无味透明",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察水,了解水的无色无味透明",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "了解水的无色无味透明"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_MS_04",
+    "title": "空气的存在",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "空气",
+    "difficulty": 1,
+    "summary": "通过实验证明空气的存在",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。通过实验证明空气的存在",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "通过实验证明空气的存在"
+    ],
+    "bloom": [
+      "能",
+      "知道",
+      "实验"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_ES_01",
+    "title": "观察天气",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "地球与宇宙",
+    "subdomain": "天气",
+    "difficulty": 1,
+    "summary": "观察并记录天气变化",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察并记录天气变化",
+    "academic_req": "能说出常见的天气现象，知道天气变化的影响，认识到土壤为众多",
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "观察并记录天气变化"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_ES_02",
+    "title": "太阳与月亮的观察",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "地球与宇宙",
+    "subdomain": "天体",
+    "difficulty": 1,
+    "summary": "观察太阳和月亮的形状变化",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。观察太阳和月亮的形状变化",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "观察太阳和月亮的形状变化"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_ES_03",
+    "title": "四季变化",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "地球与宇宙",
+    "subdomain": "季节",
+    "difficulty": 1,
+    "summary": "感受四季变化及对生活的影响",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。感受四季变化及对生活的影响",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "感受四季变化及对生活的影响"
+    ],
+    "bloom": [
+      "能",
+      "知道",
+      "感受"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_TE_01",
+    "title": "制作简单模型",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "技术与工程",
+    "subdomain": "动手",
+    "difficulty": 2,
+    "summary": "利用身边材料制作简单模型",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。利用身边材料制作简单模型",
+    "academic_req": "能借助动画演示或动手制作简单模型，模拟地球、月球和太阳的相",
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "利用身边材料制作简单模型"
+    ],
+    "bloom": [
+      "能",
+      "知道",
+      "制作"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S1_TE_02",
+    "title": "使用简单工具",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "技术与工程",
+    "subdomain": "工具",
+    "difficulty": 1,
+    "summary": "安全使用剪刀/尺子等简单工具",
+    "content_req": "知道动能、声能、光能、热能、电能、磁能等都是能的。安全使用剪刀/尺子等简单工具",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "安全使用剪刀/尺子等简单工具"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_S2_LS_01",
+    "title": "植物的一生",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 2,
+    "summary": "了解植物从种子萌发到结种的一生",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。了解植物从种子萌发到结种的一生",
+    "academic_req": null,
+    "key_points": [
+      "了解植物从种子萌发到结种的一生",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_LS_02",
+    "title": "动物的生命周期",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "动物",
+    "difficulty": 2,
+    "summary": "了解动物的生命周期(蚕/蝴蝶)",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。了解动物的生命周期(蚕/蝴蝶)",
+    "academic_req": null,
+    "key_points": [
+      "了解动物的生命周期(蚕/蝴蝶)",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_LS_03",
+    "title": "人体的呼吸/消化/循环",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "人体",
+    "difficulty": 3,
+    "summary": "初步了解人体呼吸/消化/循环系统",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。初步了解人体呼吸/消化/循环系统",
+    "academic_req": null,
+    "key_points": [
+      "初步了解人体呼吸/消化/循环系统",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_LS_04",
+    "title": "生物与环境",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "生态",
+    "difficulty": 2,
+    "summary": "认识生物与环境的相互关系",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。认识生物与环境的相互关系",
+    "academic_req": "认识生物与环境之间的密切关系，形成人与自然和谐共生的观念。",
+    "key_points": [
+      "认识生物与环境的相互关系",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_LS_05",
+    "title": "保护生物多样性",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "生态",
+    "difficulty": 2,
+    "summary": "认识生物多样性的价值",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。认识生物多样性的价值",
+    "academic_req": null,
+    "key_points": [
+      "认识生物多样性的价值",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_MS_01",
+    "title": "固体液体气体的特征",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "物态",
+    "difficulty": 2,
+    "summary": "认识固体/液体/气体的特征",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。认识固体/液体/气体的特征",
+    "academic_req": null,
+    "key_points": [
+      "认识固体/液体/气体的特征",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_MS_02",
+    "title": "物质的变化",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "变化",
+    "difficulty": 2,
+    "summary": "区分物理变化和化学变化",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。区分物理变化和化学变化",
+    "academic_req": null,
+    "key_points": [
+      "技术与工程创 | 国古代技术与工程方面的典型案例",
+      "区分物理变化和化学变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_MS_03",
+    "title": "溶解现象",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "溶解",
+    "difficulty": 2,
+    "summary": "观察物质在水中的溶解现象",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。观察物质在水中的溶解现象",
+    "academic_req": null,
+    "key_points": [
+      "技术与工程创 | 国古代技术与工程方面的典型案例",
+      "观察物质在水中的溶解现象"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_MS_04",
+    "title": "声音的产生与传播",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "声",
+    "difficulty": 3,
+    "summary": "探究声音的产生和传播",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。探究声音的产生和传播",
+    "academic_req": null,
+    "key_points": [
+      "技术与工程创 | 国古代技术与工程方面的典型案例",
+      "探究声音的产生和传播"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_MS_05",
+    "title": "光的传播与反射",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "光",
+    "difficulty": 3,
+    "summary": "探究光的传播和反射",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。探究光的传播和反射",
+    "academic_req": null,
+    "key_points": [
+      "技术与工程创 | 国古代技术与工程方面的典型案例",
+      "探究光的传播和反射"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_ES_01",
+    "title": "地球的形状与运动",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "地球与宇宙",
+    "subdomain": "地球",
+    "difficulty": 3,
+    "summary": "了解地球是球形,自转和公转",
+    "content_req": "力是改变物体运动状态的原因。了解地球是球形,自转和公转",
+    "academic_req": null,
+    "key_points": [
+      "了解地球是球形",
+      "力是改变物体运动状态的原因",
+      "自转和公转"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_ES_02",
+    "title": "地球上的水",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "地球与宇宙",
+    "subdomain": "水循环",
+    "difficulty": 2,
+    "summary": "了解水的三态变化和水循环",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。了解水的三态变化和水循环",
+    "academic_req": null,
+    "key_points": [
+      "了解水的三态变化和水循环",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_ES_03",
+    "title": "岩石与土壤",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "地球与宇宙",
+    "subdomain": "地质",
+    "difficulty": 2,
+    "summary": "观察常见岩石和土壤",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。观察常见岩石和土壤",
+    "academic_req": "能在教师指导下，通过口述、画图等方式，交流对天气和土壤的观",
+    "key_points": [
+      "技术与工程创 | 国古代技术与工程方面的典型案例",
+      "观察常见岩石和土壤"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S2_TE_01",
+    "title": "设计与制作",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "技术与工程",
+    "subdomain": "工程",
+    "difficulty": 2,
+    "summary": "经历简单的工程设计过程",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。经历简单的工程设计过程",
+    "academic_req": null,
+    "key_points": [
+      "经历简单的工程设计过程",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "经历",
+      "设计"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_S3_LS_01",
+    "title": "微生物",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "微生物",
+    "difficulty": 2,
+    "summary": "认识细菌/病毒/真菌等微生物",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识细菌/病毒/真菌等微生物",
+    "academic_req": null,
+    "key_points": [
+      "认识细菌/病毒/真菌等微生物",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_LS_02",
+    "title": "遗传与进化",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "初步了解遗传现象和生物进化",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。初步了解遗传现象和生物进化",
+    "academic_req": null,
+    "key_points": [
+      "初步了解遗传现象和生物进化",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_LS_03",
+    "title": "生态系统",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生态",
+    "difficulty": 3,
+    "summary": "理解生态系统的组成和食物链",
+    "content_req": "生态系统由生物与非生物环境共同组成。理解生态系统的组成和食物链",
+    "academic_req": "能综合细胞、 组织、器官、系统、个体、种群、群游、生态系统、",
+    "key_points": [
+      "理解生态系统的组成和食物链",
+      "生态系统由生物与非生物环境共同组成"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_MS_01",
+    "title": "物质的结构",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "微观",
+    "difficulty": 3,
+    "summary": "初步了解物质由微粒构成",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。初步了解物质由微粒构成",
+    "academic_req": null,
+    "key_points": [
+      "初步了解物质由微粒构成",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_MS_02",
+    "title": "化学反应",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "化学变化",
+    "difficulty": 3,
+    "summary": "观察化学反应,了解质量守恒",
+    "content_req": "化学反应遵守质量守恒定律。观察化学反应,了解质量守恒",
+    "academic_req": "识化学反应，能辨析常见的化合、分解、置换、复分解反应及氧化反应",
+    "key_points": [
+      "了解质量守恒",
+      "化学反应遵守质量守恒定律",
+      "观察化学反应"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_MS_03",
+    "title": "能量的多种形式",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "能量",
+    "difficulty": 3,
+    "summary": "认识热/光/电/声/磁等能量形式",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识热/光/电/声/磁等能量形式",
+    "academic_req": null,
+    "key_points": [
+      "认识热/光/电/声/磁等能量形式",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_MS_04",
+    "title": "简单电路",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "电",
+    "difficulty": 3,
+    "summary": "连接简单电路,了解电流",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。连接简单电路,了解电流",
+    "academic_req": null,
+    "key_points": [
+      "了解电流",
+      "电磁相 | 四列举党用的不同形状的磁铁",
+      "连接简单电路"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_MS_05",
+    "title": "简单机械",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "机械",
+    "difficulty": 3,
+    "summary": "认识杠杆/滑轮/斜面等简单机械",
+    "content_req": "知道简单机械〈杠杆、滑轮、轮轴、斜面) 及其在生产。认识杠杆/滑轮/斜面等简单机械",
+    "academic_req": "知道常见的简单机械〈杠杆、滑轮、轮轴、和斜面) 及其应用;能举",
+    "key_points": [
+      "知道简单机械〈杠杆、滑轮、轮轴、斜面) 及其在生产",
+      "认识杠杆/滑轮/斜面等简单机械"
+    ],
+    "bloom": [
+      "认识",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_ES_01",
+    "title": "宇宙中的地球",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "宇宙",
+    "difficulty": 3,
+    "summary": "了解太阳系和宇宙",
+    "content_req": "地球所处的宇宙环境。了解太阳系和宇宙",
+    "academic_req": null,
+    "key_points": [
+      "了解太阳系和宇宙",
+      "地球所处的宇宙环境"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_ES_02",
+    "title": "天气与气候",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "气候",
+    "difficulty": 3,
+    "summary": "了解天气与气候的区别",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。了解天气与气候的区别",
+    "academic_req": null,
+    "key_points": [
+      "了解天气与气候的区别",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_ES_03",
+    "title": "地表变化",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "地质",
+    "difficulty": 3,
+    "summary": "认识侵蚀/沉积等地表变化",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识侵蚀/沉积等地表变化",
+    "academic_req": null,
+    "key_points": [
+      "认识侵蚀/沉积等地表变化",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_TE_01",
+    "title": "工程设计流程",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "工程",
+    "difficulty": 3,
+    "summary": "经历完整的工程设计-制作-测试流程",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。经历完整的工程设计-制作-测试流程",
+    "academic_req": "能借助动画演示或动手制作简单模型，模拟地球、月球和太阳的相",
+    "key_points": [
+      "经历完整的工程设计-制作-测试流程",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "经历",
+      "设计",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_S3_TE_02",
+    "title": "技术与伦理",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "伦理",
+    "difficulty": 2,
+    "summary": "认识技术使用中的伦理问题",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。认识技术使用中的伦理问题",
+    "academic_req": null,
+    "key_points": [
+      "认识技术使用中的伦理问题",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G12_MS_01",
+    "title": "物体分类",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "按特征对物体进行分类",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,按特征对物体进行分类。。根据某些特征，对动物进行分类",
+    "academic_req": "能对常见的物体运动形式进行分类，概括不同运动的特点; 利用简",
+    "key_points": [
+      "按特征对物体进行分类",
+      "对动物进行分类",
+      "在第一学段 (1~2 年级)教学情境中",
+      "根据某些特征"
+    ],
+    "bloom": [
+      "分类"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_02",
+    "title": "物体的沉浮",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "观察物体在水中的沉浮",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观察物体在水中的沉浮。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "在第一学段 (1~2 年级)教学情境中",
+      "观察物体在水中的沉浮"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_03",
+    "title": "物体的传热",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "观察不同物体的传热性能",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观察不同物体的传热性能。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "观察不同物体的传热性能",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_04",
+    "title": "物体材料: 纸",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "认识纸的不同种类和性质",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识纸的不同种类和性质。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "认识纸的不同种类和性质",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_05",
+    "title": "物体材料: 金属",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "认识金属的性质",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识金属的性质。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "认识金属的性质",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_06",
+    "title": "物体材料: 木头",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "认识木头的性质",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识木头的性质。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "认识木头的性质",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_07",
+    "title": "物体材料: 玻璃",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 1,
+    "summary": "认识玻璃的性质",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识玻璃的性质。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "认识玻璃的性质",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_08",
+    "title": "水的三态变化",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "水",
+    "difficulty": 2,
+    "summary": "观察水的固态、液态、气态变化",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观察水的固态、液态、气态变化。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "在第一学段 (1~2 年级)教学情境中",
+      "观察水的固态、液态、气态变化"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_09",
+    "title": "水的溶解",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "水",
+    "difficulty": 1,
+    "summary": "观察物质在水中的溶解",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观察物质在水中的溶解。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "在第一学段 (1~2 年级)教学情境中",
+      "观察物质在水中的溶解"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_MS_10",
+    "title": "声音的来源",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质科学",
+    "subdomain": "声音",
+    "difficulty": 1,
+    "summary": "理解声音的来源",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,理解声音的来源。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "理解声音的来源",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_LS_01",
+    "title": "观察植物",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 1,
+    "summary": "观察和描述周围常见的植物",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观察和描述周围常见的植物。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "观察和描述周围常见的植物",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "知道",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_LS_02",
+    "title": "植物的组成部分",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 1,
+    "summary": "认识植物的根、茎、叶、花、果实、种子",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识植物的根、茎、叶、花、果实、种子。。植物通过多种 | 果实和种子的过程",
+    "academic_req": null,
+    "key_points": [
+      "认识植物的根、茎、叶、花、果实、种子",
+      "在第一学段 (1~2 年级)教学情境中",
+      "植物通过多种 | 果实和种子的过程"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_LS_03",
+    "title": "植物需要什么",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 1,
+    "summary": "了解植物生长需要水、阳光、空气等",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解植物生长需要水、阳光、空气等。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "了解植物生长需要水、阳光、空气等",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_LS_04",
+    "title": "植物的多样性",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 1,
+    "summary": "观察周围植物的多样性",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观察周围植物的多样性。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": "理工程问题的规范性、解决方案的多样性，以及根据反馈迭代改进作",
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "在第一学段 (1~2 年级)教学情境中",
+      "观察周围植物的多样性"
+    ],
+    "bloom": [
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_EU_01",
+    "title": "天气和我们的生活",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "地球与宇宙",
+    "subdomain": "天气",
+    "difficulty": 1,
+    "summary": "了解天气对生活的影响",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解天气对生活的影响。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": "知道热胀冷缩的性质及其在生产生活中的应用实例;能识别生活中",
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "了解天气对生活的影响",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_EU_02",
+    "title": "常见的天气现象",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "地球与宇宙",
+    "subdomain": "天气",
+    "difficulty": 1,
+    "summary": "认识常见的天气现象",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识常见的天气现象。。天气和 | @知道明、量、雨、雪、风等天气现象",
+    "academic_req": "能说出常见的天气现象，知道天气变化的影响，认识到土壤为众多",
+    "key_points": [
+      "认识常见的天气现象",
+      "天气和 | @知道明、量、雨、雪、风等天气现象",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_EU_03",
+    "title": "认识月球",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "地球与宇宙",
+    "subdomain": "地球",
+    "difficulty": 1,
+    "summary": "认识月球的基本特征",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识月球的基本特征。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": "能描述固体、液体和气体的基本特征，以及在相互转化时的特点，",
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "认识月球的基本特征",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_TE_01",
+    "title": "简单的设计",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "技术与工程",
+    "subdomain": "工具",
+    "difficulty": 1,
+    "summary": "会做简单的产品设计",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做简单的产品设计。。工程需要定义 | @描述简单的设计问题，包括材料、时间或成本等",
+    "academic_req": null,
+    "key_points": [
+      "会做简单的产品设计",
+      "工程需要定义 | @描述简单的设计问题",
+      "在第一学段 (1~2 年级)教学情境中",
+      "包括材料、时间或成本等"
+    ],
+    "bloom": [
+      "会",
+      "设计",
+      "描述"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G34_MS_01",
+    "title": "固液气",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 2,
+    "summary": "区分固体、液体、气体",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,区分固体、液体、气体。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": "能归纳概括气体、液体、固体在质量、体积、形状等方面的简单特",
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "区分固体、液体、气体",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_02",
+    "title": "热胀冷缩",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "物体",
+    "difficulty": 2,
+    "summary": "观察物体的热胀冷缩",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,观察物体的热胀冷缩。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": "知道热胀冷缩的性质及其在生产生活中的应用实例;能识别生活中",
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "观察物体的热胀冷缩",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_03",
+    "title": "声音的高低强弱",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "声音",
+    "difficulty": 1,
+    "summary": "区分声音的高低和强弱",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,区分声音的高低和强弱。。知道声音有高低和强弱之分，声音高低和强弱的变化是",
+    "academic_req": null,
+    "key_points": [
+      "知道声音有高低和强弱之分",
+      "在第二学段 (3~4 年级)教学情境中",
+      "区分声音的高低和强弱",
+      "声音高低和强弱的变化是"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_04",
+    "title": "噪声的危害",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "声音",
+    "difficulty": 1,
+    "summary": "了解噪声的危害",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解噪声的危害。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解噪声的危害",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_05",
+    "title": "彩虹的形成",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "光",
+    "difficulty": 1,
+    "summary": "了解彩虹的形成",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解彩虹的形成。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解彩虹的形成",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解",
+      "形成"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_06",
+    "title": "力可以改变物体",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "力",
+    "difficulty": 1,
+    "summary": "理解力可以改变物体的形状和运动状态",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解力可以改变物体的形状和运动状态。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": "能举例说明力可以改变物体的形状，能使用方位名词说出物体所处",
+    "key_points": [
+      "理解力可以改变物体的形状和运动状态",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_07",
+    "title": "重力",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "力",
+    "difficulty": 1,
+    "summary": "理解重力的存在",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解重力的存在。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "理解重力的存在",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_08",
+    "title": "摩擦力",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "力",
+    "difficulty": 1,
+    "summary": "理解摩擦力的存在",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解摩擦力的存在。。地球上存在动物、植物、微生物等不同类型的生物",
+    "academic_req": "能举例说明化学变化在自然界与生产生活中的广泛存在和应用，认",
+    "key_points": [
+      "理解摩擦力的存在",
+      "在第二学段 (3~4 年级)教学情境中",
+      "地球上存在动物、植物、微生物等不同类型的生物"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_09",
+    "title": "弹力",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "力",
+    "difficulty": 2,
+    "summary": "理解弹力的存在",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解弹力的存在。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "理解弹力的存在",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_10",
+    "title": "水的循环",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "水",
+    "difficulty": 2,
+    "summary": "了解自然界的水循环",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解自然界的水循环。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解自然界的水循环",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_11",
+    "title": "空气的性质",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "空气",
+    "difficulty": 2,
+    "summary": "了解空气的基本性质",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解空气的基本性质。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解空气的基本性质",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_12",
+    "title": "电路的组成",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "电",
+    "difficulty": 1,
+    "summary": "了解电路的基本组成",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解电路的基本组成。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解电路的基本组成",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_13",
+    "title": "导体和绝缘体",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "电",
+    "difficulty": 2,
+    "summary": "区分导体和绝缘体",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,区分导体和绝缘体。。知道有些材料是导体，容易导电; 有些材料是绝缘体，",
+    "academic_req": null,
+    "key_points": [
+      "知道有些材料是导体",
+      "在第二学段 (3~4 年级)教学情境中",
+      "区分导体和绝缘体",
+      "容易导电",
+      "有些材料是绝缘体"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_14",
+    "title": "安全用电",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "电",
+    "difficulty": 1,
+    "summary": "了解安全用电知识",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解安全用电知识。。认识创新是建立在已掌握知识和技术基础之上",
+    "academic_req": "会用已有知识和经验对热传递方式作出推测，设计实验，寻找证",
+    "key_points": [
+      "认识创新是建立在已掌握知识和技术基础之上",
+      "了解安全用电知识",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_MS_15",
+    "title": "磁铁的应用",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "物质科学",
+    "subdomain": "磁",
+    "difficulty": 1,
+    "summary": "了解磁铁的应用",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解磁铁的应用。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解磁铁的应用",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_01",
+    "title": "植物的花和果实",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 1,
+    "summary": "了解花和果实的作用(繁殖)",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解花和果实的作用(繁殖)。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解花和果实的作用(繁殖)",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_02",
+    "title": "植物的繁殖",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "植物",
+    "difficulty": 2,
+    "summary": "了解植物的有性繁殖",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解植物的有性繁殖。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解植物的有性繁殖",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_03",
+    "title": "动物的行为",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "动物",
+    "difficulty": 1,
+    "summary": "观察动物的行为",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,观察动物的行为。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "观察动物的行为",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_04",
+    "title": "动物的保护色",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "动物",
+    "difficulty": 2,
+    "summary": "了解动物的保护色",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解动物的保护色。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解动物的保护色",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_05",
+    "title": "动物的分类",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "动物",
+    "difficulty": 1,
+    "summary": "会对常见动物进行简单分类",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会对常见动物进行简单分类。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": "能对自然界存在的各种形式的能进行简单分类，能简单解释能的转",
+    "key_points": [
+      "会对常见动物进行简单分类",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "会",
+      "分类"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_06",
+    "title": "人体的结构",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "人体",
+    "difficulty": 1,
+    "summary": "了解人体的主要结构",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解人体的主要结构。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解人体的主要结构",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_07",
+    "title": "人体的感官",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "人体",
+    "difficulty": 1,
+    "summary": "了解眼、耳、鼻、舌、皮肤的作用",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解眼、耳、鼻、舌、皮肤的作用。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解眼、耳、鼻、舌、皮肤的作用",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_08",
+    "title": "消化系统",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "人体",
+    "difficulty": 2,
+    "summary": "了解消化系统的基本组成",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解消化系统的基本组成。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解消化系统的基本组成",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_LS_09",
+    "title": "呼吸系统",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "生命科学",
+    "subdomain": "人体",
+    "difficulty": 2,
+    "summary": "了解呼吸系统的基本组成",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解呼吸系统的基本组成。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": null,
+    "key_points": [
+      "了解呼吸系统的基本组成",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_EU_01",
+    "title": "昼夜变化",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "地球与宇宙",
+    "subdomain": "地球",
+    "difficulty": 1,
+    "summary": "理解昼夜变化的原因",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解昼夜变化的原因。。力是改变物体运动状态的原因",
+    "academic_req": null,
+    "key_points": [
+      "理解昼夜变化的原因",
+      "在第二学段 (3~4 年级)教学情境中",
+      "力是改变物体运动状态的原因"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_EU_02",
+    "title": "保护环境",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "地球与宇宙",
+    "subdomain": "环境",
+    "difficulty": 1,
+    "summary": "了解保护环境的重要性",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解保护环境的重要性。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": "能和摄取养分功能器官的重要性。",
+    "key_points": [
+      "了解保护环境的重要性",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_EU_03",
+    "title": "环境污染",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "地球与宇宙",
+    "subdomain": "环境",
+    "difficulty": 1,
+    "summary": "了解常见的环境污染",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解常见的环境污染。。技术与工程创 | 国古代技术与工程方面的典型案例",
+    "academic_req": "能结合实例，分析我国当前面临的资源短缺、环境污染和生态破坏",
+    "key_points": [
+      "了解常见的环境污染",
+      "在第二学段 (3~4 年级)教学情境中",
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G56_MS_01",
+    "title": "金属",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "物质",
+    "difficulty": 1,
+    "summary": "认识金属的常见性质",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,认识金属的常见性质。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "认识金属的常见性质",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_MS_02",
+    "title": "酸碱盐",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "物质",
+    "difficulty": 3,
+    "summary": "了解酸碱盐的常见性质",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解酸碱盐的常见性质。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "了解酸碱盐的常见性质",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_MS_03",
+    "title": "能量的转化",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "能量",
+    "difficulty": 2,
+    "summary": "理解能量可以转化",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解能量可以转化。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": "能描述固体、液体和气体的基本特征，以及在相互转化时的特点，",
+    "key_points": [
+      "理解能量可以转化",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_MS_04",
+    "title": "能源",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "能量",
+    "difficulty": 1,
+    "summary": "了解常见能源",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解常见能源。。知道海洋为人类生存提供了能源、生物资源、矿产资",
+    "academic_req": "能源的关系; 关注个人、社区的能源使用问题;关心新能源开发对于社",
+    "key_points": [
+      "了解常见能源",
+      "知道海洋为人类生存提供了能源、生物资源、矿产资",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_MS_05",
+    "title": "能量的守恒",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "物质科学",
+    "subdomain": "能量",
+    "difficulty": 3,
+    "summary": "理解能量守恒定律",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解能量守恒定律。。化学反应遵守质量守恒定律",
+    "academic_req": null,
+    "key_points": [
+      "理解能量守恒定律",
+      "在第三学段 (5~6 年级)教学情境中",
+      "化学反应遵守质量守恒定律"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_01",
+    "title": "食物链",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生态系统",
+    "difficulty": 2,
+    "summary": "理解食物链和食物网",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解食物链和食物网。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "理解食物链和食物网",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_02",
+    "title": "生态平衡",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生态系统",
+    "difficulty": 2,
+    "summary": "理解生态平衡",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解生态平衡。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "理解生态平衡",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_03",
+    "title": "生命的共同特征",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生命",
+    "difficulty": 1,
+    "summary": "了解生物的共同特征",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解生物的共同特征。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "了解生物的共同特征",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_04",
+    "title": "细胞",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生命",
+    "difficulty": 2,
+    "summary": "初步认识细胞",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,初步认识细胞。。细胞是生物体 | @举例说明细胞是生物体结构与生命活动的基本单",
+    "academic_req": "能综合细胞、 组织、器官、系统、个体、种群、群游、生态系统、",
+    "key_points": [
+      "初步认识细胞",
+      "细胞是生物体 | @举例说明细胞是生物体结构与生命活动的基本单",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "说明"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_05",
+    "title": "遗传",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生命",
+    "difficulty": 2,
+    "summary": "初步了解遗传现象",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,初步了解遗传现象。。描述光被阻挡时形成阻挡物影子的现象",
+    "academic_req": "现象和防噪办法;能利用磁铁的基本人性质解释某些生活现象。",
+    "key_points": [
+      "描述光被阻挡时形成阻挡物影子的现象",
+      "初步了解遗传现象",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "形成",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_06",
+    "title": "进化",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "生命",
+    "difficulty": 3,
+    "summary": "初步了解生物进化",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,初步了解生物进化。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": "能举例说出已灭绝生物和当今某些生物的相似之处，认识进化现象。",
+    "key_points": [
+      "初步了解生物进化",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_LS_07",
+    "title": "常见传染病",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "生命科学",
+    "subdomain": "健康",
+    "difficulty": 1,
+    "summary": "了解常见传染病的传播途径",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解常见传染病的传播途径。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "了解常见传染病的传播途径",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_EU_01",
+    "title": "太阳系",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "宇宙",
+    "difficulty": 1,
+    "summary": "了解太阳系的组成",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解太阳系的组成。。地球是 | @知道地球是一个球体，是太阳系中的一颗行星，太阳系",
+    "academic_req": "能说出太阳系的基本结构，知道昼夜交替、天体东升西沙、季节变",
+    "key_points": [
+      "了解太阳系的组成",
+      "地球是 | @知道地球是一个球体",
+      "在第三学段 (5~6 年级)教学情境中",
+      "是太阳系中的一颗行星"
+    ],
+    "bloom": [
+      "了解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_EU_02",
+    "title": "星座",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "宇宙",
+    "difficulty": 1,
+    "summary": "认识常见星座",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,认识常见星座。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": "能科学认识星座划分的意义，了解常见的天文现象，关注我国载人",
+    "key_points": [
+      "认识常见星座",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_EU_03",
+    "title": "人类对宇宙的探索",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "宇宙",
+    "difficulty": 1,
+    "summary": "了解人类探索宇宙的历程",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解人类探索宇宙的历程。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "了解人类探索宇宙的历程",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解",
+      "探索"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_EU_04",
+    "title": "地球的内部",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "地球",
+    "difficulty": 2,
+    "summary": "了解地球的内部结构",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解地球的内部结构。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "了解地球的内部结构",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_EU_05",
+    "title": "化石",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "地球",
+    "difficulty": 2,
+    "summary": "了解化石的形成和作用",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解化石的形成和作用。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": "能依据收集到的化石资料开展讨论交流。",
+    "key_points": [
+      "了解化石的形成和作用",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解",
+      "形成"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_EU_06",
+    "title": "地球的演化",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "地球与宇宙",
+    "subdomain": "地球",
+    "difficulty": 3,
+    "summary": "了解地球的演化史",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解地球的演化史。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "了解地球的演化史",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_TE_01",
+    "title": "技术的作用",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术",
+    "difficulty": 1,
+    "summary": "理解技术在生活中的作用",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解技术在生活中的作用。。电磁相 | 四列举党用的不同形状的磁铁",
+    "academic_req": null,
+    "key_points": [
+      "理解技术在生活中的作用",
+      "在第三学段 (5~6 年级)教学情境中",
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G79_TE_01",
+    "title": "植物能制造和获取养分来维持自身",
+    "subject": "science",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "植物能制造和获取养分来维持自身的生存",
+    "content_req": "植物能制造和获取养分来维持自身的生存。",
+    "academic_req": null,
+    "key_points": [
+      "植物能制造和获取养分来维持自身的生存"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "SC_G79_TE_02",
+    "title": "地球上存在动物",
+    "subject": "science",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "地球上存在动物、植物、微生物等不同类型的生物",
+    "content_req": "地球上存在动物、植物、微生物等不同类型的生物。",
+    "academic_req": "认识周边常见的动物和植物，并简单描述其外部主要特征;识别人",
+    "key_points": [
+      "地球上存在动物、植物、微生物等不同类型的生物"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "SC_G79_TE_03",
+    "title": "空气与水 | @认识空气是无色",
+    "subject": "science",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "空气与水 | @认识空气是无色、无味的气体",
+    "content_req": "空气与水 | @认识空气是无色、无味的气体。",
+    "academic_req": null,
+    "key_points": [
+      "空气与水 | @认识空气是无色、无味的气体"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "SC_G79_TE_04",
+    "title": "物质的| 随着吸热和放热",
+    "subject": "science",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "物质的| 随着吸热和放热，并能将其应用于解释生活中常见的",
+    "content_req": "物质的| 随着吸热和放热，并能将其应用于解释生活中常见的。",
+    "academic_req": "现象，并用物质的粒子模型作简要的微观解释;能从宏观与微观视角说",
+    "key_points": [
+      "并能将其应用于解释生活中常见的",
+      "物质的| 随着吸热和放热"
+    ],
+    "bloom": [
+      "能",
+      "应用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "SC_G79_TE_05",
+    "title": "物质变 | @知道有些物体的形",
+    "subject": "science",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "物质变 | @知道有些物体的形状或大小发生了变化，如被切成小",
+    "content_req": "物质变 | @知道有些物体的形状或大小发生了变化，如被切成小。",
+    "academic_req": null,
+    "key_points": [
+      "物质变 | @知道有些物体的形状或大小发生了变化",
+      "如被切成小"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "SC_G79_TE_06",
+    "title": "生物具有区别 | @说出生物与",
+    "subject": "science",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "生物具有区别 | @说出生物与非生物的不同特点，描述生物的",
+    "content_req": "生物具有区别 | @说出生物与非生物的不同特点，描述生物的。",
+    "academic_req": "能比较生物与非生物的特征，说出生物与非生物的不同特点;能描",
+    "key_points": [
+      "描述生物的",
+      "生物具有区别 | @说出生物与非生物的不同特点"
+    ],
+    "bloom": [
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "SC_G56_TE_02",
+    "title": "电磁相 | 四列举党用的不同形",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "电磁相 | 四列举党用的不同形状的磁铁",
+    "content_req": "电磁相 | 四列举党用的不同形状的磁铁。",
+    "academic_req": null,
+    "key_points": [
+      "电磁相 | 四列举党用的不同形状的磁铁"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_TE_03",
+    "title": "力是改 | @知道测量距离和时",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "力是改 | @知道测量距离和时间的常用方法",
+    "content_req": "力是改 | @知道测量距离和时间的常用方法。",
+    "academic_req": "能运用分析、推理的方法认识地球引力，能分析光的行进路线及反",
+    "key_points": [
+      "力是改 | @知道测量距离和时间的常用方法"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_TE_04",
+    "title": "生物能适应其 | @举例说出动",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "生物能适应其 | @举例说出动物在气候、食物、空气和水源等环",
+    "content_req": "生物能适应其 | @举例说出动物在气候、食物、空气和水源等环境。",
+    "academic_req": "能分析不同动物在气候、食物、空气和水源等环境变化时的行为。",
+    "key_points": [
+      "生物能适应其 | @举例说出动物在气候、食物、空气和水源等环境"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_TE_05",
+    "title": "人体生命安全 | @举例说出重",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "人体生命安全 | @举例说出重大传染病和突发公共卫生事件对人",
+    "content_req": "人体生命安全 | @举例说出重大传染病和突发公共卫生事件对人类。",
+    "academic_req": null,
+    "key_points": [
+      "人体生命安全 | @举例说出重大传染病和突发公共卫生事件对人类"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_TE_06",
+    "title": "人的生活习惯 | 响，以及烟草",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "人的生活习惯 | 响，以及烟草、酒精、毒品对人体的危害;阐明",
+    "content_req": "人的生活习惯 | 响，以及烟草、酒精、毒品对人体的危害;阐明青。",
+    "academic_req": null,
+    "key_points": [
+      "人的生活习惯 | 响",
+      "以及烟草、酒精、毒品对人体的危害"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G56_TE_07",
+    "title": "地球绕 | @观察并描述太阳每",
+    "subject": "science",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "地球绕 | @观察并描述太阳每天在天空中东升西沙的位置变化，",
+    "content_req": "地球绕 | @观察并描述太阳每天在天空中东升西沙的位置变化，初。",
+    "academic_req": "能在教师指导下，通过多种感官，观察并描述太阳东升西沙、月亮",
+    "key_points": [
+      "地球绕 | @观察并描述太阳每天在天空中东升西沙的位置变化"
+    ],
+    "bloom": [
+      "描述"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "SC_G12_TE_02",
+    "title": "用比值定义的方法帮助学生理解比",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "用比值定义的方法帮助学生理解比热容概念",
+    "content_req": "用比值定义的方法帮助学生理解比热容概念。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "用比值定义的方法帮助学生理解比热容概念"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G12_TE_03",
+    "title": "利用各种常见的运动情境",
+    "subject": "science",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "利用各种常见的运动情境，证学生体会能的各种形式及转",
+    "content_req": "利用各种常见的运动情境，证学生体会能的各种形式及转。。知道动能、声能、光能、热能、电能、磁能等都是能的",
+    "academic_req": "利用各种常见的运动情境，证学生体会能的各种形式及转",
+    "key_points": [
+      "证学生体会能的各种形式及转",
+      "知道动能、声能、光能、热能、电能、磁能等都是能的",
+      "利用各种常见的运动情境"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "SC_G34_TE_01",
+    "title": "技术与工程创 | 国古代技术与",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "技术与工程创 | 国古代技术与工程方面的典型案例",
+    "content_req": "技术与工程创 | 国古代技术与工程方面的典型案例。",
+    "academic_req": null,
+    "key_points": [
+      "技术与工程创 | 国古代技术与工程方面的典型案例"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "SC_G34_TE_02",
+    "title": "科学、技术、| @初步说明-一",
+    "subject": "science",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "技术与工程",
+    "subdomain": "技术与工程",
+    "difficulty": 1,
+    "summary": "科学、技术、| @初步说明-一些技术产品涉及的科学概念或原理",
+    "content_req": "科学、技术、| @初步说明-一些技术产品涉及的科学概念或原理，。",
+    "academic_req": "能区别生活中的天然材料和人造材料，知道一些常见的技术产品和",
+    "key_points": [
+      "科学、技术、| @初步说明-一些技术产品涉及的科学概念或原理"
+    ],
+    "bloom": [
+      "说明"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  }
+]

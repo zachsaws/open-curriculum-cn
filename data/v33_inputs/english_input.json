@@ -1,0 +1,7082 @@
+[
+  {
+    "id": "EN_E1_PH_01",
+    "title": "26 个英文字母的认读",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "字母",
+    "difficulty": 1,
+    "summary": "认读 26 个字母的大小写",
+    "content_req": "认读 26 个字母的大小写",
+    "academic_req": null,
+    "key_points": [
+      "认读 26 个字母的大小写"
+    ],
+    "bloom": [
+      "认读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_PH_02",
+    "title": "基本发音规则",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 1,
+    "summary": "感知字母在单词中的基本发音",
+    "content_req": "感知字母在单词中的基本发音",
+    "academic_req": null,
+    "key_points": [
+      "感知字母在单词中的基本发音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_PH_03",
+    "title": "简单拼读规则",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 2,
+    "summary": "尝试拼读简单单词",
+    "content_req": "尝试拼读简单单词",
+    "academic_req": null,
+    "key_points": [
+      "尝试拼读简单单词"
+    ],
+    "bloom": [
+      "拼读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_PH_01",
+    "title": "元音字母发音规则",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 2,
+    "summary": "了解元音字母在重读开闭音节中的发音",
+    "content_req": "了解元音字母在重读开闭音节中的发音",
+    "academic_req": null,
+    "key_points": [
+      "了解元音字母在重读开闭音节中的发音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_PH_02",
+    "title": "辅音字母发音规则",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 2,
+    "summary": "了解常见辅音字母组合发音",
+    "content_req": "了解常见辅音字母组合发音",
+    "academic_req": null,
+    "key_points": [
+      "了解常见辅音字母组合发音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_PH_03",
+    "title": "句子重音与节奏",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 2,
+    "summary": "了解句子重音和节奏",
+    "content_req": "了解句子重音和节奏",
+    "academic_req": null,
+    "key_points": [
+      "了解句子重音和节奏"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_PH_01",
+    "title": "国际音标认读",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "音标",
+    "difficulty": 3,
+    "summary": "认读国际音标",
+    "content_req": "认读国际音标",
+    "academic_req": null,
+    "key_points": [
+      "认读国际音标"
+    ],
+    "bloom": [
+      "认读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_PH_02",
+    "title": "连读与失去爆破",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 3,
+    "summary": "了解连读/失去爆破/弱读等朗读技巧",
+    "content_req": "了解连读/失去爆破/弱读等朗读技巧",
+    "academic_req": null,
+    "key_points": [
+      "了解连读/失去爆破/弱读等朗读技巧"
+    ],
+    "bloom": [
+      "了解",
+      "朗读"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_PH_03",
+    "title": "语调与意群",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 3,
+    "summary": "了解语调/意群/停顿",
+    "content_req": "了解语调/意群/停顿",
+    "academic_req": null,
+    "key_points": [
+      "了解语调/意群/停顿"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_PH_01",
+    "title": "重音/节奏/语调综合运用",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语音",
+    "subdomain": "综合",
+    "difficulty": 3,
+    "summary": "综合运用重音/节奏/语调表达意义",
+    "content_req": "综合运用重音/节奏/语调表达意义",
+    "academic_req": null,
+    "key_points": [
+      "综合运用重音/节奏/语调表达意义"
+    ],
+    "bloom": [
+      "运用",
+      "表达"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_VB_01",
+    "title": "日常生活词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "听说认读 600+ 日常生活词汇",
+    "content_req": "听说认读 600+ 日常生活词汇",
+    "academic_req": null,
+    "key_points": [
+      "听说认读 600+ 日常生活词汇"
+    ],
+    "bloom": [
+      "认读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_VB_02",
+    "title": "主题词汇:动物/颜色/数字/食物",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "学习动物/颜色/数字/食物等主题词汇",
+    "content_req": "学习动物/颜色/数字/食物等主题词汇",
+    "academic_req": null,
+    "key_points": [
+      "学习动物/颜色/数字/食物等主题词汇"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_VB_01",
+    "title": "校园与家庭生活词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 2,
+    "summary": "听说读写 1600+ 词汇,主题:校园/家庭/生活",
+    "content_req": "听说读写 1600+ 词汇,主题:校园/家庭/生活",
+    "academic_req": null,
+    "key_points": [
+      "听说读写 1600+ 词汇",
+      "主题:校园/家庭/生活"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_VB_02",
+    "title": "词性变化",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "了解名词/动词/形容词等基本词性",
+    "content_req": "了解名词/动词/形容词等基本词性",
+    "academic_req": null,
+    "key_points": [
+      "了解名词/动词/形容词等基本词性"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_VB_01",
+    "title": "1600-2000 词汇量",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 2,
+    "summary": "使用 1600-2000 词汇",
+    "content_req": "使用 1600-2000 词汇",
+    "academic_req": null,
+    "key_points": [
+      "使用 1600-2000 词汇"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_VB_02",
+    "title": "构词法:前缀/后缀/词根",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 3,
+    "summary": "了解前缀/后缀/词根等构词法",
+    "content_req": "了解前缀/后缀/词根等构词法",
+    "academic_req": null,
+    "key_points": [
+      "了解前缀/后缀/词根等构词法"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_VB_03",
+    "title": "短语动词与固定搭配",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "搭配",
+    "difficulty": 3,
+    "summary": "学习短语动词和固定搭配",
+    "content_req": "学习短语动词和固定搭配",
+    "academic_req": null,
+    "key_points": [
+      "学习短语动词和固定搭配"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_VB_01",
+    "title": "2000+ 词汇量",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 3,
+    "summary": "使用 2000+ 词汇,理解词义变化",
+    "content_req": "使用 2000+ 词汇,理解词义变化",
+    "academic_req": null,
+    "key_points": [
+      "理解词义变化",
+      "使用 2000+ 词汇"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_VB_02",
+    "title": "词义辨析与一词多义",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "语义",
+    "difficulty": 3,
+    "summary": "辨析近义词,理解一词多义",
+    "content_req": "辨析近义词,理解一词多义",
+    "academic_req": null,
+    "key_points": [
+      "理解一词多义",
+      "辨析近义词"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_GR_01",
+    "title": "基本句型:主谓/主谓宾",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 1,
+    "summary": "感知主谓/主谓宾等基本句型",
+    "content_req": "感知主谓/主谓宾等基本句型",
+    "academic_req": null,
+    "key_points": [
+      "感知主谓/主谓宾等基本句型"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_GR_02",
+    "title": "一般现在时",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 1,
+    "summary": "使用一般现在时描述日常",
+    "content_req": "使用一般现在时描述日常",
+    "academic_req": null,
+    "key_points": [
+      "使用一般现在时描述日常"
+    ],
+    "bloom": [
+      "描述"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_GR_01",
+    "title": "现在进行时/一般过去时",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 2,
+    "summary": "使用现在进行时/一般过去时",
+    "content_req": "使用现在进行时/一般过去时",
+    "academic_req": null,
+    "key_points": [
+      "使用现在进行时/一般过去时"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_GR_02",
+    "title": "一般将来时/be going to",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 2,
+    "summary": "使用一般将来时/be going to",
+    "content_req": "使用一般将来时/be going to",
+    "academic_req": null,
+    "key_points": [
+      "使用一般将来时/be going to"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_GR_03",
+    "title": "there be 句型",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 2,
+    "summary": "使用 there be 句型",
+    "content_req": "使用 there be 句型",
+    "academic_req": null,
+    "key_points": [
+      "使用 there be 句型"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_GR_04",
+    "title": "可数与不可数名词",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 2,
+    "summary": "区分可数与不可数名词",
+    "content_req": "区分可数与不可数名词",
+    "academic_req": null,
+    "key_points": [
+      "区分可数与不可数名词"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_GR_01",
+    "title": "现在完成时",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 3,
+    "summary": "使用现在完成时",
+    "content_req": "使用现在完成时",
+    "academic_req": null,
+    "key_points": [
+      "使用现在完成时"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_GR_02",
+    "title": "过去进行时/过去完成时",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 3,
+    "summary": "使用过去进行时/过去完成时",
+    "content_req": "使用过去进行时/过去完成时",
+    "academic_req": null,
+    "key_points": [
+      "使用过去进行时/过去完成时"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_GR_03",
+    "title": "被动语态基础",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "语态",
+    "difficulty": 3,
+    "summary": "使用被动语态",
+    "content_req": "使用被动语态",
+    "academic_req": null,
+    "key_points": [
+      "使用被动语态"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_GR_04",
+    "title": "宾语从句基础",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 3,
+    "summary": "使用宾语从句",
+    "content_req": "使用宾语从句",
+    "academic_req": null,
+    "key_points": [
+      "使用宾语从句"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_GR_05",
+    "title": "定语从句基础",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 3,
+    "summary": "使用定语从句",
+    "content_req": "使用定语从句",
+    "academic_req": null,
+    "key_points": [
+      "使用定语从句"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_GR_01",
+    "title": "虚拟语气",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "语气",
+    "difficulty": 3,
+    "summary": "了解虚拟语气",
+    "content_req": "了解虚拟语气",
+    "academic_req": null,
+    "key_points": [
+      "了解虚拟语气"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_GR_02",
+    "title": "非谓语动词",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "非谓语",
+    "difficulty": 3,
+    "summary": "使用不定式/动名词/分词",
+    "content_req": "使用不定式/动名词/分词",
+    "academic_req": null,
+    "key_points": [
+      "使用不定式/动名词/分词"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_GR_03",
+    "title": "状语从句",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 3,
+    "summary": "使用时间/原因/条件/让步状语从句",
+    "content_req": "使用时间/原因/条件/让步状语从句",
+    "academic_req": null,
+    "key_points": [
+      "使用时间/原因/条件/让步状语从句"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_GR_04",
+    "title": "定语从句高级",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 3,
+    "summary": "运用定语从句",
+    "content_req": "运用定语从句",
+    "academic_req": null,
+    "key_points": [
+      "运用定语从句"
+    ],
+    "bloom": [
+      "运用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_GR_05",
+    "title": "主谓一致",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "句法",
+    "difficulty": 3,
+    "summary": "掌握主谓一致",
+    "content_req": "掌握主谓一致",
+    "academic_req": null,
+    "key_points": [
+      "掌握主谓一致"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_TX_01",
+    "title": "听说简单对话/小故事",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "听说",
+    "difficulty": 1,
+    "summary": "听懂/看懂简单对话/小故事",
+    "content_req": "听懂/看懂简单对话/小故事",
+    "academic_req": null,
+    "key_points": [
+      "听懂/看懂简单对话/小故事"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_TX_01",
+    "title": "阅读简单短文",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读图文并茂的简单短文",
+    "content_req": "阅读图文并茂的简单短文",
+    "academic_req": null,
+    "key_points": [
+      "阅读图文并茂的简单短文"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_TX_02",
+    "title": "提取关键信息",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "从短文中提取关键信息",
+    "content_req": "从短文中提取关键信息",
+    "academic_req": null,
+    "key_points": [
+      "从短文中提取关键信息"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_TX_01",
+    "title": "阅读较长语篇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读较长语篇,理解主旨",
+    "content_req": "阅读较长语篇,理解主旨",
+    "academic_req": null,
+    "key_points": [
+      "理解主旨",
+      "阅读较长语篇"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_TX_02",
+    "title": "识别语篇类型",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "识别记叙文/说明文/议论文等语篇类型",
+    "content_req": "识别记叙文/说明文/议论文等语篇类型",
+    "academic_req": null,
+    "key_points": [
+      "识别记叙文/说明文/议论文等语篇类型"
+    ],
+    "bloom": [
+      "说明",
+      "识别"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_TX_01",
+    "title": "阅读原版文学作品",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读原版文学作品/新闻/科普文章",
+    "content_req": "阅读原版文学作品/新闻/科普文章",
+    "academic_req": null,
+    "key_points": [
+      "阅读原版文学作品/新闻/科普文章"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_TX_02",
+    "title": "理解作者意图与观点",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "理解作者意图/观点/态度",
+    "content_req": "理解作者意图/观点/态度",
+    "academic_req": null,
+    "key_points": [
+      "理解作者意图/观点/态度"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_SK_01",
+    "title": "听懂简单指令",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 1,
+    "summary": "听懂课堂指令和简单问题",
+    "content_req": "听懂课堂指令和简单问题",
+    "academic_req": null,
+    "key_points": [
+      "听懂课堂指令和简单问题"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_SK_02",
+    "title": "口头表达简单信息",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用简单句口头表达",
+    "content_req": "用简单句口头表达",
+    "academic_req": null,
+    "key_points": [
+      "用简单句口头表达"
+    ],
+    "bloom": [
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_SK_03",
+    "title": "初步英语书写",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "书写",
+    "difficulty": 1,
+    "summary": "正确书写字母和单词",
+    "content_req": "正确书写字母和单词",
+    "academic_req": null,
+    "key_points": [
+      "正确书写字母和单词"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_SK_01",
+    "title": "听懂短文",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 2,
+    "summary": "听懂语速较慢的短文",
+    "content_req": "听懂语速较慢的短文",
+    "academic_req": null,
+    "key_points": [
+      "听懂语速较慢的短文"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_SK_02",
+    "title": "角色扮演对话",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "进行角色扮演/对话交流",
+    "content_req": "进行角色扮演/对话交流",
+    "academic_req": null,
+    "key_points": [
+      "进行角色扮演/对话交流"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_SK_03",
+    "title": "书写简单短文",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 2,
+    "summary": "书写简单的短文",
+    "content_req": "书写简单的短文",
+    "academic_req": null,
+    "key_points": [
+      "书写简单的短文"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_SK_01",
+    "title": "听懂正常语速的语篇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 2,
+    "summary": "听懂正常语速的语篇",
+    "content_req": "听懂正常语速的语篇",
+    "academic_req": null,
+    "key_points": [
+      "听懂正常语速的语篇"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_SK_02",
+    "title": "围绕主题表达观点",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "围绕主题表达自己的观点",
+    "content_req": "围绕主题表达自己的观点",
+    "academic_req": null,
+    "key_points": [
+      "围绕主题表达自己的观点"
+    ],
+    "bloom": [
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_SK_03",
+    "title": "写段落/简单作文",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 2,
+    "summary": "写段落和简单作文",
+    "content_req": "写段落和简单作文",
+    "academic_req": null,
+    "key_points": [
+      "写段落和简单作文"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_SK_01",
+    "title": "听懂原版材料",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 3,
+    "summary": "听懂原版音频/视频材料",
+    "content_req": "听懂原版音频/视频材料",
+    "academic_req": null,
+    "key_points": [
+      "听懂原版音频/视频材料"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_SK_02",
+    "title": "讨论与辩论",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "参与讨论/辩论/演讲",
+    "content_req": "参与讨论/辩论/演讲",
+    "academic_req": null,
+    "key_points": [
+      "参与讨论/辩论/演讲"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_SK_03",
+    "title": "写命题作文/应用文",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 3,
+    "summary": "写命题作文/应用文",
+    "content_req": "写命题作文/应用文",
+    "academic_req": null,
+    "key_points": [
+      "写命题作文/应用文"
+    ],
+    "bloom": [
+      "应用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_CU_01",
+    "title": "中外文化差异感知",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 1,
+    "summary": "感知中外文化差异",
+    "content_req": "感知中外文化差异",
+    "academic_req": null,
+    "key_points": [
+      "感知中外文化差异"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_CU_01",
+    "title": "节日与饮食文化",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解中外节日/饮食/礼仪文化",
+    "content_req": "了解中外节日/饮食/礼仪文化",
+    "academic_req": null,
+    "key_points": [
+      "了解中外节日/饮食/礼仪文化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_CU_01",
+    "title": "中国主要城市与自然环境",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "用英语介绍中国主要城市与自然环境",
+    "content_req": "用英语介绍中国主要城市与自然环境",
+    "academic_req": null,
+    "key_points": [
+      "用英语介绍中国主要城市与自然环境"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_CU_02",
+    "title": "中外文学史代表作家",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 3,
+    "summary": "了解中外文学史上有代表性的作家和作品",
+    "content_req": "了解中外文学史上有代表性的作家和作品",
+    "academic_req": null,
+    "key_points": [
+      "了解中外文学史上有代表性的作家和作品"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_CU_01",
+    "title": "中外文化内涵与价值观",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 3,
+    "summary": "理解中外优秀文化的内涵,领会价值观",
+    "content_req": "理解中外优秀文化的内涵,领会价值观",
+    "academic_req": null,
+    "key_points": [
+      "理解中外优秀文化的内涵",
+      "领会价值观"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E4_CU_02",
+    "title": "用英语讲好中国故事",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文化",
+    "subdomain": "文化传播",
+    "difficulty": 3,
+    "summary": "用英语讲好中国故事,传播中华文化",
+    "content_req": "用英语讲好中国故事,传播中华文化",
+    "academic_req": null,
+    "key_points": [
+      "用英语讲好中国故事",
+      "传播中华文化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_TP_01",
+    "title": "主题:我与家庭",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 1,
+    "summary": "围绕'我与家庭'展开学习",
+    "content_req": "围绕'我与家庭'展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'我与家庭'展开学习"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E1_TP_02",
+    "title": "主题:我与学校",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 1,
+    "summary": "围绕'我与学校'展开学习",
+    "content_req": "围绕'我与学校'展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'我与学校'展开学习"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_TP_01",
+    "title": "主题:我与社会",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 2,
+    "summary": "围绕'我与社会'展开学习",
+    "content_req": "围绕'我与社会'展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'我与社会'展开学习"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E2_TP_02",
+    "title": "主题:自然与环境",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 2,
+    "summary": "围绕'自然与环境'展开学习",
+    "content_req": "围绕'自然与环境'展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'自然与环境'展开学习"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_TP_01",
+    "title": "主题:健康与体育",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 2,
+    "summary": "围绕'健康与体育'展开学习",
+    "content_req": "围绕'健康与体育'展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'健康与体育'展开学习"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E3_TP_02",
+    "title": "主题:世界与科技",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 3,
+    "summary": "围绕'世界与科技'展开学习",
+    "content_req": "围绕'世界与科技'展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'世界与科技'展开学习"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_TP_01",
+    "title": "主题:全球议题",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 3,
+    "summary": "围绕'全球议题'(气候变化/可持续发展等)展开学习",
+    "content_req": "围绕'全球议题'(气候变化/可持续发展等)展开学习",
+    "academic_req": null,
+    "key_points": [
+      "围绕'全球议题'(气候变化/可持续发展等)展开学习"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_E1_ST_01",
+    "title": "模仿跟读",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 1,
+    "summary": "使用模仿/跟读策略学习语音",
+    "content_req": "使用模仿/跟读策略学习语音",
+    "academic_req": null,
+    "key_points": [
+      "使用模仿/跟读策略学习语音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_E2_ST_01",
+    "title": "借助图片上下文理解",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 2,
+    "summary": "借助图片/上下文理解词义",
+    "content_req": "借助图片/上下文理解词义",
+    "academic_req": null,
+    "key_points": [
+      "借助图片/上下文理解词义"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_E3_ST_01",
+    "title": "归纳与分类",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 3,
+    "summary": "使用归纳/分类策略学习语法词汇",
+    "content_req": "使用归纳/分类策略学习语法词汇",
+    "academic_req": null,
+    "key_points": [
+      "使用归纳/分类策略学习语法词汇"
+    ],
+    "bloom": [
+      "分类"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_E4_ST_01",
+    "title": "元认知与自主学习",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "学习策略",
+    "subdomain": "元认知",
+    "difficulty": 3,
+    "summary": "制定学习计划,监控学习过程,反思学习效果",
+    "content_req": "制定学习计划,监控学习过程,反思学习效果",
+    "academic_req": null,
+    "key_points": [
+      "制定学习计划",
+      "监控学习过程",
+      "反思学习效果"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G12_PH_01",
+    "title": "字母的书写",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "字母",
+    "difficulty": 1,
+    "summary": "会书写 26 个字母的大小写",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会书写 26 个字母的大小写。",
+    "academic_req": null,
+    "key_points": [
+      "会书写 26 个字母的大小写",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_02",
+    "title": "字母的顺序",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "字母",
+    "difficulty": 1,
+    "summary": "熟记 26 个字母的顺序",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,熟记 26 个字母的顺序。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "熟记 26 个字母的顺序"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_03",
+    "title": "字母的音形对应",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 1,
+    "summary": "理解字母的字形和发音之间的对应关系",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,理解字母的字形和发音之间的对应关系。",
+    "academic_req": null,
+    "key_points": [
+      "理解字母的字形和发音之间的对应关系",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_04",
+    "title": "字母在单词中的发音",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 1,
+    "summary": "感知字母在单词中的基本发音",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,感知字母在单词中的基本发音。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "感知字母在单词中的基本发音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_05",
+    "title": "单元音发音练习",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 1,
+    "summary": "练习 a e i o u 单元音的发音",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,练习 a e i o u 单元音的发音。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "练习 a e i o u 单元音的发音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_06",
+    "title": "Big A Little a 歌谣",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 1,
+    "summary": "通过歌谣学习字母发音",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,通过歌谣学习字母发音。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "通过歌谣学习字母发音"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_07",
+    "title": "Phonics 自然拼读入门",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 1,
+    "summary": "学习自然拼读入门",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,学习自然拼读入门。",
+    "academic_req": null,
+    "key_points": [
+      "学习自然拼读入门",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "拼读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_08",
+    "title": "简单单词听写",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 1,
+    "summary": "会听写简单的英语单词",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会听写简单的英语单词。",
+    "academic_req": null,
+    "key_points": [
+      "会听写简单的英语单词",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_09",
+    "title": "看词读音练习",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 1,
+    "summary": "看到单词能正确读出",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,看到单词能正确读出。",
+    "academic_req": null,
+    "key_points": [
+      "看到单词能正确读出",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_10",
+    "title": "认读 100 个常见词",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 1,
+    "summary": "认读 100 个常见词(sight words)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认读 100 个常见词(sight words)。",
+    "academic_req": null,
+    "key_points": [
+      "认读 100 个常见词(sight words)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_PH_11",
+    "title": "字母排序游戏",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语音",
+    "subdomain": "拼读",
+    "difficulty": 1,
+    "summary": "通过游戏学习字母顺序",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,通过游戏学习字母顺序。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "通过游戏学习字母顺序"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_01",
+    "title": "教室物品词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握教室物品相关词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握教室物品相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握教室物品相关词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_02",
+    "title": "文具词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握文具相关词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握文具相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握文具相关词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_03",
+    "title": "交通工具词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握交通工具相关词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握交通工具相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握交通工具相关词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_04",
+    "title": "水果词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握水果相关词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握水果相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握水果相关词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_05",
+    "title": "饮料词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握饮料相关词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握饮料相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握饮料相关词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_06",
+    "title": "职业词汇",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握职业相关词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握职业相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握职业相关词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_07",
+    "title": "月份和星期",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握月份和星期词汇",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握月份和星期词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握月份和星期词汇",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_08",
+    "title": "打招呼用语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语打招呼(Hello/Hi)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语打招呼(Hello/Hi)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语打招呼(Hello/Hi)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_09",
+    "title": "感谢用语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语感谢(Thank you)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语感谢(Thank you)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语感谢(Thank you)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_10",
+    "title": "道歉用语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语道歉(Sorry)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语道歉(Sorry)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语道歉(Sorry)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_11",
+    "title": "请求用语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语请求(Excuse me)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语请求(Excuse me)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语请求(Excuse me)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_12",
+    "title": "告别用语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语告别(Goodbye)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语告别(Goodbye)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语告别(Goodbye)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_13",
+    "title": "天气表达",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语表达天气(It's sunny)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语表达天气(It's sunny)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语表达天气(It's sunny)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_14",
+    "title": "时间表达",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语表达时间(It's 5 o'clock)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语表达时间(It's 5 o'clock)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语表达时间(It's 5 o'clock)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_15",
+    "title": "位置表达",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "日常词汇",
+    "difficulty": 1,
+    "summary": "会用英语表达位置(under/on)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语表达位置(under/on)。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语表达位置(under/on)",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_16",
+    "title": "专有名词",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "名词",
+    "difficulty": 1,
+    "summary": "理解专有名词的概念",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,理解专有名词的概念。",
+    "academic_req": null,
+    "key_points": [
+      "理解专有名词的概念",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_17",
+    "title": "动词 have got",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "基础词汇",
+    "difficulty": 1,
+    "summary": "会用 have got 表达",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 have got 表达。",
+    "academic_req": null,
+    "key_points": [
+      "会用 have got 表达",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_18",
+    "title": "连词 because",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "基础词汇",
+    "difficulty": 1,
+    "summary": "会用 because 引导原因",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 because 引导原因。",
+    "academic_req": null,
+    "key_points": [
+      "会用 because 引导原因",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_19",
+    "title": "动词 smell",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "基础",
+    "difficulty": 1,
+    "summary": "会用 smell 表达闻",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 smell 表达闻。",
+    "academic_req": null,
+    "key_points": [
+      "会用 smell 表达闻",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_VO_20",
+    "title": "动词 taste",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "词汇",
+    "subdomain": "基础",
+    "difficulty": 1,
+    "summary": "会用 taste 表达尝",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 taste 表达尝。",
+    "academic_req": null,
+    "key_points": [
+      "会用 taste 表达尝",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_01",
+    "title": "陈述句",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 1,
+    "summary": "会用英语说陈述句",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语说陈述句。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语说陈述句",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_02",
+    "title": "一般疑问句",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 1,
+    "summary": "会用英语问一般疑问句",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语问一般疑问句。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语问一般疑问句",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_03",
+    "title": "特殊疑问句: what",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 1,
+    "summary": "会用 what 提问",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 what 提问。",
+    "academic_req": null,
+    "key_points": [
+      "会用 what 提问",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_04",
+    "title": "祈使句",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 1,
+    "summary": "会用英语说祈使句",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用英语说祈使句。",
+    "academic_req": null,
+    "key_points": [
+      "会用英语说祈使句",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_05",
+    "title": "一般过去时基础",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 2,
+    "summary": "初步认识一般过去时",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,初步认识一般过去时。",
+    "academic_req": null,
+    "key_points": [
+      "初步认识一般过去时",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_06",
+    "title": "be 动词 am",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "会用 be 动词 am",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 be 动词 am。",
+    "academic_req": null,
+    "key_points": [
+      "会用 be 动词 am",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_07",
+    "title": "be 动词 is",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "会用 be 动词 is",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 be 动词 is。",
+    "academic_req": null,
+    "key_points": [
+      "会用 be 动词 is",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_08",
+    "title": "实义动词 look/like",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "会用 look/like 等实义动词",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 look/like 等实义动词。",
+    "academic_req": null,
+    "key_points": [
+      "会用 look/like 等实义动词",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_09",
+    "title": "情态动词 can",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "会用 can 表达能力",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用 can 表达能力。",
+    "academic_req": null,
+    "key_points": [
+      "会用 can 表达能力",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_10",
+    "title": "连词 and",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "会用连词 and",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用连词 and。",
+    "academic_req": null,
+    "key_points": [
+      "会用连词 and",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_GR_11",
+    "title": "连词 or",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "会用连词 or",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用连词 or。",
+    "academic_req": null,
+    "key_points": [
+      "会用连词 or",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_01",
+    "title": "听懂并执行指令",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "听说",
+    "difficulty": 1,
+    "summary": "听懂并执行简单英语指令",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,听懂并执行简单英语指令。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "听懂并执行简单英语指令"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_02",
+    "title": "听懂对话主旨",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "听说",
+    "difficulty": 1,
+    "summary": "听懂简单对话的主旨",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,听懂简单对话的主旨。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "听懂简单对话的主旨"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_03",
+    "title": "听懂故事关键信息",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "听说",
+    "difficulty": 1,
+    "summary": "听懂简单故事的关键信息",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,听懂简单故事的关键信息。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "听懂简单故事的关键信息"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_04",
+    "title": "简单对话表演",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "听说",
+    "difficulty": 1,
+    "summary": "进行简单对话表演",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,进行简单对话表演。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "进行简单对话表演"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_05",
+    "title": "听读简单儿歌",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "故事",
+    "difficulty": 1,
+    "summary": "听读简单的英语儿歌",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,听读简单的英语儿歌。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "听读简单的英语儿歌"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_06",
+    "title": "听读韵文",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "故事",
+    "difficulty": 1,
+    "summary": "听读简单的英语韵文",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,听读简单的英语韵文。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "听读简单的英语韵文"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_DI_07",
+    "title": "阅读简单的英语广告",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能阅读简单的英语广告",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能阅读简单的英语广告。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读简单的英语广告",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_01",
+    "title": "听懂问候语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 1,
+    "summary": "能听懂并作出恰当的问候回应",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能听懂并作出恰当的问候回应。",
+    "academic_req": null,
+    "key_points": [
+      "能听懂并作出恰当的问候回应",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_02",
+    "title": "听懂教室用语",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 1,
+    "summary": "能听懂 Open your book 等课堂指令",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能听懂 Open your book 等课堂指令。",
+    "academic_req": null,
+    "key_points": [
+      "能听懂 Open your book 等课堂指令",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_03",
+    "title": "听懂数字",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 1,
+    "summary": "能听懂和辨别数字",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能听懂和辨别数字。",
+    "academic_req": null,
+    "key_points": [
+      "能听懂和辨别数字",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_04",
+    "title": "听懂简单故事",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 1,
+    "summary": "能听懂简单的英文小故事",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能听懂简单的英文小故事。",
+    "academic_req": null,
+    "key_points": [
+      "能听懂简单的英文小故事",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_05",
+    "title": "自我介绍: 姓名",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语介绍自己的姓名",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语介绍自己的姓名。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语介绍自己的姓名"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_06",
+    "title": "自我介绍: 年龄",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语介绍自己的年龄",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语介绍自己的年龄。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语介绍自己的年龄"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_07",
+    "title": "介绍家庭成员",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语介绍家庭成员",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语介绍家庭成员。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语介绍家庭成员"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_08",
+    "title": "介绍学校",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语介绍自己的学校",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语介绍自己的学校。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语介绍自己的学校"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_09",
+    "title": "表达喜好: 食物",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语表达喜欢的食物",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语表达喜欢的食物。",
+    "academic_req": null,
+    "key_points": [
+      "用英语表达喜欢的食物",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_10",
+    "title": "表达喜好: 颜色",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语表达喜欢的颜色",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语表达喜欢的颜色。",
+    "academic_req": null,
+    "key_points": [
+      "用英语表达喜欢的颜色",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_11",
+    "title": "用英语唱儿歌",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "学唱简单的英语儿歌",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,学唱简单的英语儿歌。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "学唱简单的英语儿歌"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_12",
+    "title": "抄写句子",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "书写",
+    "difficulty": 1,
+    "summary": "正确抄写句子",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,正确抄写句子。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "正确抄写句子"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_13",
+    "title": "补全单词",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "书写",
+    "difficulty": 1,
+    "summary": "能补全字母缺位的单词",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能补全字母缺位的单词。",
+    "academic_req": null,
+    "key_points": [
+      "能补全字母缺位的单词",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_14",
+    "title": "识别单词",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能识别学过的单词",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能识别学过的单词。",
+    "academic_req": null,
+    "key_points": [
+      "能识别学过的单词",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "识别"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_15",
+    "title": "看图读单词",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能根据图片读出单词",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能根据图片读出单词。",
+    "academic_req": null,
+    "key_points": [
+      "能根据图片读出单词",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_SK_16",
+    "title": "看图读句子",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "语言技能",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能根据图片读出简单句子",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能根据图片读出简单句子。",
+    "academic_req": null,
+    "key_points": [
+      "能根据图片读出简单句子",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_CU_01",
+    "title": "英语国家问候礼仪",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 1,
+    "summary": "了解英语国家问候礼仪",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解英语国家问候礼仪。",
+    "academic_req": null,
+    "key_points": [
+      "了解英语国家问候礼仪",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_CU_02",
+    "title": "中外节日的差异",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 1,
+    "summary": "了解中外节日的差异",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解中外节日的差异。",
+    "academic_req": null,
+    "key_points": [
+      "了解中外节日的差异",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_CU_03",
+    "title": "世界主要英语国家",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 1,
+    "summary": "了解世界主要英语国家",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解世界主要英语国家。",
+    "academic_req": null,
+    "key_points": [
+      "了解世界主要英语国家",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_TH_01",
+    "title": "我的身体",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 1,
+    "summary": "用英语谈论自己的身体",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语谈论自己的身体。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语谈论自己的身体"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_TH_02",
+    "title": "我的房间",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 1,
+    "summary": "用英语介绍自己的房间",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语介绍自己的房间。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语介绍自己的房间"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_TH_03",
+    "title": "我的朋友",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 1,
+    "summary": "用英语介绍自己的朋友",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语介绍自己的朋友。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语介绍自己的朋友"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_TH_04",
+    "title": "动物和植物",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 1,
+    "summary": "用英语谈论动物和植物",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语谈论动物和植物。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语谈论动物和植物"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_TH_05",
+    "title": "天气和季节",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 1,
+    "summary": "用英语谈论天气和季节",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用英语谈论天气和季节。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用英语谈论天气和季节"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_LS_01",
+    "title": "图片理解策略",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 1,
+    "summary": "用图片辅助理解",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用图片辅助理解。",
+    "academic_req": null,
+    "key_points": [
+      "用图片辅助理解",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G12_LS_02",
+    "title": "动作辅助策略",
+    "subject": "english",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 1,
+    "summary": "用动作辅助记忆",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,用动作辅助记忆。",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "用动作辅助记忆"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "EN_G34_PH_01",
+    "title": "辅音字母组合 sh 的发音",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "发音",
+    "difficulty": 1,
+    "summary": "掌握 sh 字母组合的发音",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 sh 字母组合的发音。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 sh 字母组合的发音",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_PH_02",
+    "title": "正确朗读句子",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "能正确朗读学过的句子",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能正确朗读学过的句子。",
+    "academic_req": null,
+    "key_points": [
+      "能正确朗读学过的句子",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_PH_03",
+    "title": "正确朗读短文",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "能正确朗读学过的短文",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能正确朗读学过的短文。",
+    "academic_req": null,
+    "key_points": [
+      "能正确朗读学过的短文",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_PH_04",
+    "title": "有感情朗读对话",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 2,
+    "summary": "能有感情地朗读对话",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能有感情地朗读对话。",
+    "academic_req": null,
+    "key_points": [
+      "能有感情地朗读对话",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_01",
+    "title": "学科词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握英语、数学、语文等学科词汇",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握英语、数学、语文等学科词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握英语、数学、语文等学科词汇",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_02",
+    "title": "学习用品词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握 pencil/book/bag 等学习用品",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 pencil/book/bag 等学习用品。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 pencil/book/bag 等学习用品",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_03",
+    "title": "房间词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握 bedroom/kitchen/living room 等",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 bedroom/kitchen/living room 等。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 bedroom/kitchen/living room 等",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_04",
+    "title": "水果蔬菜词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握常见的水果蔬菜词汇",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握常见的水果蔬菜词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握常见的水果蔬菜词汇",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_05",
+    "title": "动物词汇扩展",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "扩展更多动物词汇",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,扩展更多动物词汇。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "扩展更多动物词汇"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_06",
+    "title": "城市设施词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 2,
+    "summary": "掌握 park/library/hospital 等词汇",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 park/library/hospital 等词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 park/library/hospital 等词汇",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_07",
+    "title": "运动项目词汇",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "主题词汇",
+    "difficulty": 1,
+    "summary": "掌握 basketball/football/swim 等词汇",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 basketball/football/swim 等词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 basketball/football/swim 等词汇",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_08",
+    "title": "名词复数规则变化",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 1,
+    "summary": "掌握名词复数 s/es 的规则变化",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握名词复数 s/es 的规则变化。",
+    "academic_req": null,
+    "key_points": [
+      "掌握名词复数 s/es 的规则变化",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_09",
+    "title": "形容词性物主代词",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 1,
+    "summary": "掌握 my/your/his/her 等",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 my/your/his/her 等。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 my/your/his/her 等",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_10",
+    "title": "形容词比较级规则",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "掌握形容词比较级 -er/est 规则",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握形容词比较级 -er/est 规则。",
+    "academic_req": null,
+    "key_points": [
+      "掌握形容词比较级 -er/est 规则",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握",
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_11",
+    "title": "next to",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "词组",
+    "difficulty": 1,
+    "summary": "掌握 next to 的用法",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 next to 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 next to 的用法",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_12",
+    "title": "in front of",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "词组",
+    "difficulty": 1,
+    "summary": "掌握 in front of 的用法",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 in front of 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 in front of 的用法",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_VO_13",
+    "title": "behind",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "词汇",
+    "subdomain": "词组",
+    "difficulty": 1,
+    "summary": "掌握 behind 的用法",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 behind 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 behind 的用法",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_01",
+    "title": "名词的单复数",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 2,
+    "summary": "掌握名词单复数的变化规则",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握名词单复数的变化规则。",
+    "academic_req": null,
+    "key_points": [
+      "掌握名词单复数的变化规则",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_02",
+    "title": "代词: 人称代词",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "词类",
+    "difficulty": 1,
+    "summary": "掌握人称代词的用法",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握人称代词的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握人称代词的用法",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_03",
+    "title": "现在进行时: 结构与用法",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 1,
+    "summary": "理解 am/is/are + doing",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解 am/is/are + doing。",
+    "academic_req": null,
+    "key_points": [
+      "理解 am/is/are + doing",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_04",
+    "title": "现在进行时: 标志词",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 1,
+    "summary": "理解 now, look, listen 等标志词",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解 now, look, listen 等标志词。",
+    "academic_req": null,
+    "key_points": [
+      "理解 now",
+      "在第二学段 (3~4 年级)教学情境中",
+      "look",
+      "listen 等标志词"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_05",
+    "title": "一般过去时: 规则变化",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 2,
+    "summary": "掌握规则动词过去式 -ed",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握规则动词过去式 -ed。",
+    "academic_req": null,
+    "key_points": [
+      "掌握规则动词过去式 -ed",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_06",
+    "title": "一般将来时: will",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 1,
+    "summary": "会用 will + 动词原形",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会用 will + 动词原形。",
+    "academic_req": null,
+    "key_points": [
+      "会用 will + 动词原形",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_07",
+    "title": "感叹句: What",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 2,
+    "summary": "会用 What 引导的感叹句",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会用 What 引导的感叹句。",
+    "academic_req": null,
+    "key_points": [
+      "会用 What 引导的感叹句",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_08",
+    "title": "感叹句: How",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "句型",
+    "difficulty": 2,
+    "summary": "会用 How 引导的感叹句",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会用 How 引导的感叹句。",
+    "academic_req": null,
+    "key_points": [
+      "会用 How 引导的感叹句",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_09",
+    "title": "形容词最高级: -est",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "比较级",
+    "difficulty": 2,
+    "summary": "掌握形容词最高级 -est 的用法",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握形容词最高级 -est 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握形容词最高级 -est 的用法",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_GR_10",
+    "title": "than 的用法",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语法",
+    "subdomain": "比较级",
+    "difficulty": 1,
+    "summary": "掌握 than 在比较级中的用法",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 than 在比较级中的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 than 在比较级中的用法",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握",
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_DI_01",
+    "title": "阅读短文找主旨",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读并找出短文主旨",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能阅读并找出短文主旨。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并找出短文主旨",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_DI_02",
+    "title": "阅读应用文: 通知",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读通知",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能阅读通知。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读通知",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_DI_03",
+    "title": "阅读应用文: 邀请函",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能阅读邀请函",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能阅读邀请函。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读邀请函",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_DI_04",
+    "title": "阅读故事预测情节",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能预测故事情节发展",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能预测故事情节发展。",
+    "academic_req": null,
+    "key_points": [
+      "能预测故事情节发展",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_01",
+    "title": "谈论日常活动",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语谈论日常活动",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论日常活动。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论日常活动"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_02",
+    "title": "谈论喜好",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语谈论喜好",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论喜好。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论喜好"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_03",
+    "title": "谈论周末计划",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "用英语谈论周末计划",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论周末计划。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论周末计划"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_04",
+    "title": "谈论过去的事",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "用英语谈论过去发生的事",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论过去发生的事。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论过去发生的事"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_05",
+    "title": "介绍朋友",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语介绍朋友",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语介绍朋友。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语介绍朋友"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_06",
+    "title": "角色扮演购物",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用英语进行购物角色扮演",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语进行购物角色扮演。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语进行购物角色扮演"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_07",
+    "title": "角色扮演问路",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "用英语进行问路角色扮演",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语进行问路角色扮演。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语进行问路角色扮演"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_08",
+    "title": "写我的家庭",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 1,
+    "summary": "能写介绍家庭的短文",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写介绍家庭的短文。",
+    "academic_req": null,
+    "key_points": [
+      "能写介绍家庭的短文",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_09",
+    "title": "写我的学校",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 1,
+    "summary": "能写介绍学校的短文",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写介绍学校的短文。",
+    "academic_req": null,
+    "key_points": [
+      "能写介绍学校的短文",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_10",
+    "title": "写我的爱好",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 1,
+    "summary": "能写介绍爱好的短文",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写介绍爱好的短文。",
+    "academic_req": null,
+    "key_points": [
+      "能写介绍爱好的短文",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_11",
+    "title": "写我的周末",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 2,
+    "summary": "能写介绍周末活动的短文",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写介绍周末活动的短文。",
+    "academic_req": null,
+    "key_points": [
+      "能写介绍周末活动的短文",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_12",
+    "title": "写英语贺卡",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 1,
+    "summary": "能写英语贺卡",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写英语贺卡。",
+    "academic_req": null,
+    "key_points": [
+      "能写英语贺卡",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_SK_13",
+    "title": "写便条",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 1,
+    "summary": "能写英语便条",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写英语便条。",
+    "academic_req": null,
+    "key_points": [
+      "能写英语便条",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_CU_01",
+    "title": "英美国家主要节日",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 1,
+    "summary": "了解英美国家的主要节日",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解英美国家的主要节日。",
+    "academic_req": null,
+    "key_points": [
+      "了解英美国家的主要节日",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_CU_02",
+    "title": "英美国家饮食习惯",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 1,
+    "summary": "了解英美国家的饮食习惯",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解英美国家的饮食习惯。",
+    "academic_req": null,
+    "key_points": [
+      "了解英美国家的饮食习惯",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_CU_03",
+    "title": "英美国家校园生活",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解英美国家的校园生活",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解英美国家的校园生活。",
+    "academic_req": null,
+    "key_points": [
+      "了解英美国家的校园生活",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_CU_04",
+    "title": "中外礼仪差异",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解中外礼仪的差异",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解中外礼仪的差异。",
+    "academic_req": null,
+    "key_points": [
+      "了解中外礼仪的差异",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_TH_01",
+    "title": "社会服务",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 2,
+    "summary": "用英语谈论社会服务",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论社会服务。",
+    "academic_req": null,
+    "key_points": [
+      "用英语谈论社会服务",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_TH_02",
+    "title": "体育运动",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 1,
+    "summary": "用英语谈论体育运动",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论体育运动。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论体育运动"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_TH_03",
+    "title": "环境保护",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 1,
+    "summary": "用英语谈论环境保护",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论环境保护。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论环境保护"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_TH_04",
+    "title": "动物保护",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 1,
+    "summary": "用英语谈论动物保护",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论动物保护。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论动物保护"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_TH_05",
+    "title": "我的理想",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 2,
+    "summary": "用英语谈论自己的理想",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,用英语谈论自己的理想。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "用英语谈论自己的理想"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_LS_01",
+    "title": "通过上下文猜词",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 2,
+    "summary": "养成通过上下文猜词的习惯",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,养成通过上下文猜词的习惯。",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "养成通过上下文猜词的习惯"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G34_LS_02",
+    "title": "使用工具书",
+    "subject": "english",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 1,
+    "summary": "学会使用简单的工具书",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学会使用简单的工具书。",
+    "academic_req": null,
+    "key_points": [
+      "学会使用简单的工具书",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "EN_G56_PH_01",
+    "title": "48 个音标认读",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "音标",
+    "difficulty": 2,
+    "summary": "认读 48 个国际音标",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,认读 48 个国际音标。",
+    "academic_req": null,
+    "key_points": [
+      "认读 48 个国际音标",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "认读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_PH_02",
+    "title": "音标与拼写",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "音标",
+    "difficulty": 2,
+    "summary": "理解音标与拼写的关系",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解音标与拼写的关系。",
+    "academic_req": null,
+    "key_points": [
+      "理解音标与拼写的关系",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_PH_03",
+    "title": "音节划分",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "音标",
+    "difficulty": 3,
+    "summary": "会划分单词的音节",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会划分单词的音节。",
+    "academic_req": null,
+    "key_points": [
+      "会划分单词的音节",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_PH_04",
+    "title": "正确朗读较长对话",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语音",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "能正确朗读较长对话",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能正确朗读较长对话。",
+    "academic_req": null,
+    "key_points": [
+      "能正确朗读较长对话",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_01",
+    "title": "话题词汇: 旅行",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 2,
+    "summary": "掌握旅行话题相关词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握旅行话题相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握旅行话题相关词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_02",
+    "title": "话题词汇: 健康",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 2,
+    "summary": "掌握健康话题相关词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握健康话题相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握健康话题相关词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_03",
+    "title": "话题词汇: 科技",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 2,
+    "summary": "掌握科技话题相关词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握科技话题相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握科技话题相关词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_04",
+    "title": "话题词汇: 节日",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 2,
+    "summary": "掌握节日话题相关词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握节日话题相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握节日话题相关词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_05",
+    "title": "话题词汇: 体育",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 2,
+    "summary": "掌握体育话题相关词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握体育话题相关词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握体育话题相关词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_06",
+    "title": "前缀 un-",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "理解 un- 前缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 un- 前缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 un- 前缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_07",
+    "title": "前缀 in-/im-",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "理解 in-/im- 前缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 in-/im- 前缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 in-/im- 前缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_08",
+    "title": "前缀 dis-",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "理解 dis- 前缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 dis- 前缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 dis- 前缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_09",
+    "title": "后缀 -tion",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "理解 -tion 后缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 -tion 后缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 -tion 后缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_10",
+    "title": "后缀 -ment",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "理解 -ment 后缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 -ment 后缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 -ment 后缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_11",
+    "title": "后缀 -ness",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 2,
+    "summary": "理解 -ness 后缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 -ness 后缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 -ness 后缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_12",
+    "title": "后缀 -able/-ible",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "构词",
+    "difficulty": 3,
+    "summary": "理解 -able/-ible 后缀的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解 -able/-ible 后缀的用法。",
+    "academic_req": null,
+    "key_points": [
+      "理解 -able/-ible 后缀的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_13",
+    "title": "形容词搭配",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "搭配",
+    "difficulty": 2,
+    "summary": "掌握常见形容词的固定搭配",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握常见形容词的固定搭配。",
+    "academic_req": null,
+    "key_points": [
+      "掌握常见形容词的固定搭配",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_14",
+    "title": "音乐话题词汇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "话题词汇",
+    "difficulty": 2,
+    "summary": "掌握音乐话题词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握音乐话题词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握音乐话题词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_15",
+    "title": "艺术话题词汇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "话题词汇",
+    "difficulty": 2,
+    "summary": "掌握艺术话题词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握艺术话题词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握艺术话题词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_16",
+    "title": "历史话题词汇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "话题词汇",
+    "difficulty": 2,
+    "summary": "掌握历史话题词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握历史话题词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握历史话题词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_17",
+    "title": "地理话题词汇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "话题词汇",
+    "difficulty": 2,
+    "summary": "掌握地理话题词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握地理话题词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握地理话题词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_18",
+    "title": "文学话题词汇",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "话题词汇",
+    "difficulty": 2,
+    "summary": "掌握文学话题词汇",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握文学话题词汇。",
+    "academic_req": null,
+    "key_points": [
+      "掌握文学话题词汇",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_19",
+    "title": "be good at 的用法",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "短语",
+    "difficulty": 2,
+    "summary": "掌握 be good at 的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握 be good at 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 be good at 的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_20",
+    "title": "be afraid of 的用法",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "短语",
+    "difficulty": 2,
+    "summary": "掌握 be afraid of 的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握 be afraid of 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 be afraid of 的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_VO_21",
+    "title": "as well as",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "词汇",
+    "subdomain": "词组",
+    "difficulty": 2,
+    "summary": "掌握 as well as 的用法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握 as well as 的用法。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 as well as 的用法",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_GR_01",
+    "title": "一般将来时的多种表达",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 2,
+    "summary": "掌握 will/be going to/现在进行时表将来",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握 will/be going to/现在进行时表将来。",
+    "academic_req": null,
+    "key_points": [
+      "掌握 will/be going to/现在进行时表将来",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_GR_02",
+    "title": "过去将来时",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "时态",
+    "difficulty": 3,
+    "summary": "初步理解过去将来时",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,初步理解过去将来时。",
+    "academic_req": null,
+    "key_points": [
+      "初步理解过去将来时",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_GR_03",
+    "title": "被动语态(初步)",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "语态",
+    "difficulty": 3,
+    "summary": "初步理解被动语态",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,初步理解被动语态。",
+    "academic_req": null,
+    "key_points": [
+      "初步理解被动语态",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_GR_04",
+    "title": "宾语从句: 引导词 that",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 3,
+    "summary": "会用 that 引导的宾语从句",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会用 that 引导的宾语从句。",
+    "academic_req": null,
+    "key_points": [
+      "会用 that 引导的宾语从句",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_GR_05",
+    "title": "定语从句: who/whom",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 3,
+    "summary": "会用 who/whom 引导的定语从句",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会用 who/whom 引导的定语从句。",
+    "academic_req": null,
+    "key_points": [
+      "会用 who/whom 引导的定语从句",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_DI_01",
+    "title": "阅读记叙文",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读并理解记叙文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能阅读并理解记叙文。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解记叙文",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_DI_02",
+    "title": "阅读说明文",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读并理解说明文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能阅读并理解说明文。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解说明文",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_DI_03",
+    "title": "阅读议论文",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能阅读并理解议论文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能阅读并理解议论文。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解议论文",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_DI_04",
+    "title": "推断作者意图",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能推断作者的写作意图",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能推断作者的写作意图。",
+    "academic_req": null,
+    "key_points": [
+      "能推断作者的写作意图",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_DI_05",
+    "title": "评价文章观点",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能评价文章的观点",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能评价文章的观点。",
+    "academic_req": null,
+    "key_points": [
+      "能评价文章的观点",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_01",
+    "title": "听懂较长对话",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 2,
+    "summary": "能听懂较长对话",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能听懂较长对话。",
+    "academic_req": null,
+    "key_points": [
+      "能听懂较长对话",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_02",
+    "title": "做听力笔记",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 3,
+    "summary": "能在听的过程中做笔记",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能在听的过程中做笔记。",
+    "academic_req": null,
+    "key_points": [
+      "能在听的过程中做笔记",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_03",
+    "title": "讨论兴趣爱好",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "能用英语讨论兴趣爱好",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语讨论兴趣爱好。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论兴趣爱好",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_04",
+    "title": "讨论社会现象",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能用英语讨论社会现象",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语讨论社会现象。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论社会现象",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_05",
+    "title": "表达个人观点",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "能用英语表达个人观点",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语表达个人观点。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语表达个人观点",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_06",
+    "title": "复述短文",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "能复述短文的主要内容",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能复述短文的主要内容。",
+    "academic_req": null,
+    "key_points": [
+      "能复述短文的主要内容",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "复述"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_07",
+    "title": "做简短演讲",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能做 2-3 分钟的演讲",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能做 2-3 分钟的演讲。",
+    "academic_req": null,
+    "key_points": [
+      "能做 2-3 分钟的演讲",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_08",
+    "title": "写议论文段落",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 3,
+    "summary": "能写议论文段落",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能写议论文段落。",
+    "academic_req": null,
+    "key_points": [
+      "能写议论文段落",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_09",
+    "title": "写看图作文",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 2,
+    "summary": "能写看图作文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能写看图作文。",
+    "academic_req": null,
+    "key_points": [
+      "能写看图作文",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_SK_10",
+    "title": "缩写和续写",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 3,
+    "summary": "能缩写和续写短文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能缩写和续写短文。",
+    "academic_req": null,
+    "key_points": [
+      "能缩写和续写短文",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_CU_01",
+    "title": "英美文学常识",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解英美文学常识",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解英美文学常识。",
+    "academic_req": null,
+    "key_points": [
+      "了解英美文学常识",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_CU_02",
+    "title": "英美国家地理",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解英美国家地理",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解英美国家地理。",
+    "academic_req": null,
+    "key_points": [
+      "了解英美国家地理",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_CU_03",
+    "title": "中外文化交流",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解中外文化交流",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解中外文化交流。",
+    "academic_req": null,
+    "key_points": [
+      "了解中外文化交流",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_CU_04",
+    "title": "世界文化遗产",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文化",
+    "subdomain": "文化知识",
+    "difficulty": 2,
+    "summary": "了解世界文化遗产",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解世界文化遗产。",
+    "academic_req": null,
+    "key_points": [
+      "了解世界文化遗产",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_01",
+    "title": "成长经历",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 2,
+    "summary": "能用英语谈论成长经历",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语谈论成长经历。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语谈论成长经历",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "经历"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_02",
+    "title": "人生梦想",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 2,
+    "summary": "能用英语谈论人生梦想",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语谈论人生梦想。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语谈论人生梦想",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_03",
+    "title": "友谊与情感",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与自我",
+    "difficulty": 2,
+    "summary": "能用英语谈论友谊与情感",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语谈论友谊与情感。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语谈论友谊与情感",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_04",
+    "title": "科技与生活",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 2,
+    "summary": "能用英语讨论科技与生活",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语讨论科技与生活。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论科技与生活",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_05",
+    "title": "中外文化比较",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 2,
+    "summary": "能用英语比较中外文化",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语比较中外文化。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语比较中外文化",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_06",
+    "title": "自然灾害",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 2,
+    "summary": "能用英语讨论自然灾害",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语讨论自然灾害。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论自然灾害",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_TH_07",
+    "title": "可持续发展",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "主题",
+    "subdomain": "人与自然",
+    "difficulty": 3,
+    "summary": "能用英语讨论可持续发展",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用英语讨论可持续发展。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论可持续发展",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_LS_01",
+    "title": "制定学习计划",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 2,
+    "summary": "学会制定英语学习计划",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,学会制定英语学习计划。",
+    "academic_req": null,
+    "key_points": [
+      "学会制定英语学习计划",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G56_LS_02",
+    "title": "使用学习资源",
+    "subject": "english",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "学习策略",
+    "subdomain": "策略",
+    "difficulty": 2,
+    "summary": "能有效使用各种学习资源",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能有效使用各种学习资源。",
+    "academic_req": null,
+    "key_points": [
+      "能有效使用各种学习资源",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "EN_G79_PH_01",
+    "title": "语音综合运用",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语音",
+    "subdomain": "综合",
+    "difficulty": 3,
+    "summary": "能综合运用语音知识朗读和表达",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能综合运用语音知识朗读和表达。",
+    "academic_req": null,
+    "key_points": [
+      "能综合运用语音知识朗读和表达",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "运用",
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_VO_01",
+    "title": "累计词汇 2600 词",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 3,
+    "summary": "累计掌握 2600 词左右",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,累计掌握 2600 词左右。",
+    "academic_req": null,
+    "key_points": [
+      "累计掌握 2600 词左右",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_VO_02",
+    "title": "认读 400 词课外",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "词汇量",
+    "difficulty": 3,
+    "summary": "能在课外认读 400 词左右",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能在课外认读 400 词左右。",
+    "academic_req": null,
+    "key_points": [
+      "能在课外认读 400 词左右",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "认读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_VO_03",
+    "title": "词义猜测策略",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "语义",
+    "difficulty": 3,
+    "summary": "掌握根据上下文猜测词义的策略",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,掌握根据上下文猜测词义的策略。",
+    "academic_req": null,
+    "key_points": [
+      "掌握根据上下文猜测词义的策略",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_VO_04",
+    "title": "一词多义理解",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "语义",
+    "difficulty": 3,
+    "summary": "能根据语境理解一词多义",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能根据语境理解一词多义。",
+    "academic_req": null,
+    "key_points": [
+      "能根据语境理解一词多义",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_VO_05",
+    "title": "词性转换",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "词汇",
+    "subdomain": "语义",
+    "difficulty": 3,
+    "summary": "能根据语境判断词性",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能根据语境判断词性。",
+    "academic_req": null,
+    "key_points": [
+      "能根据语境判断词性",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_01",
+    "title": "宾语从句: 时态呼应",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 4,
+    "summary": "理解宾语从句的时态呼应",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解宾语从句的时态呼应。",
+    "academic_req": null,
+    "key_points": [
+      "理解宾语从句的时态呼应",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_02",
+    "title": "定语从句: 关系副词",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 4,
+    "summary": "会用 where/when/why 引导的定语从句",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用 where/when/why 引导的定语从句。",
+    "academic_req": null,
+    "key_points": [
+      "会用 where/when/why 引导的定语从句",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_03",
+    "title": "同位语从句",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "从句",
+    "difficulty": 4,
+    "summary": "理解同位语从句",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解同位语从句。",
+    "academic_req": null,
+    "key_points": [
+      "理解同位语从句",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_04",
+    "title": "强调句(初步)",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "句法",
+    "difficulty": 4,
+    "summary": "初步理解强调句",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,初步理解强调句。",
+    "academic_req": null,
+    "key_points": [
+      "初步理解强调句",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_05",
+    "title": "倒装句(初步)",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "句法",
+    "difficulty": 4,
+    "summary": "初步理解倒装句",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,初步理解倒装句。",
+    "academic_req": null,
+    "key_points": [
+      "初步理解倒装句",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_06",
+    "title": "动词不定式作主语",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "非谓语",
+    "difficulty": 3,
+    "summary": "会用动词不定式作主语",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用动词不定式作主语。",
+    "academic_req": null,
+    "key_points": [
+      "会用动词不定式作主语",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_07",
+    "title": "动名词作宾语",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "非谓语",
+    "difficulty": 3,
+    "summary": "会用动名词作宾语",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用动名词作宾语。",
+    "academic_req": null,
+    "key_points": [
+      "会用动名词作宾语",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_08",
+    "title": "现在分词作状语",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "非谓语",
+    "difficulty": 4,
+    "summary": "会用现在分词作状语",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用现在分词作状语。",
+    "academic_req": null,
+    "key_points": [
+      "会用现在分词作状语",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_GR_09",
+    "title": "过去分词作定语",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语法",
+    "subdomain": "非谓语",
+    "difficulty": 4,
+    "summary": "会用过去分词作定语",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用过去分词作定语。",
+    "academic_req": null,
+    "key_points": [
+      "会用过去分词作定语",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_DI_01",
+    "title": "阅读较长文章",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能阅读并理解较长的英语文章",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能阅读并理解较长的英语文章。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解较长的英语文章",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_DI_02",
+    "title": "理解文章结构",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能理解文章的结构",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能理解文章的结构。",
+    "academic_req": null,
+    "key_points": [
+      "能理解文章的结构",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_DI_03",
+    "title": "推断作者态度",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 4,
+    "summary": "能推断作者的态度",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能推断作者的态度。",
+    "academic_req": null,
+    "key_points": [
+      "能推断作者的态度",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_DI_04",
+    "title": "评价文章内容",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 4,
+    "summary": "能对文章内容作出评价",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能对文章内容作出评价。",
+    "academic_req": null,
+    "key_points": [
+      "能对文章内容作出评价",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_DI_05",
+    "title": "阅读原版故事",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语篇",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能阅读原版英语故事",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能阅读原版英语故事。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读原版英语故事",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_01",
+    "title": "听懂各种文体短文",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 3,
+    "summary": "能听懂各种文体的短文",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能听懂各种文体的短文。",
+    "academic_req": null,
+    "key_points": [
+      "能听懂各种文体的短文",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_02",
+    "title": "抓住主要信息",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "听力",
+    "difficulty": 3,
+    "summary": "能在听的过程中抓住主要信息",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能在听的过程中抓住主要信息。",
+    "academic_req": null,
+    "key_points": [
+      "能在听的过程中抓住主要信息",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_03",
+    "title": "参与英语辩论",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 4,
+    "summary": "能参与英语辩论",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能参与英语辩论。",
+    "academic_req": null,
+    "key_points": [
+      "能参与英语辩论",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_04",
+    "title": "做正式英语演讲",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 4,
+    "summary": "能做 5 分钟正式英语演讲",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能做 5 分钟正式英语演讲。",
+    "academic_req": null,
+    "key_points": [
+      "能做 5 分钟正式英语演讲",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_05",
+    "title": "讨论社会热点",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能用英语讨论社会热点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能用英语讨论社会热点。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论社会热点",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_06",
+    "title": "复述较长文章",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能复述较长的英语文章",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能复述较长的英语文章。",
+    "academic_req": null,
+    "key_points": [
+      "能复述较长的英语文章",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "复述"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_07",
+    "title": "表达个人见解",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能就话题发表个人见解",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能就话题发表个人见解。",
+    "academic_req": null,
+    "key_points": [
+      "能就话题发表个人见解",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_08",
+    "title": "写完整议论文",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 4,
+    "summary": "能写完整的议论文",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能写完整的议论文。",
+    "academic_req": null,
+    "key_points": [
+      "能写完整的议论文",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_09",
+    "title": "写应用文: 申请信",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 3,
+    "summary": "能写申请信",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能写申请信。",
+    "academic_req": null,
+    "key_points": [
+      "能写申请信",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_SK_10",
+    "title": "写读后感",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "语言技能",
+    "subdomain": "写作",
+    "difficulty": 3,
+    "summary": "能写读后感",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能写读后感。",
+    "academic_req": null,
+    "key_points": [
+      "能写读后感",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_CU_01",
+    "title": "英美国家价值观",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 3,
+    "summary": "理解英美国家的价值观",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解英美国家的价值观。",
+    "academic_req": null,
+    "key_points": [
+      "理解英美国家的价值观",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_CU_02",
+    "title": "跨文化交际",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文化",
+    "subdomain": "文化意识",
+    "difficulty": 3,
+    "summary": "了解跨文化交际的策略",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解跨文化交际的策略。",
+    "academic_req": null,
+    "key_points": [
+      "了解跨文化交际的策略",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_CU_03",
+    "title": "传播中华文化",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文化",
+    "subdomain": "文化传播",
+    "difficulty": 3,
+    "summary": "能用英语传播中华文化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能用英语传播中华文化。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语传播中华文化",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_TH_01",
+    "title": "国际理解",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 3,
+    "summary": "能用英语讨论国际理解",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能用英语讨论国际理解。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论国际理解",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_TH_02",
+    "title": "多元文化",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "主题",
+    "subdomain": "人与社会",
+    "difficulty": 3,
+    "summary": "能用英语讨论多元文化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能用英语讨论多元文化。",
+    "academic_req": null,
+    "key_points": [
+      "能用英语讨论多元文化",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_LS_01",
+    "title": "自我评估学习效果",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "学习策略",
+    "subdomain": "元认知",
+    "difficulty": 3,
+    "summary": "能自我评估英语学习效果",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能自我评估英语学习效果。",
+    "academic_req": null,
+    "key_points": [
+      "能自我评估英语学习效果",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "EN_G79_LS_02",
+    "title": "调整学习策略",
+    "subject": "english",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "学习策略",
+    "subdomain": "元认知",
+    "difficulty": 3,
+    "summary": "能根据需要调整学习策略",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能根据需要调整学习策略。",
+    "academic_req": null,
+    "key_points": [
+      "能根据需要调整学习策略",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]

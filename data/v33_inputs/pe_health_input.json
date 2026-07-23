@@ -1,0 +1,2371 @@
+[
+  {
+    "id": "PE_PE1_01",
+    "title": "走与跑",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "基本运动",
+    "subdomain": "田径",
+    "difficulty": 1,
+    "summary": "掌握正确的走和跑",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握正确的走和跑",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握正确的走和跑"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "PE_PE1_02",
+    "title": "跳跃",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "田径",
+    "difficulty": 2,
+    "summary": "掌握立定跳远/助跑跳远",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握立定跳远/助跑跳远",
+    "academic_req": "识和文化，以及|见跳跃运动损伤",
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握立定跳远/助跑跳远"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_PE1_03",
+    "title": "投掷",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "田径",
+    "difficulty": 2,
+    "summary": "掌握投掷基本动作",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握投掷基本动作",
+    "academic_req": "重视跑与跳、跑与投掷、跳与投掷等不同动作之间的组合练",
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握投掷基本动作"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_PE1_04",
+    "title": "体操基本动作",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 2,
+    "summary": "掌握队列/基本体操动作",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握队列/基本体操动作",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握队列/基本体操动作"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_PE1_05",
+    "title": "技巧运动",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "掌握滚翻/倒立等技巧",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握滚翻/倒立等技巧",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握滚翻/倒立等技巧"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE1_06",
+    "title": "支撑跳跃",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "掌握山羊/跳箱等支撑跳跃",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握山羊/跳箱等支撑跳跃",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握山羊/跳箱等支撑跳跃"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE2_01",
+    "title": "小篮球",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "球类",
+    "subdomain": "篮球",
+    "difficulty": 2,
+    "summary": "掌握小篮球运球/传球/投篮",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握小篮球运球/传球/投篮",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握小篮球运球/传球/投篮"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE2_02",
+    "title": "小足球",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "球类",
+    "subdomain": "足球",
+    "difficulty": 2,
+    "summary": "掌握小足球运球/传球/射门",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握小足球运球/传球/射门",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握小足球运球/传球/射门"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE2_03",
+    "title": "排球",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "球类",
+    "subdomain": "排球",
+    "difficulty": 2,
+    "summary": "掌握排球垫球/传球",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握排球垫球/传球",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握排球垫球/传球"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE2_04",
+    "title": "乒乓球",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 9,
+    "domain": "球类",
+    "subdomain": "乒乓球",
+    "difficulty": 2,
+    "summary": "掌握乒乓球基本技术",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握乒乓球基本技术",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握乒乓球基本技术"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE2_05",
+    "title": "羽毛球",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 9,
+    "domain": "球类",
+    "subdomain": "羽毛球",
+    "difficulty": 2,
+    "summary": "掌握羽毛球基本技术",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握羽毛球基本技术",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握羽毛球基本技术"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE3_01",
+    "title": "短跑",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 9,
+    "domain": "田径",
+    "subdomain": "跑",
+    "difficulty": 2,
+    "summary": "掌握短跑起跑/加速/冲刺",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握短跑起跑/加速/冲刺",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握短跑起跑/加速/冲刺"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE3_02",
+    "title": "中长跑",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "田径",
+    "subdomain": "跑",
+    "difficulty": 2,
+    "summary": "掌握中长跑节奏/呼吸",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握中长跑节奏/呼吸",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握中长跑节奏/呼吸"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE3_03",
+    "title": "接力跑",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "田径",
+    "subdomain": "跑",
+    "difficulty": 2,
+    "summary": "掌握接力跑传接棒",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握接力跑传接棒",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握接力跑传接棒"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE3_04",
+    "title": "跳高跳远",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "田径",
+    "subdomain": "跳",
+    "difficulty": 3,
+    "summary": "掌握跳高/跳远技术",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握跳高/跳远技术",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握跳高/跳远技术"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE4_01",
+    "title": "游泳基础",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "水上",
+    "subdomain": "游泳",
+    "difficulty": 3,
+    "summary": "掌握游泳基本技能",
+    "content_req": "体验移动性技能的具体内容和练习方法，如提吓走、高矮人。掌握游泳基本技能",
+    "academic_req": "注重体操类运动项目的结构化技能学练，避免单个动作的简",
+    "key_points": [
+      "掌握游泳基本技能",
+      "体验移动性技能的具体内容和练习方法",
+      "如提吓走、高矮人"
+    ],
+    "bloom": [
+      "能",
+      "掌握"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE4_02",
+    "title": "滑冰/滑雪",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "冰雪",
+    "subdomain": "冰雪",
+    "difficulty": 3,
+    "summary": "了解滑冰/滑雪基本技能",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解滑冰/滑雪基本技能",
+    "academic_req": null,
+    "key_points": [
+      "了解滑冰/滑雪基本技能",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE4_03",
+    "title": "武术基本功",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 9,
+    "domain": "民族",
+    "subdomain": "武术",
+    "difficulty": 2,
+    "summary": "掌握武术基本功",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。掌握武术基本功",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "掌握武术基本功"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE5_01",
+    "title": "认识身体",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "健康教育",
+    "subdomain": "身体",
+    "difficulty": 1,
+    "summary": "认识自己的身体",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。认识自己的身体",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "认识自己的身体"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "PE_PE5_02",
+    "title": "营养与饮食",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "营养",
+    "difficulty": 1,
+    "summary": "了解营养均衡与食品安全",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解营养均衡与食品安全",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "了解营养均衡与食品安全"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE5_03",
+    "title": "运动与健康",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "健康",
+    "difficulty": 1,
+    "summary": "了解运动对健康的作用",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解运动对健康的作用",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "了解运动对健康的作用"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE5_04",
+    "title": "青春期健康",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "青春期",
+    "difficulty": 2,
+    "summary": "了解青春期生理心理变化",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解青春期生理心理变化",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "了解青春期生理心理变化"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE5_05",
+    "title": "心理健康",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "心理",
+    "difficulty": 2,
+    "summary": "了解心理健康知识",
+    "content_req": "了解并运用身体成分的基础知识和改善身体成分的多种练习。了解心理健康知识",
+    "academic_req": "了解并运用发展心肺耐力的基础知识和多种练习方",
+    "key_points": [
+      "了解并运用身体成分的基础知识和改善身体成分的多种练习",
+      "了解心理健康知识"
+    ],
+    "bloom": [
+      "了解",
+      "运用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE5_06",
+    "title": "常见疾病预防",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "疾病",
+    "difficulty": 1,
+    "summary": "了解常见疾病预防",
+    "content_req": "知道受伤外出血时及时止血的方法，知道预防溺水的知识和。了解常见疾病预防",
+    "academic_req": "理健康、疾病预防与突发公共卫生事件应对、安全应急与避险五个领",
+    "key_points": [
+      "知道受伤外出血时及时止血的方法",
+      "知道预防溺水的知识和",
+      "了解常见疾病预防"
+    ],
+    "bloom": [
+      "了解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_PE5_07",
+    "title": "安全与急救",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "急救",
+    "difficulty": 2,
+    "summary": "了解安全常识和急救技能",
+    "content_req": "了解正确的身体姿势，能做出正确的坐、立、行和读写姿。了解安全常识和急救技能",
+    "academic_req": null,
+    "key_points": [
+      "了解安全常识和急救技能",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_G12_BM_01",
+    "title": "自然走",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 1,
+    "summary": "会自然地走",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会自然地走。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会自然地走",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_02",
+    "title": "自然跑",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 1,
+    "summary": "会自然地跑",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会自然地跑。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会自然地跑",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_03",
+    "title": "走跑交替",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 1,
+    "summary": "能进行走跑交替运动",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能进行走跑交替运动。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "能进行走跑交替运动",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_04",
+    "title": "各种姿势的走",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 1,
+    "summary": "会做各种姿势的走(高抬腿走等)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做各种姿势的走(高抬腿走等)。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做各种姿势的走(高抬腿走等)",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_05",
+    "title": "双脚跳",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 1,
+    "summary": "会做双脚跳",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做双脚跳。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做双脚跳",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_06",
+    "title": "单脚跳",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 1,
+    "summary": "会做单脚跳",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做单脚跳。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做单脚跳",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_07",
+    "title": "双脚连续跳",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 1,
+    "summary": "会做双脚连续跳",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做双脚连续跳。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做双脚连续跳",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_08",
+    "title": "跳起触物",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 1,
+    "summary": "会跳起触物",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会跳起触物。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会跳起触物",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_09",
+    "title": "投准练习",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "投掷",
+    "difficulty": 1,
+    "summary": "会进行投准练习",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会进行投准练习。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会进行投准练习",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_10",
+    "title": "立正、稍息",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "队列队形",
+    "difficulty": 1,
+    "summary": "掌握立正、稍息",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握立正、稍息。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握立正、稍息",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_11",
+    "title": "看齐",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "队列队形",
+    "difficulty": 1,
+    "summary": "会看齐",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会看齐。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_12",
+    "title": "原地转法",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "队列队形",
+    "difficulty": 1,
+    "summary": "会原地转法",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会原地转法。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会原地转法",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_13",
+    "title": "齐步走",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "队列队形",
+    "difficulty": 1,
+    "summary": "掌握齐步走",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握齐步走。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握齐步走",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_14",
+    "title": "跑步走",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "队列队形",
+    "difficulty": 1,
+    "summary": "掌握跑步走",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握跑步走。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握跑步走",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_15",
+    "title": "头部运动",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 1,
+    "summary": "会做头部运动",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做头部运动。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做头部运动",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BM_16",
+    "title": "上肢运动",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 1,
+    "summary": "会做上肢运动",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做上肢运动。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做上肢运动",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BA_01",
+    "title": "拍篮球",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "球类",
+    "subdomain": "球类",
+    "difficulty": 1,
+    "summary": "会连续拍篮球",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会连续拍篮球。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会连续拍篮球",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BA_02",
+    "title": "抛接球",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "球类",
+    "subdomain": "球类",
+    "difficulty": 1,
+    "summary": "会抛接球",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会抛接球。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会抛接球",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_BA_03",
+    "title": "运球",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "球类",
+    "subdomain": "球类",
+    "difficulty": 1,
+    "summary": "会简单的运球",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会简单的运球。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "重视组织学生进行身体双侧协调练习，如左右手交蔡运球、",
+    "key_points": [
+      "会简单的运球",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_HE_01",
+    "title": "正确的坐立行姿势",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "掌握正确的坐立行姿势",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握正确的坐立行姿势。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握正确的坐立行姿势",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_HE_02",
+    "title": "个人卫生",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "养成良好的个人卫生习惯",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,养成良好的个人卫生习惯。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中",
+      "养成良好的个人卫生习惯"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_HE_03",
+    "title": "保护视力",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解保护视力的方法",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解保护视力的方法。。知道受伤外出血时及时止血的方法，知道预防溺水的知识和",
+    "academic_req": null,
+    "key_points": [
+      "了解保护视力的方法",
+      "知道受伤外出血时及时止血的方法",
+      "知道预防溺水的知识和",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_HE_04",
+    "title": "保护牙齿",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解保护牙齿的方法",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解保护牙齿的方法。。知道受伤外出血时及时止血的方法，知道预防溺水的知识和",
+    "academic_req": null,
+    "key_points": [
+      "了解保护牙齿的方法",
+      "知道受伤外出血时及时止血的方法",
+      "知道预防溺水的知识和",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_HE_05",
+    "title": "营养均衡",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解营养均衡的重要性",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解营养均衡的重要性。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解营养均衡的重要性",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_GY_01",
+    "title": "基本队列队形",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "体操",
+    "subdomain": "体操",
+    "difficulty": 1,
+    "summary": "掌握基本队列队形",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握基本队列队形。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握基本队列队形",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G12_GY_02",
+    "title": "基本徒手操",
+    "subject": "pe_health",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "体操",
+    "subdomain": "体操",
+    "difficulty": 1,
+    "summary": "会做基本徒手操",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做基本徒手操。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会做基本徒手操",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "PE_G34_BM_01",
+    "title": "前滚翻",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 1,
+    "summary": "掌握前滚翻",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握前滚翻。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握前滚翻",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_BM_02",
+    "title": "后滚翻",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 2,
+    "summary": "掌握后滚翻",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握后滚翻。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握后滚翻",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_BM_03",
+    "title": "侧手翻",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "了解侧手翻",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解侧手翻。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "注意加强动作技术之间的关联，如让学生学练技巧侧手翻一",
+    "key_points": [
+      "了解侧手翻",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_BM_04",
+    "title": "50 米快速跑",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 1,
+    "summary": "掌握 50 米快速跑",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 50 米快速跑。。掌握一些情绪调控方法，能积极同他人交流与合作。",
+    "academic_req": "掌握所学球类运动项目主要的基本动作技术和组合动作技",
+    "key_points": [
+      "掌握 50 米快速跑",
+      "掌握一些情绪调控方法",
+      "能积极同他人交流与合作",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "掌握"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_BM_05",
+    "title": "400 米耐久跑",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 2,
+    "summary": "掌握 400 米耐久跑",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握 400 米耐久跑。。掌握一些情绪调控方法，能积极同他人交流与合作。",
+    "academic_req": "掌握所学球类运动项目主要的基本动作技术和组合动作技",
+    "key_points": [
+      "掌握 400 米耐久跑",
+      "掌握一些情绪调控方法",
+      "能积极同他人交流与合作",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "掌握"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_BM_06",
+    "title": "蹲踞式跳远",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 3,
+    "summary": "了解蹲踞式跳远",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解蹲踞式跳远。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解蹲踞式跳远",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_BM_07",
+    "title": "双手前掷实心球",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "基本运动",
+    "subdomain": "投掷",
+    "difficulty": 2,
+    "summary": "会双手前掷实心球",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会双手前掷实心球。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "运用所学田径类 | 运用 100 米跑主| 运用跳远主要的| 用掷实心球主要的",
+    "key_points": [
+      "会双手前掷实心球",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_AQ_01",
+    "title": "熟悉水性",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "水上",
+    "subdomain": "游泳",
+    "difficulty": 1,
+    "summary": "进行熟悉水性练习",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,进行熟悉水性练习。。体验移动性技能的具体内容和练习方法，如提吓走、高矮人",
+    "academic_req": "重视组织学生进行身体双侧协调练习，如左右手交蔡运球、",
+    "key_points": [
+      "体验移动性技能的具体内容和练习方法",
+      "在第二学段 (3~4 年级)教学情境中",
+      "进行熟悉水性练习",
+      "如提吓走、高矮人"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_AQ_02",
+    "title": "蛙泳基本动作",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "水上",
+    "subdomain": "游泳",
+    "difficulty": 2,
+    "summary": "学习蛙泳基本动作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学习蛙泳基本动作。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "掌握所学球类运动项目主要的基本动作技术和组合动作技",
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中",
+      "学习蛙泳基本动作"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_ET_01",
+    "title": "跳绳: 短绳",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "民族",
+    "subdomain": "民族传统体育",
+    "difficulty": 1,
+    "summary": "会跳短绳",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会跳短绳。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "能           理解轮滑动作技| 及定向运动的文 | 短绳组合跳、网强",
+    "key_points": [
+      "会跳短绳",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_ET_02",
+    "title": "踢毽子",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "民族",
+    "subdomain": "民族传统体育",
+    "difficulty": 1,
+    "summary": "会踢毽子",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会踢毽子。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会踢毽子",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_ET_03",
+    "title": "民族传统体育游戏",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "民族",
+    "subdomain": "传统",
+    "difficulty": 1,
+    "summary": "参与民族传统体育游戏",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,参与民族传统体育游戏。。知道体育锻炼有益健康，经常参与户外运动或游戏;知道基",
+    "academic_req": null,
+    "key_points": [
+      "知道体育锻炼有益健康",
+      "在第二学段 (3~4 年级)教学情境中",
+      "参与民族传统体育游戏",
+      "经常参与户外运动或游戏"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_HE_01",
+    "title": "合理膳食",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解合理膳食知识",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解合理膳食知识。。了解并运用身体成分的基础知识和改善身体成分的多种练习",
+    "academic_req": "了解并运用发展心肺耐力的基础知识和多种练习方",
+    "key_points": [
+      "了解并运用身体成分的基础知识和改善身体成分的多种练习",
+      "了解合理膳食知识",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "运用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_HE_02",
+    "title": "安全运动",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解安全运动注意事项",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解安全运动注意事项。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "运动损伤，并通过相互轮换保护与帮助 ，形成安全运动、团队协作和",
+    "key_points": [
+      "了解安全运动注意事项",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_HE_03",
+    "title": "运动与营养",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解运动与营养的关系",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解运动与营养的关系。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解运动与营养的关系",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_HE_04",
+    "title": "营养与生长发育",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "健康教育",
+    "subdomain": "知识",
+    "difficulty": 1,
+    "summary": "了解营养与生长发育的关系",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解营养与生长发育的关系。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解营养与生长发育的关系",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G34_HE_05",
+    "title": "急救常识",
+    "subject": "pe_health",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "健康教育",
+    "subdomain": "知识",
+    "difficulty": 1,
+    "summary": "了解基本的急救常识",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解基本的急救常识。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解基本的急救常识",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "PE_G56_BM_01",
+    "title": "单杠: 悬垂",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "掌握单杠悬垂",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握单杠悬垂。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握单杠悬垂",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_02",
+    "title": "单杠: 摆动",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "掌握单杠摆动",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握单杠摆动。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握单杠摆动",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_03",
+    "title": "双杠: 支撑",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "掌握双杠支撑",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握双杠支撑。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "运动项目主要的| 腿坐、侧 手 翻、成支撑一支撑后|律操步法、3 一4",
+    "key_points": [
+      "掌握双杠支撑",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_04",
+    "title": "技巧: 倒立",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "体操",
+    "difficulty": 3,
+    "summary": "了解倒立",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解倒立。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "注意加强动作技术之间的关联，如让学生学练技巧侧手翻一",
+    "key_points": [
+      "了解倒立",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_05",
+    "title": "越野跑",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "走跑",
+    "difficulty": 2,
+    "summary": "会进行越野跑",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会进行越野跑。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "会进行越野跑",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_06",
+    "title": "急行跳远",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 3,
+    "summary": "掌握急行跳远技术",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握急行跳远技术。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "掌握所学球类运动项目主要的基本动作技术和组合动作技",
+    "key_points": [
+      "掌握急行跳远技术",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_07",
+    "title": "跳高",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "跳跃",
+    "difficulty": 3,
+    "summary": "了解跳高的基本技术",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解跳高的基本技术。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解跳高的基本技术",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BM_08",
+    "title": "铅球(初步)",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "基本运动",
+    "subdomain": "投掷",
+    "difficulty": 3,
+    "summary": "了解铅球的基本技术",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解铅球的基本技术。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解铅球的基本技术",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_AT_01",
+    "title": "铅球: 滑步推",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "田径",
+    "subdomain": "投掷",
+    "difficulty": 3,
+    "summary": "了解铅球滑步推",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解铅球滑步推。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解铅球滑步推",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_IS_01",
+    "title": "滑冰基本动作",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "冰雪",
+    "subdomain": "冰雪运动",
+    "difficulty": 2,
+    "summary": "学习滑冰基本动作",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,学习滑冰基本动作。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "掌握所学球类运动项目主要的基本动作技术和组合动作技",
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中",
+      "学习滑冰基本动作"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_HE_01",
+    "title": "青春期生理变化",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解青春期生理变化",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解青春期生理变化。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解青春期生理变化",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_HE_02",
+    "title": "运动损伤的预防",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解运动损伤的预防",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解运动损伤的预防。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": "掌握各种常见疾病的预防方法。",
+    "key_points": [
+      "了解运动损伤的预防",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BA_01",
+    "title": "篮球: 传接球",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "球类",
+    "subdomain": "球类",
+    "difficulty": 2,
+    "summary": "掌握篮球传接球技术",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握篮球传接球技术。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握篮球传接球技术",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G56_BA_02",
+    "title": "足球: 射门",
+    "subject": "pe_health",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "球类",
+    "subdomain": "球类",
+    "difficulty": 2,
+    "summary": "掌握足球射门技术",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,掌握足球射门技术。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "掌握足球射门技术",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "PE_G79_BM_01",
+    "title": "力量训练",
+    "subject": "pe_health",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "基本运动",
+    "subdomain": "体能",
+    "difficulty": 3,
+    "summary": "进行简单的力量训练",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,进行简单的力量训练。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第四学段 (7~9 年级)教学情境中",
+      "进行简单的力量训练"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_G79_BM_02",
+    "title": "速度训练",
+    "subject": "pe_health",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "基本运动",
+    "subdomain": "体能",
+    "difficulty": 3,
+    "summary": "进行速度训练",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,进行速度训练。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第四学段 (7~9 年级)教学情境中",
+      "进行速度训练"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_G79_BM_03",
+    "title": "柔韧训练",
+    "subject": "pe_health",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "基本运动",
+    "subdomain": "体能",
+    "difficulty": 3,
+    "summary": "进行柔韧训练",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,进行柔韧训练。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第四学段 (7~9 年级)教学情境中",
+      "进行柔韧训练"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_G79_BA_01",
+    "title": "篮球比赛",
+    "subject": "pe_health",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "球类",
+    "subdomain": "球类",
+    "difficulty": 3,
+    "summary": "能参与篮球比赛",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能参与篮球比赛。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "能参与篮球比赛",
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "PE_G79_HE_01",
+    "title": "健康生活方式",
+    "subject": "pe_health",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "健康教育",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "养成健康的生活方式",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,养成健康的生活方式。。了解正确的身体姿势，能做出正确的坐、立、行和读写姿",
+    "academic_req": null,
+    "key_points": [
+      "了解正确的身体姿势",
+      "能做出正确的坐、立、行和读写姿",
+      "在第四学段 (7~9 年级)教学情境中",
+      "养成健康的生活方式"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]

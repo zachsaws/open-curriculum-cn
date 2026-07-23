@@ -1,0 +1,3386 @@
+[
+  {
+    "id": "H_H1_CA_01",
+    "title": "早期中华文明",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 2,
+    "summary": "了解旧石器/新石器时代及中华文明起源",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解旧石器/新石器时代及中华文明起源",
+    "academic_req": null,
+    "key_points": [
+      "了解旧石器/新石器时代及中华文明起源",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_02",
+    "title": "夏商周时期",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 2,
+    "summary": "了解夏商周三代更替和分封制",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解夏商周三代更替和分封制",
+    "academic_req": null,
+    "key_points": [
+      "了解夏商周三代更替和分封制",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_03",
+    "title": "春秋战国",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 2,
+    "summary": "了解春秋战国百家争鸣",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解春秋战国百家争鸣",
+    "academic_req": null,
+    "key_points": [
+      "了解春秋战国百家争鸣",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_04",
+    "title": "秦统一中国",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 2,
+    "summary": "了解秦统一六国和中央集权制度",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解秦统一六国和中央集权制度",
+    "academic_req": null,
+    "key_points": [
+      "了解秦统一六国和中央集权制度",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_05",
+    "title": "汉代大一统",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 2,
+    "summary": "了解汉武帝巩固大一统和丝绸之路",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解汉武帝巩固大一统和丝绸之路",
+    "academic_req": null,
+    "key_points": [
+      "了解汉武帝巩固大一统和丝绸之路",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_06",
+    "title": "三国两晋南北朝",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "魏晋南北朝",
+    "difficulty": 2,
+    "summary": "了解三国两晋南北朝民族融合",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解三国两晋南北朝民族融合",
+    "academic_req": null,
+    "key_points": [
+      "了解三国两晋南北朝民族融合",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_07",
+    "title": "隋唐盛世",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 2,
+    "summary": "了解隋唐盛世和科举制",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解隋唐盛世和科举制",
+    "academic_req": null,
+    "key_points": [
+      "了解隋唐盛世和科举制",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "H_H1_CA_08",
+    "title": "宋元时期",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 2,
+    "summary": "了解宋元经济繁荣和民族关系",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解宋元经济繁荣和民族关系",
+    "academic_req": null,
+    "key_points": [
+      "了解宋元经济繁荣和民族关系",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H1_CA_09",
+    "title": "明清王朝",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 2,
+    "summary": "了解明清君主专制强化",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解明清君主专制强化",
+    "academic_req": null,
+    "key_points": [
+      "了解明清君主专制强化",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H1_CA_10",
+    "title": "古代科技文化",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国古代史",
+    "subdomain": "科技文化",
+    "difficulty": 2,
+    "summary": "了解四大发明等古代科技文化成就",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解四大发明等古代科技文化成就",
+    "academic_req": null,
+    "key_points": [
+      "了解四大发明等古代科技文化成就",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_01",
+    "title": "鸦片战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代开端",
+    "difficulty": 3,
+    "summary": "了解鸦片战争和近代中国开端",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解鸦片战争和近代中国开端",
+    "academic_req": null,
+    "key_points": [
+      "了解鸦片战争和近代中国开端",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_02",
+    "title": "太平天国运动",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代探索",
+    "difficulty": 2,
+    "summary": "了解太平天国运动",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解太平天国运动",
+    "academic_req": null,
+    "key_points": [
+      "了解太平天国运动",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_03",
+    "title": "洋务运动",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代探索",
+    "difficulty": 3,
+    "summary": "了解洋务运动与中国近代化",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解洋务运动与中国近代化",
+    "academic_req": null,
+    "key_points": [
+      "了解洋务运动与中国近代化",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_04",
+    "title": "甲午战争与戊戌变法",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代探索",
+    "difficulty": 3,
+    "summary": "了解甲午战争和戊戌变法",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解甲午战争和戊戌变法",
+    "academic_req": null,
+    "key_points": [
+      "了解甲午战争和戊戌变法",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_05",
+    "title": "辛亥革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代探索",
+    "difficulty": 3,
+    "summary": "了解辛亥革命推翻封建帝制",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解辛亥革命推翻封建帝制",
+    "academic_req": null,
+    "key_points": [
+      "了解辛亥革命推翻封建帝制",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_06",
+    "title": "新文化运动",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代探索",
+    "difficulty": 3,
+    "summary": "了解新文化运动",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解新文化运动",
+    "academic_req": null,
+    "key_points": [
+      "了解新文化运动",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_07",
+    "title": "五四运动",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国近代史",
+    "subdomain": "近代探索",
+    "difficulty": 3,
+    "summary": "了解五四运动与中国共产党的成立",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解五四运动与中国共产党的成立",
+    "academic_req": null,
+    "key_points": [
+      "了解五四运动与中国共产党的成立",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "H_H2_CM_08",
+    "title": "国民革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "国民革命",
+    "difficulty": 3,
+    "summary": "了解国民革命与国共合作",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解国民革命与国共合作",
+    "academic_req": null,
+    "key_points": [
+      "了解国民革命与国共合作",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H2_CM_09",
+    "title": "红军长征",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "土地革命",
+    "difficulty": 3,
+    "summary": "了解红军长征",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解红军长征",
+    "academic_req": null,
+    "key_points": [
+      "了解红军长征",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H2_CM_10",
+    "title": "抗日战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "抗日战争",
+    "difficulty": 3,
+    "summary": "了解抗日战争全过程",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解抗日战争全过程",
+    "academic_req": null,
+    "key_points": [
+      "了解抗日战争全过程",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H2_CM_11",
+    "title": "解放战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "解放战争",
+    "difficulty": 3,
+    "summary": "了解解放战争和新中国成立准备",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解解放战争和新中国成立准备",
+    "academic_req": null,
+    "key_points": [
+      "了解解放战争和新中国成立准备",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H3_CR_01",
+    "title": "新中国成立与巩固",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "建国初期",
+    "difficulty": 2,
+    "summary": "了解新中国成立与政权巩固",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解新中国成立与政权巩固",
+    "academic_req": null,
+    "key_points": [
+      "了解新中国成立与政权巩固",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H3_CR_02",
+    "title": "社会主义制度建立",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "社会主义",
+    "difficulty": 2,
+    "summary": "了解三大改造和社会主义制度",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解三大改造和社会主义制度",
+    "academic_req": null,
+    "key_points": [
+      "了解三大改造和社会主义制度",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H3_CR_03",
+    "title": "社会主义建设探索",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "建设探索",
+    "difficulty": 2,
+    "summary": "了解社会主义建设探索的成就与失误",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解社会主义建设探索的成就与失误",
+    "academic_req": null,
+    "key_points": [
+      "了解社会主义建设探索的成就与失误",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "探索"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H3_CR_04",
+    "title": "改革开放",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 3,
+    "summary": "了解改革开放的伟大决策和成就",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解改革开放的伟大决策和成就",
+    "academic_req": null,
+    "key_points": [
+      "了解改革开放的伟大决策和成就",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H3_CR_05",
+    "title": "中国特色社会主义进入新时代",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "新时代",
+    "difficulty": 3,
+    "summary": "了解习近平新时代中国特色社会主义思想",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解习近平新时代中国特色社会主义思想",
+    "academic_req": null,
+    "key_points": [
+      "了解习近平新时代中国特色社会主义思想",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WA_01",
+    "title": "古代埃及文明",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "古代文明",
+    "difficulty": 2,
+    "summary": "了解古埃及文明",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解古埃及文明",
+    "academic_req": null,
+    "key_points": [
+      "了解古埃及文明",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WA_02",
+    "title": "古代两河流域文明",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "古代文明",
+    "difficulty": 2,
+    "summary": "了解古巴比伦/亚述等两河文明",
+    "content_req": "能够了解古代文明之间的交流、互动; 初步理解、尊重各个。了解古巴比伦/亚述等两河文明",
+    "academic_req": null,
+    "key_points": [
+      "能够了解古代文明之间的交流、互动",
+      "初步理解、尊重各个",
+      "了解古巴比伦/亚述等两河文明"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WA_03",
+    "title": "古代印度文明",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "古代文明",
+    "difficulty": 2,
+    "summary": "了解古印度文明",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解古印度文明",
+    "academic_req": null,
+    "key_points": [
+      "了解古印度文明",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WA_04",
+    "title": "古代希腊文明",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "古代文明",
+    "difficulty": 2,
+    "summary": "了解古希腊城邦与民主",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解古希腊城邦与民主",
+    "academic_req": null,
+    "key_points": [
+      "了解古希腊城邦与民主",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WA_05",
+    "title": "古代罗马文明",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "古代文明",
+    "difficulty": 2,
+    "summary": "了解古罗马共和国与帝国",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解古罗马共和国与帝国",
+    "academic_req": null,
+    "key_points": [
+      "了解古罗马共和国与帝国",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WB_01",
+    "title": "文艺复兴",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代变革",
+    "difficulty": 3,
+    "summary": "了解文艺复兴运动",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解文艺复兴运动",
+    "academic_req": null,
+    "key_points": [
+      "了解文艺复兴运动",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WB_02",
+    "title": "新航路开辟",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代变革",
+    "difficulty": 3,
+    "summary": "了解新航路开辟和早期殖民扩张",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解新航路开辟和早期殖民扩张",
+    "academic_req": null,
+    "key_points": [
+      "了解新航路开辟和早期殖民扩张",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WB_03",
+    "title": "工业革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代变革",
+    "difficulty": 3,
+    "summary": "了解工业革命",
+    "content_req": "不同史事的因果联系。如以工业革命为例，能够从生产力。了解工业革命",
+    "academic_req": null,
+    "key_points": [
+      "能够从生产力",
+      "了解工业革命",
+      "不同史事的因果联系",
+      "如以工业革命为例"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WB_04",
+    "title": "启蒙运动",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代变革",
+    "difficulty": 3,
+    "summary": "了解启蒙运动",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解启蒙运动",
+    "academic_req": null,
+    "key_points": [
+      "了解启蒙运动",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WB_05",
+    "title": "美国独立战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代变革",
+    "difficulty": 2,
+    "summary": "了解美国独立战争",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解美国独立战争",
+    "academic_req": null,
+    "key_points": [
+      "了解美国独立战争",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WB_06",
+    "title": "法国大革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代变革",
+    "difficulty": 2,
+    "summary": "了解法国大革命",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解法国大革命",
+    "academic_req": null,
+    "key_points": [
+      "了解法国大革命",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WC_01",
+    "title": "第一次世界大战",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 3,
+    "summary": "了解一战",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解一战",
+    "academic_req": null,
+    "key_points": [
+      "了解一战",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WC_02",
+    "title": "十月革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 3,
+    "summary": "了解十月革命与社会主义",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解十月革命与社会主义",
+    "academic_req": null,
+    "key_points": [
+      "了解十月革命与社会主义",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WC_03",
+    "title": "罗斯福新政",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 2,
+    "summary": "了解罗斯福新政",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解罗斯福新政",
+    "academic_req": null,
+    "key_points": [
+      "了解罗斯福新政",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WC_04",
+    "title": "第二次世界大战",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 3,
+    "summary": "了解二战",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解二战",
+    "academic_req": null,
+    "key_points": [
+      "了解二战",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WC_05",
+    "title": "冷战",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 3,
+    "summary": "了解冷战与战后世界格局",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解冷战与战后世界格局",
+    "academic_req": null,
+    "key_points": [
+      "了解冷战与战后世界格局",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_H4_WC_06",
+    "title": "世界多极化与经济全球化",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 3,
+    "summary": "了解多极化与全球化趋势",
+    "content_req": "中国共产党成立与新民主主义革命的兴起。了解多极化与全球化趋势",
+    "academic_req": null,
+    "key_points": [
+      "了解多极化与全球化趋势",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_01",
+    "title": "元谋人",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解元谋人",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解元谋人。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解元谋人",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_02",
+    "title": "北京人",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解北京人",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解北京人。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解北京人",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_03",
+    "title": "河姆渡文化",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解河姆渡文化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解河姆渡文化。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解河姆渡文化",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_04",
+    "title": "半坡文化",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解半坡文化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解半坡文化。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解半坡文化",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_05",
+    "title": "炎帝和黄帝",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解炎帝和黄帝",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解炎帝和黄帝。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解炎帝和黄帝",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_06",
+    "title": "夏朝建立",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解夏朝建立",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解夏朝建立。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解夏朝建立",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_07",
+    "title": "商朝和甲骨文",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解商朝和甲骨文",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解商朝和甲骨文。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解商朝和甲骨文",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_08",
+    "title": "西周分封制",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解西周分封制",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解西周分封制。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解西周分封制",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_09",
+    "title": "春秋五霸",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解春秋五霸",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解春秋五霸。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解春秋五霸",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_10",
+    "title": "战国七雄",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解战国七雄",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解战国七雄。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解战国七雄",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_11",
+    "title": "商鞅变法",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解商鞅变法",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解商鞅变法。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解商鞅变法",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_12",
+    "title": "百家争鸣",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解诸子百家",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解诸子百家。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解诸子百家",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_13",
+    "title": "孔子和老子的思想",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "先秦",
+    "difficulty": 1,
+    "summary": "了解孔子和老子的思想",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解孔子和老子的思想。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解孔子和老子的思想",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_14",
+    "title": "秦末农民起义",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 1,
+    "summary": "了解陈胜吴广起义",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解陈胜吴广起义。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解陈胜吴广起义",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_15",
+    "title": "西汉建立与文景之治",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 1,
+    "summary": "了解西汉建立和文景之治",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解西汉建立和文景之治。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解西汉建立和文景之治",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_16",
+    "title": "汉武帝大一统",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 1,
+    "summary": "了解汉武帝推进大一统的措施",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解汉武帝推进大一统的措施。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解汉武帝推进大一统的措施",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_17",
+    "title": "丝绸之路",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 1,
+    "summary": "了解张骞通西域和丝绸之路",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解张骞通西域和丝绸之路。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解张骞通西域和丝绸之路",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_18",
+    "title": "东汉兴衰",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "秦汉",
+    "difficulty": 1,
+    "summary": "了解东汉的政治和社会",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解东汉的政治和社会。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解东汉的政治和社会",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_19",
+    "title": "三国鼎立",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "三国两晋南北朝",
+    "difficulty": 1,
+    "summary": "了解三国鼎立的形成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解三国鼎立的形成。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解三国鼎立的形成",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "形成"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_20",
+    "title": "北魏孝文帝改革",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "三国两晋南北朝",
+    "difficulty": 1,
+    "summary": "了解北魏孝文帝改革",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解北魏孝文帝改革。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解北魏孝文帝改革",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_21",
+    "title": "江南地区开发",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "三国两晋南北朝",
+    "difficulty": 1,
+    "summary": "了解江南地区的开发",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解江南地区的开发。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解江南地区的开发",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_22",
+    "title": "民族交往交流交融",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "三国两晋南北朝",
+    "difficulty": 1,
+    "summary": "理解这一时期的民族交融",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解这一时期的民族交融。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解这一时期的民族交融",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_23",
+    "title": "隋朝的兴亡",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解隋朝统一和灭亡",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解隋朝统一和灭亡。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解隋朝统一和灭亡",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_24",
+    "title": "贞观之治",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解唐太宗的治国措施",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解唐太宗的治国措施。。不同领域的横向联系。如以唐太宗和“贞观之治”为",
+    "academic_req": null,
+    "key_points": [
+      "了解唐太宗的治国措施",
+      "在第四学段 (7~9 年级)教学情境中",
+      "不同领域的横向联系",
+      "如以唐太宗和“贞观之治”为"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_25",
+    "title": "开元盛世",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解唐玄宗前期盛世",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解唐玄宗前期盛世。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解唐玄宗前期盛世",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_26",
+    "title": "科举制度",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解科举制度的创建和发展",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解科举制度的创建和发展。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解科举制度的创建和发展",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_27",
+    "title": "文成公主入藏",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解文成公主入藏",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解文成公主入藏。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解文成公主入藏",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_28",
+    "title": "鉴真东渡和玄奘西行",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解鉴真东渡和玄奘西行",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解鉴真东渡和玄奘西行。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解鉴真东渡和玄奘西行",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_29",
+    "title": "安史之乱",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "隋唐",
+    "difficulty": 1,
+    "summary": "了解安史之乱和藩镇割据",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解安史之乱和藩镇割据。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解安史之乱和藩镇割据",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_30",
+    "title": "北宋建立与中央集权",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解北宋加强中央集权的措施",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解北宋加强中央集权的措施。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解北宋加强中央集权的措施",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_31",
+    "title": "辽宋西夏并立",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解辽宋西夏的并立",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解辽宋西夏的并立。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解辽宋西夏的并立",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_32",
+    "title": "南宋偏安",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解南宋偏安和金元南下",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解南宋偏安和金元南下。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解南宋偏安和金元南下",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_33",
+    "title": "经济重心南移",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "理解中国古代经济重心的南移",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解中国古代经济重心的南移。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解中国古代经济重心的南移",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_34",
+    "title": "蒙古兴起和元朝统一",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解蒙古兴起和元朝统一",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解蒙古兴起和元朝统一。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解蒙古兴起和元朝统一",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_35",
+    "title": "行省制度",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解行省制度",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解行省制度。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解行省制度",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_36",
+    "title": "宋元科技创新",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解宋元时期的科技成就",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解宋元时期的科技成就。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解宋元时期的科技成就",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_37",
+    "title": "宋元文学艺术",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "宋元",
+    "difficulty": 1,
+    "summary": "了解宋元时期的文学艺术",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解宋元时期的文学艺术。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解宋元时期的文学艺术",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_38",
+    "title": "明清加强皇权",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解明清加强皇权的措施",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解明清加强皇权的措施。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解明清加强皇权的措施",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_39",
+    "title": "郑和下西洋",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解郑和下西洋",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解郑和下西洋。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解郑和下西洋",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_40",
+    "title": "戚继光抗倭",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解戚继光抗倭",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解戚继光抗倭。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解戚继光抗倭",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_41",
+    "title": "郑成功收复台湾",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解郑成功收复台湾",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解郑成功收复台湾。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解郑成功收复台湾",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_42",
+    "title": "雅克萨之战",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解雅克萨之战和《尼布楚条约》",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解雅克萨之战和《尼布楚条约》。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解雅克萨之战和《尼布楚条约》",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_43",
+    "title": "闭关锁国",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "理解闭关锁国政策",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解闭关锁国政策。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解闭关锁国政策",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_44",
+    "title": "明清科技成就",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解《本草纲目》《天工开物》等",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解《本草纲目》《天工开物》等。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解《本草纲目》《天工开物》等",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_45",
+    "title": "明清小说戏曲",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "了解明清时期的小说和戏曲",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解明清时期的小说和戏曲。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解明清时期的小说和戏曲",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CA_46",
+    "title": "明清社会危机",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国古代史",
+    "subdomain": "明清",
+    "difficulty": 1,
+    "summary": "理解明清时期的社会危机",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解明清时期的社会危机。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解明清时期的社会危机",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_01",
+    "title": "甲午中日战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "晚清",
+    "difficulty": 1,
+    "summary": "了解甲午中日战争",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解甲午中日战争。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解甲午中日战争",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_02",
+    "title": "八国联军侵华",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "晚清",
+    "difficulty": 1,
+    "summary": "了解八国联军侵华战争",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解八国联军侵华战争。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解八国联军侵华战争",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_03",
+    "title": "中国共产党成立",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "民国",
+    "difficulty": 1,
+    "summary": "了解中国共产党的成立",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国共产党的成立。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解中国共产党的成立",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_04",
+    "title": "北伐战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "民国",
+    "difficulty": 1,
+    "summary": "了解北伐战争",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解北伐战争。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解北伐战争",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_05",
+    "title": "国共十年对峙",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "民国",
+    "difficulty": 1,
+    "summary": "了解国共十年对峙时期",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解国共十年对峙时期。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解国共十年对峙时期",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_06",
+    "title": "林则徐虎门销烟",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "抗争",
+    "difficulty": 1,
+    "summary": "了解林则徐虎门销烟",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解林则徐虎门销烟。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解林则徐虎门销烟",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_07",
+    "title": "《南京条约》",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "抗争",
+    "difficulty": 1,
+    "summary": "了解《南京条约》",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解《南京条约》。。能够了解古代文明之间的交流、互动; 初步理解、尊重各个",
+    "academic_req": "能够了解中国古代历史的基本线索和重要的事件、人物、现",
+    "key_points": [
+      "能够了解古代文明之间的交流、互动",
+      "了解《南京条约》",
+      "初步理解、尊重各个",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_08",
+    "title": "《马关条约》",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "抗争",
+    "difficulty": 1,
+    "summary": "了解《马关条约》",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解《马关条约》。。能够了解古代文明之间的交流、互动; 初步理解、尊重各个",
+    "academic_req": "能够了解中国古代历史的基本线索和重要的事件、人物、现",
+    "key_points": [
+      "能够了解古代文明之间的交流、互动",
+      "了解《马关条约》",
+      "初步理解、尊重各个",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_09",
+    "title": "《辛丑条约》",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "抗争",
+    "difficulty": 1,
+    "summary": "了解《辛丑条约》",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解《辛丑条约》。。能够了解古代文明之间的交流、互动; 初步理解、尊重各个",
+    "academic_req": "能够了解中国古代历史的基本线索和重要的事件、人物、现",
+    "key_points": [
+      "能够了解古代文明之间的交流、互动",
+      "了解《辛丑条约》",
+      "初步理解、尊重各个",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_10",
+    "title": "义和团运动",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "抗争",
+    "difficulty": 1,
+    "summary": "了解义和团运动",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解义和团运动。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解义和团运动",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_11",
+    "title": "南昌起义",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解南昌起义",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解南昌起义。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解南昌起义",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_12",
+    "title": "井冈山革命根据地",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解井冈山革命根据地",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解井冈山革命根据地。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解井冈山革命根据地",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_13",
+    "title": "长征",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解红军长征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解红军长征。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解红军长征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_14",
+    "title": "遵义会议",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解遵义会议",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解遵义会议。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解遵义会议",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_15",
+    "title": "九一八事变",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解九一八事变",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解九一八事变。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解九一八事变",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_16",
+    "title": "西安事变",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解西安事变",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解西安事变。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解西安事变",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_17",
+    "title": "七七事变",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解七七事变",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解七七事变。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解七七事变",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_18",
+    "title": "南京大屠杀",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解南京大屠杀",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解南京大屠杀。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解南京大屠杀",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_19",
+    "title": "台儿庄战役",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解台儿庄战役",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解台儿庄战役。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解台儿庄战役",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_20",
+    "title": "百团大战",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解百团大战",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解百团大战。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解百团大战",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_21",
+    "title": "重庆谈判",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解重庆谈判",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解重庆谈判。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解重庆谈判",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_22",
+    "title": "三大战役",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解三大战役",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解三大战役。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解三大战役",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_23",
+    "title": "渡江战役",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解渡江战役",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解渡江战役。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解渡江战役",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CN_24",
+    "title": "新民主主义革命胜利",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国近代史",
+    "subdomain": "新民主主义革命",
+    "difficulty": 1,
+    "summary": "了解新民主主义革命胜利的意义",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解新民主主义革命胜利的意义。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解新民主主义革命胜利的意义",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_01",
+    "title": "土地改革",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "新中国",
+    "difficulty": 1,
+    "summary": "了解土地改革运动",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解土地改革运动。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解土地改革运动",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_02",
+    "title": "抗美援朝",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "新中国",
+    "difficulty": 1,
+    "summary": "了解抗美援朝",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解抗美援朝。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解抗美援朝",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_03",
+    "title": "第一个五年计划",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "新中国",
+    "difficulty": 1,
+    "summary": "了解一五计划",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解一五计划。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解一五计划",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_04",
+    "title": "三大改造",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "新中国",
+    "difficulty": 1,
+    "summary": "了解三大改造",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解三大改造。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解三大改造",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_05",
+    "title": "文化大革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "新中国",
+    "difficulty": 1,
+    "summary": "理解文化大革命的错误",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解文化大革命的错误。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解文化大革命的错误",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_06",
+    "title": "十一届三中全会",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 1,
+    "summary": "了解十一届三中全会",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解十一届三中全会。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解十一届三中全会",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_07",
+    "title": "经济特区",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 1,
+    "summary": "了解经济特区的设立",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解经济特区的设立。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解经济特区的设立",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_08",
+    "title": "社会主义市场经济",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 1,
+    "summary": "理解社会主义市场经济体制",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解社会主义市场经济体制。。近代早期西欧经济和社会变化",
+    "academic_req": null,
+    "key_points": [
+      "理解社会主义市场经济体制",
+      "近代早期西欧经济和社会变化",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_09",
+    "title": "一国两制",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 1,
+    "summary": "理解一国两制构想",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解一国两制构想。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解一国两制构想",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_10",
+    "title": "香港澳门回归",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 1,
+    "summary": "了解香港澳门回归",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解香港澳门回归。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解香港澳门回归",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_CM_11",
+    "title": "新世纪成就",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国现代史",
+    "subdomain": "改革开放",
+    "difficulty": 1,
+    "summary": "了解新世纪的中国成就",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解新世纪的中国成就。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解新世纪的中国成就",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_01",
+    "title": "阿拉伯帝国",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "中古",
+    "difficulty": 1,
+    "summary": "了解阿拉伯帝国",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解阿拉伯帝国。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解阿拉伯帝国",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_02",
+    "title": "中古西欧",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "中古",
+    "difficulty": 1,
+    "summary": "了解中古西欧的封建制度",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中古西欧的封建制度。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解中古西欧的封建制度",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_03",
+    "title": "日本大化改新",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "中古",
+    "difficulty": 1,
+    "summary": "了解日本大化改新",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解日本大化改新。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解日本大化改新",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_04",
+    "title": "英国资产阶级革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代",
+    "difficulty": 1,
+    "summary": "了解英国资产阶级革命",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解英国资产阶级革命。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解英国资产阶级革命",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_05",
+    "title": "马克思主义诞生",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代",
+    "difficulty": 1,
+    "summary": "了解马克思主义的诞生",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解马克思主义的诞生。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解马克思主义的诞生",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_06",
+    "title": "美国南北战争",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代",
+    "difficulty": 1,
+    "summary": "了解美国南北战争",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解美国南北战争。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解美国南北战争",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_07",
+    "title": "俄国农奴制改革",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代",
+    "difficulty": 1,
+    "summary": "了解俄国农奴制改革",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解俄国农奴制改革。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解俄国农奴制改革",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_08",
+    "title": "日本明治维新",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "近代",
+    "difficulty": 1,
+    "summary": "了解日本明治维新",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解日本明治维新。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解日本明治维新",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_09",
+    "title": "战后世界格局",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 1,
+    "summary": "理解战后两极格局",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解战后两极格局。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解战后两极格局",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_10",
+    "title": "苏联解体",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 1,
+    "summary": "了解苏联解体和冷战的结束",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解苏联解体和冷战的结束。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "了解苏联解体和冷战的结束",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_11",
+    "title": "经济全球化",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 1,
+    "summary": "理解经济全球化趋势",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解经济全球化趋势。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解经济全球化趋势",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "H_G79_WO_12",
+    "title": "第三次科技革命",
+    "subject": "history",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界史",
+    "subdomain": "现代",
+    "difficulty": 1,
+    "summary": "理解第三次科技革命",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解第三次科技革命。。中国共产党成立与新民主主义革命的兴起",
+    "academic_req": null,
+    "key_points": [
+      "理解第三次科技革命",
+      "在第四学段 (7~9 年级)教学情境中",
+      "中国共产党成立与新民主主义革命的兴起"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]

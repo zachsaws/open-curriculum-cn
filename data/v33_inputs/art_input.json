@@ -1,0 +1,1942 @@
+[
+  {
+    "id": "ART_A1_01",
+    "title": "感受音乐节奏",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "音乐",
+    "subdomain": "感受",
+    "difficulty": 1,
+    "summary": "感受音乐节奏/节拍/速度",
+    "content_req": "教学策略建议。感受音乐节奏/节拍/速度",
+    "academic_req": null,
+    "key_points": [
+      "感受音乐节奏/节拍/速度",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "ART_A1_02",
+    "title": "学唱简单歌曲",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 1,
+    "summary": "学唱简单歌曲",
+    "content_req": "教学策略建议。学唱简单歌曲",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "学唱简单歌曲"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "ART_A1_03",
+    "title": "认识常见乐器",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "音乐",
+    "subdomain": "乐器",
+    "difficulty": 1,
+    "summary": "认识常见乐器和音色",
+    "content_req": "教学策略建议。认识常见乐器和音色",
+    "academic_req": null,
+    "key_points": [
+      "认识常见乐器和音色",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_A1_04",
+    "title": "识谱基础",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "音乐",
+    "subdomain": "识谱",
+    "difficulty": 2,
+    "summary": "认识简谱/五线谱基础",
+    "content_req": "教学策略建议。认识简谱/五线谱基础",
+    "academic_req": null,
+    "key_points": [
+      "认识简谱/五线谱基础",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_A1_05",
+    "title": "音乐创作体验",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "音乐",
+    "subdomain": "创作",
+    "difficulty": 3,
+    "summary": "尝试简单的音乐创作",
+    "content_req": "教学策略建议。尝试简单的音乐创作",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "尝试简单的音乐创作"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A1_06",
+    "title": "音乐欣赏",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "音乐",
+    "subdomain": "欣赏",
+    "difficulty": 2,
+    "summary": "欣赏中外优秀音乐作品",
+    "content_req": "HEN + BRR。欣赏中外优秀音乐作品",
+    "academic_req": null,
+    "key_points": [
+      "欣赏中外优秀音乐作品",
+      "HEN + BRR"
+    ],
+    "bloom": [
+      "欣赏"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A2_01",
+    "title": "认识色彩",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "美术",
+    "subdomain": "色彩",
+    "difficulty": 1,
+    "summary": "认识三原色/三间色",
+    "content_req": "教学策略建议。认识三原色/三间色",
+    "academic_req": null,
+    "key_points": [
+      "认识三原色/三间色",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "ART_A2_02",
+    "title": "线条与形状",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "美术",
+    "subdomain": "造型",
+    "difficulty": 1,
+    "summary": "运用线条和形状进行绘画",
+    "content_req": "教学策略建议。运用线条和形状进行绘画",
+    "academic_req": null,
+    "key_points": [
+      "运用线条和形状进行绘画",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "运用"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "ART_A2_03",
+    "title": "绘画创作",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "美术",
+    "subdomain": "创作",
+    "difficulty": 2,
+    "summary": "进行简单的绘画创作",
+    "content_req": "教学策略建议。进行简单的绘画创作",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "进行简单的绘画创作"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_A2_04",
+    "title": "手工与立体造型",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "美术",
+    "subdomain": "手工",
+    "difficulty": 2,
+    "summary": "进行手工和立体造型",
+    "content_req": "教学策略建议。进行手工和立体造型",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "进行手工和立体造型"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_A2_05",
+    "title": "美术欣赏",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "美术",
+    "subdomain": "欣赏",
+    "difficulty": 2,
+    "summary": "欣赏中外优秀美术作品",
+    "content_req": "HEN + BRR。欣赏中外优秀美术作品",
+    "academic_req": "知特点，精选中外美术作品，通过专题欣赏、随堂欣赏和现场欣赏等",
+    "key_points": [
+      "欣赏中外优秀美术作品",
+      "HEN + BRR"
+    ],
+    "bloom": [
+      "欣赏"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A2_06",
+    "title": "中国画基础",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "美术",
+    "subdomain": "国画",
+    "difficulty": 3,
+    "summary": "了解中国画基本技法",
+    "content_req": "教学策略建议。了解中国画基本技法",
+    "academic_req": null,
+    "key_points": [
+      "了解中国画基本技法",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A2_07",
+    "title": "设计基础",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "美术",
+    "subdomain": "设计",
+    "difficulty": 3,
+    "summary": "了解平面设计/工业设计",
+    "content_req": "教学策略建议。了解平面设计/工业设计",
+    "academic_req": null,
+    "key_points": [
+      "了解平面设计/工业设计",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解",
+      "设计"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A3_01",
+    "title": "舞蹈律动",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "舞蹈",
+    "subdomain": "律动",
+    "difficulty": 1,
+    "summary": "随音乐进行身体律动",
+    "content_req": "教学策略建议。随音乐进行身体律动",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "随音乐进行身体律动"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "ART_A3_02",
+    "title": "民族舞蹈体验",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "舞蹈",
+    "subdomain": "民族",
+    "difficulty": 2,
+    "summary": "体验民族舞蹈",
+    "content_req": "教学策略建议。体验民族舞蹈",
+    "academic_req": "道具有助于学生更快地进入舞蹈表演情境，更好地体验民族舞蹈的韵",
+    "key_points": [
+      "教学策略建议",
+      "体验民族舞蹈"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_A3_03",
+    "title": "舞蹈编排",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "舞蹈",
+    "subdomain": "编排",
+    "difficulty": 3,
+    "summary": "参与简单舞蹈编排",
+    "content_req": "教学策略建议。参与简单舞蹈编排",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "参与简单舞蹈编排"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A4_01",
+    "title": "戏剧表演体验",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "戏剧",
+    "subdomain": "表演",
+    "difficulty": 2,
+    "summary": "进行简单的戏剧表演",
+    "content_req": "教学策略建议。进行简单的戏剧表演",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "进行简单的戏剧表演"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_A4_02",
+    "title": "课本剧编排",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "戏剧",
+    "subdomain": "综合",
+    "difficulty": 3,
+    "summary": "参与课本剧/课本剧编排",
+    "content_req": "教学策略建议。参与课本剧/课本剧编排",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "参与课本剧/课本剧编排"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A5_01",
+    "title": "影视欣赏",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "影视",
+    "subdomain": "欣赏",
+    "difficulty": 2,
+    "summary": "欣赏优秀影视作品",
+    "content_req": "HEN + BRR。欣赏优秀影视作品",
+    "academic_req": "形谱、乐谱或其他方式记录编创的作品。",
+    "key_points": [
+      "欣赏优秀影视作品",
+      "HEN + BRR"
+    ],
+    "bloom": [
+      "欣赏"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A5_02",
+    "title": "短视频创作",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "影视",
+    "subdomain": "创作",
+    "difficulty": 3,
+    "summary": "尝试简单的短视频创作",
+    "content_req": "教学策略建议。尝试简单的短视频创作",
+    "academic_req": null,
+    "key_points": [
+      "教学策略建议",
+      "尝试简单的短视频创作"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A6_01",
+    "title": "艺术与生活",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "综合",
+    "subdomain": "联系",
+    "difficulty": 1,
+    "summary": "感受艺术与生活的联系",
+    "content_req": "教学策略建议。感受艺术与生活的联系",
+    "academic_req": null,
+    "key_points": [
+      "感受艺术与生活的联系",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_A6_02",
+    "title": "艺术与文化",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "综合",
+    "subdomain": "文化",
+    "difficulty": 2,
+    "summary": "了解艺术与文化的关系",
+    "content_req": "HEN + BRR。了解艺术与文化的关系",
+    "academic_req": null,
+    "key_points": [
+      "了解艺术与文化的关系",
+      "HEN + BRR"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_G12_MU_01",
+    "title": "辨别自然界的声响",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "感受",
+    "difficulty": 1,
+    "summary": "辨别自然界的各种声响",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,辨别自然界的各种声响。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "辨别自然界的各种声响",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_02",
+    "title": "感受音乐的结构",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "感受",
+    "difficulty": 1,
+    "summary": "感受音乐的结构(引子/主题等)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,感受音乐的结构(引子/主题等)。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "感受音乐的结构(引子/主题等)",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_03",
+    "title": "聆听中外儿歌",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "感受",
+    "difficulty": 1,
+    "summary": "聆听中外儿歌",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,聆听中外儿歌。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "聆听中外儿歌",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_04",
+    "title": "聆听乐曲片段",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "感受",
+    "difficulty": 1,
+    "summary": "聆听简单的乐曲片段",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,聆听简单的乐曲片段。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "聆听简单的乐曲片段",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_05",
+    "title": "演唱姿势: 站姿",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 1,
+    "summary": "掌握正确的站姿演唱",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握正确的站姿演唱。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "掌握正确的站姿演唱",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_06",
+    "title": "咬字吐字清楚",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 1,
+    "summary": "演唱时咬字吐字清楚",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,演唱时咬字吐字清楚。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "演唱时咬字吐字清楚",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_07",
+    "title": "呼吸方法",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 1,
+    "summary": "掌握简单的呼吸方法",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,掌握简单的呼吸方法。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "掌握简单的呼吸方法",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "掌握"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_08",
+    "title": "沙锤演奏",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "演奏",
+    "difficulty": 1,
+    "summary": "会用沙锤演奏",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用沙锤演奏。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会用沙锤演奏",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_09",
+    "title": "铃鼓演奏",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "演奏",
+    "difficulty": 1,
+    "summary": "会用铃鼓演奏",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用铃鼓演奏。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会用铃鼓演奏",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_10",
+    "title": "三角铁演奏",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "演奏",
+    "difficulty": 1,
+    "summary": "会用三角铁演奏",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会用三角铁演奏。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会用三角铁演奏",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_11",
+    "title": "音乐创编: 节奏",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "创造",
+    "difficulty": 1,
+    "summary": "会创编简单的节奏",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会创编简单的节奏。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会创编简单的节奏",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_MU_12",
+    "title": "音乐创编: 动作",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "音乐",
+    "subdomain": "创造",
+    "difficulty": 1,
+    "summary": "会为音乐创编简单的动作",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会为音乐创编简单的动作。。教学策略建议",
+    "academic_req": "解二段体、三段体、回旋曲式等音乐结构，并能用语言、动作、图示",
+    "key_points": [
+      "会为音乐创编简单的动作",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_AR_01",
+    "title": "画简单的植物",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "美术",
+    "subdomain": "绘画",
+    "difficulty": 1,
+    "summary": "会画简单的植物",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会画简单的植物。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会画简单的植物",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_AR_02",
+    "title": "色彩的搭配",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "美术",
+    "subdomain": "绘画",
+    "difficulty": 1,
+    "summary": "会进行简单的色彩搭配",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会进行简单的色彩搭配。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单的色彩搭配",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_AR_03",
+    "title": "设计简单的贺卡",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "美术",
+    "subdomain": "设计",
+    "difficulty": 1,
+    "summary": "会设计简单的贺卡",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会设计简单的贺卡。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会设计简单的贺卡",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会",
+      "设计"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_AR_04",
+    "title": "欣赏名家名作",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "美术",
+    "subdomain": "欣赏",
+    "difficulty": 1,
+    "summary": "能欣赏简单的名家名作",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能欣赏简单的名家名作。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能欣赏简单的名家名作",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能",
+      "欣赏"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_AR_05",
+    "title": "粘贴装饰画",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "美术",
+    "subdomain": "手工",
+    "difficulty": 1,
+    "summary": "会做粘贴装饰画",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会做粘贴装饰画。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会做粘贴装饰画",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_DA_01",
+    "title": "学习舞蹈基本功",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "舞蹈",
+    "subdomain": "舞蹈",
+    "difficulty": 1,
+    "summary": "学习舞蹈基本功",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,学习舞蹈基本功。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "学习舞蹈基本功",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_DA_02",
+    "title": "简单的舞蹈组合",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "舞蹈",
+    "subdomain": "舞蹈",
+    "difficulty": 1,
+    "summary": "会跳简单的舞蹈组合",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会跳简单的舞蹈组合。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会跳简单的舞蹈组合",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_DA_03",
+    "title": "模仿动物舞蹈",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "舞蹈",
+    "subdomain": "舞蹈",
+    "difficulty": 1,
+    "summary": "会模仿动物的舞蹈动作",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会模仿动物的舞蹈动作。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会模仿动物的舞蹈动作",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_DR_01",
+    "title": "简单的戏剧游戏",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "戏剧",
+    "subdomain": "戏剧",
+    "difficulty": 1,
+    "summary": "参与简单的戏剧游戏",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,参与简单的戏剧游戏。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "参与简单的戏剧游戏",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_DR_02",
+    "title": "故事表演",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "戏剧",
+    "subdomain": "戏剧",
+    "difficulty": 1,
+    "summary": "能进行简单的故事表演",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能进行简单的故事表演。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能进行简单的故事表演",
+      "在第一学段 (1~2 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G12_FI_01",
+    "title": "观看儿童影片",
+    "subject": "art",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "影视",
+    "subdomain": "影视",
+    "difficulty": 1,
+    "summary": "观看简单的儿童影片",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,观看简单的儿童影片。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "观看简单的儿童影片",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "ART_G34_MU_01",
+    "title": "齐唱练习",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 1,
+    "summary": "参与齐唱练习",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,参与齐唱练习。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "参与齐唱练习",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_MU_02",
+    "title": "演唱不同风格的歌曲",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 1,
+    "summary": "演唱不同风格的歌曲",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,演唱不同风格的歌曲。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "演唱不同风格的歌曲",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_MU_03",
+    "title": "口风琴演奏",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "演奏",
+    "difficulty": 2,
+    "summary": "会用口风琴演奏简单乐曲",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会用口风琴演奏简单乐曲。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会用口风琴演奏简单乐曲",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_MU_04",
+    "title": "葫芦丝演奏",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "演奏",
+    "difficulty": 2,
+    "summary": "会用葫芦丝演奏简单乐曲",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会用葫芦丝演奏简单乐曲。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会用葫芦丝演奏简单乐曲",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_MU_05",
+    "title": "竖笛演奏: 进阶",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "演奏",
+    "difficulty": 2,
+    "summary": "会用竖笛演奏较复杂的乐曲",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会用竖笛演奏较复杂的乐曲。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会用竖笛演奏较复杂的乐曲",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_MU_06",
+    "title": "为歌曲编配动作",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "创造",
+    "difficulty": 1,
+    "summary": "为熟悉的歌曲编配动作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,为熟悉的歌曲编配动作。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "为熟悉的歌曲编配动作",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_MU_07",
+    "title": "简单的音乐创编",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "音乐",
+    "subdomain": "创造",
+    "difficulty": 2,
+    "summary": "进行简单的音乐创编",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,进行简单的音乐创编。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "进行简单的音乐创编",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_01",
+    "title": "中国画: 写意",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "绘画",
+    "difficulty": 3,
+    "summary": "学习中国画写意",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学习中国画写意。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "学习中国画写意",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_02",
+    "title": "水彩画基础",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "绘画",
+    "difficulty": 2,
+    "summary": "学习水彩画基础",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学习水彩画基础。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "学习水彩画基础",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_03",
+    "title": "欣赏中国画",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "欣赏",
+    "difficulty": 1,
+    "summary": "能欣赏中国画",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能欣赏中国画。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能欣赏中国画",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能",
+      "欣赏"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_04",
+    "title": "欣赏民间艺术",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "欣赏",
+    "difficulty": 1,
+    "summary": "能欣赏民间艺术",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能欣赏民间艺术。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能欣赏民间艺术",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能",
+      "欣赏"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_05",
+    "title": "陶艺基础",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "手工",
+    "difficulty": 2,
+    "summary": "学习陶艺基础",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学习陶艺基础。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "学习陶艺基础",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_06",
+    "title": "剪纸: 主题创作",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "手工",
+    "difficulty": 2,
+    "summary": "进行主题剪纸创作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,进行主题剪纸创作。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "进行主题剪纸创作",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_07",
+    "title": "编织: 进阶",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "手工",
+    "difficulty": 2,
+    "summary": "进行较复杂的编织",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,进行较复杂的编织。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "进行较复杂的编织",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_AR_08",
+    "title": "设计海报",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "美术",
+    "subdomain": "设计",
+    "difficulty": 2,
+    "summary": "会设计简单的海报",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会设计简单的海报。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会设计简单的海报",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会",
+      "设计"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_DA_01",
+    "title": "集体舞编排",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "舞蹈",
+    "subdomain": "舞蹈",
+    "difficulty": 2,
+    "summary": "参与集体舞编排",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,参与集体舞编排。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "参与集体舞编排",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_DA_02",
+    "title": "民族舞学习",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "舞蹈",
+    "subdomain": "舞蹈",
+    "difficulty": 2,
+    "summary": "学习民族舞",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学习民族舞。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "学习民族舞",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G34_CM_01",
+    "title": "艺术与情感",
+    "subject": "art",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "综合",
+    "subdomain": "综合",
+    "difficulty": 1,
+    "summary": "理解艺术与情感的关系",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解艺术与情感的关系。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "理解艺术与情感的关系",
+      "在第二学段 (3~4 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "ART_G56_MU_01",
+    "title": "有感情地演唱",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 2,
+    "summary": "能有感情地演唱歌曲",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能有感情地演唱歌曲。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能有感情地演唱歌曲",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_MU_02",
+    "title": "演唱技巧训练",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "音乐",
+    "subdomain": "演唱",
+    "difficulty": 2,
+    "summary": "进行简单的演唱技巧训练",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,进行简单的演唱技巧训练。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第三学段 (5~6 年级)教学情境中",
+      "进行简单的演唱技巧训练",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_MU_03",
+    "title": "音乐作品鉴赏",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "音乐",
+    "subdomain": "鉴赏",
+    "difficulty": 2,
+    "summary": "能鉴赏简单的音乐作品",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能鉴赏简单的音乐作品。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能鉴赏简单的音乐作品",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_MU_04",
+    "title": "感受音乐风格",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "音乐",
+    "subdomain": "鉴赏",
+    "difficulty": 2,
+    "summary": "能感受不同音乐的风格",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能感受不同音乐的风格。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能感受不同音乐的风格",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能",
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_AR_01",
+    "title": "中国画技法",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "美术",
+    "subdomain": "绘画",
+    "difficulty": 2,
+    "summary": "了解中国画的笔法、墨法、设色",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解中国画的笔法、墨法、设色。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "了解中国画的笔法、墨法、设色",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_AR_02",
+    "title": "素描基础",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "美术",
+    "subdomain": "绘画",
+    "difficulty": 2,
+    "summary": "学习素描的基础知识",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,学习素描的基础知识。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "在第三学段 (5~6 年级)教学情境中",
+      "学习素描的基础知识",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_AR_03",
+    "title": "设计封面",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "美术",
+    "subdomain": "设计",
+    "difficulty": 2,
+    "summary": "会设计简单的封面",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会设计简单的封面。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会设计简单的封面",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会",
+      "设计"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_AR_04",
+    "title": "设计标志",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "美术",
+    "subdomain": "设计",
+    "difficulty": 2,
+    "summary": "会设计简单的标志",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会设计简单的标志。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "会设计简单的标志",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会",
+      "设计"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G56_CM_01",
+    "title": "艺术与社会发展",
+    "subject": "art",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "综合",
+    "subdomain": "综合",
+    "difficulty": 2,
+    "summary": "理解艺术与社会发展的关系",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解艺术与社会发展的关系。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "理解艺术与社会发展的关系",
+      "在第三学段 (5~6 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "ART_G79_MU_01",
+    "title": "中外音乐鉴赏",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "音乐",
+    "subdomain": "鉴赏",
+    "difficulty": 3,
+    "summary": "能鉴赏中外音乐作品",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能鉴赏中外音乐作品。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能鉴赏中外音乐作品",
+      "在第四学段 (7~9 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_G79_MU_02",
+    "title": "音乐与社会",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "音乐",
+    "subdomain": "鉴赏",
+    "difficulty": 3,
+    "summary": "理解音乐与社会的关系",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解音乐与社会的关系。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "理解音乐与社会的关系",
+      "在第四学段 (7~9 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_G79_AR_01",
+    "title": "美术创作",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "美术",
+    "subdomain": "创作",
+    "difficulty": 3,
+    "summary": "能进行独立的美术创作",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能进行独立的美术创作。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能进行独立的美术创作",
+      "在第四学段 (7~9 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_G79_AR_02",
+    "title": "美术评价",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "美术",
+    "subdomain": "创作",
+    "difficulty": 3,
+    "summary": "能对自己的美术作品进行评价",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能对自己的美术作品进行评价。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能对自己的美术作品进行评价",
+      "在第四学段 (7~9 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_G79_AR_03",
+    "title": "中外美术鉴赏",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "美术",
+    "subdomain": "鉴赏",
+    "difficulty": 3,
+    "summary": "能鉴赏中外美术作品",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能鉴赏中外美术作品。。教学策略建议",
+    "academic_req": "形、抽象等手法创作美术作品。",
+    "key_points": [
+      "能鉴赏中外美术作品",
+      "在第四学段 (7~9 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "ART_G79_FI_01",
+    "title": "影视作品分析",
+    "subject": "art",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "影视",
+    "subdomain": "影视",
+    "difficulty": 2,
+    "summary": "能分析简单的影视作品",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能分析简单的影视作品。。教学策略建议",
+    "academic_req": null,
+    "key_points": [
+      "能分析简单的影视作品",
+      "在第四学段 (7~9 年级)教学情境中",
+      "教学策略建议"
+    ],
+    "bloom": [
+      "能",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]
