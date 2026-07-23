@@ -1,0 +1,3451 @@
+[
+  {
+    "id": "CN_C1_PR_01",
+    "title": "阅读有关个人生活家庭生活短文",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "阅读个人/家庭生活短文,感受美好亲情",
+    "content_req": "课堂教学评价建议。阅读个人/家庭生活短文,感受美好亲情",
+    "academic_req": null,
+    "key_points": [
+      "感受美好亲情",
+      "课堂教学评价建议",
+      "阅读个人/家庭生活短文"
+    ],
+    "bloom": [
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_PR_02",
+    "title": "运用文明礼貌语言与家人沟通",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "运用文明礼貌语言与家庭成员/亲朋好友交流,学会感恩",
+    "content_req": "课堂教学评价建议。运用文明礼貌语言与家庭成员/亲朋好友交流,学会感恩",
+    "academic_req": null,
+    "key_points": [
+      "运用文明礼貌语言与家庭成员/亲朋好友交流",
+      "学会感恩",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "会",
+      "运用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_PR_03",
+    "title": "阅读有关学校生活短文",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "阅读学校生活短文,认识图文中相关汉字",
+    "content_req": "阅读有关学校生活的短文，认识图文中相关的汉字; 学习与。阅读学校生活短文,认识图文中相关汉字",
+    "academic_req": null,
+    "key_points": [
+      "认识图文中相关的汉字",
+      "认识图文中相关汉字",
+      "阅读有关学校生活的短文",
+      "阅读学校生活短文"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_PR_04",
+    "title": "阅读有关公共生活短文",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读公共生活短文,在生活中传递温暖",
+    "content_req": "课堂教学评价建议。阅读公共生活短文,在生活中传递温暖",
+    "academic_req": null,
+    "key_points": [
+      "课堂教学评价建议",
+      "阅读公共生活短文",
+      "在生活中传递温暖"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_PR_05",
+    "title": "讲述自己感兴趣的见闻",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用书面或口头方式讲述自己感兴趣的见闻",
+    "content_req": "课堂教学评价建议。用书面或口头方式讲述自己感兴趣的见闻",
+    "academic_req": null,
+    "key_points": [
+      "用书面或口头方式讲述自己感兴趣的见闻",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "讲述"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_PR_06",
+    "title": "用图画等方式表达所见所闻",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "表达",
+    "difficulty": 1,
+    "summary": "用图画/符号/文字/语音等方式表达",
+    "content_req": "课堂教学评价建议。用图画/符号/文字/语音等方式表达",
+    "academic_req": null,
+    "key_points": [
+      "用图画/符号/文字/语音等方式表达",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_LR_01",
+    "title": "阅读儿歌/童谣/童话",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "阅读儿歌/童谣/童话,感受阅读乐趣",
+    "content_req": "课堂教学评价建议。阅读儿歌/童谣/童话,感受阅读乐趣",
+    "academic_req": null,
+    "key_points": [
+      "感受阅读乐趣",
+      "课堂教学评价建议",
+      "阅读儿歌/童谣/童话"
+    ],
+    "bloom": [
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_LR_02",
+    "title": "阅读儿童故事",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "阅读革命故事/儿童故事,激发兴趣",
+    "content_req": "课堂教学评价建议。阅读革命故事/儿童故事,激发兴趣",
+    "academic_req": null,
+    "key_points": [
+      "课堂教学评价建议",
+      "阅读革命故事/儿童故事",
+      "激发兴趣"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_LR_03",
+    "title": "讲述故事",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "讲述故事,表达自己的感受",
+    "content_req": "课堂教学评价建议。讲述故事,表达自己的感受",
+    "academic_req": null,
+    "key_points": [
+      "表达自己的感受",
+      "讲述故事",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "表达",
+      "讲述",
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_LR_04",
+    "title": "朗诵儿歌童谣古诗",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "朗诵儿歌/童谣/古诗",
+    "content_req": "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜。朗诵儿歌/童谣/古诗",
+    "academic_req": null,
+    "key_points": [
+      "诵读、积累成语典故、中华文化名言、短小的古诗词和新鲜",
+      "朗诵儿歌/童谣/古诗"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_WR_01",
+    "title": "写自己想说的话",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "写作",
+    "subdomain": "写话",
+    "difficulty": 1,
+    "summary": "对写话有兴趣,写自己想说的话",
+    "content_req": "课堂教学评价建议。对写话有兴趣,写自己想说的话",
+    "academic_req": null,
+    "key_points": [
+      "课堂教学评价建议",
+      "对写话有兴趣",
+      "写自己想说的话"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_WR_02",
+    "title": "写想象中的事物",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "写作",
+    "subdomain": "写话",
+    "difficulty": 1,
+    "summary": "写想象中的事物,体验表达的快乐",
+    "content_req": "课堂教学评价建议。写想象中的事物,体验表达的快乐",
+    "academic_req": null,
+    "key_points": [
+      "体验表达的快乐",
+      "课堂教学评价建议",
+      "写想象中的事物"
+    ],
+    "bloom": [
+      "表达"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_SP_01",
+    "title": "学说普通话",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "认真听他人讲话,学说普通话",
+    "content_req": "课堂教学评价建议。认真听他人讲话,学说普通话",
+    "academic_req": null,
+    "key_points": [
+      "课堂教学评价建议",
+      "认真听他人讲话",
+      "学说普通话"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C1_SP_02",
+    "title": "用礼貌语言交流",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "用礼貌语言与人交流",
+    "content_req": "课堂教学评价建议。用礼貌语言与人交流",
+    "academic_req": null,
+    "key_points": [
+      "课堂教学评价建议",
+      "用礼貌语言与人交流"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_C2_PR_01",
+    "title": "阅读现代叙事/说明/抒情文",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读现代叙事/说明/抒情类文章",
+    "content_req": "学习阅读说明、有令写大自然的短文，感受、欣赏大自然的奇。阅读现代叙事/说明/抒情类文章",
+    "academic_req": null,
+    "key_points": [
+      "感受、欣赏大自然的奇",
+      "学习阅读说明、有令写大自然的短文",
+      "阅读现代叙事/说明/抒情类文章"
+    ],
+    "bloom": [
+      "说明",
+      "欣赏",
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_PR_02",
+    "title": "获取整合有价值信息",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "通过倾听/阅读/观察获取整合有价值信息",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。通过倾听/阅读/观察获取整合有价值信息",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "通过倾听/阅读/观察获取整合有价值信息"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_PR_03",
+    "title": "根据交际情境清楚得体表达",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "根据具体交际情境和交流对象,清楚得体表达",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。根据具体交际情境和交流对象,清楚得体表达",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "清楚得体表达",
+      "根据具体交际情境和交流对象"
+    ],
+    "bloom": [
+      "认识",
+      "表达"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_LR_01",
+    "title": "阅读表现自然/社会/艺术之美的作品",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读表现自然之美/社会之美/艺术之美的优秀作品",
+    "content_req": "阅读有关家庭生活、学校生活、社会生活的短文，学习用口。阅读表现自然之美/社会之美/艺术之美的优秀作品",
+    "academic_req": null,
+    "key_points": [
+      "阅读有关家庭生活、学校生活、社会生活的短文",
+      "阅读表现自然之美/社会之美/艺术之美的优秀作品",
+      "学习用口"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_LR_02",
+    "title": "阅读英雄模范事迹作品",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读表现革命传统/英雄模范事迹的作品",
+    "content_req": "阅读反映革命传统的作品，如《可爱的中国》《小兵张嘎》。阅读表现革命传统/英雄模范事迹的作品",
+    "academic_req": null,
+    "key_points": [
+      "阅读反映革命传统的作品",
+      "如《可爱的中国》《小兵张嘎》",
+      "阅读表现革命传统/英雄模范事迹的作品"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_LR_03",
+    "title": "用口头和书面表达自己的感受",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "表达",
+    "difficulty": 2,
+    "summary": "用口头和书面表达自己获得的感受和体验",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。用口头和书面表达自己获得的感受和体验",
+    "academic_req": null,
+    "key_points": [
+      "用口头和书面表达自己获得的感受和体验",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+    ],
+    "bloom": [
+      "认识",
+      "表达",
+      "感受"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_LR_04",
+    "title": "尝试写诗歌",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "写作",
+    "difficulty": 2,
+    "summary": "尝试写诗歌/小小说等",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。尝试写诗歌/小小说等",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "尝试写诗歌/小小说等"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_WR_01",
+    "title": "写清楚一件事",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能写出清楚的一件事",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写出清楚的一件事",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "能写出清楚的一件事"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_WR_02",
+    "title": "能写读书笔记",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能写读书笔记",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写读书笔记",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "能写读书笔记"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_WR_03",
+    "title": "能写常见的应用文",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 2,
+    "summary": "能写常见的应用文",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写常见的应用文",
+    "academic_req": null,
+    "key_points": [
+      "能写常见的应用文",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C2_SP_01",
+    "title": "讲述见闻说出感受",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "讲述见闻,说出自己的感受",
+    "content_req": "在语言文字运用情境中，发现、感受和表现语言文字的魅。讲述见闻,说出自己的感受",
+    "academic_req": null,
+    "key_points": [
+      "发现、感受和表现语言文字的魅",
+      "在语言文字运用情境中",
+      "讲述见闻",
+      "说出自己的感受"
+    ],
+    "bloom": [
+      "发现",
+      "运用",
+      "讲述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C3_PR_01",
+    "title": "阅读叙事/说明/非连续性文本",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读叙事性/说明性/非连续性文本",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。阅读叙事性/说明性/非连续性文本",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "阅读叙事性/说明性/非连续性文本",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "体会",
+      "说明"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_PR_02",
+    "title": "倾听阅读观察获取信息",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "通过倾听/阅读/观察获取整合信息",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。通过倾听/阅读/观察获取整合信息",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "阅读富有童趣的图画书等浅易的读物",
+      "通过倾听/阅读/观察获取整合信息"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_PR_03",
+    "title": "有条理地表达",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "有条理地表达自己的观点",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。有条理地表达自己的观点",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "有条理地表达自己的观点",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "体会",
+      "表达"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_LR_01",
+    "title": "阅读表现革命传统的文艺作品",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读表现革命传统的诗歌/小说/戏剧等",
+    "content_req": "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名。阅读表现革命传统的诗歌/小说/戏剧等",
+    "academic_req": null,
+    "key_points": [
+      "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名",
+      "阅读表现革命传统的诗歌/小说/戏剧等"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_LR_02",
+    "title": "欣赏文学语言",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "欣赏",
+    "difficulty": 3,
+    "summary": "欣赏文学作品的语言/形象/情感",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。欣赏文学作品的语言/形象/情感",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "欣赏文学作品的语言/形象/情感",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "体会",
+      "欣赏"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_LR_03",
+    "title": "尝试诗歌小说创作",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "写作",
+    "difficulty": 3,
+    "summary": "尝试写诗歌/短篇小说",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。尝试写诗歌/短篇小说",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "阅读富有童趣的图画书等浅易的读物",
+      "尝试写诗歌/短篇小说"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_WR_01",
+    "title": "写简单的记实作文",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "写简单的记实作文和想象作文",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。写简单的记实作文和想象作文",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "阅读富有童趣的图画书等浅易的读物",
+      "写简单的记实作文和想象作文"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_WR_02",
+    "title": "内容具体感情真实",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "内容具体,感情真实",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。内容具体,感情真实",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "阅读富有童趣的图画书等浅易的读物",
+      "内容具体",
+      "感情真实"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_WR_03",
+    "title": "能写读书笔记学写常见的应用文",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 2,
+    "summary": "能写读书笔记,学写常见应用文",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。能写读书笔记,学写常见应用文",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能写读书笔记",
+      "学写常见应用文",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_SP_01",
+    "title": "复述转述讲述",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "复述/转述/讲述见闻和感受",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。复述/转述/讲述见闻和感受",
+    "academic_req": null,
+    "key_points": [
+      "复述/转述/讲述见闻和感受",
+      "体会读书的快乐",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "体会",
+      "复述"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C3_TH_01",
+    "title": "阅读思辨性文本",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读思辨性文本,学习有理有据地表达观点",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。阅读思辨性文本,学习有理有据地表达观点",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "学习有理有据地表达观点",
+      "阅读富有童趣的图画书等浅易的读物",
+      "阅读思辨性文本"
+    ],
+    "bloom": [
+      "会",
+      "体会",
+      "表达"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C4_PR_01",
+    "title": "阅读比较复杂的文本",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读比较复杂的叙事性/说明性/议论性文本",
+    "content_req": "学习关于科学探究方面的文本，联系自己的科学学习经历，。阅读比较复杂的叙事性/说明性/议论性文本",
+    "academic_req": null,
+    "key_points": [
+      "阅读比较复杂的叙事性/说明性/议论性文本",
+      "联系自己的科学学习经历",
+      "学习关于科学探究方面的文本"
+    ],
+    "bloom": [
+      "经历",
+      "比较",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_PR_02",
+    "title": "根据需要调整表达内容和方式",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "根据交际需要,调整表达内容和方式",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。根据交际需要,调整表达内容和方式",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "调整表达内容和方式",
+      "根据交际需要"
+    ],
+    "bloom": [
+      "认识",
+      "表达"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_LR_01",
+    "title": "欣赏文学作品",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文学阅读",
+    "subdomain": "欣赏",
+    "difficulty": 3,
+    "summary": "欣赏文学作品,有自己的情感体验和思考",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。欣赏文学作品,有自己的情感体验和思考",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "欣赏文学作品",
+      "有自己的情感体验和思考"
+    ],
+    "bloom": [
+      "认识",
+      "欣赏"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_LR_02",
+    "title": "理解作者立场观点态度",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文学阅读",
+    "subdomain": "理解",
+    "difficulty": 3,
+    "summary": "理解作者立场/观点/态度",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。理解作者立场/观点/态度",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "理解作者立场/观点/态度"
+    ],
+    "bloom": [
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_LR_03",
+    "title": "写文学评论",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文学阅读",
+    "subdomain": "评论",
+    "difficulty": 3,
+    "summary": "尝试写文学评论",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。尝试写文学评论",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "尝试写文学评论"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_WR_01",
+    "title": "写记叙文/抒情文/说明文/议论文",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能写记叙文/抒情文/说明文/议论文",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。能写记叙文/抒情文/说明文/议论文",
+    "academic_req": null,
+    "key_points": [
+      "能写记叙文/抒情文/说明文/议论文",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "说明"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_WR_02",
+    "title": "立论明确论据充分",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "议论文",
+    "difficulty": 3,
+    "summary": "立论明确,论据充分,论证合理",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。立论明确,论据充分,论证合理",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "立论明确",
+      "论据充分",
+      "论证合理"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_WR_03",
+    "title": "学写应用文和文学创作",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "综合",
+    "difficulty": 3,
+    "summary": "学写应用文,尝试文学创作",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。学写应用文,尝试文学创作",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "学写应用文",
+      "尝试文学创作"
+    ],
+    "bloom": [
+      "认识",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_SP_01",
+    "title": "自信负责地表达自己的观点",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "自信负责地表达自己的观点",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。自信负责地表达自己的观点",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "自信负责地表达自己的观点"
+    ],
+    "bloom": [
+      "认识",
+      "表达"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_TH_01",
+    "title": "阅读古今中外思辨性文本",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读古今中外思辨性文本,学习批判性思维",
+    "content_req": "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名。阅读古今中外思辨性文本,学习批判性思维",
+    "academic_req": null,
+    "key_points": [
+      "独立阅读古今中外诗歌集、中长篇小说、散文集等文学名",
+      "阅读古今中外思辨性文本",
+      "学习批判性思维"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C4_TH_02",
+    "title": "阐述观点有理有据",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "思辨性阅读",
+    "subdomain": "表达",
+    "difficulty": 3,
+    "summary": "阐述自己的观点,有理有据",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。阐述自己的观点,有理有据",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "阐述自己的观点",
+      "有理有据"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C2_BO_01",
+    "title": "整本书阅读:寓言/童话/故事",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "阅读整本寓言/童话/故事",
+    "content_req": "阅读自己喜欢的童话书，想象故事中的画面，学习讲述书中。阅读整本寓言/童话/故事",
+    "academic_req": null,
+    "key_points": [
+      "学习讲述书中",
+      "阅读自己喜欢的童话书",
+      "想象故事中的画面",
+      "阅读整本寓言/童话/故事"
+    ],
+    "bloom": [
+      "讲述"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_C3_BO_01",
+    "title": "整本书阅读:长篇文学名著",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读长篇文学名著,做读书笔记",
+    "content_req": "阅读儿童文学名著，如《稻草人》《爱的教育》等，感受作。阅读长篇文学名著,做读书笔记",
+    "academic_req": null,
+    "key_points": [
+      "阅读儿童文学名著",
+      "如《稻草人》《爱的教育》等",
+      "阅读长篇文学名著",
+      "做读书笔记"
+    ],
+    "bloom": [
+      "感受"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C4_BO_01",
+    "title": "整本书阅读:学术著作/文学经典",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "阅读学术著作/文学经典,养成读书习惯",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。阅读学术著作/文学经典,养成读书习惯",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "阅读学术著作/文学经典",
+      "养成读书习惯"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_C3_XS_01",
+    "title": "跨学科语文学习活动",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "跨学科学习",
+    "subdomain": "综合",
+    "difficulty": 2,
+    "summary": "开展跨学科语文学习活动",
+    "content_req": "阅读富有童趣的图画书等浅易的读物，体会读书的快乐。。开展跨学科语文学习活动",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "阅读富有童趣的图画书等浅易的读物",
+      "开展跨学科语文学习活动"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_C4_XS_01",
+    "title": "跨学科专题研究",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科学习",
+    "subdomain": "研究",
+    "difficulty": 3,
+    "summary": "围绕跨学科主题开展专题研究",
+    "content_req": "认识有关人的身体与行为、天地四方、自然万物等方面的常。围绕跨学科主题开展专题研究",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "围绕跨学科主题开展专题研究"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G12_LR_01",
+    "title": "阅读科普作品",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能阅读并理解浅显的科普作品",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能阅读并理解浅显的科普作品。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解浅显的科普作品",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_02",
+    "title": "阅读动物故事",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能阅读并理解动物故事",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能阅读并理解动物故事。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解动物故事",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_03",
+    "title": "阅读自然故事",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能阅读并理解自然故事",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能阅读并理解自然故事。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解自然故事",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_04",
+    "title": "阅读成语故事",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能阅读并理解成语故事",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能阅读并理解成语故事。。阅读哲人故事、寓言故事、成语故事等，感受其中的智慧，",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解成语故事",
+      "感受其中的智慧",
+      "在第一学段 (1~2 年级)教学情境中",
+      "阅读哲人故事、寓言故事、成语故事等"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_05",
+    "title": "正确朗读",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "能用普通话正确朗读课文",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能用普通话正确朗读课文。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能用普通话正确朗读课文",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_06",
+    "title": "流利朗读",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "能用普通话流利朗读课文",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能用普通话流利朗读课文。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能用普通话流利朗读课文",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_07",
+    "title": "有感情朗读",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "能用普通话有感情地朗读课文",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能用普通话有感情地朗读课文。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能用普通话有感情地朗读课文",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_LR_08",
+    "title": "分角色朗读",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "文学阅读",
+    "subdomain": "朗读",
+    "difficulty": 1,
+    "summary": "会分角色朗读课文",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会分角色朗读课文。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "会分角色朗读课文",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "会",
+      "朗读"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_01",
+    "title": "阅读生活说明书",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能读懂生活说明书",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能读懂生活说明书。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能读懂生活说明书",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_02",
+    "title": "阅读简单的请假条",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能读懂简单的请假条",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能读懂简单的请假条。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能读懂简单的请假条",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_03",
+    "title": "阅读留言条",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能读懂留言条",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能读懂留言条。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能读懂留言条",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_04",
+    "title": "阅读招领启事",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 1,
+    "summary": "能读懂招领启事",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能读懂招领启事。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能读懂招领启事",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_05",
+    "title": "看图说话",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "能看图说出图意",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能看图说出图意。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能看图说出图意",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_06",
+    "title": "用几句话介绍自己",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "表达",
+    "difficulty": 1,
+    "summary": "能用几句话介绍自己",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能用几句话介绍自己。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能用几句话介绍自己",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_PR_07",
+    "title": "介绍自己的家",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实用性阅读",
+    "subdomain": "表达",
+    "difficulty": 1,
+    "summary": "能用几句话介绍自己的家",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能用几句话介绍自己的家。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能用几句话介绍自己的家",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_WR_01",
+    "title": "用词写句子",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "写作",
+    "subdomain": "写话",
+    "difficulty": 1,
+    "summary": "能用常用词写通顺的句子",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能用常用词写通顺的句子。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "能用常用词写通顺的句子",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_WR_02",
+    "title": "写几句话日记",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "写作",
+    "subdomain": "写话",
+    "difficulty": 1,
+    "summary": "能写几句话的日记",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,能写几句话的日记。。能写日记，关注家庭、学校、社区生活中发生的新鲜事。",
+    "academic_req": null,
+    "key_points": [
+      "能写几句话的日记",
+      "能写日记",
+      "在第一学段 (1~2 年级)教学情境中",
+      "关注家庭、学校、社区生活中发生的新鲜事"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_WR_03",
+    "title": "看图写一段话",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "写作",
+    "subdomain": "看图",
+    "difficulty": 1,
+    "summary": "会看图写一段话",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会看图写一段话。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "会看图写一段话",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_OC_01",
+    "title": "请教",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "学会请教别人",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,学会请教别人。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "学会请教别人",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G12_OC_02",
+    "title": "问路",
+    "subject": "chinese",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 1,
+    "summary": "学会问路",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,学会问路。。课堂教学评价建议",
+    "academic_req": null,
+    "key_points": [
+      "学会问路",
+      "在第一学段 (1~2 年级)教学情境中",
+      "课堂教学评价建议"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CN_G34_LR_01",
+    "title": "阅读叙事性作品",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读并理解叙事性作品",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能阅读并理解叙事性作品。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解叙事性作品",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_LR_02",
+    "title": "阅读说明性文章",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读并理解说明性文章",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能阅读并理解说明性文章。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解说明性文章",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_LR_03",
+    "title": "把握文章的主要内容",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能把握文章的主要内容",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能把握文章的主要内容。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能把握文章的主要内容",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_LR_04",
+    "title": "体会文章表达的思想感情",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能体会文章表达的思想感情",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能体会文章表达的思想感情。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能体会文章表达的思想感情",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "会",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_LR_05",
+    "title": "课外阅读总量(40 万字)",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "课外阅读总量不少于 40 万字",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,课外阅读总量不少于 40 万字。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中",
+      "课外阅读总量不少于 40 万字"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_PR_01",
+    "title": "阅读简单的说明文",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能读懂简单的说明文",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能读懂简单的说明文。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能读懂简单的说明文",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "说明"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_PR_02",
+    "title": "阅读新闻报道",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能读懂新闻报道",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能读懂新闻报道。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能读懂新闻报道",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_PR_03",
+    "title": "转述",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "实用性阅读",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "能转述别人的话",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能转述别人的话。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能转述别人的话",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_01",
+    "title": "写人: 外貌描写",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 1,
+    "summary": "能进行外貌描写",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能进行外貌描写。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能进行外貌描写",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_02",
+    "title": "写人: 语言描写",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能进行语言描写",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能进行语言描写。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能进行语言描写",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_03",
+    "title": "写人: 动作描写",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能进行动作描写",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能进行动作描写。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能进行动作描写",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_04",
+    "title": "写人: 心理描写",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能进行心理描写",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能进行心理描写。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能进行心理描写",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_05",
+    "title": "写事: 完整过程",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 1,
+    "summary": "能把一件事写完整",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能把一件事写完整。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能把一件事写完整",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_06",
+    "title": "写事: 环境描写",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能进行环境描写",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能进行环境描写。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能进行环境描写",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_07",
+    "title": "写景: 四季景色",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能描写四季景色",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能描写四季景色。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能描写四季景色",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_08",
+    "title": "写景: 自然景物",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 1,
+    "summary": "能描写自然景物",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能描写自然景物。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能描写自然景物",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_09",
+    "title": "写便条/请假条",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 1,
+    "summary": "会写便条和请假条",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会写便条和请假条。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "会写便条和请假条",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_10",
+    "title": "写通知",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 2,
+    "summary": "会写简单的通知",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会写简单的通知。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "会写简单的通知",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_11",
+    "title": "写日记/书信",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 2,
+    "summary": "会写日记和书信",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会写日记和书信。。能写日记，关注家庭、学校、社区生活中发生的新鲜事。",
+    "academic_req": null,
+    "key_points": [
+      "会写日记和书信",
+      "能写日记",
+      "在第二学段 (3~4 年级)教学情境中",
+      "关注家庭、学校、社区生活中发生的新鲜事"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_WR_12",
+    "title": "写生活日记",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "写作",
+    "subdomain": "日记",
+    "difficulty": 1,
+    "summary": "能写生活日记",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能写生活日记。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能写生活日记",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_OC_01",
+    "title": "讨论",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "参与讨论",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,参与讨论。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中",
+      "参与讨论"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_BR_01",
+    "title": "读一本书的策略",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "掌握读一本书的基本策略",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,掌握读一本书的基本策略。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "掌握读一本书的基本策略",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G34_BR_02",
+    "title": "分享读后感",
+    "subject": "chinese",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能分享读一本书的感想",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,能分享读一本书的感想。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能分享读一本书的感想",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "CN_G56_LR_01",
+    "title": "阅读文学作品",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "能阅读并理解文学作品",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能阅读并理解文学作品。。阅读革命文学作品，如《革命烈士诗抄》《红岩》《红星照溜",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解文学作品",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读革命文学作品",
+      "如《革命烈士诗抄》《红岩》《红星照溜"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_LR_02",
+    "title": "体会作品情感",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能体会作品表达的情感",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能体会作品表达的情感。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "能体会作品表达的情感",
+      "体会读书的快乐",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_LR_03",
+    "title": "品味精彩语句",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能品味精彩语句的表达效果",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能品味精彩语句的表达效果。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "能品味精彩语句的表达效果",
+      "体会读书的快乐",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_LR_04",
+    "title": "把握作品内涵",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "文学阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能把握作品的主要内涵",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能把握作品的主要内涵。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能把握作品的主要内涵",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_PR_01",
+    "title": "把握说明对象特征",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能把握说明对象的特征",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能把握说明对象的特征。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "能把握说明对象的特征",
+      "体会读书的快乐",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_PR_02",
+    "title": "了解说明方法",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 2,
+    "summary": "了解举例子、列数字、打比方等说明方法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解举例子、列数字、打比方等说明方法。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "了解举例子、列数字、打比方等说明方法",
+      "体会读书的快乐",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_CR_01",
+    "title": "阅读议论文",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能阅读并理解议论文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能阅读并理解议论文。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解议论文",
+      "体会读书的快乐",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_CR_02",
+    "title": "把握作者观点",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能把握作者的观点",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能把握作者的观点。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能把握作者的观点",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_CR_03",
+    "title": "辨别观点与材料",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能辨别观点和材料",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能辨别观点和材料。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能辨别观点和材料",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_01",
+    "title": "写人: 人物特点",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能写出人物的特点",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能写出人物的特点。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能写出人物的特点",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_02",
+    "title": "写人: 典型事例",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能用典型事例表现人物",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能用典型事例表现人物。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能用典型事例表现人物",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_03",
+    "title": "写事: 详略得当",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能详略得当写事",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能详略得当写事。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能详略得当写事",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_04",
+    "title": "写景: 借景抒情",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能借景抒情",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能借景抒情。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能借景抒情",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_05",
+    "title": "想象作文: 未来",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 2,
+    "summary": "能写关于未来的想象作文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能写关于未来的想象作文。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能写关于未来的想象作文",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_06",
+    "title": "想象作文: 科幻",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能写科幻想象作文",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能写科幻想象作文。。阅读文学、科普、科幻等方面的优秀作品，如《寄小读者》",
+    "academic_req": null,
+    "key_points": [
+      "能写科幻想象作文",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读文学、科普、科幻等方面的优秀作品",
+      "如《寄小读者》"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_07",
+    "title": "写倡议书",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 2,
+    "summary": "会写倡议书",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会写倡议书。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "会写倡议书",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_WR_08",
+    "title": "写活动计划",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "写作",
+    "subdomain": "应用文",
+    "difficulty": 2,
+    "summary": "会写简单的活动计划",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会写简单的活动计划。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "会写简单的活动计划",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_OC_01",
+    "title": "即席发言",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 2,
+    "summary": "能进行即席发言",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能进行即席发言。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能进行即席发言",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_OC_02",
+    "title": "辩论",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能参与辩论",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能参与辩论。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能参与辩论",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_BR_01",
+    "title": "欣赏作品人物形象",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能欣赏作品的人物形象",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能欣赏作品的人物形象。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "能欣赏作品的人物形象",
+      "体会读书的快乐",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G56_BR_02",
+    "title": "作品内容探讨",
+    "subject": "chinese",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能对作品内容进行探讨",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,能对作品内容进行探讨。。阅读富有童趣的图画书等浅易的读物，体会读书的快乐。",
+    "academic_req": null,
+    "key_points": [
+      "体会读书的快乐",
+      "能对作品内容进行探讨",
+      "在第三学段 (5~6 年级)教学情境中",
+      "阅读富有童趣的图画书等浅易的读物"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "体会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "CN_G79_LR_01",
+    "title": "理解作品的思想内容",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文学阅读",
+    "subdomain": "理解",
+    "difficulty": 4,
+    "summary": "能深入理解作品的思想内容",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能深入理解作品的思想内容。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能深入理解作品的思想内容",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_LR_02",
+    "title": "把握作品的情感倾向",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文学阅读",
+    "subdomain": "理解",
+    "difficulty": 4,
+    "summary": "能把握作品的情感倾向",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能把握作品的情感倾向。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能把握作品的情感倾向",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_LR_03",
+    "title": "对作品作出自己的评价",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "文学阅读",
+    "subdomain": "评论",
+    "difficulty": 4,
+    "summary": "能对作品作出自己的评价",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能对作品作出自己的评价。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能对作品作出自己的评价",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_PR_01",
+    "title": "阅读新闻和通讯",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实用性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能阅读并理解新闻和通讯",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能阅读并理解新闻和通讯。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能阅读并理解新闻和通讯",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_CR_01",
+    "title": "理清论证思路",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 4,
+    "summary": "能理清议论文的论证思路",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能理清议论文的论证思路。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能理清议论文的论证思路",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_CR_02",
+    "title": "辨别论证方法",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "思辨性阅读",
+    "subdomain": "阅读",
+    "difficulty": 3,
+    "summary": "能辨别举例论证、道理论证、比喻论证",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能辨别举例论证、道理论证、比喻论证。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能辨别举例论证、道理论证、比喻论证",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_01",
+    "title": "立意: 中心明确",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能立意明确、中心突出",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能立意明确、中心突出。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能立意明确、中心突出",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_02",
+    "title": "选材: 围绕中心",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能选材围绕中心",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能选材围绕中心。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能选材围绕中心",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_03",
+    "title": "构思: 巧设线索",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 4,
+    "summary": "能巧设文章线索",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能巧设文章线索。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能巧设文章线索",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_04",
+    "title": "结构: 合理安排",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 3,
+    "summary": "能合理安排文章结构",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能合理安排文章结构。。主动通过多种方式独立识字，按照汉字字形结构等规律梳理",
+    "academic_req": null,
+    "key_points": [
+      "能合理安排文章结构",
+      "在第四学段 (7~9 年级)教学情境中",
+      "主动通过多种方式独立识字",
+      "按照汉字字形结构等规律梳理"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_05",
+    "title": "语言: 生动形象",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "习作",
+    "difficulty": 4,
+    "summary": "能运用生动形象的语言",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能运用生动形象的语言。。在真实的语言文字运用情境中独立识字与写字，初步梳理常",
+    "academic_req": null,
+    "key_points": [
+      "能运用生动形象的语言",
+      "在真实的语言文字运用情境中独立识字与写字",
+      "在第四学段 (7~9 年级)教学情境中",
+      "初步梳理常"
+    ],
+    "bloom": [
+      "能",
+      "运用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_06",
+    "title": "论点论据论证",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "议论文",
+    "difficulty": 4,
+    "summary": "能合理安排论点、论据、论证",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能合理安排论点、论据、论证。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能合理安排论点、论据、论证",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_07",
+    "title": "综合运用多种表达方式",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "综合",
+    "difficulty": 4,
+    "summary": "能综合运用多种表达方式写作",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能综合运用多种表达方式写作。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能综合运用多种表达方式写作",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "运用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_WR_08",
+    "title": "自改和互改作文",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "写作",
+    "subdomain": "综合",
+    "difficulty": 3,
+    "summary": "能自改和互改作文",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能自改和互改作文。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能自改和互改作文",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_OC_01",
+    "title": "即席演讲",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "口语交际",
+    "subdomain": "口语",
+    "difficulty": 3,
+    "summary": "能进行即席演讲",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能进行即席演讲。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能进行即席演讲",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CN_G79_BR_01",
+    "title": "欣赏作品艺术特色",
+    "subject": "chinese",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "整本书阅读",
+    "subdomain": "阅读",
+    "difficulty": 4,
+    "summary": "能欣赏作品的艺术特色",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,能欣赏作品的艺术特色。。认识有关人的身体与行为、天地四方、自然万物等方面的常",
+    "academic_req": null,
+    "key_points": [
+      "能欣赏作品的艺术特色",
+      "认识有关人的身体与行为、天地四方、自然万物等方面的常",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "欣赏"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]
