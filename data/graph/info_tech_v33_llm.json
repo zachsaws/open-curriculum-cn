@@ -1,0 +1,2740 @@
+{
+  "version": "v3.3.1",
+  "subject": "info_tech",
+  "conceptCount": 97,
+  "generatedAt": "2026-07-23",
+  "concepts": [
+    {
+      "id": "IT_I1_01",
+      "title": "信息与信息社会",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "感知信息无处不在",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。感知信息无处不在",
+      "academic_req": null,
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "感知信息无处不在"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 6,
+      "age_range_end": 11,
+      "description": "上课时听到铃声就知道要进教室,刷公交卡「嘀」一声就能坐车——这些看得见、听得到的「东西」都叫信息,它一直围绕在我们身边。",
+      "assessment_prompt": "妈妈手机收到「到家吃饭」的微信,{{name}}能不能马上说「这就是信息、是用文字告诉妈妈的事」?\n课堂上老师口头布置的「明天带彩笔」和黑板上写的「明天带彩笔」,{{name}}能不能说出两种都是信息、只是载体不同?\n走在街上看到红绿灯、汽车喇叭声、面包店飘出的香味,{{name}}能不能挑出 3 种说「这些都是信息、用不同方式告诉人」?"
+    },
+    {
+      "id": "IT_I1_02",
+      "title": "数据的获取与整理",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据处理",
+      "difficulty": 2,
+      "summary": "用表格/图表整理数据",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。用表格/图表整理数据",
+      "academic_req": null,
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "用表格/图表整理数据"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 8,
+      "age_range_end": 11,
+      "description": "把全班 40 个人的身高、体重、爱好一条条记下来,填进表格里——「数据」就是被记下来的事实,整理后才能看出「谁最高、谁最爱看书」。",
+      "assessment_prompt": "班级要统计谁喜欢篮球、谁喜欢画画,{{name}}能不能用一张表格给每位同学打钩、而不是用脑子记?\n拿到一张凌乱的 50 个温度数据,{{name}}能不能用 Excel 排序找出最高温和最低温?\n老师问「我们班女生比男生多几个」,{{name}}能不能先数清楚两列人数、再用减法算出差距、而不是凭感觉猜?"
+    },
+    {
+      "id": "IT_I1_03",
+      "title": "数据编码",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "编码",
+      "difficulty": 3,
+      "summary": "理解二进制/字符编码",
+      "content_req": "结合真实情境，了解编码在生活中的应用，认识数据编码的。理解二进制/字符编码",
+      "academic_req": null,
+      "key_points": [
+        "了解编码在生活中的应用",
+        "认识数据编码的",
+        "理解二进制/字符编码",
+        "结合真实情境"
+      ],
+      "bloom": [
+        "了解",
+        "认识",
+        "理解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "电脑只认 0 和 1,所有文字、颜色、声音都得先「翻译」成 0 和 1 的组合——这层翻译就叫编码。中文「你」对应一串特定 0/1,字母「A」对应另一串。",
+      "assessment_prompt": "看到字符「A」,{{name}}能不能说出它在 ASCII 里是十进制 65、二进制 01000001?\n同一段文字用 UTF-8 和 GBK 存出来的文件大小不同,{{name}}能不能解释「编码方式不同、0/1 组合就不同」?\n输入一段中文到记事本,存成「UTF-8」和「ANSI」再重新打开看到乱码,{{name}}能不能说出原因?"
+    },
+    {
+      "id": "IT_I1_04",
+      "title": "数据可视化",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "可视化",
+      "difficulty": 2,
+      "summary": "会用图表/词云等可视化数据",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。会用图表/词云等可视化数据",
+      "academic_req": null,
+      "key_points": [
+        "会用图表/词云等可视化数据",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "100 个数字排成一行没人爱看,画成柱状图、饼图、折线图,一眼就能看出「谁多谁少、谁涨谁跌」——这就是把数据「翻译」成图像。",
+      "assessment_prompt": "手里有一周 7 天的温度数据,{{name}}能不能选折线图、而不是饼图,解释「折线图能看出哪天最热」?\n统计全班 30 人最喜欢的运动,{{name}}能不能用饼图让「足球 40%」一眼看出来?\n看到一张饼图,{{name}}能不能不看数字、直接说出「篮球那一块最大、所以喜欢篮球的人最多」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_I1_05",
+      "title": "数据分析与预测",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "分析",
+      "difficulty": 3,
+      "summary": "用数据进行分析和预测",
+      "content_req": "考试性质和目的。用数据进行分析和预测",
+      "academic_req": null,
+      "key_points": [
+        "用数据进行分析和预测",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "分析"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "看到过去 5 年奶茶店数量每年涨 20%,就敢预测明年还会涨——这就是用历史数据「算出未来」。前提是数据真实、而不是「我感觉」。",
+      "assessment_prompt": "拿到过去 12 个月的冰淇淋销量,{{name}}能不能指出 7、8 月最高、预测今年 7 月会比 6 月多?\n一道题平均分 85、班级 40 人,{{name}}能不能用「85×40=3400」推算总分?\n看到「近 3 年快递量每年翻倍」,{{name}}能不能预测明年大约是今年的 2 倍、而不是 3 倍或 10 倍?"
+    },
+    {
+      "id": "IT_I2_01",
+      "title": "算法的概念",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "概念",
+      "difficulty": 1,
+      "summary": "理解算法是解决问题的一系列步骤",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法是解决问题的一系列步骤",
+      "academic_req": null,
+      "key_points": [
+        "理解算法是解决问题的一系列步骤",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "早上起床→刷牙→洗脸→吃早餐→上学,这一串「先做什么、再做什么」就是算法。给电脑的指令也是这种「一步步做完一件事」的过程。",
+      "assessment_prompt": "妈妈想煮泡面,{{name}}能不能排出「烧水→拆面→下面→等 3 分钟→加调料」的 5 步、漏一步都不行?\n看到 5+3=8,{{name}}能不能说出算法是「先算 5+3、再把结果写下来」?\n走迷宫从入口到出口,{{name}}能不能列出「左转→直走→右转」的步骤、而不是用嘴说「我到了」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_I2_02",
+      "title": "算法的描述",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "描述",
+      "difficulty": 2,
+      "summary": "用自然语言/流程图描述算法",
+      "content_req": "算法: 问题的步又分解一算法的描述、执行与效率一解决问。用自然语言/流程图描述算法",
+      "academic_req": null,
+      "key_points": [
+        "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+        "用自然语言/流程图描述算法"
+      ],
+      "bloom": [
+        "描述"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "算法可以用「人话」写出来,也可以画成「流程图」(开始→判断→操作→结束),还可以写成代码。三种方式说的是同一件事,选哪种看谁要读。",
+      "assessment_prompt": "写出「判断 18 岁能否进网吧」的算法,{{name}}能不能用「如果年龄≥18 允许进入、否则拒绝」的自然语言描述?\n{{name}}能不能把「输入两个数 a 和 b、输出较大的那个」画成 1 张流程图、至少含 1 个菱形判断?\n同样一段算法,{{name}}能不能同时写出自然语言、流程图、Python 代码三种、并解释「它们是一回事」?"
+    },
+    {
+      "id": "IT_I2_03",
+      "title": "顺序结构",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "结构",
+      "difficulty": 2,
+      "summary": "理解算法顺序结构",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法顺序结构",
+      "academic_req": null,
+      "key_points": [
+        "理解算法顺序结构",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "「先穿袜子再穿鞋、先刷锅再炒菜」——顺序结构就是从头到尾一句接一句,没有跳过、没有重复,像排队一样一站一站走完。、孩子从小就该知道这个。",
+      "assessment_prompt": "计算梯形面积(上底+下底)×高÷2,{{name}}能不能写出「输入 a、b、h→s=(a+b)*h/2→输出 s」的顺序步骤、没有跳过?\n{{name}}能不能用「早上起床到出门」的 5 步日常举出顺序结构的例子?\n看到一段程序从上到下执行,{{name}}能不能指出第 1 行一定是先跑的、不会跳着跑?"
+    },
+    {
+      "id": "IT_I2_04",
+      "title": "分支结构",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "结构",
+      "difficulty": 2,
+      "summary": "理解算法分支结构 if",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法分支结构 if",
+      "academic_req": null,
+      "key_points": [
+        "理解算法分支结构 if",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "「如果外面下雨,带伞;否则不带」——这就是分支,程序会根据条件「二选一」走不同的路。所有判断题背后都是分支结构。、孩子从小就该知道这个。",
+      "assessment_prompt": "写出「成绩≥60 输出及格、否则输出不及格」,{{name}}能不能用 if/else 写 3 行 Python 代码?\n输入 a=5 和 b=10,{{name}}能不能写出「如果 a>b 输出 a、否则输出 b」、并口算输出 10?\n看到 5 道判断题「是/否」,{{name}}能不能解释每道题都对应 1 个分支——「是」走一条路、「否」走另一条?"
+    },
+    {
+      "id": "IT_I2_05",
+      "title": "循环结构",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "结构",
+      "difficulty": 3,
+      "summary": "理解算法循环结构 for/while",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法循环结构 for/while",
+      "academic_req": null,
+      "key_points": [
+        "理解算法循环结构 for/while",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "「抄写单词 10 遍」——手动抄会累死,程序用 for 或 while 几行就搞定。循环就是「重复做 N 次同一件事」,特别适合「批量任务」。",
+      "assessment_prompt": "想打印 1 到 10,{{name}}能不能用 for 循环写出 3 行代码、而不是写 10 个 print?\n累加 1+2+3+...+100,{{name}}能不能用 while 循环、正确处理「每次加完后 i 也要加 1」?\n想输出 5 行「早上好」,{{name}}能不能立刻说「循环 5 次」、而不是写 5 个 print?"
+    },
+    {
+      "id": "IT_I2_06",
+      "title": "算法的效率",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "效率",
+      "difficulty": 3,
+      "summary": "了解算法效率评价",
+      "content_req": "主要环节评价。了解算法效率评价",
+      "academic_req": null,
+      "key_points": [
+        "了解算法效率评价",
+        "主要环节评价"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "在 1000 个名字里找「张三」,一种是从头翻到尾(慢),一种是排好序后二分查找(快)——同样结果,步骤数差几十倍。算法好,事半功倍。",
+      "assessment_prompt": "在 1000 本字典里找单词「cat」,{{name}}能不能说出「用二分查找大约 10 步、而从头翻平均要 500 步」?\n冒泡排序 100 个数,{{name}}能不能估出要比较近 5000 次、而快排只要几百次?\n写一个查找,{{name}}能不能用「O(1)、O(n)、O(log n)」说出哪个最快?"
+    },
+    {
+      "id": "IT_I3_01",
+      "title": "图形化编程",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "图形化",
+      "difficulty": 2,
+      "summary": "会用 Scratch 等图形化编程工具",
+      "content_req": "在对简单问题的分析过程中，使用数字化工具组织并呈现收。会用 Scratch 等图形化编程工具",
+      "academic_req": "通过指导学生完成在线任务、学习使用各种网络工具等多种",
+      "key_points": [
+        "在对简单问题的分析过程中",
+        "会用 Scratch 等图形化编程工具",
+        "使用数字化工具组织并呈现收"
+      ],
+      "bloom": [
+        "会",
+        "分析"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 11,
+      "description": "Scratch 里拖一块「移动 10 步」拼一块「说 Hello」,不写一行代码也能让小猫动起来——图形化编程把代码藏进彩色积木,孩子拼积木就是在编程。",
+      "assessment_prompt": "打开 Scratch,{{name}}能不能拖「移动 10 步」+「碰到边缘就反弹」、让小猫走到屏幕右边不掉出去?\n{{name}}能不能用「如果...那么」积木让小猫碰到黄色就说「我中奖了」?\n想让小猫画一个正方形,{{name}}能不能拼 4 块「移动 100 步+右转 90 度」的循环、而不是手动画 4 条边?"
+    },
+    {
+      "id": "IT_I3_02",
+      "title": "Python 编程基础",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "Python",
+      "difficulty": 3,
+      "summary": "会用 Python 编写简单程序",
+      "content_req": "考试性质和目的。会用 Python 编写简单程序",
+      "academic_req": null,
+      "key_points": [
+        "会用 Python 编写简单程序",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "print() 是让电脑说话,input() 是让电脑听人说话,变量就是装东西的小盒子。Python 入门三件套,比英语还简单——「print('Hello')」就输出了 Hello。",
+      "assessment_prompt": "写一个程序,{{name}}能不能用 input() 让用户输入名字、再用 print() 输出「你好,XXX」?\n{{name}}能不能写出 a=10、b=20,然后用 print(a+b) 输出 30?\n写错代码报红色错误,{{name}}能不能自己看出「是不是少打了一个冒号」、而不是干等?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_I3_03",
+      "title": "变量与数据类型",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "基础",
+      "difficulty": 3,
+      "summary": "理解变量和基本数据类型",
+      "content_req": "考试性质和目的。理解变量和基本数据类型",
+      "academic_req": null,
+      "key_points": [
+        "理解变量和基本数据类型",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "变量就是「装数据的盒子」,盒子上贴标签(名字)装着不同内容(整数、小数、文字、真假)。Python 看右边的值自动定类型,不用先声明。",
+      "assessment_prompt": "写 a=10、b=3.14、c='hello'、d=True,{{name}}能不能用 type() 说出每个变量的类型?\n{{name}}能不能把字符串 '123' 转成整数 123、再加 5 输出 128?\n把 a=5 改成 a='5',{{name}}能不能解释为什么 a+3 会报错、而 a+str(3) 不会?"
+    },
+    {
+      "id": "IT_I3_04",
+      "title": "函数与模块",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "函数",
+      "difficulty": 3,
+      "summary": "会定义和使用函数",
+      "content_req": "考试性质和目的。会定义和使用函数",
+      "academic_req": null,
+      "key_points": [
+        "会定义和使用函数",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "函数就是「可重复使用的代码块」,给它一个名字,以后写 1 次名字就能跑。模块是别人写好的函数集合,拿来用就行,不用重造轮子。",
+      "assessment_prompt": "写 def add(a,b): return a+b,{{name}}能不能调用 add(3,5) 输出 8?\n{{name}}能不能 import math、然后用 math.sqrt(16) 输出 4?\n同样的加法,{{name}}能不能解释为什么写 def add 比写 100 遍 a+b 更好?"
+    },
+    {
+      "id": "IT_I3_05",
+      "title": "程序调试",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "调试",
+      "difficulty": 3,
+      "summary": "会用调试工具发现并修正程序错误",
+      "content_req": "考试性质和目的。会用调试工具发现并修正程序错误",
+      "academic_req": null,
+      "key_points": [
+        "会用调试工具发现并修正程序错误",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "会",
+        "发现"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "写代码出错很正常,关键是会「找 bug」——看红色错误提示,用 print 把可疑变量打出来,或者用断点一步步跑。调试是程序员的基本功。",
+      "assessment_prompt": "写一段除法代码、用户输入 0 当除数,{{name}}能不能自己用 print 把除数打出来、发现是 0 导致崩溃?\n看到红色错误「ZeroDivisionError」,{{name}}能不能 5 秒内说出「除数是 0 了」?\n{{name}}能不能用 IDE 的断点一步步跑、在变量窗口看到某变量变成 None、找出问题行?"
+    },
+    {
+      "id": "IT_I4_01",
+      "title": "网络基础",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "网络",
+      "subdomain": "基础",
+      "difficulty": 2,
+      "summary": "了解计算机网络基础",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解计算机网络基础",
+      "academic_req": null,
+      "key_points": [
+        "了解计算机网络基础",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解",
+        "计算"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "两台电脑用电线连起来能传文件,多台连起来就是「网络」。家里 Wi-Fi、手机 4G 都是网络,目的就是「让设备互相说话」。",
+      "assessment_prompt": "看到家里 Wi-Fi 路由器,{{name}}能不能指出「这是把家里所有设备连到一起的小盒子」?\n两台电脑用网线直连,{{name}}能不能传 1 张照片、解释「这就是最简单的网络」?\n上网时拔掉网线浏览器就刷新不出内容,{{name}}能不能说「网断了就没法传数据了」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_I4_02",
+      "title": "互联网应用",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "网络",
+      "subdomain": "应用",
+      "difficulty": 1,
+      "summary": "使用浏览器/邮件/搜索等",
+      "content_req": "通过在线活动，分析互联网应用的特征，认识到互联网对社。使用浏览器/邮件/搜索等",
+      "academic_req": null,
+      "key_points": [
+        "分析互联网应用的特征",
+        "认识到互联网对社",
+        "通过在线活动",
+        "使用浏览器/邮件/搜索等"
+      ],
+      "bloom": [
+        "认识",
+        "分析",
+        "应用"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "浏览器打开百度、邮箱收老师发的通知、微信给同学发语音——这些都是互联网「应用」,背后都是「客户端发请求、服务器回数据」的过程。",
+      "assessment_prompt": "打开 Chrome 输入网址,{{name}}能不能在 30 秒内搜出「明天天气」?\n老师发邮件通知,{{name}}能不能用 QQ 邮箱点「回复」、而不是「转发」?\n微信和同学打字,{{name}}能不能说出「消息先发到腾讯服务器、再传到同学手机」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_I4_03",
+      "title": "网络安全",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "网络",
+      "subdomain": "安全",
+      "difficulty": 2,
+      "summary": "了解网络安全常识",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解网络安全常识",
+      "academic_req": null,
+      "key_points": [
+        "了解网络安全常识",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "看到「恭喜中奖 1 万」短信别点——多半是骗子;密码要复杂,别用 123456;陌生 Wi-Fi 慎连。网络安全不是高科技,是「日常警觉」。",
+      "assessment_prompt": "收到「你的账号被冻结、点击链接解冻」短信,{{name}}能不能判断「这是钓鱼、不能点」?\n设密码,{{name}}能不能用「Tian#2024!@」这种混合、而不是「123456」?\n咖啡店免费 Wi-Fi,{{name}}能不能先问老板「这个 Wi-Fi 叫什么」、再决定要不要连?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_I4_04",
+      "title": "物联网",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "网络",
+      "subdomain": "前沿",
+      "difficulty": 3,
+      "summary": "了解物联网基本概念",
+      "content_req": "通过实例感受万物互联的场景，知道物联网与互联网的异。了解物联网基本概念",
+      "academic_req": "物联网技术的广泛应用将带来一些全新的挑战，如集成了多",
+      "key_points": [
+        "通过实例感受万物互联的场景",
+        "知道物联网与互联网的异",
+        "了解物联网基本概念"
+      ],
+      "bloom": [
+        "了解",
+        "知道",
+        "感受"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "手表记步、冰箱自动下单买牛奶、红绿灯按车流量变灯——这些「东西连上网」就叫物联网。它把日常用品都变成「能上传数据」的智能设备。",
+      "assessment_prompt": "家里的智能音箱,{{name}}能不能说出「它连着 Wi-Fi、把声音传到云端识别、再回话给我」?\n智能门锁用手机开门,{{name}}能不能描述「锁通过 Wi-Fi 收到手机指令、就开锁」?\n智能手表测心率,{{name}}能不能说「手表上的传感器每秒测一次、上传到手机 App」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_I5_01",
+      "title": "计算机硬件",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 6,
+      "domain": "系统",
+      "subdomain": "硬件",
+      "difficulty": 2,
+      "summary": "了解计算机硬件组成",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解计算机硬件组成",
+      "academic_req": null,
+      "key_points": [
+        "了解计算机硬件组成",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解",
+        "计算"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 9,
+      "age_range_end": 11,
+      "description": "主机里 CPU 是「大脑」,内存是「临时桌面」,硬盘是「抽屉柜」,显示器、键盘、鼠标是「嘴巴耳朵和手」。每个部件各干各的,缺一个就动不了。",
+      "assessment_prompt": "打开机箱,{{name}}能不能指出「CPU 在风扇下面、内存是竖着插的细条、硬盘是个方盒子」?\n拔掉内存开机,{{name}}能不能看到黑屏+蜂鸣器响、解释「没内存就开不了机」?\nCPU、内存、硬盘,{{name}}能不能说出哪个最贵、哪个最容易坏?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_I5_02",
+      "title": "操作系统",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "系统",
+      "subdomain": "软件",
+      "difficulty": 2,
+      "summary": "了解操作系统的功能",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解操作系统的功能",
+      "academic_req": null,
+      "key_points": [
+        "了解操作系统的功能",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解",
+        "能"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "Windows、macOS、Android 都是「操作系统」,是电脑/手机的「大管家」——管文件、管程序、管硬件,用户的所有操作都经过它。",
+      "assessment_prompt": "同时打开 Word 和浏览器,{{name}}能不能说出「是操作系统让两个程序同时跑、还把屏幕分成两半」?\n复制一个文件到 U 盘,{{name}}能不能解释「是操作系统帮我搬过去的、不是我手动抄」?\n想装一个新软件,{{name}}能不能说出「要先看系统是 Windows 还是 Mac、不然装不上」?"
+    },
+    {
+      "id": "IT_I5_03",
+      "title": "文件管理",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 6,
+      "domain": "系统",
+      "subdomain": "文件",
+      "difficulty": 1,
+      "summary": "会管理文件和文件夹",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。会管理文件和文件夹",
+      "academic_req": null,
+      "key_points": [
+        "会管理文件和文件夹",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 11,
+      "description": "桌面上的 Word 文档、桌面的「我的电脑」、U 盘里的照片,都是「文件」。文件要放在「文件夹」(目录)里,一层套一层,像抽屉里的格子。",
+      "assessment_prompt": "在 D 盘新建一个「作业」文件夹,{{name}}能不能把 3 个 Word 文档拖进去、而不是堆在桌面?\n找一份去年写的作文,{{name}}能不能用搜索框输入「2024 作文」、而不是翻 5 个文件夹?\n误删一个文件,{{name}}能不能去「回收站」右键「还原」、而不是哭?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_I6_01",
+      "title": "人工智能基础",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "AI",
+      "subdomain": "概念",
+      "difficulty": 2,
+      "summary": "了解人工智能基本概念",
+      "content_req": "通过分析典型的人工智能应用场景，了解人工智能的基本特。了解人工智能基本概念",
+      "academic_req": null,
+      "key_points": [
+        "通过分析典型的人工智能应用场景",
+        "了解人工智能的基本特",
+        "了解人工智能基本概念"
+      ],
+      "bloom": [
+        "了解",
+        "能",
+        "分析"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "Siri 能听懂人说话、小爱能放音乐、AlphaGo 能赢围棋冠军——这些「让机器像人一样思考」的能力都叫人工智能(AI)。它的核心是「学」和「猜」。",
+      "assessment_prompt": "家里的小爱同学,{{name}}能不能说「它是 AI,因为它能听懂人话、还能回答」?\n看到扫地机器人自动避障,{{name}}能不能说「它用传感器识别障碍、这是 AI 的一种」?\n围棋 AI AlphaGo 赢人类,{{name}}能不能说出「它学了上百万盘棋、才会下」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_I6_02",
+      "title": "机器学习体验",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "AI",
+      "subdomain": "体验",
+      "difficulty": 3,
+      "summary": "体验机器学习的基本流程",
+      "content_req": "考试性质和目的。体验机器学习的基本流程",
+      "academic_req": null,
+      "key_points": [
+        "考试性质和目的",
+        "体验机器学习的基本流程"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "不用手写规则,而是给机器「喂」一堆例子(猫狗图片)让它自己找规律——这就是机器学习。给得越多,它认得越准,就像小孩认水果靠看多了。",
+      "assessment_prompt": "用 Teachable Machine 给 AI 喂 50 张「苹果」照片和 50 张「梨」照片,{{name}}能不能让摄像头对准真苹果、让屏幕显示「苹果」?\n{{name}}能不能解释为什么训练数据越多(100 张 vs 10 张)AI 识别得越准?\n看到训练好的模型认错一张「青苹果」,{{name}}能不能说出「可能是训练图里没青苹果」?"
+    },
+    {
+      "id": "IT_I6_03",
+      "title": "智能应用",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "AI",
+      "subdomain": "应用",
+      "difficulty": 2,
+      "summary": "了解 AI 在生活/医疗/教育中的应用",
+      "content_req": "结合真实情境，了解编码在生活中的应用，认识数据编码的。了解 AI 在生活/医疗/教育中的应用",
+      "academic_req": null,
+      "key_points": [
+        "了解编码在生活中的应用",
+        "了解 AI 在生活/医疗/教育中的应用",
+        "认识数据编码的",
+        "结合真实情境"
+      ],
+      "bloom": [
+        "了解",
+        "认识",
+        "应用"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "手机地图自动避开堵车、医院用 AI 看 CT 片找病灶、AI 老师帮学生改作文——这些「用 AI 解决具体问题」的应用,已经在生活里到处出现。",
+      "assessment_prompt": "出门用高德导航,{{name}}能不能说出「它根据实时路况推荐最快路线、这是 AI」?\n医院用 AI 识别肺结节,{{name}}能不能解释「AI 看了几十万张 CT、学会了看结节」?\n用 AI 批改英语作文,{{name}}能不能说「它先识别语法错误、再给评分」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_I7_01",
+      "title": "信息伦理",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 9,
+      "domain": "社会责任",
+      "subdomain": "伦理",
+      "difficulty": 2,
+      "summary": "遵守信息伦理和法律法规",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。遵守信息伦理和法律法规",
+      "academic_req": null,
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "遵守信息伦理和法律法规"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 14,
+      "description": "别人的照片不能随便发、网上不能骂人、下载电影要付钱——这些「使用信息时要守的规矩」叫信息伦理。违反会侵权、违法,不是小事。",
+      "assessment_prompt": "同学拍的照片,{{name}}能不能先问「我可以发朋友圈吗」、而不是直接转发?\n网上骂同学,{{name}}能不能说「这是网络暴力、违反信息伦理」?\n下载盗版游戏,{{name}}能不能说出「这是侵权、合法版要付钱」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    },
+    {
+      "id": "IT_I7_02",
+      "title": "数字公民",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 4,
+      "grade_end": 9,
+      "domain": "社会责任",
+      "subdomain": "公民",
+      "difficulty": 2,
+      "summary": "养成健康的数字公民素养",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。养成健康的数字公民素养",
+      "academic_req": null,
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设",
+        "养成健康的数字公民素养"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 9,
+      "age_range_end": 14,
+      "description": "在网上也要当个好公民——不传谣言、不刷屏、不沉迷游戏、不泄露隐私。数字公民是「现实公民在网上的延伸」,行为同样有后果。、孩子从小就该知道这个。",
+      "assessment_prompt": "微信群里看到「某地地震」,{{name}}能不能先查官方、而不是直接转发?\n每天刷短视频 4 小时,{{name}}能不能意识到「这影响学习、要限定时间」?\n看到同学在群里被骂,{{name}}能不能劝阻或报告、而不是围观?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    },
+    {
+      "id": "IT_G12_DA_01",
+      "title": "信息的普遍性",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "理解信息在生活中普遍存在",
+      "content_req": "在第一学段 (1~2 年级)教学情境中,理解信息在生活中普遍存在。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解信息在生活中普遍存在",
+        "在第一学段 (1~2 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 6,
+      "age_range_end": 7,
+      "description": "一进家门电视在播新闻、妈妈手机在响、时钟在嘀嗒——信息藏在声音、图像、文字、数字里,到处都是,不一定非要看书才算。、孩子从小就该知道这个。",
+      "assessment_prompt": "进教室看到墙上的课程表,{{name}}能不能说出「这是信息、告诉我们要上什么课」?\n听到妈妈说「吃饭了」,{{name}}能不能说「声音也是信息、妈妈在告诉我开饭」?\n走在路上,{{name}}能不能在 1 分钟内说出 3 种信息(红绿灯、招牌、汽车喇叭)?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G12_DA_02",
+      "title": "信息的价值",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "理解信息的价值",
+      "content_req": "在第一学段 (1~2 年级)教学情境中,理解信息的价值。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解信息的价值",
+        "在第一学段 (1~2 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 6,
+      "age_range_end": 7,
+      "description": "天气预报说「明天有雨」,你带伞就淋不到——这条信息值一把伞钱。信息越新、越准、越有用就越值钱;过期信息像旧报纸,没人看。",
+      "assessment_prompt": "天气预报说「明天 35 度」,{{name}}能不能说出「这条信息让我决定穿短袖」?\n妈妈说「超市鸡蛋打折 1 元」,{{name}}能不能说「这条信息让我赶紧去买、省钱」?\n看到 5 年前的「某明星结婚了」新闻,{{name}}能不能说「这条信息现在没用了、是过期信息」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G12_DA_03",
+      "title": "信息技术应用",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "了解信息技术在生活学习中的应用",
+      "content_req": "在第一学段 (1~2 年级)教学情境中,了解信息技术在生活学习中的应用。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解信息技术在生活学习中的应用",
+        "在第一学段 (1~2 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解",
+        "应用"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 6,
+      "age_range_end": 7,
+      "description": "老师用投影上课、妈妈用手机买菜、医生用电脑看片——信息技术(电脑、手机、互联网)早就渗进学习和生活的每个角落。、孩子从小就该知道这个。",
+      "assessment_prompt": "老师上课用投影放 PPT,{{name}}能不能说出「这是信息技术、让全班都看清」?\n妈妈在手机上买菜,{{name}}能不能说「这是信息技术、不用去菜场」?\n看到医生在电脑上看病人片子,{{name}}能不能说「这是信息技术、帮助医生诊断」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?"
+    },
+    {
+      "id": "IT_G12_DA_04",
+      "title": "在线学习",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "会使用在线学习平台",
+      "content_req": "在第一学段 (1~2 年级)教学情境中,会使用在线学习平台。。在“互联网十”情境中，体验在线学习、生活和交流的新模",
+      "academic_req": null,
+      "key_points": [
+        "会使用在线学习平台",
+        "在第一学段 (1~2 年级)教学情境中",
+        "在“互联网十”情境中",
+        "体验在线学习、生活和交流的新模"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 6,
+      "age_range_end": 7,
+      "description": "打开「学而思网校」点一节课,老师在线讲,还能举手提问——不用去学校,在家也能学。在线学习靠网络和屏幕,让知识「飞到家」。",
+      "assessment_prompt": "打开学而思 App 找「数学课」,{{name}}能不能在 30 秒内找到并播放一节课?\n{{name}}能不能在课程页面点「举手」、让老师看到自己?\n看完课想复习,{{name}}能不能点「回放」、而不是问爸妈「刚才讲啥」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    },
+    {
+      "id": "IT_G12_DA_05",
+      "title": "数字资源",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "domain": "数据",
+      "subdomain": "信息意识",
+      "difficulty": 1,
+      "summary": "会使用数字资源(电子书/视频)",
+      "content_req": "在第一学段 (1~2 年级)教学情境中,会使用数字资源(电子书/视频)。。在语言教学时，教师可以引导学生使用数字设备与数字资源",
+      "academic_req": null,
+      "key_points": [
+        "会使用数字资源(电子书/视频)",
+        "在第一学段 (1~2 年级)教学情境中",
+        "在语言教学时",
+        "教师可以引导学生使用数字设备与数字资源"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 6,
+      "age_range_end": 7,
+      "description": "不必再买 10 本《十万个为什么》,打开手机电子书就能看;听故事不用买磁带,App 里就有。电子书、视频、音频都是「数字资源」,随用随取。",
+      "assessment_prompt": "想看《西游记》故事,{{name}}能不能打开电子书 App 搜「西游记」、找到并翻到第 3 回?\n妈妈做菜想听歌,{{name}}能不能用音乐 App 搜「儿歌」、播放 1 首?\n想学折纸,{{name}}能不能在视频 App 搜「折纸飞机」、跟视频一步一步折?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G12_AL_01",
+      "title": "计算思维",
+      "subject": "info_tech",
+      "stage": 1,
+      "grade_start": 1,
+      "grade_end": 2,
+      "domain": "算法",
+      "subdomain": "思维",
+      "difficulty": 1,
+      "summary": "理解计算思维的基本思想",
+      "content_req": "在第一学段 (1~2 年级)教学情境中,理解计算思维的基本思想。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解计算思维的基本思想",
+        "在第一学段 (1~2 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解",
+        "计算"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 6,
+      "age_range_end": 7,
+      "description": "解应用题「鸡兔同笼」不是瞎猜——而是拆成「先假设全是鸡、再算脚差、再换兔子」三步。这种「拆问题→找规律→一步步解」的思路就是计算思维。",
+      "assessment_prompt": "整理 30 本书要按「高矮」排队,{{name}}能不能先「1 本 1 本比、再整体排」、而不是全凭感觉?\n解「操场 20 人、其中男生比女生多 4 个」,{{name}}能不能先「设女生 x、男生 x+4、2x+4=20」、而不是直接猜?\n玩具乱堆,{{name}}能不能「先按类分(积木/娃娃/车)、再按大小排」整理?"
+    },
+    {
+      "id": "IT_G34_DA_01",
+      "title": "简单的数据分析",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "数据",
+      "subdomain": "数据处理",
+      "difficulty": 1,
+      "summary": "会对数据进行简单的分析",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,会对数据进行简单的分析。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会对数据进行简单的分析",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会",
+        "分析"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "全班 40 人考试,算出平均分、找出最高分和最低分——这就是「分析」。数据本身不会说话,算一算才看得出「谁学得好、哪道题错最多」。",
+      "assessment_prompt": "班级 40 人数学考试,{{name}}能不能用计算器算平均分、而不是只说「大家差不多」?\n30 道题里第 15 题错 12 人,{{name}}能不能说「这道题要重点讲」?\n统计班级身高,{{name}}能不能用「最大值 152、最小值 130、差 22 cm」描述、而不是「高的很高、矮的很矮」?"
+    },
+    {
+      "id": "IT_G34_DA_02",
+      "title": "数据的可靠性",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "数据",
+      "subdomain": "数据处理",
+      "difficulty": 2,
+      "summary": "理解数据的可靠性",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,理解数据的可靠性。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解数据的可靠性",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "网店好评「100% 全 5 分」未必真——可能刷的;一次掷骰子 6 不代表「骰子总是 6」——数据要看「样本多不多、来源真不真」。",
+      "assessment_prompt": "看到网店「100% 好评」,{{name}}能不能怀疑「可能是刷的、要看差评」?\n同学说「我每次考试都 100 分」、只有 3 次考试,{{name}}能不能说「样本太少、不能说每次都 100」?\n天气预报说明天下雨、准确率 80%,{{name}}能不能带伞、而不是绝对相信也不带?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_AL_01",
+      "title": "算法的特征",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 1,
+      "summary": "理解算法有穷性/确定性等特征",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,理解算法有穷性/确定性等特征。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解算法有穷性/确定性等特征",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "算法不是「想法」,而是「能一步步执行、不会卡住、跑完就停」的步骤。煮泡面有 5 步,漏一步或「水开了就 OK」都不行——这就是算法的「确定性、有穷性」。",
+      "assessment_prompt": "写「回家算法」,{{name}}能不能列出「出校门→左转→过马路→进小区→上 3 楼」、每步不模糊?\n写「找最大数」算法,{{name}}能不能用「依次比、大的留下、比完就知道」、而不是「看一眼就知道」?\n写「死循环 while True: print(1)」,{{name}}能不能看出「这个算法不会停、不符合有穷性」?"
+    },
+    {
+      "id": "IT_G34_AL_02",
+      "title": "算法效率初识",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 2,
+      "summary": "初步理解算法效率",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,初步理解算法效率。。算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+      "academic_req": null,
+      "key_points": [
+        "初步理解算法效率",
+        "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+        "在第二学段 (3~4 年级)教学情境中"
+      ],
+      "bloom": [
+        "理解",
+        "描述"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "在 1000 张票里找「中奖号」,一种是「一张张翻」(慢),一种是「按号排好再二分」(快)。同样结果,步骤差几百倍,这就是效率。",
+      "assessment_prompt": "在 100 本书里找「语文书」,{{name}}能不能说出「先按学科分类、再按年级找、比一本本翻快」?\n排 10 个数字,{{name}}能不能用「冒泡」相邻比、说出大约要比 45 次?\n找字典里的「apple」,{{name}}能不能用「从中间翻、再判断往左还是往右」、而不是从第一页翻?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_AL_03",
+      "title": "枚举算法",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 2,
+      "summary": "理解枚举算法的基本思想",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,理解枚举算法的基本思想。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解枚举算法的基本思想",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "「100 以内 3 的倍数有哪些」,不用想——从 1 数到 100,每个数检查「能不能被 3 整除」,是的就是。这种「挨个试」的方法,笨但能用,叫枚举。",
+      "assessment_prompt": "找 1-100 里所有「个位是 7 的数」,{{name}}能不能用「for i in 1..100、if i%10==7、print(i)」、而不是只猜几个?\n密码锁 3 位数字、暴力破解要试 1000 次,{{name}}能不能估算「最坏 1000 次、平均 500 次」?\n找「100 以内的素数」,{{name}}能不能用「每个数试除 2 到自身-1、都没人整除就是素数」?"
+    },
+    {
+      "id": "IT_G34_PG_01",
+      "title": "认识源代码",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "编程",
+      "subdomain": "基础",
+      "difficulty": 1,
+      "summary": "了解源代码的基本概念",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解源代码的基本概念。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解源代码的基本概念",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "看到的游戏、App,背后都是一行行的「源代码」——人类能读懂的英文+符号。源代码经编译器「翻译」成 0/1,电脑才能跑。",
+      "assessment_prompt": "看到一段 Python 代码 print('Hi'),{{name}}能不能说出「这是源代码、人类能读」?\n玩「我的世界」,{{name}}能不能说出「这个游戏是用 Java 写的、背后有几万行代码」?\n修改一个网页的源代码(右键→查看),{{name}}能不能找到「这个网站是怎么写的」、而不是只看到表面?"
+    },
+    {
+      "id": "IT_G34_PG_02",
+      "title": "程序的执行",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "编程",
+      "subdomain": "基础",
+      "difficulty": 1,
+      "summary": "了解程序的执行过程",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解程序的执行过程。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解程序的执行过程",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "写好的代码不会自己跑,要先「编译」(翻译)成 0/1,再「执行」(CPU 一步步跑)。Python 是边译边跑,C 是先全译再跑。",
+      "assessment_prompt": "写完 Python 代码按 F5,{{name}}能不能说出「这是让电脑开始执行这段程序」?\n看到「编译中」进度条,{{name}}能不能解释「这是把源代码翻成 0/1、翻完才能跑」?\n同一个程序、编译运行比解释运行快,{{name}}能不能用「先全译好 vs 一句一句译」打比方?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_PG_03",
+      "title": "小程序设计",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "编程",
+      "subdomain": "项目",
+      "difficulty": 2,
+      "summary": "会设计简单的小程序",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,会设计简单的小程序。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会设计简单的小程序",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会",
+        "设计"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "写一个「猜数字」小游戏——电脑想 1-100 的数,你猜,电脑提示「大」或「小」。10 行代码就够,但要拆成「输入、判断、输出」三步。",
+      "assessment_prompt": "想做一个「石头剪刀布」游戏,{{name}}能不能拆成「电脑随机出→玩家出→比大小→输出结果」4 步?\n写「猜数字」,{{name}}能不能用「if guess>num, print 大;else print 小」做判断?\n调试时游戏一直死循环,{{name}}能不能自己加「猜对就 break」、而不是关掉重启?"
+    },
+    {
+      "id": "IT_G34_SY_01",
+      "title": "计算机的工作原理",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 1,
+      "summary": "了解计算机的基本工作原理",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解计算机的基本工作原理。。了解云存储、云计算的原理，能够使用网盘进行数据备份，",
+      "academic_req": null,
+      "key_points": [
+        "了解计算机的基本工作原理",
+        "了解云存储、云计算的原理",
+        "能够使用网盘进行数据备份",
+        "在第二学段 (3~4 年级)教学情境中"
+      ],
+      "bloom": [
+        "了解",
+        "能",
+        "计算"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "电脑不是「魔法盒子」——CPU 拿数据、算一算、放回去,这一步每秒跑几十亿次。键盘、鼠标是「输入设备」,显示器、喇叭是「输出设备」,主板是「交通枢纽」。",
+      "assessment_prompt": "打字时屏幕上出现字,{{name}}能不能说出「键盘把信号送给 CPU、CPU 让显示器显示」?\n关掉电脑电源,{{name}}能不能解释「CPU 一停、整个电脑就停了」?\n看到主机后面一排接口(USB、HDMI、网线),{{name}}能不能认出哪个是键盘、哪个是显示器?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G34_SY_02",
+      "title": "信息的表示",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 2,
+      "summary": "理解信息的二进制表示",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,理解信息的二进制表示。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解信息的二进制表示",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "电脑里所有的图、文字、声音,底层都是 0 和 1——「你好」变成一串 0/1,一张图片变成几百万个 0/1。二进制是电脑的「母语」。",
+      "assessment_prompt": "看到 ASCII 表,{{name}}能不能说出「A 是 65、a 是 97、全是数字」?\n把 5 写成二进制,{{name}}能不能说出「5=101(4+0+1)」?\n看一张 5MB 的照片,{{name}}能不能估算它大约有「5×1024×1024×8=4000 多万个 0/1」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_NW_01",
+      "title": "网络分类",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "网络",
+      "subdomain": "网络",
+      "difficulty": 2,
+      "summary": "了解局域网/广域网等",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解局域网/广域网等。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解局域网/广域网等",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "家里 5 个设备连 Wi-Fi 是「局域网」;一个城市、一个国家、全球连起来是「广域网」(互联网就是最大的广域网)。范围不同,名字不同。",
+      "assessment_prompt": "家里电脑和打印机连同一个 Wi-Fi,{{name}}能不能说「这是局域网」?\n学校的电脑教室 30 台连一起,{{name}}能不能说「这是局域网」?\n跨省跨国的「淘宝」网站,{{name}}能不能说「这是广域网/互联网」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    },
+    {
+      "id": "IT_G34_NW_02",
+      "title": "IP 地址和域名",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "网络",
+      "subdomain": "网络",
+      "difficulty": 2,
+      "summary": "理解 IP 地址和域名的概念",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,理解 IP 地址和域名的概念。。借助学习与生活中的实例，体验身边的算法，理解算法是通",
+      "academic_req": null,
+      "key_points": [
+        "理解 IP 地址和域名的概念",
+        "理解算法是通",
+        "在第二学段 (3~4 年级)教学情境中",
+        "借助学习与生活中的实例",
+        "体验身边的算法"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "192.168.1.1 是 IP 地址,数字太难记;baidu.com 是域名,好记。DNS 就像「电话簿」,把「baidu.com」翻译成「220.181.38.148」给电脑。",
+      "assessment_prompt": "看到 IP 192.168.1.100,{{name}}能不能说「这是局域网里某个设备的地址」?\n想上 baidu.com,{{name}}能不能说出「浏览器先去问 DNS、把域名翻成 IP、再连过去」?\n知道 8.8.8.8 是 Google DNS,{{name}}能不能解释「DNS 帮我们把名字变 IP」?"
+    },
+    {
+      "id": "IT_G34_NW_03",
+      "title": "网络协议",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "网络",
+      "subdomain": "网络",
+      "difficulty": 2,
+      "summary": "了解 HTTP 等常见协议",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解 HTTP 等常见协议。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+      "academic_req": null,
+      "key_points": [
+        "了解 HTTP 等常见协议",
+        "了解健康使用数字设备的重",
+        "在第二学段 (3~4 年级)教学情境中",
+        "合理安排数字设备的使用时间"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "两个人打电话要讲同一种语言,电脑之间也要讲「协议」——HTTP、TCP、IP 都是协议。规则统一,数据才能听懂。、孩子从小就该知道这个。",
+      "assessment_prompt": "打开 http://www.baidu.com,{{name}}能不能看出「http 就是协议、告诉浏览器怎么传」?\n看到 https 多一个 s,{{name}}能不能说「s=安全、数据加密了」?\n玩游戏卡了,{{name}}能不能说「可能 TCP 丢包、要重传」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G34_SR_01",
+      "title": "合理使用网络",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "社会责任",
+      "subdomain": "责任",
+      "difficulty": 1,
+      "summary": "了解如何合理使用网络",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解如何合理使用网络。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解如何合理使用网络",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "每天刷短视频 3 小时,眼睛会坏、作业写不完——网络好用但不能滥用。限定时间、定时休息、不上瘾,是合理使用。、孩子从小就该知道这个。",
+      "assessment_prompt": "每天刷短视频超过 1 小时,{{name}}能不能自己用手机「屏幕使用时间」设个限?\n上网课 30 分钟,{{name}}能不能自己站起来休息 5 分钟、而不是继续刷?\n晚上 10 点后还想玩手机,{{name}}能不能把手机放客厅、而不是带进卧室?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?"
+    },
+    {
+      "id": "IT_G34_SR_02",
+      "title": "网络谣言辨识",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "社会责任",
+      "subdomain": "责任",
+      "difficulty": 1,
+      "summary": "学会辨识网络谣言",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,学会辨识网络谣言。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "学会辨识网络谣言",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "「某地地震 10 级」——看到这种吓人新闻,别转发,先查 3 件事:是不是官方发、日期对不对、有没有现场图。谣言的特征是「特别吓人、没来源」。",
+      "assessment_prompt": "看到「某明星出车祸」微博,{{name}}能不能先去「中国新闻网」或「央视新闻」搜一下、而不直接转发?\n收到「转发 10 个群可获得 100 元」,{{name}}能不能立刻判断「这是骗人的、没有免费午餐」?\n看到「某地停水」,{{name}}能不能先看官方公众号「自来水公司」、而不是传邻居?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_SR_03",
+      "title": "网络欺凌防范",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "社会责任",
+      "subdomain": "责任",
+      "difficulty": 1,
+      "summary": "了解网络欺凌的防范",
+      "content_req": "在第二学段 (3~4 年级)教学情境中,了解网络欺凌的防范。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解网络欺凌的防范",
+        "在第二学段 (3~4 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "在群里骂同学、用丑照 P 图、把人踢出群——都是网络欺凌。受害者不要怕,截图、举报、告诉家长老师,欺凌者会受处罚。、孩子从小就该知道这个。",
+      "assessment_prompt": "群里有人骂你,{{name}}能不能先截图、再点「举报」、而不是对骂回去?\n同学被人在群里嘲笑,{{name}}能不能主动说「别这样、我们不欺负人」?\n看到别人发你的丑照,{{name}}能不能告诉爸妈或老师、而不是自己删了就算了?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?"
+    },
+    {
+      "id": "IT_G56_AL_01",
+      "title": "算法效率分析",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 3,
+      "summary": "会分析简单算法的时间复杂度",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,会分析简单算法的时间复杂度。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会分析简单算法的时间复杂度",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会",
+        "分析"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "100 个数排序,冒泡要 4950 次比较,快排只要几百次——这就是「时间复杂度」。O(n²) 比 O(n log n) 慢得多,n 越大差距越大。",
+      "assessment_prompt": "看到一段代码 for i in range(n): for j in range(n): print,{{name}}能不能说出「这是 O(n²)、嵌套两层循环」?\n1000 个数排序,{{name}}能不能估出「冒泡要 50 万次、快排只要 1 万次」?\n同样输入、O(1) 比 O(n) 快多少,{{name}}能不能用「查字典 vs 翻 1000 页」打比方?"
+    },
+    {
+      "id": "IT_G56_AL_02",
+      "title": "搜索算法: 二分查找",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 3,
+      "summary": "理解二分查找算法",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解二分查找算法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解二分查找算法",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "1000 个数排好序,找 x 不用一个一个翻——看中间,x 大就只看右半,x 小就只看左半。每次减半,10 次搞定。这就是「二分查找」。",
+      "assessment_prompt": "1000 个有序数找 753,{{name}}能不能说出「先看第 500 个、大就只看 500-1000、再看 750...大约 10 步」?\n看到一段 while left<=right 代码,{{name}}能不能认出是二分查找、并解释 mid=(left+right)//2 的作用?\n二分查找要求有序,{{name}}能不能用「不排好序、中间数没意义」解释?"
+    },
+    {
+      "id": "IT_G56_AL_03",
+      "title": "排序算法: 插入排序",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 3,
+      "summary": "理解插入排序算法",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解插入排序算法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解插入排序算法",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "手里抓扑克牌,一张张拿起来,插到「已经排好」的牌里——这就是插入排序。第 1 张不用排,第 2 张跟前 1 张比,第 3 张跟前 2 张比...简单但慢。",
+      "assessment_prompt": "5 个数 [5,2,4,6,1] 用插入排序,{{name}}能不能一步步写出「5→2,5→2,4,5→...→1,2,4,5,6」?\n{{name}}能不能估出 n=100 时大约要比较 5000 次?\n看到代码 for i in range(1,n): for j in range(i-1,-1,-1),{{name}}能不能认出是插入排序?"
+    },
+    {
+      "id": "IT_G56_AL_04",
+      "title": "递归应用: 斐波那契",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 3,
+      "summary": "会用递归实现斐波那契",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,会用递归实现斐波那契。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会用递归实现斐波那契",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "斐波那契:f(1)=1、f(2)=1、f(3)=f(2)+f(1)=2、f(4)=f(3)+f(2)=3——「后一个数=前两个数加起来」。递归就是「自己调自己」,但要有「出口」。",
+      "assessment_prompt": "写 f(1)=1、f(2)=1、f(n)=f(n-1)+f(n-2),{{name}}能不能用 Python 写 5 行代码算出 f(10)=55?\n{{name}}能不能手算 f(5)=5(1,1,2,3,5)?\n看到 fib(50) 跑得很慢,{{name}}能不能解释「因为它算了太多重复的 f(48)、f(49)」?"
+    },
+    {
+      "id": "IT_G56_PG_01",
+      "title": "面向对象: 类和实例",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 3,
+      "summary": "理解类和实例的关系",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解类和实例的关系。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解类和实例的关系",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "「小狗」是一个「类」,我家「豆豆」是「小狗」这个类的一个「实例」——类像模具,实例是用模具做出来的具体东西。每个实例有相同的「属性」和「动作」。",
+      "assessment_prompt": "写 class Dog,再 d=Dog('豆豆'),{{name}}能不能写出 d.name 输出 '豆豆'?\n{{name}}能不能创建 3 只小狗 d1、d2、d3、各自不同名字、解释「它们是同一个类的不同实例」?\n看到 d1.name 和 d2.name 不同,{{name}}能不能说「它们是不同实例、属性各自独立」?"
+    },
+    {
+      "id": "IT_G56_PG_02",
+      "title": "面向对象: 封装",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 3,
+      "summary": "理解面向对象的封装",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解面向对象的封装。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解面向对象的封装",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "把数据和操作放一起,外面用「按钮」操作,内部细节藏起来——这就是封装。比如电视机的「开关按钮」,内部电路怎么变你不用懂。",
+      "assessment_prompt": "写 class BankAccount、有 balance 和 deposit(),{{name}}能不能直接调 a.deposit(100)、而不是手动改 a.balance?\n{{name}}能不能把 balance 设为 private(__balance),解释「外部代码不能直接改、只能通过 deposit/withdraw」?\n看到「空调有开关按钮」,{{name}}能不能说「这就是封装、内部压缩机怎么工作你不用管」?"
+    },
+    {
+      "id": "IT_G56_PG_03",
+      "title": "面向对象: 继承",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 4,
+      "summary": "理解面向对象的继承",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解面向对象的继承。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解面向对象的继承",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "「小学生」继承「学生」的属性(姓名、学号)和方法(考试),还能加自己的(打饭、戴红领巾)。子类继承父类,复用代码不重写。",
+      "assessment_prompt": "写 class Student,再 class PrimaryStudent(Student),{{name}}能不能让 PrimaryStudent 自动拥有 name、age 属性?\n{{name}}能不能在 PrimaryStudent 加新方法 play()、父类没有?\n看到「Animal→Dog、Cat」,{{name}}能不能说出「Dog、Cat 继承了 Animal 的 eat()、但 bark()/meow() 不同」?"
+    },
+    {
+      "id": "IT_G56_PG_04",
+      "title": "面向对象: 多态",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 4,
+      "summary": "理解面向对象的多态",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解面向对象的多态。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解面向对象的多态",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "同样是「叫」,狗是「汪汪」、猫是「喵喵」、鸟是「叽叽」——同一个方法名,不同的类各有各的实现。父类「动物」说「叫」,子类具体怎么叫各自定。",
+      "assessment_prompt": "写 class Animal 有 speak(),Dog 重写为「汪汪」、Cat 重写为「喵喵」,{{name}}能不能让 a.speak() 各自输出不同?\n写一个函数 feed(animal),{{name}}能不能传入 Dog 或 Cat 都能跑?\n看到 def speak(self): pass、再 Dog.speak 重写,{{name}}能不能说「这就是多态、同一接口不同实现」?"
+    },
+    {
+      "id": "IT_G56_PG_05",
+      "title": "模块和包",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 3,
+      "summary": "理解模块和包的使用",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解模块和包的使用。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+      "academic_req": null,
+      "key_points": [
+        "理解模块和包的使用",
+        "了解健康使用数字设备的重",
+        "在第三学段 (5~6 年级)教学情境中",
+        "合理安排数字设备的使用时间"
+      ],
+      "bloom": [
+        "了解",
+        "理解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "一个 .py 文件就是一个「模块」,多个模块放在一个文件夹里就是「包」。import 一下就能用别人写好的功能,自己不用从零写。",
+      "assessment_prompt": "写一个 my_utils.py、里面有 add() 函数,{{name}}能不能在另一个文件用 import my_utils 调用 my_utils.add(2,3)?\n{{name}}能不能把多个 .py 放进 mypackage 文件夹、加 __init__.py、用 from mypackage import module?\n看到 import numpy as np,{{name}}能不能说「np 就是 numpy 包」?"
+    },
+    {
+      "id": "IT_G56_PG_06",
+      "title": "常用库: random",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 2,
+      "summary": "会用 random 库",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,会用 random 库。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会用 random 库",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "random.randint(1,100) 能生成 1-100 之间的随机整数,random.choice([...]) 能从列表里随机抽一个。写猜数字、抽奖、抽签都用得上。",
+      "assessment_prompt": "写 random.randint(1,100),{{name}}能不能在 1 秒内生成 1 个 1-100 的随机数?\n{{name}}能不能用 random.choice(['苹果','梨','香蕉']) 抽 1 个水果、写个「今天吃什么」程序?\n看到 random.shuffle,{{name}}能不能用 3 行代码把 [1,2,3,4,5] 顺序打乱?"
+    },
+    {
+      "id": "IT_G56_PG_07",
+      "title": "常用库: datetime",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 2,
+      "summary": "会用 datetime 库",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,会用 datetime 库。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会用 datetime 库",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "datetime.now() 拿到当前时间,datetime(2024,1,1) 创建指定时间,两个时间相减能得到「差几天」。处理日期、时间、日历都靠它。",
+      "assessment_prompt": "写 datetime.now(),{{name}}能不能打印出「2024-07-23 14:30:25」这样的当前时间?\n{{name}}能不能算「2024-12-31 距离今天还有多少天」、用 datetime(2024,12,31) - datetime.now()?\n看到 datetime.strptime,{{name}}能不能把 '2024-01-15' 字符串转成 datetime 对象?"
+    },
+    {
+      "id": "IT_G56_DA_01",
+      "title": "数据预处理",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据处理",
+      "difficulty": 3,
+      "summary": "了解数据预处理的方法",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解数据预处理的方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解数据预处理的方法",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "拿到的原始数据往往「脏」——有空值、有重复、有错——直接分析会出大错。预处理就是「先清洗干净」:填空、删重、改格式,再用。",
+      "assessment_prompt": "表格里有 100 行、其中 5 行的「年龄」是空的,{{name}}能不能用「平均值填充」或「删除」处理?\n1000 行里「北京」和「北京市」是同一地、但写得不一致,{{name}}能不能用「统一替换」合并?\n发现一列「日期」格式有 '2024/1/1' 和 '2024-01-01' 混着,{{name}}能不能统一成一种格式?"
+    },
+    {
+      "id": "IT_G56_DA_02",
+      "title": "数据分析: Excel",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据处理",
+      "difficulty": 2,
+      "summary": "会用 Excel 进行数据分析",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,会用 Excel 进行数据分析。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会用 Excel 进行数据分析",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会",
+        "分析"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "Excel 里 SUM/AVERAGE/COUNT 一拖就出,数据透视表能秒出「按月统计的销量」,不用手算。1 万行的数据,Excel 几分钟搞定。",
+      "assessment_prompt": "100 个学生成绩求平均分,{{name}}能不能用 AVERAGE 公式、而不是用计算器一个一个加?\n1000 行订单按「月份」统计销量,{{name}}能不能用「数据透视表」拖两下搞定?\n看到一列成绩有「及格」「不及格」,{{name}}能不能用 COUNTIF 数出「及格多少人」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_DA_03",
+      "title": "数据库: 关系数据库",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 3,
+      "summary": "了解关系数据库的基本概念",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解关系数据库的基本概念。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解关系数据库的基本概念",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "把数据存进「表」(行=一条记录,列=一个字段),多张表用「关系」连起来——这就是关系数据库。MySQL、SQLite 都是。Excel 也能存表,但表多了就乱,数据库更专业。",
+      "assessment_prompt": "看到「学生表」有 id、name、class_id,「班级表」有 id、name,{{name}}能不能说出「两张表通过 class_id 关联」?\n{{name}}能不能用 SQL 写出 SELECT * FROM 学生 WHERE class_id=1?\n看到 Excel 文件和 MySQL 数据库,{{name}}能不能说出「都是存表的、但 MySQL 能存百万行、Excel 卡死」?"
+    },
+    {
+      "id": "IT_G56_DA_04",
+      "title": "数据库: SQL 查询",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 3,
+      "summary": "会写基本的 SQL 查询",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,会写基本的 SQL 查询。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "会写基本的 SQL 查询",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "会"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "用 SQL「说话」查数据:SELECT 选什么、FROM 哪张表、WHERE 什么条件。三行就能从百万行里筛出想要的。、孩子从小就该知道这个。",
+      "assessment_prompt": "查「数学成绩>90 分的学生姓名」,{{name}}能不能写出 SELECT name FROM students WHERE math>90?\n{{name}}能不能写出「按成绩降序、取前 10 名」用 ORDER BY score DESC LIMIT 10?\n看到 SELECT COUNT(*),{{name}}能不能用 COUNT(*) 算「我们班有多少人」?"
+    },
+    {
+      "id": "IT_G56_DA_05",
+      "title": "数据库: 表的设计",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 4,
+      "summary": "理解数据库表的设计",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,理解数据库表的设计。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "理解数据库表的设计",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "理解",
+        "设计"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "设计表就是「想清楚存什么」:主键(每行唯一 id)、外键(关联其他表)、字段(存哪类数据)、不能存重复信息(比如「学生表里不存班级名、存班级 id」)。",
+      "assessment_prompt": "设计「图书管理系统」的 books 表,{{name}}能不能列出字段 id、title、author、price、category_id?\n{{name}}能不能解释「为什么用 id 而不是书名当主键(书名可能重复)」?\n看到「订单表里有 customer_name」,{{name}}能不能改成「存 customer_id、关联 customers 表」更合理?"
+    },
+    {
+      "id": "IT_G56_DA_06",
+      "title": "数据挖掘: 关联分析",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 3,
+      "summary": "了解关联分析等数据挖掘方法",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解关联分析等数据挖掘方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解关联分析等数据挖掘方法",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解",
+        "分析"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "超市发现「买尿布的人 60% 也买啤酒」,货架就放一起,销量涨 30%——这就是「关联分析」。从一堆订单里找「经常一起买的东西」。",
+      "assessment_prompt": "给 1000 张超市小票,{{name}}能不能找出「买面包的人 70% 也买牛奶」这条规律?\n{{name}}能不能用「支持度(一起买的比例)+置信度(买 A 的人里买 B 的比例)」解释关联强度?\n看到「咖啡和糖常一起买」,{{name}}能不能说「可以放同一货架、互相带动销量」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_DA_07",
+      "title": "数据清洗",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "数据",
+      "subdomain": "分析",
+      "difficulty": 3,
+      "summary": "了解数据清洗的方法",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解数据清洗的方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解数据清洗的方法",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "数据集里 1000 行,50 行有错(空值、错别字、异常值),不洗直接分析结果就废。清洗=处理缺失、去重、纠错、统一格式。",
+      "assessment_prompt": "一列「年龄」里出现 200,{{name}}能不能认出这是「异常值」、用「>150 都改为空」处理?\n表格里「北京市」和「北京」是同一地,{{name}}能不能用 replace 统一成「北京」?\n100 行数据有 5 行是重复的,{{name}}能不能用 drop_duplicates 删除?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_NW_01",
+      "title": "网络分层模型",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "网络",
+      "subdomain": "网络",
+      "difficulty": 4,
+      "summary": "了解 OSI 七层模型",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解 OSI 七层模型。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+      "academic_req": null,
+      "key_points": [
+        "了解 OSI 七层模型",
+        "了解健康使用数字设备的重",
+        "在第三学段 (5~6 年级)教学情境中",
+        "合理安排数字设备的使用时间"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "网络像快递:应用层(你的信)→传输层(包好信封)→网络层(写地址)→链路层(找路)→物理层(用卡车运)。OSI 七层是国际标准的「快递分流程」。",
+      "assessment_prompt": "发一封邮件,{{name}}能不能说出「数据从应用层往下、一层一层打包、到了对方再一层一层拆」?\n{{name}}能不能列出 7 层名字(应用/表示/会话/传输/网络/数据链路/物理)中至少 4 层?\n看到「路由器工作在哪一层」,{{name}}能不能说出「网络层、因为它管 IP 转发」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_NW_02",
+      "title": "云计算",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "网络",
+      "subdomain": "网络",
+      "difficulty": 2,
+      "summary": "了解云计算的基本概念",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解云计算的基本概念。。了解云存储、云计算的原理，能够使用网盘进行数据备份，",
+      "academic_req": null,
+      "key_points": [
+        "了解云计算的基本概念",
+        "了解云存储、云计算的原理",
+        "能够使用网盘进行数据备份",
+        "在第三学段 (5~6 年级)教学情境中"
+      ],
+      "bloom": [
+        "了解",
+        "能",
+        "计算"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "不用买几万块的服务器,网上按小时租用——这就是「云计算」。阿里云、AWS 都是,你看不到机房,但用着它们的电脑。、孩子从小就该知道这个。",
+      "assessment_prompt": "用阿里云租 1 台服务器 1 小时,{{name}}能不能说出「价格是几毛钱、不用买硬件」?\n把照片存到「百度网盘」,{{name}}能不能说「照片存在云端、不占我手机」?\n看到「公司用 AWS」,{{name}}能不能说「它在亚马逊的机房、公司按用量付钱」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G56_SY_01",
+      "title": "信息系统的开发",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 3,
+      "summary": "了解信息系统的开发流程",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解信息系统的开发流程。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解信息系统的开发流程",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "开发一个图书管理系统要:需求分析(用户要什么)→设计(数据库/界面)→编码(写代码)→测试(找 bug)→上线(用户用)→维护(修问题)。6 步,缺一不可。",
+      "assessment_prompt": "想做一个「班级投票系统」,{{name}}能不能列出 5 步:调研→设计→写代码→测试→上线?\n{{name}}能不能解释「为什么开发前要先调研(要知道用户要什么)」?\n看到一段开发文档,{{name}}能不能认出「这是需求文档/设计文档/测试报告」中的哪一种?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G56_SY_02",
+      "title": "项目管理",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 2,
+      "summary": "了解项目管理的基本方法",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解项目管理的基本方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解项目管理的基本方法",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "做一个项目,4 个人 3 个月,要拆任务、定 deadline、跟踪进度——这就是项目管理。甘特图、看板、燃尽图都是工具。",
+      "assessment_prompt": "班级分组做「班级网站」、4 人 1 个月,{{name}}能不能把任务拆成「1 周前端、1 周后端、1 周联调、1 周上线」?\n{{name}}能不能用看板(To Do / Doing / Done)跟踪每天进度?\n看到项目延期了,{{name}}能不能先看「是哪一步超时了」、再调整资源?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_AI_01",
+      "title": "生成式 AI",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "AI",
+      "subdomain": "AI",
+      "difficulty": 2,
+      "summary": "了解生成式 AI 的基本原理",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解生成式 AI 的基本原理。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解生成式 AI 的基本原理",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "ChatGPT、Midjourney、Sora 都是「生成式 AI」——给它一句话,它能「生成」新内容(文字/图/视频)。背后是大模型「学」了海量数据后,一个字一个字「猜出来」的。",
+      "assessment_prompt": "用 ChatGPT 让它写「一篇关于猫的短文」,{{name}}能不能看到「它生成了原创内容、不是抄的」?\n用 Midjourney 输入「蓝色小猫」,{{name}}能不能看到「它生成了一张从未存在过的图」?\n看到 AI 写错的事实,{{name}}能不能说「它会编、不能全信、要查证」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_AI_02",
+      "title": "大语言模型",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "AI",
+      "subdomain": "AI",
+      "difficulty": 3,
+      "summary": "了解大语言模型的概念",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解大语言模型的概念。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "academic_req": null,
+      "key_points": [
+        "了解大语言模型的概念",
+        "在第三学段 (5~6 年级)教学情境中",
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "GPT、文心一言、通义千问都是「大语言模型」(LLM),训练数据是「几万亿字」的文字,训练完能「读懂+写出」中文英文。核心能力是「下一个字是什么」的概率预测。",
+      "assessment_prompt": "看到 GPT-4 答得比 GPT-3.5 好,{{name}}能不能说出「模型更大、训练数据更多、能力更强」?\n问 LLM 一个它训练截止后的事,{{name}}能不能看出「它不知道、会瞎编」?\n{{name}}能不能用「喂了 1 万亿字、才能写出像样的文章」描述 LLM 训练?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_SR_01",
+      "title": "AI 与社会",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "社会责任",
+      "subdomain": "责任",
+      "difficulty": 2,
+      "summary": "了解 AI 对社会的影响",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解 AI 对社会的影响。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+      "academic_req": null,
+      "key_points": [
+        "了解 AI 对社会的影响",
+        "了解健康使用数字设备的重",
+        "在第三学段 (5~6 年级)教学情境中",
+        "合理安排数字设备的使用时间"
+      ],
+      "bloom": [
+        "了解",
+        "会"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "AI 让医院诊断更准、让工厂效率翻倍,但也让人失业、被 AI 换脸诈骗。AI 是工具,用好是助力,用坏是灾难。、孩子从小就该知道这个。",
+      "assessment_prompt": "看到医院用 AI 看片,{{name}}能不能说出「AI 让医生诊断更准、但医生要复核、不能完全交给 AI」?\n看到「AI 换脸诈骗」新闻,{{name}}能不能警觉「陌生视频电话要核实、不能只信脸」?\n{{name}}能不能列出 3 个「AI 让人失业」的职业(客服、翻译、司机)?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G56_SR_02",
+      "title": "技术伦理",
+      "subject": "info_tech",
+      "stage": 3,
+      "grade_start": 5,
+      "grade_end": 6,
+      "domain": "社会责任",
+      "subdomain": "责任",
+      "difficulty": 2,
+      "summary": "了解技术使用的伦理",
+      "content_req": "在第三学段 (5~6 年级)教学情境中,了解技术使用的伦理。。通过体验人工智能的应用场景，了解人工智能带来的伦理与",
+      "academic_req": null,
+      "key_points": [
+        "通过体验人工智能的应用场景",
+        "了解人工智能带来的伦理与",
+        "了解技术使用的伦理",
+        "在第三学段 (5~6 年级)教学情境中"
+      ],
+      "bloom": [
+        "了解",
+        "能",
+        "应用"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 10,
+      "age_range_end": 11,
+      "description": "人脸识别、AI 选聘、推荐算法——技术能办大事,但也要守规矩:不能滥用个人数据、不能歧视、不能造谣。用技术前,先想「该不该」。",
+      "assessment_prompt": "学校用人脸识别进校门,{{name}}能不能说出「这有隐私风险、数据要保护好」?\nAI 招聘筛简历、歧视女性,{{name}}能不能说「这违反公平、要审查算法」?\n看到「APP 偷听用户说话来推广告」,{{name}}能不能警觉「这是滥用数据」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?"
+    },
+    {
+      "id": "IT_G79_AL_01",
+      "title": "时间复杂度",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 4,
+      "summary": "理解算法的时间复杂度",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,理解算法的时间复杂度。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "理解算法的时间复杂度",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "100 万个数据排序,O(n²) 要 1 万亿步,O(n log n) 只要 2 千万步——差 50 万倍。「时间复杂度」就是「步数和 n 的关系」,选算法就是选这个关系。",
+      "assessment_prompt": "看到 for i in range(n): for j in range(n): print,{{name}}能不能说出「这是 O(n²)」?\n看到 while n>0: n//=2,{{name}}能不能说出「这是 O(log n)、每次减半」?\n同样输入 100 万、O(n) vs O(n²),{{name}}能不能估出「100 万步 vs 1 万亿步」、差多少倍?"
+    },
+    {
+      "id": "IT_G79_AL_02",
+      "title": "动态规划初步",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "算法",
+      "subdomain": "算法",
+      "difficulty": 4,
+      "summary": "初步了解动态规划",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,初步了解动态规划。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "初步了解动态规划",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "爬 10 级台阶、每次 1 或 2 步,有多少种走法?不用递归每次重算,而是「小问题答案存起来,大问题直接用」——这就是动态规划(DP),把 O(2ⁿ) 变 O(n)。",
+      "assessment_prompt": "写 f(0)=1、f(1)=1、f(n)=f(n-1)+f(n-2) 用 for 循环,{{name}}能不能算出 f(10)=89、而不是递归重算?\n{{name}}能不能解释「为什么 DP 比递归快(因为 f(8) 只算 1 次、不用算几十次)」?\n看到「背包问题」,{{name}}能不能说出「DP 用 dp[i][w] 存子问题答案」?"
+    },
+    {
+      "id": "IT_G79_PG_01",
+      "title": "面向对象基础",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 3,
+      "summary": "了解面向对象的基本概念",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,了解面向对象的基本概念。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "了解面向对象的基本概念",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "把数据和操作装进「类」,用类造「实例」,实例之间独立又共享行为。这是程序组织的「搭积木」,业务复杂时不 OOP 就乱成粥。",
+      "assessment_prompt": "写 class Car、字段 brand、speed、方法 drive(),{{name}}能不能创建 c=Car('BMW', 200) 并调用 c.drive()?\n{{name}}能不能创建 c1=Car('Audi') 和 c2=Car('Tesla')、各自独立?\n看到 OOP 三特性(封装、继承、多态),{{name}}能不能用一句话各举 1 个例子?"
+    },
+    {
+      "id": "IT_G79_PG_02",
+      "title": "继承和多态",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 4,
+      "summary": "理解继承和多态",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,理解继承和多态。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "理解继承和多态",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "子类继承父类的「基因」,还能改写方法(多态)。「Animal→Dog」中 Dog 继承 Animal,但 speak() 自己实现成「汪汪」——既复用又灵活。",
+      "assessment_prompt": "写 class Animal: def speak(self): print('...'),再 class Dog(Animal): def speak(self): print('汪汪'),{{name}}能不能让 d.speak() 输出「汪汪」?\n{{name}}能不能解释「多态很有用(feed 函数不用知道 Dog 还是 Cat)」?\n看到「Student→CollegeStudent、加专业」,{{name}}能不能写出代码?"
+    },
+    {
+      "id": "IT_G79_PG_03",
+      "title": "栈和队列",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 3,
+      "summary": "理解栈和队列数据结构",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,理解栈和队列数据结构。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "理解栈和队列数据结构",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "栈像一摞书、后放的先拿(LIFO);队列像排队、先来的先走(FIFO)。浏览器「后退」用栈(后访问的先退回),食堂打饭用队列。",
+      "assessment_prompt": "用 Python list 实现栈,{{name}}能不能用 append/pop 写出 push/pop 操作?\n用 collections.deque 实现队列,{{name}}能不能用 append/popleft 写出进出队?\n浏览器按 3 次「前进」「后退」,{{name}}能不能用「栈」解释(3 个页面压栈、后退就是出栈)?"
+    },
+    {
+      "id": "IT_G79_PG_04",
+      "title": "链表",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 3,
+      "summary": "理解链表数据结构",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,理解链表数据结构。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "理解链表数据结构",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "数组是「一排连号座位」,链表是「每个人记住下一个人的位置」——插入删除不用挪动,但找第 5 个得从第 1 个挨个走。Python list 底层是数组,真正的链表是「节点+next 指针」。",
+      "assessment_prompt": "写好 Node(data, next=None),创建 a→b→c 链表,{{name}}能不能写出 a=Node(1); a.next=Node(2); a.next.next=Node(3)?\n{{name}}能不能写一个遍历函数 print_list(head)、从头到尾打印每个节点?\n在链表中间插入新节点,{{name}}能不能解释「只改 next 指针、不用挪数据」?"
+    },
+    {
+      "id": "IT_G79_PG_05",
+      "title": "二叉树",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "编程",
+      "subdomain": "编程",
+      "difficulty": 4,
+      "summary": "理解二叉树数据结构",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,理解二叉树数据结构。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "理解二叉树数据结构",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "理解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "每个节点最多 2 个孩子(左、右),像族谱。查找二叉搜索树(左小右大)找 1 个数只用 O(log n) 步,比线性快得多。",
+      "assessment_prompt": "画一棵根 10、左 5、右 15、再左 3、右 7,{{name}}能不能画出完整的树?\n{{name}}能不能写出 3 种遍历:前序(根左右)、中序(左根右)、后序(左右根)?\n在 BST 里找 7,{{name}}能不能口述「根 10、7<10 走左、5 节点、7>5 走右、找到」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G79_DA_01",
+      "title": "数据库基础",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 2,
+      "summary": "了解数据库的基本概念",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,了解数据库的基本概念。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "了解数据库的基本概念",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "数据库就是「装表的仓库」,几百万行也能秒查。有关系型(MySQL,表和表关联)和非关系型(MongoDB,JSON 文档)。Excel 卡死时,就该上数据库。",
+      "assessment_prompt": "想存 100 万学生的成绩,{{name}}能不能说出「用 MySQL、不用 Excel」?\n{{name}}能不能用 SQL 查出「数学成绩前 10 名」、用 ORDER BY score DESC LIMIT 10?\n看到 MySQL 和 MongoDB,{{name}}能不能说出「MySQL 存表、MongoDB 存 JSON 文档」?"
+    },
+    {
+      "id": "IT_G79_DA_02",
+      "title": "数据挖掘初步",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 3,
+      "summary": "了解数据挖掘的基本概念",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,了解数据挖掘的基本概念。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "了解数据挖掘的基本概念",
+        "在第四学段 (7~9 年级)教学情境中",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "FACTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "数据挖掘=从海量数据里「挖出」隐藏规律。聚类(把相似客户分组)、分类(判断邮件是不是垃圾)、预测(预测销量)都是。、孩子从小就该知道这个。",
+      "assessment_prompt": "100 万邮件要分类垃圾/正常,{{name}}能不能用「朴素贝叶斯」(看词出现概率)做分类?\n1000 个客户按购买习惯分组,{{name}}能不能用「K-means 聚类」自动分 3 组?\n看到「啤酒尿布案例」,{{name}}能不能说「这是关联分析、数据挖掘的一种」?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G79_AI_01",
+      "title": "监督学习和无监督学习",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "AI",
+      "subdomain": "AI",
+      "difficulty": 3,
+      "summary": "区分监督学习和无监督学习",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,区分监督学习和无监督学习。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "在第四学段 (7~9 年级)教学情境中",
+        "区分监督学习和无监督学习",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "监督学习:给「标好答案」的数据(猫/狗各 1000 张),让 AI 学;无监督学习:不给答案,让 AI 自己聚类(把相似的放一起)。前者像「老师带学生做题」,后者像「学生自己整理笔记」。",
+      "assessment_prompt": "1000 张「猫/狗」图片(有标签),{{name}}能不能用「监督学习」训一个分类模型?\n1000 张图片没标签,{{name}}能不能用「无监督聚类」自动分成 2 类?\n看到「预测房价(有历史价)」,{{name}}能不能用「监督学习」;看到「客户自动分群(没标签)」,用「无监督」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G79_AI_02",
+      "title": "AI 项目实践",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "AI",
+      "subdomain": "AI",
+      "difficulty": 3,
+      "summary": "参与简单的 AI 项目实践",
+      "content_req": "在第四学段 (7~9 年级)教学情境中,参与简单的 AI 项目实践。。考试性质和目的",
+      "academic_req": null,
+      "key_points": [
+        "在第四学段 (7~9 年级)教学情境中",
+        "参与简单的 AI 项目实践",
+        "考试性质和目的"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "做一个完整 AI 项目:选问题(识别猫狗)→收数据(1000 张)→洗数据→选模型→训练→评估→部署上线。7 步,缺一不可。",
+      "assessment_prompt": "想做一个「识别手写数字」的 AI,{{name}}能不能列出 5 步:找 MNIST 数据→选 CNN 模型→训练→测试准确率→做成 App?\n{{name}}能不能解释「为什么训练数据和测试数据要分开(用 80% 训练、20% 测试)」?\n训练完准确率只有 70%,{{name}}能不能说「可能数据太少或模型太简单、加数据/换模型」?"
+    },
+    {
+      "id": "IT_G79_DA_03",
+      "title": "信息安全: 文明礼仪",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 1,
+      "summary": "信息安全: 文明礼仪、行为规范、依法依规、个人隐私保",
+      "content_req": "信息安全: 文明礼仪、行为规范、依法依规、个人隐私保。",
+      "academic_req": null,
+      "key_points": [
+        "信息安全: 文明礼仪、行为规范、依法依规、个人隐私保"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "网上发评论要文明、不刷屏、不骂人;别人作品要尊重、不乱改;个人隐私要保护、不轻易泄露。安全不仅是技术,更是「做人」。、孩子从小就该知道这个。",
+      "assessment_prompt": "在论坛回复,{{name}}能不能用「不同意但尊重」的语气、而不是骂人?\n看到同学作品被嘲笑,{{name}}能不能制止「这是不文明」?\n{{name}}能不能列出 3 条「不轻易告诉别人」的信息(身份证号、家庭住址、银行卡密码)?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?"
+    },
+    {
+      "id": "IT_G79_SR_01",
+      "title": "算法: 问题的步又分解一算法的",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "社会责任",
+      "subdomain": "社会责任",
+      "difficulty": 1,
+      "summary": "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+      "content_req": "算法: 问题的步又分解一算法的描述、执行与效率一解决问。",
+      "academic_req": null,
+      "key_points": [
+        "算法: 问题的步又分解一算法的描述、执行与效率一解决问"
+      ],
+      "bloom": [
+        "描述"
+      ],
+      "type": "PROCEDURAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "把复杂问题拆成小问题,每个小问题用一个算法解决,最后把结果合起来——「分而治之」。比如排序 100 万个数,拆成 10 份各排,再合并。",
+      "assessment_prompt": "给 1000 个数排序,{{name}}能不能「拆 4 份各排、再合并」、而不是一口气排?\n写一段大代码,{{name}}能不能拆成 5 个函数(read_data、sort、save、print_report、main)、各自一个算法?\n看到「归并排序」,{{name}}能不能解释「先拆再合、是分治思想」?"
+    },
+    {
+      "id": "IT_G79_DA_04",
+      "title": "网络: 网络搜索与辅助协作学习",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 1,
+      "summary": "网络: 网络搜索与辅助协作学习一数字化成果分享一万物互",
+      "content_req": "网络: 网络搜索与辅助协作学习一数字化成果分享一万物互。",
+      "academic_req": null,
+      "key_points": [
+        "网络: 网络搜索与辅助协作学习一数字化成果分享一万物互"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "遇到不会的题,Google/百度搜关键词;跟同学写报告,用石墨文档一起编辑;远程同学用腾讯会议讨论。工具让学习和协作「无边界」。",
+      "assessment_prompt": "遇到数学难题,{{name}}能不能用「百度」+具体关键词(比如「一元二次方程 解法」)找答案、而不是搜「数学」?\n{{name}}能不能用石墨文档或腾讯文档和同学一起写报告、实时看到对方改的内容?\n跨城市同学讨论,{{name}}能不能用腾讯会议/钉钉开会、而不是打电话?,做完自己再讲一遍思路?,并且说出为什么这么做?"
+    },
+    {
+      "id": "IT_G79_DA_05",
+      "title": "信息处理: 文字",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "数据",
+      "subdomain": "数据",
+      "difficulty": 1,
+      "summary": "信息处理: 文字、图片、音频和视频等信息处理一使用编码",
+      "content_req": "信息处理: 文字、图片、音频和视频等信息处理一使用编码。",
+      "academic_req": null,
+      "key_points": [
+        "信息处理: 文字、图片、音频和视频等信息处理一使用编码"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "文字从打字到存储,经历:输入(键盘/语音)→编码(转成 0/1)→存储(硬盘)→编辑(Word)→输出(打印/分享)。每一步都是「文字的变身」。",
+      "assessment_prompt": "在 Word 写一篇文章,{{name}}能不能说「文字先存到内存、Ctrl+S 存到硬盘」?\n把文章发给同学,{{name}}能不能解释「文字先编码成 0/1、通过网络传过去、同学再解码显示」?\n看到一篇文章从 1KB 变 100KB(加图),{{name}}能不能说「图片比文字占空间大得多」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G79_SR_02",
+      "title": "聚焦课程目标和课程内容的关键问",
+      "subject": "info_tech",
+      "stage": 4,
+      "grade_start": 7,
+      "grade_end": 9,
+      "domain": "社会责任",
+      "subdomain": "社会责任",
+      "difficulty": 1,
+      "summary": "聚焦课程目标和课程内容的关键问题，提升教研实效",
+      "content_req": "聚焦课程目标和课程内容的关键问题，提升教研实效。",
+      "academic_req": null,
+      "key_points": [
+        "聚焦课程目标和课程内容的关键问题",
+        "提升教研实效"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 12,
+      "age_range_end": 14,
+      "description": "教学/学习中要聚焦「关键问题」——不是把所有都教,而是挑最核心的 3-5 个反复练。贪多嚼不烂,聚焦才有效。、孩子从小就该知道这个。",
+      "assessment_prompt": "一学期 16 节课、老师让列「最关键的 3 件事」,{{name}}能不能挑出 3 个、而不是列 16 个?\n复习 100 道错题,{{name}}能不能先「按类型分 5 类、重点练错最多的 1 类」、而不是全做?\n看到课程标准列 20 个目标,{{name}}能不能说出「3 个核心、其余次要」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_SY_03",
+      "title": "在家庭、校园、公园等场景中",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 1,
+      "summary": "在家庭、校园、公园等场景中，体验、感受与智能语音助",
+      "content_req": "在家庭、校园、公园等场景中，体验、感受与智能语音助。",
+      "academic_req": null,
+      "key_points": [
+        "体验、感受与智能语音助",
+        "在家庭、校园、公园等场景中"
+      ],
+      "bloom": [
+        "能",
+        "感受"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "智能音箱、智能门锁、超市自助收银——这些「智能设备」出现在家庭、校园、公园各处,它们能「听懂人话、帮人做事」。、孩子从小就该知道这个。",
+      "assessment_prompt": "在家里对小爱说「打开灯」,{{name}}能不能看出「它听懂了、还执行了」?\n校园门禁刷脸进校,{{name}}能不能说出「这是用 AI 识别人脸、自动开门」?\n在公园看到自动售货机,{{name}}能不能说「它也是智能设备、用扫码支付自动出货」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?"
+    },
+    {
+      "id": "IT_G34_SY_04",
+      "title": "在日常学习与生活场景中",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 1,
+      "summary": "在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+      "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。",
+      "academic_req": "学生在生活场景中能见到大量的具有过程与控制系统的设",
+      "key_points": [
+        "在日常学习与生活场景中",
+        "通过教师指导",
+        "尝试使用数字设"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "日常里,我们用平板上课、用手机查资料、用打印机打印作业——「数字设备」已经成了学习和生活的标配,像笔和本子一样自然。、孩子从小就该知道这个。",
+      "assessment_prompt": "上网课时老师用平板讲解,{{name}}能不能说出「平板是数字设备、帮我看到老师」?\n作业不会时,{{name}}能不能用手机查百度、而不是问爸妈?\n看到打印机打印作业,{{name}}能不能说「打印机把电脑里的内容印到纸上」?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    },
+    {
+      "id": "IT_G34_SY_05",
+      "title": "通过拍照",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 1,
+      "summary": "通过拍照、录音、录像、语音输入、录入文字或图符等方式",
+      "content_req": "通过拍照、录音、录像、语音输入、录入文字或图符等方式。",
+      "academic_req": null,
+      "key_points": [
+        "通过拍照、录音、录像、语音输入、录入文字或图符等方式"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "想留住精彩瞬间,可以拍照、录音、录像——这些都是「记录」的方式,比文字更生动。手机和平板让记录变得随手就来。、孩子从小就该知道这个。",
+      "assessment_prompt": "班级春游,{{name}}能不能用手机拍 3 张照片、录 1 段视频、而不是只用笔记?\n老师讲课时,{{name}}能不能用手机录音、回家再听一遍?\n看到同学在黑板画了一只猫,{{name}}能不能拍下来发给爸妈、而不是画完就忘?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    },
+    {
+      "id": "IT_G34_SY_06",
+      "title": "在浏览他人数字作品时",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 1,
+      "summary": "在浏览他人数字作品时，能主动、真诚、友善地发表评论，",
+      "content_req": "在浏览他人数字作品时，能主动、真诚、友善地发表评论，。",
+      "academic_req": null,
+      "key_points": [
+        "能主动、真诚、友善地发表评论",
+        "在浏览他人数字作品时"
+      ],
+      "bloom": [
+        "能"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "看到别人做的视频、画的数字画、写的文章——「评论」是好事,但要「友善、真诚、有用」。喷人不是本事,提建议才是。、孩子从小就该知道这个。",
+      "assessment_prompt": "看到同学做的动画,{{name}}能不能评论「小猫动得很自然、但背景能换个颜色吗」、而不是「太丑了」?\n看到别人画的数字画,{{name}}能不能先说「我最喜欢那只蓝色小鸟」、再提建议?\n看到有人给差评「这破视频」,{{name}}能不能说「这样评论不友善、我们说具体哪里可以改」?,做完自己再讲一遍思路?"
+    },
+    {
+      "id": "IT_G34_SY_07",
+      "title": "通过数字设备辅助学习、交流与分",
+      "subject": "info_tech",
+      "stage": 2,
+      "grade_start": 3,
+      "grade_end": 4,
+      "domain": "系统",
+      "subdomain": "系统",
+      "difficulty": 1,
+      "summary": "通过数字设备辅助学习、交流与分享，激发对信息科技的好",
+      "content_req": "通过数字设备辅助学习、交流与分享，激发对信息科技的好。",
+      "academic_req": null,
+      "key_points": [
+        "通过数字设备辅助学习、交流与分享",
+        "激发对信息科技的好"
+      ],
+      "bloom": [
+        "了解"
+      ],
+      "type": "CONCEPTUAL",
+      "age_range_start": 8,
+      "age_range_end": 9,
+      "description": "用平板学英语、用 App 练钢琴、查字典不用翻纸书——数字设备能「一对一辅导」,让学习更有趣、效率更高。、孩子从小就该知道这个。",
+      "assessment_prompt": "学英语时,{{name}}能不能用「一起学」App 跟读、而不是只看书?\n练钢琴时,{{name}}能不能用 App 看五线谱、而不是只听老师弹?\n写作文时,{{name}}能不能用「新华字典」App 查不会的字、而不是翻厚字典?,做完自己再讲一遍思路?,并且说出为什么这么做?,再补一个反例验证?,然后让同桌也做一遍?"
+    }
+  ]
+}
