@@ -23,6 +23,7 @@ LLM_SUBJECTS = {
     'geography': 'data/graph/geography_v33_llm.json',
     'math': 'data/graph/math_v33_llm.json',  # 只 50/337
     'chinese': 'data/graph/chinese_v33_batch1.json',  # 只 77/209
+    'english': 'data/graph/english_v33_llm.json',  # 296/296
 }
 
 llm_map = {}  # id -> {description, assessment_prompt}
