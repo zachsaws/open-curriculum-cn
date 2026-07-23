@@ -25,6 +25,7 @@ LLM_SUBJECTS = {
     'chinese': 'data/graph/chinese_v33_batch1.json',  # 只 77/209
     'english': 'data/graph/english_v33_llm.json',  # 296/296
     'physics': 'data/graph/physics_v33_llm.json',  # 121/121 V3.3.3
+    'labor': 'data/graph/labor_v33_llm.json',  # 85/85 V3.3.3
 }
 
 llm_map = {}  # id -> {description, assessment_prompt}
@@ -84,7 +85,7 @@ print(f"Total: {len(v33_nodes)} nodes, {len(edges)} edges")
 # 4. 写 all_v3.3.json
 import datetime
 v33_data = {
-    'version': 'v3.3.1',
+    'version': 'v3.3.3',
     'generatedAt': datetime.datetime.now().isoformat() + 'Z',
     'subjects_covered': list(LLM_SUBJECTS.keys()),
     'llm_enhanced_count': llm_count,
@@ -102,7 +103,7 @@ print(f"\n✓ 写 {out} ({os.path.getsize(out) / 1024:.1f} KB)")
 # 5. 同步到 web (压缩版: 不包含 academic_req 这种大字段)
 import gzip
 web_data = {
-    'version': 'v3.3.1',
+    'version': 'v3.3.3',
     'conceptCount': len(v33_nodes),
     'edgeCount': len(edges),
     'nodes': v33_nodes,
