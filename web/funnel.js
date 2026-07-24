@@ -1,6 +1,6 @@
 // Open Curriculum CN — 漏斗学习路径视图 (V3.4 B)
 // Canvas 2D · 1:1 复刻 Marble (withmarble.com/curriculum) 的"倒漏斗 + lineage trace"模式
-// 复用 web/data/graph.json / 14 学科 PALETTE / i18n / simp_to_trad
+// 复用 web/data/graph.json / 14 学科 PALETTE / 卡片结构
 
 'use strict';
 
@@ -103,7 +103,7 @@ async function init() {
     DATA = await res.json();
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
-    msg.innerHTML = `<div class="err">${window.t ? window.t('err_no_data') : '未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
+    msg.innerHTML = `<div class="err">${'未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
     console.error(e);
     return;
   }
@@ -620,13 +620,13 @@ function showCard(i) {
   if (r.difficulty) {
     const t = document.createElement('span');
     t.className = 'tag diff-' + r.difficulty;
-    t.textContent = (window.t ? window.t('card_difficulty') : '难度') + ' ' + '●'.repeat(r.difficulty) + '○'.repeat(5 - r.difficulty);
+    t.textContent = ('难度') + ' ' + '●'.repeat(r.difficulty) + '○'.repeat(5 - r.difficulty);
     tagRow.appendChild(t);
   }
   if (r.estimated_minutes) {
     const t = document.createElement('span');
     t.className = 'tag min';
-    t.textContent = '⏱ ' + r.estimated_minutes + ' ' + (window.t ? window.t('card_minutes') : '分钟');
+    t.textContent = '⏱ ' + r.estimated_minutes + ' ' + ('分钟');
     tagRow.appendChild(t);
   }
   if (r.subdomain) {
@@ -664,7 +664,7 @@ function showCard(i) {
 
   const pageLink = document.getElementById('card-page-link');
   if (r.src_page) {
-    const srcText = window.t ? window.t('source_link') : '课标原文';
+    const srcText = '课标原文';
     pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${r.src_page} ${srcText}</a>`;
   } else pageLink.textContent = '';
 
@@ -840,15 +840,7 @@ function setupSearch() {
 
 // ============== 语言切换 ==============
 function setupLangSwitch() {
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      if (lang === currentLang) return;
-      setLang(lang);
-      document.querySelectorAll('.lang-switch button').forEach(b => {
-        b.classList.remove('on'); b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('on'); btn.setAttribute('aria-selected', 'true');
+        btn.classList.add('on'); btn.setAttribute('aria-selected', 'true');
       setFunnelHeader();
       // 转换所有概念标题
       if (lang === 'zh-TW') {

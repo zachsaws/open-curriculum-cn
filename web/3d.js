@@ -1,6 +1,6 @@
 // Open Curriculum CN — 3D 球面可视化 (V3.3.3)
 // Three.js r160 · 球面 Fibonacci 分布 · 大圆弧 (great circle arc) 边
-// 复用 2D 视图的 graph.json / 学科配色 / i18n / 卡片结构
+// 复用 graph.json / 学科配色 / 卡片结构
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -64,8 +64,7 @@ async function init() {
   setupInteraction();
 
   // 3) UI
-  set3DHeader();  // 覆盖 applyI18n 可能误设的 h1/sub
-  buildLegend();
+      buildLegend();
   setupSearch();
   setupLangSwitch();
   setupCardClose();
@@ -76,8 +75,7 @@ async function init() {
   animate();
 }
 
-// 3D 视图的标题和副标题 — 自己管, 不让 i18n.applyI18n 覆盖
-// (因为 applyI18n 是为 2D 写的, 会把 .header h1/.sub 重写成 2D 的 app_title/app_subtitle)
+// 标题副标题: 硬编码中文, 不依赖 i18n
 function set3DHeader() {
   const lang = (typeof currentLang !== 'undefined') ? currentLang : 'zh-CN';
   const titles = {
@@ -86,7 +84,7 @@ function set3DHeader() {
     'en':    '2022 New Curriculum KG · 3D Sphere View',
   };
   const subs = {
-    'zh-CN': '1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换到漏斗学习路径 (即将上线) →</a>',
+    'zh-CN': '1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染',
     'zh-TW': '1906 概念按 Fibonacci 黃金角 (137.5°) 分布 · 4736 關係按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切換到漏斗學習路徑 (即將上線) →</a>',
     'en':    '1906 concepts in Fibonacci golden-angle layout · 4736 relations as great circle arcs · <a href="./index.html" style="color:#6b8cff;text-decoration:none">Switch to funnel learning path (coming soon) →</a>',
   };
@@ -107,7 +105,7 @@ async function loadData() {
     DATA = await res.json();
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
-    msg.innerHTML = `<div class="err">${window.t ? window.t('err_no_data') : '未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
+    msg.innerHTML = `<div class="err">${window.t ? "..." : '未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
     console.error(e);
     return;
   }
@@ -574,13 +572,13 @@ function showCard(node) {
   if (node.difficulty) {
     const t = document.createElement('span');
     t.className = 'tag diff-' + node.difficulty;
-    t.textContent = window.t('card_difficulty') + ' ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
+    t.textContent = "..." + ' ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
     tagRow.appendChild(t);
   }
   if (node.estimated_minutes) {
     const t = document.createElement('span');
     t.className = 'tag min';
-    t.textContent = '⏱ ' + node.estimated_minutes + ' ' + window.t('card_minutes');
+    t.textContent = '⏱ ' + node.estimated_minutes + ' ' + "...";
     tagRow.appendChild(t);
   }
   if (node.subdomain) {
@@ -599,7 +597,7 @@ function showCard(node) {
   // 页码
   const pageLink = document.getElementById('card-page-link');
   if (node.src_page) {
-    const srcText = window.t('source_link');
+    const srcText = "...";
     pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} ${srcText}</a>`;
   } else pageLink.textContent = '';
 
@@ -666,9 +664,9 @@ function showCard(node) {
   const softNext = allNext.filter(e => e.rel === 'relates_to');
 
   const preLabel = document.querySelector('.sec-pre .label');
-  preLabel.innerHTML = `<span data-i18n="card_prereq">${window.t('card_prereq')}</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>${softPre.length ? ` <span class="soft-hint">(+${softPre.length} 软关联)</span>` : ''}`;
+  preLabel.innerHTML = `<span >直接先决</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>${softPre.length ? ` <span class="soft-hint">(+${softPre.length} 软关联)</span>` : ''}`;
   const nextLabel = document.querySelector('.sec-next .label');
-  nextLabel.innerHTML = `<span data-i18n="card_unlocks">${window.t('card_unlocks')}</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>${softNext.length ? ` <span class="soft-hint">(+${softNext.length} 软关联)</span>` : ''}`;
+  nextLabel.innerHTML = `<span >解锁后继</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>${softNext.length ? ` <span class="soft-hint">(+${softNext.length} 软关联)</span>` : ''}`;
 
   // 边 reason
   const fillReasons = (container, edges, side) => {
@@ -692,7 +690,7 @@ function showCard(node) {
     if (!edges.length) {
       const d = document.createElement('div');
       d.className = 'empty';
-      d.textContent = window.t(side === 'pre' ? 'card_no_prereq' : 'card_no_unlock');
+      d.textContent = "...";
       container.appendChild(d);
       return;
     }
@@ -731,7 +729,7 @@ function buildLegend() {
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
     el.setAttribute('aria-pressed', 'true');
-    el.setAttribute('aria-label', `${window.t('btn_chip_toggle') || '切换'} ${window.tSubject(s)} ${counts[i]} ${window.t('chip_count_unit') || '个概念'}`);
+    el.setAttribute('aria-label', `${"..." || '切换'} ${window.tSubject(s)} ${counts[i]} ${"..." || '个概念'}`);
     el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${window.tSubject(s)}</span><span class="ct">${counts[i]}</span>`;
     el.onclick = () => {
       el.classList.toggle('off');
@@ -766,12 +764,12 @@ function setupSearch() {
     results.innerHTML = '';
     const count = document.createElement('div');
     count.className = 'r-count';
-    count.textContent = `${matches.length} ${window.t('search_count_suffix') || '匹配'}`;
+    count.textContent = `${matches.length} ${"..." || '匹配'}`;
     results.appendChild(count);
     if (matches.length === 0) {
       const e = document.createElement('div');
       e.className = 'r-empty';
-      e.textContent = window.t('empty_concepts') || '无匹配概念';
+      e.textContent = "..." || '无匹配概念';
       results.appendChild(e);
     } else {
       matches.slice(0, 50).forEach((m, k) => {
@@ -795,18 +793,14 @@ function setupSearch() {
 
 // ============== UI: 语言切换 ==============
 function setupLangSwitch() {
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.onclick = () => {
+      btn.onclick = () => {
       const lang = btn.dataset.lang;
       if (lang === currentLang) return;
-      // 1) 切换 UI 文本 (applyI18n 会扫描 data-i18n 元素)
-      setLang(lang);
-      document.querySelectorAll('.lang-switch button').forEach(b => {
-        b.classList.remove('on'); b.setAttribute('aria-selected', 'false');
+            setLang(lang);
+              b.classList.remove('on'); b.setAttribute('aria-selected', 'false');
       });
       btn.classList.add('on'); btn.setAttribute('aria-selected', 'true');
-      // 2) 3D 自己的标题/副标题 (applyI18n 不覆盖)
-      set3DHeader();
+            
       // 3) 转换所有概念标题
       if (lang === 'zh-TW') {
         for (const n of DATA.nodes) {
