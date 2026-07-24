@@ -76,7 +76,7 @@ async function init() {
 
 // 标题副标题: 硬编码中文, 不依赖 i18n
 function set3DHeader() {
-  const lang = (typeof currentLang !== 'undefined') ? currentLang : 'zh-CN';
+  const lang = 'zh-CN';
   const titles = {
     'zh-CN': '2022 新课标知识图谱 · 3D 球面视图',
     'zh-TW': '2022 新課標知識圖譜 · 3D 球面視圖',
@@ -117,7 +117,7 @@ async function loadData() {
     DATA = JSON.parse(text);
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
-    msg.innerHTML = `<div class="err">${window.t ? "..." : '未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
+    msg.innerHTML = `<div class="err">${'未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
     console.error(e);
     return;
   }
@@ -755,8 +755,8 @@ function buildLegend() {
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
     el.setAttribute('aria-pressed', 'true');
-    el.setAttribute('aria-label', `${"..." || '切换'} ${window.tSubject(s)} ${counts[i]} ${"..." || '个概念'}`);
-    el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${window.tSubject(s)}</span><span class="ct">${counts[i]}</span>`;
+    el.setAttribute('aria-label', `切换 ${s} ${counts[i]} 个概念`);
+    el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${s}</span><span class="ct">${counts[i]}</span>`;
     el.onclick = () => {
       el.classList.toggle('off');
       el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');

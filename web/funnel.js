@@ -847,8 +847,8 @@ function buildLegend() {
     el.tabIndex = 0;
     el.setAttribute('role', 'button');
     el.setAttribute('aria-pressed', 'true');
-    el.setAttribute('aria-label', `${window.tSubject ? window.tSubject(s) : s} ${counts[i]} 个概念`);
-    el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${esc(window.tSubject ? window.tSubject(s) : s)}</span><span class="ct">${counts[i]}</span>`;
+    el.setAttribute('aria-label', `切换 ${s} ${counts[i]} 个概念`);
+    el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${esc(s)}</span><span class="ct">${counts[i]}</span>`;
     el.addEventListener('click', () => {
       el.classList.toggle('off');
       el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');
@@ -910,7 +910,7 @@ function setupSearch() {
 }
 
 function setFunnelHeader() {
-  const lang = (typeof currentLang !== 'undefined') ? currentLang : 'zh-CN';
+  const lang = 'zh-CN';
   const titles = {
     'zh-CN': '2022 新课标知识图谱 · 漏斗学习路径视图',
     'zh-TW': '2022 新課標知識圖譜 · 漏斗學習路徑視圖',
