@@ -45,6 +45,11 @@ let lineageNodes = new Set();    // idx set
 let lineageEdgeIdxs = new Set(); // edgesData 索引 set
 let lineageMesh = null;          // 高亮 lineage 边的 Line mesh
 
+// ============== 选中节点放大 + camera tween (V3.6.3) ==============
+let focusGain = null;            // Float32Array, per node 0..1
+let focusGainTarget = new Float32Array(0);  // 目标值 (选中=1, 其他=0)
+let cameraTween = null;          // {startPos, endPos, startTime, duration}
+
 let selectedNodeIdx = null;
 let hoveredNodeIdx = null;
 let isMobile = false;
@@ -283,6 +288,10 @@ function buildNodeMesh() {
   }
   geo.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
 
+  // V3.6.3: focusGain (0..1) 选中节点时 = 1.0, 其他 = 0, 缓动后节点放大 1.6x
+  focusGain = new Float32Array(N);
+  geo.setAttribute('focusGain', new THREE.Float32BufferAttribute(focusGain, 1));
+
   const sprite = makeNodeSprite();
   const mat = new THREE.ShaderMaterial({
     uniforms: {
@@ -290,21 +299,34 @@ function buildNodeMesh() {
     },
     vertexShader: `
       attribute float size;
+      attribute float focusGain;
       varying vec3 vColor;
+      varying float vFocusGain;
       void main() {
         vColor = color;
+        vFocusGain = focusGain;
         vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
-        gl_PointSize = size * (380.0 / -mvPosition.z);
+        gl_PointSize = size * (1.0 + focusGain * 0.6) * (380.0 / -mvPosition.z);
         gl_Position = projectionMatrix * mvPosition;
       }
     `,
     fragmentShader: `
       uniform sampler2D pointTexture;
       varying vec3 vColor;
+      varying float vFocusGain;
       void main() {
         vec4 tex = texture2D(pointTexture, gl_PointCoord);
         if (tex.a < 0.1) discard;
-        gl_FragColor = vec4(vColor, tex.a);
+        vec3 col = vColor;
+        // V3.6.3: 白色高亮环 (vFocusGain > 0.5 时, 在 0.85-0.95 半径范围画白环)
+        if (vFocusGain > 0.5) {
+          vec2 uv = gl_PointCoord - vec2(0.5);
+          float d = length(uv) * 2.0;  // 0..1
+          if (d > 0.85 && d < 0.97) {
+            col = mix(vColor, vec3(1.0), 0.95);
+          }
+        }
+        gl_FragColor = vec4(col, tex.a);
       }
     `,
     vertexColors: true,
@@ -484,6 +506,73 @@ function buildLineageEdgeMesh() {
   scene.add(lineageMesh);
 }
 
+// ============== 选中节点放大 + camera tween (V3.6.3, 跟 funnel.js focusNode 思路一致) ==============
+// focusGain target: 选中 = 1.0, 其他 = 0.0
+function setFocusGainTarget(idx) {
+  if (!focusGain || focusGainTarget.length !== DATA.nodes.length) {
+    focusGainTarget = new Float32Array(DATA.nodes.length);
+  } else {
+    focusGainTarget.fill(0);
+  }
+  if (idx !== null) focusGainTarget[idx] = 1.0;
+}
+
+// focusNode: 旋转相机让节点 idx 朝向屏幕中央 (球形态: 保持距原点距离不变, 改方向)
+function focusNode(idx) {
+  const pos = pointsMesh.geometry.attributes.position.array;
+  const tx = pos[idx*3], ty = pos[idx*3+1], tz = pos[idx*3+2];
+  // 当前 camera 距原点距离 (球面切线半径)
+  const R = camera.position.length();
+  // 目标位置: 节点方向, 保持 R 不变
+  const len = Math.sqrt(tx*tx + ty*ty + tz*tz);
+  if (len < 1e-3) return;
+  const endPos = new THREE.Vector3(tx / len * R, ty / len * R, tz / len * R);
+  cameraTween = {
+    startPos: camera.position.clone(),
+    endPos,
+    startTime: performance.now(),
+    duration: 450,  // 0.45s
+  };
+  controls.enabled = false;  // 暂时禁掉 OrbitControls, 避免用户拖动冲突
+}
+
+// 在 animate() 里每帧调
+function updateCameraTween() {
+  if (!cameraTween) return;
+  const t = (performance.now() - cameraTween.startTime) / cameraTween.duration;
+  if (t >= 1) {
+    camera.position.copy(cameraTween.endPos);
+    camera.lookAt(0, 0, 0);
+    cameraTween = null;
+    controls.enabled = true;
+    controls.update();  // 同步 OrbitControls 内部 spherical
+    return;
+  }
+  // ease-out cubic
+  const eased = 1 - Math.pow(1 - t, 3);
+  camera.position.lerpVectors(cameraTween.startPos, cameraTween.endPos, eased);
+  camera.lookAt(0, 0, 0);
+}
+
+// focusGain 缓动 (每帧 lerp, 0.15 系数)
+function updateFocusGain() {
+  if (!focusGain || !focusGainTarget || focusGain.length !== focusGainTarget.length) return;
+  let changed = false;
+  for (let i = 0; i < focusGain.length; i++) {
+    const diff = focusGainTarget[i] - focusGain[i];
+    if (Math.abs(diff) > 0.005) {
+      focusGain[i] += diff * 0.15;
+      changed = true;
+    } else if (Math.abs(diff) > 0) {
+      focusGain[i] = focusGainTarget[i];
+      changed = true;
+    }
+  }
+  if (changed) {
+    pointsMesh.geometry.attributes.focusGain.needsUpdate = true;
+  }
+}
+
 // ============== 交互 ==============
 function setupInteraction() {
   const dom = renderer.domElement;
@@ -575,6 +664,9 @@ function selectNode(idx) {
   const node = DATA.nodes[idx];
   showCard(node);
   highlightNode(idx);
+  // V3.6.3: 相机 tween + 选中节点放大
+  setFocusGainTarget(idx);
+  focusNode(idx);
 }
 
 function clearSelection() {
@@ -587,6 +679,8 @@ function clearSelection() {
   lineageNodes = new Set();
   lineageEdgeIdxs = new Set();
   if (lineageMesh) { scene.remove(lineageMesh); lineageMesh.geometry.dispose(); lineageMesh.material.dispose(); lineageMesh = null; }
+  // V3.6.3: focusGain 全设 0
+  setFocusGainTarget(null);
   applyFilterToColors(); // 重置颜色
   buildHighlightEdgeMesh();
   buildLineageEdgeMesh();
@@ -942,6 +1036,9 @@ function onResize() {
 
 function animate() {
   requestAnimationFrame(animate);
+  // V3.6.3: camera tween + focusGain 缓动
+  updateCameraTween();
+  updateFocusGain();
   controls.update();
   renderer.render(scene, camera);
 
