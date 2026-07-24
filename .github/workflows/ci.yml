@@ -1,0 +1,77 @@
+name: CI (lint + 语法 + 数据 schema)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'data/graph/**'
+      - 'src/**'
+      - 'api/**'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: JS 语法 + Python 语法 + graph.json 校验
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: JS 语法 (web/*.js)
+        run: |
+          for f in web/*.js; do
+            if [ -f "$f" ]; then
+              node --check "$f" || (echo "JS 语法错: $f" && exit 1)
+            fi
+          done
+          echo "✓ JS 语法通过"
+
+      - name: Python 语法 (src/ + api/)
+        run: |
+          for f in $(find src api -name "*.py" 2>/dev/null); do
+            python -m py_compile "$f" || (echo "Python 语法错: $f" && exit 1)
+          done
+          echo "✓ Python 语法通过"
+
+      - name: HTML 基础校验 (web/*.html 有 </html> 结尾)
+        run: |
+          for f in web/*.html; do
+            if [ -f "$f" ]; then
+              tail -3 "$f" | grep -q "</html>" || (echo "HTML 缺 </html>: $f" && exit 1)
+            fi
+          done
+          echo "✓ HTML 基础校验通过"
+
+      - name: graph.json 完整性
+        run: |
+          python -c "
+          import json, sys
+          with open('data/graph/all_v3.3.json') as f:
+              d = json.load(f)
+          assert 'nodes' in d and 'edges' in d, '缺 nodes/edges'
+          n = len(d['nodes'])
+          e = len(d['edges'])
+          print(f'  nodes: {n}, edges: {e}')
+          assert n == 1906, f'节点数不对: {n}'
+          assert e == 4736, f'边数不对: {e}'
+          # 每个节点有 id
+          for node in d['nodes']:
+              assert 'id' in node, f'节点缺 id: {node}'
+              assert 'subject' in node, f'节点缺 subject: {node[\"id\"]}'
+          # 每条边 from/to 都有
+          for edge in d['edges']:
+              assert 'from' in edge and 'to' in edge, f'边缺 from/to: {edge}'
+          print('✓ graph.json 完整性通过 (1906 节点 / 4736 边)')
+          "

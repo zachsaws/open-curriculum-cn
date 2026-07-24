@@ -1,183 +1,193 @@
-# 2022 新课标知识图谱 · Open Curriculum CN
+# 中国 K12 学习路径图谱
 
-> 基于教育部 2022 义务教育课程标准的中国 K12 知识图谱开源基础设施
-> 复刻 [Marble](https://withmarble.com/curriculum/) 的范式，但用中国数据，做得比 Marble 更深。
+> 每一步学什么、之前漏了哪一步。
+
+教育部 2022 最新课标，**14 个学科、1906 个核心概念、4736 条学习路径**。开源免费。
+
+🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
 
 [![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Concepts: 1906](https://img.shields.io/badge/concepts-1906-green.svg)]()
-[![Relations: 4736](https://img.shields.io/badge/relations-4736-blue.svg)]()
-[![Subjects: 14](https://img.shields.io/badge/subjects-14-green.svg)]()
-[![Coverage: G1--G9](https://img.shields.io/badge/coverage-G1--G9-blue.svg)]()
+[![Concepts: 1906](https://img.shields.io/badge/concepts-1906-green)]()
+[![Learning paths: 4736](https://img.shields.io/badge/learning%20paths-4736-blue)]()
+[![Subjects: 14](https://img.shields.io/badge/subjects-14-green)]()
+[![Coverage: G1--G9](https://img.shields.io/badge/coverage-G1--G9-blue)]()
 
-🔗 **在线演示 (V3.0)**: [2022 新课标知识图谱](https://3dsz4i31s9mjc.space.mcode.cn) · 1906 概念 / 4736 关系
+## 它能做什么
+
+🆘 孩子卡在某个知识点 → 看看之前漏了哪一步
+📖 老师备课 → 翻完整的学习路径
+🧒 学生想提前学 → 一眼看到先后顺序
+🔗 想找学科之间的连接 → 看到概念之间怎么连
+
+## 我们不做
+
+不是题库 · 不是网课 · 不是 AI 老师 · 不是学习机
+
+就是一份**「学之前要会什么 / 学之后能学什么」**的图谱。开源免费。
+
+## 两种视图
+
+### 🔮 3D 球面视图
+
+打开 → <https://zachsaws.github.io/open-curriculum-cn/explore.html>
+
+1906 概念按 Fibonacci 球面分布，14 学科配色，鼠标拖动旋转，点击节点：
+
+- **0.45 秒相机自动转**到节点正前方（不再"硬切"）
+- **节点放大 1.6 倍** + 白色高亮环
+- **lineage BFS 反向追溯** —— 整条学习链金色高亮（"为了学这个要先会什么"全展开）
+- 球背面点自动变暗 50%（depth fog 显出 3D 深度）
+
+### ▼ 漏斗学习路径
+
+打开 → <https://zachsaws.github.io/open-curriculum-cn/funnel.html>
+
+复刻 [Marble](https://withmarble.com/curriculum/) 的范式。1906 概念按年级升序展开成倒漏斗，点击节点 lineage BFS 反向追溯所有"之前要学的"。
 
 ## 数据范围
 
-- **14 学科** × **1-9 年级** 全学段
-- **1906 概念** + **4736 关系**（1759 prerequisite + 364 progresses_to + 2613 relates_to）
-- **跨学段螺旋 46%**（2183 跨学段边）/ **跨学科 55%**（2613 跨学科边）
-- **每个概念** 都带 `content_req`（课标内容要求原文）/ `academic_req`（课标学业要求）/ `bloom`（布鲁姆动词）/ `key_points` / `estimated_minutes` / `src_page`（链回人教社 PDF）
+教育部 2022 最新课标，**14 学科 × 1-9 年级**全学段，**1906 概念** + **4736 条学习路径**。
 
-| 学科 | 概念 | OCR 匹配 | 完整率 |
-|---|---:|---:|---:|
-| 数学 | 214 | 100% | 100% |
-| 语文 | 75 | 100% | 100% |
-| 英语 | 296 | 0%* | 100% |
-| 物理 | 121 | 100% | 100% |
-| 化学 | 62 | 100% | 100% |
-| 生物 | 71 | 100% | 100% |
-| 历史 | 136 | 100% | 100% |
-| 地理 | 91 | 100% | 100% |
-| 道法 | 115 | 100% | 100% |
-| 科学 | 121 | 100% | 100% |
-| 信息科技 | 97 | 100% | 100% |
-| 艺术 | 78 | 100% | 100% |
-| 体育 | 87 | 100% | 100% |
-| 劳动 | 85 | 100% | 100% |
+学习路径分 3 类：
 
-*英语 OCR 无"内容要求"段标，匹配靠关键词覆盖；其余字段（content_req/academic_req/bloom/key_points）100% 完整。
+- **1759 条** prerequisite（先决）—— 严格"为了学这个要会什么"
+- **364 条** progresses_to（进阶）—— 自然延伸
+- **2613 条** relates_to（软关联）—— 跨学科连接
+
+**46% 跨学段**（2183 边）/ **55% 跨学科**（2613 边）。
+
+### 14 学科覆盖
+
+| 学科 | 概念 | 课标原文匹配 |
+|---|---:|---:|
+| 数学 | 337 | 100% |
+| 英语 | 296 | 100% |
+| 语文 | 209 | 100% |
+| 历史 | 136 | 100% |
+| 物理 | 121 | 100% |
+| 科学 | 121 | 100% |
+| 道德与法治 | 115 | 100% |
+| 信息科技 | 97 | 100% |
+| 地理 | 91 | 100% |
+| 体育与健康 | 87 | 100% |
+| 劳动 | 85 | 100% |
+| 艺术 | 78 | 100% |
+| 生物 | 71 | 100% |
+| 化学 | 62 | 100% |
+| **合计** | **1906** | — |
+
+### 节点 13 字段
+
+每个概念带 13 字段：`title` / `domain` / `subdomain` / `difficulty` / `content_req`（课标原文） / `academic_req`（课标学业要求） / `key_points` / `bloom`（布鲁姆动词） / `estimated_minutes` / `src_page`（链回人教社 PDF） / `description`（人话版） / `real_examples`（真实课例） / `common_mistakes`（常见错误） / `teaching_activity`（教学活动） / `centrality`（被需要 + 能学）
+
+后 3 个字段（real_examples / common_mistakes / teaching_activity）是 LLM 教师用书级增强，全 14 学科 1906 节点 100% 覆盖。
 
 ## 数据来源
 
-- 教育部 2022 义教课程方案 + 16 学科课程标准 (PDF)
-- 人教社官方下载: <https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html>
-- OCR 工具: `tesseract 5.5.2` (chi_sim + eng) @ 180 DPI
+- **一手数据**：教育部 2022 义务教育课程方案 + 16 学科课程标准（PDF）
+- **官方下载**：<https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html>
+- **OCR 工具**：tesseract 5.5.2（chi_sim + eng）@ 180 DPI
+- **LLM 内容增强**：把 OCR 原文改写为人话描述 + 真实课例 + 常见错误 + 教学活动
 
 ## 快速开始
 
-```bash
-git clone https://github.com/your-org/open-curriculum-cn
-cd open-curriculum-cn
-
-# 装 Python 依赖
-python -m venv .venv
-source .venv/bin/activate
-pip install aiohttp pymupdf playwright
-
-# 装 tesseract (macOS)
-brew install tesseract tesseract-lang
-
-# 跑 enrich (数学 214 概念)
-python src/pipeline/enrich_subject.py --subject math --round 1
-
-# 跑全部 14 学科
-for s in math chinese english physics chemistry biology history geography morality_law science info_tech art pe_health labor; do
-  python src/pipeline/enrich_subject.py --subject $s --round 1
-done
-
-# 合并
-python src/pipeline/merge_v3.0.py
-
-# 本地看
-cd web && python -m http.server 8000
-# 打开 http://127.0.0.1:8000
-```
-
-## B 端 REST API
-
-部署后提供 REST API（详见 `api/server.py`）:
-
-| 端点 | 方法 | 说明 |
-|---|---|---|
-| `/api/concepts` | GET | 列所有概念（支持分页/学科/学段过滤） |
-| `/api/concepts/{id}` | GET | 单个概念详情 |
-| `/api/subjects` | GET | 学科列表 + 概念数 |
-| `/api/path?from=X&to=Y` | GET | 找 X→Y 学习路径 |
-| `/api/prerequisites/{id}` | GET | 概念 X 的所有先决链 |
-| `/api/stats` | GET | 统计信息 |
-
-### 示例
+数据科学家 / 老师 / 家长 / 学生直接用 demo：
 
 ```bash
-# 找一元二次方程详情
-curl https://api.open-curriculum.cn/api/concepts/M_G4_QR_05
-
-# 列数学 G7-9 概念
-curl 'https://api.open-curriculum.cn/api/concepts?subject=math&stage=4'
-
-# 找"分数"到"一元二次方程"的学习路径
-curl 'https://api.open-curriculum.cn/api/path?from=M_G2_NS_05&to=M_G4_QR_05'
+# 浏览器打开（无需本地）
+open https://zachsaws.github.io/open-curriculum-cn/
 ```
+
+下载 `graph.json` 自己分析：
+
+```bash
+# 完整图谱 (3.8MB JSON / 1.4MB gz)
+curl -O https://zachsaws.github.io/open-curriculum-cn/data/graph.json
+curl -O https://zachsaws.github.io/open-curriculum-cn/data/graph.json.gz
+```
+
+`graph.json` 包含 `nodes`（1906 概念）+ `edges`（4736 学习路径），可读入 Python / R / Julia 自己分析。
+
+完整数据 schema 看 [docs/schema.md](docs/schema.md)。
 
 ## 仓库结构
 
 ```
 open-curriculum-cn/
 ├── data/
-│   ├── raw/curriculum_2022/   # 17 本 PDF (人教社下载)
-│   ├── parsed/                # OCR 解析 (17 本 × 9K-120K 字符)
-│   └── graph/                 # 知识图谱 JSON (14 学科)
-│       ├── all_v3.0.json      # 总图 (1906 概念, 4736 关系)
-│       ├── {subject}_v3.0.json   # 学科 V3.0
-│       └── {subject}_review_r3.json  # 自评报告
+│   ├── raw/curriculum_2022/   # 17 本 PDF（人教社下载）
+│   ├── parsed/                # OCR 解析
+│   └── graph/                 # 知识图谱 JSON
+│       ├── all_v3.3.json      # 总图 (1906 概念, 4736 边)
+│       └── {subject}_v3*.json # 学科 + V3.3.5 LLM 增强
 ├── src/
 │   ├── extract/               # PDF 下载 + OCR
-│   ├── pipeline/              # enrich / merge / scan_ceiling
-│   └── validate/              # Playwright 截图
-├── web/                       # 静态前端 (cytoscape.js 2D)
-│   ├── index.html
-│   ├── app.js                 # 工具 (搜索/高亮/邻居展开)
-│   ├── cytoscape.min.js
-│   └── data/graph.json
-├── api/                       # B 端 REST API (FastAPI)
-│   ├── server.py
-│   └── tests/
-├── docs/                      # 设计文档 + 路线图
+│   └── pipeline/              # enrich / merge / V3.3 LLM 化
+├── web/                       # 静态前端
+│   ├── index.html             # 主页（产品化 V3.6.1）
+│   ├── explore.html           # 3D 球面视图
+│   ├── 3d.js                  # Three.js r160 + lineage + camera tween + depth fog
+│   ├── funnel.html            # 漏斗视图
+│   └── funnel.js              # Canvas 2D + lineage BFS
+├── api/                       # FastAPI B 端 REST（本地，暂未上公网）
+├── docs/
 │   ├── schema.md
-│   ├── plan.md
-│   ├── progress.md
-│   └── roadmap.md
-├── .github/
-│   └── workflows/             # GitHub Action: PR 触发自动 enrich
-└── README.md
+│   ├── reviews/               # 三倍镜评测
+│   └── reports/               # 调研报告（含 withmarble 对比）
+├── .github/workflows/         # GitHub Actions: enrich + Pages 部署
+├── CONTRIBUTING.md
+├── LICENSE                    # CC-BY-SA 4.0
+├── LICENSE-DATA               # CC0 1.0 (数据库层)
+└── PROVENANCE.md              # 数据溯源
 ```
 
 ## 与 Marble 的对比
 
 | 维度 | Marble | Open Curriculum CN |
 |---|---|---|
-| 数据源 | 美国 Common Core (8 主科) | 中国 2022 义教课标 (14 学科) |
-| 概念数 | 1,590 | **1,906** (V3.0, 接近课标理论上限) |
-| 关系数 | ~5,000 | **4,736** (V3.0, prerequisite + progresses_to + relates_to) |
-| 地图模式 | 无 | **V3.1: 学科→学段→领域→概念 4 层树状导航** |
-| 学段 | K-12 (13 学段) | G1-G9 (4 学段 × 14 学科) |
-| 可视化 | 3D 力导向 (Three.js) | 2D 力导向 (cytoscape.js) |
-| 数据详情 | 概念标题 | 概念标题 + 内容要求 + 学业要求 + 知识要点 + 布鲁姆动词 + 学习时间 + 课标页码 |
-| License | 商业 | CC-BY-SA 4.0 (开源) |
-| 社区 | 商业 | GitHub 公开 PR |
+| 数据源 | 美国 Common Core | 中国 2022 义教课标 |
+| 概念数 | 1,590 | **1,906** |
+| 学习路径 | ~5,000 | **4,736** |
+| 视图 | 漏斗 | **3D 球 + 漏斗（双视图）** |
+| 球 | 无 | **V3.6.2-4: lineage BFS + camera tween + 选中放大 1.6x + depth fog** |
+| 学科 | 8 | **14（全学段）** |
+| 节点内容 | 标题 + age | **13 字段（含 3 教师用书级）** |
+| 跨学段 / 跨学科 | 少 | **46% 跨学段 / 55% 跨学科** |
+| 4 句对仗场景入口 | 无 | **V3.6.1: 孩子卡住 / 老师备课 / 学生预习 / 找跨学科连接** |
+| "我们不做"反向定位 | 无 | **V3.6.1: 不是题库/网课/AI 老师/学习机** |
+| License | 商业 | **CC-BY-SA 4.0** |
 
 ## 路线图
 
-- [x] V0.6: 758 概念, 14 学科 preseed
-- [x] V0.7: 14 学科 enrich 到"知识库级"
-- [x] V0.8: 工具增强 (搜索/高亮/邻居)
-- [x] V0.9: 数学第四学段重做 (P61+ @行格式)
-- [x] V1.0: README + CONTRIBUTING + B 端 API (本文档)
-- [x] V1.5: GitHub Action 自动 enrich + JSON 验证
-- [x] V2.0: 繁体 + 英文 UI (i18n) + RSS feed
-- [x] V2.1: 数据修补 (src_page/academic_req/src_stage) + gzip 压缩 + 移动端防裁切
-- [x] V2.2: 关系扩充 (167→299) + rel 三类型 + 跨学科 9.9%→26.4%
-- [x] V2.3: UX 全套 (入口高亮/9 快捷键/ARIA/从这里学起/移动端) + 30 测试
-- [x] **V3.0: 概念 758→1906 / 关系 299→4736 / 14 学科全量**
-- [x] V3.1: 概念地图模式 — 左侧树状导航 (学科→学段→领域→概念) + 联动高亮分支
+- [x] V0.x: 758 概念 + 14 学科 preseed
+- [x] V1.0–V2.3: 工具 / UX / 关系扩充
+- [x] V3.0: 概念 758 → 1906 / 关系 299 → 4736
+- [x] V3.1: 学科→学段→领域 4 层树状导航
+- [x] V3.3.1–5: LLM 内容增强 + 14 学科 100% 教师用书级
+- [x] V3.3.3: 3D 球面视图（Three.js）
+- [x] V3.4: Marble 漏斗 1:1 复刻
+- [x] V3.5: 产品化首页（4 句对仗 + 我们不做 + 工程师话改人话）
+- [x] **V3.6.1-5**: 球 lineage BFS + camera tween + 选中放大 1.6x + depth fog
+- [x] **V3.6.6**: GitHub Pages 自动部署
+- [ ] V4.0: 知乎/公众号文章 + SEO + B 端 SaaS 模板
 
 ## 贡献
 
-参见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+- **概念补全 PR**（按 [docs/schema.md](docs/schema.md) 字段）
+- **课标原文校对**（标错字 / 标错 OCR）
+- **关系图谱补充**（缺失的先决/后继）
+- **反馈使用问题** → [Issues](https://github.com/zachsaws/open-curriculum-cn/issues)
 
-我们欢迎:
-- 新概念 PR（按 V0.7 字段格式）
-- 课标原文校对（标错字 / 标错 OCR）
-- 关系图谱补充（缺失的先决/后继）
-- 教师审核（请先看 [docs/teacher-review.md](docs/teacher-review.md)）
+[CONTRIBUTING.md](CONTRIBUTING.md) 详。
 
 ## License
 
-CC-BY-SA 4.0 — 署名 + 相同方式共享。
-允许商用 / 修改 / 再发布，但必须署"Open Curriculum CN 贡献者"且同样开源。
+- **内容**（titles / descriptions / examples）：[CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — 署名 + 相同方式共享
+- **数据库层**（节点 ID + 边 ID）：[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — 公共领域
+- 教育部 2022 课标原文（引用）：人教社官方版权
 
 ## 致谢
 
 - 教育部 / 人教社 2022 义教课程标准
 - [Marble](https://withmarble.com/) 范式启发
-- tesseract OCR / cytoscape.js / FastAPI
+- tesseract OCR / Three.js / Canvas 2D / FastAPI
