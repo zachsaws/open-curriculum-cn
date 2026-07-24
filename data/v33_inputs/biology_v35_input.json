@@ -1,0 +1,1805 @@
+[
+  {
+    "id": "B_B1_01",
+    "title": "细胞是生命基本单位",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "细胞",
+    "difficulty": 1,
+    "summary": "认识细胞是生命活动的基本单位",
+    "content_req": "细胞是生物体结构和功能的基本单位。认识细胞是生命活动的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "认识细胞是生命活动的基本单位"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_02",
+    "title": "动植物细胞结构",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "细胞",
+    "difficulty": 2,
+    "summary": "了解动植物细胞的结构与区别",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解动植物细胞的结构与区别",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解动植物细胞的结构与区别"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_03",
+    "title": "细胞分裂与分化",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "细胞",
+    "difficulty": 3,
+    "summary": "理解细胞分裂和分化形成组织",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解细胞分裂和分化形成组织",
+    "academic_req": null,
+    "key_points": [
+      "理解细胞分裂和分化形成组织",
+      "细胞是生物体结构和功能的基本单位"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "形成"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_04",
+    "title": "生物体的结构层次",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "组织",
+    "difficulty": 2,
+    "summary": "理解细胞→组织→器官→系统→个体",
+    "content_req": "识别给定生物材料所属的结构层次，并阐明生物体在结构和。理解细胞→组织→器官→系统→个体",
+    "academic_req": null,
+    "key_points": [
+      "识别给定生物材料所属的结构层次",
+      "理解细胞→组织→器官→系统→个体",
+      "并阐明生物体在结构和"
+    ],
+    "bloom": [
+      "理解",
+      "识别"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_05",
+    "title": "单细胞生物",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "生物",
+    "difficulty": 2,
+    "summary": "了解草履虫/变形虫等单细胞生物",
+    "content_req": "细菌是单细胞生物，无成形的细胞核。了解草履虫/变形虫等单细胞生物",
+    "academic_req": null,
+    "key_points": [
+      "了解草履虫/变形虫等单细胞生物",
+      "细菌是单细胞生物",
+      "无成形的细胞核"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_06",
+    "title": "人体的消化系统",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "系统",
+    "difficulty": 2,
+    "summary": "了解人体消化系统的组成和功能",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解人体消化系统的组成和功能",
+    "academic_req": null,
+    "key_points": [
+      "了解人体消化系统的组成和功能",
+      "细胞是生物体结构和功能的基本单位"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_07",
+    "title": "人体的呼吸系统",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "系统",
+    "difficulty": 2,
+    "summary": "了解人体呼吸系统",
+    "content_req": "运用图示或模型表示生态系统中各生物成分之间的营养。了解人体呼吸系统",
+    "academic_req": null,
+    "key_points": [
+      "运用图示或模型表示生态系统中各生物成分之间的营养",
+      "了解人体呼吸系统"
+    ],
+    "bloom": [
+      "了解",
+      "运用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_08",
+    "title": "人体的血液循环",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "系统",
+    "difficulty": 3,
+    "summary": "了解血液循环路径",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解血液循环路径",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解血液循环路径"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_09",
+    "title": "人体的泌尿系统",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "系统",
+    "difficulty": 2,
+    "summary": "了解人体泌尿系统",
+    "content_req": "运用图示或模型表示生态系统中各生物成分之间的营养。了解人体泌尿系统",
+    "academic_req": null,
+    "key_points": [
+      "运用图示或模型表示生态系统中各生物成分之间的营养",
+      "了解人体泌尿系统"
+    ],
+    "bloom": [
+      "了解",
+      "运用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B1_10",
+    "title": "人体的神经系统",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物体结构",
+    "subdomain": "系统",
+    "difficulty": 3,
+    "summary": "了解神经系统的组成和功能",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解神经系统的组成和功能",
+    "academic_req": null,
+    "key_points": [
+      "了解神经系统的组成和功能",
+      "细胞是生物体结构和功能的基本单位"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B2_01",
+    "title": "生物分类",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物多样性",
+    "subdomain": "分类",
+    "difficulty": 2,
+    "summary": "理解生物分类等级:界门纲目科属种",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解生物分类等级:界门纲目科属种",
+    "academic_req": null,
+    "key_points": [
+      "理解生物分类等级:界门纲目科属种",
+      "细胞是生物体结构和功能的基本单位"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "分类"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B2_02",
+    "title": "植物的主要类群",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物多样性",
+    "subdomain": "植物",
+    "difficulty": 2,
+    "summary": "了解藻类/苔藓/蕨类/裸子/被子植物",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解藻类/苔藓/蕨类/裸子/被子植物",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解藻类/苔藓/蕨类/裸子/被子植物"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B2_03",
+    "title": "动物的主要类群",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物多样性",
+    "subdomain": "动物",
+    "difficulty": 2,
+    "summary": "了解无脊椎动物/脊椎动物主要类群",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解无脊椎动物/脊椎动物主要类群",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解无脊椎动物/脊椎动物主要类群"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B2_04",
+    "title": "保护生物多样性",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "生物多样性",
+    "subdomain": "保护",
+    "difficulty": 2,
+    "summary": "理解保护生物多样性的意义",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解保护生物多样性的意义",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解保护生物多样性的意义"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "B_B3_01",
+    "title": "生态系统的组成",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 2,
+    "summary": "理解生态系统的生物成分和非生物成分",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解生态系统的生物成分和非生物成分",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解生态系统的生物成分和非生物成分"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B3_02",
+    "title": "食物链和食物网",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 2,
+    "summary": "理解食物链和食物网",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解食物链和食物网",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解食物链和食物网"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B3_03",
+    "title": "生态系统的能量流动",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 3,
+    "summary": "理解能量沿食物链单向流动",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解能量沿食物链单向流动",
+    "academic_req": null,
+    "key_points": [
+      "理解能量沿食物链单向流动",
+      "细胞是生物体结构和功能的基本单位"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B3_04",
+    "title": "生态系统的物质循环",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 3,
+    "summary": "理解碳循环/氮循环",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解碳循环/氮循环",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解碳循环/氮循环"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B3_05",
+    "title": "生态系统的自我调节",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 3,
+    "summary": "理解生态系统的稳定性",
+    "content_req": "分析某生态系统受到破坏的具体实例，盖明生态系统的自我。理解生态系统的稳定性",
+    "academic_req": null,
+    "key_points": [
+      "分析某生态系统受到破坏的具体实例",
+      "理解生态系统的稳定性",
+      "盖明生态系统的自我"
+    ],
+    "bloom": [
+      "理解",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B3_06",
+    "title": "生物圈",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 2,
+    "summary": "了解生物圈是最大的生态系统",
+    "content_req": "分析人类活动对生态环境造成破坏的实例，形成保护生物圈。了解生物圈是最大的生态系统",
+    "academic_req": "从物质循环与能量变化的角度，阐明植物在生物圈中的",
+    "key_points": [
+      "分析人类活动对生态环境造成破坏的实例",
+      "形成保护生物圈",
+      "了解生物圈是最大的生态系统"
+    ],
+    "bloom": [
+      "了解",
+      "形成",
+      "分析"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_01",
+    "title": "植物的有性生殖",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "生殖",
+    "difficulty": 2,
+    "summary": "了解植物开花/传粉/受精/结果过程",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解植物开花/传粉/受精/结果过程",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解植物开花/传粉/受精/结果过程"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_02",
+    "title": "动物的生殖和发育",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "生殖",
+    "difficulty": 2,
+    "summary": "了解昆虫/两栖/鸟类的生殖发育",
+    "content_req": "叶芽通过细胞的分裂和分化发育成共和叶。了解昆虫/两栖/鸟类的生殖发育",
+    "academic_req": null,
+    "key_points": [
+      "了解昆虫/两栖/鸟类的生殖发育",
+      "叶芽通过细胞的分裂和分化发育成共和叶"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_03",
+    "title": "人的生殖和发育",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "生殖",
+    "difficulty": 2,
+    "summary": "了解人的生殖系统和发育过程",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解人的生殖系统和发育过程",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解人的生殖系统和发育过程"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_04",
+    "title": "DNA 是遗传物质",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "理解 DNA 是主要的遗传物质",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解 DNA 是主要的遗传物质",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解 DNA 是主要的遗传物质"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_05",
+    "title": "基因与性状",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "理解基因控制生物的性状",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解基因控制生物的性状",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解基因控制生物的性状"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_06",
+    "title": "基因的传递",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "理解基因从亲代到子代的传递",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解基因从亲代到子代的传递",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解基因从亲代到子代的传递"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_07",
+    "title": "人的性别决定",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 2,
+    "summary": "了解人的性别决定 XY 机制",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解人的性别决定 XY 机制",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解人的性别决定 XY 机制"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_08",
+    "title": "遗传病与优生优育",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "健康",
+    "difficulty": 2,
+    "summary": "了解遗传病和优生优育",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解遗传病和优生优育",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解遗传病和优生优育"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B4_09",
+    "title": "生命的起源与进化",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "生命的延续",
+    "subdomain": "进化",
+    "difficulty": 3,
+    "summary": "了解生命起源和生物进化",
+    "content_req": "运用进化与适应的观点，解释生物多样性的原因。。了解生命起源和生物进化",
+    "academic_req": null,
+    "key_points": [
+      "运用进化与适应的观点",
+      "了解生命起源和生物进化",
+      "解释生物多样性的原因"
+    ],
+    "bloom": [
+      "了解",
+      "运用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B5_01",
+    "title": "传染病及其预防",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "健康",
+    "subdomain": "疾病",
+    "difficulty": 2,
+    "summary": "了解传染病的传播途径和预防",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解传染病的传播途径和预防",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解传染病的传播途径和预防"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B5_02",
+    "title": "免疫与计划免疫",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "健康",
+    "subdomain": "免疫",
+    "difficulty": 3,
+    "summary": "理解免疫系统和计划免疫",
+    "content_req": "细胞是生物体结构和功能的基本单位。理解免疫系统和计划免疫",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "理解免疫系统和计划免疫"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B5_03",
+    "title": "健康的生活方式",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "健康",
+    "subdomain": "生活方式",
+    "difficulty": 1,
+    "summary": "养成健康生活方式",
+    "content_req": "运用示意图或模型等方式，展示和说明细胞各结构的功能及。养成健康生活方式",
+    "academic_req": "通过列表等多种方式，对不同生物类群的形态结构、生活环",
+    "key_points": [
+      "展示和说明细胞各结构的功能及",
+      "运用示意图或模型等方式",
+      "养成健康生活方式"
+    ],
+    "bloom": [
+      "能",
+      "运用",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B5_04",
+    "title": "用药与急救",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "健康",
+    "subdomain": "急救",
+    "difficulty": 2,
+    "summary": "了解安全用药和急救常识",
+    "content_req": "细胞是生物体结构和功能的基本单位。了解安全用药和急救常识",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "了解安全用药和急救常识"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B6_01",
+    "title": "模型制作",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 8,
+    "domain": "跨学科实践",
+    "subdomain": "动手",
+    "difficulty": 2,
+    "summary": "制作生物模型(如细胞/眼球)",
+    "content_req": "模型制作类跨学科实践活动: 针对特定的生物学内容，运。制作生物模型(如细胞/眼球)",
+    "academic_req": null,
+    "key_points": [
+      "模型制作类跨学科实践活动: 针对特定的生物学内容",
+      "制作生物模型(如细胞/眼球)"
+    ],
+    "bloom": [
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B6_02",
+    "title": "植物栽培与动物饲养",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 8,
+    "domain": "跨学科实践",
+    "subdomain": "实践",
+    "difficulty": 2,
+    "summary": "栽培植物/饲养动物",
+    "content_req": "植物栽培和动物饲养类跨学科实践活动: 植物栽培和动物。栽培植物/饲养动物",
+    "academic_req": null,
+    "key_points": [
+      "植物栽培和动物饲养类跨学科实践活动: 植物栽培和动物",
+      "栽培植物/饲养动物"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_B6_03",
+    "title": "发酵食品制作",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "跨学科实践",
+    "subdomain": "实践",
+    "difficulty": 2,
+    "summary": "制作酸奶/馒头等发酵食品",
+    "content_req": "细胞是生物体结构和功能的基本单位。制作酸奶/馒头等发酵食品",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位",
+      "制作酸奶/馒头等发酵食品"
+    ],
+    "bloom": [
+      "能",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "B_G79_BS_01",
+    "title": "细胞的生活",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物体结构",
+    "subdomain": "细胞",
+    "difficulty": 2,
+    "summary": "理解细胞的生活需要物质和能量",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解细胞的生活需要物质和能量。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解细胞的生活需要物质和能量",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BS_02",
+    "title": "细胞中的物质",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物体结构",
+    "subdomain": "细胞",
+    "difficulty": 2,
+    "summary": "了解细胞中的物质",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解细胞中的物质。。生态系统中的生物与非生物环境相互作用，实现了物质循",
+    "academic_req": "从物质循环与能量变化的角度，阐明植物在生物圈中的",
+    "key_points": [
+      "了解细胞中的物质",
+      "在第四学段 (7~9 年级)教学情境中",
+      "生态系统中的生物与非生物环境相互作用",
+      "实现了物质循"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BS_03",
+    "title": "细胞核",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物体结构",
+    "subdomain": "细胞",
+    "difficulty": 2,
+    "summary": "理解细胞核是遗传信息库",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解细胞核是遗传信息库。",
+    "academic_req": null,
+    "key_points": [
+      "理解细胞核是遗传信息库",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BS_04",
+    "title": "植物的几种组织",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物体结构",
+    "subdomain": "组织",
+    "difficulty": 2,
+    "summary": "认识植物的分生组织、保护组织等",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,认识植物的分生组织、保护组织等。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "认识植物的分生组织、保护组织等",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BS_05",
+    "title": "器官",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物体结构",
+    "subdomain": "组织",
+    "difficulty": 2,
+    "summary": "理解器官由不同组织构成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解器官由不同组织构成。。叶片产生的有机物通过租管运输，供植物其他器官利用",
+    "academic_req": "引导学生通过观察某种器官不同组织的特点，基于事实进行",
+    "key_points": [
+      "理解器官由不同组织构成",
+      "在第四学段 (7~9 年级)教学情境中",
+      "叶片产生的有机物通过租管运输",
+      "供植物其他器官利用"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BS_06",
+    "title": "系统",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物体结构",
+    "subdomain": "组织",
+    "difficulty": 2,
+    "summary": "理解系统由不同器官构成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解系统由不同器官构成。。运用图示或模型表示生态系统中各生物成分之间的营养",
+    "academic_req": null,
+    "key_points": [
+      "理解系统由不同器官构成",
+      "运用图示或模型表示生态系统中各生物成分之间的营养",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解",
+      "运用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BD_01",
+    "title": "无脊椎动物: 腔肠动物",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物多样性",
+    "subdomain": "动物",
+    "difficulty": 2,
+    "summary": "认识腔肠动物的特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,认识腔肠动物的特征。。无脊椎动物与人类关系密切，如线虫动物 〈曙虫)、环节",
+    "academic_req": null,
+    "key_points": [
+      "认识腔肠动物的特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "无脊椎动物与人类关系密切",
+      "如线虫动物 〈曙虫)、环节"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BD_02",
+    "title": "脊椎动物: 鱼类",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物多样性",
+    "subdomain": "动物",
+    "difficulty": 2,
+    "summary": "认识鱼类的特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,认识鱼类的特征。。无脊椎动物与人类关系密切，如线虫动物 〈曙虫)、环节",
+    "academic_req": null,
+    "key_points": [
+      "认识鱼类的特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "无脊椎动物与人类关系密切",
+      "如线虫动物 〈曙虫)、环节"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BD_03",
+    "title": "细菌的形态",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物多样性",
+    "subdomain": "微生物",
+    "difficulty": 2,
+    "summary": "了解细菌的形态",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解细菌的形态。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解细菌的形态",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BD_04",
+    "title": "细菌的繁殖",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物多样性",
+    "subdomain": "微生物",
+    "difficulty": 2,
+    "summary": "了解细菌的繁殖",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解细菌的繁殖。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解细菌的繁殖",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BE_01",
+    "title": "环境对生物的影响",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物与环境",
+    "subdomain": "生态",
+    "difficulty": 2,
+    "summary": "理解非生物因素对生物的影响",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解非生物因素对生物的影响。。动植物类群可能对人类生活产生积极的或负面的影响",
+    "academic_req": null,
+    "key_points": [
+      "理解非生物因素对生物的影响",
+      "动植物类群可能对人类生活产生积极的或负面的影响",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_BE_02",
+    "title": "自然保护区",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生物与环境",
+    "subdomain": "保护",
+    "difficulty": 1,
+    "summary": "了解自然保护区的功能",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解自然保护区的功能。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解自然保护区的功能",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CL_01",
+    "title": "基因和染色体",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "理解基因和染色体的关系",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解基因和染色体的关系。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解基因和染色体的关系",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CL_02",
+    "title": "DNA",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "了解 DNA 是主要的遗传物质",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解 DNA 是主要的遗传物质。。生态系统中的生物与非生物环境相互作用，实现了物质循",
+    "academic_req": "从物质循环与能量变化的角度，阐明植物在生物圈中的",
+    "key_points": [
+      "了解 DNA 是主要的遗传物质",
+      "在第四学段 (7~9 年级)教学情境中",
+      "生态系统中的生物与非生物环境相互作用",
+      "实现了物质循"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CL_03",
+    "title": "生物的变异",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "理解生物的变异",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解生物的变异。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解生物的变异",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CL_04",
+    "title": "遗传病",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生命的延续",
+    "subdomain": "遗传",
+    "difficulty": 3,
+    "summary": "了解常见遗传病",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解常见遗传病。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解常见遗传病",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CL_05",
+    "title": "生物进化的证据",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生命的延续",
+    "subdomain": "进化",
+    "difficulty": 3,
+    "summary": "了解生物进化的化石证据",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解生物进化的化石证据。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解生物进化的化石证据",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CL_06",
+    "title": "自然选择学说",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "生命的延续",
+    "subdomain": "进化",
+    "difficulty": 3,
+    "summary": "理解自然选择学说的基本观点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解自然选择学说的基本观点。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解自然选择学说的基本观点",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_HE_01",
+    "title": "了解自己",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "健康",
+    "subdomain": "健康知识",
+    "difficulty": 1,
+    "summary": "了解青春期的身体变化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解青春期的身体变化。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解青春期的身体变化",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_HE_02",
+    "title": "传染病的概念",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "健康",
+    "subdomain": "传染病",
+    "difficulty": 2,
+    "summary": "理解传染病的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解传染病的概念。。细胞是生物体结构和功能的基本单位",
+    "academic_req": "用生物学、物理、技术、工程学等学科概念，以及“结构与功能”",
+    "key_points": [
+      "理解传染病的概念",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_HE_03",
+    "title": "免疫",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "健康",
+    "subdomain": "传染病",
+    "difficulty": 2,
+    "summary": "理解免疫的概念和功能",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解免疫的概念和功能。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解免疫的概念和功能",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_HE_04",
+    "title": "止血方法",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "健康",
+    "subdomain": "急救",
+    "difficulty": 1,
+    "summary": "会进行简单止血",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会进行简单止血。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单止血",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_HE_05",
+    "title": "安全用药",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "健康",
+    "subdomain": "急救",
+    "difficulty": 1,
+    "summary": "理解安全用药的基本知识",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解安全用药的基本知识。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解安全用药的基本知识",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CP_01",
+    "title": "生物与农业",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "综合",
+    "difficulty": 1,
+    "summary": "理解生物与农业的关系",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解生物与农业的关系。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解生物与农业的关系",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CP_02",
+    "title": "生物与医药",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "综合",
+    "difficulty": 2,
+    "summary": "了解生物与医药的关系",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解生物与医药的关系。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解生物与医药的关系",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CP_03",
+    "title": "生物与环境治理",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "综合",
+    "difficulty": 2,
+    "summary": "理解生物在环境治理中的作用",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解生物在环境治理中的作用。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "理解生物在环境治理中的作用",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CP_04",
+    "title": "生物技术: 克隆",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "实践",
+    "difficulty": 3,
+    "summary": "了解克隆技术",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解克隆技术。。细胞是生物体结构和功能的基本单位",
+    "academic_req": null,
+    "key_points": [
+      "了解克隆技术",
+      "细胞是生物体结构和功能的基本单位",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G79_CP_05",
+    "title": "生物技术: 转基因",
+    "subject": "biology",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "实践",
+    "difficulty": 3,
+    "summary": "了解转基因技术",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解转基因技术。。通过实例分析，认识到杂交育种、转基因技术对人类生产生",
+    "academic_req": null,
+    "key_points": [
+      "了解转基因技术",
+      "通过实例分析",
+      "认识到杂交育种、转基因技术对人类生产生",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "分析"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "B_G12_CP_01",
+    "title": "细胞是生物体结构和功能的基本单",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "细胞是生物体结构和功能的基本单位",
+    "content_req": "细胞是生物体结构和功能的基本单位。",
+    "academic_req": null,
+    "key_points": [
+      "细胞是生物体结构和功能的基本单位"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "B_G12_CP_02",
+    "title": "植物细胞具有不同于动物细胞的结",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "植物细胞具有不同于动物细胞的结构，如叶绿体和细",
+    "content_req": "植物细胞具有不同于动物细胞的结构，如叶绿体和细。",
+    "academic_req": null,
+    "key_points": [
+      "植物细胞具有不同于动物细胞的结构",
+      "如叶绿体和细"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "B_G12_CP_03",
+    "title": "细胞不同结构的功能各不相同",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "细胞不同结构的功能各不相同，共同完成细胞的各项生",
+    "content_req": "细胞不同结构的功能各不相同，共同完成细胞的各项生。",
+    "academic_req": null,
+    "key_points": [
+      "细胞不同结构的功能各不相同",
+      "共同完成细胞的各项生"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "B_G12_CP_04",
+    "title": "生物体的各部分在结构上相互联系",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "生物体的各部分在结构上相互联系，在功能上相互配合，",
+    "content_req": "生物体的各部分在结构上相互联系，在功能上相互配合，。",
+    "academic_req": null,
+    "key_points": [
+      "在功能上相互配合",
+      "生物体的各部分在结构上相互联系"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "B_G12_CP_05",
+    "title": "生物体在结构和功能上是一个统一",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "生物体在结构和功能上是一个统一的整体",
+    "content_req": "生物体在结构和功能上是一个统一的整体。",
+    "academic_req": null,
+    "key_points": [
+      "生物体在结构和功能上是一个统一的整体"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "B_G12_CP_06",
+    "title": "识别动植物细胞的结构并说出其异",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "识别动植物细胞的结构并说出其异同点，说明细胞是生物体",
+    "content_req": "识别动植物细胞的结构并说出其异同点，说明细胞是生物体。",
+    "academic_req": null,
+    "key_points": [
+      "识别动植物细胞的结构并说出其异同点",
+      "说明细胞是生物体"
+    ],
+    "bloom": [
+      "说明",
+      "识别"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "B_G12_CP_07",
+    "title": "运用示意图或模型等方式",
+    "subject": "biology",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "跨学科实践",
+    "subdomain": "跨学科实践",
+    "difficulty": 1,
+    "summary": "运用示意图或模型等方式，展示和说明细胞各结构的功能及",
+    "content_req": "运用示意图或模型等方式，展示和说明细胞各结构的功能及。",
+    "academic_req": null,
+    "key_points": [
+      "展示和说明细胞各结构的功能及",
+      "运用示意图或模型等方式"
+    ],
+    "bloom": [
+      "能",
+      "运用",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  }
+]

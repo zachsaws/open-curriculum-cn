@@ -1,0 +1,1568 @@
+[
+  {
+    "id": "CH_C1_01",
+    "title": "物质的多样性",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的多样性",
+    "subdomain": "分类",
+    "difficulty": 1,
+    "summary": "认识物质是多样的,可按组成/性质分类",
+    "content_req": "科学探究的能力。认识物质是多样的,可按组成/性质分类",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "认识物质是多样的",
+      "可按组成/性质分类"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "分类"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C1_02",
+    "title": "纯净物与混合物",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的多样性",
+    "subdomain": "分类",
+    "difficulty": 2,
+    "summary": "理解纯净物和混合物的区别",
+    "content_req": "科学探究的能力。理解纯净物和混合物的区别",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解纯净物和混合物的区别"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C1_03",
+    "title": "单质与化合物",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的多样性",
+    "subdomain": "分类",
+    "difficulty": 2,
+    "summary": "理解单质和化合物",
+    "content_req": "科学探究的能力。理解单质和化合物",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解单质和化合物"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C1_04",
+    "title": "酸碱盐",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的多样性",
+    "subdomain": "分类",
+    "difficulty": 3,
+    "summary": "认识常见的酸/碱/盐",
+    "content_req": "科学探究的能力。认识常见的酸/碱/盐",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "认识常见的酸/碱/盐"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C1_05",
+    "title": "氧化物",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的多样性",
+    "subdomain": "分类",
+    "difficulty": 2,
+    "summary": "认识氧化物",
+    "content_req": "科学探究的能力。认识氧化物",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "认识氧化物"
+    ],
+    "bloom": [
+      "认识",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_01",
+    "title": "金属的物理性质",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "金属",
+    "difficulty": 2,
+    "summary": "了解金属的物理性质(导电/导热/延展)",
+    "content_req": "科学探究的能力。了解金属的物理性质(导电/导热/延展)",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解金属的物理性质(导电/导热/延展)"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_02",
+    "title": "金属活动性顺序",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "金属",
+    "difficulty": 3,
+    "summary": "理解金属活动性顺序",
+    "content_req": "科学探究的能力。理解金属活动性顺序",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解金属活动性顺序"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_03",
+    "title": "金属的冶炼",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "金属",
+    "difficulty": 3,
+    "summary": "了解金属冶炼的基本原理",
+    "content_req": "科学探究的能力。了解金属冶炼的基本原理",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解金属冶炼的基本原理"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_04",
+    "title": "金属的腐蚀与防护",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "金属",
+    "difficulty": 2,
+    "summary": "了解金属腐蚀的原因和防护方法",
+    "content_req": "熟悉化学实验室安全警示标志，学会正确使用安全防护设。了解金属腐蚀的原因和防护方法",
+    "academic_req": null,
+    "key_points": [
+      "熟悉化学实验室安全警示标志",
+      "学会正确使用安全防护设",
+      "了解金属腐蚀的原因和防护方法"
+    ],
+    "bloom": [
+      "了解",
+      "会",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_05",
+    "title": "常见的酸",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "酸",
+    "difficulty": 3,
+    "summary": "了解常见酸(盐酸/硫酸)的性质",
+    "content_req": "常见的酸、碱、盐。了解常见酸(盐酸/硫酸)的性质",
+    "academic_req": null,
+    "key_points": [
+      "了解常见酸(盐酸/硫酸)的性质",
+      "常见的酸、碱、盐"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_06",
+    "title": "常见的碱",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "碱",
+    "difficulty": 3,
+    "summary": "了解常见碱(NaOH/Ca(OH)2)的性质",
+    "content_req": "科学探究的能力。了解常见碱(NaOH/Ca(OH)2)的性质",
+    "academic_req": "用及性质与用途的关系; 能利用常见物质的性质，分析、解释一些简",
+    "key_points": [
+      "科学探究的能力",
+      "了解常见碱(NaOH/Ca(OH)2)的性质"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_07",
+    "title": "酸碱中和反应",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "反应",
+    "difficulty": 3,
+    "summary": "理解酸碱中和反应",
+    "content_req": "化学反应及质量守恒定律。理解酸碱中和反应",
+    "academic_req": "会通过化学反应实现物质转化的意义和价值，发展核心素养。",
+    "key_points": [
+      "理解酸碱中和反应",
+      "化学反应及质量守恒定律"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_08",
+    "title": "pH 测定",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "测量",
+    "difficulty": 2,
+    "summary": "会用 pH 试纸测定溶液酸碱度",
+    "content_req": "科学探究的能力。会用 pH 试纸测定溶液酸碱度",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "会用 pH 试纸测定溶液酸碱度"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_09",
+    "title": "常见的盐",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "盐",
+    "difficulty": 3,
+    "summary": "了解常见盐(NaCl/Na2CO3)的性质",
+    "content_req": "科学探究的能力。了解常见盐(NaCl/Na2CO3)的性质",
+    "academic_req": "用及性质与用途的关系; 能利用常见物质的性质，分析、解释一些简",
+    "key_points": [
+      "科学探究的能力",
+      "了解常见盐(NaCl/Na2CO3)的性质"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_10",
+    "title": "复分解反应",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "反应",
+    "difficulty": 3,
+    "summary": "理解复分解反应",
+    "content_req": "科学探究的能力。理解复分解反应",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解复分解反应"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C2_11",
+    "title": "化肥",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "应用",
+    "difficulty": 1,
+    "summary": "了解常见化肥(氮/磷/钾)",
+    "content_req": "科学探究的能力。了解常见化肥(氮/磷/钾)",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解常见化肥(氮/磷/钾)"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C3_01",
+    "title": "元素",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "元素",
+    "difficulty": 2,
+    "summary": "理解元素概念,记忆常见元素符号",
+    "content_req": "科学探究的能力。理解元素概念,记忆常见元素符号",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解元素概念",
+      "记忆常见元素符号"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C3_02",
+    "title": "元素周期表",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "周期律",
+    "difficulty": 3,
+    "summary": "了解元素周期表结构",
+    "content_req": "科学探究的能力。了解元素周期表结构",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解元素周期表结构"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C3_03",
+    "title": "化学式",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "表示",
+    "difficulty": 2,
+    "summary": "会用化学式表示物质组成",
+    "content_req": "科学探究的能力。会用化学式表示物质组成",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "会用化学式表示物质组成"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C3_04",
+    "title": "化学方程式",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "表示",
+    "difficulty": 3,
+    "summary": "会写简单的化学方程式",
+    "content_req": "科学探究的能力。会写简单的化学方程式",
+    "academic_req": "能根据化学方程式进行简单的计算，并解决生产生活中的简单问题。",
+    "key_points": [
+      "科学探究的能力",
+      "会写简单的化学方程式"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C3_05",
+    "title": "相对原子质量",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "计算",
+    "difficulty": 2,
+    "summary": "理解相对原子质量",
+    "content_req": "初步学会配制一定溶质质量分数的溶液。。理解相对原子质量",
+    "academic_req": null,
+    "key_points": [
+      "初步学会配制一定溶质质量分数的溶液",
+      "理解相对原子质量"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C3_06",
+    "title": "化学式计算",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "计算",
+    "difficulty": 3,
+    "summary": "会根据化学式进行相关计算",
+    "content_req": "科学探究的能力。会根据化学式进行相关计算",
+    "academic_req": null,
+    "key_points": [
+      "会根据化学式进行相关计算",
+      "科学探究的能力"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "计算"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_01",
+    "title": "物质的变化",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "变化",
+    "difficulty": 2,
+    "summary": "区分物理变化和化学变化",
+    "content_req": "物质的变化与转化。区分物理变化和化学变化",
+    "academic_req": "知道物质是在不断变化的，物质变化分为物理变化和化学变化;",
+    "key_points": [
+      "物质的变化与转化",
+      "区分物理变化和化学变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_02",
+    "title": "质量守恒定律",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "守恒",
+    "difficulty": 3,
+    "summary": "理解质量守恒定律",
+    "content_req": "化学反应及质量守恒定律。理解质量守恒定律",
+    "academic_req": null,
+    "key_points": [
+      "理解质量守恒定律",
+      "化学反应及质量守恒定律"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_03",
+    "title": "化学反应的实质",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "微观",
+    "difficulty": 3,
+    "summary": "从分子原子角度理解化学反应",
+    "content_req": "科学探究的能力。从分子原子角度理解化学反应",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "从分子原子角度理解化学反应"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_04",
+    "title": "化学反应类型",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "分类",
+    "difficulty": 3,
+    "summary": "了解化合/分解/置换/复分解四种基本反应类型",
+    "content_req": "科学探究的能力。了解化合/分解/置换/复分解四种基本反应类型",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解化合/分解/置换/复分解四种基本反应类型"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_05",
+    "title": "氧化反应与还原反应",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "反应",
+    "difficulty": 3,
+    "summary": "理解氧化反应和还原反应",
+    "content_req": "科学探究的能力。理解氧化反应和还原反应",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解氧化反应和还原反应"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_06",
+    "title": "燃烧与灭火",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "应用",
+    "difficulty": 2,
+    "summary": "了解燃烧条件和灭火原理",
+    "content_req": "科学探究的能力。了解燃烧条件和灭火原理",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解燃烧条件和灭火原理"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C4_07",
+    "title": "化学反应中的能量变化",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "能量",
+    "difficulty": 2,
+    "summary": "了解化学反应中能量变化",
+    "content_req": "科学探究的能力。了解化学反应中能量变化",
+    "academic_req": null,
+    "key_points": [
+      "了解化学反应中能量变化",
+      "科学探究的能力"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C5_01",
+    "title": "化学与可持续发展",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "化学与社会",
+    "subdomain": "STS",
+    "difficulty": 2,
+    "summary": "理解化学对可持续发展的作用",
+    "content_req": "以课程标准为依据，促进学生核心素养发展。理解化学对可持续发展的作用",
+    "academic_req": null,
+    "key_points": [
+      "理解化学对可持续发展的作用",
+      "以课程标准为依据",
+      "促进学生核心素养发展"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C5_02",
+    "title": "化学与健康",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "化学与社会",
+    "subdomain": "健康",
+    "difficulty": 2,
+    "summary": "了解化学与食品安全/医药",
+    "content_req": "科学探究的能力。了解化学与食品安全/医药",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解化学与食品安全/医药"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C5_03",
+    "title": "化学与材料",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "化学与社会",
+    "subdomain": "材料",
+    "difficulty": 2,
+    "summary": "了解常见化学材料(塑料/合成纤维/橡胶)",
+    "content_req": "科学探究的能力。了解常见化学材料(塑料/合成纤维/橡胶)",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解常见化学材料(塑料/合成纤维/橡胶)"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C5_04",
+    "title": "化学与环境",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "化学与社会",
+    "subdomain": "环境",
+    "difficulty": 2,
+    "summary": "了解化学与环境保护",
+    "content_req": "科学探究的能力。了解化学与环境保护",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解化学与环境保护"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C6_01",
+    "title": "分子与原子",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "微观",
+    "subdomain": "粒子",
+    "difficulty": 2,
+    "summary": "理解分子和原子的区别",
+    "content_req": "科学探究的能力。理解分子和原子的区别",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "理解分子和原子的区别"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C6_02",
+    "title": "原子的结构",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "微观",
+    "subdomain": "粒子",
+    "difficulty": 3,
+    "summary": "了解原子结构(质子/中子/电子)",
+    "content_req": "科学探究的能力。了解原子结构(质子/中子/电子)",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "了解原子结构(质子/中子/电子)"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C6_03",
+    "title": "化学实验基本操作",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "实验",
+    "subdomain": "技能",
+    "difficulty": 2,
+    "summary": "掌握化学实验基本操作",
+    "content_req": "科学探究的能力。掌握化学实验基本操作",
+    "academic_req": null,
+    "key_points": [
+      "掌握化学实验基本操作",
+      "科学探究的能力"
+    ],
+    "bloom": [
+      "能",
+      "掌握",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_C6_04",
+    "title": "常见气体的制取",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 9,
+    "grade_end": 9,
+    "domain": "实验",
+    "subdomain": "技能",
+    "difficulty": 3,
+    "summary": "会制取 O2/CO2 等常见气体",
+    "content_req": "科学探究的能力。会制取 O2/CO2 等常见气体",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "会制取 O2/CO2 等常见气体"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 14,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_CM_01",
+    "title": "分子",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "微粒",
+    "difficulty": 2,
+    "summary": "理解分子的概念和基本特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解分子的概念和基本特征。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解分子的概念和基本特征",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_CM_02",
+    "title": "原子",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "微粒",
+    "difficulty": 2,
+    "summary": "理解原子的构成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解原子的构成。。科学探究的能力",
+    "academic_req": "利用科学家探索原子结构的科学史实，启发学生根据实验现",
+    "key_points": [
+      "理解原子的构成",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_CM_03",
+    "title": "离子",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "微粒",
+    "difficulty": 3,
+    "summary": "理解离子的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解离子的概念。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解离子的概念",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_CM_04",
+    "title": "化合价",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质组成与表示",
+    "subdomain": "化学式",
+    "difficulty": 3,
+    "summary": "理解化合价,会写常见化学式",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解化合价,会写常见化学式。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解化合价",
+      "会写常见化学式",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_PA_01",
+    "title": "金属资源的利用",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "金属",
+    "difficulty": 2,
+    "summary": "理解金属资源的利用和保护",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解金属资源的利用和保护。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解金属资源的利用和保护",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_PA_02",
+    "title": "水的组成",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "非金属",
+    "difficulty": 2,
+    "summary": "了解水的组成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解水的组成。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "了解水的组成",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_PA_03",
+    "title": "水的净化",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "非金属",
+    "difficulty": 1,
+    "summary": "了解水的净化方法",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解水的净化方法。。化学、技术、工程融合解决跨学科问题的思路与方法",
+    "academic_req": "能初步运用化学观 | 路与方法，从物 | 物质的狂质。",
+    "key_points": [
+      "了解水的净化方法",
+      "在第四学段 (7~9 年级)教学情境中",
+      "化学、技术、工程融合解决跨学科问题的思路与方法"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_PA_04",
+    "title": "爱护水资源",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "非金属",
+    "difficulty": 1,
+    "summary": "理解爱护水资源的重要性",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解爱护水资源的重要性。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解爱护水资源的重要性",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_PA_05",
+    "title": "pH 值",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质的性质与应用",
+    "subdomain": "酸碱盐",
+    "difficulty": 2,
+    "summary": "理解 pH 值的意义,会用 pH 试纸",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解 pH 值的意义,会用 pH 试纸。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解 pH 值的意义",
+      "会用 pH 试纸",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_CR_01",
+    "title": "放热反应和吸热反应",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "化学反应中的能量",
+    "difficulty": 2,
+    "summary": "区分放热反应和吸热反应",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,区分放热反应和吸热反应。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中",
+      "区分放热反应和吸热反应"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_CR_02",
+    "title": "燃料的充分燃烧",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质变化与化学反应",
+    "subdomain": "化学反应中的能量",
+    "difficulty": 1,
+    "summary": "理解燃料充分燃烧的条件",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解燃料充分燃烧的条件。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "理解燃料充分燃烧的条件",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_SO_01",
+    "title": "化学与能源",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "化学与社会",
+    "subdomain": "化学与生活",
+    "difficulty": 2,
+    "summary": "了解化学与能源的关系",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解化学与能源的关系。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "了解化学与能源的关系",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_EX_01",
+    "title": "蒸发结晶",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验",
+    "subdomain": "基本操作",
+    "difficulty": 2,
+    "summary": "会进行蒸发结晶操作",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会进行蒸发结晶操作。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "会进行蒸发结晶操作",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_EX_02",
+    "title": "过滤操作",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验",
+    "subdomain": "基本操作",
+    "difficulty": 2,
+    "summary": "会进行过滤操作",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会进行过滤操作。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "会进行过滤操作",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_EX_03",
+    "title": "二氧化碳的制取",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验",
+    "subdomain": "气体制取",
+    "difficulty": 2,
+    "summary": "会制取和收集二氧化碳",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会制取和收集二氧化碳。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "会制取和收集二氧化碳",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G79_MI_01",
+    "title": "化学键",
+    "subject": "chemistry",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "微观",
+    "subdomain": "微观结构",
+    "difficulty": 4,
+    "summary": "初步理解离子键和共价键",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,初步理解离子键和共价键。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "初步理解离子键和共价键",
+      "科学探究的能力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "CH_G12_EX_01",
+    "title": "初步学会配制一定溶质质量分数的",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "初步学会配制一定溶质质量分数的溶液",
+    "content_req": "初步学会配制一定溶质质量分数的溶液。",
+    "academic_req": null,
+    "key_points": [
+      "初步学会配制一定溶质质量分数的溶液"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_02",
+    "title": "熟悉化学实验室安全警示标志",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "熟悉化学实验室安全警示标志，学会正确使用安全防护设",
+    "content_req": "熟悉化学实验室安全警示标志，学会正确使用安全防护设。",
+    "academic_req": null,
+    "key_points": [
+      "熟悉化学实验室安全警示标志",
+      "学会正确使用安全防护设"
+    ],
+    "bloom": [
+      "会",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_03",
+    "title": "学会试剂的取用",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "学会试剂的取用、简单仪器的使用及连接、加热等实验基本",
+    "content_req": "学会试剂的取用、简单仪器的使用及连接、加热等实验基本。",
+    "academic_req": null,
+    "key_points": [
+      "学会试剂的取用、简单仪器的使用及连接、加热等实验基本"
+    ],
+    "bloom": [
+      "会",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_04",
+    "title": "初步学会在教师指导下根据实验需",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "初步学会在教师指导下根据实验需要选择实验试剂和仪器，",
+    "content_req": "初步学会在教师指导下根据实验需要选择实验试剂和仪器，。",
+    "academic_req": null,
+    "key_points": [
+      "初步学会在教师指导下根据实验需要选择实验试剂和仪器"
+    ],
+    "bloom": [
+      "会",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_05",
+    "title": "初步学习运用简单的装置和方法制",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "初步学习运用简单的装置和方法制取某些气体",
+    "content_req": "初步学习运用简单的装置和方法制取某些气体。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "初步学习运用简单的装置和方法制取某些气体",
+      "科学探究的能力"
+    ],
+    "bloom": [
+      "能",
+      "运用"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_06",
+    "title": "学会用酸碱指示剂",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "学会用酸碱指示剂、pH 试纸检验溶液的酸碱性",
+    "content_req": "学会用酸碱指示剂、pH 试纸检验溶液的酸碱性。",
+    "academic_req": null,
+    "key_points": [
+      "学会用酸碱指示剂、pH 试纸检验溶液的酸碱性"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_07",
+    "title": "初步学会根据某些性质检验和区分",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "初步学会根据某些性质检验和区分一些常见的物质",
+    "content_req": "初步学会根据某些性质检验和区分一些常见的物质。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "初步学会根据某些性质检验和区分一些常见的物质",
+      "科学探究的能力"
+    ],
+    "bloom": [
+      "会",
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_08",
+    "title": "初步学习使用过滤",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "初步学习使用过滤、蒸发的方法对混合物进行分离",
+    "content_req": "初步学习使用过滤、蒸发的方法对混合物进行分离。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "科学探究的能力",
+      "初步学习使用过滤、蒸发的方法对混合物进行分离"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "CH_G12_EX_09",
+    "title": "初步学会观察实验现象",
+    "subject": "chemistry",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验",
+    "subdomain": "实验",
+    "difficulty": 1,
+    "summary": "初步学会观察实验现象，并如实记录、处理实验数据，撰写",
+    "content_req": "初步学会观察实验现象，并如实记录、处理实验数据，撰写。。科学探究的能力",
+    "academic_req": null,
+    "key_points": [
+      "初步学会观察实验现象",
+      "并如实记录、处理实验数据",
+      "科学探究的能力"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  }
+]

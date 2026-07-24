@@ -1,0 +1,2329 @@
+[
+  {
+    "id": "G_G1_01",
+    "title": "地球的形状和大小",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "地球与地图",
+    "subdomain": "地球",
+    "difficulty": 1,
+    "summary": "知道地球是球体,了解地球基本数据",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。知道地球是球体,了解地球基本数据",
+    "academic_req": null,
+    "key_points": [
+      "知道地球是球体",
+      "了解地球基本数据",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G1_02",
+    "title": "经纬网",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "地球与地图",
+    "subdomain": "经纬网",
+    "difficulty": 2,
+    "summary": "理解经线和纬线,会用经纬网定位",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。理解经线和纬线,会用经纬网定位",
+    "academic_req": null,
+    "key_points": [
+      "理解经线和纬线",
+      "会用经纬网定位",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G1_03",
+    "title": "地球自转与公转",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "地球与地图",
+    "subdomain": "地球运动",
+    "difficulty": 2,
+    "summary": "理解地球自转和公转及其地理意义",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。理解地球自转和公转及其地理意义",
+    "academic_req": null,
+    "key_points": [
+      "理解地球自转和公转及其地理意义",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G1_04",
+    "title": "地图三要素",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "地球与地图",
+    "subdomain": "地图",
+    "difficulty": 1,
+    "summary": "了解地图方向/比例尺/图例三要素",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解地图方向/比例尺/图例三要素",
+    "academic_req": null,
+    "key_points": [
+      "了解地图方向/比例尺/图例三要素",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G1_05",
+    "title": "等高线地形图",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "地球与地图",
+    "subdomain": "地形图",
+    "difficulty": 3,
+    "summary": "会判读等高线地形图",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。会判读等高线地形图",
+    "academic_req": null,
+    "key_points": [
+      "会判读等高线地形图",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G2_01",
+    "title": "天气与气候",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "天气与气候",
+    "subdomain": "天气",
+    "difficulty": 1,
+    "summary": "区分天气和气候",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。区分天气和气候",
+    "academic_req": null,
+    "key_points": [
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必",
+      "区分天气和气候"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G2_02",
+    "title": "气温与降水",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "天气与气候",
+    "subdomain": "要素",
+    "difficulty": 2,
+    "summary": "了解气温和降水的分布规律",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解气温和降水的分布规律",
+    "academic_req": null,
+    "key_points": [
+      "了解气温和降水的分布规律",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G2_03",
+    "title": "主要气候类型",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "天气与气候",
+    "subdomain": "气候类型",
+    "difficulty": 3,
+    "summary": "了解热带/温带/寒带等主要气候类型",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解热带/温带/寒带等主要气候类型",
+    "academic_req": null,
+    "key_points": [
+      "了解热带/温带/寒带等主要气候类型",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G2_04",
+    "title": "气候与人类活动",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "天气与气候",
+    "subdomain": "影响",
+    "difficulty": 2,
+    "summary": "理解气候对人类活动的影响",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。理解气候对人类活动的影响",
+    "academic_req": null,
+    "key_points": [
+      "理解气候对人类活动的影响",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G2_05",
+    "title": "气象灾害",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "天气与气候",
+    "subdomain": "灾害",
+    "difficulty": 2,
+    "summary": "了解台风/暴雨/寒潮等气象灾害",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解台风/暴雨/寒潮等气象灾害",
+    "academic_req": null,
+    "key_points": [
+      "了解台风/暴雨/寒潮等气象灾害",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G3_01",
+    "title": "人口与人种",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "居民",
+    "subdomain": "人口",
+    "difficulty": 1,
+    "summary": "了解世界人口分布和主要人种",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解世界人口分布和主要人种",
+    "academic_req": null,
+    "key_points": [
+      "了解世界人口分布和主要人种",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G3_02",
+    "title": "语言与宗教",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "居民",
+    "subdomain": "文化",
+    "difficulty": 1,
+    "summary": "了解世界主要语言和宗教",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解世界主要语言和宗教",
+    "academic_req": null,
+    "key_points": [
+      "了解世界主要语言和宗教",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G3_03",
+    "title": "聚落形态",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "居民",
+    "subdomain": "聚落",
+    "difficulty": 2,
+    "summary": "理解城市和乡村聚落形态",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。理解城市和乡村聚落形态",
+    "academic_req": null,
+    "key_points": [
+      "理解城市和乡村聚落形态",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G3_04",
+    "title": "发展中国家与发达国家",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "居民",
+    "subdomain": "发展",
+    "difficulty": 2,
+    "summary": "了解发展中国家和发达国家的分布",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解发展中国家和发达国家的分布",
+    "academic_req": null,
+    "key_points": [
+      "了解发展中国家和发达国家的分布",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G4_01",
+    "title": "国际经济合作",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "合作",
+    "subdomain": "经济",
+    "difficulty": 2,
+    "summary": "了解国际经济合作",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解国际经济合作",
+    "academic_req": "识全球经济合作的重要意义，初步形成人类命运共同体意识。",
+    "key_points": [
+      "了解国际经济合作",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G5_01",
+    "title": "亚洲位置与范围",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "区域",
+    "subdomain": "亚洲",
+    "difficulty": 1,
+    "summary": "了解亚洲的位置和范围",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解亚洲的位置和范围",
+    "academic_req": null,
+    "key_points": [
+      "了解亚洲的位置和范围",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G5_02",
+    "title": "亚洲自然环境",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "区域",
+    "subdomain": "亚洲",
+    "difficulty": 2,
+    "summary": "了解亚洲地形/气候/河流",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解亚洲地形/气候/河流",
+    "academic_req": null,
+    "key_points": [
+      "了解亚洲地形/气候/河流",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G5_03",
+    "title": "亚洲分区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "区域",
+    "subdomain": "亚洲",
+    "difficulty": 2,
+    "summary": "了解东亚/东南亚/南亚/中亚/西亚/北亚",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解东亚/东南亚/南亚/中亚/西亚/北亚",
+    "academic_req": null,
+    "key_points": [
+      "了解东亚/东南亚/南亚/中亚/西亚/北亚",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G6_01",
+    "title": "日本",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "国家",
+    "subdomain": "日本",
+    "difficulty": 2,
+    "summary": "了解日本的自然环境和经济发展",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解日本的自然环境和经济发展",
+    "academic_req": null,
+    "key_points": [
+      "了解日本的自然环境和经济发展",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G6_02",
+    "title": "东南亚",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "国家",
+    "subdomain": "东南亚",
+    "difficulty": 2,
+    "summary": "了解东南亚十字路口位置",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解东南亚十字路口位置",
+    "academic_req": null,
+    "key_points": [
+      "了解东南亚十字路口位置",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G6_03",
+    "title": "印度",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "国家",
+    "subdomain": "印度",
+    "difficulty": 2,
+    "summary": "了解印度的自然和人口",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解印度的自然和人口",
+    "academic_req": null,
+    "key_points": [
+      "了解印度的自然和人口",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G6_04",
+    "title": "俄罗斯",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "国家",
+    "subdomain": "俄罗斯",
+    "difficulty": 2,
+    "summary": "了解俄罗斯自然和工业",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解俄罗斯自然和工业",
+    "academic_req": null,
+    "key_points": [
+      "了解俄罗斯自然和工业",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G6_05",
+    "title": "中东",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 7,
+    "domain": "国家",
+    "subdomain": "中东",
+    "difficulty": 3,
+    "summary": "了解中东石油资源",
+    "content_req": "学习主题和内容主要选取生态文明建设、环境保护、资源利。了解中东石油资源",
+    "academic_req": "用现代信息技术，为学生提供直观、生动、便捷的学习资源，营造开",
+    "key_points": [
+      "了解中东石油资源",
+      "学习主题和内容主要选取生态文明建设、环境保护、资源利"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 12
+  },
+  {
+    "id": "G_G7_01",
+    "title": "欧洲西部",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "国家",
+    "subdomain": "欧洲",
+    "difficulty": 2,
+    "summary": "了解欧洲西部发达国家",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解欧洲西部发达国家",
+    "academic_req": null,
+    "key_points": [
+      "了解欧洲西部发达国家",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G7_02",
+    "title": "撒哈拉以南非洲",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "国家",
+    "subdomain": "非洲",
+    "difficulty": 2,
+    "summary": "了解撒哈拉以南非洲",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解撒哈拉以南非洲",
+    "academic_req": null,
+    "key_points": [
+      "了解撒哈拉以南非洲",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G7_03",
+    "title": "澳大利亚",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "国家",
+    "subdomain": "大洋洲",
+    "difficulty": 2,
+    "summary": "了解澳大利亚",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解澳大利亚",
+    "academic_req": null,
+    "key_points": [
+      "了解澳大利亚",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G8_01",
+    "title": "美国",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "国家",
+    "subdomain": "美国",
+    "difficulty": 2,
+    "summary": "了解美国自然和工业",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解美国自然和工业",
+    "academic_req": null,
+    "key_points": [
+      "了解美国自然和工业",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G8_02",
+    "title": "巴西",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "国家",
+    "subdomain": "巴西",
+    "difficulty": 2,
+    "summary": "了解巴西雨林和农业",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解巴西雨林和农业",
+    "academic_req": null,
+    "key_points": [
+      "了解巴西雨林和农业",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G9_01",
+    "title": "南极地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "极地",
+    "subdomain": "南极",
+    "difficulty": 2,
+    "summary": "了解南极地区自然环境",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解南极地区自然环境",
+    "academic_req": null,
+    "key_points": [
+      "了解南极地区自然环境",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G9_02",
+    "title": "北极地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "极地",
+    "subdomain": "北极",
+    "difficulty": 2,
+    "summary": "了解北极地区自然环境",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解北极地区自然环境",
+    "academic_req": null,
+    "key_points": [
+      "了解北极地区自然环境",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_01",
+    "title": "中国的疆域与人口",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "总论",
+    "difficulty": 1,
+    "summary": "了解中国疆域和人口",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解中国疆域和人口",
+    "academic_req": null,
+    "key_points": [
+      "了解中国疆域和人口",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_02",
+    "title": "中国的民族",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "民族",
+    "difficulty": 1,
+    "summary": "了解中国 56 个民族",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解中国 56 个民族",
+    "academic_req": null,
+    "key_points": [
+      "了解中国 56 个民族",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_03",
+    "title": "中国的地形",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "地形",
+    "difficulty": 2,
+    "summary": "了解中国地形特征",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解中国地形特征",
+    "academic_req": "形、世界气候基本的空间分布特征; 结合具体案例，运用数据、图像",
+    "key_points": [
+      "了解中国地形特征",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_04",
+    "title": "中国的气候",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "气候",
+    "difficulty": 2,
+    "summary": "了解中国气候特征",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解中国气候特征",
+    "academic_req": "形、世界气候基本的空间分布特征; 结合具体案例，运用数据、图像",
+    "key_points": [
+      "了解中国气候特征",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_05",
+    "title": "中国的河流与湖泊",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "水文",
+    "difficulty": 2,
+    "summary": "了解长江/黄河/湖泊",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解长江/黄河/湖泊",
+    "academic_req": null,
+    "key_points": [
+      "了解长江/黄河/湖泊",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_06",
+    "title": "中国的农业",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "农业",
+    "difficulty": 2,
+    "summary": "了解中国农业分布",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解中国农业分布",
+    "academic_req": "形、世界气候基本的空间分布特征; 结合具体案例，运用数据、图像",
+    "key_points": [
+      "了解中国农业分布",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_07",
+    "title": "中国的工业",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "工业",
+    "difficulty": 2,
+    "summary": "了解中国工业发展",
+    "content_req": "学习评价要围绕学生核心素养的提升和发展水平展开，充分。了解中国工业发展",
+    "academic_req": "发展的关联， 结合学生的生活体验，利用生产生活实例、时事热点问",
+    "key_points": [
+      "了解中国工业发展",
+      "学习评价要围绕学生核心素养的提升和发展水平展开"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G10_08",
+    "title": "中国的交通",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "交通",
+    "difficulty": 2,
+    "summary": "了解中国交通运输方式",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解中国交通运输方式",
+    "academic_req": null,
+    "key_points": [
+      "了解中国交通运输方式",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G11_01",
+    "title": "北方地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "北方",
+    "difficulty": 2,
+    "summary": "了解北方地区自然和文化",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解北方地区自然和文化",
+    "academic_req": null,
+    "key_points": [
+      "了解北方地区自然和文化",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G11_02",
+    "title": "南方地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "南方",
+    "difficulty": 2,
+    "summary": "了解南方地区自然和文化",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解南方地区自然和文化",
+    "academic_req": null,
+    "key_points": [
+      "了解南方地区自然和文化",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G11_03",
+    "title": "西北地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "西北",
+    "difficulty": 2,
+    "summary": "了解西北干旱半干旱地区",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解西北干旱半干旱地区",
+    "academic_req": null,
+    "key_points": [
+      "了解西北干旱半干旱地区",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G11_04",
+    "title": "青藏地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "青藏",
+    "difficulty": 2,
+    "summary": "了解青藏高寒地区",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解青藏高寒地区",
+    "academic_req": null,
+    "key_points": [
+      "了解青藏高寒地区",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G11_05",
+    "title": "香港澳门台湾",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "中国",
+    "subdomain": "港澳台",
+    "difficulty": 2,
+    "summary": "了解港澳台地区",
+    "content_req": "从世界范围内选择区域进行学习时，除南极和北极地区是必。了解港澳台地区",
+    "academic_req": null,
+    "key_points": [
+      "了解港澳台地区",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "G_G79_EM_01",
+    "title": "地球仪",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地球",
+    "difficulty": 1,
+    "summary": "认识地球仪",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,认识地球仪。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "认识地球仪",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_02",
+    "title": "经线和经度",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地球",
+    "difficulty": 1,
+    "summary": "理解经线和经度的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解经线和经度的概念。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解经线和经度的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_03",
+    "title": "纬线和纬度",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地球",
+    "difficulty": 1,
+    "summary": "理解纬线和纬度的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解纬线和纬度的概念。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解纬线和纬度的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_04",
+    "title": "时区和区时",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地球",
+    "difficulty": 2,
+    "summary": "了解时区和区时的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解时区和区时的概念。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解时区和区时的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_05",
+    "title": "日界线",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地球",
+    "difficulty": 2,
+    "summary": "了解日界线的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解日界线的概念。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解日界线的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_06",
+    "title": "分层设色地形图",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地图",
+    "difficulty": 2,
+    "summary": "会判读分层设色地形图",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会判读分层设色地形图。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "会判读分层设色地形图",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_07",
+    "title": "地形剖面图",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "地图",
+    "difficulty": 2,
+    "summary": "会画地形剖面图",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会画地形剖面图。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "会画地形剖面图",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_08",
+    "title": "地球在宇宙中",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "宇宙",
+    "difficulty": 1,
+    "summary": "了解地球在宇宙中的位置",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解地球在宇宙中的位置。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解地球在宇宙中的位置",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_09",
+    "title": "太阳系",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "宇宙",
+    "difficulty": 1,
+    "summary": "了解太阳系的组成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解太阳系的组成。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解太阳系的组成",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_EM_10",
+    "title": "太空探索",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "地球与地图",
+    "subdomain": "宇宙",
+    "difficulty": 1,
+    "summary": "了解人类太空探索历程",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解人类太空探索历程。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解人类太空探索历程",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解",
+      "探索"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_01",
+    "title": "天气预报",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "天气",
+    "difficulty": 1,
+    "summary": "会看天气预报",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会看天气预报。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "会看天气预报",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_02",
+    "title": "常见天气符号",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "天气",
+    "difficulty": 1,
+    "summary": "识别常见天气符号",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,识别常见天气符号。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "识别常见天气符号",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "识别"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_03",
+    "title": "气温的日变化",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "天气",
+    "difficulty": 2,
+    "summary": "理解气温的日变化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解气温的日变化。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": "用、家乡环境与人们生产生活的变化、乡村振兴等方面真实存在的事",
+    "key_points": [
+      "理解气温的日变化",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_04",
+    "title": "降水的季节变化",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "天气",
+    "difficulty": 2,
+    "summary": "理解降水的季节变化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解降水的季节变化。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解降水的季节变化",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_05",
+    "title": "降水的空间分布",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "天气",
+    "difficulty": 2,
+    "summary": "理解降水的空间分布",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解降水的空间分布。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": "理位置特点，判断大洲所处热量带和降水的空间分布概况。",
+    "key_points": [
+      "理解降水的空间分布",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_06",
+    "title": "气温的分布",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "气温和降水",
+    "difficulty": 2,
+    "summary": "理解世界气温的分布特点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解世界气温的分布特点。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解世界气温的分布特点",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_07",
+    "title": "影响气候的因素",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "气候",
+    "difficulty": 2,
+    "summary": "理解影响气候的因素",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解影响气候的因素。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解影响气候的因素",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WC_08",
+    "title": "全球气候变化",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "天气与气候",
+    "subdomain": "气候",
+    "difficulty": 2,
+    "summary": "了解全球气候变化",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解全球气候变化。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": "用、家乡环境与人们生产生活的变化、乡村振兴等方面真实存在的事",
+    "key_points": [
+      "了解全球气候变化",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_01",
+    "title": "世界人口数量",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "人口",
+    "difficulty": 1,
+    "summary": "了解世界人口的数量和增长",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解世界人口的数量和增长。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解世界人口的数量和增长",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_02",
+    "title": "世界人口分布",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "人口",
+    "difficulty": 1,
+    "summary": "理解世界人口分布特点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解世界人口分布特点。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解世界人口分布特点",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_03",
+    "title": "人口问题",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "人口",
+    "difficulty": 1,
+    "summary": "理解人口过快增长带来的问题",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解人口过快增长带来的问题。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解人口过快增长带来的问题",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_04",
+    "title": "世界三大人种",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "人种",
+    "difficulty": 1,
+    "summary": "了解世界三大人种",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解世界三大人种。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解世界三大人种",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_05",
+    "title": "人种的分布",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "人种",
+    "difficulty": 1,
+    "summary": "了解三大人种的分布",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解三大人种的分布。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解三大人种的分布",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_06",
+    "title": "世界语言",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "文化",
+    "difficulty": 1,
+    "summary": "了解世界主要语言",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解世界主要语言。。通过实践活动提升团队协作、调查研究、语言表达等能力，",
+    "academic_req": null,
+    "key_points": [
+      "通过实践活动提升团队协作、调查研究、语言表达等能力",
+      "了解世界主要语言",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "调查"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_07",
+    "title": "世界宗教",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "文化",
+    "difficulty": 1,
+    "summary": "了解世界三大宗教",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解世界三大宗教。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解世界三大宗教",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_RE_08",
+    "title": "聚落与环境",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "居民",
+    "subdomain": "聚落",
+    "difficulty": 1,
+    "summary": "理解聚落与自然环境的关系",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解聚落与自然环境的关系。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解聚落与自然环境的关系",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_01",
+    "title": "中国的位置",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "疆域",
+    "difficulty": 1,
+    "summary": "理解中国的半球位置和海陆位置",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解中国的半球位置和海陆位置。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解中国的半球位置和海陆位置",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_02",
+    "title": "中国的行政区划",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "疆域",
+    "difficulty": 1,
+    "summary": "了解中国 34 个省级行政区",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国 34 个省级行政区。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国 34 个省级行政区",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_03",
+    "title": "中国山脉",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "了解中国主要山脉",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国主要山脉。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国主要山脉",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_04",
+    "title": "中国四大高原",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "了解中国四大高原的特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国四大高原的特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国四大高原的特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_05",
+    "title": "中国四大盆地",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "了解中国四大盆地的特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国四大盆地的特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国四大盆地的特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_06",
+    "title": "中国三大平原",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "了解中国三大平原的特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国三大平原的特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国三大平原的特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_07",
+    "title": "中国河流: 长江",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "了解长江的源流概况",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解长江的源流概况。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解长江的源流概况",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_08",
+    "title": "京杭运河",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "了解京杭运河",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解京杭运河。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解京杭运河",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_09",
+    "title": "中国自然灾害",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然环境",
+    "difficulty": 1,
+    "summary": "理解中国常见的自然灾害",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解中国常见的自然灾害。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解中国常见的自然灾害",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_10",
+    "title": "土地资源",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然资源",
+    "difficulty": 1,
+    "summary": "理解中国土地资源的现状",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解中国土地资源的现状。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解中国土地资源的现状",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_11",
+    "title": "水资源",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然资源",
+    "difficulty": 1,
+    "summary": "理解中国水资源的分布和利用",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解中国水资源的分布和利用。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解中国水资源的分布和利用",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_12",
+    "title": "矿产资源",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然资源",
+    "difficulty": 1,
+    "summary": "了解中国主要矿产资源的分布",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国主要矿产资源的分布。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国主要矿产资源的分布",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_13",
+    "title": "海洋资源",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "自然资源",
+    "difficulty": 1,
+    "summary": "了解中国海洋资源的开发",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解中国海洋资源的开发。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解中国海洋资源的开发",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CN_14",
+    "title": "中国工业分布",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "中国",
+    "subdomain": "经济发展",
+    "difficulty": 1,
+    "summary": "理解中国工业的分布特点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解中国工业的分布特点。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "理解中国工业的分布特点",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WO_01",
+    "title": "东亚",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界",
+    "subdomain": "分区",
+    "difficulty": 1,
+    "summary": "了解东亚的自然和人文特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解东亚的自然和人文特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解东亚的自然和人文特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WO_02",
+    "title": "南亚",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界",
+    "subdomain": "分区",
+    "difficulty": 1,
+    "summary": "了解南亚的自然和人文特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解南亚的自然和人文特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解南亚的自然和人文特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WO_03",
+    "title": "西亚",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界",
+    "subdomain": "分区",
+    "difficulty": 1,
+    "summary": "了解西亚的自然和人文特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解西亚的自然和人文特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解西亚的自然和人文特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WO_04",
+    "title": "埃及",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界",
+    "subdomain": "国家",
+    "difficulty": 1,
+    "summary": "了解埃及的自然和人文特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解埃及的自然和人文特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解埃及的自然和人文特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_WO_05",
+    "title": "法国",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "世界",
+    "subdomain": "国家",
+    "difficulty": 1,
+    "summary": "了解法国的自然和人文特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解法国的自然和人文特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解法国的自然和人文特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_AR_01",
+    "title": "港澳台地区",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "区域",
+    "subdomain": "中国分区",
+    "difficulty": 1,
+    "summary": "了解港澳台地区的特征",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解港澳台地区的特征。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解港澳台地区的特征",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_CO_01",
+    "title": "人类命运共同体",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "合作",
+    "subdomain": "国际合作",
+    "difficulty": 1,
+    "summary": "理解人类命运共同体的理念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解人类命运共同体的理念。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": "识全球经济合作的重要意义，初步形成人类命运共同体意识。",
+    "key_points": [
+      "理解人类命运共同体的理念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "G_G79_PO_01",
+    "title": "极地保护",
+    "subject": "geography",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "极地",
+    "subdomain": "保护",
+    "difficulty": 1,
+    "summary": "了解极地保护的意义",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解极地保护的意义。。从世界范围内选择区域进行学习时，除南极和北极地区是必",
+    "academic_req": null,
+    "key_points": [
+      "了解极地保护的意义",
+      "在第四学段 (7~9 年级)教学情境中",
+      "从世界范围内选择区域进行学习时",
+      "除南极和北极地区是必"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]

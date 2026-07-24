@@ -1,0 +1,3086 @@
+[
+  {
+    "id": "P_P1_01",
+    "title": "三种物态的基本特征",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "物态",
+    "difficulty": 1,
+    "summary": "描述固态/液态/气态三种物态的基本特征",
+    "content_req": "能描述固态、液态和气态三种物态的基本特征，并列举。描述固态/液态/气态三种物态的基本特征",
+    "academic_req": "能描述固态、液态和气态的基本特征及在相互转化过程中的",
+    "key_points": [
+      "能描述固态、液态和气态三种物态的基本特征",
+      "描述固态/液态/气态三种物态的基本特征"
+    ],
+    "bloom": [
+      "能",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_02",
+    "title": "温度与温度计",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "测量",
+    "difficulty": 1,
+    "summary": "了解液体温度计原理,会用温度计测量",
+    "content_req": "物质的形态和变化。了解液体温度计原理,会用温度计测量",
+    "academic_req": null,
+    "key_points": [
+      "了解液体温度计原理",
+      "会用温度计测量",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_03",
+    "title": "物态变化:熔化凝固",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "物态变化",
+    "difficulty": 2,
+    "summary": "经历熔化/凝固实验探究,知道熔点凝固点",
+    "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。经历熔化/凝固实验探究,知道熔点凝固点",
+    "academic_req": null,
+    "key_points": [
+      "经历物态变化的实验探究过程",
+      "经历熔化/凝固实验探究",
+      "知道物质的熔点、雍固",
+      "知道熔点凝固点"
+    ],
+    "bloom": [
+      "经历",
+      "知道",
+      "实验"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_04",
+    "title": "物态变化:汽化液化",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "物态变化",
+    "difficulty": 2,
+    "summary": "知道汽化/液化,了解沸点",
+    "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。知道汽化/液化,了解沸点",
+    "academic_req": null,
+    "key_points": [
+      "经历物态变化的实验探究过程",
+      "知道物质的熔点、雍固",
+      "知道汽化/液化",
+      "了解沸点"
+    ],
+    "bloom": [
+      "了解",
+      "经历",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_05",
+    "title": "物态变化:升华凝华",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "物态变化",
+    "difficulty": 2,
+    "summary": "了解升华/凝华",
+    "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。了解升华/凝华",
+    "academic_req": null,
+    "key_points": [
+      "经历物态变化的实验探究过程",
+      "知道物质的熔点、雍固",
+      "了解升华/凝华"
+    ],
+    "bloom": [
+      "了解",
+      "经历",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_06",
+    "title": "水循环",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "应用",
+    "difficulty": 2,
+    "summary": "用物态变化知识说明自然界水循环",
+    "content_req": "能运用物态变化知识，说明自然界中的水循环现象。用物态变化知识说明自然界水循环",
+    "academic_req": null,
+    "key_points": [
+      "能运用物态变化知识",
+      "说明自然界中的水循环现象",
+      "用物态变化知识说明自然界水循环"
+    ],
+    "bloom": [
+      "能",
+      "运用",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_07",
+    "title": "密度",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "物理量",
+    "difficulty": 3,
+    "summary": "理解密度概念,会测量物质密度",
+    "content_req": "蜡块会漂浮在水面上，举试用天平和量简测量蜡块的密度。。理解密度概念,会测量物质密度",
+    "academic_req": null,
+    "key_points": [
+      "蜡块会漂浮在水面上",
+      "理解密度概念",
+      "会测量物质密度",
+      "举试用天平和量简测量蜡块的密度"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_08",
+    "title": "分子动理论",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "微观",
+    "difficulty": 3,
+    "summary": "知道分子动理论基本观点",
+    "content_req": "物质的形态和变化。知道分子动理论基本观点",
+    "academic_req": null,
+    "key_points": [
+      "知道分子动理论基本观点",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P1_09",
+    "title": "原子结构",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "物质",
+    "subdomain": "微观",
+    "difficulty": 3,
+    "summary": "初步了解原子结构",
+    "content_req": "物质的结构和物质世界的尺度。初步了解原子结构",
+    "academic_req": "知道建构模型是物理研究的重要方法，了解原子的核式结构",
+    "key_points": [
+      "初步了解原子结构",
+      "物质的结构和物质世界的尺度"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_01",
+    "title": "机械运动与参照物",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "运动",
+    "difficulty": 2,
+    "summary": "知道机械运动,理解参照物",
+    "content_req": "物质的形态和变化。知道机械运动,理解参照物",
+    "academic_req": null,
+    "key_points": [
+      "知道机械运动",
+      "理解参照物",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_02",
+    "title": "分子热运动",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "微观",
+    "difficulty": 2,
+    "summary": "了解分子热运动",
+    "content_req": "物质的形态和变化。了解分子热运动",
+    "academic_req": "了解机械运动、分子热运动、声和光、电和磁，了解重力、",
+    "key_points": [
+      "了解分子热运动",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_03",
+    "title": "长度与时间测量",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "测量",
+    "difficulty": 1,
+    "summary": "会用刻度尺/秒表测量长度和时间",
+    "content_req": "物质的形态和变化。会用刻度尺/秒表测量长度和时间",
+    "academic_req": null,
+    "key_points": [
+      "会用刻度尺/秒表测量长度和时间",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_04",
+    "title": "速度",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "运动",
+    "difficulty": 2,
+    "summary": "理解速度概念,会测速度",
+    "content_req": "能用速度描述物体运动的快慢，并能进行简单计算。理解速度概念,会测速度",
+    "academic_req": null,
+    "key_points": [
+      "能用速度描述物体运动的快慢",
+      "并能进行简单计算",
+      "理解速度概念",
+      "会测速度"
+    ],
+    "bloom": [
+      "会",
+      "能",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_05",
+    "title": "力的概念",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "力",
+    "difficulty": 2,
+    "summary": "理解力是物体间的相互作用",
+    "content_req": "物质的形态和变化。理解力是物体间的相互作用",
+    "academic_req": null,
+    "key_points": [
+      "理解力是物体间的相互作用",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_06",
+    "title": "力的测量:弹簧测力计",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "测量",
+    "difficulty": 1,
+    "summary": "会用弹簧测力计测量力",
+    "content_req": "物质的形态和变化。会用弹簧测力计测量力",
+    "academic_req": null,
+    "key_points": [
+      "会用弹簧测力计测量力",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_07",
+    "title": "重力",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "力",
+    "difficulty": 2,
+    "summary": "理解重力,知道 g=9.8 N/kg",
+    "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。理解重力,知道 g=9.8 N/kg",
+    "academic_req": "知道建构模型是物理研究的重要方法，了解原子的核式结构",
+    "key_points": [
+      "经历物态变化的实验探究过程",
+      "知道物质的熔点、雍固",
+      "理解重力",
+      "知道 g=9.8 N/kg"
+    ],
+    "bloom": [
+      "理解",
+      "经历",
+      "知道"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_08",
+    "title": "力的三要素与图示",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "力",
+    "difficulty": 2,
+    "summary": "理解力的三要素,会画力的图示",
+    "content_req": "物质的形态和变化。理解力的三要素,会画力的图示",
+    "academic_req": null,
+    "key_points": [
+      "理解力的三要素",
+      "会画力的图示",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_09",
+    "title": "二力平衡",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 2,
+    "summary": "理解二力平衡条件",
+    "content_req": "物质的形态和变化。理解二力平衡条件",
+    "academic_req": null,
+    "key_points": [
+      "理解二力平衡条件",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P2_10",
+    "title": "牛顿第一定律",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 3,
+    "summary": "理解牛顿第一定律,理解惯性",
+    "content_req": "物质的形态和变化。理解牛顿第一定律,理解惯性",
+    "academic_req": null,
+    "key_points": [
+      "理解牛顿第一定律",
+      "理解惯性",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_11",
+    "title": "摩擦力",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 2,
+    "summary": "认识摩擦力,了解增大减小摩擦的方法",
+    "content_req": "通过常见事例或实验，了解重力、弹力和摩擦力，认识。认识摩擦力,了解增大减小摩擦的方法",
+    "academic_req": null,
+    "key_points": [
+      "通过常见事例或实验",
+      "了解重力、弹力和摩擦力",
+      "认识摩擦力",
+      "了解增大减小摩擦的方法"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "实验"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_12",
+    "title": "压强",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 3,
+    "summary": "理解压强概念 p=F/S",
+    "content_req": "探究液体压强与哪些因素有关。理解压强概念 p=F/S",
+    "academic_req": null,
+    "key_points": [
+      "理解压强概念 p=F/S",
+      "探究液体压强与哪些因素有关"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_13",
+    "title": "液体压强",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 3,
+    "summary": "理解液体内部压强规律",
+    "content_req": "探究液体压强与哪些因素有关。理解液体内部压强规律",
+    "academic_req": null,
+    "key_points": [
+      "理解液体内部压强规律",
+      "探究液体压强与哪些因素有关"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_14",
+    "title": "大气压强",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 3,
+    "summary": "理解大气压强,了解大气压变化",
+    "content_req": "物质的形态和变化。理解大气压强,了解大气压变化",
+    "academic_req": null,
+    "key_points": [
+      "理解大气压强",
+      "了解大气压变化",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_15",
+    "title": "流体压强与流速",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 3,
+    "summary": "了解流体压强与流速关系",
+    "content_req": "物质的形态和变化。了解流体压强与流速关系",
+    "academic_req": null,
+    "key_points": [
+      "了解流体压强与流速关系",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_16",
+    "title": "浮力",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力学",
+    "difficulty": 3,
+    "summary": "理解阿基米德原理 F浮=ρ液gV排",
+    "content_req": "了解液体温度计的工作原理。理解阿基米德原理 F浮=ρ液gV排",
+    "academic_req": null,
+    "key_points": [
+      "了解液体温度计的工作原理",
+      "理解阿基米德原理 F浮=ρ液gV排"
+    ],
+    "bloom": [
+      "了解",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_17",
+    "title": "简单机械:杠杆",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "机械",
+    "difficulty": 3,
+    "summary": "理解杠杆原理,会画力臂",
+    "content_req": "物质的形态和变化。理解杠杆原理,会画力臂",
+    "academic_req": null,
+    "key_points": [
+      "理解杠杆原理",
+      "会画力臂",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_18",
+    "title": "简单机械:滑轮",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "机械",
+    "difficulty": 3,
+    "summary": "理解定滑轮/动滑轮/滑轮组",
+    "content_req": "物质的形态和变化。理解定滑轮/动滑轮/滑轮组",
+    "academic_req": null,
+    "key_points": [
+      "理解定滑轮/动滑轮/滑轮组",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_19",
+    "title": "简单机械:斜面",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "机械",
+    "difficulty": 2,
+    "summary": "了解斜面原理",
+    "content_req": "物质的形态和变化。了解斜面原理",
+    "academic_req": null,
+    "key_points": [
+      "了解斜面原理",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_20",
+    "title": "功",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "功",
+    "difficulty": 3,
+    "summary": "理解功的概念 W=Fs",
+    "content_req": "物质的形态和变化。理解功的概念 W=Fs",
+    "academic_req": null,
+    "key_points": [
+      "理解功的概念 W=Fs",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_21",
+    "title": "功率",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "功",
+    "difficulty": 3,
+    "summary": "理解功率 P=W/t",
+    "content_req": "物质的形态和变化。理解功率 P=W/t",
+    "academic_req": null,
+    "key_points": [
+      "理解功率 P=W/t",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_22",
+    "title": "机械效率",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "机械",
+    "difficulty": 3,
+    "summary": "理解机械效率概念",
+    "content_req": "结合实例，认识功的概念。理解机械效率概念",
+    "academic_req": "认知水平出发，设计多种学习活动，重视物理概念的建构过程，促进",
+    "key_points": [
+      "认识功的概念",
+      "理解机械效率概念",
+      "结合实例"
+    ],
+    "bloom": [
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P2_23",
+    "title": "动能与势能",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "能",
+    "difficulty": 3,
+    "summary": "理解动能/势能",
+    "content_req": "知道动能、势能和机械能。理解动能/势能",
+    "academic_req": null,
+    "key_points": [
+      "知道动能、势能和机械能",
+      "理解动能/势能"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P3_01",
+    "title": "声音的产生与传播",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "声",
+    "subdomain": "基础",
+    "difficulty": 2,
+    "summary": "知道声音由振动产生,在介质中传播",
+    "content_req": "物质的形态和变化。知道声音由振动产生,在介质中传播",
+    "academic_req": null,
+    "key_points": [
+      "知道声音由振动产生",
+      "物质的形态和变化",
+      "在介质中传播"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_02",
+    "title": "声音的特性:音调/响度/音色",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "声",
+    "subdomain": "特性",
+    "difficulty": 2,
+    "summary": "区分音调/响度/音色",
+    "content_req": "物质的形态和变化。区分音调/响度/音色",
+    "academic_req": null,
+    "key_points": [
+      "物质的形态和变化",
+      "区分音调/响度/音色"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_03",
+    "title": "噪声与防护",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "声",
+    "subdomain": "应用",
+    "difficulty": 1,
+    "summary": "了解噪声危害与防护",
+    "content_req": "物质的形态和变化。了解噪声危害与防护",
+    "academic_req": null,
+    "key_points": [
+      "了解噪声危害与防护",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_04",
+    "title": "光的直线传播",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "光",
+    "subdomain": "基础",
+    "difficulty": 2,
+    "summary": "知道光在同种均匀介质中沿直线传播",
+    "content_req": "物质的形态和变化。知道光在同种均匀介质中沿直线传播",
+    "academic_req": null,
+    "key_points": [
+      "知道光在同种均匀介质中沿直线传播",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_05",
+    "title": "光的反射定律",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "光",
+    "subdomain": "反射",
+    "difficulty": 3,
+    "summary": "理解光的反射定律,会画光路图",
+    "content_req": "物质的形态和变化。理解光的反射定律,会画光路图",
+    "academic_req": null,
+    "key_points": [
+      "理解光的反射定律",
+      "会画光路图",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_06",
+    "title": "平面镜成像",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "光",
+    "subdomain": "反射",
+    "difficulty": 3,
+    "summary": "理解平面镜成像特点",
+    "content_req": "物质的形态和变化。理解平面镜成像特点",
+    "academic_req": null,
+    "key_points": [
+      "理解平面镜成像特点",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_07",
+    "title": "光的折射",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 8,
+    "domain": "光",
+    "subdomain": "折射",
+    "difficulty": 3,
+    "summary": "理解光的折射规律",
+    "content_req": "物质的形态和变化。理解光的折射规律",
+    "academic_req": null,
+    "key_points": [
+      "理解光的折射规律",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 13
+  },
+  {
+    "id": "P_P3_08",
+    "title": "凸透镜成像",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "光",
+    "subdomain": "透镜",
+    "difficulty": 3,
+    "summary": "理解凸透镜成像规律,了解照相机/投影仪/放大镜原理",
+    "content_req": "物质的形态和变化。理解凸透镜成像规律,了解照相机/投影仪/放大镜原理",
+    "academic_req": null,
+    "key_points": [
+      "理解凸透镜成像规律",
+      "了解照相机/投影仪/放大镜原理",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P3_09",
+    "title": "光的色散",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "光",
+    "subdomain": "颜色",
+    "difficulty": 2,
+    "summary": "了解光的色散,知道光的三基色",
+    "content_req": "物质的形态和变化。了解光的色散,知道光的三基色",
+    "academic_req": null,
+    "key_points": [
+      "了解光的色散",
+      "知道光的三基色",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_01",
+    "title": "简单电路",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 2,
+    "summary": "认识电路基本元件,会连接简单电路",
+    "content_req": "物质的形态和变化。认识电路基本元件,会连接简单电路",
+    "academic_req": null,
+    "key_points": [
+      "认识电路基本元件",
+      "会连接简单电路",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "认识",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_02",
+    "title": "电流/电压/电阻",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电学",
+    "difficulty": 3,
+    "summary": "理解电流/电压/电阻概念",
+    "content_req": "用电流表和电压表测量电阻。理解电流/电压/电阻概念",
+    "academic_req": null,
+    "key_points": [
+      "理解电流/电压/电阻概念",
+      "用电流表和电压表测量电阻"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_03",
+    "title": "欧姆定律",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电学",
+    "difficulty": 3,
+    "summary": "理解欧姆定律 I=U/R",
+    "content_req": "物质的形态和变化。理解欧姆定律 I=U/R",
+    "academic_req": null,
+    "key_points": [
+      "理解欧姆定律 I=U/R",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_04",
+    "title": "串并联电路",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 3,
+    "summary": "理解串并联电路特点",
+    "content_req": "物质的形态和变化。理解串并联电路特点",
+    "academic_req": null,
+    "key_points": [
+      "理解串并联电路特点",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_05",
+    "title": "电功与电功率",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电学",
+    "difficulty": 3,
+    "summary": "理解电功/电功率概念",
+    "content_req": "物质的形态和变化。理解电功/电功率概念",
+    "academic_req": null,
+    "key_points": [
+      "理解电功/电功率概念",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_06",
+    "title": "焦耳定律",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电学",
+    "difficulty": 3,
+    "summary": "理解焦耳定律 Q=I²Rt",
+    "content_req": "物质的形态和变化。理解焦耳定律 Q=I²Rt",
+    "academic_req": null,
+    "key_points": [
+      "理解焦耳定律 Q=I²Rt",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_07",
+    "title": "家庭电路",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "应用",
+    "difficulty": 2,
+    "summary": "了解家庭电路组成和安全用电",
+    "content_req": "物质的形态和变化。了解家庭电路组成和安全用电",
+    "academic_req": null,
+    "key_points": [
+      "了解家庭电路组成和安全用电",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_08",
+    "title": "磁现象与磁场",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "磁",
+    "difficulty": 2,
+    "summary": "认识磁现象,理解磁场",
+    "content_req": "物质的形态和变化。认识磁现象,理解磁场",
+    "academic_req": null,
+    "key_points": [
+      "认识磁现象",
+      "理解磁场",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_09",
+    "title": "电流的磁效应",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电磁",
+    "difficulty": 3,
+    "summary": "理解电流周围存在磁场",
+    "content_req": "物质的形态和变化。理解电流周围存在磁场",
+    "academic_req": null,
+    "key_points": [
+      "理解电流周围存在磁场",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_10",
+    "title": "电磁铁",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电磁",
+    "difficulty": 2,
+    "summary": "了解电磁铁原理",
+    "content_req": "物质的形态和变化。了解电磁铁原理",
+    "academic_req": null,
+    "key_points": [
+      "了解电磁铁原理",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_11",
+    "title": "电动机",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "应用",
+    "difficulty": 3,
+    "summary": "了解电动机的原理",
+    "content_req": "了解液体温度计的工作原理。了解电动机的原理",
+    "academic_req": null,
+    "key_points": [
+      "了解液体温度计的工作原理",
+      "了解电动机的原理"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_12",
+    "title": "电磁感应",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电磁",
+    "difficulty": 3,
+    "summary": "理解电磁感应现象",
+    "content_req": "能运用物态变化知识，说明自然界中的水循环现象。理解电磁感应现象",
+    "academic_req": "知道物理学是对相关自然现象的描述与解释，物理学研究需",
+    "key_points": [
+      "能运用物态变化知识",
+      "说明自然界中的水循环现象",
+      "理解电磁感应现象"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "运用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P4_13",
+    "title": "发电机",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "应用",
+    "difficulty": 3,
+    "summary": "了解发电机的原理",
+    "content_req": "了解液体温度计的工作原理。了解发电机的原理",
+    "academic_req": null,
+    "key_points": [
+      "了解液体温度计的工作原理",
+      "了解发电机的原理"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P5_01",
+    "title": "能量及其形式",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "基础",
+    "difficulty": 2,
+    "summary": "了解能量及其不同形式",
+    "content_req": "了解能量及其存在的不同形式。了解能量及其不同形式",
+    "academic_req": null,
+    "key_points": [
+      "了解能量及其存在的不同形式",
+      "了解能量及其不同形式"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P5_02",
+    "title": "能量转化与守恒",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "守恒",
+    "difficulty": 3,
+    "summary": "理解能量守恒定律",
+    "content_req": "物质的形态和变化。理解能量守恒定律",
+    "academic_req": "用能量守恒定律等解决问题的过程中，引导学生领悟从守恒的角度分",
+    "key_points": [
+      "理解能量守恒定律",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P5_03",
+    "title": "能源与可持续发展",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "应用",
+    "difficulty": 2,
+    "summary": "了解能源分类与可持续发展",
+    "content_req": "能源与可持续发展。了解能源分类与可持续发展",
+    "academic_req": null,
+    "key_points": [
+      "了解能源分类与可持续发展",
+      "能源与可持续发展"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "分类"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P6_01",
+    "title": "科学探究方法",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "方法",
+    "difficulty": 3,
+    "summary": "理解科学探究基本方法",
+    "content_req": "物质的形态和变化。理解科学探究基本方法",
+    "academic_req": null,
+    "key_points": [
+      "理解科学探究基本方法",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P6_02",
+    "title": "实验设计能力",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "能力",
+    "difficulty": 3,
+    "summary": "经历完整实验设计-操作-分析过程",
+    "content_req": "物质的形态和变化。经历完整实验设计-操作-分析过程",
+    "academic_req": null,
+    "key_points": [
+      "经历完整实验设计-操作-分析过程",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "经历",
+      "分析",
+      "设计"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P6_03",
+    "title": "数据处理与误差分析",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "分析",
+    "difficulty": 3,
+    "summary": "会处理实验数据,分析误差",
+    "content_req": "物质的形态和变化。会处理实验数据,分析误差",
+    "academic_req": null,
+    "key_points": [
+      "会处理实验数据",
+      "分析误差",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "分析",
+      "实验"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P7_01",
+    "title": "物理学与日常生活",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "应用",
+    "difficulty": 2,
+    "summary": "用物理知识解释日常现象",
+    "content_req": "物理学与日常生活。用物理知识解释日常现象",
+    "academic_req": null,
+    "key_points": [
+      "物理学与日常生活",
+      "用物理知识解释日常现象"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P7_02",
+    "title": "物理学与工程实践",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "工程",
+    "difficulty": 3,
+    "summary": "用物理知识解决工程问题",
+    "content_req": "注重内容的综合性与实践性，加强知识之间的联系。用物理知识解决工程问题",
+    "academic_req": null,
+    "key_points": [
+      "注重内容的综合性与实践性",
+      "加强知识之间的联系",
+      "用物理知识解决工程问题"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_P7_03",
+    "title": "物理学与社会发展",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 8,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "社会",
+    "difficulty": 2,
+    "summary": "了解物理对社会发展的影响",
+    "content_req": "物理学与社会发展。了解物理对社会发展的影响",
+    "academic_req": null,
+    "key_points": [
+      "了解物理对社会发展的影响",
+      "物理学与社会发展"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 13,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MA_01",
+    "title": "物质三种状态",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质",
+    "subdomain": "物态",
+    "difficulty": 1,
+    "summary": "认识物质的三种状态: 固态、液态、气态",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,认识物质的三种状态: 固态、液态、气态。。能描述固态、液态和气态三种物态的基本特征，并列举",
+    "academic_req": "能描述固态、液态和气态的基本特征及在相互转化过程中的",
+    "key_points": [
+      "能描述固态、液态和气态三种物态的基本特征",
+      "认识物质的三种状态: 固态、液态、气态",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "认识",
+      "能",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MA_02",
+    "title": "温度",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质",
+    "subdomain": "物态",
+    "difficulty": 1,
+    "summary": "理解温度的物理意义,知道温度计的原理",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解温度的物理意义,知道温度计的原理。。了解液体温度计的工作原理",
+    "academic_req": null,
+    "key_points": [
+      "理解温度的物理意义",
+      "知道温度计的原理",
+      "了解液体温度计的工作原理",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MA_03",
+    "title": "物质状态变化的应用",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质",
+    "subdomain": "物态",
+    "difficulty": 2,
+    "summary": "理解物质状态变化在生活中的应用",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解物质状态变化在生活中的应用。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解物质状态变化在生活中的应用",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解",
+      "应用"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MA_04",
+    "title": "物质的构成",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质",
+    "subdomain": "结构",
+    "difficulty": 2,
+    "summary": "知道物质由分子、原子构成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,知道物质由分子、原子构成。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "知道物质由分子、原子构成",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MA_05",
+    "title": "元素周期表",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质",
+    "subdomain": "结构",
+    "difficulty": 2,
+    "summary": "了解元素周期表的基本结构",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解元素周期表的基本结构。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "了解元素周期表的基本结构",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MA_06",
+    "title": "质量",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "物质",
+    "subdomain": "属性",
+    "difficulty": 1,
+    "summary": "理解质量是物体的基本属性",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解质量是物体的基本属性。。用电子天平测量一些家用物品的质量，感受电子天平在操作",
+    "academic_req": null,
+    "key_points": [
+      "理解质量是物体的基本属性",
+      "感受电子天平在操作",
+      "在第四学段 (7~9 年级)教学情境中",
+      "用电子天平测量一些家用物品的质量"
+    ],
+    "bloom": [
+      "理解",
+      "感受"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_01",
+    "title": "参照物",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "机械运动",
+    "difficulty": 1,
+    "summary": "理解参照物的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解参照物的概念。。结合实例，认识功的概念",
+    "academic_req": "认知水平出发，设计多种学习活动，重视物理概念的建构过程，促进",
+    "key_points": [
+      "理解参照物的概念",
+      "认识功的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "结合实例"
+    ],
+    "bloom": [
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_02",
+    "title": "匀速直线运动",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "机械运动",
+    "difficulty": 2,
+    "summary": "理解匀速直线运动的特点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解匀速直线运动的特点。。物质的形态和变化",
+    "academic_req": "知道匀速直线运动、杠杆、光线等物理模型，能运用运动和",
+    "key_points": [
+      "理解匀速直线运动的特点",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_03",
+    "title": "弹力",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力",
+    "difficulty": 2,
+    "summary": "理解弹力的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解弹力的概念。。通过常见事例或实验，了解重力、弹力和摩擦力，认识",
+    "academic_req": null,
+    "key_points": [
+      "理解弹力的概念",
+      "通过常见事例或实验",
+      "了解重力、弹力和摩擦力",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_04",
+    "title": "增大和减小摩擦",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "力",
+    "difficulty": 1,
+    "summary": "会增大和减小摩擦的方法",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会增大和减小摩擦的方法。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会增大和减小摩擦的方法",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_05",
+    "title": "惯性",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "运动和力",
+    "difficulty": 2,
+    "summary": "理解惯性的概念,会用惯性解释现象",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解惯性的概念,会用惯性解释现象。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解惯性的概念",
+      "会用惯性解释现象",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_06",
+    "title": "力的合成",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "运动和力",
+    "difficulty": 3,
+    "summary": "理解力的合成,会求合力",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解力的合成,会求合力。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解力的合成",
+      "会求合力",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_07",
+    "title": "力的分解",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "运动和力",
+    "difficulty": 4,
+    "summary": "理解力的分解,会进行力的分解",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解力的分解,会进行力的分解。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解力的分解",
+      "会进行力的分解",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_08",
+    "title": "连通器",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "压强",
+    "difficulty": 2,
+    "summary": "理解连通器原理",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解连通器原理。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解连通器原理",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_09",
+    "title": "阿基米德原理",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "浮力",
+    "difficulty": 3,
+    "summary": "理解阿基米德原理",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解阿基米德原理。。了解液体温度计的工作原理",
+    "academic_req": null,
+    "key_points": [
+      "理解阿基米德原理",
+      "了解液体温度计的工作原理",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_10",
+    "title": "物体的浮沉条件",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "浮力",
+    "difficulty": 3,
+    "summary": "理解物体浮沉条件",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解物体浮沉条件。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解物体浮沉条件",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_11",
+    "title": "杠杆",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "简单机械",
+    "difficulty": 2,
+    "summary": "理解杠杆的平衡条件",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解杠杆的平衡条件。。物质的形态和变化",
+    "academic_req": "知道匀速直线运动、杠杆、光线等物理模型，能运用运动和",
+    "key_points": [
+      "理解杠杆的平衡条件",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_12",
+    "title": "滑轮",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "简单机械",
+    "difficulty": 2,
+    "summary": "理解定滑轮、动滑轮、滑轮组的特点",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解定滑轮、动滑轮、滑轮组的特点。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解定滑轮、动滑轮、滑轮组的特点",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_MI_13",
+    "title": "斜面",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "运动和相互作用",
+    "subdomain": "简单机械",
+    "difficulty": 2,
+    "summary": "理解斜面的作用",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解斜面的作用。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解斜面的作用",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_01",
+    "title": "动能",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "功和能",
+    "difficulty": 2,
+    "summary": "理解动能的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解动能的概念。。知道动能、势能和机械能",
+    "academic_req": null,
+    "key_points": [
+      "理解动能的概念",
+      "知道动能、势能和机械能",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_02",
+    "title": "势能",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "功和能",
+    "difficulty": 2,
+    "summary": "理解重力势能和弹性势能",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解重力势能和弹性势能。。知道动能、势能和机械能",
+    "academic_req": null,
+    "key_points": [
+      "理解重力势能和弹性势能",
+      "知道动能、势能和机械能",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "能",
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_03",
+    "title": "机械能转化",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "功和能",
+    "difficulty": 3,
+    "summary": "理解机械能的转化与守恒",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解机械能的转化与守恒。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解机械能的转化与守恒",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_04",
+    "title": "内能的概念",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "内能",
+    "difficulty": 2,
+    "summary": "理解内能的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解内能的概念。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解内能的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_05",
+    "title": "比热容",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "内能",
+    "difficulty": 3,
+    "summary": "理解比热容的概念,会应用比热容",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解比热容的概念,会应用比热容。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会应用比热容",
+      "理解比热容的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_06",
+    "title": "热量计算",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "内能",
+    "difficulty": 3,
+    "summary": "会用 Q=cmΔt 计算热量",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用 Q=cmΔt 计算热量。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会用 Q=cmΔt 计算热量",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "计算"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_07",
+    "title": "内能的改变",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "内能",
+    "difficulty": 2,
+    "summary": "理解做功和热传递改变内能",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解做功和热传递改变内能。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解做功和热传递改变内能",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "能",
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_08",
+    "title": "热机的概念",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "热机",
+    "difficulty": 2,
+    "summary": "理解热机的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解热机的概念。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解热机的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_09",
+    "title": "内燃机",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "热机",
+    "difficulty": 3,
+    "summary": "理解汽油机和柴油机的工作原理",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解汽油机和柴油机的工作原理。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解汽油机和柴油机的工作原理",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EN_10",
+    "title": "热机的效率",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "能量",
+    "subdomain": "热机",
+    "difficulty": 2,
+    "summary": "理解热机效率",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解热机效率。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解热机效率",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_SO_01",
+    "title": "噪声的危害和控制",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "声",
+    "subdomain": "声现象",
+    "difficulty": 1,
+    "summary": "理解噪声的危害和控制方法",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解噪声的危害和控制方法。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解噪声的危害和控制方法",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_LI_01",
+    "title": "镜面反射和漫反射",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "光",
+    "subdomain": "光现象",
+    "difficulty": 1,
+    "summary": "区分镜面反射和漫反射",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,区分镜面反射和漫反射。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "在第四学段 (7~9 年级)教学情境中",
+      "区分镜面反射和漫反射",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_LI_02",
+    "title": "凸透镜的应用: 照相机",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "光",
+    "subdomain": "透镜",
+    "difficulty": 2,
+    "summary": "理解照相机的原理",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解照相机的原理。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解照相机的原理",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_LI_03",
+    "title": "眼睛和眼镜",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "光",
+    "subdomain": "透镜",
+    "difficulty": 3,
+    "summary": "理解眼睛成像原理和近视远视矫正",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解眼睛成像原理和近视远视矫正。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解眼睛成像原理和近视远视矫正",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_01",
+    "title": "电荷",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 1,
+    "summary": "理解电荷的概念,知道两种电荷",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解电荷的概念,知道两种电荷。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解电荷的概念",
+      "知道两种电荷",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解",
+      "知道"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_02",
+    "title": "电路的组成",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 1,
+    "summary": "理解电路的基本组成",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解电路的基本组成。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解电路的基本组成",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_03",
+    "title": "电路图",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 1,
+    "summary": "会画简单的电路图",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会画简单的电路图。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会画简单的电路图",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_04",
+    "title": "电流",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 2,
+    "summary": "理解电流的概念,会使用电流表",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解电流的概念,会使用电流表。。用电流表测量电流",
+    "academic_req": null,
+    "key_points": [
+      "理解电流的概念",
+      "会使用电流表",
+      "在第四学段 (7~9 年级)教学情境中",
+      "用电流表测量电流"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_05",
+    "title": "电压",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 2,
+    "summary": "理解电压的概念,会使用电压表",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解电压的概念,会使用电压表。。用电压表测量电压",
+    "academic_req": null,
+    "key_points": [
+      "理解电压的概念",
+      "会使用电压表",
+      "在第四学段 (7~9 年级)教学情境中",
+      "用电压表测量电压"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_06",
+    "title": "电阻",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "电路",
+    "difficulty": 2,
+    "summary": "理解电阻的概念,会使用滑动变阻器",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解电阻的概念,会使用滑动变阻器。。用电流表和电压表测量电阻",
+    "academic_req": null,
+    "key_points": [
+      "理解电阻的概念",
+      "会使用滑动变阻器",
+      "在第四学段 (7~9 年级)教学情境中",
+      "用电流表和电压表测量电阻"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_07",
+    "title": "磁体和磁极",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "磁现象",
+    "difficulty": 1,
+    "summary": "理解磁体和磁极",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解磁体和磁极。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解磁体和磁极",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_08",
+    "title": "磁场",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "磁现象",
+    "difficulty": 2,
+    "summary": "理解磁场的概念,会画磁感线",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解磁场的概念,会画磁感线。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解磁场的概念",
+      "会画磁感线",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_09",
+    "title": "地磁场",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "磁现象",
+    "difficulty": 1,
+    "summary": "理解地磁场的存在",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解地磁场的存在。。举例说明自然界存在多种多样的运动形式",
+    "academic_req": "知道能量的利用存在效率问题，100儿的能量利用率只是一",
+    "key_points": [
+      "理解地磁场的存在",
+      "举例说明自然界存在多种多样的运动形式",
+      "在第四学段 (7~9 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_10",
+    "title": "电磁波",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "信息与能源",
+    "difficulty": 3,
+    "summary": "理解电磁波的概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解电磁波的概念。。结合实例，认识功的概念",
+    "academic_req": "认知水平出发，设计多种学习活动，重视物理概念的建构过程，促进",
+    "key_points": [
+      "理解电磁波的概念",
+      "认识功的概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "结合实例"
+    ],
+    "bloom": [
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_11",
+    "title": "能源的分类",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "信息与能源",
+    "difficulty": 1,
+    "summary": "了解能源的分类",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解能源的分类。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "了解能源的分类",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "分类"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EM_12",
+    "title": "能源的开发与利用",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "电磁",
+    "subdomain": "信息与能源",
+    "difficulty": 2,
+    "summary": "了解能源开发与利用",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解能源开发与利用。。调查当地水资源的利用和保护状况，并对当地水资源的利用",
+    "academic_req": null,
+    "key_points": [
+      "了解能源开发与利用",
+      "调查当地水资源的利用和保护状况",
+      "在第四学段 (7~9 年级)教学情境中",
+      "并对当地水资源的利用"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "调查"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EX_01",
+    "title": "控制变量法",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "实验方法",
+    "difficulty": 2,
+    "summary": "理解控制变量法的基本思想",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解控制变量法的基本思想。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解控制变量法的基本思想",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EX_02",
+    "title": "转换法",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "实验方法",
+    "difficulty": 2,
+    "summary": "理解转换法的基本思想",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解转换法的基本思想。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解转换法的基本思想",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EX_03",
+    "title": "等效替代法",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "实验方法",
+    "difficulty": 2,
+    "summary": "理解等效替代法的基本思想",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解等效替代法的基本思想。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "理解等效替代法的基本思想",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EX_04",
+    "title": "刻度尺的使用",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "实验技能",
+    "difficulty": 1,
+    "summary": "会正确使用刻度尺",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会正确使用刻度尺。。用刻度尺测量长度，用表测量时间",
+    "academic_req": null,
+    "key_points": [
+      "会正确使用刻度尺",
+      "在第四学段 (7~9 年级)教学情境中",
+      "用刻度尺测量长度",
+      "用表测量时间"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EX_05",
+    "title": "量筒的使用",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "实验技能",
+    "difficulty": 1,
+    "summary": "会正确使用量筒",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会正确使用量筒。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会正确使用量筒",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_EX_06",
+    "title": "滑动变阻器",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "实验探究",
+    "subdomain": "实验技能",
+    "difficulty": 2,
+    "summary": "会正确使用滑动变阻器",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会正确使用滑动变阻器。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会正确使用滑动变阻器",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G79_CL_01",
+    "title": "物理与环境",
+    "subject": "physics",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "跨学科实践",
+    "subdomain": "综合",
+    "difficulty": 2,
+    "summary": "会用物理知识分析环境问题",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,会用物理知识分析环境问题。。物质的形态和变化",
+    "academic_req": null,
+    "key_points": [
+      "会用物理知识分析环境问题",
+      "在第四学段 (7~9 年级)教学情境中",
+      "物质的形态和变化"
+    ],
+    "bloom": [
+      "会",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "P_G12_EX_01",
+    "title": "调查当地水资源的利用和保护状况",
+    "subject": "physics",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验探究",
+    "subdomain": "实验探究",
+    "difficulty": 1,
+    "summary": "调查当地水资源的利用和保护状况，并",
+    "content_req": "调查当地水资源的利用和保护状况，并。。调查当地水资源的利用和保护状况，并对当地水资源的利用",
+    "academic_req": null,
+    "key_points": [
+      "调查当地水资源的利用和保护状况",
+      "并对当地水资源的利用"
+    ],
+    "bloom": [
+      "调查"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "P_G12_EX_02",
+    "title": "能运用物态变化知识",
+    "subject": "physics",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验探究",
+    "subdomain": "实验探究",
+    "difficulty": 1,
+    "summary": "能运用物态变化知识，说明自然界中的水循环现象",
+    "content_req": "能运用物态变化知识，说明自然界中的水循环现象。",
+    "academic_req": null,
+    "key_points": [
+      "能运用物态变化知识",
+      "说明自然界中的水循环现象"
+    ],
+    "bloom": [
+      "能",
+      "运用",
+      "说明"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "P_G12_EX_03",
+    "title": "能描述固态、液态和气态三种物态",
+    "subject": "physics",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验探究",
+    "subdomain": "实验探究",
+    "difficulty": 1,
+    "summary": "能描述固态、液态和气态三种物态的基本特征，并列举",
+    "content_req": "能描述固态、液态和气态三种物态的基本特征，并列举。",
+    "academic_req": "能描述固态、液态和气态的基本特征及在相互转化过程中的",
+    "key_points": [
+      "能描述固态、液态和气态三种物态的基本特征"
+    ],
+    "bloom": [
+      "能",
+      "描述"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "P_G12_EX_04",
+    "title": "经历物态变化的实验探究过程",
+    "subject": "physics",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验探究",
+    "subdomain": "实验探究",
+    "difficulty": 1,
+    "summary": "经历物态变化的实验探究过程，知道物质的熔点、雍固",
+    "content_req": "经历物态变化的实验探究过程，知道物质的熔点、雍固。",
+    "academic_req": null,
+    "key_points": [
+      "经历物态变化的实验探究过程",
+      "知道物质的熔点、雍固"
+    ],
+    "bloom": [
+      "经历",
+      "知道",
+      "实验"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "P_G12_MA_01",
+    "title": "调查当地农田或城市绿化灌溉的主",
+    "subject": "physics",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "物质",
+    "subdomain": "物质",
+    "difficulty": 1,
+    "summary": "调查当地农田或城市绿化灌溉的主要方式，了解节水灌波",
+    "content_req": "调查当地农田或城市绿化灌溉的主要方式，了解节水灌波。",
+    "academic_req": null,
+    "key_points": [
+      "调查当地农田或城市绿化灌溉的主要方式",
+      "了解节水灌波"
+    ],
+    "bloom": [
+      "了解",
+      "调查"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "P_G12_EX_05",
+    "title": "调查学校或家庭的用水状况",
+    "subject": "physics",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "实验探究",
+    "subdomain": "实验探究",
+    "difficulty": 1,
+    "summary": "调查学校或家庭的用水状况，设计一个用于学校或家庭的节",
+    "content_req": "调查学校或家庭的用水状况，设计一个用于学校或家庭的节。",
+    "academic_req": null,
+    "key_points": [
+      "调查学校或家庭的用水状况",
+      "设计一个用于学校或家庭的节"
+    ],
+    "bloom": [
+      "设计",
+      "调查"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  }
+]

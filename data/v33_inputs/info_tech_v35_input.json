@@ -1,0 +1,2540 @@
+[
+  {
+    "id": "IT_I1_01",
+    "title": "信息与信息社会",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "信息意识",
+    "difficulty": 1,
+    "summary": "感知信息无处不在",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。感知信息无处不在",
+    "academic_req": null,
+    "key_points": [
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设",
+      "感知信息无处不在"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_I1_02",
+    "title": "数据的获取与整理",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据处理",
+    "difficulty": 2,
+    "summary": "用表格/图表整理数据",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。用表格/图表整理数据",
+    "academic_req": null,
+    "key_points": [
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设",
+      "用表格/图表整理数据"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_I1_03",
+    "title": "数据编码",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "编码",
+    "difficulty": 3,
+    "summary": "理解二进制/字符编码",
+    "content_req": "结合真实情境，了解编码在生活中的应用，认识数据编码的。理解二进制/字符编码",
+    "academic_req": null,
+    "key_points": [
+      "了解编码在生活中的应用",
+      "认识数据编码的",
+      "理解二进制/字符编码",
+      "结合真实情境"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I1_04",
+    "title": "数据可视化",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "可视化",
+    "difficulty": 2,
+    "summary": "会用图表/词云等可视化数据",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。会用图表/词云等可视化数据",
+    "academic_req": null,
+    "key_points": [
+      "会用图表/词云等可视化数据",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I1_05",
+    "title": "数据分析与预测",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "分析",
+    "difficulty": 3,
+    "summary": "用数据进行分析和预测",
+    "content_req": "考试性质和目的。用数据进行分析和预测",
+    "academic_req": null,
+    "key_points": [
+      "用数据进行分析和预测",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I2_01",
+    "title": "算法的概念",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "概念",
+    "difficulty": 1,
+    "summary": "理解算法是解决问题的一系列步骤",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法是解决问题的一系列步骤",
+    "academic_req": null,
+    "key_points": [
+      "理解算法是解决问题的一系列步骤",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I2_02",
+    "title": "算法的描述",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "描述",
+    "difficulty": 2,
+    "summary": "用自然语言/流程图描述算法",
+    "content_req": "算法: 问题的步又分解一算法的描述、执行与效率一解决问。用自然语言/流程图描述算法",
+    "academic_req": null,
+    "key_points": [
+      "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+      "用自然语言/流程图描述算法"
+    ],
+    "bloom": [
+      "描述"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I2_03",
+    "title": "顺序结构",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "结构",
+    "difficulty": 2,
+    "summary": "理解算法顺序结构",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法顺序结构",
+    "academic_req": null,
+    "key_points": [
+      "理解算法顺序结构",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I2_04",
+    "title": "分支结构",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "结构",
+    "difficulty": 2,
+    "summary": "理解算法分支结构 if",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法分支结构 if",
+    "academic_req": null,
+    "key_points": [
+      "理解算法分支结构 if",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I2_05",
+    "title": "循环结构",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "结构",
+    "difficulty": 3,
+    "summary": "理解算法循环结构 for/while",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。理解算法循环结构 for/while",
+    "academic_req": null,
+    "key_points": [
+      "理解算法循环结构 for/while",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I2_06",
+    "title": "算法的效率",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "效率",
+    "difficulty": 3,
+    "summary": "了解算法效率评价",
+    "content_req": "主要环节评价。了解算法效率评价",
+    "academic_req": null,
+    "key_points": [
+      "了解算法效率评价",
+      "主要环节评价"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I3_01",
+    "title": "图形化编程",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "图形化",
+    "difficulty": 2,
+    "summary": "会用 Scratch 等图形化编程工具",
+    "content_req": "在对简单问题的分析过程中，使用数字化工具组织并呈现收。会用 Scratch 等图形化编程工具",
+    "academic_req": "通过指导学生完成在线任务、学习使用各种网络工具等多种",
+    "key_points": [
+      "在对简单问题的分析过程中",
+      "会用 Scratch 等图形化编程工具",
+      "使用数字化工具组织并呈现收"
+    ],
+    "bloom": [
+      "会",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_I3_02",
+    "title": "Python 编程基础",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "Python",
+    "difficulty": 3,
+    "summary": "会用 Python 编写简单程序",
+    "content_req": "考试性质和目的。会用 Python 编写简单程序",
+    "academic_req": null,
+    "key_points": [
+      "会用 Python 编写简单程序",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I3_03",
+    "title": "变量与数据类型",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "基础",
+    "difficulty": 3,
+    "summary": "理解变量和基本数据类型",
+    "content_req": "考试性质和目的。理解变量和基本数据类型",
+    "academic_req": null,
+    "key_points": [
+      "理解变量和基本数据类型",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I3_04",
+    "title": "函数与模块",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "函数",
+    "difficulty": 3,
+    "summary": "会定义和使用函数",
+    "content_req": "考试性质和目的。会定义和使用函数",
+    "academic_req": null,
+    "key_points": [
+      "会定义和使用函数",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I3_05",
+    "title": "程序调试",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "调试",
+    "difficulty": 3,
+    "summary": "会用调试工具发现并修正程序错误",
+    "content_req": "考试性质和目的。会用调试工具发现并修正程序错误",
+    "academic_req": null,
+    "key_points": [
+      "会用调试工具发现并修正程序错误",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "会",
+      "发现"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I4_01",
+    "title": "网络基础",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "网络",
+    "subdomain": "基础",
+    "difficulty": 2,
+    "summary": "了解计算机网络基础",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解计算机网络基础",
+    "academic_req": null,
+    "key_points": [
+      "了解计算机网络基础",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解",
+      "计算"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I4_02",
+    "title": "互联网应用",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "网络",
+    "subdomain": "应用",
+    "difficulty": 1,
+    "summary": "使用浏览器/邮件/搜索等",
+    "content_req": "通过在线活动，分析互联网应用的特征，认识到互联网对社。使用浏览器/邮件/搜索等",
+    "academic_req": null,
+    "key_points": [
+      "分析互联网应用的特征",
+      "认识到互联网对社",
+      "通过在线活动",
+      "使用浏览器/邮件/搜索等"
+    ],
+    "bloom": [
+      "认识",
+      "分析",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I4_03",
+    "title": "网络安全",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "网络",
+    "subdomain": "安全",
+    "difficulty": 2,
+    "summary": "了解网络安全常识",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解网络安全常识",
+    "academic_req": null,
+    "key_points": [
+      "了解网络安全常识",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I4_04",
+    "title": "物联网",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "网络",
+    "subdomain": "前沿",
+    "difficulty": 3,
+    "summary": "了解物联网基本概念",
+    "content_req": "通过实例感受万物互联的场景，知道物联网与互联网的异。了解物联网基本概念",
+    "academic_req": "物联网技术的广泛应用将带来一些全新的挑战，如集成了多",
+    "key_points": [
+      "通过实例感受万物互联的场景",
+      "知道物联网与互联网的异",
+      "了解物联网基本概念"
+    ],
+    "bloom": [
+      "了解",
+      "知道",
+      "感受"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I5_01",
+    "title": "计算机硬件",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 6,
+    "domain": "系统",
+    "subdomain": "硬件",
+    "difficulty": 2,
+    "summary": "了解计算机硬件组成",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解计算机硬件组成",
+    "academic_req": null,
+    "key_points": [
+      "了解计算机硬件组成",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解",
+      "计算"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_I5_02",
+    "title": "操作系统",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "系统",
+    "subdomain": "软件",
+    "difficulty": 2,
+    "summary": "了解操作系统的功能",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。了解操作系统的功能",
+    "academic_req": null,
+    "key_points": [
+      "了解操作系统的功能",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解",
+      "能"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I5_03",
+    "title": "文件管理",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 6,
+    "domain": "系统",
+    "subdomain": "文件",
+    "difficulty": 1,
+    "summary": "会管理文件和文件夹",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。会管理文件和文件夹",
+    "academic_req": null,
+    "key_points": [
+      "会管理文件和文件夹",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_I6_01",
+    "title": "人工智能基础",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "AI",
+    "subdomain": "概念",
+    "difficulty": 2,
+    "summary": "了解人工智能基本概念",
+    "content_req": "通过分析典型的人工智能应用场景，了解人工智能的基本特。了解人工智能基本概念",
+    "academic_req": null,
+    "key_points": [
+      "通过分析典型的人工智能应用场景",
+      "了解人工智能的基本特",
+      "了解人工智能基本概念"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "分析"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I6_02",
+    "title": "机器学习体验",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "AI",
+    "subdomain": "体验",
+    "difficulty": 3,
+    "summary": "体验机器学习的基本流程",
+    "content_req": "考试性质和目的。体验机器学习的基本流程",
+    "academic_req": null,
+    "key_points": [
+      "考试性质和目的",
+      "体验机器学习的基本流程"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I6_03",
+    "title": "智能应用",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "AI",
+    "subdomain": "应用",
+    "difficulty": 2,
+    "summary": "了解 AI 在生活/医疗/教育中的应用",
+    "content_req": "结合真实情境，了解编码在生活中的应用，认识数据编码的。了解 AI 在生活/医疗/教育中的应用",
+    "academic_req": null,
+    "key_points": [
+      "了解编码在生活中的应用",
+      "了解 AI 在生活/医疗/教育中的应用",
+      "认识数据编码的",
+      "结合真实情境"
+    ],
+    "bloom": [
+      "了解",
+      "认识",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I7_01",
+    "title": "信息伦理",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "社会责任",
+    "subdomain": "伦理",
+    "difficulty": 2,
+    "summary": "遵守信息伦理和法律法规",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。遵守信息伦理和法律法规",
+    "academic_req": null,
+    "key_points": [
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设",
+      "遵守信息伦理和法律法规"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_I7_02",
+    "title": "数字公民",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "社会责任",
+    "subdomain": "公民",
+    "difficulty": 2,
+    "summary": "养成健康的数字公民素养",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。养成健康的数字公民素养",
+    "academic_req": null,
+    "key_points": [
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设",
+      "养成健康的数字公民素养"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G12_DA_01",
+    "title": "信息的普遍性",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "数据",
+    "subdomain": "信息意识",
+    "difficulty": 1,
+    "summary": "理解信息在生活中普遍存在",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,理解信息在生活中普遍存在。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解信息在生活中普遍存在",
+      "在第一学段 (1~2 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "IT_G12_DA_02",
+    "title": "信息的价值",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "数据",
+    "subdomain": "信息意识",
+    "difficulty": 1,
+    "summary": "理解信息的价值",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,理解信息的价值。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解信息的价值",
+      "在第一学段 (1~2 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "IT_G12_DA_03",
+    "title": "信息技术应用",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "数据",
+    "subdomain": "信息意识",
+    "difficulty": 1,
+    "summary": "了解信息技术在生活学习中的应用",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,了解信息技术在生活学习中的应用。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解信息技术在生活学习中的应用",
+      "在第一学段 (1~2 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "IT_G12_DA_04",
+    "title": "在线学习",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "数据",
+    "subdomain": "信息意识",
+    "difficulty": 1,
+    "summary": "会使用在线学习平台",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会使用在线学习平台。。在“互联网十”情境中，体验在线学习、生活和交流的新模",
+    "academic_req": null,
+    "key_points": [
+      "会使用在线学习平台",
+      "在第一学段 (1~2 年级)教学情境中",
+      "在“互联网十”情境中",
+      "体验在线学习、生活和交流的新模"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "IT_G12_DA_05",
+    "title": "数字资源",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "数据",
+    "subdomain": "信息意识",
+    "difficulty": 1,
+    "summary": "会使用数字资源(电子书/视频)",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会使用数字资源(电子书/视频)。。在语言教学时，教师可以引导学生使用数字设备与数字资源",
+    "academic_req": null,
+    "key_points": [
+      "会使用数字资源(电子书/视频)",
+      "在第一学段 (1~2 年级)教学情境中",
+      "在语言教学时",
+      "教师可以引导学生使用数字设备与数字资源"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "IT_G12_AL_01",
+    "title": "计算思维",
+    "subject": "info_tech",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "算法",
+    "subdomain": "思维",
+    "difficulty": 1,
+    "summary": "理解计算思维的基本思想",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,理解计算思维的基本思想。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解计算思维的基本思想",
+      "在第一学段 (1~2 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解",
+      "计算"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "IT_G34_DA_01",
+    "title": "简单的数据分析",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "数据",
+    "subdomain": "数据处理",
+    "difficulty": 1,
+    "summary": "会对数据进行简单的分析",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会对数据进行简单的分析。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会对数据进行简单的分析",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_DA_02",
+    "title": "数据的可靠性",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "数据",
+    "subdomain": "数据处理",
+    "difficulty": 2,
+    "summary": "理解数据的可靠性",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解数据的可靠性。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解数据的可靠性",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_AL_01",
+    "title": "算法的特征",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 1,
+    "summary": "理解算法有穷性/确定性等特征",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解算法有穷性/确定性等特征。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解算法有穷性/确定性等特征",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_AL_02",
+    "title": "算法效率初识",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 2,
+    "summary": "初步理解算法效率",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,初步理解算法效率。。算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+    "academic_req": null,
+    "key_points": [
+      "初步理解算法效率",
+      "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "理解",
+      "描述"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_AL_03",
+    "title": "枚举算法",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 2,
+    "summary": "理解枚举算法的基本思想",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解枚举算法的基本思想。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解枚举算法的基本思想",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_PG_01",
+    "title": "认识源代码",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "编程",
+    "subdomain": "基础",
+    "difficulty": 1,
+    "summary": "了解源代码的基本概念",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解源代码的基本概念。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解源代码的基本概念",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_PG_02",
+    "title": "程序的执行",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "编程",
+    "subdomain": "基础",
+    "difficulty": 1,
+    "summary": "了解程序的执行过程",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解程序的执行过程。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解程序的执行过程",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_PG_03",
+    "title": "小程序设计",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "编程",
+    "subdomain": "项目",
+    "difficulty": 2,
+    "summary": "会设计简单的小程序",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会设计简单的小程序。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会设计简单的小程序",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会",
+      "设计"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SY_01",
+    "title": "计算机的工作原理",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 1,
+    "summary": "了解计算机的基本工作原理",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解计算机的基本工作原理。。了解云存储、云计算的原理，能够使用网盘进行数据备份，",
+    "academic_req": null,
+    "key_points": [
+      "了解计算机的基本工作原理",
+      "了解云存储、云计算的原理",
+      "能够使用网盘进行数据备份",
+      "在第二学段 (3~4 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "计算"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SY_02",
+    "title": "信息的表示",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 2,
+    "summary": "理解信息的二进制表示",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解信息的二进制表示。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解信息的二进制表示",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_NW_01",
+    "title": "网络分类",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "网络",
+    "subdomain": "网络",
+    "difficulty": 2,
+    "summary": "了解局域网/广域网等",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解局域网/广域网等。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解局域网/广域网等",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_NW_02",
+    "title": "IP 地址和域名",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "网络",
+    "subdomain": "网络",
+    "difficulty": 2,
+    "summary": "理解 IP 地址和域名的概念",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,理解 IP 地址和域名的概念。。借助学习与生活中的实例，体验身边的算法，理解算法是通",
+    "academic_req": null,
+    "key_points": [
+      "理解 IP 地址和域名的概念",
+      "理解算法是通",
+      "在第二学段 (3~4 年级)教学情境中",
+      "借助学习与生活中的实例",
+      "体验身边的算法"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_NW_03",
+    "title": "网络协议",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "网络",
+    "subdomain": "网络",
+    "difficulty": 2,
+    "summary": "了解 HTTP 等常见协议",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解 HTTP 等常见协议。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+    "academic_req": null,
+    "key_points": [
+      "了解 HTTP 等常见协议",
+      "了解健康使用数字设备的重",
+      "在第二学段 (3~4 年级)教学情境中",
+      "合理安排数字设备的使用时间"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SR_01",
+    "title": "合理使用网络",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "社会责任",
+    "subdomain": "责任",
+    "difficulty": 1,
+    "summary": "了解如何合理使用网络",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解如何合理使用网络。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解如何合理使用网络",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SR_02",
+    "title": "网络谣言辨识",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "社会责任",
+    "subdomain": "责任",
+    "difficulty": 1,
+    "summary": "学会辨识网络谣言",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,学会辨识网络谣言。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "学会辨识网络谣言",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SR_03",
+    "title": "网络欺凌防范",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "社会责任",
+    "subdomain": "责任",
+    "difficulty": 1,
+    "summary": "了解网络欺凌的防范",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解网络欺凌的防范。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解网络欺凌的防范",
+      "在第二学段 (3~4 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G56_AL_01",
+    "title": "算法效率分析",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 3,
+    "summary": "会分析简单算法的时间复杂度",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会分析简单算法的时间复杂度。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会分析简单算法的时间复杂度",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会",
+      "分析"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_AL_02",
+    "title": "搜索算法: 二分查找",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 3,
+    "summary": "理解二分查找算法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解二分查找算法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解二分查找算法",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_AL_03",
+    "title": "排序算法: 插入排序",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 3,
+    "summary": "理解插入排序算法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解插入排序算法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解插入排序算法",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_AL_04",
+    "title": "递归应用: 斐波那契",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 3,
+    "summary": "会用递归实现斐波那契",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会用递归实现斐波那契。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会用递归实现斐波那契",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_01",
+    "title": "面向对象: 类和实例",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 3,
+    "summary": "理解类和实例的关系",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解类和实例的关系。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解类和实例的关系",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_02",
+    "title": "面向对象: 封装",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 3,
+    "summary": "理解面向对象的封装",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解面向对象的封装。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解面向对象的封装",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_03",
+    "title": "面向对象: 继承",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 4,
+    "summary": "理解面向对象的继承",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解面向对象的继承。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解面向对象的继承",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_04",
+    "title": "面向对象: 多态",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 4,
+    "summary": "理解面向对象的多态",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解面向对象的多态。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解面向对象的多态",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_05",
+    "title": "模块和包",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 3,
+    "summary": "理解模块和包的使用",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解模块和包的使用。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+    "academic_req": null,
+    "key_points": [
+      "理解模块和包的使用",
+      "了解健康使用数字设备的重",
+      "在第三学段 (5~6 年级)教学情境中",
+      "合理安排数字设备的使用时间"
+    ],
+    "bloom": [
+      "了解",
+      "理解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_06",
+    "title": "常用库: random",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 2,
+    "summary": "会用 random 库",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会用 random 库。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会用 random 库",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_PG_07",
+    "title": "常用库: datetime",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 2,
+    "summary": "会用 datetime 库",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会用 datetime 库。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会用 datetime 库",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_01",
+    "title": "数据预处理",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据处理",
+    "difficulty": 3,
+    "summary": "了解数据预处理的方法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解数据预处理的方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解数据预处理的方法",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_02",
+    "title": "数据分析: Excel",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据处理",
+    "difficulty": 2,
+    "summary": "会用 Excel 进行数据分析",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会用 Excel 进行数据分析。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会用 Excel 进行数据分析",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_03",
+    "title": "数据库: 关系数据库",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 3,
+    "summary": "了解关系数据库的基本概念",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解关系数据库的基本概念。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解关系数据库的基本概念",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_04",
+    "title": "数据库: SQL 查询",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 3,
+    "summary": "会写基本的 SQL 查询",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会写基本的 SQL 查询。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "会写基本的 SQL 查询",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_05",
+    "title": "数据库: 表的设计",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 4,
+    "summary": "理解数据库表的设计",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,理解数据库表的设计。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "理解数据库表的设计",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "理解",
+      "设计"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_06",
+    "title": "数据挖掘: 关联分析",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 3,
+    "summary": "了解关联分析等数据挖掘方法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解关联分析等数据挖掘方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解关联分析等数据挖掘方法",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解",
+      "分析"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_DA_07",
+    "title": "数据清洗",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "数据",
+    "subdomain": "分析",
+    "difficulty": 3,
+    "summary": "了解数据清洗的方法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解数据清洗的方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解数据清洗的方法",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_NW_01",
+    "title": "网络分层模型",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "网络",
+    "subdomain": "网络",
+    "difficulty": 4,
+    "summary": "了解 OSI 七层模型",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解 OSI 七层模型。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+    "academic_req": null,
+    "key_points": [
+      "了解 OSI 七层模型",
+      "了解健康使用数字设备的重",
+      "在第三学段 (5~6 年级)教学情境中",
+      "合理安排数字设备的使用时间"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_NW_02",
+    "title": "云计算",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "网络",
+    "subdomain": "网络",
+    "difficulty": 2,
+    "summary": "了解云计算的基本概念",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解云计算的基本概念。。了解云存储、云计算的原理，能够使用网盘进行数据备份，",
+    "academic_req": null,
+    "key_points": [
+      "了解云计算的基本概念",
+      "了解云存储、云计算的原理",
+      "能够使用网盘进行数据备份",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "计算"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_SY_01",
+    "title": "信息系统的开发",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 3,
+    "summary": "了解信息系统的开发流程",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解信息系统的开发流程。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解信息系统的开发流程",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_SY_02",
+    "title": "项目管理",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 2,
+    "summary": "了解项目管理的基本方法",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解项目管理的基本方法。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解项目管理的基本方法",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_AI_01",
+    "title": "生成式 AI",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "AI",
+    "subdomain": "AI",
+    "difficulty": 2,
+    "summary": "了解生成式 AI 的基本原理",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解生成式 AI 的基本原理。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解生成式 AI 的基本原理",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_AI_02",
+    "title": "大语言模型",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "AI",
+    "subdomain": "AI",
+    "difficulty": 3,
+    "summary": "了解大语言模型的概念",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解大语言模型的概念。。在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "academic_req": null,
+    "key_points": [
+      "了解大语言模型的概念",
+      "在第三学段 (5~6 年级)教学情境中",
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_SR_01",
+    "title": "AI 与社会",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "社会责任",
+    "subdomain": "责任",
+    "difficulty": 2,
+    "summary": "了解 AI 对社会的影响",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解 AI 对社会的影响。。合理安排数字设备的使用时间，了解健康使用数字设备的重",
+    "academic_req": null,
+    "key_points": [
+      "了解 AI 对社会的影响",
+      "了解健康使用数字设备的重",
+      "在第三学段 (5~6 年级)教学情境中",
+      "合理安排数字设备的使用时间"
+    ],
+    "bloom": [
+      "了解",
+      "会"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G56_SR_02",
+    "title": "技术伦理",
+    "subject": "info_tech",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "社会责任",
+    "subdomain": "责任",
+    "difficulty": 2,
+    "summary": "了解技术使用的伦理",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解技术使用的伦理。。通过体验人工智能的应用场景，了解人工智能带来的伦理与",
+    "academic_req": null,
+    "key_points": [
+      "通过体验人工智能的应用场景",
+      "了解人工智能带来的伦理与",
+      "了解技术使用的伦理",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "IT_G79_AL_01",
+    "title": "时间复杂度",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 4,
+    "summary": "理解算法的时间复杂度",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解算法的时间复杂度。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "理解算法的时间复杂度",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_AL_02",
+    "title": "动态规划初步",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "算法",
+    "subdomain": "算法",
+    "difficulty": 4,
+    "summary": "初步了解动态规划",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,初步了解动态规划。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "初步了解动态规划",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_PG_01",
+    "title": "面向对象基础",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 3,
+    "summary": "了解面向对象的基本概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解面向对象的基本概念。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "了解面向对象的基本概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_PG_02",
+    "title": "继承和多态",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 4,
+    "summary": "理解继承和多态",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解继承和多态。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "理解继承和多态",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_PG_03",
+    "title": "栈和队列",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 3,
+    "summary": "理解栈和队列数据结构",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解栈和队列数据结构。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "理解栈和队列数据结构",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_PG_04",
+    "title": "链表",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 3,
+    "summary": "理解链表数据结构",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解链表数据结构。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "理解链表数据结构",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_PG_05",
+    "title": "二叉树",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "编程",
+    "subdomain": "编程",
+    "difficulty": 4,
+    "summary": "理解二叉树数据结构",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解二叉树数据结构。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "理解二叉树数据结构",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_DA_01",
+    "title": "数据库基础",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 2,
+    "summary": "了解数据库的基本概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解数据库的基本概念。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "了解数据库的基本概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_DA_02",
+    "title": "数据挖掘初步",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 3,
+    "summary": "了解数据挖掘的基本概念",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解数据挖掘的基本概念。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "了解数据挖掘的基本概念",
+      "在第四学段 (7~9 年级)教学情境中",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_AI_01",
+    "title": "监督学习和无监督学习",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "AI",
+    "subdomain": "AI",
+    "difficulty": 3,
+    "summary": "区分监督学习和无监督学习",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,区分监督学习和无监督学习。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "在第四学段 (7~9 年级)教学情境中",
+      "区分监督学习和无监督学习",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_AI_02",
+    "title": "AI 项目实践",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "AI",
+    "subdomain": "AI",
+    "difficulty": 3,
+    "summary": "参与简单的 AI 项目实践",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,参与简单的 AI 项目实践。。考试性质和目的",
+    "academic_req": null,
+    "key_points": [
+      "在第四学段 (7~9 年级)教学情境中",
+      "参与简单的 AI 项目实践",
+      "考试性质和目的"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_DA_03",
+    "title": "信息安全: 文明礼仪",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 1,
+    "summary": "信息安全: 文明礼仪、行为规范、依法依规、个人隐私保",
+    "content_req": "信息安全: 文明礼仪、行为规范、依法依规、个人隐私保。",
+    "academic_req": null,
+    "key_points": [
+      "信息安全: 文明礼仪、行为规范、依法依规、个人隐私保"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_SR_01",
+    "title": "算法: 问题的步又分解一算法的",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "社会责任",
+    "subdomain": "社会责任",
+    "difficulty": 1,
+    "summary": "算法: 问题的步又分解一算法的描述、执行与效率一解决问",
+    "content_req": "算法: 问题的步又分解一算法的描述、执行与效率一解决问。",
+    "academic_req": null,
+    "key_points": [
+      "算法: 问题的步又分解一算法的描述、执行与效率一解决问"
+    ],
+    "bloom": [
+      "描述"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_DA_04",
+    "title": "网络: 网络搜索与辅助协作学习",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 1,
+    "summary": "网络: 网络搜索与辅助协作学习一数字化成果分享一万物互",
+    "content_req": "网络: 网络搜索与辅助协作学习一数字化成果分享一万物互。",
+    "academic_req": null,
+    "key_points": [
+      "网络: 网络搜索与辅助协作学习一数字化成果分享一万物互"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_DA_05",
+    "title": "信息处理: 文字",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "数据",
+    "subdomain": "数据",
+    "difficulty": 1,
+    "summary": "信息处理: 文字、图片、音频和视频等信息处理一使用编码",
+    "content_req": "信息处理: 文字、图片、音频和视频等信息处理一使用编码。",
+    "academic_req": null,
+    "key_points": [
+      "信息处理: 文字、图片、音频和视频等信息处理一使用编码"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G79_SR_02",
+    "title": "聚焦课程目标和课程内容的关键问",
+    "subject": "info_tech",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "社会责任",
+    "subdomain": "社会责任",
+    "difficulty": 1,
+    "summary": "聚焦课程目标和课程内容的关键问题，提升教研实效",
+    "content_req": "聚焦课程目标和课程内容的关键问题，提升教研实效。",
+    "academic_req": null,
+    "key_points": [
+      "聚焦课程目标和课程内容的关键问题",
+      "提升教研实效"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "IT_G34_SY_03",
+    "title": "在家庭、校园、公园等场景中",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 1,
+    "summary": "在家庭、校园、公园等场景中，体验、感受与智能语音助",
+    "content_req": "在家庭、校园、公园等场景中，体验、感受与智能语音助。",
+    "academic_req": null,
+    "key_points": [
+      "体验、感受与智能语音助",
+      "在家庭、校园、公园等场景中"
+    ],
+    "bloom": [
+      "能",
+      "感受"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SY_04",
+    "title": "在日常学习与生活场景中",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 1,
+    "summary": "在日常学习与生活场景中，通过教师指导，尝试使用数字设",
+    "content_req": "在日常学习与生活场景中，通过教师指导，尝试使用数字设。",
+    "academic_req": "学生在生活场景中能见到大量的具有过程与控制系统的设",
+    "key_points": [
+      "在日常学习与生活场景中",
+      "通过教师指导",
+      "尝试使用数字设"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SY_05",
+    "title": "通过拍照",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 1,
+    "summary": "通过拍照、录音、录像、语音输入、录入文字或图符等方式",
+    "content_req": "通过拍照、录音、录像、语音输入、录入文字或图符等方式。",
+    "academic_req": null,
+    "key_points": [
+      "通过拍照、录音、录像、语音输入、录入文字或图符等方式"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SY_06",
+    "title": "在浏览他人数字作品时",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 1,
+    "summary": "在浏览他人数字作品时，能主动、真诚、友善地发表评论，",
+    "content_req": "在浏览他人数字作品时，能主动、真诚、友善地发表评论，。",
+    "academic_req": null,
+    "key_points": [
+      "能主动、真诚、友善地发表评论",
+      "在浏览他人数字作品时"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "IT_G34_SY_07",
+    "title": "通过数字设备辅助学习、交流与分",
+    "subject": "info_tech",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "系统",
+    "subdomain": "系统",
+    "difficulty": 1,
+    "summary": "通过数字设备辅助学习、交流与分享，激发对信息科技的好",
+    "content_req": "通过数字设备辅助学习、交流与分享，激发对信息科技的好。",
+    "academic_req": null,
+    "key_points": [
+      "通过数字设备辅助学习、交流与分享",
+      "激发对信息科技的好"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  }
+]

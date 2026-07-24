@@ -1,0 +1,2125 @@
+[
+  {
+    "id": "L_L1_01",
+    "title": "个人清洁与整理",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "清洁与卫生",
+    "subdomain": "自理",
+    "difficulty": 1,
+    "summary": "学会个人清洁和整理",
+    "content_req": "选择项目内容。学会个人清洁和整理",
+    "academic_req": null,
+    "key_points": [
+      "学会个人清洁和整理",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "L_L1_02",
+    "title": "教室清洁",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "清洁与卫生",
+    "subdomain": "集体",
+    "difficulty": 1,
+    "summary": "参与教室清洁劳动",
+    "content_req": "确定劳动场域。参与教室清洁劳动",
+    "academic_req": null,
+    "key_points": [
+      "确定劳动场域",
+      "参与教室清洁劳动"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "L_L1_03",
+    "title": "家务劳动",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "清洁与卫生",
+    "subdomain": "家庭",
+    "difficulty": 1,
+    "summary": "承担力所能及的家务劳动",
+    "content_req": "选择项目内容。承担力所能及的家务劳动",
+    "academic_req": null,
+    "key_points": [
+      "承担力所能及的家务劳动",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_L1_04",
+    "title": "公共卫生",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "清洁与卫生",
+    "subdomain": "社区",
+    "difficulty": 2,
+    "summary": "参与公共卫生清洁活动",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。参与公共卫生清洁活动",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保",
+      "参与公共卫生清洁活动"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L2_01",
+    "title": "物品整理与收纳",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "整理与收纳",
+    "subdomain": "生活",
+    "difficulty": 1,
+    "summary": "学会整理和收纳物品",
+    "content_req": "选择项目内容。学会整理和收纳物品",
+    "academic_req": null,
+    "key_points": [
+      "学会整理和收纳物品",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_L2_02",
+    "title": "空间规划",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "整理与收纳",
+    "subdomain": "规划",
+    "difficulty": 2,
+    "summary": "进行简单的空间规划",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。进行简单的空间规划",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保",
+      "进行简单的空间规划"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L3_01",
+    "title": "认识食材",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 3,
+    "domain": "烹饪与营养",
+    "subdomain": "食材",
+    "difficulty": 1,
+    "summary": "认识常见食材",
+    "content_req": "选择项目内容。认识常见食材",
+    "academic_req": null,
+    "key_points": [
+      "认识常见食材",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 8
+  },
+  {
+    "id": "L_L3_02",
+    "title": "简单烹饪",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "学会简单烹饪",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。学会简单烹饪",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "学会简单烹饪",
+      "居室、教室等卫生保"
+    ],
+    "bloom": [
+      "会",
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L3_03",
+    "title": "营养搭配",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "烹饪与营养",
+    "subdomain": "营养",
+    "difficulty": 2,
+    "summary": "了解营养搭配",
+    "content_req": "选择项目内容。了解营养搭配",
+    "academic_req": null,
+    "key_points": [
+      "了解营养搭配",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L4_01",
+    "title": "种植体验",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 6,
+    "domain": "农业生产",
+    "subdomain": "种植",
+    "difficulty": 1,
+    "summary": "体验简单的种植活动",
+    "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。体验简单的种植活动",
+    "academic_req": null,
+    "key_points": [
+      "初步体验简单的种植、养殖、手工制作等生产劳动",
+      "体验简单的种植活动"
+    ],
+    "bloom": [
+      "能",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_L4_02",
+    "title": "养殖体验",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "农业生产",
+    "subdomain": "养殖",
+    "difficulty": 2,
+    "summary": "体验简单的养殖活动",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。体验简单的养殖活动",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保",
+      "体验简单的养殖活动"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L5_01",
+    "title": "工具使用",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "工业生产",
+    "subdomain": "工具",
+    "difficulty": 2,
+    "summary": "学会使用常见工具",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。学会使用常见工具",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "学会使用常见工具",
+      "居室、教室等卫生保"
+    ],
+    "bloom": [
+      "会",
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L5_02",
+    "title": "简单产品制作",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "工业生产",
+    "subdomain": "制作",
+    "difficulty": 2,
+    "summary": "进行简单产品制作",
+    "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。进行简单产品制作",
+    "academic_req": null,
+    "key_points": [
+      "初步体验简单的种植、养殖、手工制作等生产劳动",
+      "进行简单产品制作"
+    ],
+    "bloom": [
+      "能",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L6_01",
+    "title": "传统工艺体验",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "传统工艺",
+    "subdomain": "非遗",
+    "difficulty": 2,
+    "summary": "体验传统工艺(陶艺/刺绣/木工)",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。体验传统工艺(陶艺/刺绣/木工)",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保",
+      "体验传统工艺(陶艺/刺绣/木工)"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L7_01",
+    "title": "3D 打印体验",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "新技术",
+    "subdomain": "新科技",
+    "difficulty": 2,
+    "summary": "了解 3D 打印等新技术",
+    "content_req": "选择项目内容。了解 3D 打印等新技术",
+    "academic_req": null,
+    "key_points": [
+      "了解 3D 打印等新技术",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L7_02",
+    "title": "智能家居体验",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 9,
+    "domain": "新技术",
+    "subdomain": "智能",
+    "difficulty": 2,
+    "summary": "体验智能家居和物联网",
+    "content_req": "选择项目内容。体验智能家居和物联网",
+    "academic_req": null,
+    "key_points": [
+      "体验智能家居和物联网",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "能"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L8_01",
+    "title": "服务性劳动",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "服务业",
+    "subdomain": "服务",
+    "difficulty": 2,
+    "summary": "参与服务性劳动",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。参与服务性劳动",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保",
+      "参与服务性劳动"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L9_01",
+    "title": "校园公益劳动",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 9,
+    "domain": "公益劳动",
+    "subdomain": "校园",
+    "difficulty": 1,
+    "summary": "参与校园公益劳动",
+    "content_req": "确定劳动场域。参与校园公益劳动",
+    "academic_req": null,
+    "key_points": [
+      "确定劳动场域",
+      "参与校园公益劳动"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L9_02",
+    "title": "社区志愿服务",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 9,
+    "domain": "公益劳动",
+    "subdomain": "社区",
+    "difficulty": 2,
+    "summary": "参与社区志愿服务",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。参与社区志愿服务",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保",
+      "参与社区志愿服务"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 9,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_L10_01",
+    "title": "认识职业",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 4,
+    "grade_end": 6,
+    "domain": "职业体验",
+    "subdomain": "认知",
+    "difficulty": 1,
+    "summary": "认识常见职业",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。认识常见职业",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "认识常见职业",
+      "居室、教室等卫生保"
+    ],
+    "bloom": [
+      "认识",
+      "比较"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 9,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_L10_02",
+    "title": "职业角色体验",
+    "subject": "labor",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "职业体验",
+    "subdomain": "体验",
+    "difficulty": 2,
+    "summary": "进行职业角色体验",
+    "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。进行职业角色体验",
+    "academic_req": null,
+    "key_points": [
+      "初步体验简单的种植、养殖、手工制作等生产劳动",
+      "进行职业角色体验"
+    ],
+    "bloom": [
+      "能",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_G12_CH_01",
+    "title": "洗手洗脸",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "自理",
+    "difficulty": 1,
+    "summary": "会正确洗手洗脸",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会正确洗手洗脸。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会正确洗手洗脸",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_02",
+    "title": "刷牙",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "自理",
+    "difficulty": 1,
+    "summary": "会正确刷牙",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会正确刷牙。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会正确刷牙",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_03",
+    "title": "洗澡",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "自理",
+    "difficulty": 1,
+    "summary": "养成勤洗澡的习惯",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,养成勤洗澡的习惯。。养成良好的个人清洁卫生习惯。认识常用家用器具，掌握家",
+    "academic_req": null,
+    "key_points": [
+      "认识常用家用器具",
+      "在第一学段 (1~2 年级)教学情境中",
+      "养成勤洗澡的习惯",
+      "养成良好的个人清洁卫生习惯"
+    ],
+    "bloom": [
+      "认识",
+      "掌握"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_04",
+    "title": "剪指甲",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "自理",
+    "difficulty": 1,
+    "summary": "会自己剪指甲",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会自己剪指甲。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会自己剪指甲",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_05",
+    "title": "整理个人物品",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "自理",
+    "difficulty": 1,
+    "summary": "会整理个人物品",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会整理个人物品。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会整理个人物品",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_06",
+    "title": "打扫教室",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "集体",
+    "difficulty": 1,
+    "summary": "会打扫教室",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会打扫教室。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会打扫教室",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_07",
+    "title": "打扫校园",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "集体",
+    "difficulty": 1,
+    "summary": "会参与打扫校园",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会参与打扫校园。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会参与打扫校园",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_08",
+    "title": "垃圾分类",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "集体",
+    "difficulty": 1,
+    "summary": "会进行垃圾分类",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会进行垃圾分类。。参加校园卫生保洁、垃圾分类处理、绿化美化等劳动，适当",
+    "academic_req": null,
+    "key_points": [
+      "会进行垃圾分类",
+      "参加校园卫生保洁、垃圾分类处理、绿化美化等劳动",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "分类"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_09",
+    "title": "打扫房间",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "家庭",
+    "difficulty": 1,
+    "summary": "会打扫自己的房间",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会打扫自己的房间。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会打扫自己的房间",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CH_10",
+    "title": "整理床铺",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "清洁与卫生",
+    "subdomain": "家庭",
+    "difficulty": 1,
+    "summary": "会整理自己的床铺",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会整理自己的床铺。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会整理自己的床铺",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_OR_01",
+    "title": "整理衣柜",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "整理与收纳",
+    "subdomain": "整理",
+    "difficulty": 1,
+    "summary": "会整理自己的衣柜",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会整理自己的衣柜。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会整理自己的衣柜",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_OR_02",
+    "title": "整理玩具",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "整理与收纳",
+    "subdomain": "物品",
+    "difficulty": 1,
+    "summary": "会整理自己的玩具",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会整理自己的玩具。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会整理自己的玩具",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_OR_03",
+    "title": "整理书籍",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "整理与收纳",
+    "subdomain": "物品",
+    "difficulty": 1,
+    "summary": "会整理自己的书籍",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会整理自己的书籍。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会整理自己的书籍",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CK_01",
+    "title": "择菜洗菜",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 1,
+    "summary": "会择菜洗菜",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会择菜洗菜。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会择菜洗菜",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CK_02",
+    "title": "简单的食物搭配",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 1,
+    "summary": "会进行简单的食物搭配",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会进行简单的食物搭配。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单的食物搭配",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_CK_03",
+    "title": "食物分类",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "烹饪与营养",
+    "subdomain": "营养",
+    "difficulty": 1,
+    "summary": "会对食物进行分类",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会对食物进行分类。。参加校园卫生保洁、垃圾分类处理、绿化美化等劳动，适当",
+    "academic_req": null,
+    "key_points": [
+      "会对食物进行分类",
+      "参加校园卫生保洁、垃圾分类处理、绿化美化等劳动",
+      "在第一学段 (1~2 年级)教学情境中"
+    ],
+    "bloom": [
+      "会",
+      "分类"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_AP_01",
+    "title": "认识常见植物",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "农业生产",
+    "subdomain": "农业",
+    "difficulty": 1,
+    "summary": "认识常见的植物",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,认识常见的植物。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "认识常见的植物",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_AP_02",
+    "title": "种植小盆栽",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "农业生产",
+    "subdomain": "农业",
+    "difficulty": 1,
+    "summary": "会种植小盆栽",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会种植小盆栽。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会种植小盆栽",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_AP_03",
+    "title": "给植物浇水",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "农业生产",
+    "subdomain": "农业",
+    "difficulty": 1,
+    "summary": "会给植物浇水",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,会给植物浇水。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会给植物浇水",
+      "在第一学段 (1~2 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_VL_01",
+    "title": "参与校园公益",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "公益劳动",
+    "subdomain": "公益",
+    "difficulty": 1,
+    "summary": "参与校园公益活动",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,参与校园公益活动。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "参与校园公益活动",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_VL_02",
+    "title": "帮助同学",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "公益劳动",
+    "subdomain": "公益",
+    "difficulty": 1,
+    "summary": "主动帮助同学",
+    "content_req": "在第一学段 (1~2 年级)教学情境中,主动帮助同学。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "在第一学段 (1~2 年级)教学情境中",
+      "主动帮助同学",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G34_CH_01",
+    "title": "家庭清洁",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "清洁与卫生",
+    "subdomain": "集体",
+    "difficulty": 1,
+    "summary": "会做家庭清洁",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会做家庭清洁。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会做家庭清洁",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CH_02",
+    "title": "扫地拖地",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "清洁与卫生",
+    "subdomain": "家庭",
+    "difficulty": 1,
+    "summary": "会扫地拖地",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会扫地拖地。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会扫地拖地",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CH_03",
+    "title": "擦窗户",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "清洁与卫生",
+    "subdomain": "家庭",
+    "difficulty": 1,
+    "summary": "会擦窗户",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会擦窗户。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会擦窗户",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CH_04",
+    "title": "清洗衣物",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "清洁与卫生",
+    "subdomain": "家庭",
+    "difficulty": 2,
+    "summary": "会清洗简单衣物",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会清洗简单衣物。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会清洗简单衣物",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_OR_01",
+    "title": "整理房间",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "整理与收纳",
+    "subdomain": "整理",
+    "difficulty": 1,
+    "summary": "会整理自己的房间",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会整理自己的房间。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会整理自己的房间",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_01",
+    "title": "做简单早餐",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "会做简单的早餐",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会做简单的早餐。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会做简单的早餐",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_02",
+    "title": "做家常菜",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "会做 1-2 道家常菜",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会做 1-2 道家常菜。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会做 1-2 道家常菜",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_03",
+    "title": "包饺子",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "会包饺子",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会包饺子。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会包饺子",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_04",
+    "title": "做简单面食",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "会做简单的面食",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会做简单的面食。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会做简单的面食",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_05",
+    "title": "使用厨房电器",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 1,
+    "summary": "会使用常见的厨房电器",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会使用常见的厨房电器。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会使用常见的厨房电器",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_06",
+    "title": "合理搭配食物",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "营养",
+    "difficulty": 1,
+    "summary": "会合理搭配食物",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会合理搭配食物。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会合理搭配食物",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_CK_07",
+    "title": "食物营养知识",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "烹饪与营养",
+    "subdomain": "营养",
+    "difficulty": 1,
+    "summary": "了解常见食物的营养价值",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解常见食物的营养价值。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解常见食物的营养价值",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_TC_01",
+    "title": "刺绣初步",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "传统工艺",
+    "subdomain": "工艺",
+    "difficulty": 2,
+    "summary": "了解刺绣初步",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解刺绣初步。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解刺绣初步",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_TC_02",
+    "title": "木艺初步",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "传统工艺",
+    "subdomain": "工艺",
+    "difficulty": 2,
+    "summary": "了解木艺初步",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解木艺初步。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解木艺初步",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_IP_01",
+    "title": "产品包装",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "工业生产",
+    "subdomain": "工业",
+    "difficulty": 1,
+    "summary": "会进行简单的产品包装",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会进行简单的产品包装。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单的产品包装",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_IP_02",
+    "title": "简单的质量检测",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "工业生产",
+    "subdomain": "工业",
+    "difficulty": 1,
+    "summary": "会进行简单的质量检测",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会进行简单的质量检测。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单的质量检测",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_AP_01",
+    "title": "种植蔬菜",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "农业生产",
+    "subdomain": "农业",
+    "difficulty": 1,
+    "summary": "会种植简单蔬菜",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会种植简单蔬菜。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会种植简单蔬菜",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_AP_02",
+    "title": "认识农作物",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "农业生产",
+    "subdomain": "农业",
+    "difficulty": 1,
+    "summary": "认识常见农作物",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,认识常见农作物。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "认识常见农作物",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "认识"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_AP_03",
+    "title": "简单的田间管理",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "农业生产",
+    "subdomain": "农业",
+    "difficulty": 1,
+    "summary": "会进行简单的田间管理",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,会进行简单的田间管理。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单的田间管理",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_VL_01",
+    "title": "社区公益活动",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "公益劳动",
+    "subdomain": "公益",
+    "difficulty": 1,
+    "summary": "参与社区公益活动",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,参与社区公益活动。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "在第二学段 (3~4 年级)教学情境中",
+      "参与社区公益活动",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_SE_01",
+    "title": "快递员",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "服务业",
+    "subdomain": "服务",
+    "difficulty": 1,
+    "summary": "了解快递员的工作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解快递员的工作。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解快递员的工作",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_SE_02",
+    "title": "收银员",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "服务业",
+    "subdomain": "服务",
+    "difficulty": 1,
+    "summary": "了解收银员的工作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解收银员的工作。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解收银员的工作",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_SE_03",
+    "title": "公交车司机",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "服务业",
+    "subdomain": "服务",
+    "difficulty": 1,
+    "summary": "了解公交车司机的工作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解公交车司机的工作。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解公交车司机的工作",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G34_WE_01",
+    "title": "医院志愿者",
+    "subject": "labor",
+    "stage": 2,
+    "grade_start": 3,
+    "grade_end": 4,
+    "domain": "职业体验",
+    "subdomain": "体验",
+    "difficulty": 1,
+    "summary": "了解医院志愿者的工作",
+    "content_req": "在第二学段 (3~4 年级)教学情境中,了解医院志愿者的工作。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解医院志愿者的工作",
+      "在第二学段 (3~4 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 8,
+    "age_range_end": 9
+  },
+  {
+    "id": "L_G56_NT_01",
+    "title": "3D 打印初步",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 2,
+    "summary": "了解 3D 打印",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解 3D 打印。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解 3D 打印",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_NT_02",
+    "title": "激光切割初步",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 2,
+    "summary": "了解激光切割",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解激光切割。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解激光切割",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_NT_03",
+    "title": "编程控制",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 2,
+    "summary": "会简单的编程控制",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会简单的编程控制。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会简单的编程控制",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_NT_04",
+    "title": "创新设计",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 2,
+    "summary": "会进行简单的创新设计",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会进行简单的创新设计。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会进行简单的创新设计",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会",
+      "设计"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_NT_05",
+    "title": "机器人初步",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "技术",
+    "difficulty": 2,
+    "summary": "了解机器人的基本原理",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解机器人的基本原理。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解机器人的基本原理",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_NT_06",
+    "title": "3D 打印应用",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "应用",
+    "difficulty": 1,
+    "summary": "了解 3D 打印的应用",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解 3D 打印的应用。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解 3D 打印的应用",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_NT_07",
+    "title": "VR 体验",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "新技术",
+    "subdomain": "应用",
+    "difficulty": 1,
+    "summary": "了解 VR 的应用",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,了解 VR 的应用。。初步体验简单的种植、养殖、手工制作等生产劳动，能规范",
+    "academic_req": null,
+    "key_points": [
+      "了解 VR 的应用",
+      "初步体验简单的种植、养殖、手工制作等生产劳动",
+      "在第三学段 (5~6 年级)教学情境中"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_CK_01",
+    "title": "做复杂家常菜",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "会做较复杂的家常菜",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会做较复杂的家常菜。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会做较复杂的家常菜",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G56_CK_02",
+    "title": "制订营养食谱",
+    "subject": "labor",
+    "stage": 3,
+    "grade_start": 5,
+    "grade_end": 6,
+    "domain": "烹饪与营养",
+    "subdomain": "烹饪",
+    "difficulty": 2,
+    "summary": "会制订简单的营养食谱",
+    "content_req": "在第三学段 (5~6 年级)教学情境中,会制订简单的营养食谱。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "会制订简单的营养食谱",
+      "在第三学段 (5~6 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 10,
+    "age_range_end": 11
+  },
+  {
+    "id": "L_G79_WE_01",
+    "title": "职业规划初步",
+    "subject": "labor",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "职业体验",
+    "subdomain": "职业",
+    "difficulty": 1,
+    "summary": "初步进行职业规划",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,初步进行职业规划。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "在第四学段 (7~9 年级)教学情境中",
+      "初步进行职业规划",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_G79_WE_02",
+    "title": "职业精神",
+    "subject": "labor",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "职业体验",
+    "subdomain": "职业",
+    "difficulty": 1,
+    "summary": "理解职业精神",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,理解职业精神。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "理解职业精神",
+      "在第四学段 (7~9 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "理解"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_G79_NT_01",
+    "title": "人工智能应用",
+    "subject": "labor",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "新技术",
+    "subdomain": "技术",
+    "difficulty": 1,
+    "summary": "了解人工智能的应用",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解人工智能的应用。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解人工智能的应用",
+      "在第四学段 (7~9 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解",
+      "能",
+      "应用"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_G79_NT_02",
+    "title": "创新创业初步",
+    "subject": "labor",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "新技术",
+    "subdomain": "技术",
+    "difficulty": 2,
+    "summary": "了解创新创业的基本知识",
+    "content_req": "在第四学段 (7~9 年级)教学情境中,了解创新创业的基本知识。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "了解创新创业的基本知识",
+      "在第四学段 (7~9 年级)教学情境中",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "FACTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  },
+  {
+    "id": "L_G12_NT_01",
+    "title": "完成比较简单的个人物品整理与清",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 1,
+    "summary": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保",
+    "content_req": "完成比较简单的个人物品整理与清洗，居室、教室等卫生保。",
+    "academic_req": null,
+    "key_points": [
+      "完成比较简单的个人物品整理与清洗",
+      "居室、教室等卫生保"
+    ],
+    "bloom": [
+      "比较"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_NT_02",
+    "title": "关心、照顾身边常见动植物",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 1,
+    "summary": "关心、照顾身边常见动植物，初步形成关爱生命、热爱自然",
+    "content_req": "关心、照顾身边常见动植物，初步形成关爱生命、热爱自然。",
+    "academic_req": null,
+    "key_points": [
+      "初步形成关爱生命、热爱自然",
+      "关心、照顾身边常见动植物"
+    ],
+    "bloom": [
+      "形成"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_NT_03",
+    "title": "懂得在劳动中遵规守约",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 1,
+    "summary": "懂得在劳动中遵规守约，初步学会与他人合作劳动",
+    "content_req": "懂得在劳动中遵规守约，初步学会与他人合作劳动。",
+    "academic_req": null,
+    "key_points": [
+      "初步学会与他人合作劳动",
+      "懂得在劳动中遵规守约"
+    ],
+    "bloom": [
+      "会"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_NT_04",
+    "title": "在劳动过程和日常生活中做到勤俭",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 1,
+    "summary": "在劳动过程和日常生活中做到勤俭节约、不怕困难",
+    "content_req": "在劳动过程和日常生活中做到勤俭节约、不怕困难。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "在劳动过程和日常生活中做到勤俭节约、不怕困难",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "了解"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G12_NT_05",
+    "title": "初步体验简单的种植、养殖、手工",
+    "subject": "labor",
+    "stage": 1,
+    "grade_start": 1,
+    "grade_end": 2,
+    "domain": "新技术",
+    "subdomain": "新技术",
+    "difficulty": 1,
+    "summary": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范",
+    "content_req": "初步体验简单的种植、养殖、手工制作等生产劳动，能规范。",
+    "academic_req": null,
+    "key_points": [
+      "初步体验简单的种植、养殖、手工制作等生产劳动"
+    ],
+    "bloom": [
+      "能",
+      "制作"
+    ],
+    "type": "PROCEDURAL",
+    "age_range_start": 6,
+    "age_range_end": 7
+  },
+  {
+    "id": "L_G79_OR_01",
+    "title": "关注课外",
+    "subject": "labor",
+    "stage": 4,
+    "grade_start": 7,
+    "grade_end": 9,
+    "domain": "整理与收纳",
+    "subdomain": "整理与收纳",
+    "difficulty": 1,
+    "summary": "关注课外、校外劳动实践体验的有效拓展",
+    "content_req": "关注课外、校外劳动实践体验的有效拓展。。选择项目内容",
+    "academic_req": null,
+    "key_points": [
+      "关注课外、校外劳动实践体验的有效拓展",
+      "选择项目内容"
+    ],
+    "bloom": [
+      "拓展"
+    ],
+    "type": "CONCEPTUAL",
+    "age_range_start": 12,
+    "age_range_end": 14
+  }
+]
