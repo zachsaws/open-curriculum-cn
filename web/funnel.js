@@ -98,9 +98,21 @@ async function init() {
 
   // 1) 加载数据
   try {
-    const res = await fetch('./data/graph.json');
-    if (!res.ok) throw new Error('graph.json 不存在 (HTTP ' + res.status + ')');
-    DATA = await res.json();
+    // V3.5g: 优先 .gz 压缩版 (1.4MB) + 客户端解压
+    let text;
+    try {
+      const gzRes = await fetch('./data/graph.json.gz');
+      if (gzRes.ok) {
+        const ds = new DecompressionStream('gzip');
+        text = await new Response(gzRes.body.pipeThrough(ds)).text();
+      } else throw new Error('gz 404');
+    } catch (e1) {
+      console.warn('gz 加载失败, fallback json:', e1.message);
+      const res = await fetch('./data/graph.json');
+      if (!res.ok) throw new Error('graph.json 不存在 (HTTP ' + res.status + ')');
+      text = await res.text();
+    }
+    DATA = JSON.parse(text);
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
     msg.innerHTML = `<div class="err">${'未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;

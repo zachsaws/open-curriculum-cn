@@ -100,9 +100,22 @@ function set3DHeader() {
 // ============== 数据加载 ==============
 async function loadData() {
   try {
-    const res = await fetch('./data/graph.json');
-    if (!res.ok) throw new Error('graph.json 不存在');
-    DATA = await res.json();
+    // V3.5g: 优先 fetch .gz 压缩版 (1.4MB vs 5.9MB), 客户端解压
+    let text;
+    try {
+      const gzRes = await fetch('./data/graph.json.gz');
+      if (gzRes.ok) {
+        const ds = new DecompressionStream('gzip');
+        const stream = gzRes.body.pipeThrough(ds);
+        text = await new Response(stream).text();
+      } else throw new Error('gz 404');
+    } catch (e1) {
+      console.warn('gz 加载失败, fallback json:', e1.message);
+      const res = await fetch('./data/graph.json');
+      if (!res.ok) throw new Error('graph.json 不存在');
+      text = await res.text();
+    }
+    DATA = JSON.parse(text);
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
     msg.innerHTML = `<div class="err">${window.t ? "..." : '未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
