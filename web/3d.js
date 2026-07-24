@@ -302,10 +302,14 @@ function buildNodeMesh() {
       attribute float focusGain;
       varying vec3 vColor;
       varying float vFocusGain;
+      varying float vDepth;
       void main() {
         vColor = color;
         vFocusGain = focusGain;
         vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+        // V3.6.4: depth fog 准备 — 归一化 z 到 0..1, 0=远, 1=近
+        // camera 默认距原点 ~200, 球面半径 100, 所以 mvPosition.z 范围 ~-300..-100
+        vDepth = clamp((-mvPosition.z - 100.0) / 200.0, 0.0, 1.0);
         gl_PointSize = size * (1.0 + focusGain * 0.6) * (380.0 / -mvPosition.z);
         gl_Position = projectionMatrix * mvPosition;
       }
@@ -314,11 +318,14 @@ function buildNodeMesh() {
       uniform sampler2D pointTexture;
       varying vec3 vColor;
       varying float vFocusGain;
+      varying float vDepth;
       void main() {
         vec4 tex = texture2D(pointTexture, gl_PointCoord);
         if (tex.a < 0.1) discard;
         vec3 col = vColor;
-        // V3.6.3: 白色高亮环 (vFocusGain > 0.5 时, 在 0.85-0.95 半径范围画白环)
+        // V3.6.4: depth fog (跟 Marble 漏斗一致: 远的点 alpha 0.55, 近的 1.0, 中间线性)
+        float fog = 0.55 + 0.45 * vDepth;
+        // V3.6.3: 白色高亮环 (vFocusGain > 0.5 时, 在 0.85-0.97 半径范围画白环)
         if (vFocusGain > 0.5) {
           vec2 uv = gl_PointCoord - vec2(0.5);
           float d = length(uv) * 2.0;  // 0..1
@@ -326,7 +333,7 @@ function buildNodeMesh() {
             col = mix(vColor, vec3(1.0), 0.95);
           }
         }
-        gl_FragColor = vec4(col, tex.a);
+        gl_FragColor = vec4(col * fog, tex.a * fog);
       }
     `,
     vertexColors: true,
