@@ -66,7 +66,6 @@ async function init() {
   // 3) UI
       buildLegend();
   setupSearch();
-  setupLangSwitch();
   setupCardClose();
   setupAutoRotateToggle();
 
@@ -819,32 +818,6 @@ function setupSearch() {
 }
 
 // ============== UI: 语言切换 ==============
-function setupLangSwitch() {
-      btn.onclick = () => {
-      const lang = btn.dataset.lang;
-      if (lang === currentLang) return;
-            setLang(lang);
-              b.classList.remove('on'); b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('on'); btn.setAttribute('aria-selected', 'true');
-            
-      // 3) 转换所有概念标题
-      if (lang === 'zh-TW') {
-        for (const n of DATA.nodes) {
-          if (!n._title_trad && n.title) {
-            n._title_trad = simpToTrad(n.title);
-          }
-          n.title = n._title_trad;
-        }
-      } else {
-        for (const n of DATA.nodes) {
-          if (titleOrig.has(n.id)) n.title = titleOrig.get(n.id);
-        }
-      }
-      // 4) 重新渲染已打开的卡片 + 图例
-      buildLegend();
-      if (window._currentNode) showCard(window._currentNode);
-    };
   });
 }
 

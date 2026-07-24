@@ -130,8 +130,7 @@ async function init() {
   setFunnelHeader();
   buildLegend();
   setupSearch();
-  setupLangSwitch();
-  setupCardClose();
+    setupCardClose();
   setupHistoryKeys();
 
   // 4) Stats
@@ -911,23 +910,6 @@ function setupSearch() {
 }
 
 // ============== 语言切换 ==============
-function setupLangSwitch() {
-        btn.classList.add('on'); btn.setAttribute('aria-selected', 'true');
-      setFunnelHeader();
-      // 转换所有概念标题
-      if (lang === 'zh-TW') {
-        for (const n of NODES) {
-          if (!n._title_trad && n.t) n._title_trad = simpToTrad(n.t);
-          n.t = n._title_trad;
-        }
-      } else {
-        for (const n of NODES) {
-          if (titleOrig.has(n.id)) n.t = titleOrig.get(n.id);
-        }
-      }
-      buildLegend();
-      if (selected >= 0) showCard(selected);
-    });
   });
 }
 
