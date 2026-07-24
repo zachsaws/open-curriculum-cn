@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="基于 2022 义教新课标的中国 K12 知识图谱漏斗视图 — 1906 概念按年级升序展开成倒漏斗, 4736 关系可反向追溯全谱系先决">
+<title>漏斗学习路径视图 · 2022 新课标知识图谱 · Open Curriculum CN</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: #0a0d18; color: #e6e9f2; }
+  #wrap { position: fixed; inset: 0; z-index: 1; cursor: grab; }
+  #wrap.drag { cursor: grabbing; }
+  #cv { display: block; }
+
+  :focus { outline: none; }
+  :focus-visible {
+    outline: 2px solid #6b8cff;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  button:focus-visible, .chip:focus-visible, .r-item:focus-visible, .row:focus-visible, a:focus-visible {
+    outline: 2px solid #6b8cff;
+    outline-offset: 2px;
+  }
+
+  .skip-link {
+    position: absolute; top: -100px; left: 8px; z-index: 100;
+    padding: 8px 14px; background: #6b8cff; color: #fff;
+    font-size: 13px; font-weight: 600; border-radius: 4px;
+    text-decoration: none;
+  }
+  .skip-link:focus-visible { top: 8px; }
+
+  /* 头部 */
+  .header {
+    position: fixed; top: 0; left: 0; right: 0; padding: 20px 28px;
+    z-index: 10; pointer-events: none;
+    background: linear-gradient(180deg, rgba(10,13,24,0.95) 0%, rgba(10,13,24,0) 100%);
+  }
+  .header h1 {
+    font-size: 16px; font-weight: 700; letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .header .sub { font-size: 12px; color: #8a92a8; }
+
+  /* 统计 */
+  .stats {
+    position: fixed; top: 80px; right: 20px; z-index: 10;
+    background: rgba(20, 24, 38, 0.85); backdrop-filter: blur(10px);
+    padding: 10px 14px; border-radius: 8px; font-size: 12px;
+    color: #8a92a8; line-height: 1.6;
+  }
+  .stats b { color: #e6e9f2; font-weight: 600; }
+  .stats .fps-low { color: #f9a825; }
+  .stats .fps-bad { color: #ff6b6b; }
+
+  /* 图例 */
+  .legend {
+    position: fixed; bottom: 20px; left: 20px; z-index: 10;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    max-width: 60vw;
+  }
+  .chip {
+    display: flex; align-items: center; gap: 6px;
+    padding: 5px 10px; border-radius: 14px;
+    background: rgba(20, 24, 38, 0.7); backdrop-filter: blur(8px);
+    font-size: 11px; cursor: pointer; user-select: none;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.15s;
+  }
+  .chip:hover { background: rgba(40, 46, 68, 0.9); }
+  .chip.off { opacity: 0.35; }
+  .chip .sw { width: 8px; height: 8px; border-radius: 50%; }
+  .chip .nm { color: #e6e9f2; }
+  .chip .ct { color: #8a92a8; font-family: "SF Mono", monospace; font-size: 10px; }
+
+  /* 提示卡 */
+  #tip {
+    position: fixed; z-index: 20; pointer-events: none;
+    background: rgba(20, 24, 38, 0.95); backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 10px;
+    padding: 10px 12px; max-width: 280px; font-size: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    opacity: 0; transition: opacity 0.15s;
+  }
+  #tip.on { opacity: 1; }
+  #tip .sw { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+  #tip .ts { color: #8a92a8; font-size: 10px; font-family: "SF Mono", monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+  #tip .ttl { font-weight: 600; margin-top: 4px; line-height: 1.4; }
+  #tip .q { color: #c8cee0; font-size: 11px; line-height: 1.5; margin-top: 6px; }
+
+  /* 详情面板 — 跟 3D 球共用样式, 漏斗专属扩展 (back / lineage-stats) */
+  #card {
+    position: fixed; right: 0; top: 0; bottom: 0; width: min(480px, 100vw);
+    background: rgba(15, 18, 28, 0.96); backdrop-filter: blur(16px);
+    border-left: 1px solid rgba(255,255,255,0.08);
+    padding: 20px 24px; overflow-y: auto; z-index: 15;
+    transform: translateX(100%); transition: transform 0.25s ease-out;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  #card.on { transform: translateX(0); }
+  #card .close { position: absolute; top: 16px; right: 16px; width: 24px; height: 24px; border: none; background: transparent; color: #8a92a8; font-size: 18px; cursor: pointer; }
+  #card .close:hover { color: #e6e9f2; }
+  /* 漏斗专属: back 按钮 (左上) */
+  #card .back {
+    position: absolute; top: 16px; left: 16px;
+    display: none; align-items: center; gap: 4px;
+    padding: 4px 10px; background: rgba(107,140,255,0.12);
+    border: 1px solid rgba(107,140,255,0.3); color: #a5b8f5;
+    border-radius: 4px; font-size: 11px; cursor: pointer;
+    font-family: inherit; font-weight: 600;
+  }
+  #card .back:hover { background: rgba(107,140,255,0.25); color: #fff; }
+  #card .back.on { display: inline-flex; }
+  #card .head { display: flex; align-items: center; gap: 8px; padding-top: 8px; flex-wrap: wrap; }
+  #card .sw { width: 10px; height: 10px; border-radius: 50%; }
+  #card .cs { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+  #card .ctl { font-size: clamp(16px, 2vw, 22px); font-weight: 700; line-height: 1.3; margin-top: 4px; }
+  #card .tag-row { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  /* 漏斗专属: lineage 大统计块 */
+  #card .lin-stats {
+    background: linear-gradient(135deg, rgba(107,140,255,0.18) 0%, rgba(123,201,111,0.12) 100%);
+    border: 1px solid rgba(107,140,255,0.35);
+    border-radius: 10px; padding: 14px 16px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  #card .lin-stats .row1 { display: flex; align-items: baseline; gap: 8px; }
+  #card .lin-stats .n { font-size: 28px; font-weight: 800; color: #fff; line-height: 1; font-family: -apple-system, "SF Pro Display", sans-serif; }
+  #card .lin-stats .u { font-size: 13px; color: #c8d4ff; font-weight: 600; }
+  #card .lin-stats .sub { font-size: 11px; color: #a5b8f5; line-height: 1.5; margin-top: 2px; }
+  #card .lin-stats.empty { background: rgba(123,201,111,0.10); border-color: rgba(123,201,111,0.3); }
+  #card .lin-stats.empty .n { color: #a5e08c; }
+  #card .lin-stats.empty .u { color: #a5e08c; }
+  #card .lin-stats.empty .sub { color: #8a92a8; }
+
+  #card .tag { display: inline-block; padding: 3px 8px; border-radius: 4px; background: rgba(107,140,255,0.12); color: #a5b8f5; font-size: 10px; font-family: "SF Mono", monospace; }
+  #card .tag.bloom { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  #card .tag.diff-1 { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  #card .tag.diff-2 { background: rgba(151,201,111,0.15); color: #c5e08c; }
+  #card .tag.diff-3 { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  #card .tag.diff-4 { background: rgba(201,140,111,0.15); color: #e0a98c; }
+  #card .tag.diff-5 { background: rgba(201,111,111,0.15); color: #e08c8c; }
+  #card .tag.min { background: rgba(255,255,255,0.06); color: #8a92a8; }
+  #card .block { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px 14px; }
+  #card .block-title { font-size: 10px; color: #8a92a8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+  #card .block-title .num { color: #6b8cff; font-family: "SF Mono", monospace; }
+  #card .block-body { font-size: 13px; color: #d8dceb; line-height: 1.7; }
+  #card .block-body em { color: #8a92a8; font-style: normal; font-size: 11px; }
+  #card .kp-list { display: flex; flex-direction: column; gap: 6px; }
+  #card .kp { display: flex; gap: 8px; font-size: 13px; color: #d8dceb; line-height: 1.5; }
+  #card .kp::before { content: "▸"; color: #6b8cff; flex-shrink: 0; }
+  #card .ex-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  #card .ex { padding: 3px 10px; background: rgba(239,107,91,0.12); color: #f5a5a0; font-size: 11px; font-family: "SF Mono", monospace; border-radius: 4px; }
+  #card .sec { margin-top: 4px; }
+  #card .sec .label { display: flex; align-items: center; gap: 6px; font-size: 10px; color: #8a92a8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+  #card .sec .label .k { font-family: "SF Mono", monospace; color: #e6e9f2; }
+  #card .sec .label .k.zero { color: #5a6278; }
+  #card .rows { display: flex; flex-direction: column; gap: 4px; }
+  #card .row {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05); border-radius: 6px;
+    cursor: pointer; text-align: left; width: 100%;
+    font-family: inherit; color: inherit;
+  }
+  #card .row:hover { background: rgba(255,255,255,0.06); }
+  #card .row .rdot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  #card .row .rt { flex: 1; font-size: 12px; line-height: 1.3; }
+  #card .row .ra { font-size: 10px; color: #8a92a8; font-family: "SF Mono", monospace; }
+  #card .empty { font-size: 12px; color: #5a6278; padding: 12px; text-align: center; font-style: italic; }
+  #card .src-link { color: #6b8cff; text-decoration: none; font-size: 11px; }
+  #card .src-link:hover { text-decoration: underline; }
+  .card-action-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+  .card-action-row button {
+    flex: 1; min-width: 0;
+    background: rgba(107, 140, 255, 0.15);
+    border: 1px solid rgba(107, 140, 255, 0.3);
+    color: #a5b8f5; padding: 8px 10px; border-radius: 6px;
+    font-size: 11px; font-weight: 600; cursor: pointer;
+    font-family: inherit;
+  }
+  .card-action-row button:hover { background: rgba(107, 140, 255, 0.25); color: #fff; }
+  .meta-row { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0; }
+  .meta-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; background: rgba(255,255,255,0.05); color: #a5b8f5; font-size: 10px; font-family: "SF Mono", monospace; }
+  .meta-tag.type-conceptual { background: rgba(107,140,255,0.15); color: #a5b8f5; }
+  .meta-tag.type-procedural { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .meta-tag.type-factual { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  .meta-tag.bloom-tag { background: rgba(151,201,111,0.15); color: #c5e08c; }
+
+  /* 搜索框 */
+  .search {
+    position: fixed; top: 80px; left: 20px; z-index: 12;
+    width: 320px;
+  }
+  .search input {
+    width: 100%; padding: 10px 14px 10px 36px; font-size: 13px;
+    background: rgba(20, 24, 38, 0.92); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+    color: #e6e9f2; outline: none;
+    font-family: inherit;
+  }
+  .search input:focus { border-color: #6b8cff; }
+  .search input::placeholder { color: #5a6278; }
+  .search::before {
+    content: "🔍";
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+    color: #8a92a8; font-size: 12px;
+  }
+  .search .results {
+    margin-top: 6px; max-height: 400px; overflow-y: auto;
+    background: rgba(20, 24, 38, 0.95); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+    padding: 4px;
+    display: none;
+  }
+  .search .results.on { display: block; }
+  .search .r-item {
+    display: flex; align-items: center; gap: 8px; padding: 8px 10px;
+    border-radius: 6px; cursor: pointer; font-size: 12px;
+  }
+  .search .r-item:hover, .search .r-item.active { background: rgba(107,140,255,0.15); }
+  .search .r-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .search .r-t { flex: 1; line-height: 1.3; }
+  .search .r-m { color: #8a92a8; font-family: "SF Mono", monospace; font-size: 10px; }
+  .search .r-empty { padding: 12px; text-align: center; color: #5a6278; font-size: 12px; }
+  .search .r-count { padding: 6px 10px; color: #5a6278; font-size: 10px; font-family: "SF Mono", monospace; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 4px; }
+
+  /* 语言切换 */
+  .lang-switch {
+    position: fixed; top: 20px; right: 130px; z-index: 20;
+    display: flex; gap: 4px;
+  }
+  .lang-switch button {
+    background: rgba(20, 24, 38, 0.85); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08); color: #8a92a8;
+    padding: 4px 10px; font-size: 11px; cursor: pointer;
+    border-radius: 4px; font-family: "SF Mono", monospace;
+  }
+  .lang-switch button.on { color: #e6e9f2; border-color: #6b8cff; background: rgba(107,140,255,0.2); }
+
+  /* 视图切换 (右上) — 漏斗视图本身就是目的地, 切回 3D 球 */
+  .view-toggle {
+    position: fixed; top: 20px; right: 20px; z-index: 21;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(107,140,255,0.18); backdrop-filter: blur(10px);
+    border: 1px solid rgba(107,140,255,0.4);
+    color: #c8d4ff; padding: 6px 14px; border-radius: 6px;
+    font-size: 12px; font-weight: 600; text-decoration: none;
+    font-family: inherit; transition: all 0.15s;
+  }
+  .view-toggle:hover {
+    background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
+  }
+  .view-toggle .icon { font-size: 14px; }
+
+  /* 加载状态 */
+  #loading {
+    position: fixed; inset: 0; z-index: 30;
+    display: flex; align-items: center; justify-content: center;
+    background: #0a0d18; transition: opacity 0.4s;
+    flex-direction: column; gap: 16px;
+  }
+  #loading.done { opacity: 0; pointer-events: none; }
+  #loading .spinner {
+    width: 32px; height: 32px; border: 2px solid rgba(255,255,255,0.1);
+    border-top-color: #6b8cff; border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #loading .msg { font-size: 13px; color: #8a92a8; }
+  #loading .err { color: #ff6b6b; font-size: 12px; max-width: 480px; text-align: center; line-height: 1.5; }
+
+  /* 移动端 (≤ 600px) */
+  @media (max-width: 600px) {
+    .header { padding: 12px 16px; padding-top: 56px; }
+    .header h1 { font-size: 14px; }
+    .header .sub { font-size: 11px; }
+    .stats {
+      top: 130px; right: 10px; left: 10px;
+      padding: 8px 12px; font-size: 11px; line-height: 1.5;
+      display: flex; flex-wrap: wrap; gap: 6px 14px;
+    }
+    .stats > div { display: inline; }
+    .stats > div:not(:last-child)::after { content: " · "; color: #5a6278; }
+    .lang-switch { top: 12px; left: 10px; right: auto; }
+    .lang-switch button { padding: 3px 8px; font-size: 10px; }
+    .view-toggle { top: 12px; right: 10px; padding: 4px 8px; font-size: 10px; gap: 0; }
+    .view-toggle span:not(.icon) { display: none; }
+    .view-toggle .icon { font-size: 16px; }
+    .search { top: 195px; left: 10px; right: 10px; width: auto; max-width: none; }
+    .search input { font-size: 12px; padding: 8px 12px 8px 32px; }
+    .legend { bottom: 10px; left: 10px; right: 10px; max-width: none; max-height: 36vh; overflow-y: auto; gap: 4px; }
+    .legend .chip { padding: 4px 8px; font-size: 10px; }
+    #card { padding: 14px 16px; gap: 10px; }
+    #card .ctl { font-size: 18px; }
+    #card .lin-stats .n { font-size: 22px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+<a href="#wrap" class="skip-link">跳到主内容</a>
+
+<div id="loading" role="status" aria-live="polite">
+  <div class="spinner" aria-hidden="true"></div>
+  <div class="msg" id="loadingMsg">加载漏斗学习路径...</div>
+</div>
+
+<div id="wrap" tabindex="0" role="application" aria-label="倒漏斗概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情和反向追溯先决"></div>
+
+<div class="header header-funnel">
+  <h1 id="headerTitleFunnel">2022 新课标知识图谱 · 漏斗学习路径视图</h1>
+  <div class="sub" id="headerSubFunnel">1906 概念按年级升序展开成倒漏斗 · 4736 关系可反向追溯全谱系先决 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换回 3D 球面视图 →</a></div>
+</div>
+
+<a href="./index.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="切换到 3D 球面视图">
+  <span class="icon">●</span><span>3D 球面</span>
+</a>
+
+<div class="lang-switch" role="tablist" aria-label="语言切换">
+  <button data-lang="zh-CN" class="on" id="lang-zh-CN" role="tab" aria-selected="true" aria-label="简体中文" data-i18n-label="lang_zh_cn">简</button>
+  <button data-lang="zh-TW" id="lang-zh-TW" role="tab" aria-selected="false" aria-label="繁體中文" data-i18n-label="lang_zh_tw">繁</button>
+  <button data-lang="en" id="lang-en" role="tab" aria-selected="false" aria-label="English" data-i18n-label="lang_en">EN</button>
+</div>
+
+<div class="stats" aria-label="图谱统计">
+  <div><span data-i18n="stats_concepts">概念数</span>: <b id="nCount" aria-live="polite">-</b></div>
+  <div><span data-i18n="stats_edges">关系数</span>: <b id="eCount" aria-live="polite">-</b></div>
+  <div><span data-i18n="stats_subjects">学科数</span>: <b id="gCount" aria-live="polite">-</b></div>
+  <div style="margin-top:6px;">
+    FPS: <b id="fps" aria-live="polite">-</b> · <span id="viewHint">拖动旋转 · 滚轮缩放 · 单击节点追溯先决</span>
+  </div>
+</div>
+
+<div class="search">
+  <input type="text" id="searchInput" placeholder="搜索概念 ID / 标题 / 子领域..." autocomplete="off"
+         role="searchbox" aria-label="搜索概念" aria-autocomplete="list" aria-controls="searchResults">
+  <div class="results" id="searchResults" role="listbox" aria-label="搜索结果"></div>
+</div>
+
+<div class="legend" id="legend" role="group" aria-label="学科筛选"></div>
+
+<div id="tip">
+  <span class="sw" id="tip-sw"></span>
+  <span class="ts" id="tip-ts"></span>
+  <div class="ttl" id="tip-ttl"></div>
+  <div class="q" id="tip-q"></div>
+</div>
+
+<div id="card" role="dialog" aria-modal="false" aria-label="概念详情" aria-hidden="true">
+  <button class="back" id="card-back" aria-label="返回上一个概念">← 返回</button>
+  <button class="close" aria-label="关闭详情面板">×</button>
+  <div class="head">
+    <span class="sw" id="card-sw"></span>
+    <span class="cs" id="card-cs"></span>
+  </div>
+  <div class="ctl" id="card-ctl"></div>
+  <div class="tag-row" id="card-tags"></div>
+
+  <div class="lin-stats" id="card-lin-stats">
+    <div class="row1">
+      <div class="n" id="card-lin-n">0</div>
+      <div class="u" id="card-lin-u">prerequisites in total</div>
+    </div>
+    <div class="sub" id="card-lin-sub">选中节点后, BFS 反向追溯所有直接 + 间接先决概念.</div>
+  </div>
+
+  <div class="block" id="card-content-req-block">
+    <div class="block-title"><span data-i18n="card_content_req">📋 课标内容要求</span> <span class="num" id="card-page-link"></span></div>
+    <div class="block-body" id="card-content-req"></div>
+  </div>
+
+  <div class="block" id="card-academic-req-block">
+    <div class="block-title" data-i18n="card_academic_req">🎯 课标学业要求</div>
+    <div class="block-body" id="card-academic-req"></div>
+  </div>
+
+  <div class="block" id="card-key-points-block">
+    <div class="block-title" data-i18n="card_key_points">💡 知识要点</div>
+    <div class="kp-list" id="card-key-points"></div>
+  </div>
+
+  <div class="block" id="card-examples-block" style="display:none">
+    <div class="block-title" data-i18n="card_examples">📚 课标例题</div>
+    <div class="ex-row" id="card-examples"></div>
+  </div>
+
+  <div class="block" id="card-assessment-block" style="display:none">
+    <div class="block-title" data-i18n="card_assessment">🎯 评估提示</div>
+    <div class="block-body" id="card-assessment"></div>
+  </div>
+
+  <div class="block" id="card-meta-block" style="display:none">
+    <div class="meta-row" id="card-meta"></div>
+  </div>
+
+  <div class="sec sec-pre">
+    <div class="label"><span data-i18n="card_prereq">直接先决</span> · <span class="k" id="card-pre-k">0</span></div>
+    <div class="rows" id="card-pre-rows"></div>
+  </div>
+  <div class="sec sec-next">
+    <div class="label"><span data-i18n="card_unlocks">解锁后继</span> · <span class="k" id="card-next-k">0</span></div>
+    <div class="rows" id="card-next-rows"></div>
+  </div>
+</div>
+
+<script src="./i18n.js"></script>
+<script src="./simp_to_trad.js"></script>
+<script src="./funnel.js"></script>
+</body>
+</html>
