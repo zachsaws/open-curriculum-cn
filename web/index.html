@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="中国 K12 知识图谱: 教育部 2022 最新课标, 14 个学科 1906 核心概念, 4736 条先决关系, 3D 球面 + 漏斗学习路径两种视图。">
+<meta name="description" content="中国 1906 个小学到初中概念的「学之前要会什么 / 学之后能学什么」图谱。教育部 2022 最新课标, 14 个学科全覆盖, 开源免费。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="中国 K12 知识图谱 · 教育部 2022 最新课标">
-<meta property="og:description" content="1906 核心概念 · 4736 条先决关系 · 14 个学科全覆盖。教育部 2022 最新课标。">
+<meta property="og:title" content="每一步学什么, 之前漏了哪一步 · 中国 K12 学习路径图谱">
+<meta property="og:description" content="1906 概念 · 4736 条学习路径 · 14 学科全覆盖。基于教育部 2022 最新课标, 开源免费。">
 <meta property="og:image" content="./data/og-sphere.png">
-<title>中国 K12 知识图谱 · 教育部 2022 最新课标</title>
+<title>每一步学什么, 之前漏了哪一步 · 中国 K12 学习路径图谱</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 100%; min-height: 100%; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: #0a0d18; color: #e6e9f2; line-height: 1.6; }
@@ -29,13 +29,10 @@
   .hero { max-width: 1200px; margin: 0 auto; padding: 100px 24px 60px; text-align: center; }
   .hero h1 { font-size: clamp(36px, 5vw, 60px); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; background: linear-gradient(135deg, #e6e9f2 0%, #a5b8f5 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 24px; }
   .hero .sub { font-size: clamp(16px, 2vw, 20px); color: #8a92a8; max-width: 700px; margin: 0 auto 40px; }
-  .hero .stats { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin: 40px 0; }
-  .hero .stat { text-align: center; }
-  .hero .stat .v { font-size: 36px; font-weight: 800; color: #6b8cff; line-height: 1; }
-  .hero .stat .l { font-size: 13px; color: #8a92a8; margin-top: 6px; }
+  .hero .sub strong { color: #e6e9f2; font-weight: 600; }
 
   /* === CTA === */
-  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
+  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
   .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; font-family: inherit; }
   .btn-primary { background: #6b8cff; color: #fff; }
   .btn-primary:hover { background: #4f75ee; color: #fff; transform: translateY(-1px); }
@@ -43,10 +40,25 @@
   .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
   .btn .arrow { font-size: 18px; line-height: 1; }
 
-  /* === 大块: 视图预览 === */
+  /* === 通用 section === */
   .section { max-width: 1200px; margin: 0 auto; padding: 60px 24px; }
   .section h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
   .section .sub { font-size: 15px; color: #8a92a8; margin-bottom: 32px; }
+
+  /* === 4 句对仗 (它能做什么) === */
+  .values-section { background: rgba(255, 255, 255, 0.02); padding: 80px 24px; }
+  .values-section .inner { max-width: 1200px; margin: 0 auto; }
+  .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 900px) { .value-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .value-grid { grid-template-columns: 1fr; } }
+  .value { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 24px; transition: all 0.15s; }
+  .value:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(107, 140, 255, 0.4); }
+  .value .emoji { font-size: 36px; margin-bottom: 12px; }
+  .value h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+  .value p { font-size: 13px; color: #8a92a8; margin-bottom: 14px; line-height: 1.6; }
+  .value a { font-size: 13px; color: #6b8cff; }
+
+  /* === 视图预览 === */
   .previews { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .preview { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 32px; transition: all 0.15s; cursor: pointer; display: block; color: inherit; }
   .preview:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(107, 140, 255, 0.4); transform: translateY(-2px); }
@@ -67,7 +79,7 @@
   @media (max-width: 1100px) { .tree { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 800px) { .tree { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 500px) { .tree { grid-template-columns: 1fr; } }
-  .tree-card { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 18px; cursor: pointer; transition: all 0.15s; }
+  .tree-card { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 18px; cursor: pointer; transition: all 0.15s; color: inherit; display: block; }
   .tree-card:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(107, 140, 255, 0.4); }
   .tree-card .head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
   .tree-card .sw { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
@@ -76,17 +88,26 @@
   .tree-card .stages { font-size: 11px; color: #5a6278; margin-top: 8px; }
   .tree-card .stage { display: inline-block; padding: 2px 8px; background: rgba(255, 255, 255, 0.04); border-radius: 3px; margin-right: 4px; font-family: "SF Mono", monospace; }
 
-  /* === 角色入口 === */
-  .roles { max-width: 1200px; margin: 0 auto; padding: 60px 24px; }
-  .roles h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
-  .roles .sub { font-size: 15px; color: #8a92a8; margin-bottom: 32px; }
-  .role-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  @media (max-width: 800px) { .role-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 480px) { .role-grid { grid-template-columns: 1fr; } }
-  .role { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 24px; text-align: center; }
-  .role .emoji { font-size: 36px; margin-bottom: 12px; }
-  .role h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
-  .role p { font-size: 13px; color: #8a92a8; }
+  /* === Trust 数字 (为什么可信) === */
+  .trust-section { padding: 60px 24px; }
+  .trust-section .inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+  .trust-section h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .trust-section .sub { font-size: 14px; color: #8a92a8; margin-bottom: 32px; }
+  .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 600px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
+  .trust-card { padding: 24px 16px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 8px; }
+  .trust-card .v { font-size: 32px; font-weight: 800; color: #6b8cff; line-height: 1; margin-bottom: 8px; }
+  .trust-card .l { font-size: 12px; color: #8a92a8; }
+
+  /* === 我们不做 === */
+  .not-doing-section { background: rgba(255, 255, 255, 0.02); padding: 80px 24px; }
+  .not-doing-section .inner { max-width: 900px; margin: 0 auto; text-align: center; }
+  .not-doing-section h2 { font-size: 28px; font-weight: 700; margin-bottom: 28px; }
+  .not-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 32px; }
+  .not-list span { padding: 10px 20px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; font-size: 14px; color: #8a92a8; background: rgba(255, 255, 255, 0.02); }
+  .not-one-liner { font-size: 18px; color: #e6e9f2; margin-bottom: 16px; line-height: 1.7; }
+  .not-one-liner strong { color: #6b8cff; font-weight: 700; }
+  .not-source { font-size: 12px; color: #5a6278; }
 
   /* === 数据下载 === */
   .download { max-width: 1200px; margin: 0 auto; padding: 60px 24px; text-align: center; }
@@ -107,9 +128,10 @@
   <div class="nav-inner">
     <div class="logo">
       <span class="badge">课</span>
-      <span>中国 K12 知识图谱</span>
+      <span>中国 K12 学习路径图谱</span>
     </div>
     <div class="nav-links">
+      <a href="#values">能做什么</a>
       <a href="#tree">学科</a>
       <a href="#download">下载</a>
       <a href="#about">关于</a>
@@ -118,22 +140,47 @@
 </nav>
 
 <header class="hero">
-  <h1>中国孩子学的每一个知识点<br>一次看清</h1>
-  <p class="sub">基于教育部 2022 最新课标, 覆盖 14 个学科、1906 个核心概念、4736 条先决关系。<br>教师备课、家长辅导、学生预习, 都能用。</p>
-
-  <div class="stats">
-    <div class="stat"><div class="v">1906</div><div class="l">核心概念</div></div>
-    <div class="stat"><div class="v">4736</div><div class="l">先决关系</div></div>
-    <div class="stat"><div class="v">14</div><div class="l">学科</div></div>
-    <div class="stat"><div class="v">4</div><div class="l">学段</div></div>
-  </div>
+  <h1>每一步学什么,<br>之前漏了哪一步</h1>
+  <p class="sub">中国 1906 个小学到初中概念的<strong>「学之前要会什么 / 学之后能学什么」</strong>图谱。<br>教师、家长、学生都能用。开源免费。</p>
 
   <div class="cta-row">
-    <a class="btn btn-primary" href="./explore.html">立即探索图谱 <span class="arrow">→</span></a>
-    <a class="btn btn-ghost" href="#tree">按学科浏览</a>
+    <a class="btn btn-primary" href="./explore.html">进入探索 <span class="arrow">→</span></a>
     <a class="btn btn-ghost" href="#download">下载数据</a>
   </div>
 </header>
+
+<section class="values-section" id="values">
+  <div class="inner">
+    <h2>它能做什么</h2>
+    <p class="sub">4 个最常见的使用场景</p>
+    <div class="value-grid">
+      <div class="value">
+        <div class="emoji">🆘</div>
+        <h3>孩子卡在某个知识点</h3>
+        <p>看看之前漏了哪一步。翻这条概念的所有前置知识点, 从小学到初中。</p>
+        <a href="./funnel.html">了解详情 <span class="arrow">→</span></a>
+      </div>
+      <div class="value">
+        <div class="emoji">📖</div>
+        <h3>老师备课</h3>
+        <p>翻完整的学习路径。一个知识点之前要会什么、之后能学什么, 全部列出来。</p>
+        <a href="./funnel.html">了解详情 <span class="arrow">→</span></a>
+      </div>
+      <div class="value">
+        <div class="emoji">🧒</div>
+        <h3>学生想提前学</h3>
+        <p>一眼看到先后顺序。这个概念之前要会什么、之后能学什么。</p>
+        <a href="./explore.html">了解详情 <span class="arrow">→</span></a>
+      </div>
+      <div class="value">
+        <div class="emoji">🔗</div>
+        <h3>找学科之间的连接</h3>
+        <p>看到概念之间怎么连。跨学科找相关知识点, 看课程设计空间。</p>
+        <a href="./funnel.html">了解详情 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <h2>两种视图, 不同切入点</h2>
@@ -148,7 +195,7 @@
     <a class="preview" href="./funnel.html">
       <div class="icon">▼</div>
       <h3>漏斗学习路径</h3>
-      <p>从入门到进阶的倒漏斗, 选节点后反向追溯所有先决。适合"看学习顺序, 找'为了学这个要学什么'"。</p>
+      <p>从入门到进阶的倒漏斗, 选节点后反向追溯所有前置。适合"看学习顺序, 找'为了学这个要学什么'"。</p>
       <div class="meta">Canvas 2D · lineage trace · 桌面 + 移动</div>
     </a>
   </div>
@@ -162,47 +209,47 @@
   </div>
 </section>
 
-<section class="roles">
-  <h2>谁在用?</h2>
-  <p class="sub">不同角色用这套图谱的方式不一样。</p>
-  <div class="role-grid">
-    <div class="role">
-      <div class="emoji">👨‍🏫</div>
-      <h3>教师</h3>
-      <p>备课参考, 知道"教这个之前学生要会什么", 课后看学生卡在哪一环。</p>
+<section class="trust-section" id="trust">
+  <div class="inner">
+    <h2>为什么可信</h2>
+    <p class="sub">一手数据, 公开授权, 持续维护</p>
+    <div class="trust-grid">
+      <div class="trust-card"><div class="v">1906</div><div class="l">核心概念</div></div>
+      <div class="trust-card"><div class="v">14</div><div class="l">学科全覆盖</div></div>
+      <div class="trust-card"><div class="v">4736</div><div class="l">学习路径</div></div>
+      <div class="trust-card"><div class="v">开源</div><div class="l">CC-BY-SA 4.0</div></div>
     </div>
-    <div class="role">
-      <div class="emoji">👪</div>
-      <h3>家长</h3>
-      <p>了解孩子学的进度, 知道"现在学到哪, 接下来要学什么", 跟学校同步。</p>
+  </div>
+</section>
+
+<section class="not-doing-section" id="about">
+  <div class="inner">
+    <h2>我们不做</h2>
+    <div class="not-list">
+      <span>不是题库</span>
+      <span>不是网课</span>
+      <span>不是 AI 老师</span>
+      <span>不是学习机</span>
     </div>
-    <div class="role">
-      <div class="emoji">🎓</div>
-      <h3>学生</h3>
-      <p>预习找"我先要会什么", 复习找"我之后能学什么", 找自己卡的地方。</p>
-    </div>
-    <div class="role">
-      <div class="emoji">📚</div>
-      <h3>教研</h3>
-      <p>看跨学科连接, 找课程设计空间, 评估课标覆盖率。</p>
-    </div>
+    <p class="not-one-liner">就是一份  <strong>学之前要会什么 / 学之后能学什么</strong>  的图谱</p>
+    <p class="not-source">数据来自教育部 2022 最新课标 · 开源免费 · CC-BY-SA 4.0</p>
   </div>
 </section>
 
 <section class="download" id="download">
   <h2>数据下载</h2>
-  <p class="sub">整文件 graph.json (3.8 MB, 含 1906 概念 + 4736 关系 + 学科配色 + 中心度)。<br>CC-BY-SA 4.0, 可下载使用, 注明出处即可。</p>
+  <p class="sub">整文件 graph.json (3.8 MB, 含 1906 概念 + 4736 学习路径 + 学科配色 + 中心度)。<br>CC-BY-SA 4.0, 可下载使用, 注明出处即可。</p>
   <div class="download-box">
     <code>curl -O https://&lt;当前公网域名&gt;/data/graph.json</code>
     <p class="note">或直接 <a href="./data/graph.json" download>点此下载 graph.json</a> · 8 KB 缩略: <a href="./data/graph.json.gz">graph.json.gz</a></p>
   </div>
 </section>
 
-<footer class="footer" id="about">
-  <div class="row">中国 K12 知识图谱 · 基于教育部 2022 最新课标</div>
-  <div class="row">数据 1906 概念 / 4736 关系 / 14 学科 / 4 学段</div>
+<footer class="footer">
+  <div class="row">中国 K12 学习路径图谱 · 基于教育部 2022 最新课标</div>
+  <div class="row">数据 1906 概念 / 4736 学习路径 / 14 学科 / 4 学段</div>
   <div class="row">License: 内容 CC-BY-SA 4.0 · 数据库 CC0 · 基于 2022 教育部义务教育课程方案</div>
-  <div class="row">V3.5 产品化首页 · 反馈: <a href="mailto:hi@example.com">hi@example.com</a></div>
+  <div class="row">V3.6 产品化首页 · 反馈: <a href="mailto:hi@example.com">hi@example.com</a></div>
 </footer>
 
 <script>
