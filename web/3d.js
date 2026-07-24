@@ -673,8 +673,9 @@ function setupInteraction() {
 function selectNode(idx) {
   selectedNodeIdx = idx;
   const node = DATA.nodes[idx];
-  showCard(node);
+  // V3.6.5: 先 highlightNode (它会 buildLineage), 后 showCard (lin-stats 用 lineageNodes)
   highlightNode(idx);
+  showCard(node);
   // V3.6.3: 相机 tween + 选中节点放大
   setFocusGainTarget(idx);
   focusNode(idx);
@@ -917,16 +918,12 @@ function showCard(node) {
   fillRows(document.getElementById('card-pre-rows'), preEdges, 'pre');
   fillRows(document.getElementById('card-next-rows'), nextEdges, 'next');
 
-  // V3.6.2: lineage 统计 (跟 funnel.js 一致)
+  // V3.6.2: lineage 统计 (跟 funnel.js 一致, V3.6.5 改成用 highlightNode 已算的 lineageNodes)
   const linStats = document.getElementById('card-lin-stats');
   const linN = document.getElementById('card-lin-n');
   const linU = document.getElementById('card-lin-u');
   const linSub = document.getElementById('card-lin-sub');
   if (linStats && linN && linU && linSub) {
-    // showCard 可能在 highlightNode 之前调用 (selectNode 顺序), 这里补算一次
-    if (lineageNodes.size === 0 || !lineageNodes.has(idx)) {
-      buildLineage(idx);
-    }
     const cnt = lineageNodes.size - 1;  // 减去自己
     linN.textContent = cnt;
     if (cnt === 0) {
