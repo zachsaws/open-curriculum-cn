@@ -609,9 +609,9 @@ function showCard(node) {
     const block = document.getElementById('card-' + k + '-block');
     const body = document.getElementById('card-' + k);
     const key = k.replace(/-/g, '_');
-    if (n[key]) {
+    if (node[key]) {
       block.style.display = '';
-      body.textContent = n[key];
+      body.textContent = node[key];
     } else {
       block.style.display = 'none';
     }
