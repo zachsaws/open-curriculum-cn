@@ -40,6 +40,11 @@ let edgesToFrom = new Map();
 let neighborMap = new Map();    // idx -> Set
 let edgeBaseColor = new THREE.Color(0xb8c0d8);
 
+// ============== 谱系 (lineage) — BFS 反向追溯所有直接+间接先决 (V3.6.2) ==============
+let lineageNodes = new Set();    // idx set
+let lineageEdgeIdxs = new Set(); // edgesData 索引 set
+let lineageMesh = null;          // 高亮 lineage 边的 Line mesh
+
 let selectedNodeIdx = null;
 let hoveredNodeIdx = null;
 let isMobile = false;
@@ -415,6 +420,70 @@ function buildHighlightEdgeMesh() {
   scene.add(linesHighlightMesh);
 }
 
+// ============== 谱系 BFS (跟 funnel.js 1:1 复刻, 沿 edgesFromTo 反向走) ==============
+// 沿 edgesFromTo (u 是 from) BFS, 找 u 的所有直接 + 间接先决 (e.toIdx)
+function buildLineage(startIdx) {
+  const nodes = new Set([startIdx]);
+  const edges = new Set();
+  const q = [startIdx];
+  while (q.length) {
+    const u = q.shift();
+    const outEdges = edgesFromTo.get(u) || [];
+    for (const e of outEdges) {
+      edges.add(e.edgeIdx);
+      if (!nodes.has(e.toIdx)) {
+        nodes.add(e.toIdx);
+        q.push(e.toIdx);
+      }
+    }
+  }
+  lineageNodes = nodes;
+  lineageEdgeIdxs = edges;
+}
+
+// Lineage 边 mesh — 用选中节点学科色 lerp 白 0.5, opacity 0.75 (比邻居边 0.55 更亮)
+function buildLineageEdgeMesh() {
+  if (lineageMesh) {
+    scene.remove(lineageMesh);
+    lineageMesh.geometry.dispose();
+    lineageMesh.material.dispose();
+  }
+  if (selectedNodeIdx === null || lineageEdgeIdxs.size === 0) {
+    lineageMesh = null;
+    return;
+  }
+  const segments = EDGE_SEGMENTS;
+  const totalPts = lineageEdgeIdxs.size * (segments + 1);
+  const linePositions = new Float32Array(totalPts * 3);
+  let pIdx = 0;
+  const A = new THREE.Vector3();
+  const B = new THREE.Vector3();
+  for (const ei of lineageEdgeIdxs) {
+    const e = edgesData[ei];
+    A.set(nodePositions[e.fromIdx*3], nodePositions[e.fromIdx*3+1], nodePositions[e.fromIdx*3+2]);
+    B.set(nodePositions[e.toIdx*3], nodePositions[e.toIdx*3+1], nodePositions[e.toIdx*3+2]);
+    const arc = slerpArc(A, B, segments);
+    for (const p of arc) {
+      linePositions[pIdx*3] = p.x;
+      linePositions[pIdx*3+1] = p.y;
+      linePositions[pIdx*3+2] = p.z;
+      pIdx++;
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3));
+  const selColor = nodeBaseColors[selectedNodeIdx].clone().lerp(new THREE.Color(0xffffff), 0.5);
+  const mat = new THREE.LineBasicMaterial({
+    color: selColor,
+    transparent: true,
+    opacity: 0.75,
+    depthWrite: false,
+  });
+  lineageMesh = new THREE.Line(geo, mat);
+  lineageMesh.frustumCulled = false;
+  scene.add(lineageMesh);
+}
+
 // ============== 交互 ==============
 function setupInteraction() {
   const dom = renderer.domElement;
@@ -514,12 +583,18 @@ function clearSelection() {
   window._currentNode = null;
   document.getElementById('card').classList.remove('on');
   document.getElementById('card').setAttribute('aria-hidden', 'true');
+  // V3.6.2: 清掉 lineage 状态
+  lineageNodes = new Set();
+  lineageEdgeIdxs = new Set();
+  if (lineageMesh) { scene.remove(lineageMesh); lineageMesh.geometry.dispose(); lineageMesh.material.dispose(); lineageMesh = null; }
   applyFilterToColors(); // 重置颜色
   buildHighlightEdgeMesh();
+  buildLineageEdgeMesh();
 }
 
 function highlightNode(idx) {
-  const neighborSet = neighborMap.get(idx) || new Set();
+  // V3.6.2: 沿 edgesFromTo BFS 反向追溯所有直接 + 间接先决
+  buildLineage(idx);
   const colors = pointsMesh.geometry.attributes.color.array;
   for (let i = 0; i < DATA.nodes.length; i++) {
     const c = nodeBaseColors[i];
@@ -528,10 +603,11 @@ function highlightNode(idx) {
       colors[i*3] = Math.min(1, c.r * 0.5 + 0.85);
       colors[i*3+1] = Math.min(1, c.g * 0.5 + 0.85);
       colors[i*3+2] = Math.min(1, c.b * 0.5 + 0.85);
-    } else if (neighborSet.has(i)) {
+    } else if (lineageNodes.has(i)) {
+      // lineage 节点 (含直接邻居 + 间接先决): 保持原色
       colors[i*3] = c.r; colors[i*3+1] = c.g; colors[i*3+2] = c.b;
     } else {
-      // 非邻居: 压暗到 0.15
+      // 非 lineage: 压暗到 0.18
       colors[i*3] = c.r * 0.18;
       colors[i*3+1] = c.g * 0.18;
       colors[i*3+2] = c.b * 0.18;
@@ -539,6 +615,7 @@ function highlightNode(idx) {
   }
   pointsMesh.geometry.attributes.color.needsUpdate = true;
   buildHighlightEdgeMesh();
+  buildLineageEdgeMesh();
 }
 
 // 学科过滤 (chip 点击) — 隐藏非选中学科
@@ -734,6 +811,33 @@ function showCard(node) {
   };
   fillRows(document.getElementById('card-pre-rows'), preEdges, 'pre');
   fillRows(document.getElementById('card-next-rows'), nextEdges, 'next');
+
+  // V3.6.2: lineage 统计 (跟 funnel.js 一致)
+  const linStats = document.getElementById('card-lin-stats');
+  const linN = document.getElementById('card-lin-n');
+  const linU = document.getElementById('card-lin-u');
+  const linSub = document.getElementById('card-lin-sub');
+  if (linStats && linN && linU && linSub) {
+    // showCard 可能在 highlightNode 之前调用 (selectNode 顺序), 这里补算一次
+    if (lineageNodes.size === 0 || !lineageNodes.has(idx)) {
+      buildLineage(idx);
+    }
+    const cnt = lineageNodes.size - 1;  // 减去自己
+    linN.textContent = cnt;
+    if (cnt === 0) {
+      linU.textContent = '起点节点';
+      linStats.classList.add('empty');
+      linSub.textContent = '之前没有要学的概念 — 这是可学起的入口, 单击反向追溯会立刻回到这里.';
+    } else if (cnt === 1) {
+      linU.textContent = '之前要学的 (全部)';
+      linStats.classList.remove('empty');
+      linSub.textContent = '只需掌握 1 个前置 (含直接 + 间接), 即可学这个概念.';
+    } else {
+      linU.textContent = '之前要学的 (全部)';
+      linStats.classList.remove('empty');
+      linSub.textContent = `从起点到此概念, 共需掌握 ${cnt} 个前置 (含直接 + 间接). 已高亮显示在球中.`;
+    }
+  }
 
   card.classList.add('on');
   card.setAttribute('aria-hidden', 'false');
