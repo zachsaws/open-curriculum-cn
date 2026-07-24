@@ -131,7 +131,30 @@ async function init() {
   document.getElementById('loading').classList.add('done');
   growStart = performance.now();
   fpsLastTime = growStart;
-  requestAnimationFrame(frame);
+  
+// V3.5: 支持 ?subject=xxx query, 启动时只显示该学科
+const urlSubject = new URLSearchParams(location.search).get('subject');
+if (urlSubject) {
+  // 等节点加载完后再限制 active
+  setTimeout(() => {
+    for (let i = 0; i < N.length; i++) {
+      if (N[i].g !== SUBJ_IDX[urlSubject]) active.delete(i);
+    }
+    // 同步图例
+    document.querySelectorAll('.chip').forEach((el, idx) => {
+      if (idx !== SUBJ_IDX[urlSubject]) {
+        el.classList.add('off');
+        el.setAttribute('aria-pressed', 'false');
+        active.delete(idx);
+      }
+    });
+    // 滚动到该学科的中央
+    // 简易: 触发一次重画
+    requestAnimationFrame(frame);
+  }, 100);
+}
+
+requestAnimationFrame(frame);
 }
 
 // ============== 布局: 按年级升序展开成倒漏斗 ==============
@@ -435,7 +458,30 @@ function frame(ts) {
 
   draw();
   updateFPS();
-  requestAnimationFrame(frame);
+  
+// V3.5: 支持 ?subject=xxx query, 启动时只显示该学科
+const urlSubject = new URLSearchParams(location.search).get('subject');
+if (urlSubject) {
+  // 等节点加载完后再限制 active
+  setTimeout(() => {
+    for (let i = 0; i < N.length; i++) {
+      if (N[i].g !== SUBJ_IDX[urlSubject]) active.delete(i);
+    }
+    // 同步图例
+    document.querySelectorAll('.chip').forEach((el, idx) => {
+      if (idx !== SUBJ_IDX[urlSubject]) {
+        el.classList.add('off');
+        el.setAttribute('aria-pressed', 'false');
+        active.delete(idx);
+      }
+    });
+    // 滚动到该学科的中央
+    // 简易: 触发一次重画
+    requestAnimationFrame(frame);
+  }, 100);
+}
+
+requestAnimationFrame(frame);
 }
 
 function updateFPS() {

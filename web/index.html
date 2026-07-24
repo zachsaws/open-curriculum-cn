@@ -230,14 +230,21 @@
     const d = await res.json();
     const nodes = d.nodes || [];
 
-    // 按学科 + 学段 分组
+    // 按学科 + 学段 分组 (用 grade_start 算学段)
     const bySubj = {};
     for (const n of nodes) {
       const s = n.subject || '?';
-      const st = n.stage || 0;
+      const g = n.grade_start;
       if (!bySubj[s]) bySubj[s] = { count: 0, stages: new Set() };
       bySubj[s].count++;
-      bySubj[s].stages.add(st);
+      if (g) {
+        let st;
+        if (g <= 2) st = 1;       // 1-2 年级
+        else if (g <= 4) st = 2;  // 3-4 年级
+        else if (g <= 6) st = 3;  // 5-6 年级
+        else st = 4;              // 7-9 年级
+        bySubj[s].stages.add(st);
+      }
     }
 
     // 14 学科, 按概念数降序
