@@ -702,15 +702,15 @@ function showCard(i) {
   if (cnt === 0) {
     linU.textContent = '起点节点';
     linStats.classList.add('empty');
-    linSub.textContent = '没有任何先决概念 — 这是可学起的入口, 单击 BFS 反向追溯会立刻回到这里.';
+    linSub.textContent = '之前没有要学的概念 — 这是可学起的入口, 单击反向追溯会立刻回到这里.';
   } else if (cnt === 1) {
-    linU.textContent = '先决 (全谱系)';
+    linU.textContent = '之前要学的 (全部)';
     linStats.classList.remove('empty');
-    linSub.textContent = '只需掌握 1 个先决 (含直接 + 间接), 即可解锁此概念.';
+    linSub.textContent = '只需掌握 1 个前置 (含直接 + 间接), 即可学这个概念.';
   } else {
-    linU.textContent = '先决 (全谱系)';
+    linU.textContent = '之前要学的 (全部)';
     linStats.classList.remove('empty');
-    linSub.textContent = `从起点到此概念, 共需掌握 ${cnt} 个先决 (含直接 + 间接). 谱系已高亮显示在漏斗中.`;
+    linSub.textContent = `从起点到此概念, 共需掌握 ${cnt} 个前置 (含直接 + 间接). 谱系已高亮显示在漏斗中.`;
   }
 
   // 内容块 (复用 3D 球)
@@ -782,7 +782,7 @@ function showCard(i) {
   if (r.age_range_start) metaItems.push(`<span class="meta-tag">🎂 ${r.age_range_start}-${r.age_range_end || r.age_range_start} 岁</span>`);
   if (r.centrality !== undefined) {
     const centPct = Math.round(r.centrality * 100);
-    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能解锁)">⭐ 中心度 ${centPct}%</span>`);
+    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能学)">⭐ 中心度 ${centPct}%</span>`);
   }
   if (metaItems.length) { meta.innerHTML = metaItems.join(' '); metaBlock.style.display = ''; }
   else metaBlock.style.display = 'none';
@@ -917,7 +917,7 @@ function setFunnelHeader() {
     'en':    '2022 New Curriculum KG · Funnel Learning Path',
   };
   const subs = {
-    'zh-CN': '1906 概念按年级升序展开成倒漏斗 · 4736 关系可反向追溯全谱系先决 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换回 3D 球面视图 →</a>',
+    'zh-CN': '1906 概念按年级升序展开成倒漏斗 · 4736 条学习路径可看完整前置 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换回 3D 球面视图 →</a>',
     'zh-TW': '1906 概念按年級升序展開成倒漏斗 · 4736 關係可反向追溯全譜系先決 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切換回 3D 球面視圖 →</a>',
     'en':    '1906 concepts in an inverted funnel by grade · 4736 relations traceable backward · <a href="./index.html" style="color:#6b8cff;text-decoration:none">Switch to 3D sphere view →</a>',
   };

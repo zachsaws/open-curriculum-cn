@@ -675,7 +675,7 @@ function showCard(node) {
   if (node.age_range_start) metaItems.push(`<span class="meta-tag">🎂 ${node.age_range_start}-${node.age_range_end || node.age_range_start} 岁</span>`);
   if (node.centrality !== undefined) {
     const centPct = Math.round(node.centrality * 100);
-    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能解锁)">⭐ 中心度 ${centPct}%</span>`);
+    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能学)">⭐ 中心度 ${centPct}%</span>`);
   }
   if (node.bloom) metaItems.push(`<span class="meta-tag bloom-tag">${node.bloom}</span>`);
   if (metaItems.length) { meta.innerHTML = metaItems.join(' '); metaBlock.style.display = ''; }
@@ -690,9 +690,9 @@ function showCard(node) {
   const softNext = allNext.filter(e => e.rel === 'relates_to');
 
   const preLabel = document.querySelector('.sec-pre .label');
-  preLabel.innerHTML = `<span >直接先决</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>${softPre.length ? ` <span class="soft-hint">(+${softPre.length} 软关联)</span>` : ''}`;
+  preLabel.innerHTML = `<span >先要会</span> · <span class="k" id="card-pre-k">${preEdges.length}</span>${softPre.length ? ` <span class="soft-hint">(+${softPre.length} 软关联)</span>` : ''}`;
   const nextLabel = document.querySelector('.sec-next .label');
-  nextLabel.innerHTML = `<span >解锁后继</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>${softNext.length ? ` <span class="soft-hint">(+${softNext.length} 软关联)</span>` : ''}`;
+  nextLabel.innerHTML = `<span >之后能学</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>${softNext.length ? ` <span class="soft-hint">(+${softNext.length} 软关联)</span>` : ''}`;
 
   // 边 reason
   const fillReasons = (container, edges, side) => {
@@ -700,7 +700,7 @@ function showCard(node) {
     const withReason = edges.filter(e => e.reason);
     withReason.slice(0, 3).forEach(e => {
       const otherIdx = side === 'pre' ? e.fromIdx : e.toIdx;
-      const relLabels = { prerequisite: '先决', progresses_to: '进阶', relates_to: '关联' };
+      const relLabels = { prerequisite: '前置', progresses_to: '进阶', relates_to: '关联' };
       const d = document.createElement('div');
       d.className = 'reason-row';
       d.innerHTML = `<span class="rel-tag rel-${e.rel}">${relLabels[e.rel] || e.rel}</span><span class="reason-txt">${e.reason}</span>`;

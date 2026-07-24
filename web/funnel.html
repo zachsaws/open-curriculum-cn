@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="基于 2022 义教新课标的中国 K12 知识图谱漏斗视图 — 1906 概念按年级升序展开成倒漏斗, 4736 关系可反向追溯全谱系先决">
+<meta name="description" content="基于 2022 义教新课标的中国 K12 知识图谱漏斗视图 — 1906 概念按年级升序展开成倒漏斗, 4736 条学习路径可看完整前置">
 <title>漏斗学习路径视图 · 2022 新课标知识图谱 · Open Curriculum CN</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -307,9 +307,9 @@
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="漏斗学习路径 · 中国 K12 知识图谱">
-<meta property="og:description" content="1906 核心概念 · 4736 条先决关系 · 14 个学科全覆盖。教育部 2022 最新课标。" />
+<meta property="og:description" content="1906 核心概念 · 4736 条学习路径 · 14 个学科全覆盖。教育部 2022 最新课标。" />
 <meta property="og:image" content="./data/og-sphere.png">
-<meta name="description" content="中国 K12 知识图谱: 基于教育部 2022 最新课标, 覆盖 14 个学科 1906 个核心概念, 4736 条先决关系, 3D 球面 + 漏斗学习路径两种视图。">
+<meta name="description" content="中国 K12 知识图谱: 基于教育部 2022 最新课标, 覆盖 14 个学科 1906 个核心概念, 4736 条学习路径, 3D 球面 + 漏斗两种视图。">
 </head>
 <body>
 <a href="#wrap" class="skip-link">跳到主内容</a>
@@ -319,11 +319,11 @@
   <div class="msg" id="loadingMsg">加载漏斗学习路径...</div>
 </div>
 
-<div id="wrap" tabindex="0" role="application" aria-label="倒漏斗概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情和反向追溯先决"></div>
+<div id="wrap" tabindex="0" role="application" aria-label="倒漏斗概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情和看之前要学什么"></div>
 
 <div class="header header-funnel">
   <h1 id="headerTitleFunnel">2022 新课标知识图谱 · 漏斗学习路径视图</h1>
-  <div class="sub" id="headerSubFunnel">1906 概念按年级升序展开成倒漏斗 · 4736 关系可反向追溯全谱系先决 · <a href="./index.html" style="color:#5a6278;text-decoration:none">← 返回首页</a> · <a href="./explore.html" style="color:#6b8cff;text-decoration:none">切换到 3D 球面视图 →</a></div>
+  <div class="sub" id="headerSubFunnel">1906 概念按年级升序展开成倒漏斗 · 4736 条学习路径可看完整前置 · <a href="./index.html" style="color:#5a6278;text-decoration:none">← 返回首页</a> · <a href="./explore.html" style="color:#6b8cff;text-decoration:none">切换到 3D 球面视图 →</a></div>
 </div>
 
 <a href="./explore.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="切换到 3D 球面视图">
@@ -337,7 +337,7 @@
   <div><span data-i18n="stats_edges">关系数</span>: <b id="eCount" aria-live="polite">-</b></div>
   <div><span data-i18n="stats_subjects">学科数</span>: <b id="gCount" aria-live="polite">-</b></div>
   <div style="margin-top:6px;">
-    FPS: <b id="fps" aria-live="polite">-</b> · <span id="viewHint">拖动旋转 · 滚轮缩放 · 单击节点追溯先决</span>
+    FPS: <b id="fps" aria-live="polite">-</b> · <span id="viewHint">拖动旋转 · 滚轮缩放 · 单击节点看之前要学什么</span>
   </div>
 </div>
 
@@ -371,7 +371,7 @@
       <div class="n" id="card-lin-n">0</div>
       <div class="u" id="card-lin-u">prerequisites in total</div>
     </div>
-    <div class="sub" id="card-lin-sub">选中节点后, BFS 反向追溯所有直接 + 间接先决概念.</div>
+    <div class="sub" id="card-lin-sub">选中节点后, BFS 反向追溯所有直接 + 间接前置概念.</div>
   </div>
 
   <div class="block" id="card-content-req-block">
@@ -416,11 +416,11 @@
   </div>
 
   <div class="sec sec-pre">
-    <div class="label"><span data-i18n="card_prereq">直接先决</span> · <span class="k" id="card-pre-k">0</span></div>
+    <div class="label"><span data-i18n="card_prereq">先要会</span> · <span class="k" id="card-pre-k">0</span></div>
     <div class="rows" id="card-pre-rows"></div>
   </div>
   <div class="sec sec-next">
-    <div class="label"><span data-i18n="card_unlocks">解锁后继</span> · <span class="k" id="card-next-k">0</span></div>
+    <div class="label"><span data-i18n="card_unlocks">之后能学</span> · <span class="k" id="card-next-k">0</span></div>
     <div class="rows" id="card-next-rows"></div>
   </div>
 </div>
