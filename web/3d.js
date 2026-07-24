@@ -462,7 +462,7 @@ function setupInteraction() {
         lastTipIdx = idx;
         const node = DATA.nodes[idx];
         document.getElementById('tip-sw').style.background = PALETTE[node.subject] || '#888';
-        document.getElementById('tip-ts').textContent = `${window.tSubject(node.subject)} · G${node.grade_start || ''}`;
+        document.getElementById('tip-ts').textContent = `${node.subject} · G${node.grade_start || ''}`;
         document.getElementById('tip-ttl').textContent = node.title;
         tip.classList.add('on');
       }
@@ -569,7 +569,7 @@ function showCard(node) {
   const card = document.getElementById('card');
   window._currentNode = node;
   document.getElementById('card-sw').style.background = PALETTE[node.subject] || '#888';
-  document.getElementById('card-cs').textContent = `${window.tSubject(node.subject)} · G${node.grade_start || ''}-${node.grade_end || ''} · ${node.domain || ''}`;
+  document.getElementById('card-cs').textContent = `${node.subject} · G${node.grade_start || ''}-${node.grade_end || ''} · ${node.domain || ''}`;
   document.getElementById('card-ctl').textContent = node.title;
 
   // tags
