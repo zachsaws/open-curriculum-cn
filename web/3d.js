@@ -817,10 +817,6 @@ function setupSearch() {
   });
 }
 
-// ============== UI: 语言切换 ==============
-  });
-}
-
 // ============== UI: 暂停旋转 ==============
 function setupAutoRotateToggle() {
   const btn = document.getElementById('toggleAutoRotate');
