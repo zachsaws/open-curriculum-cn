@@ -86,9 +86,9 @@ function set3DHeader() {
     'en':    '2022 New Curriculum KG · 3D Sphere View',
   };
   const subs = {
-    'zh-CN': '1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换到 2D 关系图 →</a>',
-    'zh-TW': '1906 概念按 Fibonacci 黃金角 (137.5°) 分布 · 4736 關係按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切換到 2D 關係圖 →</a>',
-    'en':    '1906 concepts in Fibonacci golden-angle layout · 4736 relations as great circle arcs · <a href="./index.html" style="color:#6b8cff;text-decoration:none">Switch to 2D graph →</a>',
+    'zh-CN': '1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换到漏斗学习路径 (即将上线) →</a>',
+    'zh-TW': '1906 概念按 Fibonacci 黃金角 (137.5°) 分布 · 4736 關係按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切換到漏斗學習路徑 (即將上線) →</a>',
+    'en':    '1906 concepts in Fibonacci golden-angle layout · 4736 relations as great circle arcs · <a href="./index.html" style="color:#6b8cff;text-decoration:none">Switch to funnel learning path (coming soon) →</a>',
   };
   const title = titles[lang] || titles['zh-CN'];
   const sub = subs[lang] || subs['zh-CN'];

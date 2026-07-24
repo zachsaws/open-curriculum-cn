@@ -3,28 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="基于 2022 义教新课标的中国 K12 知识图谱开源基础设施 - 覆盖 14 门学科的概念依赖关系可视化">
-<title>2022 新课标知识图谱 · Open Curriculum CN · 中国 K12 开源</title>
+<meta name="description" content="基于 2022 义教新课标的中国 K12 知识图谱 3D 球面可视化 - 1906 概念按 Fibonacci 分布, 4736 关系按 great circle arc 渲染">
+<title>3D 球面视图 · 2022 新课标知识图谱 · Open Curriculum CN</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 100%; height: 100%; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: #0a0d18; color: #e6e9f2; }
-  #wrap { position: fixed; inset: 0; cursor: grab; }
-  #wrap.drag { cursor: grabbing; }
-  #cv { display: block; width: 100%; height: 100%; }
+  #three-canvas { position: fixed; inset: 0; z-index: 1; }
+  #three-canvas canvas { display: block; cursor: grab; }
+  #three-canvas canvas:active { cursor: grabbing; }
 
-  /* V2.3 焦点环 — 蓝色 outline 满足 WCAG 2.1 AA 3:1 对比度 */
+  /* V2.3 焦点环 */
   :focus { outline: none; }
   :focus-visible {
     outline: 2px solid #6b8cff;
     outline-offset: 2px;
     border-radius: 4px;
   }
-  button:focus-visible, .chip:focus-visible, .r-item:focus-visible, .row:focus-visible {
+  button:focus-visible, .chip:focus-visible, .r-item:focus-visible, .row:focus-visible, a:focus-visible {
     outline: 2px solid #6b8cff;
     outline-offset: 2px;
   }
 
-  /* V2.3 skip link — a11y 通用, 屏幕阅读器 / 键盘用户跳到主内容 */
   .skip-link {
     position: absolute; top: -100px; left: 8px; z-index: 100;
     padding: 8px 14px; background: #6b8cff; color: #fff;
@@ -53,7 +52,8 @@
     color: #8a92a8; line-height: 1.6;
   }
   .stats b { color: #e6e9f2; font-weight: 600; }
-  .stats b #rCountSub { color: #5a6278; font-weight: 400; font-size: 10px; margin-left: 1px; }
+  .stats .fps-low { color: #f9a825; }
+  .stats .fps-bad { color: #ff6b6b; }
 
   /* 图例 */
   .legend {
@@ -80,7 +80,7 @@
     position: fixed; z-index: 20; pointer-events: none;
     background: rgba(20, 24, 38, 0.95); backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.1); border-radius: 10px;
-    padding: 12px 14px; max-width: 320px; font-size: 12px;
+    padding: 10px 12px; max-width: 280px; font-size: 12px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.4);
     opacity: 0; transition: opacity 0.15s;
   }
@@ -88,9 +88,8 @@
   #tip .sw { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
   #tip .ts { color: #8a92a8; font-size: 10px; font-family: "SF Mono", monospace; text-transform: uppercase; letter-spacing: 0.5px; }
   #tip .ttl { font-weight: 600; margin-top: 4px; line-height: 1.4; }
-  #tip .q { margin-top: 6px; color: #b8c0d8; font-style: italic; line-height: 1.5; }
 
-  /* 详情面板 */
+  /* 详情面板 — 跟 2D 完全一致 (CSS 复制自 index.html) */
   #card {
     position: fixed; right: 0; top: 0; bottom: 0; width: min(480px, 100vw);
     background: rgba(15, 18, 28, 0.96); backdrop-filter: blur(16px);
@@ -137,27 +136,6 @@
   #card .empty { font-size: 12px; color: #5a6278; padding: 12px; text-align: center; font-style: italic; }
   #card .src-link { color: #6b8cff; text-decoration: none; font-size: 11px; }
   #card .src-link:hover { text-decoration: underline; }
-
-  /* V2.3 "从这里学起" 浮动按钮 + 详情面板内的"查看下游 3 层"按钮 */
-  .start-here-btn {
-    position: fixed; z-index: 14; pointer-events: auto;
-    background: rgba(255, 215, 0, 0.92); color: #1a1a2e;
-    padding: 6px 12px; border-radius: 14px; font-size: 11px;
-    font-weight: 600; border: 1px solid rgba(255, 215, 0, 0.6);
-    cursor: pointer; box-shadow: 0 2px 12px rgba(255, 215, 0, 0.35);
-    transform: translate(-50%, -100%); margin-top: -8px;
-    font-family: inherit; white-space: nowrap;
-    animation: pulse 2s ease-in-out infinite;
-  }
-  .start-here-btn:hover { background: rgba(255, 215, 0, 1); }
-  @keyframes pulse {
-    0%, 100% { box-shadow: 0 2px 12px rgba(255, 215, 0, 0.35); }
-    50% { box-shadow: 0 2px 20px rgba(255, 215, 0, 0.7); }
-  }
-  .start-here-btn.started {
-    background: rgba(107, 140, 255, 0.9); color: #fff; border-color: #6b8cff;
-    animation: none;
-  }
   .card-action-row {
     display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px;
   }
@@ -172,6 +150,34 @@
   .card-action-row button:hover {
     background: rgba(107, 140, 255, 0.25); color: #fff;
   }
+  .meta-row { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0; }
+  .meta-tag {
+    display: inline-block; padding: 3px 8px; border-radius: 4px;
+    background: rgba(255,255,255,0.05); color: #a5b8f5;
+    font-size: 10px; font-family: "SF Mono", monospace;
+  }
+  .meta-tag.type-conceptual { background: rgba(107,140,255,0.15); color: #a5b8f5; }
+  .meta-tag.type-procedural { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .meta-tag.type-factual { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  .meta-tag.bloom-tag { background: rgba(151,201,111,0.15); color: #c5e08c; }
+  .reason-list { margin: 6px 0; }
+  .reason-row {
+    display: flex; gap: 6px; align-items: flex-start;
+    padding: 4px 8px; margin-bottom: 4px;
+    background: rgba(255,255,255,0.03); border-left: 2px solid #6b8cff;
+    border-radius: 0 4px 4px 0;
+    font-size: 11px; line-height: 1.5; color: #c8cee0;
+  }
+  .rel-tag {
+    display: inline-block; padding: 1px 6px; border-radius: 3px;
+    font-size: 9px; font-family: "SF Mono", monospace;
+    flex-shrink: 0; margin-top: 2px;
+  }
+  .rel-tag.rel-prerequisite { background: rgba(123,201,111,0.2); color: #a5e08c; }
+  .rel-tag.rel-progresses_to { background: rgba(151,201,111,0.2); color: #c5e08c; }
+  .rel-tag.rel-relates_to { background: rgba(180,195,235,0.15); color: #b8c0d8; }
+  .reason-txt { flex: 1; }
+  .soft-hint { font-size: 9px; color: #8a92a8; margin-left: 6px; font-weight: 400; }
 
   /* 搜索框 */
   .search {
@@ -213,7 +219,7 @@
 
   /* 语言切换 */
   .lang-switch {
-    position: fixed; top: 20px; right: 220px; z-index: 20;
+    position: fixed; top: 20px; right: 130px; z-index: 20;
     display: flex; gap: 4px;
   }
   .lang-switch button {
@@ -224,143 +230,20 @@
   }
   .lang-switch button.on { color: #e6e9f2; border-color: #6b8cff; background: rgba(107,140,255,0.2); }
 
-  /* V2.3 键盘快捷键帮助 modal */
-  .kbd-modal {
-    position: fixed; inset: 0; z-index: 50;
-    background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);
-    display: none; align-items: center; justify-content: center;
+  /* 2D/3D 切换按钮 — 右上角主操作 */
+  .view-toggle {
+    position: fixed; top: 20px; right: 20px; z-index: 21;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(107,140,255,0.18); backdrop-filter: blur(10px);
+    border: 1px solid rgba(107,140,255,0.4);
+    color: #c8d4ff; padding: 6px 14px; border-radius: 6px;
+    font-size: 12px; font-weight: 600; text-decoration: none;
+    font-family: inherit; transition: all 0.15s;
   }
-  .kbd-modal.on { display: flex; }
-  .kbd-modal-content {
-    background: rgba(20, 24, 38, 0.98); border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px; padding: 24px 28px; max-width: 460px; width: calc(100% - 40px);
-    box-shadow: 0 16px 64px rgba(0,0,0,0.6);
+  .view-toggle:hover {
+    background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
   }
-  .kbd-modal h2 { font-size: 16px; margin-bottom: 16px; color: #e6e9f2; }
-  .kbd-modal table { width: 100%; border-collapse: collapse; font-size: 12px; }
-  .kbd-modal td { padding: 6px 4px; }
-  .kbd-modal td:first-child { width: 80px; }
-  .kbd-modal kbd {
-    display: inline-block; padding: 2px 8px; min-width: 24px; text-align: center;
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 4px; font-family: "SF Mono", monospace; font-size: 11px;
-    color: #e6e9f2;
-  }
-  .kbd-modal .close-modal {
-    margin-top: 16px; padding: 6px 14px; background: #6b8cff; color: #fff;
-    border: none; border-radius: 6px; cursor: pointer; font-size: 12px;
-    font-family: inherit;
-  }
-  .kbd-modal .close-modal:hover { background: #5a7ce8; }
-  .kbd-modal .hint { color: #5a6278; font-size: 11px; margin-top: 10px; }
-
-  /* 节点状态: 搜索命中 / 根节点 / 邻居高亮 */
-  .root-node {
-    border-width: 3px !important;
-    border-color: #ffd700 !important;
-    border-opacity: 1 !important;
-  }
-  .search-hit {
-    border-width: 2px !important;
-    border-color: #6b8cff !important;
-    border-opacity: 1 !important;
-  }
-  .neighbor-highlight {
-    border-width: 2px !important;
-    border-color: #f9a825 !important;
-    border-opacity: 1 !important;
-    opacity: 1 !important;
-  }
-  .neighbor-dim {
-    opacity: 0.15 !important;
-  }
-  /* V2.3 "从这里学起"下游 BFS 路径高亮 */
-  .path-node {
-    border-width: 2px !important;
-    border-color: #ffd700 !important;
-    border-opacity: 1 !important;
-    background-blacken: 0 !important;
-  }
-  .path-edge {
-    line-color: #ffd700 !important;
-    width: 1.2 !important;
-    opacity: 0.85 !important;
-    z-index: 10 !important;
-  }
-
-  /* 概念地图模式：树状导航 */
-  #map-tree { user-select: none; }
-  #map-tree .tn-row {
-    display: flex; align-items: center; gap: 4px;
-    padding: 3px 12px 3px 4px; cursor: pointer;
-    border-radius: 0; line-height: 1.4;
-    color: #c8cee0; transition: background 0.1s;
-  }
-  #map-tree .tn-row:hover { background: rgba(255,255,255,0.04); }
-  #map-tree .tn-row.selected { background: rgba(107,140,255,0.18); color: #e6e9f2; }
-  #map-tree .tn-row.focused { background: rgba(123,201,111,0.18); color: #c8e8b8; font-weight: 600; }
-  #map-tree .tn-toggle {
-    width: 14px; height: 14px; display: inline-flex;
-    align-items: center; justify-content: center;
-    color: #8a92a8; font-size: 10px; flex-shrink: 0;
-  }
-  #map-tree .tn-toggle.leaf { visibility: hidden; }
-  #map-tree .tn-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    flex-shrink: 0;
-  }
-  #map-tree .tn-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  #map-tree .tn-count {
-    font-size: 9px; color: #8a92a8;
-    background: rgba(255,255,255,0.05);
-    padding: 1px 5px; border-radius: 8px;
-    flex-shrink: 0;
-  }
-  #map-tree .tn-row.s .tn-label { color: #e6e9f2; font-weight: 600; }
-  #map-tree .tn-row.stg .tn-label { color: #c8cee0; font-weight: 500; }
-  #map-tree .tn-row.d .tn-label { color: #b8c0d8; }
-  #map-tree .tn-row.c .tn-label { color: #a8b0c0; font-size: 11px; }
-  #map-tree .tn-row.c:hover { color: #e6e9f2; }
-  #map-tree .tn-children { display: none; }
-  #map-tree .tn-children.open { display: block; }
-
-  /* 概念地图模式：右侧偏移 */
-  body.map-mode #cy-container { margin-left: 280px; width: calc(100% - 280px); }
-  body.map-mode #map-panel { display: flex !important; }
-  /* 概念地图模式: header 和 search 避免被树遮挡 (P0-10/11) */
-  body.map-mode .header { padding-left: 296px; transition: padding 0.2s; }
-  body.map-mode .search { left: 296px; }
-  body.map-mode .stats { left: 296px; }
-
-  /* V3.2 卡片增强: 评估 + 元信息 + 边 reason */
-  .meta-row { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0; }
-  .meta-tag {
-    display: inline-block; padding: 3px 8px; border-radius: 4px;
-    background: rgba(255,255,255,0.05); color: #a5b8f5;
-    font-size: 10px; font-family: "SF Mono", monospace;
-  }
-  .meta-tag.type-conceptual { background: rgba(107,140,255,0.15); color: #a5b8f5; }
-  .meta-tag.type-procedural { background: rgba(201,180,111,0.15); color: #e0d28c; }
-  .meta-tag.type-factual { background: rgba(123,201,111,0.15); color: #a5e08c; }
-  .meta-tag.bloom-tag { background: rgba(151,201,111,0.15); color: #c5e08c; }
-  .reason-list { margin: 6px 0; }
-  .reason-row {
-    display: flex; gap: 6px; align-items: flex-start;
-    padding: 4px 8px; margin-bottom: 4px;
-    background: rgba(255,255,255,0.03); border-left: 2px solid #6b8cff;
-    border-radius: 0 4px 4px 0;
-    font-size: 11px; line-height: 1.5; color: #c8cee0;
-  }
-  .rel-tag {
-    display: inline-block; padding: 1px 6px; border-radius: 3px;
-    font-size: 9px; font-family: "SF Mono", monospace;
-    flex-shrink: 0; margin-top: 2px;
-  }
-  .rel-tag.rel-prerequisite { background: rgba(123,201,111,0.2); color: #a5e08c; }
-  .rel-tag.rel-progresses_to { background: rgba(151,201,111,0.2); color: #c5e08c; }
-  .rel-tag.rel-relates_to { background: rgba(180,195,235,0.15); color: #b8c0d8; }
-  .reason-txt { flex: 1; }
-  .soft-hint { font-size: 9px; color: #8a92a8; margin-left: 6px; font-weight: 400; }
+  .view-toggle .icon { font-size: 14px; }
 
   /* 加载状态 */
   #loading {
@@ -379,23 +262,27 @@
   #loading .msg { font-size: 13px; color: #8a92a8; }
   #loading .err { color: #ff6b6b; font-size: 12px; max-width: 480px; text-align: center; line-height: 1.5; }
 
-  /* V2.3 移动端响应式 (≤ 600px) */
+  /* 移动端 (≤ 600px) */
   @media (max-width: 600px) {
-    .header { padding: 12px 16px; }
+    /* 顶部 48px 让给 lang-switch (左) + view-toggle (右), header 往下推 */
+    .header { padding: 12px 16px; padding-top: 56px; }
     .header h1 { font-size: 14px; }
     .header .sub { font-size: 11px; }
     .stats {
-      top: 70px; right: 10px; left: 10px;
+      top: 130px; right: 10px; left: 10px;
       padding: 8px 12px; font-size: 11px; line-height: 1.5;
       display: flex; flex-wrap: wrap; gap: 6px 14px;
     }
     .stats > div { display: inline; }
     .stats > div:not(:last-child)::after { content: " · "; color: #5a6278; }
-    .stats > div:last-of-type { width: 100%; margin-top: 4px; }
-    .lang-switch { top: 12px; right: 10px; }
+    /* 移动端: 视图按钮只显示图标, 紧贴右上; lang-switch 移到左侧 */
+    .lang-switch { top: 12px; left: 10px; right: auto; }
     .lang-switch button { padding: 3px 8px; font-size: 10px; }
+    .view-toggle { top: 12px; right: 10px; padding: 4px 8px; font-size: 10px; gap: 0; }
+    .view-toggle span:not(.icon) { display: none; }
+    .view-toggle .icon { font-size: 16px; }
     .search {
-      top: 130px; left: 10px; right: 10px;
+      top: 195px; left: 10px; right: 10px;
       width: auto; max-width: none;
     }
     .search input { font-size: 12px; padding: 8px 12px 8px 32px; }
@@ -409,52 +296,33 @@
     #card .ctl { font-size: 18px; }
   }
 
-  /* V2.3 prefers-reduced-motion — 关闭所有非必要动画 */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
     }
-    .start-here-btn { animation: none !important; }
-  }
-
-  /* V3.3.3 2D/3D 视图切换按钮 (右上角) */
-  .view-toggle-3d {
-    position: fixed; top: 20px; right: 20px; z-index: 21;
-    display: inline-flex; align-items: center; gap: 6px;
-    background: rgba(107,140,255,0.18); backdrop-filter: blur(10px);
-    border: 1px solid rgba(107,140,255,0.4);
-    color: #c8d4ff; padding: 6px 14px; border-radius: 6px;
-    font-size: 12px; font-weight: 600; text-decoration: none;
-    font-family: inherit; transition: all 0.15s;
-  }
-  .view-toggle-3d:hover {
-    background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
-  }
-  .view-toggle-3d .icon { font-size: 14px; }
-  @media (max-width: 600px) {
-    .view-toggle-3d { top: 12px; right: 10px; padding: 4px 10px; font-size: 11px; }
   }
 </style>
 </head>
 <body>
-<a href="#cy-container" class="skip-link">跳到主内容</a>
+<a href="#three-canvas" class="skip-link">跳到主内容</a>
 
 <div id="loading" role="status" aria-live="polite">
   <div class="spinner" aria-hidden="true"></div>
-  <div class="msg" id="loadingMsg" data-i18n="loading">加载知识图谱...</div>
+  <div class="msg" id="loadingMsg">加载 3D 球面知识图谱...</div>
 </div>
 
-<div id="wrap">
-  <div id="cy-container" style="width:100%; height:100%;" tabindex="0" role="application" aria-label="概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖拽平移, 滚轮缩放, 单击节点查看详情"></div>
+<div id="three-canvas" tabindex="0" role="application" aria-label="3D 球面概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情"></div>
+
+<div class="header header-3d">
+  <h1 id="headerTitle3d">2022 新课标知识图谱 · 3D 球面视图</h1>
+  <div class="sub" id="headerSub3d">1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换到漏斗学习路径 (即将上线) →</a></div>
 </div>
 
-<div class="header">
-  <h1>2022 新课标知识图谱</h1>
-  <div class="sub">Open Curriculum CN · 1:1 复刻 <a href="https://withmarble.com/curriculum/" target="_blank" style="color:#6b8cff;text-decoration:none">Marble</a> 范式 · 数据来自 <a href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank" style="color:#6b8cff;text-decoration:none">教育部 2022 义教新课标</a> · CC-BY-SA 4.0</div>
-</div>
+<a href="./funnel.html" class="view-toggle" aria-label="切换到漏斗学习路径视图" title="切换到漏斗学习路径 (B 完成后可用)">
+  <span class="icon">▼</span><span>漏斗视图</span>
+</a>
 
 <div class="lang-switch" role="tablist" aria-label="语言切换">
   <button data-lang="zh-CN" class="on" id="lang-zh-CN" role="tab" aria-selected="true" aria-label="简体中文" data-i18n-label="lang_zh_cn">简</button>
@@ -466,30 +334,13 @@
   <div><span data-i18n="stats_concepts">概念数</span>: <b id="nCount" aria-live="polite">-</b></div>
   <div><span data-i18n="stats_edges">关系数</span>: <b id="eCount" aria-live="polite">-</b></div>
   <div><span data-i18n="stats_subjects">学科数</span>: <b id="gCount" aria-live="polite">-</b></div>
-  <div><span data-i18n="stats_roots_label">可学起入口</span>: <b id="rCount" aria-live="polite">-</b><span id="rCountSub"></span> <span data-i18n="stats_roots_pre">/ 总根</span></div>
-  <div style="margin-top:6px; display:flex; gap:6px; flex-wrap: wrap;">
-    <button id="toggleLabels" data-i18n="btn_labels" aria-label="切换所有节点标签显示" aria-pressed="false" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">显示标签</button>
-    <button id="toggleRoots" data-i18n="btn_roots" aria-label="高亮可学起入口" aria-pressed="false" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">高亮入口</button>
-    <button id="reLayout" data-i18n="btn_relayout" aria-label="按学科分块重排" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">重排</button>
-    <button id="toggleMode" data-i18n="btn_mode_map" aria-label="切换概念地图模式" aria-pressed="false" style="background:rgba(107,140,255,0.15); border:1px solid rgba(107,140,255,0.3); color:#a5b8f5; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer; font-weight:600;">概念地图</button>
-    <button id="showKbd" aria-label="键盘快捷键帮助" title="键盘快捷键 (?)" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#e6e9f2; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">?</button>
+  <div style="margin-top:6px;">
+    FPS: <b id="fps" aria-live="polite">-</b> · <span id="viewHint">拖动旋转 · 滚轮缩放</span>
+  </div>
+  <div style="margin-top:4px;">
+    <button id="toggleAutoRotate" aria-pressed="true" style="background:rgba(107,140,255,0.15); border:1px solid rgba(107,140,255,0.3); color:#a5b8f5; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer; font-weight:600;">⏸ 暂停旋转</button>
   </div>
 </div>
-
-<!-- 概念地图模式：左侧树状导航 -->
-<aside id="map-panel" role="navigation" aria-label="概念地图导航" style="display:none; position:fixed; top:0; left:0; width:280px; height:100%; background:rgba(13,15,23,0.96); border-right:1px solid rgba(255,255,255,0.08); z-index:15; overflow:hidden; flex-direction:column;">
-  <div style="padding:14px 16px 10px; border-bottom:1px solid rgba(255,255,255,0.06);">
-    <div style="font-size:14px; font-weight:700; color:#e6e9f2;" data-i18n="map_title">概念地图</div>
-    <div style="font-size:10px; color:#8a92a8; margin-top:2px;" data-i18n="map_subtitle">学科 · 学段 · 领域</div>
-    <div style="margin-top:10px; display:flex; gap:4px; flex-wrap:wrap;">
-      <button id="mapExpandAll" data-i18n="map_expand_all" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#a5b8f5; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">全部展开</button>
-      <button id="mapCollapseAll" data-i18n="map_collapse_all" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#a5b8f5; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">全部收起</button>
-      <button id="mapBranchOnly" data-i18n="map_branch_only" aria-pressed="true" style="background:rgba(107,140,255,0.15); border:1px solid rgba(107,140,255,0.3); color:#a5b8f5; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer; font-weight:600;">只看本分支</button>
-    </div>
-  </div>
-  <div id="map-tree" role="tree" aria-label="概念树" style="flex:1; overflow-y:auto; padding:8px 0; font-size:12px;"></div>
-  <div style="padding:8px 16px; border-top:1px solid rgba(255,255,255,0.06); font-size:10px; color:#8a92a8;" id="map-status" data-i18n="map_no_selection">← 选一个节点开始</div>
-</aside>
 
 <div class="search">
   <input type="text" id="searchInput" placeholder="搜索概念 ID / 标题 / 标签..." autocomplete="off"
@@ -503,7 +354,6 @@
   <span class="sw" id="tip-sw"></span>
   <span class="ts" id="tip-ts"></span>
   <div class="ttl" id="tip-ttl"></div>
-  <div class="q" id="tip-q"></div>
 </div>
 
 <div id="card" role="dialog" aria-modal="false" aria-label="概念详情" aria-hidden="true">
@@ -514,10 +364,6 @@
   </div>
   <div class="ctl" id="card-ctl"></div>
   <div class="tag-row" id="card-tags"></div>
-
-  <div class="card-action-row" id="card-action-row">
-    <button id="card-btn-path" aria-label="高亮下游学习路径 3 层" title="从此概念向下展开 3 层 BFS">查看下游 3 层 →</button>
-  </div>
 
   <div class="block" id="card-content-req-block">
     <div class="block-title"><span data-i18n="card_content_req">📋 课标内容要求</span> <span class="num" id="card-page-link"></span></div>
@@ -539,13 +385,11 @@
     <div class="ex-row" id="card-examples"></div>
   </div>
 
-  <!-- V3.2: 评估提示 (带 {{name}} 占位符) -->
   <div class="block" id="card-assessment-block" style="display:none">
     <div class="block-title" data-i18n="card_assessment">🎯 评估提示</div>
     <div class="block-body" id="card-assessment"></div>
   </div>
 
-  <!-- V3.2: 概念元信息 (type / age / centrality) -->
   <div class="block" id="card-meta-block" style="display:none">
     <div class="meta-row" id="card-meta"></div>
   </div>
@@ -562,33 +406,16 @@
   </div>
 </div>
 
-<!-- V2.3 键盘快捷键帮助 modal -->
-<div class="kbd-modal" id="kbdModal" role="dialog" aria-modal="true" aria-labelledby="kbdModalTitle" aria-hidden="true">
-  <div class="kbd-modal-content">
-    <h2 id="kbdModalTitle">⌨️ 键盘快捷键</h2>
-    <table>
-      <tr><td><kbd>/</kbd></td><td>聚焦搜索框</td></tr>
-      <tr><td><kbd>1</kbd> – <kbd>9</kbd></td><td>切换第 N 个学科显隐</td></tr>
-      <tr><td><kbd>0</kbd></td><td>全部学科显隐切换</td></tr>
-      <tr><td><kbd>l</kbd></td><td>切换所有节点标签显隐</td></tr>
-      <tr><td><kbd>r</kbd></td><td>切换可学起入口高亮</td></tr>
-      <tr><td><kbd>R</kbd></td><td>重排图谱 (按学科分块)</td></tr>
-      <tr><td><kbd>Esc</kbd></td><td>关闭详情面板 / 清空搜索</td></tr>
-      <tr><td><kbd>?</kbd></td><td>显示 / 隐藏本帮助</td></tr>
-    </table>
-    <p class="hint" data-i18n="kbd_hint">在搜索框内输入时, 快捷键不触发</p>
-    <button class="close-modal" id="kbdModalClose" data-i18n="kbd_close">关闭 (Esc)</button>
-  </div>
-</div>
-
-<script src="./cytoscape.min.js"></script>
-<script src="./simp_to_trad.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
 <script src="./i18n.js"></script>
-<script type="module" src="app.js"></script>
-
-<!-- V3.3.3 2D/3D 视图切换按钮 -->
-<a href="./3d.html" class="view-toggle-3d" aria-label="切换到 3D 球面视图" title="切换到 3D 球面视图">
-  <span class="icon">🌐</span><span>3D 视图</span>
-</a>
+<script src="./simp_to_trad.js"></script>
+<script type="module" src="3d.js"></script>
 </body>
 </html>
