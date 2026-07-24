@@ -909,10 +909,6 @@ function setupSearch() {
   });
 }
 
-// ============== 语言切换 ==============
-  });
-}
-
 function setFunnelHeader() {
   const lang = (typeof currentLang !== 'undefined') ? currentLang : 'zh-CN';
   const titles = {
