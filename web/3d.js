@@ -603,6 +603,20 @@ function showCard(node) {
 
   // 学业要求
   const ar = document.getElementById('card-academic-req');
+
+  // V3.3.4 深度内容增强: 3 教师用书级字段
+  ['real-examples', 'common-mistakes', 'teaching-activity'].forEach(k => {
+    const block = document.getElementById('card-' + k + '-block');
+    const body = document.getElementById('card-' + k);
+    const key = k.replace(/-/g, '_');
+    if (n[key]) {
+      block.style.display = '';
+      body.textContent = n[key];
+    } else {
+      block.style.display = 'none';
+    }
+  });
+
   const arBlock = document.getElementById('card-academic-req-block');
   if (node.academic_req) { ar.textContent = node.academic_req; arBlock.style.display = ''; }
   else { arBlock.style.display = 'none'; }

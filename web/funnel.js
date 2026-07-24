@@ -715,6 +715,20 @@ function showCard(i) {
   } else pageLink.textContent = '';
 
   const ar = document.getElementById('card-academic-req');
+
+  // V3.3.4 深度内容增强
+  ['real-examples', 'common-mistakes', 'teaching-activity'].forEach(k => {
+    const block = document.getElementById('card-' + k + '-block');
+    const body = document.getElementById('card-' + k);
+    const key = k.replace(/-/g, '_');
+    if (r[key]) {
+      if (block) block.style.display = '';
+      if (body) body.textContent = r[key];
+    } else {
+      if (block) block.style.display = 'none';
+    }
+  });
+
   const arBlock = document.getElementById('card-academic-req-block');
   if (r.academic_req) { ar.textContent = r.academic_req; arBlock.style.display = ''; }
   else { arBlock.style.display = 'none'; }
