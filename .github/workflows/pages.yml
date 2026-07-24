@@ -1,0 +1,62 @@
+name: 部署 3D 球 demo 到 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'data/graph/**'
+      - 'src/pipeline/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 防止多个部署并发
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: 打包 web/ 为 Pages artifact
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 准备 web/ 目录 (排除 .DS_Store 和大文件, 加 .nojekyll 防 Jekyll 跑)
+        run: |
+          mkdir -p _site
+          # 拷贝 web/ 全部到 _site/
+          cp -r web/. _site/
+          # 加 .nojekyll 让 GitHub Pages 跳过 Jekyll 处理
+          touch _site/.nojekyll
+          ls -la _site/
+
+      - name: 验证 graph.json 存在
+        run: |
+          if [ ! -f _site/data/graph.json ]; then
+            echo "ERROR: _site/data/graph.json 不存在, web/data/ 缺少 graph.json"
+            exit 1
+          fi
+          echo "graph.json size: $(du -h _site/data/graph.json | cut -f1)"
+
+      - name: 上传 Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: 部署到 GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
