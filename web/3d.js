@@ -108,28 +108,32 @@ function set3DHeader() {
 
 // ============== 数据加载 ==============
 async function loadData() {
+  // V3.6.5: 优先 json 路径 — mcode 公网 graph.json.gz 最近 ERR_ABORTED (CDN 缓存问题),
+  // 直接走 json (3.46MB 实际, 0.7s 可下完) 稳定
+  let text;
   try {
-    // V3.5g: 优先 fetch .gz 压缩版 (1.4MB vs 5.9MB), 客户端解压
-    let text;
+    const res = await fetch('./data/graph.json');
+    if (!res.ok) throw new Error('graph.json ' + res.status);
+    text = await res.text();
+    DATA = JSON.parse(text);
+  } catch (e) {
+    // 兜底: 再试一次 gz 路径
     try {
       const gzRes = await fetch('./data/graph.json.gz');
       if (gzRes.ok) {
         const ds = new DecompressionStream('gzip');
         const stream = gzRes.body.pipeThrough(ds);
         text = await new Response(stream).text();
-      } else throw new Error('gz 404');
-    } catch (e1) {
-      console.warn('gz 加载失败, fallback json:', e1.message);
-      const res = await fetch('./data/graph.json');
-      if (!res.ok) throw new Error('graph.json 不存在');
-      text = await res.text();
+        DATA = JSON.parse(text);
+      } else {
+        throw new Error('json + gz 都失败: ' + e.message);
+      }
+    } catch (e2) {
+      const msg = document.getElementById('loadingMsg');
+      msg.innerHTML = `<div class="err">未找到图谱数据 (graph.json / .gz)<br><br>${e2.message}</div>`;
+      console.error(e2);
+      return;
     }
-    DATA = JSON.parse(text);
-  } catch (e) {
-    const msg = document.getElementById('loadingMsg');
-    msg.innerHTML = `<div class="err">${'未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
-    console.error(e);
-    return;
   }
   GROUPS = [...new Set(DATA.nodes.map(n => n.subject))].sort();
   activeGroups = new Set(GROUPS);
