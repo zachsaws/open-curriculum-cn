@@ -28,7 +28,7 @@ function escText(s) {
   }[c]));
 }
 
-function wrap(text, max) {
+function wrapText(text, max) {
   if (!text) return '';
   const words = String(text).split(/(\s+|[，。！？；、,!?;])/);
   let line = '';
@@ -67,12 +67,12 @@ function generateShareSVG(node) {
   const nxtNames = (node._nxt || []).slice(0, 4).map(n => escHtml(n.t || n.id || ''));
 
   // 标题自动换行 (按字符数, 中英文按 18 字宽)
-  const titleLines = wrap(r.title || '', 14).split('\n').slice(0, 3);
+  const titleLines = wrapText(r.title || '', 14).split('\n').slice(0, 3);
 
   // 教学话术截断 (200 字以内)
   let voiceText = r.description || '';
   if (voiceText.length > 200) voiceText = voiceText.slice(0, 197) + '...';
-  const voiceLines = wrap(voiceText, 32).split('\n');
+  const voiceLines = wrapText(voiceText, 32).split('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${SHARE_W}" height="${SHARE_H}" viewBox="0 0 ${SHARE_W} ${SHARE_H}">
