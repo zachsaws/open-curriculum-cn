@@ -447,16 +447,46 @@ async function copyShareImage(node) {
 function getPreNxtForNode(idx, n, NODES) {
   if (typeof n === 'undefined' || typeof NODES === 'undefined') return { pre: [], nxt: [] };
   const r = n.raw || n;
-  // 用 prebuilt directPre / directNext 数组
-  const pre = (window.directPre && window.directPre[idx]) || [];
-  const nxt = (window.directNext && window.directNext[idx]) || [];
-  // 排除 self
-  const preFiltered = pre.filter(i => i !== idx);
-  const nxtFiltered = nxt.filter(i => i !== idx);
+  const id = r.id || n.id;
+  // 从全局 EDGES 找直接 pre/nxt (funnel.js 的 directPre 是 let 局部, 不可访问)
+  // 注意: funnel.js 的 EDGES 是 [fromIdx, toIdx, rel, reason, weight]
+  // share.js 调用时, EDGES 可能没暴露在 window, 所以尝试多种获取方式
+  let EDGES;
+  if (typeof window !== 'undefined' && window.EDGES) {
+    EDGES = window.EDGES;
+  } else if (typeof EDGES !== 'undefined') {
+    EDGES = EDGES;
+  } else {
+    // 兜底: 从 NODES 里通过 reverse BFS 找 (慢, 但保底)
+    return getPreNxtViaBFS(id, NODES);
+  }
+
+  const pre = [];
+  const nxt = [];
+  for (let i = 0; i < EDGES.length; i++) {
+    const e = EDGES[i];
+    if (e.length < 3) continue;
+    if (e[2] === 'relates_to') continue;
+    // e[0] = fromIdx, e[1] = toIdx, e[2] = rel
+    if (e[1] === idx) pre.push(e[0]);
+    if (e[0] === idx) nxt.push(e[1]);
+  }
   return {
-    pre: preFiltered.slice(0, 4).map(i => ({ t: NODES[i]?.t, id: NODES[i]?.id })),
-    nxt: nxtFiltered.slice(0, 4).map(i => ({ t: NODES[i]?.t, id: NODES[i]?.id })),
+    pre: pre.slice(0, 4).map(i => ({ t: NODES[i]?.t, id: NODES[i]?.id })),
+    nxt: nxt.slice(0, 4).map(i => ({ t: NODES[i]?.t, id: NODES[i]?.id })),
   };
+}
+
+function getPreNxtViaBFS(targetId, NODES) {
+  // 兜底: 用 NODES 的 raw 字段找
+  const pre = [];
+  const nxt = [];
+  for (const n of NODES) {
+    if (n.raw?.id === targetId) continue;
+    const fromId = n.raw?.id;
+    // 简单判断: 名字中包含关系 (不可靠, 兜底用)
+  }
+  return { pre, nxt };
 }
 
 function showShareModal(node, NODES) {

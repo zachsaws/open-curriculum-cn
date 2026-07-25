@@ -123,6 +123,10 @@ async function init() {
   // 2) 算布局 + 邻接
   computeLayout();
   setupAdjacency();
+  // V3.6.9: 把 EDGES 暴露给 share.js (getPreNxtForNode 用)
+  if (typeof window !== 'undefined') {
+    window.EDGES = EDGES;
+  }
 
   // 3) UI
   setupCanvas();
