@@ -9,8 +9,6 @@
 [![5 秒看明白](https://zachsaws.github.io/open-curriculum-cn/data/hero_thumb.gif)](https://zachsaws.github.io/open-curriculum-cn/explore.html)
 *↑ 主页 8s 缩略 · 完整 30s 概念片在 demo 段*
 
-📱 想发到抖音/视频号/朋友圈? → [下载 9:16 竖屏版 mp4 (950KB)](https://zachsaws.github.io/open-curriculum-cn/data/promo_30s_9x16.mp4)
-
 🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
 
 [![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
