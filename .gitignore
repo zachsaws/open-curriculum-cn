@@ -1,4 +1,9 @@
 demo-video/*.webm
 demo-video/**/tmp*/
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.log
 demo-video/promo/9x16/*.webm
 demo-video/promo/9x16/raw_*.webm
