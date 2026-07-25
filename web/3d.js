@@ -83,6 +83,12 @@ async function init() {
   // 4) FPS 计数 + 渲染循环
   document.getElementById('loading').classList.add('done');
   animate();
+
+  // V3.6.9 fix debug: ?debug=1 暴露内部变量 (验证 + 自动化测试)
+  if (location.search.includes('debug=1') && typeof window !== 'undefined') {
+    window.__occ3d = { DATA, GROUPS, selectNode, showCard, clearSelection, camera, controls, renderer, pointsMesh, scene };
+    console.log('[debug] window.__occ3d 已暴露, 用 __occ3d.selectNode(idx) 测试');
+  }
 }
 
 // 标题副标题: 硬编码中文, 不依赖 i18n
@@ -460,7 +466,7 @@ function buildLineage(startIdx) {
   const cands = [];
   for (const ni of nodes) {
     if (ni === startIdx) continue;
-    cands.push({ idx: ni, c: NODES[ni].c || 0 });
+    cands.push({ idx: ni, c: DATA.nodes[ni].c || 0 });
   }
   cands.sort((a, b) => b.c - a.c);
   lineageHighRisk = new Set(cands.slice(0, 3).map(x => x.idx));
@@ -829,8 +835,8 @@ function showCard(node) {
   if (shareBtn) {
     shareBtn.onclick = () => {
       if (typeof showShareCard === 'function') {
-        // 3d.js uses NODES3D or similar; share.js uses NODES global
-        showShareCard(node, (typeof NODES !== 'undefined') ? NODES : (typeof NODES3D !== 'undefined' ? NODES3D : null));
+        // V3.6.9 fix: 3d.js 用 DATA.nodes (跟 funnel.js 一样), 不要再用 NODES/NODES3D
+        showShareCard(node, DATA.nodes);
       } else {
         alert('share.js 加载失败');
       }
