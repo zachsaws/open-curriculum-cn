@@ -142,27 +142,24 @@ async function init() {
   document.getElementById('loading').classList.add('done');
   growStart = performance.now();
   fpsLastTime = growStart;
-  
-// V3.5: 支持 ?subject=xxx query, 启动时只显示该学科
-const urlSubject = new URLSearchParams(location.search).get('subject');
-if (urlSubject) {
-  // 等节点加载完后再限制 active
+
+// V3.6.8: 支持 ?grade=N query, 自动选该年级中心度最高的概念展开 lineage
+const urlGrade = parseInt(new URLSearchParams(location.search).get('grade'), 10);
+if (urlGrade >= 1 && urlGrade <= 9) {
   setTimeout(() => {
-    for (let i = 0; i < N.length; i++) {
-      if (N[i].g !== SUBJ_IDX[urlSubject]) active.delete(i);
-    }
-    // 同步图例
-    document.querySelectorAll('.chip').forEach((el, idx) => {
-      if (idx !== SUBJ_IDX[urlSubject]) {
-        el.classList.add('off');
-        el.setAttribute('aria-pressed', 'false');
-        active.delete(idx);
+    let bestIdx = -1, bestC = -1;
+    for (let i = 0; i < NODES.length; i++) {
+      const n = NODES[i];
+      const gs = n.raw.grade_start || 0;
+      const ge = n.raw.grade_end || 0;
+      if (gs <= urlGrade && ge >= urlGrade) {
+        if ((n.c || 0) > bestC) { bestC = n.c || 0; bestIdx = i; }
       }
-    });
-    // 滚动到该学科的中央
-    // 简易: 触发一次重画
-    requestAnimationFrame(frame);
-  }, 100);
+    }
+    if (bestIdx >= 0) {
+      selectNode(bestIdx, false);
+    }
+  }, 800);  // 等入场动画完成
 }
 
 requestAnimationFrame(frame);
@@ -469,30 +466,8 @@ function frame(ts) {
 
   draw();
   updateFPS();
-  
-// V3.5: 支持 ?subject=xxx query, 启动时只显示该学科
-const urlSubject = new URLSearchParams(location.search).get('subject');
-if (urlSubject) {
-  // 等节点加载完后再限制 active
-  setTimeout(() => {
-    for (let i = 0; i < N.length; i++) {
-      if (N[i].g !== SUBJ_IDX[urlSubject]) active.delete(i);
-    }
-    // 同步图例
-    document.querySelectorAll('.chip').forEach((el, idx) => {
-      if (idx !== SUBJ_IDX[urlSubject]) {
-        el.classList.add('off');
-        el.setAttribute('aria-pressed', 'false');
-        active.delete(idx);
-      }
-    });
-    // 滚动到该学科的中央
-    // 简易: 触发一次重画
-    requestAnimationFrame(frame);
-  }, 100);
-}
 
-requestAnimationFrame(frame);
+  requestAnimationFrame(frame);
 }
 
 function updateFPS() {

@@ -33,6 +33,14 @@
 
   /* === CTA === */
   .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+  /* === 我家孩子几岁 (V3.6.8) === */
+  .grade-picker { max-width: 720px; margin: 40px auto 0; }
+  .grade-picker .label { color: #a5b8f5; font-size: 14px; font-weight: 500; margin-bottom: 12px; letter-spacing: 0.05em; text-align: center; }
+  .grade-buttons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .grade-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 68px; height: 44px; padding: 0 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; color: #fff; font-size: 15px; font-weight: 600; text-decoration: none; transition: all 0.15s; }
+  .grade-btn:hover { background: rgba(107,140,255,0.15); border-color: rgba(107,140,255,0.4); transform: translateY(-1px); }
+  .grade-btn:active { background: rgba(107,140,255,0.25); }
+  .grade-hint { color: #5a6278; font-size: 12px; margin-top: 12px; text-align: center; }
   .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; font-family: inherit; }
   .btn-primary { background: #6b8cff; color: #fff; }
   .btn-primary:hover { background: #4f75ee; color: #fff; transform: translateY(-1px); }
@@ -148,6 +156,22 @@
 <header class="hero">
   <h1>每一步学什么,<br>之前漏了哪一步</h1>
   <p class="sub">中国 1906 个小学到初中概念的<strong>「学之前要会什么 / 学之后能学什么」</strong>图谱。<br>教师、家长、学生都能用。开源免费。</p>
+
+  <div class="grade-picker">
+    <div class="label">我家孩子在</div>
+    <div class="grade-buttons">
+      <a class="grade-btn" href="./funnel.html?grade=1">1 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=2">2 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=3">3 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=4">4 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=5">5 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=6">6 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=7">7 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=8">8 年级</a>
+      <a class="grade-btn" href="./funnel.html?grade=9">9 年级</a>
+    </div>
+    <div class="grade-hint">点完直接进该年级漏斗, 自动挑 1 个代表概念展开完整学习路径</div>
+  </div>
 
   <div class="cta-row">
     <a class="btn btn-primary" href="./explore.html">进入探索 <span class="arrow">→</span></a>
