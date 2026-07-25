@@ -133,6 +133,18 @@
 
   /* === Footer === */
   .footer { max-width: 1200px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid rgba(255, 255, 255, 0.06); text-align: center; font-size: 12px; color: #5a6278; }
+  /* === 关于 (V3.6.8) === */
+  .about-section { padding: 80px 24px; background: rgba(255,255,255,0.02); }
+  .about-section .inner { max-width: 1100px; margin: 0 auto; }
+  .about-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .about-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
+  .about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
+  .about-card { padding: 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; }
+  .about-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+  .about-card p, .about-card li { font-size: 14px; color: #a5b8f5; line-height: 1.7; }
+  .about-card a { color: #6b8cff; text-decoration: none; }
+  .about-card a:hover { text-decoration: underline; }
   .footer a { color: #8a92a8; }
   .footer .row { margin: 6px 0; }
 </style>
@@ -285,11 +297,39 @@
   </div>
 </section>
 
+<section class="about-section" id="about">
+  <div class="inner">
+    <h2>关于</h2>
+    <p class="sub">一个独立开源项目, 不是任何公司的产品线</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>🛠 这是什么</h3>
+        <p>中国 K12 (小学到初中) 知识图谱 + 漏斗 + 3D 球 3 种可视化, 全部前端 + 开源数据。</p>
+        <p>基于教育部 2022 最新义务教育课程方案, 14 个学科 1906 核心概念 4736 条学习路径。</p>
+      </div>
+      <div class="about-card">
+        <h3>📞 怎么联系</h3>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li>🐛 <a href="https://github.com/zachsaws/open-curriculum-cn/issues" target="_blank">GitHub Issue</a> — 提 bug / 建议</li>
+          <li>💬 <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">GitHub Repo</a> — Star / Fork / PR</li>
+          <li>🏫 教育局 / 学校合作 — 邮件 <a href="mailto:hi@example.com">hi@example.com</a></li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>📄 授权</h3>
+        <p>内容: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a> (注明出处可转载/修改)</p>
+        <p>数据库: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0</a> (无限制使用)</p>
+        <p>课标原文: 教育部 2022 义务教育课程方案 (公开政策文件)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="row">中国 K12 学习路径图谱 · 基于教育部 2022 最新课标</div>
   <div class="row">数据 1906 概念 / 4736 学习路径 / 14 学科 / 4 学段</div>
   <div class="row">License: 内容 CC-BY-SA 4.0 · 数据库 CC0 · 基于 2022 教育部义务教育课程方案</div>
-  <div class="row">V3.6 产品化首页 · 反馈: <a href="mailto:hi@example.com">hi@example.com</a></div>
+  <div class="row">V3.6.8 入口个人化 · 反馈: <a href="https://github.com/zachsaws/open-curriculum-cn/issues" target="_blank">GitHub Issue</a> · <a href="mailto:hi@example.com">Email</a></div>
 </footer>
 
 <script>
