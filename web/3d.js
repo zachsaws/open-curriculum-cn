@@ -43,6 +43,7 @@ let edgeBaseColor = new THREE.Color(0xb8c0d8);
 // ============== 谱系 (lineage) — BFS 反向追溯所有直接+间接先决 (V3.6.2) ==============
 let lineageNodes = new Set();    // idx set
 let lineageEdgeIdxs = new Set(); // edgesData 索引 set
+let lineageHighRisk = new Set(); // V3.6.9: lineage 中中心度 Top 3 (高危标识)
 let lineageMesh = null;          // 高亮 lineage 边的 Line mesh
 
 // ============== 选中节点放大 + camera tween (V3.6.3) ==============
@@ -472,6 +473,15 @@ function buildLineage(startIdx) {
   }
   lineageNodes = nodes;
   lineageEdgeIdxs = edges;
+
+  // V3.6.9: 高危标识 — lineage 中中心度 Top 3 (排除选中)
+  const cands = [];
+  for (const ni of nodes) {
+    if (ni === startIdx) continue;
+    cands.push({ idx: ni, c: NODES[ni].c || 0 });
+  }
+  cands.sort((a, b) => b.c - a.c);
+  lineageHighRisk = new Set(cands.slice(0, 3).map(x => x.idx));
 }
 
 // Lineage 边 mesh — 用选中节点学科色 lerp 白 0.5, opacity 0.75 (比邻居边 0.55 更亮)
@@ -690,6 +700,7 @@ function clearSelection() {
   // V3.6.2: 清掉 lineage 状态
   lineageNodes = new Set();
   lineageEdgeIdxs = new Set();
+  lineageHighRisk = new Set();
   if (lineageMesh) { scene.remove(lineageMesh); lineageMesh.geometry.dispose(); lineageMesh.material.dispose(); lineageMesh = null; }
   // V3.6.3: focusGain 全设 0
   setFocusGainTarget(null);
@@ -709,6 +720,11 @@ function highlightNode(idx) {
       colors[i*3] = Math.min(1, c.r * 0.5 + 0.85);
       colors[i*3+1] = Math.min(1, c.g * 0.5 + 0.85);
       colors[i*3+2] = Math.min(1, c.b * 0.5 + 0.85);
+    } else if (lineageHighRisk.has(i)) {
+      // V3.6.9: 高危节点 (lineage 中心度 Top 3): 偏红
+      colors[i*3] = Math.min(1, c.r * 0.5 + 0.95 * 0.4);
+      colors[i*3+1] = Math.min(1, c.g * 0.2);
+      colors[i*3+2] = Math.min(1, c.b * 0.2);
     } else if (lineageNodes.has(i)) {
       // lineage 节点 (含直接邻居 + 间接先决): 保持原色
       colors[i*3] = c.r; colors[i*3+1] = c.g; colors[i*3+2] = c.b;

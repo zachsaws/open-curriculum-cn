@@ -55,6 +55,44 @@
 
   /* === 4 句对仗 (它能做什么) === */
   .values-section { background: rgba(255, 255, 255, 0.02); padding: 80px 24px; }
+  /* === 使用故事 (V3.6.9) === */
+  .stories-section { padding: 80px 24px; background: linear-gradient(180deg, rgba(107,140,255,0.04) 0%, rgba(0,0,0,0) 100%); }
+  .stories-section .inner { max-width: 1100px; margin: 0 auto; }
+  .stories-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .stories-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
+  .stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 720px) { .stories-grid { grid-template-columns: 1fr; } }
+  .story-card { padding: 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; display: flex; flex-direction: column; gap: 12px; }
+  .story-card .avatar { font-size: 36px; line-height: 1; }
+  .story-card .role { font-size: 11px; color: #6b8cff; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .story-card .quote { font-size: 15px; color: #dde4f5; line-height: 1.7; font-style: italic; }
+  .story-card .name { font-size: 12px; color: #5a6278; }
+  .story-card .placeholder { color: #6b8cff; font-size: 11px; padding: 2px 8px; background: rgba(107,140,255,0.1); border-radius: 4px; align-self: flex-start; }
+  /* === 合作 (V3.6.9) === */
+  .partner-section { padding: 80px 24px; background: rgba(255,255,255,0.02); }
+  .partner-section .inner { max-width: 1100px; margin: 0 auto; }
+  .partner-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .partner-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
+  .partner-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  @media (max-width: 720px) { .partner-grid { grid-template-columns: 1fr; } }
+  .partner-card { padding: 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; }
+  .partner-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #fff; }
+  .partner-card p, .partner-card li { font-size: 14px; color: #a5b8f5; line-height: 1.7; }
+  .partner-card ol, .partner-card ul { padding-left: 20px; }
+  .partner-card .price { font-size: 24px; font-weight: 800; color: #6b8cff; margin: 8px 0; }
+  .partner-card .contact { padding: 12px; background: rgba(107,140,255,0.08); border: 1px solid rgba(107,140,255,0.2); border-radius: 8px; margin-top: 16px; font-size: 13px; }
+  .partner-card .contact a { color: #6b8cff; text-decoration: none; font-weight: 600; }
+  /* === 邮件订阅 (V3.6.9) === */
+  .subscribe-section { padding: 60px 24px; background: linear-gradient(180deg, rgba(107,140,255,0.05) 0%, rgba(0,0,0,0) 100%); }
+  .subscribe-section .inner { max-width: 700px; margin: 0 auto; text-align: center; }
+  .subscribe-section h2 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+  .subscribe-section .sub { font-size: 14px; color: #8a92a8; margin-bottom: 24px; }
+  .subscribe-form { display: flex; gap: 8px; max-width: 480px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
+  .subscribe-form input { flex: 1; min-width: 200px; padding: 12px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-size: 14px; font-family: inherit; outline: none; }
+  .subscribe-form input:focus { border-color: #6b8cff; }
+  .subscribe-form button { padding: 12px 24px; background: #6b8cff; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .subscribe-form button:hover { background: #5a7ce8; }
+  .subscribe-status { margin-top: 12px; font-size: 13px; min-height: 18px; }
   .values-section .inner { max-width: 1200px; margin: 0 auto; }
   .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   @media (max-width: 900px) { .value-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -133,6 +171,21 @@
 
   /* === Footer === */
   .footer { max-width: 1200px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid rgba(255, 255, 255, 0.06); text-align: center; font-size: 12px; color: #5a6278; }
+  /* === 课标覆盖度矩阵 (V3.6.9) === */
+  .coverage-section { padding: 80px 24px; }
+  .coverage-section .inner { max-width: 1200px; margin: 0 auto; }
+  .coverage-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .coverage-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
+  .coverage-table { width: 100%; max-width: 900px; margin: 0 auto; border-collapse: separate; border-spacing: 4px; font-size: 13px; }
+  .coverage-table th, .coverage-table td { padding: 10px 8px; text-align: center; border-radius: 6px; }
+  .coverage-table th { background: rgba(255,255,255,0.05); color: #a5b8f5; font-weight: 600; font-size: 12px; }
+  .coverage-table th.row-h { text-align: left; padding-left: 16px; }
+  .coverage-table td.cell { background: rgba(255,255,255,0.04); color: #dde4f5; font-weight: 700; font-size: 15px; }
+  .coverage-table td.cell.zero { color: #5a6278; opacity: 0.6; }
+  .coverage-table td.total { background: rgba(107,140,255,0.12); color: #a5b8f5; font-weight: 800; }
+  .coverage-table .sw { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+  .coverage-table .subj-name { color: #fff; }
+  .coverage-table .subj-en { color: #5a6278; font-size: 10px; margin-left: 6px; font-family: "SF Mono", monospace; }
   /* === 关于 (V3.6.8) === */
   .about-section { padding: 80px 24px; background: rgba(255,255,255,0.02); }
   .about-section .inner { max-width: 1100px; margin: 0 auto; }
@@ -197,6 +250,36 @@
     <p class="sub">孩子说不会，但说不上哪里不会 —— 这就是答案</p>
     <div class="demo-video-wrap">
       <video src="./data/promo_30s.mp4" controls preload="metadata" poster="./data/hero_thumb.gif" style="width:100%; display:block;"></video>
+    </div>
+  </div>
+</section>
+
+<section class="stories-section" id="stories">
+  <div class="inner">
+    <h2>谁在用</h2>
+    <p class="sub">真实场景里, 它帮到了什么</p>
+    <div class="stories-grid">
+      <div class="story-card">
+        <div class="role">👨‍🏫 老师</div>
+        <div class="avatar">📖</div>
+        <div class="quote">"备 '一元二次方程' 这节课时, 我用漏斗看完整 lineage, 知道哪些前置学生可能没掌握, 提前 3 分钟带他们过一遍。"</div>
+        <div class="name">— 某中学数学老师</div>
+        <div class="placeholder">占位案例 · 等真实用户故事</div>
+      </div>
+      <div class="story-card">
+        <div class="role">👩 家长</div>
+        <div class="avatar">🆘</div>
+        <div class="quote">"孩子说分数应用题不会, 我点开概念卡, 看到 '之前要学的 23 个', 找出 2 个他没学透的, 周末重点补。比自己翻课本快多了。"</div>
+        <div class="name">— 4 年级家长</div>
+        <div class="placeholder">占位案例 · 等真实用户故事</div>
+      </div>
+      <div class="story-card">
+        <div class="role">🧒 学生</div>
+        <div class="avatar">📚</div>
+        <div class="quote">"想预习下学期的 '电路', 我在 3D 球上找相关的物理概念, 顺着 lineage 反向看到需要先掌握 '电流' 和 '电压', 暑假就提前看了。"</div>
+        <div class="name">— 7 年级学生</div>
+        <div class="placeholder">占位案例 · 等真实用户故事</div>
+      </div>
     </div>
   </div>
 </section>
@@ -274,6 +357,30 @@
   </div>
 </section>
 
+<section class="coverage-section" id="coverage">
+  <div class="inner">
+    <h2>课标覆盖度报告</h2>
+    <p class="sub">14 学科 × 4 学段 · 教育部 2022 义教课标</p>
+    <div id="coverage-table-wrap">
+      <table class="coverage-table" id="coverage-table">
+        <thead>
+          <tr>
+            <th class="row-h">学科</th>
+            <th>1-2 年级</th>
+            <th>3-4 年级</th>
+            <th>5-6 年级</th>
+            <th>7-9 年级</th>
+            <th>合计</th>
+          </tr>
+        </thead>
+        <tbody id="coverage-tbody">
+          <tr><td colspan="6" style="text-align:center; padding:32px; color:#5a6278;">加载中...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <section class="not-doing-section" id="about">
   <div class="inner">
     <h2>我们不做</h2>
@@ -294,6 +401,49 @@
   <div class="download-box">
     <code>curl -O https://&lt;当前公网域名&gt;/data/graph.json</code>
     <p class="note">或直接 <a href="./data/graph.json" download>点此下载 graph.json</a> · 8 KB 缩略: <a href="./data/graph.json.gz">graph.json.gz</a></p>
+  </div>
+</section>
+
+<section class="partner-section" id="partner">
+  <div class="inner">
+    <h2>教育局 / 学校合作</h2>
+    <p class="sub">想要 B 端 SaaS、私有部署、定制数据、教研合作? 我们聊聊</p>
+    <div class="partner-grid">
+      <div class="partner-card">
+        <h3>🏫 区/校 SaaS 接入</h3>
+        <p>把 1906 概念 + 4736 学习路径接入你们自己的教务系统、教研平台、家校沟通 App。</p>
+        <ul>
+          <li>提供 JSON 数据 + REST API</li>
+          <li>可定制学科范围 (例如只看本区开设的)</li>
+          <li>支持私有化部署 (内网环境)</li>
+        </ul>
+        <div class="price">¥ ? <span style="font-size:13px; font-weight:500; color:#8a92a8;">/ 区 / 年</span></div>
+        <div class="contact">📧 <a href="mailto:zachsaws@gamil.com?subject=B端SaaS咨询">zachsaws@gamil.com</a> · 邮件附「区/校名 + 接入场景」</div>
+      </div>
+      <div class="partner-card">
+        <h3>📚 教研 / 出版合作</h3>
+        <p>教研员、出版社、教师培训机构的合作场景: 用我们的图谱做教研参考、教师培训材料、教材配套资源。</p>
+        <ul>
+          <li>CC-BY-SA 4.0 (注明出处免费用)</li>
+          <li>可定制化概念 + 学段切片</li>
+          <li>教师培训 PPT / 视频联合出品</li>
+        </ul>
+        <div class="price">免费 / 联名 / 分成</div>
+        <div class="contact">📧 <a href="mailto:zachsaws@gamil.com?subject=教研合作">zachsaws@gamil.com</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe-section">
+  <div class="inner">
+    <h2>📬 概念日报</h2>
+    <p class="sub">每周一封邮件: 1 个核心概念 + 1 个 lineage 反向追溯 + 1 个跨学科连接。免费, 不打扰。</p>
+    <form class="subscribe-form" id="subscribe-form">
+      <input type="email" id="subscribe-email" placeholder="你的邮箱" required autocomplete="email" />
+      <button type="submit">订阅</button>
+    </form>
+    <div class="subscribe-status" id="subscribe-status"></div>
   </div>
 </section>
 
@@ -398,6 +548,101 @@
     document.getElementById('tree').innerHTML = `<div class="tree-card" style="grid-column:1/-1;text-align:center;color:#ff6b6b;padding:24px;">学科数据加载失败: ${e.message}</div>`;
   }
 })();
+
+// 课标覆盖度矩阵: 14 学科 × 4 学段 (V3.6.9)
+(async () => {
+  const PALETTE = {
+    math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
+    science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
+    biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
+    morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
+    pe_health: '#ff7043', labor: '#9ccc65'
+  };
+  const SUBJ_CN = {
+    math: '数学', chinese: '语文', english: '英语',
+    physics: '物理', chemistry: '化学', biology: '生物',
+    science: '科学', geography: '地理', history: '历史',
+    morality_law: '道德与法治', info_tech: '信息科技',
+    pe_health: '体育与健康', art: '艺术', labor: '劳动'
+  };
+  const SUBJ_ORDER = ['math','chinese','english','physics','chemistry','biology','science','geography','history','morality_law','info_tech','pe_health','art','labor'];
+
+  function stageOf(g) {
+    if (!g) return 0;
+    if (g <= 2) return 1;
+    if (g <= 4) return 2;
+    if (g <= 6) return 3;
+    return 4;
+  }
+
+  try {
+    const res = await fetch('./data/graph.json');
+    if (!res.ok) throw new Error('graph.json 不存在');
+    const d = await res.json();
+    const nodes = d.nodes || [];
+
+    // 计数: subj × stage
+    const counts = {};  // counts[subj] = [s1, s2, s3, s4]
+    SUBJ_ORDER.forEach(s => counts[s] = [0, 0, 0, 0]);
+    for (const n of nodes) {
+      const s = n.subject;
+      const st = stageOf(n.grade_start);
+      if (counts[s] && st >= 1) counts[s][st - 1]++;
+    }
+
+    const tbody = document.getElementById('coverage-tbody');
+    tbody.innerHTML = '';
+    for (const s of SUBJ_ORDER) {
+      const row = counts[s];
+      const total = row.reduce((a, b) => a + b, 0);
+      if (total === 0) continue;  // skip 0-row subjects
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="row-h" style="text-align:left; padding-left:16px;">
+          <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
+          <span class="subj-name">${SUBJ_CN[s] || s}</span>
+          <span class="subj-en">${s}</span>
+        </td>
+        ${row.map(c => `<td class="cell${c === 0 ? ' zero' : ''}">${c}</td>`).join('')}
+        <td class="total">${total}</td>
+      `;
+      tbody.appendChild(tr);
+    }
+    // 合计行
+    const grandTotal = SUBJ_ORDER.reduce((a, s) => a + counts[s].reduce((x, y) => x + y, 0), 0);
+    const stageTotals = [0, 0, 0, 0];
+    for (const s of SUBJ_ORDER) counts[s].forEach((c, i) => stageTotals[i] += c);
+    const tr = document.createElement('tr');
+    tr.style.borderTop = '1px solid rgba(255,255,255,0.1)';
+    tr.innerHTML = `
+      <td class="row-h" style="text-align:left; padding-left:16px; color:#a5b8f5; font-weight:700;">合计</td>
+      ${stageTotals.map(c => `<td class="cell" style="color:#a5b8f5;">${c}</td>`).join('')}
+      <td class="total" style="background:rgba(107,140,255,0.25); color:#fff;">${grandTotal}</td>
+    `;
+    tbody.appendChild(tr);
+  } catch (e) {
+    document.getElementById('coverage-tbody').innerHTML = `<tr><td colspan="6" style="text-align:center; padding:32px; color:#ff6b6b;">覆盖度数据加载失败: ${e.message}</td></tr>`;
+  }
+})();
+
+// 概念日报邮件订阅 (V3.6.9) — 用 mailto: 转发订阅请求 (零后端, 后续可换 Mailchimp/Resend)
+document.getElementById('subscribe-form')?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('subscribe-email').value.trim();
+  const status = document.getElementById('subscribe-status');
+  if (!email || !email.includes('@')) {
+    status.style.color = '#ff6b6b';
+    status.textContent = '请输入有效邮箱';
+    return;
+  }
+  // 打开邮件客户端, 主题"订阅概念日报", 正文用户邮箱
+  const subject = encodeURIComponent('【订阅】概念日报');
+  const body = encodeURIComponent(`邮箱: ${email}\n\n订阅项目: 中国 K12 学习路径图谱 · 概念日报\n发送时间: ${new Date().toISOString()}\n\n(无需回复, 收到后我会手动加你到订阅列表)`);
+  window.location.href = `mailto:zachsaws@gamil.com?subject=${subject}&body=${body}`;
+  status.style.color = '#7bc96f';
+  status.textContent = '✅ 已打开邮件客户端, 发送后我会手动加你到订阅列表';
+  document.getElementById('subscribe-email').value = '';
+});
 </script>
 </body>
 </html>

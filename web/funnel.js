@@ -354,7 +354,15 @@ function buildLineage(i) {
       }
     }
   }
-  lineage = { nodes, edges };
+  // V3.6.9: 高危标识 — lineage 中中心度最高的 Top 3 节点 (排除选中的)
+  const candidates = [];
+  for (const ni of nodes) {
+    if (ni === i) continue;
+    candidates.push({ idx: ni, c: NODES[ni].c || 0 });
+  }
+  candidates.sort((a, b) => b.c - a.c);
+  const highRisk = new Set(candidates.slice(0, 3).map(x => x.idx));
+  lineage = { nodes, edges, highRisk };
 }
 
 // ============== 选择 / 导航 / 相机 ==============
@@ -472,6 +480,20 @@ function draw() {
     ctx.beginPath();
     ctx.arc(sx, sy, r, 0, Math.PI * 2);
     ctx.stroke();
+
+    // V3.6.9: 高危标识 — lineage 中中心度 Top 3 节点画红色环
+    if (hasSel && lineage.highRisk && lineage.highRisk.has(i) && !isFocus) {
+      ctx.strokeStyle = 'rgba(239,68,68,0.85)';
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.arc(sx, sy, r + 5, 0, Math.PI * 2);
+      ctx.stroke();
+      // 内部小红点
+      ctx.fillStyle = 'rgba(239,68,68,0.9)';
+      ctx.beginPath();
+      ctx.arc(sx, sy, Math.max(3, r * 0.35), 0, Math.PI * 2);
+      ctx.fill();
+    }
 
     // 选中 / 悬停 — 加白色高亮环
     if (isFocus) {
