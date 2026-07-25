@@ -4,6 +4,11 @@
 
 中国教育部 2022 最新课标 · **14 学科 · 1906 核心概念 · 4736 条学习路径** · 开源免费。
 
+🎬 **5 秒看明白**：
+
+[![5 秒看明白](https://zachsaws.github.io/open-curriculum-cn/data/hero_thumb.gif)](https://zachsaws.github.io/open-curriculum-cn/explore.html)
+*↑ 主页 8s 缩略 · 完整 83s demo 在 demo 段*
+
 🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
 
 [![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -109,6 +109,19 @@
   .not-one-liner strong { color: #6b8cff; font-weight: 700; }
   .not-source { font-size: 12px; color: #5a6278; }
 
+  /* === 演示视频 === */
+  .demo-section { padding: 80px 24px; background: rgba(107, 140, 255, 0.04); }
+  .demo-section .inner { max-width: 960px; margin: 0 auto; text-align: center; }
+  .demo-section h2 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .demo-section .sub { font-size: 15px; color: #8a92a8; margin-bottom: 32px; }
+  .demo-video-wrap { position: relative; max-width: 960px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); }
+  .demo-video-wrap video { width: 100%; display: block; }
+  .demo-gifs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+  @media (max-width: 700px) { .demo-gifs { grid-template-columns: 1fr; } }
+  .demo-gif-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px; }
+  .demo-gif-card img { width: 100%; border-radius: 6px; display: block; }
+  .demo-gif-card .lbl { font-size: 12px; color: #8a92a8; margin-top: 8px; font-family: "SF Mono", monospace; }
+
   /* === 数据下载 === */
   .download { max-width: 1200px; margin: 0 auto; padding: 60px 24px; text-align: center; }
   .download h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
@@ -148,6 +161,30 @@
     <a class="btn btn-ghost" href="#download">下载数据</a>
   </div>
 </header>
+
+<section class="demo-section" id="demo">
+  <div class="inner">
+    <h2>看 5 秒 demo</h2>
+    <p class="sub">83 秒全流程：主页 → 3D 球点击节点 → 漏斗 lineage 追溯</p>
+    <div class="demo-video-wrap">
+      <video src="./data/demo.mp4" controls preload="metadata" poster="./data/hero_thumb.gif"></video>
+    </div>
+    <div class="demo-gifs">
+      <div class="demo-gif-card">
+        <img src="./data/hero_thumb.gif" alt="主页" />
+        <div class="lbl">📍 主页 · Hero + 4 句对仗</div>
+      </div>
+      <div class="demo-gif-card">
+        <img src="./data/sphere_thumb.gif" alt="3D 球" />
+        <div class="lbl">🔮 3D 球 · 点击节点 + lineage</div>
+      </div>
+      <div class="demo-gif-card">
+        <img src="./data/funnel_thumb.gif" alt="漏斗" />
+        <div class="lbl">▼ 漏斗 · lineage BFS 反向追溯</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="values-section" id="values">
   <div class="inner">
