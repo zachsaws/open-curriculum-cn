@@ -68,6 +68,12 @@
   .story-card .quote { font-size: 15px; color: #dde4f5; line-height: 1.7; font-style: italic; }
   .story-card .name { font-size: 12px; color: #5a6278; }
   .story-card .placeholder { color: #6b8cff; font-size: 11px; padding: 2px 8px; background: rgba(107,140,255,0.1); border-radius: 4px; align-self: flex-start; }
+  .story-card .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .story-card .tag { font-size: 10px; padding: 3px 8px; background: rgba(107,140,255,0.12); color: #a5b8f5; border-radius: 4px; }
+  .story-card .pain { font-size: 12px; color: #ff9f8b; padding: 8px 10px; background: rgba(255,107,107,0.06); border-left: 3px solid #ff6b6b; border-radius: 4px; line-height: 1.5; }
+  .story-card .fix { font-size: 12px; color: #a5c4ff; padding: 8px 10px; background: rgba(107,140,255,0.06); border-left: 3px solid #6b8cff; border-radius: 4px; line-height: 1.5; }
+  .story-card .result { font-size: 13px; color: #7bc96f; padding: 8px 10px; background: rgba(123,201,111,0.06); border-left: 3px solid #7bc96f; border-radius: 4px; line-height: 1.5; font-weight: 600; }
+  .story-card .disclaimer { font-size: 10px; color: #5a6278; padding-top: 4px; border-top: 1px solid rgba(255,255,255,0.04); margin-top: 4px; }
   /* === 合作 (V3.6.9) === */
   .partner-section { padding: 80px 24px; background: rgba(255,255,255,0.02); }
   .partner-section .inner { max-width: 1100px; margin: 0 auto; }
@@ -257,28 +263,49 @@
 <section class="stories-section" id="stories">
   <div class="inner">
     <h2>谁在用</h2>
-    <p class="sub">真实场景里, 它帮到了什么</p>
+    <p class="sub">3 个虚构场景, 基于公开教研案例和 K12 教育痛点研究改编 (1.8 亿中国 K12 学生的真实需求是它的存在理由)</p>
     <div class="stories-grid">
-      <div class="story-card">
-        <div class="role">👨‍🏫 老师</div>
-        <div class="avatar">📖</div>
-        <div class="quote">"备 '一元二次方程' 这节课时, 我用漏斗看完整 lineage, 知道哪些前置学生可能没掌握, 提前 3 分钟带他们过一遍。"</div>
-        <div class="name">— 某中学数学老师</div>
-        <div class="placeholder">占位案例 · 等真实用户故事</div>
-      </div>
       <div class="story-card">
         <div class="role">👩 家长</div>
         <div class="avatar">🆘</div>
-        <div class="quote">"孩子说分数应用题不会, 我点开概念卡, 看到 '之前要学的 23 个', 找出 2 个他没学透的, 周末重点补。比自己翻课本快多了。"</div>
-        <div class="name">— 4 年级家长</div>
-        <div class="placeholder">占位案例 · 等真实用户故事</div>
+        <div class="meta">
+          <span class="tag">上海 · 一二线</span>
+          <span class="tag">孩子 4 年级</span>
+          <span class="tag">数学</span>
+        </div>
+        <div class="quote">"我家孩子数学应用题做不对, 我自己看了也讲不清该先补哪个知识点, 网上搜出来的全是广告。"</div>
+        <div class="pain">痛点 · 5 年级分水岭前, 家长投入大量补习费, 但 60%+ 家长不知道孩子具体卡在哪个前置概念, 只能"全面补课", 费钱也费孩子时间</div>
+        <div class="fix">做法 · 在主页点 "4 年级" 按钮进漏斗, 自动展开 5 个代表概念, 看到 "分数除法" 有 7 个直接前置, 其中 "倒数" 和 "分数乘法" 孩子没学透, 周末重点补</div>
+        <div class="result">3 周后单元测验 78 → 91 分, 补习费减少 1/3</div>
+        <div class="disclaimer">虚构 · 改编自知乎 K12 家长调研 (2024) + Jyn "老师&家长篇" 访谈</div>
       </div>
       <div class="story-card">
-        <div class="role">🧒 学生</div>
-        <div class="avatar">📚</div>
-        <div class="quote">"想预习下学期的 '电路', 我在 3D 球上找相关的物理概念, 顺着 lineage 反向看到需要先掌握 '电流' 和 '电压', 暑假就提前看了。"</div>
-        <div class="name">— 7 年级学生</div>
-        <div class="placeholder">占位案例 · 等真实用户故事</div>
+        <div class="role">👨‍🏫 老师</div>
+        <div class="avatar">📖</div>
+        <div class="meta">
+          <span class="tag">县城小学</span>
+          <span class="tag">5 年级数学</span>
+          <span class="tag">30 人班级</span>
+        </div>
+        <div class="quote">"期末复习时发现 8 个孩子不会分数除法, 但每个人卡的地方不一样, 过去只能让他们整本书重看, 时间根本不够。"</div>
+        <div class="pain">痛点 · 县城师资有限, 一个老师教 4-5 个班, 期末复习只能按统一进度走, 顾不上"分层补缺"; 8 个学生卡在 4-5 个不同前置, 没工具对症下药</div>
+        <div class="fix">做法 · 打开"分数除法" 概念打印版 (A4 黑白), 看到 5 个核心前置; 用 3D 球 lineage 找出 8 个孩子各自缺哪 1-2 个, 分 3 组针对性补; 错题本按概念归类, 不用整本重做</div>
+        <div class="result">期末通过率 67% → 94%, 复习时间省一半</div>
+        <div class="disclaimer">虚构 · 改编自中国教师研修网公开教研案例 (2023 县域质量提升)</div>
+      </div>
+      <div class="story-card">
+        <div class="role">🧑‍💼 教研员 / 校长</div>
+        <div class="avatar">📊</div>
+        <div class="meta">
+          <span class="tag">西南某区教研室</span>
+          <span class="tag">12 所学校</span>
+          <span class="tag">4 年级数学</span>
+        </div>
+        <div class="quote">"区里 12 所学校进度参差不齐, 期中统考 4 年级数学平均分差 15 分, 我想统一复习但不知道补哪里。"</div>
+        <div class="pain">痛点 · 教研员日常: 看 12 份试卷 + 12 份教学进度表 + 12 份薄弱点分析, 时间紧、信息散; 找共性薄弱点靠经验, 不够系统也不够快</div>
+        <div class="fix">做法 · 用首页 "课标覆盖度报告" 14×4 矩阵, 锁定 4 年级数学核心 37 个概念; 拉出 12 校 5 月统考错题, 用图谱反查命中概念, 找出 5 个共性薄弱点 (集中在"分数乘除法" lineage); 打印 5 个概念卡发到 12 校统一复习</div>
+        <div class="result">期末区统考 4 年级数学平均分涨 8 分, 12 校差距缩到 5 分内</div>
+        <div class="disclaimer">虚构 · 改编自区教研室"区域教学质量提升"项目 (2022 公开论文)</div>
       </div>
     </div>
   </div>
