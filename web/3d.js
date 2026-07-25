@@ -86,7 +86,7 @@ async function init() {
 
   // V3.6.9 fix debug: ?debug=1 暴露内部变量 (验证 + 自动化测试)
   if (location.search.includes('debug=1') && typeof window !== 'undefined') {
-    window.__occ3d = { DATA, GROUPS, selectNode, showCard, clearSelection, camera, controls, renderer, pointsMesh, scene };
+    window.__occ3d = { DATA, GROUPS, selectNode, showCard, clearSelection, camera, controls, renderer, pointsMesh, scene, edgesFromTo, edgesToFrom };
     console.log('[debug] window.__occ3d 已暴露, 用 __occ3d.selectNode(idx) 测试');
   }
 }
