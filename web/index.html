@@ -482,166 +482,152 @@
   <div class="row">V3.6.8 入口个人化 · 反馈: <a href="https://github.com/zachsaws/open-curriculum-cn/issues" target="_blank">GitHub Issue</a> · <a href="mailto:zachsaws@gamil.com">Email</a></div>
 </footer>
 
+<script src="./data-cache.js"></script>
 <script>
-// 学科树: 从 graph.json 动态加载
+// 主页: 学科树 + 课标覆盖度 (一次 load, 两处用) — V3.6.9 改用 loadGraphData() 共享 localStorage 缓存
+const PALETTE = {
+  math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
+  science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
+  biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
+  morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
+  pe_health: '#ff7043', labor: '#9ccc65'
+};
+const SUBJ_CN = {
+  math: '数学', chinese: '语文', english: '英语',
+  physics: '物理', chemistry: '化学', biology: '生物',
+  science: '科学', geography: '地理', history: '历史',
+  morality_law: '道德与法治', info_tech: '信息科技',
+  pe_health: '体育与健康', art: '艺术', labor: '劳动'
+};
+const STAGE_LBL = { 1: '1-2 年级', 2: '3-4 年级', 3: '5-6 年级', 4: '7-9 年级' };
+const SUBJ_ORDER = ['math','chinese','english','physics','chemistry','biology','science','geography','history','morality_law','info_tech','pe_health','art','labor'];
+
+function stageOf(g) {
+  if (!g) return 0;
+  if (g <= 2) return 1;
+  if (g <= 4) return 2;
+  if (g <= 6) return 3;
+  return 4;
+}
+
 (async () => {
-  const PALETTE = {
-    math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
-    science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
-    biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
-    morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
-    pe_health: '#ff7043', labor: '#9ccc65'
-  };
-  const SUBJ_CN = {
-    math: '数学', chinese: '语文', english: '英语',
-    physics: '物理', chemistry: '化学', biology: '生物',
-    science: '科学', geography: '地理', history: '历史',
-    morality_law: '道德与法治', info_tech: '信息科技',
-    pe_health: '体育与健康', art: '艺术', labor: '劳动'
-  };
-  const STAGE_LBL = { 1: '1-2 年级', 2: '3-4 年级', 3: '5-6 年级', 4: '7-9 年级' };
-
+  let nodes = [];
   try {
-    const res = await fetch('./data/graph.json');
-    if (!res.ok) throw new Error('graph.json 不存在');
-    const d = await res.json();
-    const nodes = d.nodes || [];
-
-    // 按学科 + 学段 分组 (用 grade_start 算学段)
-    const bySubj = {};
-    for (const n of nodes) {
-      const s = n.subject || '?';
-      const g = n.grade_start;
-      if (!bySubj[s]) bySubj[s] = { count: 0, stages: new Set() };
-      bySubj[s].count++;
-      if (g) {
-        let st;
-        if (g <= 2) st = 1;       // 1-2 年级
-        else if (g <= 4) st = 2;  // 3-4 年级
-        else if (g <= 6) st = 3;  // 5-6 年级
-        else st = 4;              // 7-9 年级
-        bySubj[s].stages.add(st);
-      }
-    }
-
-    // 14 学科, 按概念数降序
-    const tree = document.getElementById('tree');
-    tree.innerHTML = '';
-    const sorted = Object.entries(bySubj).sort((a, b) => b[1].count - a[1].count);
-    for (const [s, info] of sorted) {
-      const card = document.createElement('a');
-      card.className = 'tree-card';
-      card.href = `./funnel.html?subject=${s}`;
-      const stagesArr = [...info.stages].sort();
-      const stagesHTML = stagesArr.map(st => `<span class="stage">${STAGE_LBL[st] || 'S'+st}</span>`).join('');
-      card.innerHTML = `
-        <div class="head">
-          <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
-          <span class="nm">${SUBJ_CN[s] || s}</span>
-          <span class="ct">${info.count}</span>
-        </div>
-        <div class="stages">${stagesHTML}</div>
-      `;
-      tree.appendChild(card);
-    }
+    const d = await loadGraphData();
+    nodes = d.nodes || [];
   } catch (e) {
     document.getElementById('tree').innerHTML = `<div class="tree-card" style="grid-column:1/-1;text-align:center;color:#ff6b6b;padding:24px;">学科数据加载失败: ${e.message}</div>`;
-  }
-})();
-
-// 课标覆盖度矩阵: 14 学科 × 4 学段 (V3.6.9)
-(async () => {
-  const PALETTE = {
-    math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
-    science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
-    biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
-    morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
-    pe_health: '#ff7043', labor: '#9ccc65'
-  };
-  const SUBJ_CN = {
-    math: '数学', chinese: '语文', english: '英语',
-    physics: '物理', chemistry: '化学', biology: '生物',
-    science: '科学', geography: '地理', history: '历史',
-    morality_law: '道德与法治', info_tech: '信息科技',
-    pe_health: '体育与健康', art: '艺术', labor: '劳动'
-  };
-  const SUBJ_ORDER = ['math','chinese','english','physics','chemistry','biology','science','geography','history','morality_law','info_tech','pe_health','art','labor'];
-
-  function stageOf(g) {
-    if (!g) return 0;
-    if (g <= 2) return 1;
-    if (g <= 4) return 2;
-    if (g <= 6) return 3;
-    return 4;
+    document.getElementById('coverage-tbody').innerHTML = `<tr><td colspan="6" style="text-align:center; padding:32px; color:#ff6b6b;">覆盖度数据加载失败: ${e.message}</td></tr>`;
+    return;
   }
 
-  try {
-    const res = await fetch('./data/graph.json');
-    if (!res.ok) throw new Error('graph.json 不存在');
-    const d = await res.json();
-    const nodes = d.nodes || [];
+  // 1) 学科树: 按学科 + 学段 分组
+  const bySubj = {};
+  for (const n of nodes) {
+    const s = n.subject || '?';
+    const g = n.grade_start;
+    if (!bySubj[s]) bySubj[s] = { count: 0, stages: new Set() };
+    bySubj[s].count++;
+    if (g) bySubj[s].stages.add(stageOf(g));
+  }
+  const tree = document.getElementById('tree');
+  tree.innerHTML = '';
+  const sorted = Object.entries(bySubj).sort((a, b) => b[1].count - a[1].count);
+  for (const [s, info] of sorted) {
+    const card = document.createElement('a');
+    card.className = 'tree-card';
+    card.href = `./funnel.html?subject=${s}`;
+    const stagesArr = [...info.stages].sort();
+    const stagesHTML = stagesArr.map(st => `<span class="stage">${STAGE_LBL[st] || 'S'+st}</span>`).join('');
+    card.innerHTML = `
+      <div class="head">
+        <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
+        <span class="nm">${SUBJ_CN[s] || s}</span>
+        <span class="ct">${info.count}</span>
+      </div>
+      <div class="stages">${stagesHTML}</div>
+    `;
+    tree.appendChild(card);
+  }
 
-    // 计数: subj × stage
-    const counts = {};  // counts[subj] = [s1, s2, s3, s4]
-    SUBJ_ORDER.forEach(s => counts[s] = [0, 0, 0, 0]);
-    for (const n of nodes) {
-      const s = n.subject;
-      const st = stageOf(n.grade_start);
-      if (counts[s] && st >= 1) counts[s][st - 1]++;
-    }
-
-    const tbody = document.getElementById('coverage-tbody');
-    tbody.innerHTML = '';
-    for (const s of SUBJ_ORDER) {
-      const row = counts[s];
-      const total = row.reduce((a, b) => a + b, 0);
-      if (total === 0) continue;  // skip 0-row subjects
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td class="row-h" style="text-align:left; padding-left:16px;">
-          <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
-          <span class="subj-name">${SUBJ_CN[s] || s}</span>
-          <span class="subj-en">${s}</span>
-        </td>
-        ${row.map(c => `<td class="cell${c === 0 ? ' zero' : ''}">${c}</td>`).join('')}
-        <td class="total">${total}</td>
-      `;
-      tbody.appendChild(tr);
-    }
-    // 合计行
-    const grandTotal = SUBJ_ORDER.reduce((a, s) => a + counts[s].reduce((x, y) => x + y, 0), 0);
-    const stageTotals = [0, 0, 0, 0];
-    for (const s of SUBJ_ORDER) counts[s].forEach((c, i) => stageTotals[i] += c);
+  // 2) 课标覆盖度: 14 学科 × 4 学段
+  const counts = {};
+  SUBJ_ORDER.forEach(s => counts[s] = [0, 0, 0, 0]);
+  for (const n of nodes) {
+    const s = n.subject;
+    const st = stageOf(n.grade_start);
+    if (counts[s] && st >= 1) counts[s][st - 1]++;
+  }
+  const tbody = document.getElementById('coverage-tbody');
+  tbody.innerHTML = '';
+  for (const s of SUBJ_ORDER) {
+    const row = counts[s];
+    const total = row.reduce((a, b) => a + b, 0);
+    if (total === 0) continue;
     const tr = document.createElement('tr');
-    tr.style.borderTop = '1px solid rgba(255,255,255,0.1)';
     tr.innerHTML = `
-      <td class="row-h" style="text-align:left; padding-left:16px; color:#a5b8f5; font-weight:700;">合计</td>
-      ${stageTotals.map(c => `<td class="cell" style="color:#a5b8f5;">${c}</td>`).join('')}
-      <td class="total" style="background:rgba(107,140,255,0.25); color:#fff;">${grandTotal}</td>
+      <td class="row-h" style="text-align:left; padding-left:16px;">
+        <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
+        <span class="subj-name">${SUBJ_CN[s] || s}</span>
+        <span class="subj-en">${s}</span>
+      </td>
+      ${row.map(c => `<td class="cell${c === 0 ? ' zero' : ''}">${c}</td>`).join('')}
+      <td class="total">${total}</td>
     `;
     tbody.appendChild(tr);
-  } catch (e) {
-    document.getElementById('coverage-tbody').innerHTML = `<tr><td colspan="6" style="text-align:center; padding:32px; color:#ff6b6b;">覆盖度数据加载失败: ${e.message}</td></tr>`;
   }
+  // 合计行
+  const grandTotal = SUBJ_ORDER.reduce((a, s) => a + counts[s].reduce((x, y) => x + y, 0), 0);
+  const stageTotals = [0, 0, 0, 0];
+  for (const s of SUBJ_ORDER) counts[s].forEach((c, i) => stageTotals[i] += c);
+  const tr = document.createElement('tr');
+  tr.style.borderTop = '1px solid rgba(255,255,255,0.1)';
+  tr.innerHTML = `
+    <td class="row-h" style="text-align:left; padding-left:16px; color:#a5b8f5; font-weight:700;">合计</td>
+    ${stageTotals.map(c => `<td class="cell" style="color:#a5b8f5;">${c}</td>`).join('')}
+    <td class="total" style="background:rgba(107,140,255,0.25); color:#fff;">${grandTotal}</td>
+  `;
+  tbody.appendChild(tr);
 })();
 
-// 概念日报邮件订阅 (V3.6.9) — 用 mailto: 转发订阅请求 (零后端, 后续可换 Mailchimp/Resend)
-document.getElementById('subscribe-form')?.addEventListener('submit', (e) => {
+// 概念日报邮件订阅 (V3.6.9 FormSubmit.co) — AJAX POST 转邮件到 zachsaws@gamil.com
+// 零 signup, 用户无感; 首次会触发 FormSubmit 确认链接, 点一下后永久生效
+document.getElementById('subscribe-form')?.addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = document.getElementById('subscribe-email').value.trim();
   const status = document.getElementById('subscribe-status');
-  if (!email || !email.includes('@')) {
+  if (!email || !email.includes('@') || email.length < 5) {
     status.style.color = '#ff6b6b';
     status.textContent = '请输入有效邮箱';
     return;
   }
-  // 打开邮件客户端, 主题"订阅概念日报", 正文用户邮箱
-  const subject = encodeURIComponent('【订阅】概念日报');
-  const body = encodeURIComponent(`邮箱: ${email}\n\n订阅项目: 中国 K12 学习路径图谱 · 概念日报\n发送时间: ${new Date().toISOString()}\n\n(无需回复, 收到后我会手动加你到订阅列表)`);
-  window.location.href = `mailto:zachsaws@gamil.com?subject=${subject}&body=${body}`;
-  status.style.color = '#7bc96f';
-  status.textContent = '✅ 已打开邮件客户端, 发送后我会手动加你到订阅列表';
-  document.getElementById('subscribe-email').value = '';
+  status.style.color = '#a5b8f5';
+  status.textContent = '提交中...';
+  try {
+    const r = await fetch('https://formsubmit.co/ajax/zachsaws@gamil.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: '【订阅】概念日报',
+        _template: 'table',
+        _captcha: 'false',
+        email: email,
+        project: '中国 K12 学习路径图谱 · 概念日报',
+        timestamp: new Date().toISOString(),
+        source: window.location.href
+      })
+    });
+    if (r.ok) {
+      status.style.color = '#7bc96f';
+      status.textContent = '✅ 订阅成功! 每周一发, 介绍本周新增/调整的概念和学习路径';
+      document.getElementById('subscribe-email').value = '';
+    } else {
+      throw new Error('HTTP ' + r.status);
+    }
+  } catch (err) {
+    status.style.color = '#ff9f43';
+    status.textContent = '⚠️ 提交失败, 请直接发邮件到 zachsaws@gamil.com (主题: 订阅概念日报)';
+  }
 });
 </script>
 </body>

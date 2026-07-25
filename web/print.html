@@ -61,6 +61,7 @@
   <div class="loading">加载中...</div>
 </div>
 
+<script src="./data-cache.js"></script>
 <script>
 'use strict';
 
@@ -241,19 +242,8 @@ function render(node, ctx) {
   }
 
   try {
-    let text;
-    try {
-      const gzRes = await fetch('./data/graph.json.gz');
-      if (gzRes.ok) {
-        const ds = new DecompressionStream('gzip');
-        text = await new Response(gzRes.body.pipeThrough(ds)).text();
-      } else throw new Error('gz 404');
-    } catch (e1) {
-      const res = await fetch('./data/graph.json');
-      if (!res.ok) throw new Error('graph.json 不存在');
-      text = await res.text();
-    }
-    const data = JSON.parse(text);
+    // V3.6.9: 用 data-cache.js 共享 localStorage 缓存
+    const data = await loadGraphData();
     const node = data.nodes.find(n => n.id === id);
     if (!node) {
       content.innerHTML = `<div class="err">找不到 ID 为 <code>${esc(id)}</code> 的概念. <a href="./funnel.html" target="_blank">回漏斗找</a></div>`;

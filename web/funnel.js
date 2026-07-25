@@ -96,29 +96,23 @@ async function init() {
   isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
   document.getElementById('loadingMsg').textContent = '加载漏斗学习路径...';
 
-  // 1) 加载数据
+  // 1) 加载数据 (V3.6.9: 用 data-cache.js 共享 localStorage 缓存)
   try {
-    // V3.5g: 优先 .gz 压缩版 (1.4MB) + 客户端解压
-    let text;
-    try {
-      const gzRes = await fetch('./data/graph.json.gz');
-      if (gzRes.ok) {
-        const ds = new DecompressionStream('gzip');
-        text = await new Response(gzRes.body.pipeThrough(ds)).text();
-      } else throw new Error('gz 404');
-    } catch (e1) {
-      console.warn('gz 加载失败, fallback json:', e1.message);
-      const res = await fetch('./data/graph.json');
-      if (!res.ok) throw new Error('graph.json 不存在 (HTTP ' + res.status + ')');
-      text = await res.text();
-    }
-    DATA = JSON.parse(text);
+    DATA = await loadGraphData();
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
     msg.innerHTML = `<div class="err">${'未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;
     console.error(e);
     return;
   }
+  // V3.6.9: 显示数据来源
+  try {
+    const src = typeof getDataSource === 'function' ? getDataSource() : null;
+    if (src === 'cache') {
+      const lm = document.getElementById('loadingMsg');
+      if (lm) lm.textContent = '⚡ 已从本地缓存加载 (秒开)';
+    }
+  } catch (e) {}
 
   // 2) 算布局 + 邻接
   computeLayout();
