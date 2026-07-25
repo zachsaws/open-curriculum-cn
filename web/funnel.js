@@ -144,22 +144,54 @@ async function init() {
   fpsLastTime = growStart;
 
 // V3.6.8: 支持 ?grade=N query, 自动选该年级中心度最高的概念展开 lineage
+// V3.6.9 优化: 优先选年级跨度更小的概念 (G5 概念比 G1-6 跨学段概念更对家长直觉)
 const urlGrade = parseInt(new URLSearchParams(location.search).get('grade'), 10);
 if (urlGrade >= 1 && urlGrade <= 9) {
   setTimeout(() => {
-    let bestIdx = -1, bestC = -1;
+    let bestIdx = -1, bestC = -1, bestSpan = 999;
     for (let i = 0; i < NODES.length; i++) {
       const n = NODES[i];
       const gs = n.raw.grade_start || 0;
       const ge = n.raw.grade_end || 0;
-      if (gs <= urlGrade && ge >= urlGrade) {
-        if ((n.c || 0) > bestC) { bestC = n.c || 0; bestIdx = i; }
+      if (gs > urlGrade || ge < urlGrade) continue;
+      const span = ge - gs;
+      if (span < bestSpan || (span === bestSpan && (n.c || 0) > bestC)) {
+        bestSpan = span;
+        bestC = n.c || 0;
+        bestIdx = i;
       }
     }
     if (bestIdx >= 0) {
       selectNode(bestIdx, false);
     }
   }, 800);  // 等入场动画完成
+}
+
+// V3.6.9: 支持 ?subject=xxx query, 自动只显示该学科
+const urlSubject = new URLSearchParams(location.search).get('subject');
+if (urlSubject && GROUPS && GROUPS.includes(urlSubject)) {
+  setTimeout(() => {
+    // 找到目标学科在 GROUPS 里的 idx
+    const subIdx = GROUPS.indexOf(urlSubject);
+    // 禁用其他学科的 chip + 节点
+    for (let i = 0; i < GROUPS.length; i++) {
+      const s = GROUPS[i];
+      if (i === subIdx) {
+        if (!activeGroups.has(s)) activeGroups.add(s);
+      } else {
+        activeGroups.delete(s);
+      }
+    }
+    // 同步图例 chip 视觉
+    document.querySelectorAll('.chip').forEach((el) => {
+      const sub = el.dataset.subject;
+      const isOff = sub !== urlSubject;
+      el.classList.toggle('off', isOff);
+      el.setAttribute('aria-pressed', isOff ? 'false' : 'true');
+    });
+    // 重画
+    requestAnimationFrame(frame);
+  }, 400);  // 等 buildLegend() 渲染 chip
 }
 
 requestAnimationFrame(frame);
@@ -714,6 +746,20 @@ function showCard(i) {
       if (block) block.style.display = 'none';
     }
   });
+
+  // V3.6.9 教学话术 (用 description 字段, 老师口吻 3 句话)
+  const tvBlock = document.getElementById('card-teaching-voice-block');
+  const tvBody = document.getElementById('card-teaching-voice');
+  if (r.description) {
+    tvBody.textContent = r.description;
+    tvBlock.style.display = '';
+  } else {
+    tvBlock.style.display = 'none';
+  }
+
+  // V3.6.9 打印版按钮 → 新窗口打开 print.html?id=xxx
+  const printBtn = document.getElementById('card-print-btn');
+  if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(r.id);
 
   const arBlock = document.getElementById('card-academic-req-block');
   if (r.academic_req) { ar.textContent = r.academic_req; arBlock.style.display = ''; }

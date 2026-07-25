@@ -812,6 +812,20 @@ function showCard(node) {
     }
   });
 
+  // V3.6.9 教学话术 (description 字段, 老师口吻 3 句话)
+  const tvBlock = document.getElementById('card-teaching-voice-block');
+  const tvBody = document.getElementById('card-teaching-voice');
+  if (node.description) {
+    tvBody.textContent = node.description;
+    tvBlock.style.display = '';
+  } else {
+    tvBlock.style.display = 'none';
+  }
+
+  // V3.6.9 打印版按钮
+  const printBtn = document.getElementById('card-print-btn');
+  if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(node.id);
+
   const arBlock = document.getElementById('card-academic-req-block');
   if (node.academic_req) { ar.textContent = node.academic_req; arBlock.style.display = ''; }
   else { arBlock.style.display = 'none'; }

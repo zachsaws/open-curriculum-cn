@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>概念详情 · 打印版</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { color: #111; background: #fff; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 13px; line-height: 1.7; }
+  body { padding: 40px 56px; max-width: 800px; margin: 0 auto; }
+  .toolbar { position: fixed; top: 16px; right: 16px; display: flex; gap: 8px; z-index: 10; }
+  .toolbar a, .toolbar button { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: #6b8cff; color: #fff; border: none; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; }
+  .toolbar a.secondary { background: #e6e9f2; color: #111; }
+  .toolbar a:hover, .toolbar button:hover { opacity: 0.85; }
+
+  .meta-bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding: 8px 14px; background: #f5f7fb; border: 1px solid #d8def0; border-radius: 6px; margin-bottom: 16px; font-size: 12px; color: #555; }
+  .meta-bar .sw { width: 12px; height: 12px; border-radius: 50%; }
+  .meta-bar .pill { padding: 2px 10px; background: #e6e9f2; border-radius: 10px; }
+
+  h1.title { font-size: 28px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.01em; color: #111; }
+  .subtitle { font-size: 13px; color: #666; margin-bottom: 18px; }
+
+  .lin-stats-print { display: flex; gap: 16px; padding: 12px 16px; background: #fafbff; border: 1px solid #c8d4ff; border-radius: 8px; margin-bottom: 18px; }
+  .lin-stats-print .stat { flex: 1; }
+  .lin-stats-print .v { font-size: 22px; font-weight: 800; color: #6b8cff; line-height: 1.1; }
+  .lin-stats-print .l { font-size: 11px; color: #666; margin-top: 2px; }
+
+  .section { margin-bottom: 16px; page-break-inside: avoid; }
+  .section h2 { font-size: 14px; font-weight: 700; color: #111; padding-bottom: 4px; border-bottom: 1px solid #d8def0; margin-bottom: 8px; }
+  .section p, .section ul { font-size: 13px; color: #222; line-height: 1.8; }
+  .section ul { padding-left: 20px; }
+  .section li { margin-bottom: 3px; }
+  .section .voice { background: #fafbff; border-left: 3px solid #6b8cff; padding: 10px 14px; font-style: normal; color: #222; }
+  .section.empty { display: none; }
+
+  .ref-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ref-item { padding: 6px 10px; background: #fafbff; border: 1px solid #e6e9f2; border-radius: 4px; font-size: 12px; }
+  .ref-item .sw { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+  .ref-item .grade { color: #999; margin-left: 6px; font-family: "SF Mono", monospace; font-size: 10px; }
+
+  .footer { margin-top: 28px; padding-top: 12px; border-top: 1px solid #d8def0; font-size: 11px; color: #999; }
+  .footer a { color: #6b8cff; text-decoration: none; }
+
+  .err { padding: 40px; text-align: center; color: #c00; }
+  .loading { padding: 40px; text-align: center; color: #666; }
+
+  @media print {
+    body { padding: 16mm 18mm; }
+    .toolbar { display: none !important; }
+    .section { page-break-inside: avoid; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a class="secondary" href="./funnel.html" target="_blank">← 返回漏斗</a>
+  <button onclick="window.print()">🖨 打印</button>
+</div>
+
+<div id="content">
+  <div class="loading">加载中...</div>
+</div>
+
+<script>
+'use strict';
+
+const PALETTE = {
+  math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
+  science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
+  biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
+  morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
+  pe_health: '#ff7043', labor: '#9ccc65', integrated: '#78909c',
+};
+
+const SUBJECT_CN = {
+  math: '数学', chinese: '语文', english: '英语',
+  science: '科学', physics: '物理', chemistry: '化学',
+  biology: '生物', history: '历史', geography: '地理',
+  morality_law: '道德与法治', info_tech: '信息科技', art: '艺术',
+  pe_health: '体育与健康', labor: '劳动', integrated: '综合',
+};
+
+function esc(s) {
+  if (!s) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function render(node, ctx) {
+  const r = node.raw || node;
+  const col = PALETTE[r.subject] || '#888';
+  const subjectCn = SUBJECT_CN[r.subject] || r.subject;
+  const gradeRange = (r.grade_start || 0) === (r.grade_end || 0)
+    ? `G${r.grade_start}`
+    : `G${r.grade_start || 0}-${r.grade_end || 0}`;
+
+  // BFS: prerequisites & dependents
+  const preSet = new Set();
+  const nxtSet = new Set();
+  const edgeList = ctx.edges.filter(e =>
+    e.rel !== 'relates_to' &&
+    ((e.from === r.id) || (e.to === r.id))
+  );
+  edgeList.forEach(e => {
+    if (e.to === r.id) preSet.add(e.from);
+    if (e.from === r.id) nxtSet.add(e.to);
+  });
+
+  // BFS for full lineage
+  const visitedPre = new Set([r.id]);
+  const visitedNxt = new Set([r.id]);
+  const queuePre = [r.id];
+  const queueNxt = [r.id];
+  const allEdges = ctx.edges;
+  while (queuePre.length) {
+    const cur = queuePre.shift();
+    allEdges.forEach(e => {
+      if (e.to === cur && e.rel !== 'relates_to' && !visitedPre.has(e.from)) {
+        visitedPre.add(e.from);
+        preSet.add(e.from);
+        queuePre.push(e.from);
+      }
+    });
+  }
+  while (queueNxt.length) {
+    const cur = queueNxt.shift();
+    allEdges.forEach(e => {
+      if (e.from === cur && e.rel !== 'relates_to' && !visitedNxt.has(e.to)) {
+        visitedNxt.add(e.to);
+        nxtSet.add(e.to);
+        queueNxt.push(e.to);
+      }
+    });
+  }
+  const preTotal = preSet.size;
+  const nxtTotal = nxtSet.size;
+
+  // Build HTML
+  const nodeById = {};
+  ctx.nodes.forEach(n => { nodeById[n.id] = n; });
+
+  const renderRefList = (ids) => {
+    if (!ids.size) return '<p style="color:#999; font-style:italic;">无</p>';
+    return '<div class="ref-list">' + Array.from(ids).map(id => {
+      const nn = nodeById[id];
+      if (!nn) return '';
+      const c = PALETTE[nn.subject] || '#888';
+      return `<div class="ref-item"><span class="sw" style="background:${c}"></span>${esc(nn.title || id)}<span class="grade">G${nn.grade_start || ''}-${nn.grade_end || ''}</span></div>`;
+    }).join('') + '</div>';
+  };
+
+  return `
+    <div class="meta-bar">
+      <span class="sw" style="background:${col}"></span>
+      <strong>${esc(subjectCn)}</strong>
+      <span class="pill">${gradeRange}</span>
+      ${r.subdomain ? `<span class="pill">${esc(r.subdomain)}</span>` : ''}
+      ${r.difficulty ? `<span class="pill">难度 ${'●'.repeat(r.difficulty)}${'○'.repeat(5 - r.difficulty)}</span>` : ''}
+      ${r.estimated_minutes ? `<span class="pill">⏱ ${r.estimated_minutes} 分钟</span>` : ''}
+      ${r.bloom && r.bloom.length ? `<span class="pill">${r.bloom.join(' / ')}</span>` : ''}
+    </div>
+
+    <h1 class="title">${esc(r.title)}</h1>
+    ${r.summary ? `<p class="subtitle">${esc(r.summary)}</p>` : ''}
+
+    <div class="lin-stats-print">
+      <div class="stat"><div class="v">${preTotal}</div><div class="l">之前要学的概念 (含直接 + 间接)</div></div>
+      <div class="stat"><div class="v">${nxtTotal}</div><div class="l">之后能学的概念 (含直接 + 间接)</div></div>
+      <div class="stat"><div class="v">${preSet.size - 1}</div><div class="l">直接前置</div></div>
+      <div class="stat"><div class="v">${nxtSet.size - 1}</div><div class="l">直接后继</div></div>
+    </div>
+
+    ${r.description ? `
+      <div class="section">
+        <h2>🎓 这步怎么教 <span style="font-weight:400; font-size:11px; color:#888; margin-left:6px;">老师口吻 · 3 句话讲明白</span></h2>
+        <p class="voice">${esc(r.description)}</p>
+      </div>
+    ` : ''}
+
+    ${r.content_req ? `
+      <div class="section">
+        <h2>📋 课标内容要求 ${r.src_page ? `<span style="font-weight:400; font-size:11px; color:#888; margin-left:6px;">P${r.src_page} 课标原文</span>` : ''}</h2>
+        <p>${esc(r.content_req)}</p>
+      </div>
+    ` : ''}
+
+    ${r.key_points && r.key_points.length ? `
+      <div class="section">
+        <h2>💡 知识要点</h2>
+        <ul>${r.key_points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+      </div>
+    ` : ''}
+
+    ${r.real_examples ? `
+      <div class="section">
+        <h2>📖 真实课例</h2>
+        <p>${esc(r.real_examples)}</p>
+      </div>
+    ` : ''}
+
+    ${r.common_mistakes ? `
+      <div class="section">
+        <h2>⚠️ 常见错误</h2>
+        <p>${esc(r.common_mistakes)}</p>
+      </div>
+    ` : ''}
+
+    ${r.teaching_activity ? `
+      <div class="section">
+        <h2>🎲 教学活动</h2>
+        <p>${esc(r.teaching_activity)}</p>
+      </div>
+    ` : ''}
+
+    <div class="section">
+      <h2>⬅ 之前要学的概念 (${preSet.size - 1} 个直接)</h2>
+      ${renderRefList(preSet)}
+    </div>
+
+    <div class="section">
+      <h2>➡ 之后能学的概念 (${nxtSet.size - 1} 个直接)</h2>
+      ${renderRefList(nxtSet)}
+    </div>
+
+    <div class="footer">
+      <p>来源: <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">Open Curriculum CN</a> · 教育部 2022 义务教育课程方案 · License: CC-BY-SA 4.0</p>
+      <p>概念 ID: <code>${esc(r.id)}</code> · 数据版本: V3.6.9</p>
+    </div>
+  `;
+}
+
+(async () => {
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
+  const content = document.getElementById('content');
+
+  if (!id) {
+    content.innerHTML = '<div class="err">缺少概念 ID. 用法: print.html?id=概念ID (例: M_G3_NS_06)</div>';
+    return;
+  }
+
+  try {
+    let text;
+    try {
+      const gzRes = await fetch('./data/graph.json.gz');
+      if (gzRes.ok) {
+        const ds = new DecompressionStream('gzip');
+        text = await new Response(gzRes.body.pipeThrough(ds)).text();
+      } else throw new Error('gz 404');
+    } catch (e1) {
+      const res = await fetch('./data/graph.json');
+      if (!res.ok) throw new Error('graph.json 不存在');
+      text = await res.text();
+    }
+    const data = JSON.parse(text);
+    const node = data.nodes.find(n => n.id === id);
+    if (!node) {
+      content.innerHTML = `<div class="err">找不到 ID 为 <code>${esc(id)}</code> 的概念. <a href="./funnel.html" target="_blank">回漏斗找</a></div>`;
+      return;
+    }
+    content.innerHTML = render(node, { nodes: data.nodes, edges: data.edges });
+    document.title = node.title + ' · 打印版 · Open Curriculum CN';
+  } catch (e) {
+    content.innerHTML = `<div class="err">加载失败: ${esc(e.message)}</div>`;
+    console.error(e);
+  }
+})();
+</script>
+</body>
+</html>

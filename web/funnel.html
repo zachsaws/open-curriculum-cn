@@ -133,6 +133,11 @@
   #card .lin-stats.empty .n { color: #a5e08c; }
   #card .lin-stats.empty .u { color: #a5e08c; }
   #card .lin-stats.empty .sub { color: #8a92a8; }
+  /* === 教学话术 + 打印按钮 (V3.6.9) === */
+  .teaching-voice .block-body { font-size: 14px; line-height: 1.85; color: #dde4f5; background: rgba(107,140,255,0.06); border-left: 3px solid rgba(107,140,255,0.5); padding: 12px 16px; border-radius: 6px; }
+  .card-actions { display: flex; gap: 8px; margin-top: 6px; margin-bottom: 4px; }
+  .card-action { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; font-size: 12px; color: #a5b8f5; text-decoration: none; transition: all 0.15s; }
+  .card-action:hover { background: rgba(107,140,255,0.15); border-color: rgba(107,140,255,0.3); color: #fff; }
 
   #card .tag { display: inline-block; padding: 3px 8px; border-radius: 4px; background: rgba(107,140,255,0.12); color: #a5b8f5; font-size: 10px; font-family: "SF Mono", monospace; }
   #card .tag.bloom { background: rgba(123,201,111,0.15); color: #a5e08c; }
@@ -366,12 +371,21 @@
   <div class="ctl" id="card-ctl"></div>
   <div class="tag-row" id="card-tags"></div>
 
+  <div class="card-actions">
+    <a class="card-action" id="card-print-btn" target="_blank" title="打开 A4 黑白打印版">🖨 打印版</a>
+  </div>
+
   <div class="lin-stats" id="card-lin-stats">
     <div class="row1">
       <div class="n" id="card-lin-n">0</div>
       <div class="u" id="card-lin-u">prerequisites in total</div>
     </div>
     <div class="sub" id="card-lin-sub">选中节点后, BFS 反向追溯所有直接 + 间接前置概念.</div>
+  </div>
+
+  <div class="block teaching-voice" id="card-teaching-voice-block">
+    <div class="block-title">🎓 这步怎么教 <span style="font-weight:400; font-size:11px; color:#8a92a8; margin-left:6px;">老师口吻 · 3 句话讲明白</span></div>
+    <div class="block-body" id="card-teaching-voice"></div>
   </div>
 
   <div class="block" id="card-content-req-block">
