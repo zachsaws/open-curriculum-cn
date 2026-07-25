@@ -150,6 +150,7 @@ async function svgToPngBlob(svgString) {
     const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const img = new Image();
+    img.crossOrigin = 'anonymous';
     img.onload = () => {
       const canvas = document.createElement('canvas');
       canvas.width = SHARE_W;
@@ -157,9 +158,15 @@ async function svgToPngBlob(svgString) {
       const ctx = canvas.getContext('2d');
       ctx.fillStyle = '#0a0d18';
       ctx.fillRect(0, 0, SHARE_W, SHARE_H);
-      ctx.drawImage(img, 0, 0, SHARE_W, SHARE_H);
-      URL.revokeObjectURL(url);
-      canvas.toBlob(b => b ? resolve(b) : reject(new Error('toBlob 失败')), 'image/png');
+      try {
+        ctx.drawImage(img, 0, 0, SHARE_W, SHARE_H);
+        URL.revokeObjectURL(url);
+        canvas.toBlob(b => b ? resolve(b) : reject(new Error('toBlob 失败')), 'image/png');
+      } catch (e) {
+        // SVG foreignObject 会让 canvas 被污染, 走 fallback
+        URL.revokeObjectURL(url);
+        reject(new Error('CANVAS_TAINTED:' + e.message));
+      }
     };
     img.onerror = (e) => {
       URL.revokeObjectURL(url);
@@ -169,9 +176,250 @@ async function svgToPngBlob(svgString) {
   });
 }
 
+// Fallback: 直接用 Canvas 2D 渲染 (避免 foreignObject taint 问题)
+function renderToCanvas(node, canvas) {
+  const r = node.raw || node;
+  const col = (typeof PALETTE !== 'undefined' && PALETTE[r.subject]) || '#5b8def';
+  const subjectCn = SUBJECT_CN[r.subject] || r.subject || '';
+  const gradeRange = (r.grade_start || 0) === (r.grade_end || 0)
+    ? `G${r.grade_start}`
+    : `G${r.grade_start || 0}-${r.grade_end || 0}`;
+  const difficultyDots = r.difficulty
+    ? '●'.repeat(r.difficulty) + '○'.repeat(5 - r.difficulty)
+    : '';
+  const minutes = r.estimated_minutes || '';
+
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width;
+  const H = canvas.height;
+
+  // 背景
+  const grad = ctx.createLinearGradient(0, 0, W, H);
+  grad.addColorStop(0, '#0a0d18');
+  grad.addColorStop(1, '#1a2040');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // 字体
+  const FONT_FAMILY = '-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif';
+  const FONT_MONO = '"SF Mono", monospace';
+
+  // 顶部 tag row
+  let y = 100;
+  let x = 80;
+  // 学科 tag
+  ctx.fillStyle = 'rgba(255,255,255,0.06)';
+  ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+  ctx.lineWidth = 1;
+  const tag1W = ctx.measureText(subjectCn).width + 80;
+  drawRoundRect(ctx, x, y, tag1W, 56, 28);
+  ctx.fill();
+  ctx.stroke();
+  // 学科色圆
+  ctx.fillStyle = col;
+  ctx.beginPath();
+  ctx.arc(x + 24, y + 28, 14, 0, Math.PI * 2);
+  ctx.fill();
+  // 学科名
+  ctx.fillStyle = '#fff';
+  ctx.font = `600 24px ${FONT_FAMILY}`;
+  ctx.textBaseline = 'middle';
+  ctx.fillText(subjectCn, x + 48, y + 28);
+  x += tag1W + 14;
+
+  // 学科段
+  ctx.fillStyle = 'rgba(255,255,255,0.04)';
+  const tag2W = ctx.measureText(gradeRange).width + 36;
+  drawRoundRect(ctx, x, y, tag2W, 56, 28);
+  ctx.fill();
+  ctx.stroke();
+  ctx.fillStyle = '#a5b8f5';
+  ctx.font = `400 22px ${FONT_MONO}`;
+  ctx.fillText(gradeRange, x + 18, y + 28);
+  x += tag2W + 14;
+
+  // 时间 + 难度
+  if (minutes) {
+    ctx.fillStyle = 'rgba(255,255,255,0.04)';
+    const minLabel = '⏱ ' + minutes + ' 分钟';
+    const tag3W = ctx.measureText(minLabel).width + 36;
+    drawRoundRect(ctx, x, y, tag3W, 56, 28);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = '#a5b8f5';
+    ctx.font = `400 22px ${FONT_FAMILY}`;
+    ctx.fillText(minLabel, x + 18, y + 28);
+    x += tag3W + 14;
+  }
+  if (difficultyDots) {
+    ctx.fillStyle = 'rgba(255,255,255,0.04)';
+    const tag4W = ctx.measureText(difficultyDots).width + 36;
+    drawRoundRect(ctx, x, y, tag4W, 56, 28);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = '#a5b8f5';
+    ctx.font = `400 22px ${FONT_FAMILY}`;
+    ctx.fillText(difficultyDots, x + 18, y + 28);
+  }
+
+  // 标题 (大, 多行)
+  y = 220;
+  ctx.fillStyle = '#fff';
+  ctx.font = `900 88px ${FONT_FAMILY}`;
+  const titleText = r.title || '';
+  const titleLines = wrapText(titleText, 14).split('\n').slice(0, 3);
+  const lh = 96;
+  for (const line of titleLines) {
+    ctx.fillText(line, 80, y);
+    y += lh;
+  }
+
+  // summary
+  y += 10;
+  if (r.summary) {
+    ctx.fillStyle = '#8a92a8';
+    ctx.font = `400 26px ${FONT_FAMILY}`;
+    const summaryLines = wrapText(r.summary, 28).split('\n').slice(0, 2);
+    for (const line of summaryLines) {
+      ctx.fillText(line, 80, y);
+      y += 38;
+    }
+  }
+
+  // 教学话术
+  y += 20;
+  let voiceText = r.description || '';
+  if (voiceText.length > 200) voiceText = voiceText.slice(0, 197) + '...';
+  if (voiceText) {
+    const vh = 220;
+    ctx.fillStyle = 'rgba(107,140,255,0.08)';
+    drawRoundRect(ctx, 80, y, W - 160, vh, 12);
+    ctx.fill();
+    // 左边框
+    ctx.fillStyle = col;
+    ctx.fillRect(80, y, 8, vh);
+    // 标题
+    ctx.fillStyle = col;
+    ctx.font = `700 22px ${FONT_FAMILY}`;
+    ctx.textBaseline = 'top';
+    ctx.fillText('🎓 这步怎么教', 112, y + 24);
+    // 内容
+    ctx.fillStyle = '#dde4f5';
+    ctx.font = `400 26px ${FONT_FAMILY}`;
+    const voiceLines = wrapText(voiceText, 32).split('\n').slice(0, 5);
+    let vy = y + 60;
+    for (const line of voiceLines) {
+      ctx.fillText(line, 112, vy);
+      vy += 36;
+    }
+    y += vh + 20;
+  }
+
+  // 之前要学 + 之后能学
+  const preNames = (node._pre || []).slice(0, 4);
+  const nxtNames = (node._nxt || []).slice(0, 4);
+  const colW = (W - 160 - 24) / 2;
+  if (preNames.length || nxtNames.length) {
+    const boxH = 220;
+    let bx = 80;
+    if (preNames.length) {
+      drawCardBox(ctx, bx, y, colW, boxH, '⬅ 之前要学', '#6b8cff');
+      let by = y + 60;
+      for (const item of preNames) {
+        ctx.fillStyle = '#e6e9f2';
+        ctx.font = `500 22px ${FONT_FAMILY}`;
+        ctx.textBaseline = 'top';
+        const name = (item.t || item.id || '').slice(0, 18);
+        ctx.fillText('• ' + name, bx + 20, by);
+        // 底边线
+        ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+        ctx.beginPath();
+        ctx.moveTo(bx + 20, by + 32);
+        ctx.lineTo(bx + colW - 20, by + 32);
+        ctx.stroke();
+        by += 40;
+      }
+      bx += colW + 24;
+    }
+    if (nxtNames.length) {
+      drawCardBox(ctx, bx, y, colW, boxH, '➡ 之后能学', '#7bc96f');
+      let by = y + 60;
+      for (const item of nxtNames) {
+        ctx.fillStyle = '#e6e9f2';
+        ctx.font = `500 22px ${FONT_FAMILY}`;
+        ctx.textBaseline = 'top';
+        const name = (item.t || item.id || '').slice(0, 18);
+        ctx.fillText('• ' + name, bx + 20, by);
+        ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+        ctx.beginPath();
+        ctx.moveTo(bx + 20, by + 32);
+        ctx.lineTo(bx + colW - 20, by + 32);
+        ctx.stroke();
+        by += 40;
+      }
+    }
+    y += boxH + 20;
+  }
+
+  // 底部
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.beginPath();
+  ctx.moveTo(80, H - 80);
+  ctx.lineTo(W - 80, H - 80);
+  ctx.stroke();
+  ctx.fillStyle = '#8a92a8';
+  ctx.font = `400 22px ${FONT_MONO}`;
+  ctx.textBaseline = 'top';
+  ctx.fillText('zachsaws.github.io/open-curriculum-cn', 80, H - 60);
+  ctx.fillStyle = '#5a6278';
+  ctx.font = `400 20px ${FONT_MONO}`;
+  const idText = r.id || '';
+  const idW = ctx.measureText(idText).width;
+  ctx.fillText(idText, W - 80 - idW, H - 60);
+}
+
+function drawRoundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+}
+
+function drawCardBox(ctx, x, y, w, h, title, titleColor) {
+  ctx.fillStyle = 'rgba(255,255,255,0.03)';
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 1;
+  drawRoundRect(ctx, x, y, w, h, 12);
+  ctx.fill();
+  ctx.stroke();
+  ctx.fillStyle = titleColor;
+  ctx.font = `700 22px -apple-system, "PingFang SC", sans-serif`;
+  ctx.textBaseline = 'top';
+  ctx.fillText(title, x + 24, y + 20);
+}
+
 async function downloadShareImage(node) {
-  const svg = generateShareSVG(node);
-  const blob = await svgToPngBlob(svg);
+  let blob;
+  try {
+    const svg = generateShareSVG(node);
+    blob = await svgToPngBlob(svg);
+  } catch (e) {
+    // fallback: canvas 直接渲染
+    if (e.message && e.message.startsWith('CANVAS_TAINTED')) {
+      const canvas = document.createElement('canvas');
+      canvas.width = SHARE_W;
+      canvas.height = SHARE_H;
+      renderToCanvas(node, canvas);
+      blob = await new Promise((res, rej) => canvas.toBlob(b => b ? res(b) : rej(new Error('canvas toBlob 失败')), 'image/png'));
+    } else throw e;
+  }
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
@@ -187,8 +435,12 @@ async function copyShareImage(node) {
   if (!navigator.clipboard || !window.ClipboardItem) {
     throw new Error('当前浏览器不支持剪贴板图片');
   }
-  const svg = generateShareSVG(node);
-  const blob = await svgToPngBlob(svg);
+  // 直接用 canvas 渲染 (避免 SVG taint)
+  const canvas = document.createElement('canvas');
+  canvas.width = SHARE_W;
+  canvas.height = SHARE_H;
+  renderToCanvas(node, canvas);
+  const blob = await new Promise((res, rej) => canvas.toBlob(b => b ? res(b) : rej(new Error('toBlob 失败')), 'image/png'));
   await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
 }
 
@@ -270,21 +522,20 @@ function showShareModal(node, NODES) {
     }
   });
 
-  // 异步生成预览
+  // 异步生成预览 (用 canvas 渲染, 避免 SVG taint)
   (async () => {
     try {
-      const svg = generateShareSVG(nodeWithRel);
-      const blob = await svgToPngBlob(svg);
-      const url = URL.createObjectURL(blob);
-      const img = new Image();
-      img.style.cssText = 'width:100%; height:100%; object-fit:contain; border-radius:6px;';
-      img.onload = () => URL.revokeObjectURL(url);
-      img.src = url;
+      const canvas = document.createElement('canvas');
+      canvas.width = SHARE_W;
+      canvas.height = SHARE_H;
+      renderToCanvas(nodeWithRel, canvas);
       const preview = document.getElementById('share-preview');
       if (preview) {
         preview.innerHTML = '';
         preview.style.background = 'transparent';
-        preview.appendChild(img);
+        // 显示缩小版预览
+        canvas.style.cssText = 'width:100%; height:100%; object-fit:contain; border-radius:6px;';
+        preview.appendChild(canvas);
       }
     } catch (e) {
       const preview = document.getElementById('share-preview');
