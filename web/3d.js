@@ -826,6 +826,19 @@ function showCard(node) {
   const printBtn = document.getElementById('card-print-btn');
   if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(node.id);
 
+  // V3.6.9 分享学习卡按钮
+  const shareBtn = document.getElementById('card-share-btn');
+  if (shareBtn) {
+    shareBtn.onclick = () => {
+      if (typeof showShareCard === 'function') {
+        // 3d.js uses NODES3D or similar; share.js uses NODES global
+        showShareCard(node, (typeof NODES !== 'undefined') ? NODES : (typeof NODES3D !== 'undefined' ? NODES3D : null));
+      } else {
+        alert('share.js 加载失败');
+      }
+    };
+  }
+
   const arBlock = document.getElementById('card-academic-req-block');
   if (node.academic_req) { ar.textContent = node.academic_req; arBlock.style.display = ''; }
   else { arBlock.style.display = 'none'; }

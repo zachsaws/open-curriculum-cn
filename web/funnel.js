@@ -761,6 +761,15 @@ function showCard(i) {
   const printBtn = document.getElementById('card-print-btn');
   if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(r.id);
 
+  // V3.6.9 分享学习卡按钮 → 弹出模态 + 下载/复制
+  const shareBtn = document.getElementById('card-share-btn');
+  if (shareBtn) {
+    shareBtn.onclick = () => {
+      if (typeof showShareCard === 'function') showShareCard(n, NODES);
+      else alert('share.js 加载失败');
+    };
+  }
+
   const arBlock = document.getElementById('card-academic-req-block');
   if (r.academic_req) { ar.textContent = r.academic_req; arBlock.style.display = ''; }
   else { arBlock.style.display = 'none'; }
