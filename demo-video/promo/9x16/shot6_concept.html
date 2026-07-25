@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; background: radial-gradient(ellipse at center, #1a2040 0%, #0a0d18 70%); overflow: hidden; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; }
+  .wrap { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; }
+  .label { color: #8a92a8; font-size: 18px; font-weight: 500; margin-top: 56px; margin-bottom: 8px; opacity: 0; animation: fadein 0.4s ease-out 0.2s forwards; z-index: 2; padding: 0 32px; text-align: center; }
+  .label .b { color: #6b8cff; font-weight: 800; }
+  svg { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+  .node { opacity: 0; animation: pop 0.4s cubic-bezier(.2,1.5,.3,1) forwards; }
+  .node-1 { animation-delay: 0.4s; }
+  .node-2 { animation-delay: 0.55s; }
+  .node-3 { animation-delay: 0.7s; }
+  .node-4 { animation-delay: 0.85s; }
+  .node-5 { animation-delay: 1.0s; }
+  .conn { stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 0.5s ease-out forwards; }
+  .conn-1 { animation-delay: 1.3s; }
+  .conn-2 { animation-delay: 1.45s; }
+  .conn-3 { animation-delay: 1.6s; }
+  .conn-4 { animation-delay: 1.75s; }
+  .conn-5 { animation-delay: 1.9s; }
+  .conn-6 { animation-delay: 2.05s; }
+  @keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pop { 0% { opacity: 0; transform: scale(0.5); } 60% { opacity: 1; transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="label"><span class="b">跨学科连接</span> · 数学/物理/化学/地理/生物<br>2613 条</div>
+  <svg viewBox="0 0 720 1280" preserveAspectRatio="xMidYMid meet">
+    <!-- 中心: 数学 (顶部) -->
+    <g class="node node-1">
+      <circle cx="360" cy="340" r="58" fill="#5b8def" opacity="0.9"/>
+      <text x="360" y="340" fill="#fff" font-size="24" text-anchor="middle" font-weight="800" dominant-baseline="middle">数学</text>
+      <text x="360" y="420" fill="#a5b8f5" font-size="14" text-anchor="middle" font-weight="500">337 概念</text>
+    </g>
+    <!-- 左中: 物理 -->
+    <g class="node node-2">
+      <circle cx="200" cy="640" r="48" fill="#ba68c8" opacity="0.9"/>
+      <text x="200" y="640" fill="#fff" font-size="22" text-anchor="middle" font-weight="800" dominant-baseline="middle">物理</text>
+      <text x="200" y="710" fill="#a5b8f5" font-size="13" text-anchor="middle" font-weight="500">121 概念</text>
+    </g>
+    <!-- 右中: 化学 -->
+    <g class="node node-3">
+      <circle cx="520" cy="640" r="44" fill="#26a69a" opacity="0.9"/>
+      <text x="520" y="640" fill="#fff" font-size="22" text-anchor="middle" font-weight="800" dominant-baseline="middle">化学</text>
+      <text x="520" y="708" fill="#a5b8f5" font-size="13" text-anchor="middle" font-weight="500">62 概念</text>
+    </g>
+    <!-- 左下: 地理 -->
+    <g class="node node-4">
+      <circle cx="200" cy="950" r="44" fill="#42a5f5" opacity="0.9"/>
+      <text x="200" y="950" fill="#fff" font-size="22" text-anchor="middle" font-weight="800" dominant-baseline="middle">地理</text>
+      <text x="200" y="1018" fill="#a5b8f5" font-size="13" text-anchor="middle" font-weight="500">91 概念</text>
+    </g>
+    <!-- 右下: 生物 -->
+    <g class="node node-5">
+      <circle cx="520" cy="950" r="44" fill="#66bb6a" opacity="0.9"/>
+      <text x="520" y="950" fill="#fff" font-size="22" text-anchor="middle" font-weight="800" dominant-baseline="middle">生物</text>
+      <text x="520" y="1018" fill="#a5b8f5" font-size="13" text-anchor="middle" font-weight="500">71 概念</text>
+    </g>
+
+    <!-- 数学 → 其他 4 条 -->
+    <line class="conn conn-1" x1="335" y1="395" x2="220" y2="600" stroke="#ba68c8" stroke-width="2" opacity="0.7"/>
+    <line class="conn conn-2" x1="385" y1="395" x2="500" y2="600" stroke="#26a69a" stroke-width="2" opacity="0.7"/>
+    <line class="conn conn-3" x1="335" y1="395" x2="220" y2="910" stroke="#42a5f5" stroke-width="2" opacity="0.7"/>
+    <line class="conn conn-4" x1="385" y1="395" x2="500" y2="910" stroke="#66bb6a" stroke-width="2" opacity="0.7"/>
+    <!-- 跨学科虚线 -->
+    <line class="conn conn-5" x1="200" y1="688" x2="200" y2="906" stroke="#a5b8f5" stroke-width="2" opacity="0.5" style="stroke-dasharray: 6 6;"/>
+    <line class="conn conn-6" x1="520" y1="684" x2="520" y2="906" stroke="#a5b8f5" stroke-width="2" opacity="0.5" style="stroke-dasharray: 6 6;"/>
+
+    <!-- 边标签 -->
+    <text x="280" y="490" fill="#a5b8f5" font-size="12" text-anchor="middle" font-weight="500" opacity="0.8">力学</text>
+    <text x="440" y="490" fill="#a5b8f5" font-size="12" text-anchor="middle" font-weight="500" opacity="0.8">物质结构</text>
+    <text x="280" y="500" fill="#a5b8f5" font-size="12" text-anchor="middle" font-weight="500" opacity="0.8">地球</text>
+    <text x="440" y="500" fill="#a5b8f5" font-size="12" text-anchor="middle" font-weight="500" opacity="0.8">生态系统</text>
+  </svg>
+</div>
+</body>
+</html>

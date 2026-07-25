@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; background: linear-gradient(135deg, #0a0d18 0%, #1a2040 100%); overflow: hidden; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; }
+  .wrap { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 0 48px; }
+  .badge { display: inline-flex; align-items: center; gap: 10px; padding: 12px 26px; background: rgba(107,140,255,0.18); border: 1px solid rgba(107,140,255,0.4); border-radius: 32px; font-size: 20px; color: #a5b8f5; font-weight: 700; margin-bottom: 40px; opacity: 0; animation: fadein 0.5s ease-out 0.2s forwards; }
+  .h { color: #fff; font-size: 64px; font-weight: 900; text-align: center; line-height: 1.2; margin-bottom: 40px; opacity: 0; animation: rise 0.6s cubic-bezier(.2,.8,.2,1) 0.6s forwards; }
+  .h .blue { color: #6b8cff; }
+  .stats { display: flex; gap: 24px; margin-bottom: 48px; opacity: 0; animation: fadein 0.5s ease-out 1.0s forwards; }
+  .stat { text-align: center; padding: 0 12px; }
+  .stat .v { font-size: 48px; font-weight: 900; color: #6b8cff; }
+  .stat .l { font-size: 16px; color: #8a92a8; margin-top: 4px; }
+  .cta { display: inline-flex; align-items: center; gap: 14px; padding: 20px 44px; background: #6b8cff; border-radius: 14px; color: #fff; font-size: 28px; font-weight: 700; opacity: 0; animation: rise 0.6s cubic-bezier(.2,.8,.2,1) 1.4s forwards; }
+  .cta .arrow { font-size: 34px; }
+  .url { color: #5a6278; font-size: 16px; margin-top: 22px; opacity: 0; animation: fadein 0.5s ease-out 1.8s forwards; font-family: "SF Mono", monospace; word-break: break-all; text-align: center; }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">📚 教育部 2022 最新课标</div>
+  <div class="h">中国 K12<br><span class="blue">学习路径</span>图谱</div>
+  <div class="stats">
+    <div class="stat"><div class="v">1906</div><div class="l">概念</div></div>
+    <div class="stat"><div class="v">14</div><div class="l">学科</div></div>
+    <div class="stat"><div class="v">4736</div><div class="l">路径</div></div>
+  </div>
+  <div class="cta">立即体验 <span class="arrow">→</span></div>
+  <div class="url">github.com/zachsaws/<br>open-curriculum-cn</div>
+</div>
+</body>
+</html>

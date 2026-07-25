@@ -1,2 +1,4 @@
 demo-video/*.webm
-demo-video/tmp*/
+demo-video/**/tmp*/
+demo-video/promo/9x16/*.webm
+demo-video/promo/9x16/raw_*.webm
