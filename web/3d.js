@@ -797,11 +797,12 @@ function showCard(node) {
     }
   });
 
-  // V3.6.9 教学话术 (description 字段, 老师口吻 3 句话)
+  // V3.7 P1 教学话术 (独立字段, 老师口吻 3 句话讲明白, fallback description)
   const tvBlock = document.getElementById('card-teaching-voice-block');
   const tvBody = document.getElementById('card-teaching-voice');
-  if (node.description) {
-    tvBody.textContent = node.description;
+  const tvText = node.teaching_voice || node.description;
+  if (tvText) {
+    tvBody.textContent = tvText;
     tvBlock.style.display = '';
   } else {
     tvBlock.style.display = 'none';
