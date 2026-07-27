@@ -822,11 +822,17 @@ function showCard(i) {
   const metaBlock = document.getElementById('card-meta-block');
   const meta = document.getElementById('card-meta');
   const metaItems = [];
-  if (r.type) metaItems.push(`<span class="meta-tag type-${r.type.toLowerCase()}">${r.type}</span>`);
-  if (r.age_range_start) metaItems.push(`<span class="meta-tag">🎂 ${r.age_range_start}-${r.age_range_end || r.age_range_start} 岁</span>`);
+  // V3.6.10c: 标签用户化 (FACTUAL/中心度/6-7 岁 改成中文+更直白)
+  const TYPE_CN = { FACTUAL: '📘 事实型', PROCEDURAL: '🔧 步骤型', CONCEPTUAL: '💡 概念型' };
+  if (r.type) metaItems.push(`<span class="meta-tag type-${r.type.toLowerCase()}">${TYPE_CN[r.type] || r.type}</span>`);
+  if (r.grade_start && r.grade_end && r.grade_start === r.grade_end) {
+    metaItems.push(`<span class="meta-tag">📅 ${r.grade_start} 年级</span>`);
+  } else if (r.grade_start && r.grade_end) {
+    metaItems.push(`<span class="meta-tag">📅 ${r.grade_start}-${r.grade_end} 年级</span>`);
+  }
   if (r.centrality !== undefined) {
     const centPct = Math.round(r.centrality * 100);
-    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能学)">⭐ 中心度 ${centPct}%</span>`);
+    metaItems.push(`<span class="meta-tag" title="重要度: 这个概念被多少个其他概念依赖 + 能解锁多少新概念。越高越关键。">📊 重要度 ${centPct}%</span>`);
   }
   if (metaItems.length) { meta.innerHTML = metaItems.join(' '); metaBlock.style.display = ''; }
   else metaBlock.style.display = 'none';

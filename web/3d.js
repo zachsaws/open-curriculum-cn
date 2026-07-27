@@ -750,13 +750,15 @@ function showCard(node) {
   if (node.difficulty) {
     const t = document.createElement('span');
     t.className = 'tag diff-' + node.difficulty;
-    t.textContent = "..." + ' ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
+    // V3.6.10c: 删 "..." 真字符 (之前 V3.6.2 留的占位), 改成"难度"前缀更清楚
+    t.textContent = '难度 ' + '●'.repeat(node.difficulty) + '○'.repeat(5 - node.difficulty);
     tagRow.appendChild(t);
   }
   if (node.estimated_minutes) {
     const t = document.createElement('span');
     t.className = 'tag min';
-    t.textContent = '⏱ ' + node.estimated_minutes + ' ' + "...";
+    // V3.6.10c: 删 "..." 真字符, 改成"约 N 分钟"更自然
+    t.textContent = '⏱ 约 ' + node.estimated_minutes + ' 分钟';
     tagRow.appendChild(t);
   }
   if (node.subdomain) {
@@ -776,7 +778,7 @@ function showCard(node) {
   const pageLink = document.getElementById('card-page-link');
   if (node.src_page) {
     const srcText = "...";
-    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} ${srcText}</a>`;
+    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} 查看</a>`;
   } else pageLink.textContent = '';
 
   // 学业要求
@@ -860,15 +862,22 @@ function showCard(node) {
   if (node.assessment_prompt) { ass.textContent = node.assessment_prompt; assBlock.style.display = ''; }
   else { assBlock.style.display = 'none'; }
 
-  // 元信息
+  // 元信息 — V3.6.10c: 标签用户化 (FACTUAL/中心度/6-7 岁 改成中文+更直白)
   const metaBlock = document.getElementById('card-meta-block');
   const meta = document.getElementById('card-meta');
   const metaItems = [];
-  if (node.type) metaItems.push(`<span class="meta-tag type-${node.type.toLowerCase()}">${node.type}</span>`);
-  if (node.age_range_start) metaItems.push(`<span class="meta-tag">🎂 ${node.age_range_start}-${node.age_range_end || node.age_range_start} 岁</span>`);
+  const TYPE_CN = { FACTUAL: '📘 事实型', PROCEDURAL: '🔧 步骤型', CONCEPTUAL: '💡 概念型' };
+  if (node.type) metaItems.push(`<span class="meta-tag type-${node.type.toLowerCase()}">${TYPE_CN[node.type] || node.type}</span>`);
+  // V3.6.10c: 用 grade_start 替代 age_range (用户更熟悉年级, 不是"6-7 岁")
+  if (node.grade_start && node.grade_end && node.grade_start === node.grade_end) {
+    metaItems.push(`<span class="meta-tag">📅 ${node.grade_start} 年级</span>`);
+  } else if (node.grade_start && node.grade_end) {
+    metaItems.push(`<span class="meta-tag">📅 ${node.grade_start}-${node.grade_end} 年级</span>`);
+  }
+  // V3.6.10c: 中心度 7% 改成"重要度 7%" (更直白, tooltip 解释)
   if (node.centrality !== undefined) {
     const centPct = Math.round(node.centrality * 100);
-    metaItems.push(`<span class="meta-tag" title="中心度 (被需要 + 能学)">⭐ 中心度 ${centPct}%</span>`);
+    metaItems.push(`<span class="meta-tag" title="重要度: 这个概念被多少个其他概念依赖 + 能解锁多少新概念。越高越关键。">📊 重要度 ${centPct}%</span>`);
   }
   if (node.bloom) metaItems.push(`<span class="meta-tag bloom-tag">${node.bloom}</span>`);
   if (metaItems.length) { meta.innerHTML = metaItems.join(' '); metaBlock.style.display = ''; }
@@ -887,16 +896,21 @@ function showCard(node) {
   const nextLabel = document.querySelector('.sec-next .label');
   nextLabel.innerHTML = `<span >之后能学</span> · <span class="k" id="card-next-k">${nextEdges.length}</span>${softNext.length ? ` <span class="soft-hint">(+${softNext.length} 软关联)</span>` : ''}`;
 
-  // 边 reason
+  // 边 reason — V3.6.10c: relLabels 按 side 区分 (pre 边 = "需要先会", next 边 = "之后能学")
+  // 不再共用一张表, 避免"之后能学"区显示"前置"字样的矛盾
   const fillReasons = (container, edges, side) => {
     container.innerHTML = '';
     const withReason = edges.filter(e => e.reason);
+    const relLabels = {
+      pre:  { prerequisite: '需要先会', progresses_to: '需要先会', relates_to: '相关' },
+      next: { prerequisite: '之后能学', progresses_to: '之后能学', relates_to: '相关' }
+    };
     withReason.slice(0, 3).forEach(e => {
       const otherIdx = side === 'pre' ? e.fromIdx : e.toIdx;
-      const relLabels = { prerequisite: '前置', progresses_to: '进阶', relates_to: '关联' };
       const d = document.createElement('div');
       d.className = 'reason-row';
-      d.innerHTML = `<span class="rel-tag rel-${e.rel}">${relLabels[e.rel] || e.rel}</span><span class="reason-txt">${e.reason}</span>`;
+      const tag = relLabels[side][e.rel] || e.rel;
+      d.innerHTML = `<span class="rel-tag rel-${e.rel}">${tag}</span><span class="reason-txt">${e.reason}</span>`;
       container.appendChild(d);
     });
   };
@@ -909,7 +923,8 @@ function showCard(node) {
     if (!edges.length) {
       const d = document.createElement('div');
       d.className = 'empty';
-      d.textContent = "...";
+      // V3.6.10c: 删 "..." 真字符, 改成"无直接先要会" / "无之后能学"
+      d.textContent = side === 'pre' ? '没有先要会的概念 (起点或独立概念)' : '暂无之后能学的概念';
       container.appendChild(d);
       return;
     }
