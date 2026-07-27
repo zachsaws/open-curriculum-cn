@@ -247,7 +247,7 @@
   /* 视图切换 (右上) — 漏斗视图本身就是目的地, 切回 3D 球 */
   .view-toggle {
     position: fixed; top: 20px; right: 20px; z-index: 21;
-    display: inline-flex; align-items: center; gap: 6px;
+    display: inline-flex; align-align: center; gap: 6px;
     background: rgba(107,140,255,0.18); backdrop-filter: blur(10px);
     border: 1px solid rgba(107,140,255,0.4);
     color: #c8d4ff; padding: 6px 14px; border-radius: 6px;
@@ -258,6 +258,20 @@
     background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
   }
   .view-toggle .icon { font-size: 14px; }
+  /* V3.6.10: 左上角"返回首页"浮按钮 (跟右下 view-toggle 对称) */
+  .home-btn {
+    position: fixed; top: 20px; left: 20px; z-index: 21;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #dde4f5; padding: 6px 12px; border-radius: 6px;
+    font-size: 12px; font-weight: 600; text-decoration: none;
+    font-family: inherit; transition: all 0.15s;
+  }
+  .home-btn:hover {
+    background: rgba(255,255,255,0.16); color: #fff; border-color: rgba(255,255,255,0.3);
+  }
+  .home-btn .icon { font-size: 14px; line-height: 1; }
 
   /* 加载状态 */
   #loading {
@@ -326,9 +340,13 @@
 
 <div id="wrap" tabindex="0" role="application" aria-label="倒漏斗概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情和看之前要学什么"></div>
 
+<a href="./index.html" class="home-btn" aria-label="返回首页" title="返回首页 (Open Curriculum CN)">
+  <span class="icon">🏠</span><span>首页</span>
+</a>
+
 <div class="header header-funnel">
   <h1 id="headerTitleFunnel">2022 新课标知识图谱 · 漏斗学习路径视图</h1>
-  <div class="sub" id="headerSubFunnel">1906 概念按年级升序展开成倒漏斗 · 4736 条学习路径可看完整前置 · <a href="./index.html" style="color:#5a6278;text-decoration:none">← 返回首页</a> · <a href="./explore.html" style="color:#6b8cff;text-decoration:none">切换到 3D 球面视图 →</a></div>
+  <div class="sub" id="headerSubFunnel">1906 概念按年级升序展开成倒漏斗 · 4736 条学习路径可看完整前置 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">← 返回首页</a> · <a href="./explore.html" style="color:#6b8cff;text-decoration:none">切换到 3D 球面视图 →</a></div>
 </div>
 
 <a href="./explore.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="切换到 3D 球面视图">

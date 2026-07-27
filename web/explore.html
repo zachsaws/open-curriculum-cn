@@ -264,6 +264,20 @@
     background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
   }
   .view-toggle .icon { font-size: 14px; }
+  /* V3.6.10: 左上角"返回首页"浮按钮 (跟右下 view-toggle 对称) */
+  .home-btn {
+    position: fixed; top: 20px; left: 20px; z-index: 21;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #dde4f5; padding: 6px 12px; border-radius: 6px;
+    font-size: 12px; font-weight: 600; text-decoration: none;
+    font-family: inherit; transition: all 0.15s;
+  }
+  .home-btn:hover {
+    background: rgba(255,255,255,0.16); color: #fff; border-color: rgba(255,255,255,0.3);
+  }
+  .home-btn .icon { font-size: 14px; line-height: 1; }
 
   /* 加载状态 */
   #loading {
@@ -340,9 +354,13 @@
 
 <div id="three-canvas" tabindex="0" role="application" aria-label="3D 球面概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情"></div>
 
+<a href="./index.html" class="home-btn" aria-label="返回首页" title="返回首页 (Open Curriculum CN)">
+  <span class="icon">🏠</span><span>首页</span>
+</a>
+
 <div class="header header-3d">
   <h1 id="headerTitle3d">2022 新课标知识图谱 · 3D 球面视图</h1>
-  <div class="sub" id="headerSub3d">1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#5a6278;text-decoration:none">← 返回首页</a></div>
+  <div class="sub" id="headerSub3d">1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">← 返回首页</a></div>
 </div>
 
 <a href="./funnel.html" class="view-toggle" aria-label="切换到漏斗学习路径视图" title="切换到漏斗学习路径 (B 完成后可用)">
