@@ -1,0 +1,83 @@
+name: 数据质量审查 (audit)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/graph/**'
+      - 'tools/audit_concepts.py'
+      - '.github/workflows/audit.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/graph/**'
+  schedule:
+    # 每天 02:00 UTC (北京时间 10:00) 跑一次, 防止审查遗漏
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  audit:
+    name: 概念质量审查
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 跑 audit_concepts.py
+        id: audit
+        run: |
+          python3 tools/audit_concepts.py > /tmp/audit.txt 2>&1
+          echo "audit exit code: $?"
+          # 报告摘要
+          head -30 /tmp/audit.txt
+
+      - name: 上传审计报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: /tmp/audit.txt
+          retention-days: 30
+
+      - name: 覆盖率红线
+        id: coverage
+        run: |
+          # 从 audit 输出解析 academic_req / teaching_voice / key_points ≥3 覆盖率
+          python3 tools/audit_concepts.py --json /tmp/audit.json > /dev/null 2>&1
+          python3 -c "
+          import json, sys
+          d = json.load(open('/tmp/audit.json'))
+          cov = d['coverage']
+          ar = cov.get('academic_req', 0)
+          tv = cov.get('teaching_voice', 0)
+          kp = cov.get('key_points', 0)
+          # 任何字段 < 95% 视为失败
+          failed = []
+          if ar < 95: failed.append(f'academic_req={ar}%')
+          if tv < 95: failed.append(f'teaching_voice={tv}%')
+          if kp < 95: failed.append(f'key_points={kp}%')
+          if failed:
+              print(f'::error::数据审查覆盖率 < 95%: {failed}', file=sys.stderr)
+              sys.exit(1)
+          else:
+              print(f'✅ 覆盖率 OK: academic_req={ar}% teaching_voice={tv}% key_points={kp}%')
+          "
+
+      - name: PR 评论
+        if: github.event_name == 'pull_request' && always()
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: data-audit
+          message: |
+            ## 数据质量审查
+
+            ```
+            $(head -25 /tmp/audit.txt)
+            ```
+          append: true
