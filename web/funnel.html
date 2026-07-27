@@ -34,6 +34,7 @@
   /* 头部 */
   .header {
     position: fixed; top: 0; left: 0; right: 0; padding: 20px 28px;
+    padding-left: 110px;  /* V3.6.10: 给左上 home-btn 让出 100px */
     z-index: 10; pointer-events: none;
     background: linear-gradient(180deg, rgba(10,13,24,0.95) 0%, rgba(10,13,24,0) 100%);
   }
@@ -258,7 +259,7 @@
     background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
   }
   .view-toggle .icon { font-size: 14px; }
-  /* V3.6.10: 左上角"返回首页"浮按钮 (跟右下 view-toggle 对称) */
+  /* V3.6.10: 左上角"返回首页"浮按钮 — header padding-left 110px 让开 */
   .home-btn {
     position: fixed; top: 20px; left: 20px; z-index: 21;
     display: inline-flex; align-items: center; gap: 6px;
@@ -346,7 +347,7 @@
 
 <div class="header header-funnel">
   <h1 id="headerTitleFunnel">2022 新课标知识图谱 · 漏斗学习路径视图</h1>
-  <div class="sub" id="headerSubFunnel">1906 概念按年级升序展开成倒漏斗 · 4736 条学习路径可看完整前置 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">← 返回首页</a> · <a href="./explore.html" style="color:#6b8cff;text-decoration:none">切换到 3D 球面视图 →</a></div>
+  <div class="sub" id="headerSubFunnel">1906 概念按年级从小学到初中展开成倒漏斗 · 4736 条学习路径 · 点击节点看完整前置和后续</div>
 </div>
 
 <a href="./explore.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="切换到 3D 球面视图">

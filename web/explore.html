@@ -35,6 +35,7 @@
   /* 头部 */
   .header {
     position: fixed; top: 0; left: 0; right: 0; padding: 20px 28px;
+    padding-left: 110px;  /* V3.6.10: 给左上 home-btn 让出 100px 区域, 避免遮挡 */
     z-index: 10; pointer-events: none;
     background: linear-gradient(180deg, rgba(10,13,24,0.95) 0%, rgba(10,13,24,0) 100%);
   }
@@ -264,7 +265,7 @@
     background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
   }
   .view-toggle .icon { font-size: 14px; }
-  /* V3.6.10: 左上角"返回首页"浮按钮 (跟右下 view-toggle 对称) */
+  /* V3.6.10: 左上角"返回首页"浮按钮 — header padding-left 110px 让开 */
   .home-btn {
     position: fixed; top: 20px; left: 20px; z-index: 21;
     display: inline-flex; align-items: center; gap: 6px;
@@ -360,7 +361,7 @@
 
 <div class="header header-3d">
   <h1 id="headerTitle3d">2022 新课标知识图谱 · 3D 球面视图</h1>
-  <div class="sub" id="headerSub3d">1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">← 返回首页</a></div>
+  <div class="sub" id="headerSub3d">1906 概念按学段/学科聚成球 · 4736 条学习路径 · 鼠标拖动旋转, 滚轮缩放, 单击节点看详情</div>
 </div>
 
 <a href="./funnel.html" class="view-toggle" aria-label="切换到漏斗学习路径视图" title="切换到漏斗学习路径 (B 完成后可用)">
