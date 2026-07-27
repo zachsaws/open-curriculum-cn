@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="基于 2022 义教新课标的中国 K12 知识图谱漏斗视图 — 1906 概念按年级升序展开成倒漏斗, 4736 条学习路径可看完整前置">
+<meta name="description" content="基于教育部 2022 最新课标的中国 K12 知识图谱漏斗视图 — 1906 核心概念按年级升序展开, 4736 条学习路径可看完整前置">
 <title>漏斗学习路径视图 · 2022 新课标知识图谱 · Open Curriculum CN</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -34,7 +34,6 @@
   /* 头部 */
   .header {
     position: fixed; top: 0; left: 0; right: 0; padding: 20px 28px;
-    padding-left: 110px;  /* V3.6.10: 给左上 home-btn 让出 100px */
     z-index: 10; pointer-events: none;
     background: linear-gradient(180deg, rgba(10,13,24,0.95) 0%, rgba(10,13,24,0) 100%);
   }
@@ -43,23 +42,50 @@
     margin-bottom: 4px;
   }
   .header .sub { font-size: 12px; color: #8a92a8; }
+  /* V3.6.10b: 标题里集成的 K12 logo (点 logo 整段回首页, 不再浮按钮挡球面) */
+  .title-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    text-decoration: none; color: inherit; pointer-events: auto;
+  }
+  .title-logo {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #6b8cff, #5b8def);
+    color: #fff; font-weight: 800; font-size: 10px;
+    padding: 3px 7px; border-radius: 4px;
+    letter-spacing: 0.8px; box-shadow: 0 2px 6px rgba(107,140,255,0.3);
+  }
+  .title-link:hover .title-logo {
+    background: linear-gradient(135deg, #7b9cff, #6b9dff);
+  }
+  .title-sub {
+    display: inline-block; font-size: 12px; font-weight: 500;
+    color: #8a92a8; margin-left: 4px;
+  }
 
-  /* 统计 */
+  /* 统计 — V3.6.10b: 删 FPS/概念数/边数/学科数, 改成操作引导 (不显示开发者指标) */
   .stats {
     position: fixed; top: 80px; right: 20px; z-index: 10;
     background: rgba(20, 24, 38, 0.85); backdrop-filter: blur(10px);
-    padding: 10px 14px; border-radius: 8px; font-size: 12px;
-    color: #8a92a8; line-height: 1.6;
+    padding: 10px 14px; border-radius: 8px;
+    line-height: 1.6; max-width: 240px;
   }
-  .stats b { color: #e6e9f2; font-weight: 600; }
-  .stats .fps-low { color: #f9a825; }
-  .stats .fps-bad { color: #ff6b6b; }
+  .stats .hint-row { font-size: 11px; color: #dde4f5; line-height: 1.6; }
+  .stats .hint-row strong { color: #6b8cff; font-weight: 600; }
 
   /* 图例 */
   .legend {
     position: fixed; bottom: 20px; left: 20px; z-index: 10;
     display: flex; flex-wrap: wrap; gap: 6px;
     max-width: 60vw;
+  }
+  /* V3.6.10b: legend 引导文字 (从开发者视角换 To C) */
+  .legend-hint {
+    flex-basis: 100%;
+    color: #a5b8f5;
+    font-size: 11px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+    opacity: 0.85;
   }
   .chip {
     display: flex; align-items: center; gap: 6px;
@@ -248,7 +274,7 @@
   /* 视图切换 (右上) — 漏斗视图本身就是目的地, 切回 3D 球 */
   .view-toggle {
     position: fixed; top: 20px; right: 20px; z-index: 21;
-    display: inline-flex; align-align: center; gap: 6px;
+    display: inline-flex; align-items: center; gap: 6px;
     background: rgba(107,140,255,0.18); backdrop-filter: blur(10px);
     border: 1px solid rgba(107,140,255,0.4);
     color: #c8d4ff; padding: 6px 14px; border-radius: 6px;
@@ -259,20 +285,6 @@
     background: rgba(107,140,255,0.35); color: #fff; border-color: #6b8cff;
   }
   .view-toggle .icon { font-size: 14px; }
-  /* V3.6.10: 左上角"返回首页"浮按钮 — header padding-left 110px 让开 */
-  .home-btn {
-    position: fixed; top: 20px; left: 20px; z-index: 21;
-    display: inline-flex; align-items: center; gap: 6px;
-    background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.15);
-    color: #dde4f5; padding: 6px 12px; border-radius: 6px;
-    font-size: 12px; font-weight: 600; text-decoration: none;
-    font-family: inherit; transition: all 0.15s;
-  }
-  .home-btn:hover {
-    background: rgba(255,255,255,0.16); color: #fff; border-color: rgba(255,255,255,0.3);
-  }
-  .home-btn .icon { font-size: 14px; line-height: 1; }
 
   /* 加载状态 */
   #loading {
@@ -341,28 +353,21 @@
 
 <div id="wrap" tabindex="0" role="application" aria-label="倒漏斗概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情和看之前要学什么"></div>
 
-<a href="./index.html" class="home-btn" aria-label="返回首页" title="返回首页 (Open Curriculum CN)">
-  <span class="icon">🏠</span><span>首页</span>
-</a>
-
 <div class="header header-funnel">
-  <h1 id="headerTitleFunnel">2022 新课标知识图谱 · 漏斗学习路径视图</h1>
-  <div class="sub" id="headerSubFunnel">1906 概念按年级从小学到初中展开成倒漏斗 · 4736 条学习路径 · 点击节点看完整前置和后续</div>
+  <h1 id="headerTitleFunnel"><a href="./index.html" class="title-link" aria-label="返回首页" title="返回 Open Curriculum CN 首页"><span class="title-logo">K12</span><span>中国知识图谱</span><span class="title-sub">· 学习路径</span></a></h1>
+  <div class="sub" id="headerSubFunnel">教育部 2022 最新课标 · 14 个学科全覆盖 · 点节点看完整前置和后续</div>
 </div>
 
-<a href="./explore.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="切换到 3D 球面视图">
-  <span class="icon">●</span><span>3D 球面</span>
+<a href="./explore.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="3D 球面看学科分布">
+  <span class="icon">🌐</span><span>3D 球面</span>
 </a>
 
 
 
-<div class="stats" aria-label="图谱统计">
-  <div><span data-i18n="stats_concepts">概念数</span>: <b id="nCount" aria-live="polite">-</b></div>
-  <div><span data-i18n="stats_edges">关系数</span>: <b id="eCount" aria-live="polite">-</b></div>
-  <div><span data-i18n="stats_subjects">学科数</span>: <b id="gCount" aria-live="polite">-</b></div>
-  <div style="margin-top:6px;">
-    FPS: <b id="fps" aria-live="polite">-</b> · <span id="viewHint">拖动旋转 · 滚轮缩放 · 单击节点看之前要学什么</span>
-  </div>
+<!-- V3.6.10b: 移除开发者 .stats 框 (FPS/概念数/边数/学科数), 改成 To C 引导 -->
+<div class="stats" aria-label="操作引导">
+  <div class="hint-row">💡 <strong>点击任意节点</strong>查看完整学习路径</div>
+  <div class="hint-row">👆 <strong>拖动</strong>旋转 · <strong>滚轮</strong>缩放</div>
 </div>
 
 <div class="search">
@@ -459,6 +464,7 @@
   </div>
 </div>
 
+<script src="./subject-cn.js"></script>
 <script src="./share.js"></script>
 <script src="./data-cache.js"></script>
 <script src="./funnel.js"></script>

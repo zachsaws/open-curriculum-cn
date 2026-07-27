@@ -91,27 +91,8 @@ async function init() {
   }
 }
 
-// 标题副标题: 硬编码中文, 不依赖 i18n
-function set3DHeader() {
-  const lang = 'zh-CN';
-  const titles = {
-    'zh-CN': '2022 新课标知识图谱 · 3D 球面视图',
-    'zh-TW': '2022 新課標知識圖譜 · 3D 球面視圖',
-    'en':    '2022 New Curriculum KG · 3D Sphere View',
-  };
-  const subs = {
-    'zh-CN': '1906 概念按 Fibonacci 黄金角 (137.5°) 分布 · 4736 关系按 great circle arc 渲染',
-    'zh-TW': '1906 概念按 Fibonacci 黃金角 (137.5°) 分布 · 4736 關係按 great circle arc 渲染 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切換到漏斗學習路徑 (即將上線) →</a>',
-    'en':    '1906 concepts in Fibonacci golden-angle layout · 4736 relations as great circle arcs · <a href="./index.html" style="color:#6b8cff;text-decoration:none">Switch to funnel learning path (coming soon) →</a>',
-  };
-  const title = titles[lang] || titles['zh-CN'];
-  const sub = subs[lang] || subs['zh-CN'];
-  const h1 = document.getElementById('headerTitle3d');
-  const subEl = document.getElementById('headerSub3d');
-  if (h1) h1.textContent = title;
-  if (subEl) subEl.innerHTML = sub;
-  document.title = title + ' · Open Curriculum CN';
-}
+// V3.6.10b: 删掉 set3DHeader 死代码 (没被调用, 标题/副标已集成在 HTML 里)
+// 之前它会覆盖 HTML 里的 K12 logo + 教育部副标, 造成回退到 "Fibonacci 黄金角" 这种开发者话
 
 // ============== 数据加载 ==============
 async function loadData() {
@@ -129,9 +110,7 @@ async function loadData() {
   // 缓存原始 title (用于繁简切换)
   DATA.nodes.forEach(n => { titleOrig.set(n.id, n.title); });
 
-  document.getElementById('nCount').textContent = DATA.nodes.length.toLocaleString();
-  document.getElementById('eCount').textContent = DATA.edges.length.toLocaleString();
-  document.getElementById('gCount').textContent = GROUPS.length;
+  // V3.6.10b: 删掉 nCount/eCount/gCount 更新 (不显示给用户)
 }
 
 // ============== 场景 ==============
@@ -981,9 +960,16 @@ function setupCardClose() {
 }
 
 // ============== UI: 图例 ==============
+// V3.6.10b: SUBJECT_CN 抽到 subject-cn.js 共享 (从 window 拿)
+
 function buildLegend() {
   const legend = document.getElementById('legend');
   legend.innerHTML = '';
+  // V3.6.10: legend 前面加一句引导 (从开发者话改人话)
+  const hint = document.createElement('div');
+  hint.className = 'legend-hint';
+  hint.textContent = '想看哪个学科? 点节点开卡片';
+  legend.appendChild(hint);
   const counts = GROUPS.map(s => DATA.nodes.filter(n => n.subject === s).length);
   GROUPS.forEach((s, i) => {
     const el = document.createElement('div');
@@ -992,8 +978,9 @@ function buildLegend() {
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
     el.setAttribute('aria-pressed', 'true');
-    el.setAttribute('aria-label', `切换 ${s} ${counts[i]} 个概念`);
-    el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${s}</span><span class="ct">${counts[i]}</span>`;
+    const nameCn = SUBJECT_CN[s] || s;
+    el.setAttribute('aria-label', `切换 ${nameCn} ${counts[i]} 个概念`);
+    el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${nameCn}</span><span class="ct">${counts[i]}</span>`;
     el.onclick = () => {
       el.classList.toggle('off');
       el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');
@@ -1081,19 +1068,13 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
 
-  // FPS — 每 500ms 算一次
+  // FPS — V3.6.10b: 不再算/不再显示 (用户视角不关心, 删掉 DOM 更新)
   fpsFrames++;
   const now = performance.now();
   const elapsed = now - fpsLastTime;
   if (elapsed >= 500) {
-    const fps = Math.round(fpsFrames * 1000 / elapsed);
     fpsFrames = 0;
     fpsLastTime = now;
-    const fpsEl = document.getElementById('fps');
-    fpsEl.textContent = fps;
-    fpsEl.classList.remove('fps-low', 'fps-bad');
-    if (fps < 30) fpsEl.classList.add('fps-bad');
-    else if (fps < 50) fpsEl.classList.add('fps-low');
   }
 }
 

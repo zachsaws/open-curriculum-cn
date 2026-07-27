@@ -6,13 +6,8 @@
 
 const SHARE_W = 1080;
 const SHARE_H = 1440;
-const SUBJECT_CN = {
-  math: '数学', chinese: '语文', english: '英语',
-  science: '科学', physics: '物理', chemistry: '化学',
-  biology: '生物', history: '历史', geography: '地理',
-  morality_law: '道德与法治', info_tech: '信息科技', art: '艺术',
-  pe_health: '体育与健康', labor: '劳动', integrated: '综合',
-};
+// V3.6.10b: SUBJECT_CN 抽到 subject-cn.js 共享, 4 个文件统一用
+// (原 const 声明在多 script 共存时冲突, 已迁移)
 
 function escHtml(s) {
   if (s == null) return '';

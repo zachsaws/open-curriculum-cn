@@ -23,6 +23,8 @@ const PALETTE = {
   pe_health: '#ff7043', labor: '#9ccc65', integrated: '#78909c',
 };
 
+// V3.6.10b: SUBJECT_CN 抽到 subject-cn.js 共享 (const 顶层声明在多 script 共存时冲突)
+
 // ============== 全局状态 ==============
 let DATA = null;
 let NODES = [];            // 计算布局后的节点: { x, y, z, py, c, g, col, dm, a, t, q, raw, id }
@@ -131,10 +133,7 @@ async function init() {
     setupCardClose();
   setupHistoryKeys();
 
-  // 4) Stats
-  document.getElementById('nCount').textContent = NODES.length.toLocaleString();
-  document.getElementById('eCount').textContent = EDGES.length.toLocaleString();
-  document.getElementById('gCount').textContent = GROUPS.length;
+  // 4) Stats — V3.6.10b: 删掉 nCount/eCount/gCount 更新 (不显示给用户, FPS 也不再展示)
 
   // 5) 启动渲染
   document.getElementById('loading').classList.add('done');
@@ -527,14 +526,9 @@ function updateFPS() {
   const now = performance.now();
   const elapsed = now - fpsLastTime;
   if (elapsed >= 500) {
-    const fps = Math.round(fpsFrames * 1000 / elapsed);
     fpsFrames = 0;
     fpsLastTime = now;
-    const fpsEl = document.getElementById('fps');
-    fpsEl.textContent = fps;
-    fpsEl.classList.remove('fps-low', 'fps-bad');
-    if (fps < 30) fpsEl.classList.add('fps-bad');
-    else if (fps < 50) fpsEl.classList.add('fps-low');
+    // V3.6.10b: 删掉 fps DOM 更新 (不显示给用户)
   }
 }
 
@@ -888,6 +882,11 @@ function setupHistoryKeys() {
 function buildLegend() {
   const legend = document.getElementById('legend');
   legend.innerHTML = '';
+  // V3.6.10b: legend 前面加一句引导 (从开发者话改人话)
+  const hint = document.createElement('div');
+  hint.className = 'legend-hint';
+  hint.textContent = '想看哪个学科? 点节点开卡片';
+  legend.appendChild(hint);
   const counts = GROUPS.map(() => 0);
   NODES.forEach(n => counts[n.g]++);
   GROUPS.forEach((s, i) => {
@@ -897,8 +896,9 @@ function buildLegend() {
     el.tabIndex = 0;
     el.setAttribute('role', 'button');
     el.setAttribute('aria-pressed', 'true');
-    el.setAttribute('aria-label', `切换 ${s} ${counts[i]} 个概念`);
-    el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${esc(s)}</span><span class="ct">${counts[i]}</span>`;
+    const nameCn = SUBJECT_CN[s] || s;
+    el.setAttribute('aria-label', `切换 ${nameCn} ${counts[i]} 个概念`);
+    el.innerHTML = `<span class="sw" style="background:${GCOL[i]}"></span><span class="nm">${esc(nameCn)}</span><span class="ct">${counts[i]}</span>`;
     el.addEventListener('click', () => {
       el.classList.toggle('off');
       el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');
@@ -960,22 +960,21 @@ function setupSearch() {
 }
 
 function setFunnelHeader() {
+  // V3.6.10b: 标题已集成在 HTML 里 (K12 logo + 中国知识图谱 + · 学习路径)
+  // 这里只更新副标 + document.title, 不再覆盖 h1
   const lang = 'zh-CN';
-  const titles = {
-    'zh-CN': '2022 新课标知识图谱 · 漏斗学习路径视图',
-    'zh-TW': '2022 新課標知識圖譜 · 漏斗學習路徑視圖',
-    'en':    '2022 New Curriculum KG · Funnel Learning Path',
-  };
   const subs = {
-    'zh-CN': '1906 概念按年级升序展开成倒漏斗 · 4736 条学习路径可看完整前置 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切换回 3D 球面视图 →</a>',
-    'zh-TW': '1906 概念按年級升序展開成倒漏斗 · 4736 關係可反向追溯全譜系先決 · <a href="./index.html" style="color:#6b8cff;text-decoration:none">切換回 3D 球面視圖 →</a>',
-    'en':    '1906 concepts in an inverted funnel by grade · 4736 relations traceable backward · <a href="./index.html" style="color:#6b8cff;text-decoration:none">Switch to 3D sphere view →</a>',
+    'zh-CN': '教育部 2022 最新课标 · 14 个学科全覆盖 · 点节点看完整前置和后续',
+    'zh-TW': '教育部 2022 最新課標 · 14 個學科全覆蓋 · 點節點看完整前置和後續',
+    'en':    "Based on China's MoE 2022 Curriculum Standards · 14 subjects · Click a node to see the full prerequisite chain",
   };
   const h1 = document.getElementById('headerTitleFunnel');
   const subEl = document.getElementById('headerSubFunnel');
-  if (h1) h1.textContent = titles[lang] || titles['zh-CN'];
-  if (subEl) subEl.innerHTML = subs[lang] || subs['zh-CN'];
-  document.title = (titles[lang] || titles['zh-CN']) + ' · Open Curriculum CN';
+  if (subEl) subEl.textContent = subs[lang] || subs['zh-CN'];
+  if (h1) {
+    const titleText = h1.textContent.trim().replace(/\s+/g, ' ');
+    document.title = titleText + ' · Open Curriculum CN';
+  }
 }
 
 // ============== 启动 ==============
