@@ -24,7 +24,7 @@ from pathlib import Path
 from collections import defaultdict
 
 ROOT = Path(__file__).parent.parent
-DATA = ROOT / 'data' / 'graph' / 'all_v3.7.json'  # V3.7+ P0 补完版本
+DATA = ROOT / 'data' / 'graph' / 'all_v3.7_p1.json'  # V3.7+ P0 补完版本
 DATA_FALLBACK = ROOT / 'data' / 'graph' / 'all_v3.3.json'  # 旧版本
 
 # V3.7.1: 默认读 V3.7, 不存在则回退 V3.3.5
