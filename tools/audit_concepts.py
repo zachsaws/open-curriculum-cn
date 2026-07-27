@@ -24,7 +24,12 @@ from pathlib import Path
 from collections import defaultdict
 
 ROOT = Path(__file__).parent.parent
-DATA = ROOT / 'data' / 'graph' / 'all_v3.3.json'
+DATA = ROOT / 'data' / 'graph' / 'all_v3.7.json'  # V3.7+ P0 补完版本
+DATA_FALLBACK = ROOT / 'data' / 'graph' / 'all_v3.3.json'  # 旧版本
+
+# V3.7.1: 默认读 V3.7, 不存在则回退 V3.3.5
+if not DATA.exists() and DATA_FALLBACK.exists():
+    DATA = DATA_FALLBACK
 
 REQUIRED_FIELDS = ['id', 'title', 'subject', 'grade_start', 'grade_end']
 CONTENT_TRIPLE = ['description', 'assessment_prompt', 'key_points']
@@ -107,7 +112,7 @@ def audit_node(node):
     if tv and len(tv) < TV_MIN:
         quality.append(f'teaching_voice 长度 {len(tv)} (>= {TV_MIN})')
 
-    # 7. {{name}} 占位符
+    # 7. {{name}} 占位符 (V3.7.1: academic_req 是课标原文语气, 不需要 {{name}})
     for f, val in [('description', desc), ('assessment_prompt', assess), ('teaching_voice', tv)]:
         cnt = val.count(NAME_PLACEHOLDER)
         if val and cnt != NAME_EXPECT:
