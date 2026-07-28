@@ -811,6 +811,8 @@ function showCard(node) {
   // V3.6.9 打印版按钮
   const printBtn = document.getElementById('card-print-btn');
   if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(node.id);
+  const exBtn = document.getElementById('card-exercise-btn');
+  if (exBtn) exBtn.href = './exercise.html?id=' + encodeURIComponent(node.id);
 
   // V3.6.9 分享学习卡按钮
   const shareBtn = document.getElementById('card-share-btn');

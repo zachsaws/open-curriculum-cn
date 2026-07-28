@@ -775,6 +775,9 @@ function showCard(i) {
   // V3.6.9 打印版按钮 → 新窗口打开 print.html?id=xxx
   const printBtn = document.getElementById('card-print-btn');
   if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(r.id);
+  // V4.0 题目练习按钮 → 新窗口打开 exercise.html?id=xxx
+  const exBtn = document.getElementById('card-exercise-btn');
+  if (exBtn) exBtn.href = './exercise.html?id=' + encodeURIComponent(r.id);
 
   // V3.6.9 分享学习卡按钮 → 弹出模态 + 下载/复制
   const shareBtn = document.getElementById('card-share-btn');

@@ -50,6 +50,38 @@
 }
 ```
 
+### Exercise (题目) — V4.0 新增
+
+`data/exercises/exercises_v1.json` 包含 ~9,500+ 道题（每概念 5 道 LLM 自动 + N 道真真题）。每道题 schema:
+
+```json
+{
+  "id": "EX_M_G4_GM_08_001",              // 唯一 ID (EX_<concept_id>_<NNN>)
+  "concept_id": "M_G4_GM_08",              // 关联概念
+  "type": "multiple_choice",                // multiple_choice | fill_blank | short_answer
+  "difficulty": 2,                          // 1-5 难度
+  "question": "...",                        // 题干
+  "options": ["A. ...", "B. ...", ...],     // 选择题 4 个选项 (仅 multiple_choice)
+  "answer": "B",                            // 选择题: "A"|"B"|"C"|"D"; 填空: ["关键词"]; 简答: "参考答案文本"
+  "explanation": "...",                     // 解析
+  "bloom": "理解",                          // Bloom 认知层级: 记忆|理解|分析|应用|评价
+  "is_real_exam": false,                    // 是否真真题 (手动入库时设 true)
+  "tags": ["经典题", "常考"]                // 标签 (真真题常有)
+}
+```
+
+**5 道题槽位互补设计**（V4.0.1 升级）：
+
+| 槽位 | ID 后缀 | 题型 | Bloom | 用途 |
+|---|---|---|---|---|
+| T1 | `_001` | multiple_choice | 理解 | 基础概念辨析，4 选项考察 4 个不同维度 |
+| T2 | `_002` | fill_blank | 记忆 | 关键步骤/关键词记忆 |
+| T3 | `_003` | short_answer | 分析 | 解释/描述 |
+| T4 | `_004` | short_answer | 应用 | 真实情境，真题风格 |
+| T5 | `_005` | short_answer | 评价 | 跨本概念 + 前置/后置概念，真题压轴 |
+
+**真真题高位号**：手动入库的真题用 `_901+`（避开 LLM 槽位），例如 `EX_M_G4_GM_08_901`。
+
 ### 学科代码
 
 | code | 中文 | 学段 |
@@ -86,3 +118,4 @@
 ## 版本
 
 - v1.0 (2026-07-22): 初始 schema
+- v1.1 (2026-07-28): V4.0.1 题目库 schema (multiple_choice/fill_blank/short_answer + bloom + is_real_exam)

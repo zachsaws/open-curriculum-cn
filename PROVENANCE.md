@@ -1,7 +1,7 @@
 # 数据来源声明 (PROVENANCE)
 
-> Open Curriculum CN V3.2 — 数据来源、license、textIncluded 状态
-> 2026-07-22 生成
+> Open Curriculum CN V4.0.1 — 数据来源、license、textIncluded 状态
+> 2026-07-28 更新
 
 ## 一手数据源 (Primary Sources)
 
@@ -15,9 +15,10 @@
 
 | 文件 | 描述 | 来源 |
 |---|---|---|
-| data/graph/all_v3.2.json | 知识图谱 (1906 概念 + 4736 关系) | 14 学科 OCR + 人工 enrich |
+| data/graph/all_v3.7_p1.json | 知识图谱 (1906 概念 + 4736 关系) - V3.7 P1 final | 14 学科 OCR + LLM enrich (100% 完整度) |
 | data/graph/clusters.json | 241 域聚类 + 人话 summary | 自动聚类 + 模板生成 |
-| data/graph/curriculum-standards.json | 课标结构化 (1 框架 × 1906 topics) | all_v3.2.json 字段重组 |
+| data/graph/curriculum-standards.json | 课标结构化 (1 框架 × 1906 topics) | all_v3.7_p1.json 字段重组 |
+| data/exercises/exercises_v1.json | 题目库 (~9,500+ 题) | LLM 自动 (5 道题/概念) + 8 道经典常考手动入库 |
 
 ## 自动化流程 (Pipeline)
 
@@ -29,16 +30,26 @@
 - **Reason 填充**: `src/pipeline/enrich_v3.2_edge_reasons.py` — 4 维模板 + 跨学科 bridge 字典
 - **Cluster summary**: `src/pipeline/enrich_v3.2_cluster_summaries.py` — 14 学科 × 4 阶段 × ~10 领域
 - **Assessment prompt**: `src/pipeline/enrich_v3.2_assessment.py` — 14 学科模板 + bloom 分类
+- **V3.7 P0 (academic_req + key_points)**: `data/build/build_p0.py` — LLM 串行补 14 学科 100%
+- **V3.7 P1 (teaching_voice)**: `data/build/build_p1.py` — LLM 串行生成老师口吻 3 句话
+- **V3.7 P3 (audit CI)**: `.github/workflows/audit.yml` — 每次 push/PR 跑 audit + 覆盖率红线
+- **V4.0.1 P2 (题目库)**: `data/build/build_p2.py` — 5 道题/概念互补设计 (T1 选/T2 填/T3 简/T4 应用/T5 综合) + Bloom 全覆盖
+- **V4.0.1 真题试点**: `data/build/add_real_exams.py` — 8 道经典常考手动入库 (math 3 核心考点)
 
 ## License
 
-- **数据库 (all_v3.2.json)**: CC-BY-SA 4.0
+- **数据库 (all_v3.7_p1.json)**: CC-BY-SA 4.0
 - **课标原文 (curriculum-standards.json)**: 中华人民共和国教育部 2022 — 公开出版物
-- **AI 生成内容 (cluster summary / edge reason / assessment prompt)**: CC-BY-SA 4.0 (本项目)
-- **代码 (src/, web/, api/)**: CC-BY-SA 4.0 (本项目)
+- **AI 生成内容 (cluster summary / edge reason / assessment prompt / teaching_voice / 题目库)**: CC-BY-SA 4.0 (本项目)
+- **代码 (src/, web/, api/, data/build/)**: CC-BY-SA 4.0 (本项目)
+
+## 题目库说明 (V4.0.1 新增)
+
+- **LLM 自动生成** (~9,500+ 道)：基于 all_v3.7_p1.json 的概念元数据 (description / key_points / teaching_voice) 生成 5 道题/概念互补设计 (T1 选 / T2 填 / T3 简 / T4 应用真题风 / T5 综合压轴)
+- **手动入库** (8 道)：math 3 个核心考点 (勾股定理/一元二次方程/二次函数) 经典常考题，标记 `is_real_exam=true`
+- **真真题说明**：中国中考真题版权分散，公开带答案的完整题库难找。手动入库的 8 道是"经典常考题型"而非具体某省某年的真题。后续将探索与出版社/教辅机构合作获取正版授权。
 
 ## 排除说明 (Excluded)
 
-V3.2 全量, 无排除。
-- 早期 V0-V2 各版本 (仅做历史保留, 不进入主图)
-- 未填字段 (academic_req V3.0 仅 13.7%, 其余概念为 V3.0 后期新加, 未 enrich academic_req)
+V4.0.1 全量, 无排除。
+- 早期 V0-V3.6 各版本 (仅做历史保留, 不进入主图)

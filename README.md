@@ -2,14 +2,14 @@
 
 > **每一步学什么，之前漏了哪一步。**
 
-中国教育部 2022 最新课标 · **14 学科 · 1906 核心概念 · 4736 条学习路径** · 开源免费。
+中国教育部 2022 最新课标 · **14 学科 · 1906 核心概念 · 4736 条学习路径 · 9000+ 道题目** · 开源免费。
 
 🎬 **5 秒看明白**：
 
 [![5 秒看明白](https://zachsaws.github.io/open-curriculum-cn/data/hero_thumb.gif)](https://zachsaws.github.io/open-curriculum-cn/explore.html)
 *↑ 主页 8s 缩略 · 完整 30s 概念片在 demo 段*
 
-🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
+🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [题目练习](https://zachsaws.github.io/open-curriculum-cn/exercise.html?id=M_G4_GM_08) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
 
 [![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Concepts: 1906](https://img.shields.io/badge/concepts-1906-green)]()
@@ -56,6 +56,18 @@
 ### ▼ [漏斗学习路径](https://zachsaws.github.io/open-curriculum-cn/funnel.html)
 
 复刻 [Marble](https://withmarble.com/curriculum/) 的范式。1906 概念按年级升序展开成倒漏斗，点击节点 lineage BFS 反向追溯所有"之前要学的"。
+
+### 📝 [题目练习](https://zachsaws.github.io/open-curriculum-cn/exercise.html?id=M_G4_GM_08)
+
+**V4.0 新增** — 每个概念配 5 道互补设计题 (1 选择 + 1 填空 + 3 简答/应用/综合)，覆盖 14 学科全 1906 概念。
+
+- **T1 选择题** — 基础概念辨析，4 个选项考察 4 个不同维度（不是同概念 4 变体）
+- **T2 填空题** — 关键步骤/关键词记忆
+- **T3 简答题** — 解释/描述
+- **T4 应用题** — 真实情境，真题风格，参考中考/小升初常考
+- **T5 综合题** — 跨本概念 + 前置/后置概念，真题压轴
+
+每道题都带 **Bloom 认知层级** 标签（理解/记忆/分析/应用/评价）+ **难度 1-5** 标签。math 3 个核心考点（勾股定理/一元二次方程/二次函数）额外入库 8 道经典常考题，`is_real_exam=true` 标记。
 
 ## 为什么是现在
 
@@ -116,6 +128,14 @@
 
 后 3 个字段（real_examples / common_mistakes / teaching_activity）是 LLM 教师用书级增强，全 14 学科 1906 节点 100% 覆盖。
 
+### 题目库（V4.0 新增）
+
+- **5000+ 道 LLM 自动出题**（覆盖全 14 学科 1906 概念，每概念 5 道题互补设计）
+- **题型**：选择题 (4 选 1) + 填空题 + 简答题 + 应用题 + 综合题
+- **每道题带 Bloom 认知层级** + 难度标签
+- **8 道经典常考题手动入库**（math 3 个核心考点：勾股定理/一元二次方程/二次函数）
+- **数据下载**：`data/exercises.json` (~3.4MB) / `data/exercises.json.gz` (~850KB)
+
 ## 数据来源
 
 - **一手数据**：教育部 2022 义务教育课程方案 + 16 学科课程标准（PDF）
@@ -162,18 +182,28 @@ open-curriculum-cn/
 ├── data/
 │   ├── raw/curriculum_2022/   # 17 本 PDF（人教社下载）
 │   ├── parsed/                # OCR 解析
-│   └── graph/                 # 知识图谱 JSON
-│       ├── all_v3.3.json      # 总图 (1906 概念, 4736 边)
-│       └── {subject}_v3*.json # 学科 + V3.3.5 LLM 增强
+│   ├── graph/                 # 知识图谱 JSON
+│   │   ├── all_v3.7_p1.json   # V3.7 P1 final (含 teaching_voice 100%)
+│   │   └── {subject}_v3*.json # 学科 + V3.3.5 LLM 增强
+│   └── exercises/             # 题目库
+│       └── exercises_v1.json  # 5000+ 题 (LLM 自动 + 8 道经典常考)
 ├── src/
 │   ├── extract/               # PDF 下载 + OCR
 │   └── pipeline/              # enrich / merge / V3.3 LLM 化
+├── data/build/                # LLM 跑批脚本
+│   ├── build_p0.py            # academic_req + key_points 跑批
+│   ├── build_p1.py            # teaching_voice 跑批
+│   ├── build_p2.py            # 题目库跑批（5 道题/概念互补设计）
+│   └── add_real_exams.py      # 经典常考题手动入库
 ├── web/                       # 静态前端
 │   ├── index.html             # 主页（产品化 V3.6.1）
 │   ├── explore.html           # 3D 球面视图
 │   ├── 3d.js                  # Three.js r160 + lineage + camera tween + depth fog
 │   ├── funnel.html            # 漏斗视图
-│   └── funnel.js              # Canvas 2D + lineage BFS
+│   ├── funnel.js              # Canvas 2D + lineage BFS
+│   ├── print.html             # A4 黑白打印版
+│   ├── exercise.html          # 题目练习页（V4.0.1 新增）
+│   └── subject-cn.js          # 14 学科中文名共享字典
 ├── api/                       # FastAPI B 端 REST（本地，暂未上公网）
 ├── docs/
 │   ├── schema.md
@@ -215,6 +245,10 @@ open-curriculum-cn/
 - [x] V3.5: 产品化首页（4 句对仗 + 我们不做 + 工程师话改人话）
 - [x] **V3.6.1-5**: 球 lineage BFS + camera tween + 选中放大 1.6x + depth fog
 - [x] **V3.6.6**: GitHub Pages 自动部署 + GitHub repo 公开
+- [x] **V3.7**: 数据完整度 100%（academic_req + key_points + teaching_voice 14 学科全覆盖）
+- [x] **V3.7.10**: P3 审查 CI 化（自动跑 audit + 覆盖率红线阻断）
+- [x] **V4.0.0**: 题目库首批 5137 题（每概念 3 道题：1 选择 + 1 填空 + 1 简答）
+- [x] **V4.0.1**: 题目库升级每概念 5 道题互补设计（理解/记忆/分析/应用/评价 Bloom 全覆盖）+ 8 道经典常考题入库 + exercise.html 题目练习页
 - [ ] **V4.0 短期 (3 个月)**:
   - 知乎/公众号文章（让老师/教研员/家长知道这玩意）
   - 演示视频/GIF（让 5 秒看懂）
