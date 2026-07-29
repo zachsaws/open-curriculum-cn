@@ -149,6 +149,15 @@ curl -X POST -H "X-API-Key: demo-key-001" -H "Content-Type: application/json" \
 - GitHub repo: https://github.com/zachsaws/open-curriculum-cn
 - API OpenAPI 文档: `/docs` (uvicorn 跑时)
 
+## 🎬 5 秒演示 GIF
+
+![智能诊断演示](img/v402-diagnose-demo.gif)
+
+*6s 演示: 选勾股 → 答 5 题 → 80% 巩固 → 复习路径 7 个先决 (按距离+难度排序)*
+
+- 直接 GIF: https://zachsaws.github.io/open-curriculum-cn/data/diagnose_demo.gif
+- MP4 版: https://zachsaws.github.io/open-curriculum-cn/data/diagnose_demo.mp4
+
 ## 文件清单
 
 - `api/diagnose.py` (新, 8.5KB) - 核心算法 (Python)
@@ -159,6 +168,9 @@ curl -X POST -H "X-API-Key: demo-key-001" -H "Content-Type: application/json" \
 - `web/funnel.html` (改) - 同上
 - `web/3d.js` (改, +2 行) - 设按钮 href
 - `web/funnel.js` (改, +2 行) - 同上
+- `web/diagnose.html` (改) - 顶栏加 "🎬 看 5 秒演示" 按钮
+- `web/data/diagnose_demo.gif` (新, 693KB) - 6s 演示 GIF
+- `web/data/diagnose_demo.mp4` (新, 108KB) - 6s 演示 MP4
 
 ## 验收清单
 
@@ -175,6 +187,7 @@ curl -X POST -H "X-API-Key: demo-key-001" -H "Content-Type: application/json" \
 - [x] 鉴权 (3 demo key)
 - [x] /docs 自动 OpenAPI
 - [x] 截图 4 张 (step1/step2/step3-weak/step3-consolidate)
+- [x] 6s 演示 GIF + MP4 (社交传播 + 长视频平台)
 
 ## 后续 (V4.0.3+)
 
