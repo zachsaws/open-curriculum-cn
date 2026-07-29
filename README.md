@@ -252,6 +252,7 @@ open-curriculum-cn/
 - [x] **V4.0.0**: 题目库首批 5137 题（每概念 3 道题：1 选择 + 1 填空 + 1 简答）
 - [x] **V4.0.1**: 题目库升级每概念 5 道题互补设计（理解/记忆/分析/应用/评价 Bloom 全覆盖）+ 8 道经典常考题入库 + exercise.html 题目练习页
 - [x] **V4.0.2**: 智能诊断 PoC — 5 道题快速测试 / 手输答对率 / BFS 找先决链 / 自适应阈值 (80/70/60/50%) / 复习路径排序 / 人话解释 + 2 个 V4 API 端点 (POST /v4/diagnose + GET /v4/diagnose/quick-check) + diagnose.html 3 步 UI + 概念卡"🩺 智能诊断"按钮
+- [x] **V4.0.3**: 诊断历史 + 错题本 + 全 14 学科 — localStorage 持久化 (history/wrongbook 2 store) + 错题本页 (重做/移除) + 19 个全学科 quick pick + 诊断结果页加历史区 + 修 2 bug (JSON.parse/list 适配)
 - [ ] **V4.0 短期 (3 个月)**:
   - 知乎/公众号文章（让老师/教研员/家长知道这玩意）
   - 演示视频/GIF（让 5 秒看懂）
