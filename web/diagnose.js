@@ -30,8 +30,7 @@ const SUBJECT_CN = {
 const TYPE_LABEL = { multiple_choice: '选择题', fill_blank: '填空题', short_answer: '简答题' };
 const TYPE_CLASS = { multiple_choice: 'choice', fill_blank: 'fill', short_answer: 'short' };
 
-// V4.0.3 全 14 学科 quick pick (各学科 1 个高频核心考点 + math 5 核心)
-// 选 highest-centrality 节点 (V3.6.6 算过), math 加 5 个 PoC 重点
+// V4.0.3 全 14 学科 quick pick (math 6 + 其他 13 学科各 1 个 highest-centrality 节点)
 const QUICK_PICKS = [
   { id: 'M_G4_NS_16', reason: 'math' },
   { id: 'M_G4_GM_08', reason: 'math' },
@@ -359,7 +358,15 @@ function renderQuestion(ex, i) {
   const real = ex.is_real_exam ? `<span class="q-real">📋 真题</span>` : '';
   let input = '';
   if (ex.type === 'multiple_choice' && ex.options) {
-    const opts = typeof ex.options === 'string' ? JSON.parse(ex.options) : ex.options;
+    // 适配: ex.options 可能是 string (JSON), array, 或者破损/null
+    let opts;
+    if (typeof ex.options === 'string') {
+      try { opts = JSON.parse(ex.options); } catch (e) { opts = []; }
+    } else if (Array.isArray(ex.options)) {
+      opts = ex.options;
+    } else {
+      opts = [];
+    }
     // 去掉 LLM 在 value 里加的 "A. " "B. " 等前缀, 避免和 letter 重复
     const stripPrefix = (s, j) => {
       const expected = String.fromCharCode(65 + j) + '.';
@@ -458,6 +465,17 @@ function submitTest() {
   recordHistoryAndRender(result, 'test');
 }
 
+function toStrUser(v) {
+  if (v == null) return '';
+  if (Array.isArray(v)) return v.join(', ');
+  return String(v);
+}
+function toStrCorrect(v) {
+  if (v == null) return '';
+  if (Array.isArray(v)) return v.join(' / ');
+  return String(v);
+}
+
 function recordHistoryAndRender(result, entry) {
   if (result.error) { showResult(result); return; }
   // 记录诊断历史
@@ -471,17 +489,6 @@ function recordHistoryAndRender(result, entry) {
     entry,
   });
   showResult(result);
-}
-
-function toStrUser(v) {
-  if (v == null) return '';
-  if (Array.isArray(v)) return v.join(', ');
-  return String(v);
-}
-function toStrCorrect(v) {
-  if (v == null) return '';
-  if (Array.isArray(v)) return v.join(' / ');
-  return String(v);
 }
 
 function renderStep2Quick() {
@@ -585,135 +592,38 @@ function showResult(result) {
       <button class="btn secondary" onclick="location.href='./wrongbook.html'">❌ 错题本 (${window.HistoryStore.getWrongbookStats().total})</button>
       <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">📝 直接做 5 道题</button>
     </div>
-    ${renderHistoryTrendSection(result.concept_id)}
+    ${renderHistorySection(result.concept_id)}
   `;
 
   // 滚动到顶
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function renderHistoryTrendSection(conceptId) {
+// --- V4.0.3 历史区 (错题列表 + 5+ 次诊断提示) ---
+function renderHistorySection(conceptId) {
+  if (typeof window.HistoryStore === 'undefined') return '';
   const hist = window.HistoryStore.getConceptHistory(conceptId);
   if (hist.length === 0) return '';
-  // 仅显示历史次数; 5+ 次时画趋势
+  const rows = hist.slice().reverse().slice(0, 5).map(h => {
+    const date = new Date(h.date).toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' });
+    return '<div class="history-row">' +
+      '<span class="history-date">' + esc(date) + '</span>' +
+      '<span class="history-status status-' + esc(h.status) + '">' + esc(h.status) + '</span>' +
+      '<span class="history-score">' + esc(h.score_pct) + '%</span>' +
+    '</div>';
+  }).join('');
+  let tip;
   if (hist.length >= 5) {
-    return `
-      <div class="path-section">
-        <h3>// 进度趋势 (你测了 ${hist.length} 次, 最近 ${Math.min(10, hist.length)} 次)</h3>
-        <canvas id="trend-canvas" width="720" height="180" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; width: 100%; max-width: 720px;"></canvas>
-        <script>setTimeout(() => drawTrend('trend-canvas', ${JSON.stringify(hist.slice(-10))}), 100);<\/script>
-      </div>
-    `;
+    tip = '<p style="color:#8a92a8; font-size:11px; margin-top:8px;">// 已测 ' + hist.length + ' 次 · 完整进度趋势图见 V4.0.4</p>';
   } else {
-    return `
-      <div class="path-section">
-        <h3>// 诊断历史 (${hist.length} 次)</h3>
-        <div class="history-list">
-          ${hist.slice().reverse().slice(0, 5).map(h => `
-            <div class="history-row">
-              <span class="history-date">${esc(new Date(h.date).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }))}</span>
-              <span class="history-status status-${esc(h.status)}">${esc(h.status)}</span>
-              <span class="history-score">${esc(h.score_pct)}%</span>
-            </div>
-          `).join('')}
-        </div>
-        <p style="color:#8a92a8; font-size:11px; margin-top:8px;">// 再测 ${5 - hist.length} 次开启进度趋势图</p>
-      </div>
-  `;
-
-  // 滚动到顶
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+    tip = '<p style="color:#8a92a8; font-size:11px; margin-top:8px;">// 再测 ' + (5 - hist.length) + ' 次开启进度趋势</p>';
+  }
+  return '<div class="path-section">' +
+    '<h3>// 诊断历史 (' + hist.length + ' 次)</h3>' +
+    '<div class="history-list">' + rows + '</div>' +
+    tip +
+  '</div>';
 }
 
 // --- 启动 ---
 loadData();
-
-// --- V4.0.3 进度趋势 canvas (全局函数, 给 innerHTML 嵌入的 setTimeout 引用) ---
-function drawTrend(canvasId, hist) {
-  const canvas = document.getElementById(canvasId);
-  if (!canvas) return;
-  const dpr = window.devicePixelRatio || 1;
-  const W = canvas.clientWidth || 720;
-  const H = 180;
-  canvas.width = W * dpr;
-  canvas.height = H * dpr;
-  const ctx = canvas.getContext('2d');
-  ctx.scale(dpr, dpr);
-  ctx.clearRect(0, 0, W, H);
-  if (!hist || hist.length < 2) return;
-
-  // 坐标
-  const padL = 36, padR = 16, padT = 16, padB = 28;
-  const innerW = W - padL - padR;
-  const innerH = H - padT - padB;
-  const minY = 0, maxY = 100;
-
-  // 网格 (5 条横线 0/25/50/75/100)
-  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
-  ctx.lineWidth = 1;
-  ctx.font = '10px "SF Mono", monospace';
-  ctx.fillStyle = '#5a6278';
-  ctx.textAlign = 'right';
-  for (let i = 0; i <= 4; i++) {
-    const y = padT + (innerH / 4) * i;
-    ctx.beginPath();
-    ctx.moveTo(padL, y);
-    ctx.lineTo(W - padR, y);
-    ctx.stroke();
-    const val = maxY - (maxY / 4) * i;
-    ctx.fillText(val + '%', padL - 6, y + 3);
-  }
-
-  // 数据折线
-  const n = hist.length;
-  const pts = hist.map((h, i) => ({
-    x: padL + (innerW / (n - 1)) * i,
-    y: padT + innerH - ((h.score_pct - minY) / (maxY - minY)) * innerH,
-    score: h.score_pct,
-    status: h.status,
-  }));
-  // 阈值线 (薄弱线 70%, 巩固线 90% - 概念难度 3 通用)
-  const weakY = padT + innerH - ((70 - minY) / (maxY - minY)) * innerH;
-  const consY = padT + innerH - ((90 - minY) / (maxY - minY)) * innerH;
-  ctx.strokeStyle = 'rgba(239,107,91,0.3)';
-  ctx.setLineDash([4, 4]);
-  ctx.beginPath(); ctx.moveTo(padL, weakY); ctx.lineTo(W - padR, weakY); ctx.stroke();
-  ctx.strokeStyle = 'rgba(123,201,111,0.3)';
-  ctx.beginPath(); ctx.moveTo(padL, consY); ctx.lineTo(W - padR, consY); ctx.stroke();
-  ctx.setLineDash([]);
-  ctx.fillStyle = 'rgba(239,107,91,0.6)';
-  ctx.font = '9px "SF Mono", monospace';
-  ctx.textAlign = 'left';
-  ctx.fillText('薄弱线 70%', padL + 4, weakY - 4);
-  ctx.fillStyle = 'rgba(123,201,111,0.6)';
-  ctx.fillText('巩固线 90%', padL + 4, consY - 4);
-
-  // 折线
-  ctx.strokeStyle = '#6b8cff';
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  pts.forEach((p, i) => { if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y); });
-  ctx.stroke();
-  // 填充
-  const grad = ctx.createLinearGradient(0, padT, 0, padT + innerH);
-  grad.addColorStop(0, 'rgba(107,140,255,0.30)');
-  grad.addColorStop(1, 'rgba(107,140,255,0.00)');
-  ctx.lineTo(pts[pts.length - 1].x, padT + innerH);
-  ctx.lineTo(pts[0].x, padT + innerH);
-  ctx.closePath();
-  ctx.fillStyle = grad;
-  ctx.fill();
-  // 点 + 颜色 (按 status)
-  pts.forEach(p => {
-    const color = { 薄弱: '#ef6b5b', 巩固: '#e0d28c', 已掌握: '#a5e08c' }[p.status] || '#6b8cff';
-    ctx.fillStyle = color;
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.fillStyle = '#e6e9f2';
-    ctx.font = '10px -apple-system, "PingFang SC"';
-    ctx.textAlign = 'center';
-    ctx.fillText(p.score + '%', p.x, p.y - 8);
-  });
-}
-window.drawTrend = drawTrend;

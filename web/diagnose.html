@@ -246,6 +246,24 @@
   .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #5a6278; }
   .footer a { color: #6b8cff; }
 
+  /* V4.0.3 历史 */
+  .history-list { display: flex; flex-direction: column; gap: 6px; }
+  .history-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 14px; background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06); border-radius: 6px;
+    font-size: 13px;
+  }
+  .history-date { color: #8a92a8; font-family: "SF Mono", monospace; font-size: 11px; min-width: 50px; }
+  .history-status {
+    padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600;
+    font-family: "SF Mono", monospace;
+  }
+  .history-status.status-薄弱 { background: rgba(239,107,91,0.15); color: #f5a5a0; }
+  .history-status.status-巩固 { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .history-status.status-已掌握 { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  .history-score { margin-left: auto; color: #a5b8f5; font-family: "SF Mono", monospace; font-weight: 600; }
+
   /* V4.0.3 历史 + 错题本 + 趋势 */
   .history-list { display: flex; flex-direction: column; gap: 6px; }
   .history-row {
