@@ -21,14 +21,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 ROOT = Path(__file__).parent.parent
-# V3.2: 优先读 all_v3.2.json, 兼容 v3.0 / v0.8 / v0.7
-_DATA_CANDIDATES = ["all_v3.2.json", "all_v3.0.json", "all_v0.8.json", "all_v0.7.json"]
+# V4.0.1: 优先读 all_v3.7_p1.json (含 teaching_voice 100%), 兼容 v3.2 / v3.0 / v0.8 / v0.7
+_DATA_CANDIDATES = ["all_v3.7_p1.json", "all_v3.2.json", "all_v3.0.json", "all_v0.8.json", "all_v0.7.json"]
 DATA_FILE = next(
     (ROOT / "data" / "graph" / n for n in _DATA_CANDIDATES
      if (ROOT / "data" / "graph" / n).exists()),
-    ROOT / "data" / "graph" / "all_v3.2.json",
+    ROOT / "data" / "graph" / "all_v3.7_p1.json",
 )
-if "v3.2" in DATA_FILE.name:
+if "v3.7" in DATA_FILE.name:
+    DATA_VERSION = "v4.0.1"
+elif "v3.2" in DATA_FILE.name:
     DATA_VERSION = "v3.2.0"
 elif "v3.0" in DATA_FILE.name:
     DATA_VERSION = "v3.0.0"
@@ -49,9 +51,32 @@ DATA = load_data()
 if DATA is None:
     raise RuntimeError(f"数据文件不存在: {DATA_FILE}, 请先跑 enrich + merge")
 
+# V4.0.1: 加载题目库
+EXERCISES_FILE = ROOT / "data" / "exercises" / "exercises_v1.json"
+EXERCISES_DATA = None
+if EXERCISES_FILE.exists():
+    try:
+        with open(EXERCISES_FILE) as f:
+            EXERCISES_DATA = json.load(f)
+    except Exception as e:
+        print(f"⚠️  题目库加载失败: {e}")
+
+# V4.0.1: API key 鉴权 (简单版, 生产环境用 JWT)
+API_KEYS = {
+    "demo-key-001": {"tier": "free", "rate_limit": 60},  # 60 req/min
+    "demo-key-pro": {"tier": "pro", "rate_limit": 600},
+    "demo-key-enterprise": {"tier": "enterprise", "rate_limit": 6000},
+}
+
+# V4.0.1: 概念 -> 题目 索引 (按 concept_id 快速查)
+EXERCISES_BY_CONCEPT = defaultdict(list)
+if EXERCISES_DATA and EXERCISES_DATA.get("exercises"):
+    for ex in EXERCISES_DATA["exercises"]:
+        EXERCISES_BY_CONCEPT[ex.get("concept_id", "")].append(ex)
+
 app = FastAPI(
     title="Open Curriculum CN API",
-    description="基于 2022 义教新课标的中国 K12 知识图谱 REST API",
+    description="基于 2022 义教新课标的中国 K12 知识图谱 REST API (V4.0.1 含题目库)",
     version=DATA_VERSION,
 )
 
@@ -463,6 +488,210 @@ def search(
         "total": len(results),
         "limit": limit,
         "concepts": results[:limit],
+    }
+
+
+# =============================================================================
+# V4.0.1 端点: 题目库 (exercises)
+# =============================================================================
+
+# API key 鉴权
+from fastapi import Header, Depends, status
+from fastapi.responses import JSONResponse
+
+async def verify_api_key(x_api_key: Optional[str] = Header(None, alias="X-API-Key")):
+    """简单 API key 鉴权 (V4.0.1 引入, V4.1 升级 JWT)"""
+    if not x_api_key:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Missing X-API-Key header. 注册获取: https://github.com/zachsaws/open-curriculum-cn/issues"
+        )
+    if x_api_key not in API_KEYS:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Invalid API key"
+        )
+    return {"key": x_api_key, "tier": API_KEYS[x_api_key]["tier"]}
+
+
+@app.get("/v4/exercises/stats", summary="V4 题目库统计")
+async def v4_exercises_stats(_: dict = Depends(verify_api_key)):
+    """V4.0.1 题目库统计: 总题数/学科分布/真真题/题型分布"""
+    if not EXERCISES_DATA:
+        return {"error": "题库未加载"}
+    from collections import Counter
+    exs = EXERCISES_DATA.get("exercises", [])
+    by_subject = Counter()
+    by_type = Counter()
+    real_exam_count = 0
+    for e in exs:
+        # subject 从 concept_id 推 (没存 subject 字段)
+        # 这里用 tag 或保持
+        by_type[e.get("type", "")] += 1
+        if e.get("is_real_exam"):
+            real_exam_count += 1
+    return {
+        "version": EXERCISES_DATA.get("version", "unknown"),
+        "total": len(exs),
+        "by_type": dict(by_type),
+        "real_exam_count": real_exam_count,
+        "api_version": "v4.0.1",
+    }
+
+
+@app.get("/v4/exercises", summary="V4 列出题目")
+async def v4_list_exercises(
+    concept_id: Optional[str] = Query(None, description="按概念筛选"),
+    type: Optional[str] = Query(None, description="按题型筛选: multiple_choice/fill_blank/short_answer"),
+    is_real_exam: Optional[bool] = Query(None, description="只看真真题"),
+    limit: int = Query(50, le=500),
+    offset: int = Query(0, ge=0),
+    _: dict = Depends(verify_api_key),
+):
+    """V4.0.1 列出题目, 支持按概念/题型/真真题筛选 + 分页"""
+    if not EXERCISES_DATA:
+        return {"error": "题库未加载"}
+    exs = EXERCISES_DATA.get("exercises", [])
+    # 筛选
+    if concept_id:
+        exs = [e for e in exs if e.get("concept_id") == concept_id]
+    if type:
+        exs = [e for e in exs if e.get("type") == type]
+    if is_real_exam is not None:
+        exs = [e for e in exs if e.get("is_real_exam") == is_real_exam]
+    total = len(exs)
+    # 分页
+    exs = exs[offset:offset + limit]
+    return {
+        "total": total,
+        "limit": limit,
+        "offset": offset,
+        "exercises": exs,
+    }
+
+
+@app.get("/v4/exercises/by-concept/{concept_id}", summary="V4 某概念的所有题")
+async def v4_exercises_by_concept(
+    concept_id: str,
+    include_real_exam_only: bool = Query(False),
+    _: dict = Depends(verify_api_key),
+):
+    """V4.0.1 取某概念的所有题目"""
+    if not EXERCISES_DATA:
+        return {"error": "题库未加载"}
+    exs = EXERCISES_BY_CONCEPT.get(concept_id, [])
+    if include_real_exam_only:
+        exs = [e for e in exs if e.get("is_real_exam")]
+    # 找概念名
+    concept = next((n for n in DATA["nodes"] if n["id"] == concept_id), None)
+    return {
+        "concept_id": concept_id,
+        "concept_title": concept.get("title") if concept else None,
+        "total": len(exs),
+        "exercises": exs,
+    }
+
+
+@app.get("/v4/exercises/random", summary="V4 随机抽题")
+async def v4_random_exercises(
+    n: int = Query(5, ge=1, le=20, description="抽几道"),
+    concept_id: Optional[str] = Query(None),
+    difficulty: Optional[int] = Query(None, ge=1, le=5),
+    type: Optional[str] = Query(None),
+    only_real_exam: bool = Query(False),
+    _: dict = Depends(verify_api_key),
+):
+    """V4.0.1 随机抽题 (做几道题功能)"""
+    if not EXERCISES_DATA:
+        return {"error": "题库未加载"}
+    exs = EXERCISES_DATA.get("exercises", [])
+    if concept_id:
+        exs = [e for e in exs if e.get("concept_id") == concept_id]
+    if difficulty is not None:
+        exs = [e for e in exs if e.get("difficulty") == difficulty]
+    if type:
+        exs = [e for e in exs if e.get("type") == type]
+    if only_real_exam:
+        exs = [e for e in exs if e.get("is_real_exam")]
+    import random
+    if len(exs) > n:
+        exs = random.sample(exs, n)
+    return {
+        "requested": n,
+        "returned": len(exs),
+        "exercises": exs,
+    }
+
+
+# V4 概念端点 (升级版, 含教学话术 + 题目入口)
+@app.get("/v4/concepts/{concept_id}", summary="V4 概念详情 (含题目)")
+async def v4_concept_detail(
+    concept_id: str,
+    include_exercises: bool = Query(True, description="是否带题目列表"),
+    _: dict = Depends(verify_api_key),
+):
+    """V4.0.1 单个概念详情, 含 V3.7 P1 完整字段 (teaching_voice/bloom) + 题目入口"""
+    concept = next((n for n in DATA["nodes"] if n["id"] == concept_id), None)
+    if not concept:
+        raise HTTPException(status_code=404, detail=f"Concept {concept_id} not found")
+    # 加题目
+    exs = EXERCISES_BY_CONCEPT.get(concept_id, [])
+    # 加 lineage
+    prerequisites = list(_ADJ_TO.get(concept_id, []))
+    progressions = list(_ADJ_FROM.get(concept_id, []))
+    # related_to (跨学科软关联)
+    related_to = []
+    for e in DATA["edges"]:
+        if e.get("rel") == "relates_to":
+            if e["from"] == concept_id:
+                related_to.append({"to": e["to"], "reason": e.get("reason", "")})
+            elif e["to"] == concept_id:
+                related_to.append({"from": e["from"], "reason": e.get("reason", "")})
+    result = dict(concept)
+    result["_meta"] = {
+        "prerequisites": prerequisites,
+        "progressions": progressions,
+        "related_to": related_to,
+        "exercise_count": len(exs),
+        "real_exam_count": sum(1 for e in exs if e.get("is_real_exam")),
+    }
+    if include_exercises:
+        # 默认只返 5 道作为 sample, 完整用 /v4/exercises/by-concept/
+        result["_exercises_sample"] = exs[:5]
+    return result
+
+
+# 在 root 加 v4 端点
+@app.get("/")
+def root():
+    return {
+        "name": "Open Curriculum CN API",
+        "version": DATA_VERSION,
+        "data_version": DATA_VERSION,
+        "data_file": DATA_FILE.name,
+        "subjects": len(set(n["subject"] for n in DATA["nodes"])),
+        "concepts": len(DATA["nodes"]),
+        "edges": len(DATA["edges"]),
+        "exercises": len(EXERCISES_DATA.get("exercises", [])) if EXERCISES_DATA else 0,
+        "endpoints": [
+            "/api/stats",
+            "/api/subjects",
+            "/api/concepts",
+            "/api/concepts/{id}",
+            "/api/prerequisites/{id}",
+            "/api/path",
+            "/api/search",
+            "/api/health",
+            "/rss.xml",
+            # V4.0.1 新增
+            "/v4/exercises/stats",
+            "/v4/exercises?concept_id=&type=&is_real_exam=",
+            "/v4/exercises/by-concept/{concept_id}",
+            "/v4/exercises/random?n=5",
+            "/v4/concepts/{concept_id}",
+        ],
+        "auth": "X-API-Key header, 注册获取 (看 README)",
+        "demo_keys": list(API_KEYS.keys()),
     }
 
 
