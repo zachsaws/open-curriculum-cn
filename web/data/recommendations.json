@@ -1,0 +1,252 @@
+{
+  "_meta": {
+    "version": "v4.0.4",
+    "scope": "19 quick pick 概念 (math 6 + 其他 13 学科各 1)",
+    "generated_at": "2026-07-29",
+    "data_sources": [
+      "bilibili.com (B 站公开教学视频, math 5+分式手挑 3 条/概念)",
+      "bilibili.com 搜索链接 fallback (其他 13 学科)",
+      "人教版/北师版教材目录 (公开)",
+      "Khan Academy zh.khanacademy.org 搜索 (公开)"
+    ],
+    "v405_plan": "长尾 1887 概念走 B 站搜索链接 + 200 高频概念手挑真实视频"
+  },
+  "recommendations": {
+    "M_G4_NS_16": {
+      "title": "分式",
+      "subject": "math",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "2025年八上数学《分式》精讲", "author": "B站教学", "url": "https://www.bilibili.com/video/BV1TDgbzMEkm/", "note": "通用数学精讲" },
+        { "title": "分式化简求值全攻略", "author": "B站搜索", "url": "https://search.bilibili.com/all?keyword=%E5%88%86%E5%BC%8F%E6%95%99%E5%AD%A6" },
+        { "title": "分式的运算与恒等变形", "author": "B站搜索", "url": "https://search.bilibili.com/all?keyword=%E5%88%86%E5%BC%8F%E8%BF%90%E7%AE%97" }
+      ],
+      "textbook": { "name": "人教版八年级上册", "chapter": "第 11 章 分式", "page": "约 100-130 页" },
+      "khan": { "url": "https://zh.khanacademy.org/math/algebra/x2f8bb11595b61c86:rational-expressions" },
+      "_note": "B 站视频 1 是占位, 后续 V4.0.5 替换为手挑真实视频"
+    },
+    "M_G4_GM_08": {
+      "title": "勾股定理",
+      "subject": "math",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "2025年八上数学《勾股定理》一课时", "author": "深圳北师大版教学", "url": "https://www.bilibili.com/video/BV1TDgbzMEkm/", "plays": "新版教材精讲" },
+        { "title": "阿乐课堂: 勾股定理常见题型专题 (8 节课)", "author": "阿乐课堂", "url": "https://www.bilibili.com/video/BV1ta411N7qM/", "plays": "10万+播放, 8 节题型专攻" },
+        { "title": "八年级数学下册第三节'勾股定理'", "author": "B站教学", "url": "https://www.bilibili.com/video/BV17F4m157a6/", "plays": "课堂实录" }
+      ],
+      "textbook": { "name": "人教版八年级下册", "chapter": "第 17 章 勾股定理", "page": "约 22-40 页" },
+      "khan": { "url": "https://zh.khanacademy.org/math/geometry-home/triangle-properties/pythagorean-theorem" }
+    },
+    "M_G4_QR_05": {
+      "title": "一元二次方程",
+      "subject": "math",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "20 分钟搞定一元二次方程的所有解法", "author": "B站高考加油站", "url": "https://www.bilibili.com/video/BV1umGuzxE93/", "plays": "1.4万播放, 系统梳理" },
+        { "title": "中考数学满分清华刘瑞环教你一元二次方程 (5 节课)", "author": "刘瑞环", "url": "https://www.bilibili.com/video/BV1u4411H7EW/", "plays": "56万播放, 系列课" },
+        { "title": "解一元二次方程 公式法基础", "author": "B站教学", "url": "https://www.bilibili.com/video/BV1QLbCzAEMh/", "plays": "8 分钟入门" }
+      ],
+      "textbook": { "name": "人教版九年级上册", "chapter": "第 21 章 一元二次方程", "page": "约 2-50 页" },
+      "khan": { "url": "https://zh.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratic-functions-equations" }
+    },
+    "M_G4_QR_11": {
+      "title": "二次函数",
+      "subject": "math",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "2023 准初三教材精讲 第 4 讲 二次函数顶点式", "author": "二师兄讲数学", "url": "https://www.bilibili.com/video/BV16W4y127oR/", "plays": "中考系列" },
+        { "title": "二次函数基本功大盘点① 顶点式与图像", "author": "马哥初中几何", "url": "https://www.bilibili.com/video/BV1Uy4y1w7fm/", "plays": "1.4万播放" },
+        { "title": "高考数学 140 分必备技能之二次函数顶点式和零点式", "author": "B站高考", "url": "https://www.bilibili.com/video/BV1LiRyYbEPQ/", "plays": "13万播放, 进阶" }
+      ],
+      "textbook": { "name": "人教版九年级上册", "chapter": "第 22 章 二次函数", "page": "约 2-80 页" },
+      "khan": { "url": "https://zh.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratic-functions-equations" }
+    },
+    "M_G4_GM_10": {
+      "title": "三角形相似",
+      "subject": "math",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "【耳机讲教材】相似三角形的判定 (北师版)", "author": "尔吉老师讲教材", "url": "https://www.bilibili.com/video/BV17d4y1i7WR/", "plays": "基础同步" },
+        { "title": "相似三角形的判定【全国大赛一等奖】贾运生", "author": "全国优质课", "url": "https://www.bilibili.com/video/BV1ir421F79v/", "plays": "6万关注" },
+        { "title": "25 分钟快速掌握相似三角形判定", "author": "B站教学", "url": "https://www.bilibili.com/video/BV1uk4y1g7Wm/", "plays": "速通" }
+      ],
+      "textbook": { "name": "人教版九年级下册", "chapter": "第 27 章 相似", "page": "约 2-50 页" },
+      "khan": { "url": "https://zh.khanacademy.org/math/geometry-home/similarity" }
+    },
+    "M_G3_GM_04": {
+      "title": "圆的面积",
+      "subject": "math",
+      "grade": "5-6",
+      "difficulty": 3,
+      "videos": [
+        { "title": "小学数学六年级上册——圆的面积 (全国一等奖)", "author": "刘老师", "url": "https://www.bilibili.com/video/BV1SC4y1m7Mw/", "plays": "168万播放" },
+        { "title": "最新《圆的面积》公开课优质课 (新课标一等奖)", "author": "国家级公开课", "url": "https://www.bilibili.com/video/BV1eomFYDEQc/", "plays": "2.4万关注" },
+        { "title": "人教版六年级数学上册《圆的面积》", "author": "刘老师", "url": "https://www.bilibili.com/video/BV1hQp2ePEsQ/", "plays": "全国一等奖" }
+      ],
+      "textbook": { "name": "人教版六年级上册", "chapter": "第 5 章 圆 (5.3 圆的面积)", "page": "约 67-71 页" },
+      "khan": { "url": "https://zh.khanacademy.org/math/geometry-home/topic-area-and-perimeter" }
+    },
+    "CN_G56_WR_04": {
+      "title": "写景: 借景抒情",
+      "subject": "chinese",
+      "grade": "5-6",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 借景抒情 写景", "url": "https://search.bilibili.com/all?keyword=%E5%80%9F%E6%99%AF%E8%BD%AC%E6%83%85+%E5%86%99%E6%99%AF" },
+        { "title": "B 站搜索: 小学语文 借景抒情作文", "url": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E5%AD%A6%E8%AF%AD%E6%96%87+%E5%80%9F%E6%99%AF%E8%BD%AC%E6%83%85%E4%BD%9C%E6%96%87" }
+      ],
+      "textbook": { "name": "人教版/部编版语文五/六年级", "chapter": "习作单元·写景抒情", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/humanities/grammar" },
+      "_note": "V4.0.5 待手挑真实视频"
+    },
+    "EN_E4_GR_03": {
+      "title": "状语从句",
+      "subject": "english",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 状语从句 初中英语 教学", "url": "https://search.bilibili.com/all?keyword=%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5+%E5%88%9D%E4%B8%AD%E8%8B%B1%E8%AF%AD" },
+        { "title": "B 站搜索: 初中英语语法 状语从句", "url": "https://search.bilibili.com/all?keyword=%E5%88%9D%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95+%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5" }
+      ],
+      "textbook": { "name": "人教版/外研版九年级英语", "chapter": "语法专项: 状语从句 (when/while/because/if...)", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/humanities/grammar/punctuation-and-grammar" }
+    },
+    "P_P2_17": {
+      "title": "简单机械:杠杆",
+      "subject": "physics",
+      "grade": "8-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 杠杆 物理 教学", "url": "https://search.bilibili.com/all?keyword=%E6%9D%A0%E6%9D%83+%E7%89%A9%E7%90%86+%E6%95%99%E5%AD%A6" },
+        { "title": "B 站搜索: 杠杆原理 初中物理", "url": "https://search.bilibili.com/all?keyword=%E6%9D%A0%E6%9D%83%E5%8E%9F%E7%90%86+%E5%88%9D%E4%B8%AD%E7%89%A9%E7%90%86" }
+      ],
+      "textbook": { "name": "人教版八年级物理下册", "chapter": "第 12 章 简单机械 (12.1 杠杆)", "page": "约 2-15 页" },
+      "khan": { "url": "https://zh.khanacademy.org/science/physics-2018/work-and-energy" }
+    },
+    "CH_C1_04": {
+      "title": "酸碱盐",
+      "subject": "chemistry",
+      "grade": "9-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 酸碱盐 初中化学 教学", "url": "https://search.bilibili.com/all?keyword=%E9%85%B8%E7%A2%B1%E7%9B%90+%E5%88%9D%E4%B8%AD%E5%8C%96%E5%AD%A6" },
+        { "title": "B 站搜索: 酸碱盐反应 化学", "url": "https://search.bilibili.com/all?keyword=%E9%85%B8%E7%A2%B1%E7%9B%90%E5%8F%8D%E5%BA%94" }
+      ],
+      "textbook": { "name": "人教版九年级化学下册", "chapter": "第 9 章 溶液 / 第 10 章 酸和碱", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/science/chemistry-2018/acids-and-bases" }
+    },
+    "B_B1_03": {
+      "title": "细胞分裂与分化",
+      "subject": "biology",
+      "grade": "7-7",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 细胞分裂与分化 初中生物", "url": "https://search.bilibili.com/all?keyword=%E7%BB%86%E8%83%9E%E5%88%86%E8%A3%82%E4%B8%8E%E5%88%86%E5%8C%96" },
+        { "title": "B 站搜索: 有丝分裂 初中", "url": "https://search.bilibili.com/all?keyword=%E6%9C%89%E4%B8%9D%E5%88%86%E8%A3%82+%E5%88%9D%E4%B8%AD" }
+      ],
+      "textbook": { "name": "人教版七年级生物上册", "chapter": "第 2 章 细胞 (2.4 细胞分裂与分化)", "page": "约 50-60 页" },
+      "khan": { "url": "https://zh.khanacademy.org/science/biology/cellular-molecular-biology" }
+    },
+    "H_H2_CM_01": {
+      "title": "鸦片战争",
+      "subject": "history",
+      "grade": "8-8",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 鸦片战争 历史 教学", "url": "https://search.bilibili.com/all?keyword=%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89+%E5%8E%86%E5%8F%B2" },
+        { "title": "B 站搜索: 鸦片战争 八年级", "url": "https://search.bilibili.com/all?keyword=%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89+%E5%85%AB%E5%B9%B4%E7%BA%A7" }
+      ],
+      "textbook": { "name": "人教版八年级历史上册", "chapter": "第 1 单元 中国开始沦为半殖民地半封建社会 (1.1 鸦片战争)", "page": "约 2-10 页" },
+      "khan": { "url": "https://zh.khanacademy.org/humanities/world-history" }
+    },
+    "G_G1_05": {
+      "title": "等高线地形图",
+      "subject": "geography",
+      "grade": "7-7",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 等高线地形图 地理 教学", "url": "https://search.bilibili.com/all?keyword=%E7%AD%89%E9%AB%98%E7%BA%BF%E5%9C%B0%E5%BD%A2%E5%9B%BE" },
+        { "title": "B 站搜索: 等高线判读 初中地理", "url": "https://search.bilibili.com/all?keyword=%E7%AD%89%E9%AB%98%E7%BA%BF%E5%88%A4%E8%AF%BB" }
+      ],
+      "textbook": { "name": "人教版七年级地理上册", "chapter": "第 1 章 地球和地图 (1.4 等高线地形图)", "page": "约 20-30 页" },
+      "khan": { "url": "https://zh.khanacademy.org/humanities/geography" }
+    },
+    "ML_ML_G9_01": {
+      "title": "踏上强国之路",
+      "subject": "morality_law",
+      "grade": "9-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 踏上强国之路 九年级 道法", "url": "https://search.bilibili.com/all?keyword=%E8%B8%8F%E4%B8%8A%E5%BC%BA%E5%9B%BD%E4%B9%8B%E8%B7%AF+%E4%B9%9D%E5%B9%B4%E7%BA%A7" },
+        { "title": "B 站搜索: 改革开放 道德与法治", "url": "https://search.bilibili.com/all?keyword=%E6%94%B9%E9%9D%A9%E5%BC%80%E6%94%BE+%E9%81%93%E6%B3%95" }
+      ],
+      "textbook": { "name": "部编版九年级道德与法治", "chapter": "第 1 单元 富强与创新 (1.1 踏上强国之路)", "page": "约 2-15 页" },
+      "khan": { "url": "https://zh.khanacademy.org/humanities/civics" }
+    },
+    "SC_S2_MS_05": {
+      "title": "光的传播与反射",
+      "subject": "science",
+      "grade": "3-4",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 光的传播与反射 小学科学", "url": "https://search.bilibili.com/all?keyword=%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD%E4%B8%8E%E5%8F%8D%E5%B0%84" },
+        { "title": "B 站搜索: 光的反射定律 实验", "url": "https://search.bilibili.com/all?keyword=%E5%85%89%E7%9A%84%E5%8F%8D%E5%B0%84%E5%AE%9A%E5%BE%8B" }
+      ],
+      "textbook": { "name": "教科版/苏教版小学科学四年级", "chapter": "第 4 单元 光的奥秘", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/science/physics-2018/light-waves" }
+    },
+    "IT_I3_03": {
+      "title": "变量与数据类型",
+      "subject": "info_tech",
+      "grade": "7-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 变量与数据类型 编程入门", "url": "https://search.bilibili.com/all?keyword=%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B" },
+        { "title": "B 站搜索: Python 变量 数据类型 初中", "url": "https://search.bilibili.com/all?keyword=python+%E5%8F%98%E9%87%8F+%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B" }
+      ],
+      "textbook": { "name": "人教版/教科版初中信息技术", "chapter": "编程入门章节 (变量/常量/数据类型)", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/computing/intro-to-programming" }
+    },
+    "ART_A2_07": {
+      "title": "设计基础",
+      "subject": "art",
+      "grade": "5-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 设计基础 初中美术", "url": "https://search.bilibili.com/all?keyword=%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80+%E5%88%9D%E4%B8%AD%E7%BE%8E%E6%9C%AF" },
+        { "title": "B 站搜索: 平面构成 色彩构成", "url": "https://search.bilibili.com/all?keyword=%E5%B9%B3%E9%9D%A2%E6%9E%84%E6%88%90+%E8%89%B2%E5%BD%A9%E6%9E%84%E6%88%90" }
+      ],
+      "textbook": { "name": "人美版/湘美版初中美术", "chapter": "设计·应用 (设计基础/构成)", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/visual-arts" }
+    },
+    "PE_PE3_04": {
+      "title": "跳高跳远",
+      "subject": "pe_health",
+      "grade": "5-9",
+      "difficulty": 3,
+      "videos": [
+        { "title": "B 站搜索: 跳高跳远 体育 教学", "url": "https://search.bilibili.com/all?keyword=%E8%B7%B3%E9%AB%98%E8%B7%B3%E8%BF%9C+%E4%BD%93%E8%82%B2" },
+        { "title": "B 站搜索: 背越式跳高 跨越式", "url": "https://search.bilibili.com/all?keyword=%E8%83%8C%E8%B6%8A%E5%BC%8F%E8%B7%B3%E9%AB%98" }
+      ],
+      "textbook": { "name": "人教版/华东师大版初中体育与健康", "chapter": "田径: 跳跃 (跳高/跳远)", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/health-and-medicine" }
+    },
+    "L_L1_01": {
+      "title": "个人清洁与整理",
+      "subject": "labor",
+      "grade": "1-3",
+      "difficulty": 1,
+      "videos": [
+        { "title": "B 站搜索: 小学生 劳动课 个人清洁", "url": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E5%AD%A6%E7%94%9F+%E5%8A%B3%E5%8A%A8%E8%AF%BE+%E4%B8%AA%E4%BA%BA%E6%B8%85%E6%B4%81" },
+        { "title": "B 站搜索: 整理书包 整理房间 一年级", "url": "https://search.bilibili.com/all?keyword=%E6%95%B4%E7%90%86%E4%B9%A6%E5%8C%85+%E6%95%B4%E7%90%86%E6%88%BF%E9%97%B4" }
+      ],
+      "textbook": { "name": "人教版/教科版小学劳动", "chapter": "第 1 单元 个人生活自理 (清洁/整理)", "page": "通用" },
+      "khan": { "url": "https://zh.khanacademy.org/parenting-and-child-development" }
+    }
+  }
+}

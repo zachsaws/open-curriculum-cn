@@ -315,6 +315,63 @@
   }
   .wrong-row .btn-mini:hover { background: rgba(107,140,255,0.20); }
   .wrong-row .btn-mini.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #f5a5a0; }
+
+  /* V4.0.4 完整 canvas 趋势图 */
+  .trend-wrap { margin-top: 24px; }
+  .trend-wrap h3 { font-size: 14px; color: #a5b8f5; margin-bottom: 12px; font-family: "SF Mono", monospace; }
+  .trend-canvas {
+    width: 100%; height: 280px; display: block;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    cursor: crosshair;
+  }
+  .trend-tip { color: #5a6278; font-size: 11px; margin-top: 8px; font-family: "SF Mono", monospace; }
+
+  /* V4.0.4 个性化推荐区 */
+  .rec-area {
+    margin-top: 24px; padding: 20px 22px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+  }
+  .rec-cta { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+  .rec-cta-icon { font-size: 22px; }
+  .rec-cta-text { font-size: 14px; color: #e6e9f2; font-weight: 600; }
+  .rec-cta-tag { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; margin-left: auto; }
+  .rec-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  .rec-link {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px;
+    background: rgba(107,140,255,0.06);
+    border: 1px solid rgba(107,140,255,0.2);
+    border-radius: 8px;
+    text-decoration: none; color: #e6e9f2;
+    transition: all 0.15s;
+  }
+  .rec-link:hover { background: rgba(107,140,255,0.15); border-color: rgba(107,140,255,0.4); transform: translateX(2px); text-decoration: none; }
+  .rec-icon { font-size: 20px; min-width: 28px; text-align: center; }
+  .rec-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .rec-title { font-size: 14px; line-height: 1.4; }
+  .rec-sub { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; }
+  .rec-arrow { color: #6b8cff; font-size: 16px; font-weight: 700; }
+  .rec-extras { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .rec-extra {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 14px;
+    background: rgba(151,201,111,0.06);
+    border: 1px solid rgba(151,201,111,0.2);
+    border-radius: 6px;
+    text-decoration: none; color: #c5e08c;
+    font-size: 12px;
+    transition: all 0.15s;
+  }
+  .rec-extra:hover { background: rgba(151,201,111,0.15); text-decoration: none; }
+  .rec-extra-icon { font-size: 16px; }
+  .rec-extra-text { display: flex; flex-direction: column; gap: 1px; }
+  .rec-extra-title { font-size: 12px; font-weight: 600; }
+  .rec-extra-sub { font-size: 10px; color: #8a92a8; font-family: "SF Mono", monospace; }
+  .rec-foot { color: #5a6278; font-size: 11px; font-family: "SF Mono", monospace; margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -344,6 +401,8 @@
 </div>
 
 <script src="./history.js"></script>
+<script src="./trend.js"></script>
+<script src="./rec.js"></script>
 <script src="./diagnose.js"></script>
 </body>
 </html>

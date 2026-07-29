@@ -57,6 +57,7 @@ const QUICK_PICKS = [
 let GRAPH = null;
 let EXERCISES = [];
 let EXERCISES_BY_CONCEPT = {};
+let REC_DATA = null;  // V4.0.4 推荐数据 (从 recommendations.json 加载)
 let MODE = 'test';  // 'test' = 5 道题测试 / 'quick' = 手输答对率
 let CURRENT_STEP = 1;
 let SELECTED_CONCEPT = null;
@@ -79,10 +80,11 @@ function getConceptById(id) {
 // --- 数据加载 ---
 async function loadData() {
   try {
-    // data/graph.json (含节点 + 边)
-    const [gRes, eRes] = await Promise.all([
+    // V4.0.4: 并行加载 3 份数据 (graph + exercises + recommendations)
+    const [gRes, eRes, rRes] = await Promise.all([
       fetch('./data/graph.json'),
       fetch('./data/exercises.json'),
+      fetch('./data/recommendations.json').catch(() => null),  // 推荐数据非关键, 失败 fallback
     ]);
     if (!gRes.ok) throw new Error(`graph.json ${gRes.status}`);
     if (!eRes.ok) throw new Error(`exercises.json ${eRes.status}`);
@@ -94,6 +96,9 @@ async function loadData() {
       if (!EXERCISES_BY_CONCEPT[e.concept_id]) EXERCISES_BY_CONCEPT[e.concept_id] = [];
       EXERCISES_BY_CONCEPT[e.concept_id].push(e);
     });
+    if (rRes && rRes.ok) {
+      REC_DATA = await rRes.json();
+    }
     render();
   } catch (e) {
     document.getElementById('content').innerHTML =
@@ -595,15 +600,46 @@ function showResult(result) {
     ${renderHistorySection(result.concept_id)}
   `;
 
+  // V4.0.4: 渲染完整 canvas 趋势图 + 个性化推荐
+  // 延迟 50ms 等 innerHTML 注入 + layout 完, 才能拿到 canvas 真实尺寸
+  setTimeout(() => {
+    try {
+      if (typeof window.TrendChart !== 'undefined') {
+        const hist = window.HistoryStore.getConceptHistory(result.concept_id);
+        window.TrendChart.render(
+          'trend-canvas',
+          hist,
+          result.weak_threshold,
+          result.consolidate_threshold
+        );
+      }
+    } catch (e) { console.error('TrendChart render failed:', e); }
+    try {
+      if (typeof window.Recommender !== 'undefined') {
+        const concept = getConceptById(result.concept_id);
+        window.Recommender.render(
+          'rec-area',
+          REC_DATA,
+          result.concept_id,
+          result.status,
+          concept ? concept.title : result.concept_title
+        );
+      }
+    } catch (e) { console.error('Recommender render failed:', e); }
+  }, 50);
+
   // 滚动到顶
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// --- V4.0.3 历史区 (错题列表 + 5+ 次诊断提示) ---
+// --- V4.0.4 历史区 (错题列表 + 完整 canvas 趋势图 + 推荐区) ---
 function renderHistorySection(conceptId) {
   if (typeof window.HistoryStore === 'undefined') return '';
   const hist = window.HistoryStore.getConceptHistory(conceptId);
-  if (hist.length === 0) return '';
+  if (hist.length === 0) {
+    // 仍渲染推荐区 (诊断结果页底部)
+    return '<div id="rec-area" class="rec-area"></div>';
+  }
   const rows = hist.slice().reverse().slice(0, 5).map(h => {
     const date = new Date(h.date).toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' });
     return '<div class="history-row">' +
@@ -612,16 +648,17 @@ function renderHistorySection(conceptId) {
       '<span class="history-score">' + esc(h.score_pct) + '%</span>' +
     '</div>';
   }).join('');
-  let tip;
-  if (hist.length >= 5) {
-    tip = '<p style="color:#8a92a8; font-size:11px; margin-top:8px;">// 已测 ' + hist.length + ' 次 · 完整进度趋势图见 V4.0.4</p>';
-  } else {
-    tip = '<p style="color:#8a92a8; font-size:11px; margin-top:8px;">// 再测 ' + (5 - hist.length) + ' 次开启进度趋势</p>';
-  }
+  // V4.0.4: 完整 canvas 趋势图 (≥2 次即可画, 1 次给 placeholder)
+  const trendHtml = '<div class="trend-wrap">' +
+    '<h3>// 进度趋势图 (最近 ' + hist.length + ' 次)</h3>' +
+    '<canvas id="trend-canvas" class="trend-canvas"></canvas>' +
+    '<p class="trend-tip">// 鼠标 hover 点查看详情 · 红=薄弱 / 黄=巩固 / 绿=已掌握</p>' +
+  '</div>';
   return '<div class="path-section">' +
     '<h3>// 诊断历史 (' + hist.length + ' 次)</h3>' +
     '<div class="history-list">' + rows + '</div>' +
-    tip +
+    trendHtml +
+    '<div id="rec-area" class="rec-area"></div>' +
   '</div>';
 }
 
