@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>错题本 · K12 知识图谱</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { color: #e6e9f2; background: #0d1120; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; }
+  body { min-height: 100vh; }
+  a { color: #6b8cff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .top {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(13, 17, 32, 0.95); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 12px 24px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .top a.back {
+    color: #a5b8f5; font-size: 13px; padding: 6px 12px;
+    background: rgba(107,140,255,0.10); border: 1px solid rgba(107,140,255,0.3);
+    border-radius: 6px;
+  }
+  .top .title { flex: 1; min-width: 0; }
+  .top .title h1 { font-size: 16px; font-weight: 700; }
+  .top .title .sub { font-size: 11px; color: #8a92a8; margin-top: 2px; font-family: "SF Mono", monospace; }
+  .top .actions { display: flex; gap: 8px; }
+  .top .btn {
+    padding: 8px 14px; font-size: 12px; font-weight: 600;
+    background: rgba(107,140,255,0.15); border: 1px solid rgba(107,140,255,0.3);
+    color: #a5b8f5; border-radius: 6px; cursor: pointer; font-family: inherit;
+    text-decoration: none;
+  }
+  .top .btn.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #f5a5a0; }
+
+  .container { max-width: 880px; margin: 0 auto; padding: 24px; }
+  .loading, .empty { padding: 60px; text-align: center; color: #8a92a8; }
+
+  /* 统计 */
+  .stats {
+    display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .stat-card {
+    flex: 1; min-width: 120px; padding: 16px 20px;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px; text-align: center;
+  }
+  .stat-card .big { font-size: 28px; font-weight: 800; color: #fff; line-height: 1; }
+  .stat-card .label { font-size: 11px; color: #8a92a8; margin-top: 6px; font-family: "SF Mono", monospace; }
+
+  /* 错题卡 */
+  .wrong-row {
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 14px 18px; background: rgba(239,107,91,0.04);
+    border: 1px solid rgba(239,107,91,0.15); border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  .wrong-row .top-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .wrong-row .concept-link { color: #a5b8f5; text-decoration: none; font-size: 12px; }
+  .wrong-row .concept-link:hover { text-decoration: underline; }
+  .wrong-row .q-type {
+    display: inline-block; padding: 2px 8px; border-radius: 3px;
+    font-size: 10px; font-family: "SF Mono", monospace;
+  }
+  .wrong-row .q-type.choice { background: rgba(107,140,255,0.15); color: #a5b8f5; }
+  .wrong-row .q-type.fill { background: rgba(151,201,111,0.15); color: #c5e08c; }
+  .wrong-row .q-type.short { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .wrong-row .q-date { color: #5a6278; font-size: 10px; font-family: "SF Mono", monospace; margin-left: auto; }
+  .wrong-row .question { font-size: 14px; line-height: 1.6; color: #e6e9f2; white-space: pre-wrap; }
+  .wrong-row .answer-row { display: flex; gap: 16px; font-size: 12px; flex-wrap: wrap; }
+  .wrong-row .answer-label { color: #8a92a8; font-family: "SF Mono", monospace; min-width: 70px; }
+  .wrong-row .user-ans { color: #f5a5a0; }
+  .wrong-row .correct-ans { color: #a5e08c; }
+  .wrong-row .actions-row { display: flex; gap: 8px; margin-top: 4px; }
+  .wrong-row .btn-mini {
+    padding: 4px 10px; font-size: 11px; background: rgba(107,140,255,0.10);
+    border: 1px solid rgba(107,140,255,0.3); color: #a5b8f5;
+    border-radius: 4px; cursor: pointer; font-family: inherit;
+    text-decoration: none;
+  }
+  .wrong-row .btn-mini:hover { background: rgba(107,140,255,0.20); }
+  .wrong-row .btn-mini.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #f5a5a0; cursor: pointer; }
+
+  .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #5a6278; }
+  .footer a { color: #6b8cff; }
+</style>
+</head>
+<body>
+<div class="top">
+  <a class="back" href="./index.html">← 返回主页</a>
+  <div class="title">
+    <h1>❌ 错题本</h1>
+    <div class="sub">V4.0.3 · 答错的题自动收集 · localStorage 持久化</div>
+  </div>
+  <div class="actions">
+    <a class="btn" href="./diagnose.html">🩺 去诊断</a>
+    <button class="btn danger" id="clear-btn" onclick="clearAll()">🗑 清空</button>
+  </div>
+</div>
+
+<div class="container" id="content">
+  <div class="loading">加载中…</div>
+</div>
+
+<div class="footer">
+  数据来源: <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">open-curriculum-cn</a> ·
+  错题仅存你本地浏览器 (localStorage) · CC-BY-SA 4.0
+</div>
+
+<script src="./history.js"></script>
+<script>
+'use strict';
+
+const SUBJECT_CN = {
+  math: '数学', chinese: '语文', english: '英语', physics: '物理',
+  chemistry: '化学', biology: '生物', history: '历史', geography: '地理',
+  morality_law: '道德与法治', science: '科学', info_tech: '信息科技',
+  art: '艺术', pe_health: '体育与健康', labor: '劳动',
+  integrated: '综合实践',
+};
+const TYPE_LABEL = { multiple_choice: '选择题', fill_blank: '填空题', short_answer: '简答题' };
+const TYPE_CLASS = { multiple_choice: 'choice', fill_blank: 'fill', short_answer: 'short' };
+
+function esc(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+}
+
+function render() {
+  const wb = window.HistoryStore.getWrongbook();
+  const stats = window.HistoryStore.getWrongbookStats();
+  const c = document.getElementById('content');
+  if (wb.length === 0) {
+    c.innerHTML = `
+      <div class="empty">
+        <p style="font-size: 32px; margin-bottom: 16px;">📭</p>
+        <p style="font-size: 16px; color: #c8d4ff; margin-bottom: 8px;">错题本是空的</p>
+        <p style="font-size: 13px; color: #8a92a8;">做完 5 道题诊断后, 答错的题会自动收集到这里</p>
+        <p style="margin-top: 20px;"><a class="btn" href="./diagnose.html" style="display:inline-block; padding: 10px 20px; font-size: 13px; background: rgba(107,140,255,0.15); border: 1px solid rgba(107,140,255,0.3); color: #a5b8f5; border-radius: 6px;">🩺 去测一次</a></p>
+      </div>
+    `;
+    return;
+  }
+  // 统计 + 错题列表
+  const typeStats = Object.entries(stats.by_type)
+    .map(([t, n]) => `<div class="stat-card"><div class="big">${n}</div><div class="label">${TYPE_LABEL[t] || t}</div></div>`)
+    .join('');
+  c.innerHTML = `
+    <div class="stats">
+      <div class="stat-card"><div class="big">${stats.total}</div><div class="label">总错题</div></div>
+      <div class="stat-card"><div class="big">${Object.keys(stats.by_concept).length}</div><div class="label">涉及概念</div></div>
+      ${typeStats}
+    </div>
+    <div id="wrong-list">
+      ${wb.slice().reverse().map((w, i) => renderWrong(w)).join('')}
+    </div>
+  `;
+}
+
+function renderWrong(w) {
+  const typeLabel = TYPE_LABEL[w.type] || w.type;
+  const typeClass = TYPE_CLASS[w.type] || 'short';
+  return `<div class="wrong-row" id="wb-${esc(w.exercise_id)}">
+    <div class="top-row">
+      <span class="q-type ${typeClass}">${esc(typeLabel)}</span>
+      <a class="concept-link" href="./diagnose.html?concept_id=${esc(w.concept_id)}">${esc(w.concept_title || w.concept_id)}</a>
+      <span class="q-date">${esc(new Date(w.date).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }))}</span>
+    </div>
+    <div class="question">${esc(w.question)}</div>
+    <div class="answer-row">
+      <span><span class="answer-label">你的答案:</span> <span class="user-ans">${esc(w.user_answer || '(空)')}</span></span>
+      <span><span class="answer-label">正答:</span> <span class="correct-ans">${esc(w.correct_answer || '(无)')}</span></span>
+    </div>
+    <div class="actions-row">
+      <a class="btn-mini" href="./exercise.html?id=${esc(w.concept_id)}">📝 回到练习</a>
+      <a class="btn-mini" href="./diagnose.html?concept_id=${esc(w.concept_id)}">🩺 再诊断</a>
+      <button class="btn-mini danger" onclick="removeOne('${esc(w.exercise_id)}')">🗑 移除</button>
+    </div>
+  </div>`;
+}
+
+function removeOne(exId) {
+  if (!confirm('确定移除这道错题?')) return;
+  window.HistoryStore.removeFromWrongbook(exId);
+  render();
+}
+
+function clearAll() {
+  if (!confirm('确定清空所有错题? (此操作不可恢复)')) return;
+  window.HistoryStore.clearWrongbook();
+  render();
+}
+
+render();
+</script>
+</body>
+</html>

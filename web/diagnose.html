@@ -245,6 +245,58 @@
   /* footer */
   .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #5a6278; }
   .footer a { color: #6b8cff; }
+
+  /* V4.0.3 历史 + 错题本 + 趋势 */
+  .history-list { display: flex; flex-direction: column; gap: 6px; }
+  .history-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 14px; background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06); border-radius: 6px;
+    font-size: 13px;
+  }
+  .history-date { color: #8a92a8; font-family: "SF Mono", monospace; font-size: 11px; min-width: 90px; }
+  .history-status {
+    padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600;
+    font-family: "SF Mono", monospace;
+  }
+  .history-status.status-薄弱 { background: rgba(239,107,91,0.15); color: #f5a5a0; }
+  .history-status.status-巩固 { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .history-status.status-已掌握 { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  .history-score { margin-left: auto; color: #a5b8f5; font-family: "SF Mono", monospace; font-weight: 600; }
+
+  /* 错题本 */
+  .wrongbook-stats {
+    display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .stat-card {
+    flex: 1; min-width: 120px; padding: 16px 20px;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px; text-align: center;
+  }
+  .stat-card .big { font-size: 28px; font-weight: 800; color: #fff; line-height: 1; }
+  .stat-card .label { font-size: 11px; color: #8a92a8; margin-top: 6px; font-family: "SF Mono", monospace; }
+  .wrong-row {
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 14px 18px; background: rgba(239,107,91,0.04);
+    border: 1px solid rgba(239,107,91,0.15); border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  .wrong-row .top-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .wrong-row .concept-link { color: #a5b8f5; text-decoration: none; font-size: 12px; }
+  .wrong-row .concept-link:hover { text-decoration: underline; }
+  .wrong-row .question { font-size: 14px; line-height: 1.6; color: #e6e9f2; white-space: pre-wrap; }
+  .wrong-row .answer-row { display: flex; gap: 16px; font-size: 12px; flex-wrap: wrap; }
+  .wrong-row .answer-label { color: #8a92a8; font-family: "SF Mono", monospace; min-width: 70px; }
+  .wrong-row .user-ans { color: #f5a5a0; }
+  .wrong-row .correct-ans { color: #a5e08c; }
+  .wrong-row .actions-row { display: flex; gap: 8px; margin-top: 4px; }
+  .wrong-row .btn-mini {
+    padding: 4px 10px; font-size: 11px; background: rgba(107,140,255,0.10);
+    border: 1px solid rgba(107,140,255,0.3); color: #a5b8f5;
+    border-radius: 4px; cursor: pointer; font-family: inherit;
+  }
+  .wrong-row .btn-mini:hover { background: rgba(107,140,255,0.20); }
+  .wrong-row .btn-mini.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #f5a5a0; }
 </style>
 </head>
 <body>
@@ -273,6 +325,7 @@
   算法: BFS 找先决链 + 自适应阈值按难度 (80/70/60/50%) · CC-BY-SA 4.0
 </div>
 
+<script src="./history.js"></script>
 <script src="./diagnose.js"></script>
 </body>
 </html>

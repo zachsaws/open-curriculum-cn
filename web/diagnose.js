@@ -30,13 +30,28 @@ const SUBJECT_CN = {
 const TYPE_LABEL = { multiple_choice: '选择题', fill_blank: '填空题', short_answer: '简答题' };
 const TYPE_CLASS = { multiple_choice: 'choice', fill_blank: 'fill', short_answer: 'short' };
 
-// PoC 5 个核心考点 (math 5 大常考题)
+// V4.0.3 全 14 学科 quick pick (各学科 1 个高频核心考点 + math 5 核心)
+// 选 highest-centrality 节点 (V3.6.6 算过), math 加 5 个 PoC 重点
 const QUICK_PICKS = [
-  { id: 'M_G4_GM_08', reason: '8-9年级常考' },
-  { id: 'M_G4_QR_05', reason: '8-9年级常考' },
-  { id: 'M_G4_QR_11', reason: '9年级压轴' },
-  { id: 'M_G4_GM_10', reason: '9年级综合' },
-  { id: 'M_G3_GM_04', reason: '6年级基础' },
+  { id: 'M_G4_NS_16', reason: 'math' },
+  { id: 'M_G4_GM_08', reason: 'math' },
+  { id: 'M_G4_QR_05', reason: 'math' },
+  { id: 'M_G4_QR_11', reason: 'math' },
+  { id: 'M_G4_GM_10', reason: 'math' },
+  { id: 'M_G3_GM_04', reason: 'math' },
+  { id: 'CN_G56_WR_04', reason: 'chinese' },
+  { id: 'EN_E4_GR_03', reason: 'english' },
+  { id: 'P_P2_17', reason: 'physics' },
+  { id: 'CH_C1_04', reason: 'chemistry' },
+  { id: 'B_B1_03', reason: 'biology' },
+  { id: 'H_H2_CM_01', reason: 'history' },
+  { id: 'G_G1_05', reason: 'geography' },
+  { id: 'ML_ML_G9_01', reason: 'morality_law' },
+  { id: 'SC_S2_MS_05', reason: 'science' },
+  { id: 'IT_I3_03', reason: 'info_tech' },
+  { id: 'ART_A2_07', reason: 'art' },
+  { id: 'PE_PE3_04', reason: 'pe_health' },
+  { id: 'L_L1_01', reason: 'labor' },
 ];
 
 // 全局状态
@@ -422,7 +437,51 @@ function gradeAnswers() {
 
 function submitTest() {
   const answers = gradeAnswers();
-  showResult(diagnose(SELECTED_CONCEPT, answers, null));
+  // V4.0.3 集成 history store: 答错题自动收错题本 + 诊断历史
+  const exs = (EXERCISES_BY_CONCEPT[SELECTED_CONCEPT] || []).slice(0, 5);
+  const concept = getConceptById(SELECTED_CONCEPT);
+  exs.forEach((ex, i) => {
+    if (answers[i] === false) {
+      const ua = USER_ANSWERS[ex.id] || {};
+      window.HistoryStore.recordWrong({
+        exercise_id: ex.id,
+        concept_id: ex.concept_id,
+        concept_title: concept ? concept.title : '',
+        question: ex.question,
+        user_answer: toStrUser(ua.value),
+        correct_answer: toStrCorrect(ex.answer),
+        type: ex.type,
+      });
+    }
+  });
+  const result = diagnose(SELECTED_CONCEPT, answers, null);
+  recordHistoryAndRender(result, 'test');
+}
+
+function recordHistoryAndRender(result, entry) {
+  if (result.error) { showResult(result); return; }
+  // 记录诊断历史
+  window.HistoryStore.recordDiagnosis({
+    concept_id: result.concept_id,
+    concept_title: result.concept_title,
+    subject: result.subject,
+    score: result.score,
+    score_pct: result.score_pct,
+    status: result.status,
+    entry,
+  });
+  showResult(result);
+}
+
+function toStrUser(v) {
+  if (v == null) return '';
+  if (Array.isArray(v)) return v.join(', ');
+  return String(v);
+}
+function toStrCorrect(v) {
+  if (v == null) return '';
+  if (Array.isArray(v)) return v.join(' / ');
+  return String(v);
 }
 
 function renderStep2Quick() {
@@ -460,7 +519,8 @@ window.setQuickScore = function(v) {
 };
 
 function submitQuick() {
-  showResult(diagnose(SELECTED_CONCEPT, null, QUICK_SCORE / 100.0));
+  const result = diagnose(SELECTED_CONCEPT, null, QUICK_SCORE / 100.0);
+  recordHistoryAndRender(result, 'quick-check');
 }
 
 function goBack() {
@@ -522,8 +582,43 @@ function showResult(result) {
 
     <div class="actions" style="margin-top: 32px;">
       <button class="btn secondary" onclick="goBack()">← 测另一个概念</button>
+      <button class="btn secondary" onclick="location.href='./wrongbook.html'">❌ 错题本 (${window.HistoryStore.getWrongbookStats().total})</button>
       <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">📝 直接做 5 道题</button>
     </div>
+    ${renderHistoryTrendSection(result.concept_id)}
+  `;
+
+  // 滚动到顶
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderHistoryTrendSection(conceptId) {
+  const hist = window.HistoryStore.getConceptHistory(conceptId);
+  if (hist.length === 0) return '';
+  // 仅显示历史次数; 5+ 次时画趋势
+  if (hist.length >= 5) {
+    return `
+      <div class="path-section">
+        <h3>// 进度趋势 (你测了 ${hist.length} 次, 最近 ${Math.min(10, hist.length)} 次)</h3>
+        <canvas id="trend-canvas" width="720" height="180" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; width: 100%; max-width: 720px;"></canvas>
+        <script>setTimeout(() => drawTrend('trend-canvas', ${JSON.stringify(hist.slice(-10))}), 100);<\/script>
+      </div>
+    `;
+  } else {
+    return `
+      <div class="path-section">
+        <h3>// 诊断历史 (${hist.length} 次)</h3>
+        <div class="history-list">
+          ${hist.slice().reverse().slice(0, 5).map(h => `
+            <div class="history-row">
+              <span class="history-date">${esc(new Date(h.date).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }))}</span>
+              <span class="history-status status-${esc(h.status)}">${esc(h.status)}</span>
+              <span class="history-score">${esc(h.score_pct)}%</span>
+            </div>
+          `).join('')}
+        </div>
+        <p style="color:#8a92a8; font-size:11px; margin-top:8px;">// 再测 ${5 - hist.length} 次开启进度趋势图</p>
+      </div>
   `;
 
   // 滚动到顶
@@ -532,3 +627,93 @@ function showResult(result) {
 
 // --- 启动 ---
 loadData();
+
+// --- V4.0.3 进度趋势 canvas (全局函数, 给 innerHTML 嵌入的 setTimeout 引用) ---
+function drawTrend(canvasId, hist) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.clientWidth || 720;
+  const H = 180;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+  if (!hist || hist.length < 2) return;
+
+  // 坐标
+  const padL = 36, padR = 16, padT = 16, padB = 28;
+  const innerW = W - padL - padR;
+  const innerH = H - padT - padB;
+  const minY = 0, maxY = 100;
+
+  // 网格 (5 条横线 0/25/50/75/100)
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 1;
+  ctx.font = '10px "SF Mono", monospace';
+  ctx.fillStyle = '#5a6278';
+  ctx.textAlign = 'right';
+  for (let i = 0; i <= 4; i++) {
+    const y = padT + (innerH / 4) * i;
+    ctx.beginPath();
+    ctx.moveTo(padL, y);
+    ctx.lineTo(W - padR, y);
+    ctx.stroke();
+    const val = maxY - (maxY / 4) * i;
+    ctx.fillText(val + '%', padL - 6, y + 3);
+  }
+
+  // 数据折线
+  const n = hist.length;
+  const pts = hist.map((h, i) => ({
+    x: padL + (innerW / (n - 1)) * i,
+    y: padT + innerH - ((h.score_pct - minY) / (maxY - minY)) * innerH,
+    score: h.score_pct,
+    status: h.status,
+  }));
+  // 阈值线 (薄弱线 70%, 巩固线 90% - 概念难度 3 通用)
+  const weakY = padT + innerH - ((70 - minY) / (maxY - minY)) * innerH;
+  const consY = padT + innerH - ((90 - minY) / (maxY - minY)) * innerH;
+  ctx.strokeStyle = 'rgba(239,107,91,0.3)';
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath(); ctx.moveTo(padL, weakY); ctx.lineTo(W - padR, weakY); ctx.stroke();
+  ctx.strokeStyle = 'rgba(123,201,111,0.3)';
+  ctx.beginPath(); ctx.moveTo(padL, consY); ctx.lineTo(W - padR, consY); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = 'rgba(239,107,91,0.6)';
+  ctx.font = '9px "SF Mono", monospace';
+  ctx.textAlign = 'left';
+  ctx.fillText('薄弱线 70%', padL + 4, weakY - 4);
+  ctx.fillStyle = 'rgba(123,201,111,0.6)';
+  ctx.fillText('巩固线 90%', padL + 4, consY - 4);
+
+  // 折线
+  ctx.strokeStyle = '#6b8cff';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  pts.forEach((p, i) => { if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y); });
+  ctx.stroke();
+  // 填充
+  const grad = ctx.createLinearGradient(0, padT, 0, padT + innerH);
+  grad.addColorStop(0, 'rgba(107,140,255,0.30)');
+  grad.addColorStop(1, 'rgba(107,140,255,0.00)');
+  ctx.lineTo(pts[pts.length - 1].x, padT + innerH);
+  ctx.lineTo(pts[0].x, padT + innerH);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+  // 点 + 颜色 (按 status)
+  pts.forEach(p => {
+    const color = { 薄弱: '#ef6b5b', 巩固: '#e0d28c', 已掌握: '#a5e08c' }[p.status] || '#6b8cff';
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#e6e9f2';
+    ctx.font = '10px -apple-system, "PingFang SC"';
+    ctx.textAlign = 'center';
+    ctx.fillText(p.score + '%', p.x, p.y - 8);
+  });
+}
+window.drawTrend = drawTrend;
