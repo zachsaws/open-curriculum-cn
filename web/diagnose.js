@@ -393,23 +393,29 @@ window.setShortAnswer = function(exId, val) {
 function gradeAnswers() {
   // 返回 [bool]*5
   const exs = (EXERCISES_BY_CONCEPT[SELECTED_CONCEPT] || []).slice(0, 5);
+  // 转字符串辅助: 避免 number/list 类型时 .replace() 抛错
+  const toStr = v => v == null ? '' : (Array.isArray(v) ? v.join('|') : String(v));
+  const norm = s => toStr(s).replace(/[\s，。、,.!?！？;；:：]/g, '').toLowerCase();
   return exs.map(ex => {
     const ua = USER_ANSWERS[ex.id];
     if (!ua) return false;  // 未答 = 错
     if (ex.type === 'multiple_choice') {
       // 正确答案 (answer 字段, 也可能是 letter)
-      const correct = (ex.answer || '').trim().toUpperCase();
-      return (ua.value || '').trim().toUpperCase() === correct;
+      const correct = toStr(ex.answer).trim().toUpperCase();
+      return toStr(ua.value).trim().toUpperCase() === correct;
     } else if (ex.type === 'fill_blank') {
       // 模糊匹配: 包含/被包含 (去空白/标点)
-      const norm = s => (s || '').replace(/[\s，。、,.!?！？;；:：]/g, '').toLowerCase();
-      const correct = norm(ex.answer);
+      // answer 可能是 list (多个可接受答案), 任一命中就算对
+      const candidates = Array.isArray(ex.answer) ? ex.answer : [ex.answer];
       const user = norm(ua.value);
       if (!user) return false;
-      return user === correct || user.includes(correct) || correct.includes(user);
+      return candidates.some(c => {
+        const cN = norm(c);
+        return user === cN || user.includes(cN) || cN.includes(user);
+      });
     } else {
       // short_answer: 只计"答了没" (写 > 5 字算答了)
-      return (ua.value || '').trim().length > 5;
+      return toStr(ua.value).trim().length > 5;
     }
   });
 }
