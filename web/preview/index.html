@@ -68,7 +68,8 @@
   .hero .sub strong { color: var(--text); font-weight: 600; }
 
   /* === 双 CTA (Brilliant 模板: 绿主 + 白次) === */
-  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .cta-hint { font-size: 13px; color: var(--text-3); margin-bottom: 24px; line-height: 1.5; }
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 28px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; border: 1.5px solid transparent; transition: all 0.15s; font-family: inherit; }
   .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 14px rgba(0,135,90,0.25); }
   .btn-primary:hover { background: var(--primary-hover); color: #fff; transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,135,90,0.35); }
@@ -92,14 +93,16 @@
   .subjects h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em; }
   .subjects .sub { font-size: 15px; color: var(--text-2); margin-bottom: 32px; }
   .subjects .sub strong { color: var(--text); font-weight: 600; }
-  .subjects-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
-  @media (max-width: 1000px) { .subjects-grid { grid-template-columns: repeat(4, 1fr); } }
+  .subjects-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; }
+  @media (max-width: 1100px) { .subjects-grid { grid-template-columns: repeat(4, 1fr); } }
   @media (max-width: 600px) { .subjects-grid { grid-template-columns: repeat(2, 1fr); } }
-  .subject-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 18px 16px; text-decoration: none; color: var(--text); transition: all 0.15s; display: flex; flex-direction: column; gap: 4px; }
-  .subject-card:hover { background: var(--bg-elevated); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(10,13,24,0.08); }
-  .subject-card .sw { width: 24px; height: 24px; border-radius: 6px; margin-bottom: 6px; }
-  .subject-card .nm { font-size: 14px; font-weight: 700; }
-  .subject-card .ct { font-size: 11px; color: var(--text-3); font-family: "SF Mono", monospace; }
+  .subject-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 14px; padding: 16px 14px 14px; text-decoration: none; color: var(--text); transition: transform 0.18s cubic-bezier(0.2,0.8,0.2,1), box-shadow 0.18s, border-color 0.18s; display: flex; flex-direction: column; gap: 6px; cursor: pointer; position: relative; overflow: hidden; }
+  .subject-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--sw-color, var(--text)); opacity: 0; transition: opacity 0.2s; }
+  .subject-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(10,13,24,0.1); border-color: var(--sw-color, var(--text)); }
+  .subject-card:hover::before { opacity: 1; }
+  .subject-card .sw { width: 44px; height: 44px; border-radius: 12px; margin-bottom: 6px; display: grid; place-items: center; font-size: 22px; line-height: 1; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+  .subject-card .nm { font-size: 14px; font-weight: 700; color: var(--text); }
+  .subject-card .ct { font-size: 11px; color: var(--text-3); }
 
   /* === 4 大功能 (测 / 查 / 学 / 打印) === */
   .features { padding: 80px 24px; }
@@ -174,7 +177,7 @@
       <a href="#stories">谁在用</a>
       <a href="https://github.com/zachsaws/open-curriculum-cn">GitHub</a>
     </div>
-    <a class="nav-cta" href="../diagnose.html">测一下 →</a>
+    <a class="nav-cta" href="../test.html">测一下 →</a>
   </div>
 </nav>
 
@@ -186,9 +189,10 @@
       <p class="sub">按 <strong>教育部 2022 义教课标</strong> 整理, <strong>全 14 学科 1906 概念</strong>。每个概念的「学之前要会什么 / 学之后能学什么」一目了然。</p>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="../diagnose.html?concept_id=M_G4_GM_08">5 分钟测出孩子薄弱在哪儿</a>
-        <a class="btn btn-secondary" href="../explore.html">我是老师, 看全 14 学科概念图</a>
+        <a class="btn btn-primary" href="../test.html">5 分钟测出孩子薄弱在哪儿 →</a>
+        <a class="btn btn-secondary" href="../explore.html">备一节课: 看这章的所有考点 →</a>
       </div>
+      <p class="cta-hint">家长/学生先选学段+学科, 5 道题找出薄弱概念; 老师直接进 14 学科概念图。</p>
 
       <div class="hero-trust">
         <span class="hl">免费</span>
@@ -215,75 +219,75 @@
     <h2>14 个学科, 1 张图</h2>
     <p class="sub">从小学一年级到初中三年级, 课标里的 <strong>1906 个概念</strong> 按学科全部画在一张图谱上。<br>点任意学科进图, 看这个学科里所有概念的依赖关系。</p>
     <div class="subjects-grid">
-      <a class="subject-card" href="../explore.html?subject=math">
-        <div class="sw" style="background: var(--math)"></div>
+      <a class="subject-card" href="../explore.html?subject=math" style="--sw-color: var(--math)">
+        <div class="sw" style="background: var(--math)">🔢</div>
         <div class="nm">数学</div>
-        <div class="ct">337 concepts</div>
+        <div class="ct">337 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=chinese">
-        <div class="sw" style="background: var(--chinese)"></div>
+      <a class="subject-card" href="../explore.html?subject=chinese" style="--sw-color: var(--chinese)">
+        <div class="sw" style="background: var(--chinese)">📖</div>
         <div class="nm">语文</div>
-        <div class="ct">209 concepts</div>
+        <div class="ct">209 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=english">
-        <div class="sw" style="background: var(--english)"></div>
+      <a class="subject-card" href="../explore.html?subject=english" style="--sw-color: var(--english)">
+        <div class="sw" style="background: var(--english)">🔤</div>
         <div class="nm">英语</div>
-        <div class="ct">296 concepts</div>
+        <div class="ct">296 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=physics">
-        <div class="sw" style="background: var(--physics)"></div>
+      <a class="subject-card" href="../explore.html?subject=physics" style="--sw-color: var(--physics)">
+        <div class="sw" style="background: var(--physics)">⚛️</div>
         <div class="nm">物理</div>
-        <div class="ct">121 concepts</div>
+        <div class="ct">121 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=chemistry">
-        <div class="sw" style="background: var(--chemistry)"></div>
+      <a class="subject-card" href="../explore.html?subject=chemistry" style="--sw-color: var(--chemistry)">
+        <div class="sw" style="background: var(--chemistry)">🧪</div>
         <div class="nm">化学</div>
-        <div class="ct">62 concepts</div>
+        <div class="ct">62 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=biology">
-        <div class="sw" style="background: var(--biology)"></div>
+      <a class="subject-card" href="../explore.html?subject=biology" style="--sw-color: var(--biology)">
+        <div class="sw" style="background: var(--biology)">🧬</div>
         <div class="nm">生物</div>
-        <div class="ct">71 concepts</div>
+        <div class="ct">71 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=history">
-        <div class="sw" style="background: var(--history)"></div>
+      <a class="subject-card" href="../explore.html?subject=history" style="--sw-color: var(--history)">
+        <div class="sw" style="background: var(--history)">🏛️</div>
         <div class="nm">历史</div>
-        <div class="ct">136 concepts</div>
+        <div class="ct">136 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=geography">
-        <div class="sw" style="background: var(--geography)"></div>
+      <a class="subject-card" href="../explore.html?subject=geography" style="--sw-color: var(--geography)">
+        <div class="sw" style="background: var(--geography)">🌍</div>
         <div class="nm">地理</div>
-        <div class="ct">91 concepts</div>
+        <div class="ct">91 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=morality_law">
-        <div class="sw" style="background: var(--morality_law)"></div>
+      <a class="subject-card" href="../explore.html?subject=morality_law" style="--sw-color: var(--morality_law)">
+        <div class="sw" style="background: var(--morality_law)">⚖️</div>
         <div class="nm">道德与法治</div>
-        <div class="ct">115 concepts</div>
+        <div class="ct">115 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=science">
-        <div class="sw" style="background: var(--science)"></div>
+      <a class="subject-card" href="../explore.html?subject=science" style="--sw-color: var(--science)">
+        <div class="sw" style="background: var(--science)">🔬</div>
         <div class="nm">科学</div>
-        <div class="ct">121 concepts</div>
+        <div class="ct">121 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=info_tech">
-        <div class="sw" style="background: var(--info_tech)"></div>
+      <a class="subject-card" href="../explore.html?subject=info_tech" style="--sw-color: var(--info_tech)">
+        <div class="sw" style="background: var(--info_tech)">💻</div>
         <div class="nm">信息科技</div>
-        <div class="ct">97 concepts</div>
+        <div class="ct">97 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=art">
-        <div class="sw" style="background: var(--art)"></div>
+      <a class="subject-card" href="../explore.html?subject=art" style="--sw-color: var(--art)">
+        <div class="sw" style="background: var(--art)">🎨</div>
         <div class="nm">艺术</div>
-        <div class="ct">78 concepts</div>
+        <div class="ct">78 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=pe_health">
-        <div class="sw" style="background: var(--pe_health)"></div>
+      <a class="subject-card" href="../explore.html?subject=pe_health" style="--sw-color: var(--pe_health)">
+        <div class="sw" style="background: var(--pe_health)">⚽</div>
         <div class="nm">体育与健康</div>
-        <div class="ct">87 concepts</div>
+        <div class="ct">87 概念</div>
       </a>
-      <a class="subject-card" href="../explore.html?subject=labor">
-        <div class="sw" style="background: var(--labor)"></div>
+      <a class="subject-card" href="../explore.html?subject=labor" style="--sw-color: var(--labor)">
+        <div class="sw" style="background: var(--labor)">🛠️</div>
         <div class="nm">劳动</div>
-        <div class="ct">85 concepts</div>
+        <div class="ct">85 概念</div>
       </a>
     </div>
   </div>
