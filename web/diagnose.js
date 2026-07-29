@@ -313,7 +313,7 @@ function renderMultiLanding() {
       <button class="btn" style="background: var(--primary, #00875a); color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;" onclick="pickConcept('${firstQuick.id}')">开始测试 ${SUBJECT_CN[firstQuick.reason] || firstQuick.reason} · "${esc(concept ? concept.title : firstQuick.id)}" →</button>
       <button class="btn" style="background: transparent; color: var(--text-2, #4a4a4a); border: 1px solid var(--border, #e8e0cc); padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-left: 8px;" onclick="renderStep1()">换学科/概念</button>
     </div>
-    <p style="color: var(--text-3, #8a8a8a); font-size: 12px; margin-top: 24px;">⏳ 真正的"按学科均匀出题 + 分组结果"将在 V4.0.5 上线 (需要重做 step2/step3 框架)。这次先做"选首个学科 quick pick 测一遍"的过渡版。</p>
+    <p style="color: var(--text-3, #8a8a8a); font-size: 12px; margin-top: 24px;">⏳ 这次先帮你测第一个学科。测完后可点"换学科/概念"再测下一个,把各学科的薄弱都收齐。</p>
   `;
 }
 

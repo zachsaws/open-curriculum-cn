@@ -163,7 +163,7 @@ function makeReferenceLines() {
     eqPts.push(new THREE.Vector3(Math.cos(a) * r, 0, Math.sin(a) * r));
   }
   const eqGeo = new THREE.BufferGeometry().setFromPoints(eqPts);
-  const eqMat = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.06 });
+  const eqMat = new THREE.LineBasicMaterial({ color: 0x0a0d18, transparent: true, opacity: 0.06 });
   group.add(new THREE.Line(eqGeo, eqMat));
 
   // 一条经线 (x=0 平面)
@@ -173,7 +173,7 @@ function makeReferenceLines() {
     mePts.push(new THREE.Vector3(0, Math.cos(a) * r, Math.sin(a) * r));
   }
   const meGeo = new THREE.BufferGeometry().setFromPoints(mePts);
-  const meMat = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.05 });
+  const meMat = new THREE.LineBasicMaterial({ color: 0x0a0d18, transparent: true, opacity: 0.05 });
   group.add(new THREE.Line(meGeo, meMat));
   return group;
 }

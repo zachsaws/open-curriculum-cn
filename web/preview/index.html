@@ -82,10 +82,21 @@
   .hero-trust .hl { color: var(--text); font-weight: 600; }
 
   /* === Hero Video (右) === */
-  .hero-video { position: relative; aspect-ratio: 4/3; border-radius: 16px; overflow: hidden; background: var(--bg-elevated); box-shadow: 0 20px 60px rgba(10,13,24,0.15), 0 8px 20px rgba(10,13,24,0.08); border: 1px solid var(--border); }
-  .hero-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .hero-video .play-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; background: rgba(255,255,255,0.95); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,0.15); cursor: pointer; }
-  .hero-video .play-overlay svg { width: 28px; height: 28px; fill: var(--text); margin-left: 4px; }
+  .hero-video { position: relative; aspect-ratio: 4/3; border-radius: 16px; overflow: hidden; background: var(--bg-elevated); box-shadow: 0 20px 60px rgba(10,13,24,0.15), 0 8px 20px rgba(10,13,24,0.08); border: 1px solid var(--border); padding: 8px 8px 12px; }
+  .video-frame-deco { display: flex; flex-direction: column; gap: 6px; height: 100%; }
+  .deco-bar { display: flex; align-items: center; gap: 5px; padding: 2px 4px 6px; border-bottom: 1px solid var(--border); }
+  .deco-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(10,13,24,0.12); }
+  .deco-dot:nth-child(1) { background: #e07070; }
+  .deco-dot:nth-child(2) { background: #f0c560; }
+  .deco-dot:nth-child(3) { background: #86d49a; }
+  .deco-url { margin-left: 8px; font-size: 11px; color: var(--text-3); font-family: "SF Mono", monospace; }
+  .deco-screen { position: relative; flex: 1; border-radius: 8px; overflow: hidden; background: #faf6ee; min-height: 0; }
+  .deco-screen video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .deco-screen .play-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; background: rgba(255,255,255,0.95); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,0.15); cursor: pointer; }
+  .deco-screen .play-overlay svg { width: 28px; height: 28px; fill: var(--text); margin-left: 4px; }
+  .deco-foot { display: flex; align-items: center; gap: 8px; padding: 4px 4px 0; }
+  .deco-tag { font-size: 11px; font-weight: 600; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; }
+  .deco-tip { font-size: 12px; color: var(--text-2); }
 
   /* === 14 学科网格 (色块入口) === */
   .subjects { background: var(--bg-elevated); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 64px 24px; }
@@ -190,7 +201,7 @@
 
       <div class="cta-row">
         <a class="btn btn-primary" href="../test.html">5 分钟测出孩子薄弱在哪儿 →</a>
-        <a class="btn btn-secondary" href="../explore.html">备一节课: 看这章的所有考点 →</a>
+        <a class="btn btn-secondary" href="../funnel.html">备一节课: 看整本教材怎么搭 →</a>
       </div>
       <p class="cta-hint">家长/学生先选学段+学科, 5 道题找出薄弱概念; 老师直接进 14 学科概念图。</p>
 
@@ -206,9 +217,23 @@
     </div>
 
     <div class="hero-video" id="hero-video">
-      <video src="../data/diagnose_demo.mp4" controls preload="metadata" poster="../data/diagnose_demo.gif"></video>
-      <div class="play-overlay" onclick="document.querySelector('#hero-video video').play()">
-        <svg viewBox="0 0 24 24"><path d="M3 0.233887L15.9437 8.00008L3 15.7663V0.233887Z"/></svg>
+      <div class="video-frame-deco">
+        <div class="deco-bar">
+          <span class="deco-dot"></span>
+          <span class="deco-dot"></span>
+          <span class="deco-dot"></span>
+          <span class="deco-url">diagnose.html · V4.1 浅色演示</span>
+        </div>
+        <div class="deco-screen">
+          <video src="../data/diagnose_demo.mp4" controls preload="metadata" poster="../data/diagnose_demo.gif"></video>
+          <div class="play-overlay" onclick="document.querySelector('#hero-video video').play()">
+            <svg viewBox="0 0 24 24"><path d="M3 0.233887L15.9437 8.00008L3 15.7663V0.233887Z"/></svg>
+          </div>
+        </div>
+        <div class="deco-foot">
+          <span class="deco-tag">📹 5 秒演示</span>
+          <span class="deco-tip">3 步 5 道题找出薄弱</span>
+        </div>
       </div>
     </div>
   </div>

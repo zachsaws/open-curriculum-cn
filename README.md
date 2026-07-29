@@ -254,6 +254,8 @@ open-curriculum-cn/
 - [x] **V4.0.2**: 智能诊断 PoC — 5 道题快速测试 / 手输答对率 / BFS 找先决链 / 自适应阈值 (80/70/60/50%) / 复习路径排序 / 人话解释 + 2 个 V4 API 端点 (POST /v4/diagnose + GET /v4/diagnose/quick-check) + diagnose.html 3 步 UI + 概念卡"🩺 智能诊断"按钮
 - [x] **V4.0.3**: 诊断历史 + 错题本 + 全 14 学科 — localStorage 持久化 (history/wrongbook 2 store) + 错题本页 (重做/移除) + 19 个全学科 quick pick + 诊断结果页加历史区 + 修 2 bug (JSON.parse/list 适配)
 - [x] **V4.0.4**: 完整 canvas 进度趋势图 (替换 V4.0.3 占位) + 个性化推荐 (B 站 18 条手挑真实视频 + 人教版教材 + Khan Academy) — 19 quick pick 概念静态推荐表 + 长尾 1887 概念走 B 站搜索 fallback + trend.js / rec.js 独立文件避 V4.0.3 syntax 坑
+- [x] **V4.1**: 全站 V4.1 浅色风 (Brilliant 风: 米黄 #faf6ee + 深色 #0a0d18 + V4.1 primary 绿 #00875a) — 主页 14 学科加 emoji icon + 双 CTA (5 分钟测出 + 备一节课) + 新加 test.html (3 步选学段+学科+题数) + 5 核心页 (explore/funnel/diagnose/exercise/wrongbook) 浅色 + 3D 球/漏斗 canvas 内部米黄底 + diagnose 多学科模式 (test.html 跳转目标) + 视频 frame 装饰 + funnel 详情面板文字对比度修复 + 14 学科卡 hover 上移 + V4.1 主页存 /preview/, 根 /index.html 留 V3.6 对比
+- [ ] **V4.0.5** (候选): 多学科"按学科均匀出题 + 分组结果" + PDF 报告导出 + IRT 自适应难度 + 7 天复习计划 + 错题本重做模式 + 200 高频概念手挑真实 B 站视频
 - [ ] **V4.0 短期 (3 个月)**:
   - 知乎/公众号文章（让老师/教研员/家长知道这玩意）
   - 演示视频/GIF（让 5 秒看懂）
