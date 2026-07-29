@@ -813,6 +813,9 @@ function showCard(node) {
   if (printBtn) printBtn.href = './print.html?id=' + encodeURIComponent(node.id);
   const exBtn = document.getElementById('card-exercise-btn');
   if (exBtn) exBtn.href = './exercise.html?id=' + encodeURIComponent(node.id);
+  // V4.0.2 智能诊断按钮
+  const diagBtn = document.getElementById('card-diagnose-btn');
+  if (diagBtn) diagBtn.href = './diagnose.html?concept_id=' + encodeURIComponent(node.id);
 
   // V3.6.9 分享学习卡按钮
   const shareBtn = document.getElementById('card-share-btn');

@@ -115,7 +115,51 @@
 | `e[0], e[1], e[2]` | `relation.from, relation.to, relation.type` | 边 |
 | `groups[]` | `domains[]` | 学科分类 |
 
+### Diagnose (V4.0.2 智能诊断 PoC)
+
+**算法** (客户端 JS + Python API 双实现, 保持一致):
+
+| 输入 | 字段 | 说明 |
+|---|---|---|
+| 概念 | `concept_id` | 必填, 1906 个概念任选 |
+| 5 道题答题 | `answers: [bool]*5` | 主入口, True=对/False=错 |
+| 自评答对率 | `score: 0-1` | 副入口, 跟 answers 二选一 |
+
+**输出**:
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `concept_id` | string | 诊断目标 |
+| `concept_title` | string | 概念名 |
+| `subject_cn` | string | 学科中文 |
+| `difficulty` | int 1-5 | 概念难度 |
+| `grade_range` | string | 例 "7-9年级" |
+| `score` | float 0-1 | 答对率 |
+| `score_pct` | int 0-100 | 答对率 (%) |
+| `status` | string | "薄弱" / "巩固" / "已掌握" |
+| `weak_threshold` | int | 该难度薄弱线 |
+| `consolidate_threshold` | int | 该难度巩固线 |
+| `weak_concepts` | array | BFS 先决链 [{id, title, distance, difficulty, subject}, ...] |
+| `weak_concepts_count` | int | 先决链总数 |
+| `recommend_path` | array | 复习路径 (前 8 个, 按距离+难度排序) |
+| `human_explanation` | object | {summary, why, actions[], status_emoji} |
+
+**自适应阈值** (V4.0.2 拍板):
+
+| 难度 | 薄弱线 | 巩固线 | 设计意图 |
+|---|---|---|---|
+| 1-2 (基础) | 80% | 95% | 简单题答错 1 道就是薄弱 |
+| 3 (核心考点) | 70% | 90% | 大部分要会 |
+| 4 (拔高) | 60% | 80% | 答对 3/5 已经 OK |
+| 5 (压轴) | 50% | 70% | 答对一半算掌握 |
+
+**判分规则**:
+- 选择题: 用户选 letter = 正确答案 letter → 对
+- 填空题: 模糊匹配 (去标点, 包含/被包含)
+- 简答题: 只计"答了没" (字 > 5 算答了)
+
 ## 版本
 
 - v1.0 (2026-07-22): 初始 schema
 - v1.1 (2026-07-28): V4.0.1 题目库 schema (multiple_choice/fill_blank/short_answer + bloom + is_real_exam)
+- v1.2 (2026-07-29): V4.0.2 智能诊断 schema (Diagnose + 自适应阈值)

@@ -14,7 +14,7 @@ import re
 from collections import defaultdict, deque
 from functools import lru_cache
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -157,30 +157,6 @@ def _iterative_depth(all_prereqs):
             if in_deg[nxt] == 0:
                 queue.append(nxt)
     return depth
-
-
-@app.get("/")
-def root():
-    return {
-        "name": "Open Curriculum CN API",
-        "version": DATA_VERSION,
-        "data_version": DATA_VERSION,
-        "data_file": DATA_FILE.name,
-        "subjects": len(set(n["subject"] for n in DATA["nodes"])),
-        "concepts": len(DATA["nodes"]),
-        "edges": len(DATA["edges"]),
-        "endpoints": [
-            "/api/stats",
-            "/api/subjects",
-            "/api/concepts",
-            "/api/concepts/{id}",
-            "/api/prerequisites/{id}",
-            "/api/path",
-            "/api/search",
-            "/api/health",
-            "/rss.xml",
-        ],
-    }
 
 
 @app.get("/api/stats")
@@ -661,6 +637,76 @@ async def v4_concept_detail(
     return result
 
 
+# =============================================================================
+# V4.0.2 端点: 智能诊断 (smart diagnose)
+# =============================================================================
+from pydantic import BaseModel, Field
+from api.diagnose import diagnose as diagnose_logic
+
+
+class DiagnoseRequest(BaseModel):
+    """V4.0.2 智能诊断请求"""
+    concept_id: str = Field(..., description="要诊断的概念 ID")
+    answers: Optional[List[bool]] = Field(None, description="5 道题答题结果 (True=对/False=错), 与 score 二选一")
+    score: Optional[float] = Field(None, ge=0.0, le=1.0, description="自评答对率 0-1, 与 answers 二选一")
+
+
+@app.post("/v4/diagnose", summary="V4 智能诊断 (5 题测试 + 自适应阈值 + 复习路径)")
+async def v4_diagnose(
+    req: DiagnoseRequest,
+    _: dict = Depends(verify_api_key),
+):
+    """
+    V4.0.2 智能诊断 PoC
+
+    输入 1 (主): answers = [True, False, True, True, False] (5 道题)
+    输入 2 (副): score = 0.6 (手输答对率 60%)
+
+    算法: BFS 找先决链 + 自适应阈值按难度 + 距离+难度排序复习路径
+    输出: status (薄弱/巩固/已掌握) + 复习顺序 + 人话解释
+    """
+    if req.answers is None and req.score is None:
+        raise HTTPException(400, "必须传 answers 或 score 之一")
+    if req.answers is not None and req.score is not None:
+        raise HTTPException(400, "answers 和 score 只能传一个")
+
+    result = diagnose_logic(
+        concept_id=req.concept_id,
+        nodes=DATA["nodes"],
+        adj_to=_ADJ_TO,
+        answers=req.answers,
+        score=req.score,
+    )
+    if "error" in result:
+        raise HTTPException(400, result["error"])
+    result["api_version"] = "v4.0.2"
+    return result
+
+
+@app.get("/v4/diagnose/quick-check", summary="V4 智能诊断手输副入口")
+async def v4_diagnose_quick_check(
+    concept_id: str = Query(..., description="要诊断的概念 ID"),
+    score: float = Query(..., ge=0.0, le=1.0, description="自评答对率 0-1"),
+    _: dict = Depends(verify_api_key),
+):
+    """
+    V4.0.2 智能诊断 - 手输答对率副入口 (PoC 也做, 30min 工作量)
+
+    适合: 已经会但懒得做 5 道题的人, 或想快速测一下的同学
+    """
+    result = diagnose_logic(
+        concept_id=concept_id,
+        nodes=DATA["nodes"],
+        adj_to=_ADJ_TO,
+        score=score,
+    )
+    if "error" in result:
+        raise HTTPException(400, result["error"])
+    result["api_version"] = "v4.0.2"
+    result["entry"] = "quick-check"
+    return result
+
+
 # 在 root 加 v4 端点
 @app.get("/")
 def root():
@@ -689,6 +735,9 @@ def root():
             "/v4/exercises/by-concept/{concept_id}",
             "/v4/exercises/random?n=5",
             "/v4/concepts/{concept_id}",
+            # V4.0.2 新增
+            "POST /v4/diagnose (5 题测试 + 自适应阈值 + 复习路径)",
+            "GET /v4/diagnose/quick-check?concept_id=&score= (手输答对率副入口)",
         ],
         "auth": "X-API-Key header, 注册获取 (看 README)",
         "demo_keys": list(API_KEYS.keys()),

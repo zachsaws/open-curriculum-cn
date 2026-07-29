@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>智能诊断 · K12 知识图谱</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { color: #e6e9f2; background: #0d1120; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; }
+  body { min-height: 100vh; }
+  a { color: #6b8cff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* 顶部 */
+  .top {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(13, 17, 32, 0.95); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 12px 24px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .top a.back {
+    color: #a5b8f5; font-size: 13px; padding: 6px 12px;
+    background: rgba(107,140,255,0.10); border: 1px solid rgba(107,140,255,0.3);
+    border-radius: 6px;
+  }
+  .top a.back:hover { background: rgba(107,140,255,0.20); color: #fff; text-decoration: none; }
+  .top .title { flex: 1; min-width: 0; }
+  .top .title h1 { font-size: 16px; font-weight: 700; }
+  .top .title .sub { font-size: 11px; color: #8a92a8; margin-top: 2px; font-family: "SF Mono", monospace; }
+  .top .mode-toggle {
+    padding: 8px 14px; font-size: 12px; font-weight: 600;
+    background: rgba(123,201,111,0.15); border: 1px solid rgba(123,201,111,0.4);
+    color: #a5e08c; border-radius: 6px; cursor: pointer; font-family: inherit;
+  }
+  .top .mode-toggle.on { background: rgba(107,140,255,0.15); border-color: rgba(107,140,255,0.4); color: #a5b8f5; }
+  .top .mode-toggle:hover { opacity: 0.85; }
+
+  /* 进度 */
+  .progress {
+    display: flex; gap: 4px; padding: 12px 24px;
+    background: rgba(13, 17, 32, 0.6); border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .progress .step {
+    flex: 1; height: 4px; background: rgba(255,255,255,0.08);
+    border-radius: 2px; transition: background 0.3s;
+  }
+  .progress .step.active { background: #6b8cff; }
+  .progress .step.done { background: #a5e08c; }
+
+  /* 主内容 */
+  .container { max-width: 880px; margin: 0 auto; padding: 24px; }
+  .err { padding: 40px; text-align: center; color: #f5a5a0; }
+  .loading { padding: 60px; text-align: center; color: #8a92a8; }
+
+  /* === Step 1: 选概念 === */
+  .step1 h2 { font-size: 20px; margin-bottom: 8px; }
+  .step1 .lead { color: #a5b8f5; font-size: 13px; margin-bottom: 24px; }
+  .quick-pick { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+  .quick-pick-label { font-size: 12px; color: #8a92a8; margin-bottom: 6px; width: 100%; font-family: "SF Mono", monospace; }
+  .qp-btn {
+    padding: 12px 18px; font-size: 14px; font-weight: 600;
+    background: rgba(91,141,239,0.10); border: 1px solid rgba(91,141,239,0.3);
+    color: #a5b8f5; border-radius: 8px; cursor: pointer; font-family: inherit;
+    transition: all 0.15s;
+  }
+  .qp-btn:hover { background: rgba(91,141,239,0.20); border-color: rgba(91,141,239,0.5); color: #fff; transform: translateY(-1px); }
+  .qp-btn .badge {
+    display: inline-block; margin-left: 8px; padding: 1px 6px; font-size: 10px;
+    background: rgba(255,255,255,0.08); color: #8a92a8; border-radius: 3px;
+    font-family: "SF Mono", monospace;
+  }
+  .search-box { margin-bottom: 24px; }
+  .search-box input {
+    width: 100%; padding: 12px 16px; font-size: 14px;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px; color: #e6e9f2; font-family: inherit; outline: none;
+  }
+  .search-box input:focus { border-color: #6b8cff; }
+  .search-box input::placeholder { color: #5a6278; }
+  .search-results { max-height: 300px; overflow-y: auto; }
+  .search-row {
+    padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer; transition: background 0.1s; display: flex; align-items: center; gap: 10px;
+  }
+  .search-row:hover { background: rgba(107,140,255,0.10); }
+  .search-row .title { flex: 1; font-size: 14px; }
+  .search-row .meta { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; }
+
+  /* === Step 2: 5 道题 / 手输答对率 === */
+  .step2 h2 { font-size: 18px; margin-bottom: 4px; }
+  .step2 .lead { color: #a5b8f5; font-size: 12px; margin-bottom: 20px; }
+  .concept-banner {
+    background: rgba(91,141,239,0.10); border: 1px solid rgba(91,141,239,0.3);
+    border-radius: 8px; padding: 12px 18px; margin-bottom: 20px;
+  }
+  .concept-banner .name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .concept-banner .meta { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; }
+
+  /* 5 道题 */
+  .q-card {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px; padding: 20px 22px; margin-bottom: 14px;
+    transition: border-color 0.2s;
+  }
+  .q-card.correct { border-color: rgba(123,201,111,0.5); }
+  .q-card.wrong { border-color: rgba(239,107,91,0.5); }
+  .q-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .q-num { font-size: 12px; font-family: "SF Mono", monospace; color: #6b8cff; font-weight: 700; }
+  .q-type {
+    display: inline-block; padding: 2px 8px; border-radius: 3px;
+    font-size: 10px; font-family: "SF Mono", monospace;
+  }
+  .q-type.choice { background: rgba(107,140,255,0.15); color: #a5b8f5; }
+  .q-type.fill { background: rgba(151,201,111,0.15); color: #c5e08c; }
+  .q-type.short { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .q-bloom { padding: 2px 8px; border-radius: 3px; background: rgba(255,255,255,0.05); color: #8a92a8; font-size: 10px; font-family: "SF Mono", monospace; }
+  .q-diff { padding: 2px 8px; border-radius: 3px; font-size: 10px; font-family: "SF Mono", monospace; }
+  .q-diff.d1 { background: rgba(123,201,111,0.15); color: #a5e08c; }
+  .q-diff.d2 { background: rgba(151,201,111,0.15); color: #c5e08c; }
+  .q-diff.d3 { background: rgba(201,180,111,0.15); color: #e0d28c; }
+  .q-diff.d4 { background: rgba(201,140,111,0.15); color: #e0a98c; }
+  .q-diff.d5 { background: rgba(201,111,111,0.15); color: #e08c8c; }
+  .q-real { padding: 2px 8px; border-radius: 3px; background: rgba(239,107,91,0.18); color: #f5a5a0; font-size: 10px; font-family: "SF Mono", monospace; font-weight: 700; }
+
+  .q-question { font-size: 15px; line-height: 1.7; color: #e6e9f2; margin-bottom: 14px; white-space: pre-wrap; }
+  .q-options { display: flex; flex-direction: column; gap: 8px; }
+  .q-opt {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 14px; background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06); border-radius: 6px;
+    cursor: pointer; transition: all 0.15s; font-size: 14px; line-height: 1.6;
+  }
+  .q-opt:hover { background: rgba(107,140,255,0.10); border-color: rgba(107,140,255,0.3); }
+  .q-opt.selected { background: rgba(107,140,255,0.15); border-color: #6b8cff; }
+  .q-opt .letter { font-family: "SF Mono", monospace; font-weight: 700; color: #6b8cff; min-width: 18px; }
+  .q-fill-input {
+    width: 100%; padding: 10px 14px; font-size: 14px;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px; color: #e6e9f2; font-family: inherit; outline: none;
+  }
+  .q-fill-input:focus { border-color: #6b8cff; }
+  .q-fill-input::placeholder { color: #5a6278; }
+  .q-ta {
+    width: 100%; min-height: 100px; padding: 12px 14px; font-size: 14px;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px; color: #e6e9f2; font-family: inherit; outline: none; resize: vertical;
+  }
+  .q-ta:focus { border-color: #6b8cff; }
+
+  /* 手输答对率 slider */
+  .quick-panel {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px; padding: 32px 28px; text-align: center;
+  }
+  .quick-panel .pct {
+    font-size: 64px; font-weight: 800; color: #fff; line-height: 1; margin: 16px 0;
+  }
+  .quick-panel .pct .sign { font-size: 24px; color: #6b8cff; }
+  .quick-panel input[type=range] {
+    width: 100%; max-width: 500px; height: 6px; margin: 16px 0;
+    -webkit-appearance: none; appearance: none; background: rgba(107,140,255,0.20);
+    border-radius: 3px; outline: none;
+  }
+  .quick-panel input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 24px; height: 24px;
+    background: #6b8cff; border-radius: 50%; cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(107,140,255,0.20);
+  }
+  .quick-panel input[type=range]::-moz-range-thumb {
+    width: 24px; height: 24px; background: #6b8cff; border: none; border-radius: 50%;
+    cursor: pointer; box-shadow: 0 0 0 4px rgba(107,140,255,0.20);
+  }
+  .quick-panel .scale {
+    display: flex; justify-content: space-between; max-width: 500px; margin: 0 auto;
+    font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace;
+  }
+
+  /* 提交按钮 */
+  .actions { margin-top: 24px; display: flex; gap: 12px; }
+  .btn {
+    flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600;
+    background: rgba(107,140,255,0.15); border: 1px solid rgba(107,140,255,0.3);
+    color: #a5b8f5; border-radius: 8px; cursor: pointer; font-family: inherit;
+    transition: all 0.15s;
+  }
+  .btn:hover { background: rgba(107,140,255,0.25); color: #fff; transform: translateY(-1px); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+  .btn.secondary { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); color: #a5b8f5; }
+
+  /* === Step 3: 结果页 === */
+  .step3 .result-banner {
+    padding: 32px; border-radius: 12px; text-align: center; margin-bottom: 24px;
+  }
+  .result-banner.weak { background: linear-gradient(135deg, rgba(239,107,91,0.20), rgba(239,107,91,0.08)); border: 1px solid rgba(239,107,91,0.3); }
+  .result-banner.consolidate { background: linear-gradient(135deg, rgba(201,180,111,0.20), rgba(201,180,111,0.08)); border: 1px solid rgba(201,180,111,0.3); }
+  .result-banner.mastered { background: linear-gradient(135deg, rgba(123,201,111,0.20), rgba(123,201,111,0.08)); border: 1px solid rgba(123,201,111,0.3); }
+  .result-banner .emoji { font-size: 56px; line-height: 1; margin-bottom: 12px; }
+  .result-banner .status-text { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .result-banner .score-big { font-size: 16px; color: #a5b8f5; font-family: "SF Mono", monospace; }
+  .result-banner .threshold-hint { font-size: 11px; color: #8a92a8; margin-top: 6px; font-family: "SF Mono", monospace; }
+
+  .explanation {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px; padding: 20px 24px; margin-bottom: 20px;
+  }
+  .explanation h3 { font-size: 14px; color: #a5b8f5; margin-bottom: 12px; font-family: "SF Mono", monospace; }
+  .explanation .summary-text { font-size: 16px; line-height: 1.8; color: #e6e9f2; margin-bottom: 12px; }
+  .explanation .why-text { font-size: 13px; line-height: 1.7; color: #c8d4ff; }
+
+  .actions-list { display: flex; flex-direction: column; gap: 10px; }
+  .action-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; background: rgba(107,140,255,0.08);
+    border: 1px solid rgba(107,140,255,0.2); border-radius: 8px;
+    font-size: 14px; line-height: 1.6;
+  }
+  .action-item .icon { font-size: 18px; min-width: 24px; text-align: center; }
+  .action-item.review { background: rgba(151,201,111,0.08); border-color: rgba(151,201,111,0.2); }
+  .action-item.exercise { background: rgba(201,180,111,0.08); border-color: rgba(201,180,111,0.2); }
+  .action-item.next { background: rgba(123,201,111,0.08); border-color: rgba(123,201,111,0.2); }
+  .action-item.challenge { background: rgba(239,107,91,0.08); border-color: rgba(239,107,91,0.2); }
+
+  .path-section { margin-top: 24px; }
+  .path-section h3 { font-size: 14px; color: #a5b8f5; margin-bottom: 12px; font-family: "SF Mono", monospace; }
+  .path-list { display: flex; flex-direction: column; gap: 8px; }
+  .path-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px; background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06); border-radius: 6px;
+    text-decoration: none; color: #e6e9f2; transition: all 0.15s;
+  }
+  .path-row:hover { background: rgba(107,140,255,0.10); border-color: rgba(107,140,255,0.3); text-decoration: none; }
+  .path-row .order {
+    min-width: 24px; height: 24px; padding: 0 6px; background: rgba(107,140,255,0.20);
+    color: #a5b8f5; border-radius: 4px; font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; font-family: "SF Mono", monospace;
+  }
+  .path-row .name { flex: 1; font-size: 14px; }
+  .path-row .meta { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; }
+  .path-row.distance-1 { border-left: 3px solid #6b8cff; }
+  .path-row.distance-2 { border-left: 3px solid #a5b8f5; }
+  .path-row.distance-3 { border-left: 3px solid #8a92a8; }
+
+  /* footer */
+  .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #5a6278; }
+  .footer a { color: #6b8cff; }
+</style>
+</head>
+<body>
+<div class="top">
+  <a class="back" href="./index.html">← 返回主页</a>
+  <div class="title">
+    <h1>🩺 智能诊断</h1>
+    <div class="sub">PoC · math 5 核心考点 · BFS 先决链 + 自适应阈值</div>
+  </div>
+  <button class="mode-toggle" id="mode-toggle" onclick="toggleMode()">📊 切到手输答对率</button>
+</div>
+
+<div class="progress">
+  <div class="step active" id="prog-1"></div>
+  <div class="step" id="prog-2"></div>
+  <div class="step" id="prog-3"></div>
+</div>
+
+<div class="container" id="content">
+  <div class="loading">加载数据中…</div>
+</div>
+
+<div class="footer">
+  数据来源: <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">open-curriculum-cn</a> ·
+  算法: BFS 找先决链 + 自适应阈值按难度 (80/70/60/50%) · CC-BY-SA 4.0
+</div>
+
+<script src="./diagnose.js"></script>
+</body>
+</html>
