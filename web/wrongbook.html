@@ -6,37 +6,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { color: #e6e9f2; background: #0d1120; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; }
+  html, body { color: #0a0d18; background: #faf6ee; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; }
   body { min-height: 100vh; }
-  a { color: #6b8cff; text-decoration: none; }
+  a { color: #00875a; text-decoration: none; }
   a:hover { text-decoration: underline; }
 
   .top {
     position: sticky; top: 0; z-index: 20;
-    background: rgba(13, 17, 32, 0.95); backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background: rgba(250,246,238, 0.95); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(10,13,24,0.05);
     padding: 12px 24px;
     display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   }
   .top a.back {
-    color: #a5b8f5; font-size: 13px; padding: 6px 12px;
-    background: rgba(107,140,255,0.10); border: 1px solid rgba(107,140,255,0.3);
+    color: #0a0d18; font-size: 13px; padding: 6px 12px;
+    background: rgba(0,135,90,0.10); border: 1px solid rgba(0,135,90,0.3);
     border-radius: 6px;
   }
   .top .title { flex: 1; min-width: 0; }
   .top .title h1 { font-size: 16px; font-weight: 700; }
-  .top .title .sub { font-size: 11px; color: #8a92a8; margin-top: 2px; font-family: "SF Mono", monospace; }
+  .top .title .sub { font-size: 11px; color: #8a8a8a; margin-top: 2px; font-family: "SF Mono", monospace; }
   .top .actions { display: flex; gap: 8px; }
   .top .btn {
     padding: 8px 14px; font-size: 12px; font-weight: 600;
-    background: rgba(107,140,255,0.15); border: 1px solid rgba(107,140,255,0.3);
-    color: #a5b8f5; border-radius: 6px; cursor: pointer; font-family: inherit;
+    background: rgba(0,135,90,0.15); border: 1px solid rgba(0,135,90,0.3);
+    color: #0a0d18; border-radius: 6px; cursor: pointer; font-family: inherit;
     text-decoration: none;
   }
-  .top .btn.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #f5a5a0; }
+  .top .btn.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #e07070; }
 
   .container { max-width: 880px; margin: 0 auto; padding: 24px; }
-  .loading, .empty { padding: 60px; text-align: center; color: #8a92a8; }
+  .loading, .empty { padding: 60px; text-align: center; color: #8a8a8a; }
 
   /* 统计 */
   .stats {
@@ -44,11 +44,11 @@
   }
   .stat-card {
     flex: 1; min-width: 120px; padding: 16px 20px;
-    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(10,13,24,0.03); border: 1px solid rgba(10,13,24,0.08);
     border-radius: 8px; text-align: center;
   }
   .stat-card .big { font-size: 28px; font-weight: 800; color: #fff; line-height: 1; }
-  .stat-card .label { font-size: 11px; color: #8a92a8; margin-top: 6px; font-family: "SF Mono", monospace; }
+  .stat-card .label { font-size: 11px; color: #8a8a8a; margin-top: 6px; font-family: "SF Mono", monospace; }
 
   /* 错题卡 */
   .wrong-row {
@@ -58,33 +58,33 @@
     margin-bottom: 12px;
   }
   .wrong-row .top-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .wrong-row .concept-link { color: #a5b8f5; text-decoration: none; font-size: 12px; }
+  .wrong-row .concept-link { color: #0a0d18; text-decoration: none; font-size: 12px; }
   .wrong-row .concept-link:hover { text-decoration: underline; }
   .wrong-row .q-type {
     display: inline-block; padding: 2px 8px; border-radius: 3px;
     font-size: 10px; font-family: "SF Mono", monospace;
   }
-  .wrong-row .q-type.choice { background: rgba(107,140,255,0.15); color: #a5b8f5; }
-  .wrong-row .q-type.fill { background: rgba(151,201,111,0.15); color: #c5e08c; }
-  .wrong-row .q-type.short { background: rgba(201,180,111,0.15); color: #e0d28c; }
-  .wrong-row .q-date { color: #5a6278; font-size: 10px; font-family: "SF Mono", monospace; margin-left: auto; }
-  .wrong-row .question { font-size: 14px; line-height: 1.6; color: #e6e9f2; white-space: pre-wrap; }
+  .wrong-row .q-type.choice { background: rgba(0,135,90,0.15); color: #0a0d18; }
+  .wrong-row .q-type.fill { background: rgba(151,201,111,0.15); color: #b8d96f; }
+  .wrong-row .q-type.short { background: rgba(201,180,111,0.15); color: #f0c560; }
+  .wrong-row .q-date { color: #a5a5a5; font-size: 10px; font-family: "SF Mono", monospace; margin-left: auto; }
+  .wrong-row .question { font-size: 14px; line-height: 1.6; color: #0a0d18; white-space: pre-wrap; }
   .wrong-row .answer-row { display: flex; gap: 16px; font-size: 12px; flex-wrap: wrap; }
-  .wrong-row .answer-label { color: #8a92a8; font-family: "SF Mono", monospace; min-width: 70px; }
-  .wrong-row .user-ans { color: #f5a5a0; }
-  .wrong-row .correct-ans { color: #a5e08c; }
+  .wrong-row .answer-label { color: #8a8a8a; font-family: "SF Mono", monospace; min-width: 70px; }
+  .wrong-row .user-ans { color: #e07070; }
+  .wrong-row .correct-ans { color: #86d49a; }
   .wrong-row .actions-row { display: flex; gap: 8px; margin-top: 4px; }
   .wrong-row .btn-mini {
-    padding: 4px 10px; font-size: 11px; background: rgba(107,140,255,0.10);
-    border: 1px solid rgba(107,140,255,0.3); color: #a5b8f5;
+    padding: 4px 10px; font-size: 11px; background: rgba(0,135,90,0.10);
+    border: 1px solid rgba(0,135,90,0.3); color: #0a0d18;
     border-radius: 4px; cursor: pointer; font-family: inherit;
     text-decoration: none;
   }
-  .wrong-row .btn-mini:hover { background: rgba(107,140,255,0.20); }
-  .wrong-row .btn-mini.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #f5a5a0; cursor: pointer; }
+  .wrong-row .btn-mini:hover { background: rgba(0,135,90,0.20); }
+  .wrong-row .btn-mini.danger { background: rgba(239,107,91,0.10); border-color: rgba(239,107,91,0.3); color: #e07070; cursor: pointer; }
 
-  .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #5a6278; }
-  .footer a { color: #6b8cff; }
+  .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #a5a5a5; }
+  .footer a { color: #00875a; }
 </style>
 </head>
 <body>
@@ -136,9 +136,9 @@ function render() {
     c.innerHTML = `
       <div class="empty">
         <p style="font-size: 32px; margin-bottom: 16px;">📭</p>
-        <p style="font-size: 16px; color: #c8d4ff; margin-bottom: 8px;">错题本是空的</p>
-        <p style="font-size: 13px; color: #8a92a8;">做完 5 道题诊断后, 答错的题会自动收集到这里</p>
-        <p style="margin-top: 20px;"><a class="btn" href="./diagnose.html" style="display:inline-block; padding: 10px 20px; font-size: 13px; background: rgba(107,140,255,0.15); border: 1px solid rgba(107,140,255,0.3); color: #a5b8f5; border-radius: 6px;">🩺 去测一次</a></p>
+        <p style="font-size: 16px; color: #4a4a4a; margin-bottom: 8px;">错题本是空的</p>
+        <p style="font-size: 13px; color: #8a8a8a;">做完 5 道题诊断后, 答错的题会自动收集到这里</p>
+        <p style="margin-top: 20px;"><a class="btn" href="./diagnose.html" style="display:inline-block; padding: 10px 20px; font-size: 13px; background: rgba(0,135,90,0.15); border: 1px solid rgba(0,135,90,0.3); color: #0a0d18; border-radius: 6px;">🩺 去测一次</a></p>
       </div>
     `;
     return;

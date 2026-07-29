@@ -38,7 +38,8 @@ let edgesData = [];             // [{fromIdx, toIdx, rel, reason}]
 let edgesFromTo = new Map();    // fromIdx -> [{toIdx, rel, reason, edgeIdx}, ...]
 let edgesToFrom = new Map();
 let neighborMap = new Map();    // idx -> Set
-let edgeBaseColor = new THREE.Color(0xb8c0d8);
+// V4.1 浅色风: 边线从浅灰蓝 → 深色 (在米黄背景上清晰)
+let edgeBaseColor = new THREE.Color(0x0a0d18);
 
 // ============== 谱系 (lineage) — BFS 反向追溯所有直接+间接先决 (V3.6.2) ==============
 let lineageNodes = new Set();    // idx set
@@ -117,7 +118,8 @@ async function loadData() {
 function setupScene() {
   const container = document.getElementById('three-canvas');
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x0a0d18);
+  // V4.1 浅色风: canvas 背景跟主页米黄统一
+  scene.background = new THREE.Color(0xfaf6ee);
 
   const w = window.innerWidth;
   const h = window.innerHeight;

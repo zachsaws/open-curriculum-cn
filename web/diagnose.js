@@ -64,6 +64,32 @@ let SELECTED_CONCEPT = null;
 let USER_ANSWERS = {};  // {exId: userValue}
 let QUICK_SCORE = 60;   // slider 默认 60
 
+// V4.1 多学科模式 (test.html 跳过来)
+let MULTI_MODE = null;  // { subjects: [], stage, grade, count }
+
+// 学科 ID 前缀 → 学科 key (从 concept_id 推)
+function subjFromConceptId(cid) {
+  if (!cid) return null;
+  const m = cid.match(/^([A-Z]+)_/);
+  if (!m) return null;
+  const prefix = m[1];
+  const map = {
+    'M': 'math', 'CN': 'chinese', 'EN': 'english',
+    'P': 'physics', 'CH': 'chemistry', 'B': 'biology',
+    'H': 'history', 'G': 'geography', 'ML': 'morality_law',
+    'SC': 'science', 'IT': 'info_tech', 'ART': 'art',
+    'PE': 'pe_health', 'L': 'labor'
+  };
+  return map[prefix] || null;
+}
+
+// 年级 (M_G4_GM_08 → 4)
+function gradeFromConceptId(cid) {
+  if (!cid) return null;
+  const m = cid.match(/^M?_?G(\d+)_/);
+  return m ? parseInt(m[1], 10) : null;
+}
+
 // --- 工具 ---
 function esc(s) {
   if (s == null) return '';
@@ -236,6 +262,20 @@ function setStep(n) {
 }
 
 function render() {
+  // V4.1 多学科模式 (test.html 跳过来)
+  const testMode = getQueryParam('test');
+  if (testMode === 'multi') {
+    const subjectsParam = getQueryParam('subjects') || '';
+    const subjects = subjectsParam.split(',').filter(Boolean);
+    const stage = getQueryParam('stage');
+    const grade = parseInt(getQueryParam('grade'), 10) || null;
+    const count = parseInt(getQueryParam('count'), 10) || 5;
+    if (subjects.length > 0) {
+      MULTI_MODE = { subjects, stage, grade, count };
+      renderMultiLanding();
+      return;
+    }
+  }
   // URL ?concept_id= 直接进 Step 2 (兼容从概念卡点进来)
   const directConcept = getQueryParam('concept_id');
   if (directConcept && getConceptById(directConcept)) {
@@ -245,6 +285,36 @@ function render() {
     return;
   }
   renderStep1();
+}
+
+// V4.1 多学科模式: 落地页 (选学科后, 自动选首个学科 quick pick 概念, 进入 5 道题)
+function renderMultiLanding() {
+  setStep(1);
+  const c = document.getElementById('content');
+  c.className = 'container step1';
+  const mm = MULTI_MODE;
+  // 找首个学科的 quick pick 概念
+  const stageQuicks = QUICK_PICKS.filter(q => mm.subjects.includes(q.reason));
+  if (stageQuicks.length === 0) {
+    c.innerHTML = `<h2>多学科模式</h2>
+      <p class="lead">所选学科 ${mm.subjects.join(' / ')} 暂未配置 quick pick 概念。</p>
+      <button class="btn" onclick="renderStep1()">→ 选单个概念</button>`;
+    return;
+  }
+  const firstQuick = stageQuicks[0];
+  const concept = getConceptById(firstQuick.id);
+  const subjList = mm.subjects.map(s => SUBJECT_CN[s] || s).join(' + ');
+  const stageNm = mm.stage === 'primary' ? '小学' : (mm.stage === 'junior' ? '初中' : '学段');
+  c.innerHTML = `
+    <div class="multi-chip" style="background: var(--primary-soft, #e6f5ee); border: 1px solid var(--primary, #00875a); color: var(--primary, #00875a); padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 16px;">📚 多学科模式 · ${esc(stageNm)} ${mm.grade || '?'} 年级 · ${esc(subjList)} · ${mm.count} 道题</div>
+    <h2>${mm.count} 道题找出薄弱在哪儿</h2>
+    <p class="lead">你先选了 ${mm.subjects.length} 个学科。先测 [${SUBJECT_CN[firstQuick.reason] || firstQuick.reason}] 的 "${esc(concept ? concept.title : firstQuick.id)}",5 道题测完后会帮你列各学科的薄弱清单。</p>
+    <div class="quick-pick" style="margin-top: 24px;">
+      <button class="btn" style="background: var(--primary, #00875a); color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;" onclick="pickConcept('${firstQuick.id}')">开始测试 ${SUBJECT_CN[firstQuick.reason] || firstQuick.reason} · "${esc(concept ? concept.title : firstQuick.id)}" →</button>
+      <button class="btn" style="background: transparent; color: var(--text-2, #4a4a4a); border: 1px solid var(--border, #e8e0cc); padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-left: 8px;" onclick="renderStep1()">换学科/概念</button>
+    </div>
+    <p style="color: var(--text-3, #8a8a8a); font-size: 12px; margin-top: 24px;">⏳ 真正的"按学科均匀出题 + 分组结果"将在 V4.0.5 上线 (需要重做 step2/step3 框架)。这次先做"选首个学科 quick pick 测一遍"的过渡版。</p>
+  `;
 }
 
 function renderStep1() {

@@ -404,6 +404,9 @@ function clearSel() {
 function draw() {
   ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
   ctx.clearRect(0, 0, VW, VH);
+  // V4.1 浅色风: 米黄背景 (跟主页统一)
+  ctx.fillStyle = '#faf6ee';
+  ctx.fillRect(0, 0, VW, VH);
   project();
 
   const hasSel = !!lineage;
@@ -429,7 +432,8 @@ function draw() {
     if (col) {
       ctx.strokeStyle = `rgba(${col},${alpha})`;
     } else {
-      ctx.strokeStyle = `rgba(150,165,205,${alpha * depth})`;
+      // V4.1 浅色风: 默认边从浅灰蓝 → 深色 (米黄背景上清晰)
+      ctx.strokeStyle = `rgba(10,13,24,${alpha * depth * 2.5})`;
     }
     ctx.lineWidth = lw;
     ctx.beginPath();
