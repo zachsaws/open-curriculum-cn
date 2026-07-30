@@ -86,6 +86,10 @@
   .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #a5a5a5; }
   .footer a { color: #00875a; }
 
+  /* V4.1.2 视频链接 */
+  .wrong-row .video-link { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; background: rgba(0,135,90,0.10); border: 1px solid rgba(0,135,90,0.3); border-radius: 4px; color: #00875a; font-size: 11px; text-decoration: none; font-weight: 600; }
+  .wrong-row .video-link:hover { background: rgba(0,135,90,0.18); }
+
   /* 错题本打印模式 (PDF 导出) — V4.0.5 phase 2.1 */
   @page { size: A4; margin: 12mm 10mm; }
   @media print {
@@ -246,13 +250,33 @@ function render() {
   `;
 }
 
+// V4.1.2 视频数据 (按 concept_id 索引)
+let VIDEOS_BY_CONCEPT = {};
+async function loadVideos() {
+  try {
+    const r = await fetch('./data/videos.json');
+    if (!r.ok) return;
+    const data = await r.json();
+    (data.videos || []).forEach(v => {
+      if (!VIDEOS_BY_CONCEPT[v.concept_id]) VIDEOS_BY_CONCEPT[v.concept_id] = [];
+      VIDEOS_BY_CONCEPT[v.concept_id].push(v);
+    });
+  } catch (e) { console.warn('[videos] load failed:', e); }
+}
+
 function renderWrong(w) {
   const typeLabel = TYPE_LABEL[w.type] || w.type;
   const typeClass = TYPE_CLASS[w.type] || 'short';
+  // V4.1.2 视频链接
+  const vids = VIDEOS_BY_CONCEPT[w.concept_id] || [];
+  const videoLink = vids.length > 0
+    ? `<a class="video-link" href="${esc(vids[0].url)}" target="_blank" title="${esc(vids[0].title)}">📺 讲解视频</a>`
+    : '';
   return `<div class="wrong-row" id="wb-${esc(w.exercise_id)}">
     <div class="top-row">
       <span class="q-type ${typeClass}">${esc(typeLabel)}</span>
       <a class="concept-link" href="./diagnose.html?concept_id=${esc(w.concept_id)}">${esc(w.concept_title || w.concept_id)}</a>
+      ${videoLink}
       <span class="q-date">${esc(new Date(w.date).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }))}</span>
     </div>
     <div class="question">${esc(w.question)}</div>
@@ -523,6 +547,11 @@ function renderRedoResult(results, correctIds, wrongIds) {
 }
 
 init();
+// V4.1.2 异步加载 videos, 完成后重渲染错题卡 (让视频链接出现)
+loadVideos().then(() => {
+  const wb = window.HistoryStore.getWrongbook();
+  if (wb.length > 0) render();
+});
 
 </script>
 </body>

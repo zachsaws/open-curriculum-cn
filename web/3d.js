@@ -61,6 +61,49 @@ let fpsLastTime = performance.now();
 // 标题翻译 (复制自 2D app.js 的概念渲染逻辑)
 const titleOrig = new Map(); // nodeId -> 原始 title (用于繁简切换)
 
+// V4.1.2 视频数据 (按 concept_id 索引)
+let VIDEOS_BY_CONCEPT = {};
+
+// V4.1.2 加载 videos.json
+async function loadVideos() {
+  try {
+    const r = await fetch('./data/videos.json');
+    if (!r.ok) return;
+    const data = await r.json();
+    (data.videos || []).forEach(v => {
+      if (!VIDEOS_BY_CONCEPT[v.concept_id]) VIDEOS_BY_CONCEPT[v.concept_id] = [];
+      VIDEOS_BY_CONCEPT[v.concept_id].push(v);
+    });
+  } catch (e) { console.warn('[videos] load failed:', e); }
+}
+
+// V4.1.2 渲染概念卡视频区
+function renderCardVideo(conceptId) {
+  const vids = VIDEOS_BY_CONCEPT[conceptId] || [];
+  const block = document.getElementById('card-video-block');
+  const btn = document.getElementById('card-video-btn');
+  if (vids.length === 0) {
+    if (block) block.style.display = 'none';
+    if (btn) btn.style.display = 'none';
+    return;
+  }
+  const v = vids[0];
+  if (block) block.style.display = '';
+  const link = document.getElementById('card-video-link');
+  if (link) link.href = v.url;
+  const title = document.getElementById('card-video-title');
+  if (title) title.textContent = v.title;
+  const pub = document.getElementById('card-video-pub');
+  const dur = v.duration_sec ? `${Math.round(v.duration_sec/60)} 分钟` : '';
+  if (pub) pub.textContent = [v.publisher, v.platform, dur].filter(Boolean).join(' · ');
+  const meta = document.getElementById('card-video-meta');
+  if (meta) meta.textContent = vids.length > 1 ? `共 ${vids.length} 个视频` : '';
+  if (btn) {
+    btn.style.display = '';
+    btn.href = v.url;
+  }
+}
+
 // ============== 启动 ==============
 async function init() {
   isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -68,6 +111,7 @@ async function init() {
 
   // 1) 加载数据
   await loadData();
+  await loadVideos();  // V4.1.2
   if (!DATA) return;
 
   // 2) 搭建场景
@@ -818,6 +862,9 @@ function showCard(node) {
   // V4.0.2 智能诊断按钮
   const diagBtn = document.getElementById('card-diagnose-btn');
   if (diagBtn) diagBtn.href = './diagnose.html?concept_id=' + encodeURIComponent(node.id);
+
+  // V4.1.2 视频区
+  renderCardVideo(node.id);
 
   // V3.6.9 分享学习卡按钮
   const shareBtn = document.getElementById('card-share-btn');

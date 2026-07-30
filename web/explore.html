@@ -435,8 +435,23 @@
   <div class="card-actions">
     <a class="card-action" id="card-exercise-btn" target="_blank" title="做几道题 - 选择/填空/简答, 5 道题互补">📝 做几道题</a>
     <a class="card-action" id="card-diagnose-btn" target="_blank" title="智能诊断 - 5 题快速测出薄弱程度 + 复习路径">🩺 智能诊断</a>
+    <a class="card-action" id="card-video-btn" target="_blank" title="B 站 / YouTube 优质讲解视频" style="display:none;">📺 讲解视频</a>
     <a class="card-action" id="card-print-btn" target="_blank" title="打开 A4 黑白打印版">🖨 打印版</a>
     <a class="card-action" id="card-share-btn" href="javascript:void(0)" title="生成可分享的 1080×1440 学习卡">📤 分享学习卡</a>
+  </div>
+
+  <div class="block" id="card-video-block" style="display:none;">
+    <div class="block-title">📺 讲解视频 <span style="font-weight:400; font-size:11px; color:#8a8a8a; margin-left:6px;" id="card-video-meta"></span></div>
+    <div class="block-body">
+      <a id="card-video-link" target="_blank" style="display:flex; gap: 12px; padding: 12px; background: rgba(0,135,90,0.06); border: 1px solid rgba(0,135,90,0.2); border-radius: 8px; text-decoration: none; color: #0a0d18; transition: all 0.12s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+        <div style="font-size: 28px; line-height: 1;">🎬</div>
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-size: 14px; font-weight: 600; margin-bottom: 2px;" id="card-video-title">视频标题</div>
+          <div style="font-size: 11px; color: #8a8a8a; font-family: 'SF Mono', monospace;" id="card-video-pub">发布者 · 时长</div>
+        </div>
+        <div style="font-size: 18px; color: #00875a;">→</div>
+      </a>
+    </div>
   </div>
 
   <div class="block teaching-voice" id="card-teaching-voice-block">

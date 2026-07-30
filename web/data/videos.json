@@ -1,0 +1,42 @@
+{
+  "version": "v4.1.2-poc",
+  "note": "示例数据: 3 个概念 1 个视频, 用于验证 V4.1.2 视频接入。批量入库见 docs/V412_VIDEO_PICKS_GUIDE.md",
+  "videos": [
+    {
+      "concept_id": "M_G4_GM_08",
+      "title": "勾股定理 — 三分钟动画版",
+      "url": "https://www.bilibili.com/video/BV1xx411c7m1",
+      "platform": "bilibili",
+      "duration_sec": 240,
+      "language": "zh-CN",
+      "publisher": "示例 UP 主",
+      "is_free": true,
+      "rating": 4.8,
+      "notes": "动画清晰, 适合 7-9 年级"
+    },
+    {
+      "concept_id": "M_G4_QR_05",
+      "title": "一元二次方程 — 5 分钟入门",
+      "url": "https://www.bilibili.com/video/BV1xxxxxx",
+      "platform": "bilibili",
+      "duration_sec": 320,
+      "language": "zh-CN",
+      "publisher": "示例老师",
+      "is_free": true,
+      "rating": 4.5,
+      "notes": "公式 + 例题, 适合初学者"
+    },
+    {
+      "concept_id": "CN_C1_AL_01",
+      "title": "认识常用字 — 偏旁与字义",
+      "url": "https://www.bilibili.com/video/BV1yyyyyy",
+      "platform": "bilibili",
+      "duration_sec": 180,
+      "language": "zh-CN",
+      "publisher": "国家中小学智慧教育平台",
+      "is_free": true,
+      "rating": 4.9,
+      "notes": "部首+字义, 适合 1-2 年级"
+    }
+  ]
+}

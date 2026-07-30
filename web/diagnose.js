@@ -1211,10 +1211,11 @@ function showResult(result) {
         <h3>// 复习路径 (${result.weak_concepts.length} 个先决, 按距离+难度排序, 取前 ${result.recommend_path.length})</h3>
         <div class="path-list">
           ${result.recommend_path.map((r, i) => `
-            <a class="path-row distance-${Math.min(3, r.distance)}" href="./concept.html?id=${esc(r.id)}" target="_blank">
+            <a class="path-row distance-${Math.min(3, r.distance)}" href="./print.html?id=${esc(r.id)}" target="_blank">
               <span class="order">${i + 1}</span>
               <span class="name">${esc(r.title)}</span>
               <span class="meta">${esc(SUBJECT_CN[r.subject] || '')} · 距离 ${r.distance} · 难 ${r.difficulty || '?'}</span>
+              <span class="path-video" data-concept-id="${esc(r.id)}" style="margin-left: auto; font-size: 11px; color: #00875a;"></span>
             </a>
           `).join('')}
         </div>
@@ -1257,6 +1258,8 @@ function showResult(result) {
         );
       }
     } catch (e) { console.error('Recommender render failed:', e); }
+    // V4.1.2 视频图标
+    try { renderPathVideos(); } catch (e) { console.error('renderPathVideos failed:', e); }
   }, 50);
 
   // 滚动到顶
@@ -1302,6 +1305,32 @@ function renderHistorySection(conceptId) {
     '<div id="rec-area" class="rec-area"></div>' +
   '</div>';
 }
+
+// V4.1.2 视频数据 (按 concept_id 索引)
+let VIDEOS_BY_CONCEPT = {};
+async function loadVideos() {
+  try {
+    const r = await fetch('./data/videos.json');
+    if (!r.ok) return;
+    const data = await r.json();
+    (data.videos || []).forEach(v => {
+      if (!VIDEOS_BY_CONCEPT[v.concept_id]) VIDEOS_BY_CONCEPT[v.concept_id] = [];
+      VIDEOS_BY_CONCEPT[v.concept_id].push(v);
+    });
+  } catch (e) { console.warn('[videos] load failed:', e); }
+}
+// 渲染复习路径每行的视频图标
+function renderPathVideos() {
+  document.querySelectorAll('.path-video[data-concept-id]').forEach(el => {
+    const cid = el.dataset.conceptId;
+    const vids = VIDEOS_BY_CONCEPT[cid] || [];
+    if (vids.length > 0) {
+      el.innerHTML = `<a href="${esc(vids[0].url)}" target="_blank" style="color: #00875a; text-decoration: none; font-weight: 600;">📺 ${esc(vids[0].title.length > 18 ? vids[0].title.slice(0, 18) + '…' : vids[0].title)}</a>`;
+    }
+  });
+}
+window.loadVideos = loadVideos;
+window.renderPathVideos = renderPathVideos;
 
 // V4.0.5 phase 2.3: 7 天复习计划
 // 输入: history 里的薄弱/巩固概念 + 它们的先决链
@@ -1395,10 +1424,13 @@ function render7DayPlan() {
                 const statusBg = c.status === 'weak' ? 'rgba(239,107,91,0.12)' : 'rgba(249,168,37,0.12)';
                 const statusBorder = c.status === 'weak' ? 'rgba(239,107,91,0.3)' : 'rgba(249,168,37,0.3)';
                 const statusIcon = c.status === 'weak' ? '📌' : '👍';
+                const hasVideo = (VIDEOS_BY_CONCEPT[c.id] || []).length > 0;
+                const videoBadge = hasVideo ? '<span style="font-size: 11px;">📺</span>' : '';
                 return `<a href="./diagnose.html?concept_id=${esc(c.id)}" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; background: ${statusBg}; border: 1px solid ${statusBorder}; border-radius: 6px; text-decoration: none; color: #0a0d18; font-size: 13px; transition: all 0.12s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
                   <span style="background: ${c.subjectColor}; color: #fff; padding: 1px 6px; border-radius: 3px; font-size: 10px; font-weight: 700;">${esc(c.subjectCn)}</span>
                   <span>${esc(c.title)}</span>
                   <span style="opacity: 0.6; font-size: 11px;">${statusIcon} 难 ${c.difficulty}</span>
+                  ${videoBadge}
                 </a>`;
               }).join('')
             }
@@ -1417,4 +1449,4 @@ window.render7DayPlan = render7DayPlan;
 
 // --- 启动 ---
 loadData();
-loadData();
+loadVideos();
