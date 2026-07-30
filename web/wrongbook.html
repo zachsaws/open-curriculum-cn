@@ -86,6 +86,50 @@
   .footer { text-align: center; padding: 32px 16px; font-size: 11px; color: #a5a5a5; }
   .footer a { color: #00875a; }
 
+  /* 错题本重做模式 — V4.0.5 phase 2.4 */
+  .redo-banner {
+    background: linear-gradient(135deg, #00875a 0%, #00a86b 100%);
+    color: #fff; padding: 18px 24px; border-radius: 12px; margin-bottom: 20px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  .redo-banner .emoji { font-size: 32px; }
+  .redo-banner .text { flex: 1; min-width: 200px; }
+  .redo-banner h2 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+  .redo-banner p { font-size: 13px; opacity: 0.9; }
+  .redo-banner .close { background: rgba(255,255,255,0.18); color: #fff; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; }
+
+  .redo-qcard { background: rgba(10,13,24,0.03); border: 1px solid rgba(10,13,24,0.08); border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; }
+  .redo-qcard .q-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; font-size: 12px; }
+  .redo-qcard .q-num { font-weight: 700; color: #0a0d18; font-family: "SF Mono", monospace; }
+  .redo-qcard .q-type { padding: 2px 8px; border-radius: 3px; font-size: 10px; font-family: "SF Mono", monospace; }
+  .redo-qcard .q-type.choice { background: rgba(91,141,239,0.18); color: #5b8def; }
+  .redo-qcard .q-type.fill { background: rgba(123,201,111,0.18); color: #5fa84d; }
+  .redo-qcard .q-type.short { background: rgba(201,180,111,0.18); color: #c9b46f; }
+  .redo-qcard .q-concept { color: #8a8a8a; font-size: 11px; }
+  .redo-qcard .q-question { font-size: 15px; line-height: 1.6; color: #0a0d18; margin-bottom: 14px; white-space: pre-wrap; }
+  .redo-qcard .q-options { display: flex; flex-direction: column; gap: 8px; }
+  .redo-qcard .q-opt { padding: 10px 14px; background: rgba(250,246,238,0.6); border: 1px solid rgba(10,13,24,0.1); border-radius: 6px; cursor: pointer; font-size: 14px; transition: all 0.1s; }
+  .redo-qcard .q-opt:hover { border-color: #00875a; background: rgba(0,135,90,0.04); }
+  .redo-qcard .q-opt.selected { border-color: #00875a; background: rgba(0,135,90,0.10); font-weight: 600; }
+  .redo-qcard .q-opt.correct { border-color: #00875a; background: rgba(0,135,90,0.15); }
+  .redo-qcard .q-opt.wrong { border-color: #e07070; background: rgba(239,107,91,0.10); }
+  .redo-qcard .q-fill-input, .redo-qcard .q-ta { width: 100%; padding: 10px 12px; border: 1px solid rgba(10,13,24,0.12); border-radius: 6px; font-size: 14px; background: rgba(250,246,238,0.6); font-family: inherit; }
+  .redo-qcard .q-ta { min-height: 80px; resize: vertical; }
+  .redo-qcard .q-feedback { margin-top: 12px; padding: 12px; border-radius: 6px; font-size: 13px; line-height: 1.6; }
+  .redo-qcard .q-feedback.correct { background: rgba(0,135,90,0.10); border: 1px solid rgba(0,135,90,0.3); color: #0a6b40; }
+  .redo-qcard .q-feedback.wrong { background: rgba(239,107,91,0.08); border: 1px solid rgba(239,107,91,0.3); color: #a04040; }
+  .redo-qcard .q-feedback .ans-line { margin-top: 6px; }
+  .redo-qcard .q-feedback .label { color: #8a8a8a; font-family: "SF Mono", monospace; font-size: 11px; }
+  .redo-actions { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+
+  .redo-result { padding: 32px 24px; border-radius: 12px; text-align: center; margin: 20px 0; }
+  .redo-result .big-emoji { font-size: 64px; line-height: 1; margin-bottom: 12px; }
+  .redo-result .big-status { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+  .redo-result .big-score { font-size: 16px; color: #4a4a4a; margin-bottom: 16px; }
+  .redo-result.mastered { background: rgba(0,135,90,0.10); border: 1px solid rgba(0,135,90,0.3); }
+  .redo-result.partial { background: rgba(249,168,37,0.10); border: 1px solid rgba(249,168,37,0.3); }
+  .redo-result.weak { background: rgba(239,107,91,0.08); border: 1px solid rgba(239,107,91,0.3); }
+
   /* 移动端 (≤ 480px) — V4.1.1 phase 1.3 */
   @media (max-width: 480px) {
     .top { padding: 10px 12px; gap: 10px; }
@@ -107,9 +151,10 @@
   <a class="back" href="./index.html">← 返回主页</a>
   <div class="title">
     <h1>❌ 错题本</h1>
-    <div class="sub">V4.0.3 · 答错的题自动收集 · localStorage 持久化</div>
+    <div class="sub">V4.0.5 · 答错的题自动收集 · 答对自动从错题本移除</div>
   </div>
   <div class="actions">
+    <a class="btn" id="redo-btn" href="./wrongbook.html?redo=1" style="display:none;">🔁 重做错题</a>
     <a class="btn" href="./diagnose.html">🩺 去诊断</a>
     <button class="btn danger" id="clear-btn" onclick="clearAll()">🗑 清空</button>
   </div>
@@ -208,7 +253,241 @@ function clearAll() {
   render();
 }
 
-render();
+// ========== V4.0.5 phase 2.4: 错题重做模式 ==========
+let REDO_EXS = [];  // 重做题列表
+let REDO_ANSWERS = {};  // {exId: {type, value}}
+
+// 入口: ?redo=1 时启动重做模式
+function init() {
+  const params = new URLSearchParams(location.search);
+  const redoMode = params.get('redo');
+  if (redoMode === '1') {
+    startRedoMode();
+    return;
+  }
+  // 主模式: 错题列表 + 显示"重做"按钮 (只有错题数 > 0 时)
+  const wb = window.HistoryStore.getWrongbook();
+  if (wb.length > 0) {
+    const btn = document.getElementById('redo-btn');
+    if (btn) btn.style.display = 'inline-block';
+  }
+  render();
+}
+
+// 加载 exercises.json
+async function loadExercises() {
+  if (window.__EXERCISES__) return window.__EXERCISES__;
+  const resp = await fetch('./data/exercises.json');
+  const data = await resp.json();
+  window.__EXERCISES__ = data.exercises;
+  return data.exercises;
+}
+
+// 启动重做模式
+async function startRedoMode() {
+  const c = document.getElementById('content');
+  c.innerHTML = '<div class="loading">加载错题…</div>';
+  const wb = window.HistoryStore.getWrongbook();
+  if (wb.length === 0) {
+    c.innerHTML = `<div class="empty"><p style="font-size: 32px; margin-bottom: 16px;">🎉</p><p style="font-size: 16px; color: #4a4a4a; margin-bottom: 8px;">错题本空了, 你真棒!</p><p style="margin-top: 20px;"><a class="btn" href="./wrongbook.html" style="display:inline-block; padding: 10px 20px; font-size: 13px; background: rgba(0,135,90,0.15); border: 1px solid rgba(0,135,90,0.3); color: #0a0d18; border-radius: 6px;">← 返回错题本</a></p></div>`;
+    return;
+  }
+  const allExs = await loadExercises();
+  // 拿错题对应的原题 (按 exercise_id 查)
+  const exById = {};
+  allExs.forEach(e => { exById[e.id] = e; });
+  REDO_EXS = wb.map(w => exById[w.exercise_id]).filter(Boolean);
+  if (REDO_EXS.length === 0) {
+    c.innerHTML = `<div class="empty"><p style="font-size: 16px; color: #4a4a4a;">错题本里的题已不在题库中 (可能是老版本数据)。</p><p style="margin-top: 20px;"><a class="btn" href="./wrongbook.html" style="display:inline-block; padding: 10px 20px; font-size: 13px; background: rgba(0,135,90,0.15); border: 1px solid rgba(0,135,90,0.3); color: #0a0d18; border-radius: 6px;">← 返回错题本</a></p></div>`;
+    return;
+  }
+  REDO_ANSWERS = {};
+  renderRedo();
+}
+
+// 渲染重做页面
+function renderRedo() {
+  const c = document.getElementById('content');
+  const subjectCn = (subj) => SUBJECT_CN[subj] || subj;
+  c.innerHTML = `
+    <div class="redo-banner">
+      <div class="emoji">🔁</div>
+      <div class="text">
+        <h2>重做 ${REDO_EXS.length} 道错题</h2>
+        <p>答对自动从错题本移除。提交后看哪些题彻底搞定了。</p>
+      </div>
+      <a class="close" href="./wrongbook.html" style="background: rgba(255,255,255,0.18); color: #fff; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; text-decoration: none;">✕ 退出</a>
+    </div>
+    <div id="redo-list">
+      ${REDO_EXS.map((ex, i) => renderRedoQ(ex, i)).join('')}
+    </div>
+    <div class="redo-actions">
+      <button class="btn" id="redo-submit-btn" onclick="submitRedo()" style="background: #00875a; color: #fff; border: 1px solid #00875a; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit;">提交重做 →</button>
+      <a class="btn" href="./wrongbook.html" style="background: transparent; color: #0a0d18; border: 1px solid rgba(10,13,24,0.15); padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none;">取消</a>
+    </div>
+  `;
+}
+
+// 渲染单题
+function renderRedoQ(ex, i) {
+  const num = i + 1;
+  const typeLabel = TYPE_LABEL[ex.type] || ex.type;
+  const typeClass = TYPE_CLASS[ex.type] || 'short';
+  // 概念学科色
+  const subj = (ex.concept_id || '').split('_')[0];
+  const subjMap = { M: 'math', CN: 'chinese', EN: 'english', P: 'physics', CH: 'chemistry', B: 'biology', H: 'history', G: 'geography', ML: 'morality_law', SC: 'science', IT: 'info_tech', ART: 'art', PE: 'pe_health', L: 'labor' };
+  const subjKey = subjMap[subj] || '';
+  const subjCn = SUBJECT_CN[subjKey] || '';
+  const concept = ex.concept_id;
+  let input = '';
+  if (ex.type === 'multiple_choice' && ex.options) {
+    let opts;
+    if (typeof ex.options === 'string') {
+      try { opts = JSON.parse(ex.options); } catch (e) { opts = []; }
+    } else if (Array.isArray(ex.options)) {
+      opts = ex.options;
+    } else { opts = []; }
+    const stripPrefix = (s, j) => {
+      const expected = String.fromCharCode(65 + j) + '.';
+      if (typeof s === 'string' && s.startsWith(expected)) return s.slice(expected.length).trim();
+      return s;
+    };
+    input = `<div class="q-options">
+      ${opts.map((opt, j) => {
+        const letter = String.fromCharCode(65 + j);
+        return `<div class="q-opt" data-letter="${letter}" onclick="selectRedoChoice('${esc(ex.id)}', '${letter}')">
+          <span class="letter">${letter}.</span> ${esc(stripPrefix(opt, j))}
+        </div>`;
+      }).join('')}
+    </div>`;
+  } else if (ex.type === 'fill_blank') {
+    input = `<input type="text" class="q-fill-input" data-exid="${esc(ex.id)}" placeholder="输入你的答案…" oninput="setRedoFill('${esc(ex.id)}', this.value)">`;
+  } else {
+    input = `<textarea class="q-ta" data-exid="${esc(ex.id)}" placeholder="简要写出你的思路/答案… (简答题只计'答了没')" oninput="setRedoShort('${esc(ex.id)}', this.value)"></textarea>`;
+  }
+  return `<div class="redo-qcard" id="redo-${esc(ex.id)}">
+    <div class="q-head">
+      <span class="q-num">Q${num}</span>
+      ${subjCn ? `<span class="q-type" style="background: rgba(91,141,239,0.18); color: #5b8def;">${esc(subjCn)}</span>` : ''}
+      <span class="q-type ${typeClass}">${esc(typeLabel)}</span>
+      <span class="q-concept">${esc(concept)}</span>
+    </div>
+    <div class="q-question">${esc(ex.question)}</div>
+    ${input}
+  </div>`;
+}
+
+window.selectRedoChoice = function(exId, letter) {
+  const card = document.getElementById(`redo-${exId}`);
+  if (!card) return;
+  card.querySelectorAll('.q-opt').forEach(o => o.classList.remove('selected', 'correct', 'wrong'));
+  const sel = card.querySelector(`.q-opt[data-letter="${letter}"]`);
+  if (sel) sel.classList.add('selected');
+  REDO_ANSWERS[exId] = { type: 'choice', value: letter };
+};
+window.setRedoFill = function(exId, val) {
+  REDO_ANSWERS[exId] = { type: 'fill', value: val };
+};
+window.setRedoShort = function(exId, val) {
+  REDO_ANSWERS[exId] = { type: 'short', value: val };
+};
+
+// 评分 (复用 diagnose 的逻辑)
+function toStrRedo(v) { return v == null ? '' : (Array.isArray(v) ? v.join('|') : String(v)); }
+function gradeRedo() {
+  const norm = s => toStrRedo(s).replace(/[\s，。、,.!?！？;；:：]/g, '').toLowerCase();
+  return REDO_EXS.map(ex => {
+    const ua = REDO_ANSWERS[ex.id];
+    if (!ua) return false;
+    if (ex.type === 'multiple_choice') {
+      const correct = toStrRedo(ex.answer).trim().toUpperCase();
+      return toStrRedo(ua.value).trim().toUpperCase() === correct;
+    } else if (ex.type === 'fill_blank') {
+      const candidates = Array.isArray(ex.answer) ? ex.answer : [ex.answer];
+      const user = norm(ua.value);
+      if (!user) return false;
+      return candidates.some(c => {
+        const cN = norm(c);
+        return user === cN || user.includes(cN) || cN.includes(user);
+      });
+    } else {
+      return toStrRedo(ua.value).trim().length > 5;
+    }
+  });
+}
+
+// 提交: 答对移除错题本, 答错保留
+function submitRedo() {
+  const results = gradeRedo();
+  const correctIds = [];
+  const wrongIds = [];
+  REDO_EXS.forEach((ex, i) => {
+    if (results[i] === true) correctIds.push(ex.id);
+    else wrongIds.push(ex.id);
+  });
+  // 答对的从错题本移除
+  correctIds.forEach(id => window.HistoryStore.removeFromWrongbook(id));
+  // 渲染结果页
+  renderRedoResult(results, correctIds, wrongIds);
+}
+
+function renderRedoResult(results, correctIds, wrongIds) {
+  const c = document.getElementById('content');
+  const total = REDO_EXS.length;
+  const correct = correctIds.length;
+  const wrong = wrongIds.length;
+  const pct = Math.round((correct / total) * 100);
+  let status, statusCn, statusEmoji, resultClass;
+  if (pct === 100) { status = 'mastered'; statusCn = '全部答对!'; statusEmoji = '🎉'; resultClass = 'mastered'; }
+  else if (pct >= 60) { status = 'partial'; statusCn = '大部分搞定'; statusEmoji = '👍'; resultClass = 'partial'; }
+  else { status = 'weak'; statusCn = '还要多练'; statusEmoji = '📌'; resultClass = 'weak'; }
+  // 在每题卡上标对/错
+  REDO_EXS.forEach((ex, i) => {
+    const card = document.getElementById(`redo-${ex.id}`);
+    if (!card) return;
+    const ok = results[i] === true;
+    const ua = REDO_ANSWERS[ex.id] || {};
+    const userAns = toStrRedo(ua.value) || '(空)';
+    const correctAns = toStrRedo(ex.answer) || '(无)';
+    // 标记选项
+    if (ex.type === 'multiple_choice') {
+      card.querySelectorAll('.q-opt').forEach(o => o.classList.remove('selected'));
+      card.querySelectorAll('.q-opt').forEach(o => {
+        const letter = o.dataset.letter;
+        if (letter === toStrRedo(correctAns).trim().toUpperCase()) o.classList.add('correct');
+        if (!ok && letter === toStrRedo(userAns).trim().toUpperCase()) o.classList.add('wrong');
+      });
+    }
+    // 反馈条
+    const fb = document.createElement('div');
+    fb.className = 'q-feedback ' + (ok ? 'correct' : 'wrong');
+    fb.innerHTML = (ok ? '✅ 答对了! 这道题已从错题本移除。' : '❌ 还差一点, 这道题保留在错题本。')
+      + `<div class="ans-line"><span class="label">你的答案:</span> <span style="color:${ok ? '#0a6b40' : '#a04040'};">${esc(userAns)}</span></div>`
+      + `<div class="ans-line"><span class="label">正答:</span> <span style="color:#0a6b40;">${esc(toStrRedo(correctAns))}</span></div>`
+      + (ex.explanation ? `<div class="ans-line" style="margin-top: 8px; color: #4a4a4a;"><span class="label">解释:</span> ${esc(ex.explanation)}</div>` : '');
+    card.appendChild(fb);
+  });
+  // 替换 actions 为结果
+  const actions = c.querySelector('.redo-actions');
+  if (actions) {
+    actions.outerHTML = `
+      <div class="redo-result ${resultClass}">
+        <div class="big-emoji">${statusEmoji}</div>
+        <div class="big-status">${statusCn}</div>
+        <div class="big-score">${correct}/${total} 答对 (${pct}%) · ${wrong} 道保留在错题本</div>
+      </div>
+      <div class="redo-actions">
+        <a class="btn" href="./wrongbook.html" style="background: #00875a; color: #fff; border: 1px solid #00875a; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none;">← 回到错题本 (${total - wrong}/${total} 已清)</a>
+        ${wrong > 0 ? `<a class="btn" href="./wrongbook.html?redo=1" style="background: transparent; color: #0a0d18; border: 1px solid rgba(10,13,24,0.15); padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none;">再练剩下的 ${wrong} 道</a>` : ''}
+      </div>
+    `;
+  }
+  // 滚到顶部
+  window.scrollTo(0, 0);
+}
+
+init();
+
 </script>
 </body>
 </html>
