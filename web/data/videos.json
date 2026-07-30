@@ -1,43 +1,7 @@
 {
   "version": "v4.1.2",
-  "note": "自动挑选: 现有 3 + 新增 198 (含 1 fallback), 失败 0",
+  "note": "自动挑选: 现有 200 + 新增 1 (含 0 fallback), 失败 0",
   "videos": [
-    {
-      "concept_id": "M_G4_GM_08",
-      "title": "勾股定理 — 三分钟动画版",
-      "url": "https://www.bilibili.com/video/BV1xx411c7m1",
-      "platform": "bilibili",
-      "duration_sec": 240,
-      "language": "zh-CN",
-      "publisher": "示例 UP 主",
-      "is_free": true,
-      "rating": 4.8,
-      "notes": "动画清晰, 适合 7-9 年级"
-    },
-    {
-      "concept_id": "M_G4_QR_05",
-      "title": "一元二次方程 — 5 分钟入门",
-      "url": "https://www.bilibili.com/video/BV1xxxxxx",
-      "platform": "bilibili",
-      "duration_sec": 320,
-      "language": "zh-CN",
-      "publisher": "示例老师",
-      "is_free": true,
-      "rating": 4.5,
-      "notes": "公式 + 例题, 适合初学者"
-    },
-    {
-      "concept_id": "CN_C1_AL_01",
-      "title": "认识常用字 — 偏旁与字义",
-      "url": "https://www.bilibili.com/video/BV1yyyyyy",
-      "platform": "bilibili",
-      "duration_sec": 180,
-      "language": "zh-CN",
-      "publisher": "国家中小学智慧教育平台",
-      "is_free": true,
-      "rating": 4.9,
-      "notes": "部首+字义, 适合 1-2 年级"
-    },
     {
       "concept_id": "B_G12_CP_01",
       "title": "【高中生物必刷题】必修一分子与细胞 第一章 第一节 细胞是生命活动的基本单位+第二节 细胞的多样性和统一性",
@@ -2413,6 +2377,42 @@
       "is_free": true,
       "rating": null,
       "notes": "劳动 小学三年级 · 难 1 · 播放 26860"
+    },
+    {
+      "concept_id": "M_G4_QR_05",
+      "title": "开学别再无效刷题了！初中数学一元二次方程有系统外挂——韦达定理！解题速度直接翻倍！",
+      "url": "https://www.bilibili.com/video/BV17TaazUEhs/",
+      "platform": "bilibili",
+      "duration_sec": 281,
+      "language": "zh-CN",
+      "publisher": "亮亮巧解初中数学",
+      "is_free": true,
+      "rating": null,
+      "notes": "数学 初二 · 难 3 · 播放 358788"
+    },
+    {
+      "concept_id": "M_G4_GM_08",
+      "title": "考前必看！勾股定理最值问题就考这两类！吃透稳拿分！",
+      "url": "https://www.bilibili.com/video/BV14JXGBCEWd/",
+      "platform": "bilibili",
+      "duration_sec": 385,
+      "language": "zh-CN",
+      "publisher": "亮亮巧解初中数学",
+      "is_free": true,
+      "rating": null,
+      "notes": "数学 初二 · 难 3 · 播放 410737"
+    },
+    {
+      "concept_id": "CN_C1_AL_01",
+      "title": "常用100字，能字行书写法详解",
+      "url": "https://www.bilibili.com/video/BV1Xd4y1b7PE/",
+      "platform": "bilibili",
+      "duration_sec": 157,
+      "language": "zh-CN",
+      "publisher": "文扬满分卷面书写",
+      "is_free": true,
+      "rating": null,
+      "notes": "语文 小学一年级 · 难 1 · 播放 224874"
     }
   ]
 }
