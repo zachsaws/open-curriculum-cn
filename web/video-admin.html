@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>视频入库工具 · V4.1.2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { color: #0a0d18; background: #faf6ee; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; padding: 24px; max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 800; margin-bottom: 8px; color: #00875a; }
+  h2 { font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: #0a0d18; }
+  .lead { color: #4a4a4a; margin-bottom: 16px; font-size: 13px; }
+  textarea { width: 100%; min-height: 200px; padding: 12px; border: 1px solid #e8e0cc; border-radius: 6px; font-family: "SF Mono", "Consolas", monospace; font-size: 12px; line-height: 1.5; background: #fff; resize: vertical; }
+  input, select { padding: 8px 12px; border: 1px solid #e8e0cc; border-radius: 6px; font-size: 13px; font-family: inherit; background: #fff; }
+  .row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+  .row > * { flex: 1; min-width: 120px; }
+  .btn { padding: 10px 18px; background: #00875a; color: #fff; border: none; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .btn:hover { background: #006d4a; }
+  .btn.secondary { background: transparent; color: #0a0d18; border: 1px solid #d0d0d0; }
+  .output { background: #0a0d18; color: #fff; padding: 16px; border-radius: 6px; font-family: "SF Mono", monospace; font-size: 12px; line-height: 1.5; white-space: pre; overflow-x: auto; max-height: 400px; }
+  .help { background: rgba(0,135,90,0.06); border: 1px solid rgba(0,135,90,0.2); border-radius: 6px; padding: 12px 16px; margin: 12px 0; font-size: 13px; color: #0a0d18; }
+  .help code { background: rgba(0,135,90,0.12); padding: 1px 6px; border-radius: 3px; font-family: "SF Mono", monospace; font-size: 11px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid rgba(10,13,24,0.08); font-size: 13px; }
+  th { background: rgba(10,13,24,0.04); font-weight: 700; font-size: 12px; }
+  .stats { display: flex; gap: 16px; margin: 16px 0; }
+  .stat { flex: 1; padding: 12px 16px; background: #fff; border: 1px solid #e8e0cc; border-radius: 6px; text-align: center; }
+  .stat .big { font-size: 24px; font-weight: 800; color: #00875a; }
+  .stat .label { font-size: 11px; color: #8a8a8a; margin-top: 4px; }
+  .row-card { background: #fff; border: 1px solid #e8e0cc; border-radius: 6px; padding: 12px; margin: 8px 0; }
+  .del-btn { background: #e07070; color: #fff; border: none; padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<h1>📺 V4.1.2 视频入库工具</h1>
+<p class="lead">按 docs/v412_video_picks.csv 200 概念清单挑视频, 每概念 1 个。把数据粘进来, 自动生成 videos.json。完成后复制 JSON 给我 commit。</p>
+
+<h2>📋 格式说明 (每行 1 条, tab 或空格分隔)</h2>
+<div class="help">
+<pre style="font-size: 12px; line-height: 1.6;">概念ID	标题	平台	URL	发布者	时长(分钟)	语言	免费	评分
+M_G4_GM_08	勾股定理 — 三分钟动画版	bilibili	https://www.bilibili.com/video/BV1xx411c7m1	一数	4	zh-CN	true	4.8
+M_G4_QR_05	一元二次方程入门	bilibili	https://www.bilibili.com/video/BV1yyyyyy	示例老师	5	zh-CN	true	4.5</pre>
+</div>
+
+<h2>📥 批量粘贴 (TSV / CSV / 行内格式)</h2>
+<textarea id="batch-input" placeholder="粘进来, 每行 1 条..."></textarea>
+
+<div class="row">
+  <button class="btn" onclick="parseBatch()">⚡ 解析并加入列表</button>
+  <button class="btn secondary" onclick="loadFromCsv()">📂 加载 200 概念清单</button>
+  <button class="btn secondary" onclick="loadCurrentJson()">🔄 加载现有 videos.json</button>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="big" id="stat-total">0</div><div class="label">已录入</div></div>
+  <div class="stat"><div class="big" id="stat-with-vid">0</div><div class="label">有效 (有 URL)</div></div>
+  <div class="stat"><div class="big" id="stat-subj">0</div><div class="label">涉及学科</div></div>
+</div>
+
+<h2>📝 视频列表</h2>
+<div id="video-list"></div>
+
+<div class="row">
+  <button class="btn" onclick="exportJson()">📤 导出 videos.json (复制到剪贴板)</button>
+  <button class="btn secondary" onclick="downloadJson()">💾 下载 videos.json</button>
+  <button class="btn secondary" onclick="clearAll()">🗑 清空</button>
+</div>
+
+<h2>📋 生成的 JSON</h2>
+<pre class="output" id="json-output">{}</pre>
+
+<script src="./data-cache.js"></script>
+<script>
+'use strict';
+
+let VIDEOS = [];  // 内存中的视频列表
+
+// === 内存存储 (localStorage 备份) ===
+function saveLocal() {
+  try { localStorage.setItem('video_admin_draft', JSON.stringify(VIDEOS)); } catch (e) {}
+}
+function loadLocal() {
+  try {
+    const s = localStorage.getItem('video_admin_draft');
+    if (s) VIDEOS = JSON.parse(s);
+  } catch (e) {}
+}
+
+// === 概念信息查询 (从 graph.json) ===
+let CONCEPT_MAP = {};
+async function loadConcepts() {
+  if (Object.keys(CONCEPT_MAP).length > 0) return;
+  try {
+    const r = await fetch('./data/graph.json');
+    const d = await r.json();
+    (d.nodes || []).forEach(n => { CONCEPT_MAP[n.id] = n; });
+  } catch (e) { console.warn('graph load failed', e); }
+}
+
+// === 解析 TSV / CSV / 行内格式 ===
+function parseBatch() {
+  const txt = document.getElementById('batch-input').value.trim();
+  if (!txt) { alert('请先粘贴内容'); return; }
+  const lines = txt.split('\n').filter(l => l.trim());
+  let added = 0, skipped = 0;
+  for (const line of lines) {
+    const parts = line.split(/[\t,]/).map(s => s.trim());
+    if (parts.length < 3) { skipped++; continue; }
+    const [concept_id, title, platform, url, publisher, duration_min, language, is_free, rating] = parts;
+    if (!concept_id || !url || !url.startsWith('http')) { skipped++; continue; }
+    // 去重: 同 concept_id + url
+    if (VIDEOS.some(v => v.concept_id === concept_id && v.url === url)) { skipped++; continue; }
+    VIDEOS.push({
+      concept_id,
+      title: title || '',
+      platform: platform || 'bilibili',
+      url,
+      publisher: publisher || '',
+      duration_sec: duration_min ? Math.round(parseFloat(duration_min) * 60) : null,
+      language: language || 'zh-CN',
+      is_free: is_free === 'false' ? false : true,
+      rating: rating ? parseFloat(rating) : null,
+    });
+    added++;
+  }
+  saveLocal();
+  renderList();
+  exportJson();
+  alert(`已添加 ${added} 条, 跳过 ${skipped} 条 (格式错或重复)`);
+}
+
+// === 加载 200 概念清单 (从 docs/v412_video_picks.csv) ===
+async function loadFromCsv() {
+  // 没在 web/ 下放 csv, 改用占位: 拉 video-admin 工具自带的精简版 (前 30 个高频)
+  const preList = [
+    'M_G4_GM_08', 'M_G4_QR_05', 'M_G4_QR_11', 'M_G4_GM_10', 'M_G3_GM_04',
+    'CN_C1_AL_01', 'CN_C2_AL_05', 'CN_C3_RD_03', 'EN_G3_GR_02', 'EN_G4_WR_05',
+    'P_G12_EX_02', 'P_G12_MA_01', 'CH_G12_EX_05', 'CH_C1_02', 'B_G12_CP_01',
+    'B_B1_07', 'B_B1_03', 'H_H2_CM_01', 'G_G1_05', 'ML_ML_G9_01',
+    'SC_S2_MS_05', 'IT_I1_01', 'IT_G12_AL_01', 'ART_A2_07', 'PE_PE3_04',
+  ];
+  const preview = preList.map(id => ({concept_id: id, _pending: true})).filter(x => !VIDEOS.some(v => v.concept_id === x.concept_id));
+  if (preview.length === 0) { alert('清单已全部录入'); return; }
+  const html = `
+    <div class="row-card">
+      <p style="margin-bottom: 8px; font-weight: 600;">📋 25 个高频概念待录 (math/语文/英语/物理/化学/生物/历史/地理/道德/科学/信息/音体美 覆盖):</p>
+      <p style="font-size: 12px; color: #4a4a4a; font-family: 'SF Mono', monospace; line-height: 1.8;">${preview.map(p => p.concept_id).join(', ')}</p>
+      <p style="margin-top: 8px; font-size: 12px; color: #8a8a8a;">完整 200 概念清单见 <code>docs/v412_video_picks.csv</code></p>
+    </div>
+  `;
+  document.getElementById('video-list').insertAdjacentHTML('afterbegin', html);
+}
+
+// === 加载现有 videos.json ===
+async function loadCurrentJson() {
+  try {
+    const r = await fetch('./data/videos.json');
+    if (!r.ok) throw new Error('no json');
+    const d = await r.json();
+    VIDEOS = d.videos || [];
+    saveLocal();
+    renderList();
+    exportJson();
+    alert(`已加载 ${VIDEOS.length} 条`);
+  } catch (e) { alert('加载失败: ' + e.message); }
+}
+
+// === 渲染列表 ===
+function renderList() {
+  const div = document.getElementById('video-list');
+  if (VIDEOS.length === 0) {
+    div.innerHTML = '<p style="color: #8a8a8a; padding: 20px; text-align: center;">还没有视频, 粘数据进来 →</p>';
+  } else {
+    div.innerHTML = `
+      <table>
+        <thead><tr><th>概念</th><th>标题</th><th>平台</th><th>时长</th><th>发布者</th><th>操作</th></tr></thead>
+        <tbody>${VIDEOS.map((v, i) => `
+          <tr>
+            <td style="font-family: 'SF Mono', monospace; font-size: 11px;">${esc(v.concept_id)}</td>
+            <td>${esc(v.title)}</td>
+            <td>${esc(v.platform)}</td>
+            <td>${v.duration_sec ? Math.round(v.duration_sec/60) + ' 分钟' : '?'}</td>
+            <td>${esc(v.publisher || '')}</td>
+            <td><button class="del-btn" onclick="delOne(${i})">删除</button></td>
+          </tr>
+        `).join('')}</tbody>
+      </table>
+    `;
+  }
+  // 统计
+  document.getElementById('stat-total').textContent = VIDEOS.length;
+  document.getElementById('stat-with-vid').textContent = VIDEOS.filter(v => v.url).length;
+  document.getElementById('stat-subj').textContent = new Set(VIDEOS.map(v => (v.concept_id || '').split('_')[0])).size;
+}
+
+function delOne(i) {
+  if (!confirm('确定删除?')) return;
+  VIDEOS.splice(i, 1);
+  saveLocal();
+  renderList();
+  exportJson();
+}
+
+function esc(s) { if (s == null) return ''; return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]); }
+
+// === 导出 JSON ===
+function buildJson() {
+  return {
+    version: 'v4.1.2',
+    note: `批量入库: ${VIDEOS.length} 视频, ${new Set(VIDEOS.map(v => v.concept_id)).size} 个概念`,
+    videos: VIDEOS,
+  };
+}
+function exportJson() {
+  const json = JSON.stringify(buildJson(), null, 2);
+  document.getElementById('json-output').textContent = json;
+  // 自动复制
+  navigator.clipboard.writeText(json).then(() => {
+    console.log('JSON 已复制到剪贴板');
+  }).catch(() => {});
+}
+function downloadJson() {
+  const json = JSON.stringify(buildJson(), null, 2);
+  const blob = new Blob([json], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'videos.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+function clearAll() {
+  if (!confirm('清空所有视频? (本地草稿, 不影响线上的 videos.json)')) return;
+  VIDEOS = [];
+  localStorage.removeItem('video_admin_draft');
+  renderList();
+  exportJson();
+}
+
+// === 启动 ===
+loadLocal();
+renderList();
+exportJson();
+</script>
+
+</body>
+</html>
