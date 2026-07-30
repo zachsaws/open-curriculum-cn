@@ -2,12 +2,17 @@
 
 > **每一步学什么，之前漏了哪一步。**
 
-中国教育部 2022 最新课标 · **14 学科 · 1906 核心概念 · 4736 条学习路径 · 9000+ 道题目** · 开源免费。
+中国教育部 2022 最新课标 · **14 学科 · 1906 核心概念 · 4736 条学习路径 · 9264 道题目 · 1008 视频** · 开源免费。
 
 🎬 **5 秒看明白**：
 
 [![5 秒看明白](https://zachsaws.github.io/open-curriculum-cn/data/hero_thumb.gif)](https://zachsaws.github.io/open-curriculum-cn/explore.html)
 *↑ 主页 8s 缩略 · 完整 30s 概念片在 demo 段*
+
+🆕 **V4.1.2 视频接入**：点节点 → 📺 讲解视频 → 答错 5 题 → 复习路径 → 错题本 chip
+
+![V4.1.2 演示](https://zachsaws.github.io/open-curriculum-cn/preview/v4.1.2-collage.png)
+*↑ 3 核心考点 (勾股定理/整本书阅读/光的反射定律) × 3 页面 (explore/diagnose/wrongbook) — B 站 API 自动挑的 1008 真教学视频 (跑题率 < 5%)*
 
 🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [题目练习](https://zachsaws.github.io/open-curriculum-cn/exercise.html?id=M_G4_GM_08) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
 
@@ -263,7 +268,7 @@ open-curriculum-cn/
 - [x] **V4.0.5 phase 2.2**: IRT 自适应难度 (5 题动态换题, 答对→更难题 / 答错→更易题, 加权算分, 阈值 80/70/60/50% 按 difficulty 1-5)
 - [x] **V4.0.5 phase 2.3**: 7 天复习计划 (基于 history 里的薄弱/巩固概念, 每天 3 个, 7 天日程, 兼容 status 中英文, 可导出 PDF)
 - [x] **V4.0.5 phase 2.4**: 错题本重做模式 (错题卡按 exercise_id 找原题, 答对自动从错题本移除, 反馈条 + 解释 + 3 状态 banner)
-- [ ] **V4.0.5 phase 2.5**: 200 高频概念手挑真实 B 站视频 (3-5 天, 天祥手挑数据) — 候选清单见 docs/v412_video_picks.csv + 挑选指南 docs/V412_VIDEO_PICKS_GUIDE.md
+- [x] **V4.1.2 phase 1-3**: 视频接入框架 (3 处显示: explore 概念卡 / diagnose 复习路径 / wrongbook 错题卡 chip) + B 站 wbi 签名自动挑选 1008 视频 (508 核心 + 500 L2 概念, 跑题率 < 5%, 全 14 学科覆盖) — auto_pick_videos.py 学科化 query + 评分 (关键词 + 白/黑名单 + 播放数 log + 时长适中) + 候选清单 docs/v412_video_picks.csv (514) + docs/v412_video_picks_l2.csv (950 L2) + 拼图 web/preview/v4.1.2-collage.png
 - [ ] **V4.0 短期 (3 个月)**:
   - 知乎/公众号文章（让老师/教研员/家长知道这玩意）
   - 演示视频/GIF（让 5 秒看懂）
