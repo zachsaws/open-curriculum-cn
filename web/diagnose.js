@@ -1,5 +1,6 @@
 // V4.0.2 智能诊断 PoC — 客户端版本 (GitHub Pages 静态部署)
 // 算法跟 api/diagnose.py 保持一致, 避免 doc/API drift
+// V4.0.5 phase 2.2: IRT 自适应难度 (动态题调整 + 加权算分)
 'use strict';
 
 // 难度 1-5 → 薄弱/巩固阈值
@@ -10,6 +11,10 @@ const DIFFICULTY_THRESHOLDS = {
   4: { weak: 60, consolidate: 80 },
   5: { weak: 50, consolidate: 70 },
 };
+
+// V4.0.5 IRT 自适应: 维护"已用题"和"动态题"两个状态
+// IRT_CURRENT: 当前诊断状态 (单概念模式), 含 answers + history
+let IRT_CURRENT = null;  // { conceptId, difficulty, answers: [{ex, correct}], pool: [...], adaptiveQ: [], step: 0, maxQ: 5 }
 
 const PALETTE = {
   math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
@@ -722,23 +727,251 @@ function renderStep2() {
     return;
   }
   USER_ANSWERS = {};
+  // V4.0.5 phase 2.2: IRT 初始化 — 5 题按 difficulty 平均抽, 答完 1 题后动态换
+  IRT_CURRENT = initIRTSession(SELECTED_CONCEPT, exs, 5);
   const subjCn = SUBJECT_CN[concept.subject] || '';
   c.innerHTML = `
-    <h2>5 道题快速测试</h2>
-    <p class="lead">// 客观题 (选择/填空) 自动判分, 简答题只计"答了没". 不限时.</p>
+    <h2>5 道题快速测试 <span style="font-size: 12px; font-weight: 500; color: #00875a; background: rgba(0,135,90,0.10); padding: 3px 10px; border-radius: 12px; margin-left: 8px;">🎯 IRT 自适应</span></h2>
+    <p class="lead">// 客观题 (选择/填空) 自动判分, 简答题只计"答了没". 每答 1 题, 下一题会按你的水平自动调难度.</p>
     <div class="concept-banner">
       <div class="name">${esc(concept.title)}</div>
       <div class="meta">${esc(subjCn)} · ${esc(concept.grade_start || '')}-${esc(concept.grade_end || '')}年级 · 难度 ${esc(concept.difficulty || '?')}</div>
     </div>
-    <div id="q-list">
-      ${exs.map((ex, i) => renderQuestion(ex, i)).join('')}
+    <div id="q-list" data-irt-active="1">
+      ${renderIRTQuestions(IRT_CURRENT)}
     </div>
     <div class="actions">
       <button class="btn secondary" onclick="goBack()">← 重选概念</button>
-      <button class="btn" onclick="submitTest()">提交诊断 →</button>
+      <button class="btn" onclick="submitIRTStep()">提交诊断 →</button>
     </div>
   `;
 }
+
+// V4.0.5 phase 2.2: IRT 会话初始化
+function initIRTSession(conceptId, exs, maxQ) {
+  // 概念 difficulty (默认 3)
+  const concept = getConceptById(conceptId);
+  const startDiff = concept ? (concept.difficulty || 3) : 3;
+  // 抽 N 道题按 difficulty 平均 (从 exs 里选 N 道, 尽量覆盖难度)
+  // 简化: 按 difficulty 排序, 选 N 道均匀分布
+  const sorted = exs.slice().sort((a, b) => (a.difficulty || 3) - (b.difficulty || 3));
+  const picked = [];
+  for (let i = 0; i < maxQ && i < sorted.length; i++) {
+    const idx = Math.floor(i * sorted.length / maxQ);
+    picked.push(sorted[idx]);
+  }
+  // 打乱顺序 (避免按难度从低到高)
+  picked.sort(() => Math.random() - 0.5);
+  return {
+    conceptId,
+    pool: exs.slice(),  // 全部可用题 (含已用)
+    usedIds: new Set(picked.map(e => e.id)),
+    adaptiveQ: picked,  // 当前 5 道题 (会动态调)
+    answers: [],  // {ex, correct, difficulty}
+    step: 0,
+    maxQ,
+    startDiff,
+  };
+}
+
+// 渲染 IRT 当前 5 道题 (每题加"自适应标签"显示当前难度档位)
+function renderIRTQuestions(irt) {
+  return irt.adaptiveQ.map((ex, i) => {
+    const num = i + 1;
+    const typeLabel = TYPE_LABEL[ex.type] || ex.type;
+    const typeClass = TYPE_CLASS[ex.type] || 'short';
+    const diff = ex.difficulty ? `<span class="q-diff d${ex.difficulty}">难 ${esc(ex.difficulty)}</span>` : '';
+    const real = ex.is_real_exam ? `<span class="q-real">📋 真题</span>` : '';
+    const bloom = ex.bloom ? `<span class="q-bloom">${esc(ex.bloom)}</span>` : '';
+    // IRT 标记: 第 1 题 (已答) 显示"自适应中" / 未答显示"当前难度 X"
+    const answered = i < irt.step;
+    const statusLabel = answered
+      ? (irt.answers[i].correct ? '✅ 答对' : '❌ 答错')
+      : `第 ${num} 题 · 难度 ${ex.difficulty || '?'}`;
+    let input = '';
+    if (ex.type === 'multiple_choice' && ex.options) {
+      let opts;
+      if (typeof ex.options === 'string') {
+        try { opts = JSON.parse(ex.options); } catch (e) { opts = []; }
+      } else if (Array.isArray(ex.options)) {
+        opts = ex.options;
+      } else { opts = []; }
+      const stripPrefix = (s, j) => {
+        const expected = String.fromCharCode(65 + j) + '.';
+        if (typeof s === 'string' && s.startsWith(expected)) return s.slice(expected.length).trim();
+        return s;
+      };
+      input = `<div class="q-options">
+        ${opts.map((opt, j) => {
+          const letter = String.fromCharCode(65 + j);
+          return `<div class="q-opt" data-exid="${esc(ex.id)}" data-letter="${letter}" onclick="selectChoice('${esc(ex.id)}', '${letter}')">
+            <span class="letter">${letter}.</span>
+            <span>${esc(stripPrefix(opt, j))}</span>
+          </div>`;
+        }).join('')}
+      </div>`;
+    } else if (ex.type === 'fill_blank') {
+      input = `<input type="text" class="q-fill-input" data-exid="${esc(ex.id)}" placeholder="输入你的答案…" oninput="setFillAnswer('${esc(ex.id)}', this.value)">`;
+    } else {
+      input = `<textarea class="q-ta" data-exid="${esc(ex.id)}" placeholder="简要写出你的思路/答案… (简答题只计'答了没', 不判分)" oninput="setShortAnswer('${esc(ex.id)}', this.value)"></textarea>`;
+    }
+    return `<div class="q-card" id="qcard-${esc(ex.id)}" style="${answered ? 'opacity: 0.7;' : ''}">
+      <div class="q-head">
+        <span class="q-num">Q${num}</span>
+        <span class="q-type ${typeClass}">${esc(typeLabel)}</span>
+        <span class="q-irt-status" style="font-size: 10px; padding: 2px 8px; border-radius: 3px; background: ${answered ? 'rgba(10,13,24,0.06)' : 'rgba(0,135,90,0.10)'}; color: ${answered ? '#8a8a8a' : '#00875a'}; font-weight: 600;">${statusLabel}</span>
+        ${bloom}${diff}${real}
+      </div>
+      <div class="q-question">${esc(ex.question)}</div>
+      ${input}
+    </div>`;
+  }).join('');
+}
+
+// V4.0.5: 用户答完 1 题后, IRT 调整下一题 (答对→更难, 答错→更易)
+function onAnswerRecorded(exId, correct) {
+  if (!IRT_CURRENT) return;
+  const i = IRT_CURRENT.step;
+  if (i >= IRT_CURRENT.maxQ) return;
+  // 幂等: 如果这题已经记录过, 跳过
+  if (IRT_CURRENT.answers.some(a => a.ex.id === exId)) return;
+  const ex = IRT_CURRENT.adaptiveQ[i];
+  IRT_CURRENT.answers.push({ ex, correct, difficulty: ex.difficulty || 3 });
+  IRT_CURRENT.step = i + 1;
+  // 如果还有下一题, 调整
+  if (IRT_CURRENT.step < IRT_CURRENT.maxQ) {
+    const nextIdx = IRT_CURRENT.step;
+    const targetDiff = correct
+      ? Math.min(5, (ex.difficulty || 3) + 1)  // 答对 → 难题
+      : Math.max(1, (ex.difficulty || 3) - 1); // 答错 → 易题
+    // 从 pool 找最接近 targetDiff 的未用题
+    const pool = IRT_CURRENT.pool;
+    const used = new Set([...IRT_CURRENT.usedIds, ...IRT_CURRENT.adaptiveQ.slice(0, nextIdx).map(e => e.id)]);
+    const candidates = pool.filter(e => !used.has(e.id));
+    if (candidates.length > 0) {
+      // 找 difficulty 最接近 targetDiff 的
+      candidates.sort((a, b) => {
+        const da = Math.abs((a.difficulty || 3) - targetDiff);
+        const db = Math.abs((b.difficulty || 3) - targetDiff);
+        return da - db;
+      });
+      const newEx = candidates[0];
+      IRT_CURRENT.adaptiveQ[nextIdx] = newEx;
+      IRT_CURRENT.usedIds.add(newEx.id);
+    }
+  }
+  // 重渲染 (更新状态标签 + 第 N+1 题)
+  const list = document.getElementById('q-list');
+  if (list) list.innerHTML = renderIRTQuestions(IRT_CURRENT);
+}
+window.onAnswerRecorded = onAnswerRecorded;
+
+// V4.0.5: IRT 加权算分
+function gradeIRT() {
+  if (!IRT_CURRENT) return { score: 0, scorePct: 0, weighted: 0, maxWeighted: 0, answers: [] };
+  const answers = IRT_CURRENT.answers;
+  const totalCorrect = answers.filter(a => a.correct).length;
+  const score = totalCorrect / IRT_CURRENT.maxQ;
+  // 加权: 答对题 difficulty 总和 / 5 道题 difficulty 总和 (用 adaptiveQ 的 difficulty)
+  const weighted = answers.filter(a => a.correct).reduce((s, a) => s + (a.difficulty || 3), 0);
+  const maxWeighted = IRT_CURRENT.adaptiveQ.reduce((s, ex) => s + (ex.difficulty || 3), 0);
+  const weightedPct = maxWeighted > 0 ? Math.round((weighted / maxWeighted) * 100) : 0;
+  // 答对率优先 (简单直观), 加权作为补充
+  const scorePct = Math.round(score * 100);
+  return { score, scorePct, weighted, maxWeighted, weightedPct, answers };
+}
+
+// V4.0.5: 提交 IRT 测试
+function submitIRTStep() {
+  if (!IRT_CURRENT) { submitTest(); return; }
+  // 把还没评的题按"答了/没答"评, 用 onAnswerRecorded 触发 IRT 调整 (包括填空/简答)
+  while (IRT_CURRENT.step < IRT_CURRENT.maxQ) {
+    const i = IRT_CURRENT.step;
+    const ex = IRT_CURRENT.adaptiveQ[i];
+    const ua = USER_ANSWERS[ex.id];
+    if (ua) {
+      const correct = gradeOneEx(ex, ua);
+      onAnswerRecorded(ex.id, correct);  // 触发 IRT 调整下一题
+    } else {
+      // 未答 = 错, 直接 push answers 但不调 onAnswerRecorded (因为是未答,不需要再调)
+      IRT_CURRENT.answers.push({ ex, correct: false, difficulty: ex.difficulty || 3 });
+      IRT_CURRENT.step = i + 1;
+    }
+  }
+  // 算分
+  const r = gradeIRT();
+  // 走诊断逻辑 (跟 V4.0.2 一致)
+  const concept = getConceptById(SELECTED_CONCEPT);
+  const scorePct = r.scorePct;
+  const d = concept.difficulty || 3;
+  const th = DIFFICULTY_THRESHOLDS[d] || DIFFICULTY_THRESHOLDS[3];
+  let status;
+  if (scorePct < th.weak) status = '薄弱';
+  else if (scorePct < th.consolidate) status = '巩固';
+  else status = '已掌握';
+  // BFS 找先决链 (跟 V4.0.2 一致)
+  const adjTo = buildAdjTo();
+  const prereqDist = bfsPrereqsWithDepth(SELECTED_CONCEPT, adjTo);
+  const prereqNodes = Object.entries(prereqDist).map(([id, dist]) => {
+    const n = getConceptById(id);
+    return n ? { id, title: n.title, distance: dist, difficulty: n.difficulty, subject: n.subject } : null;
+  }).filter(Boolean);
+  const recommendPath = prereqNodes
+    .sort((a, b) => (a.distance - b.distance) || ((a.difficulty || 3) - (b.difficulty || 3)))
+    .slice(0, 7);
+  const weakConcepts = prereqNodes.filter(n => (n.difficulty || 3) <= d);
+  const subjCn = SUBJECT_CN[concept.subject] || '';
+  const gradeRange = `${concept.grade_start || '?'}-${concept.grade_end || '?'}`;
+  // 走 buildHumanExplanation 拿 status_emoji
+  const explain = buildHumanExplanation(status, scorePct, concept.title, subjCn, gradeRange, d, recommendPath, concept);
+  const result = {
+    concept_id: SELECTED_CONCEPT,
+    concept_title: concept.title,
+    subject: concept.subject,
+    score: r.score,
+    score_pct: scorePct,
+    weighted_pct: r.weightedPct,
+    status,
+    difficulty: d,
+    weak_threshold: th.weak,
+    consolidate_threshold: th.consolidate,
+    weak_concepts: weakConcepts,
+    recommend_path: recommendPath,
+    human_explanation: explain,
+    irt: {
+      maxQ: r.answers.length,
+      adaptiveQ: IRT_CURRENT.adaptiveQ.map(e => ({id: e.id, difficulty: e.difficulty})),
+      answers: r.answers.map(a => ({ex_id: a.ex.id, correct: a.correct, difficulty: a.difficulty})),
+    },
+  };
+  recordHistoryAndRender(result, 'test');
+}
+window.submitIRTStep = submitIRTStep;
+
+// 评 1 道题
+function gradeOneEx(ex, ua) {
+  const toStr = v => v == null ? '' : (Array.isArray(v) ? v.join('|') : String(v));
+  const norm = s => toStr(s).replace(/[\s，。、,.!?！？;：:：]/g, '').toLowerCase();
+  if (!ua) return false;
+  if (ex.type === 'multiple_choice') {
+    const correct = toStr(ex.answer).trim().toUpperCase();
+    return toStr(ua.value).trim().toUpperCase() === correct;
+  } else if (ex.type === 'fill_blank') {
+    const candidates = Array.isArray(ex.answer) ? ex.answer : [ex.answer];
+    const user = norm(ua.value);
+    if (!user) return false;
+    return candidates.some(c => {
+      const cN = norm(c);
+      return user === cN || user.includes(cN) || cN.includes(user);
+    });
+  } else {
+    return toStr(ua.value).trim().length > 5;
+  }
+}
+
+// V4.0.5: 包装原 selectChoice / setFillAnswer / setShortAnswer, 触发 IRT 动态调整
+// 原始定义在文件下面, 这里重写
+window._origSelectChoice = null;
 
 function renderQuestion(ex, i) {
   const num = i + 1;
@@ -795,9 +1028,19 @@ window.selectChoice = function(exId, letter) {
   const sel = card.querySelector(`.q-opt[data-letter="${letter}"]`);
   if (sel) sel.classList.add('selected');
   USER_ANSWERS[exId] = { type: 'choice', value: letter };
+  // V4.0.5 IRT: 答完 1 题后自动调整下一题
+  if (IRT_CURRENT) {
+    const ex = IRT_CURRENT.adaptiveQ[IRT_CURRENT.step];
+    if (ex && ex.id === exId) {
+      const correct = gradeOneEx(ex, USER_ANSWERS[exId]);
+      onAnswerRecorded(exId, correct);
+    }
+  }
 };
 window.setFillAnswer = function(exId, val) {
   USER_ANSWERS[exId] = { type: 'fill', value: val };
+  // V4.0.5 IRT: 填空题在用户输入时只记录答案, 不立即判 (需要"提交"或"答完"才评)
+  // 简化: 填空题答完一题触发时机难定, 让 submitIRTStep 统一评
 };
 window.setShortAnswer = function(exId, val) {
   USER_ANSWERS[exId] = { type: 'short', value: val };
