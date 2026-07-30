@@ -94,23 +94,34 @@ def parse_duration(s):
     return None
 
 
-def fetch_bilibili_api(keyword, max_results=20):
+def fetch_bilibili_api(keyword, max_results=20, retries=2):
     """用 B 站 API 端点, 返 video 块 [{bvid, title, author, duration, play, description, tag, arcurl}]"""
     url = f'https://api.bilibili.com/x/web-interface/search/all/v2?keyword={urllib.parse.quote(keyword)}'
-    req = urllib.request.Request(url, headers={
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Referer': 'https://www.bilibili.com',
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
-    })
-    try:
-        resp = urllib.request.urlopen(req, timeout=12)
-        data = json.loads(resp.read().decode('utf-8', errors='ignore'))
-    except Exception as e:
-        return [], f'fetch failed: {e}'
-
-    if data.get('code') != 0:
-        return [], f'api code: {data.get("code")} {data.get("message")}'
+    last_err = None
+    for attempt in range(retries + 1):
+        req = urllib.request.Request(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer': 'https://www.bilibili.com',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Origin': 'https://www.bilibili.com',
+        })
+        try:
+            resp = urllib.request.urlopen(req, timeout=12)
+            data = json.loads(resp.read().decode('utf-8', errors='ignore'))
+            if data.get('code') != 0:
+                return [], f'api code: {data.get("code")} {data.get("message")}'
+            # 成功
+            break
+        except Exception as e:
+            last_err = f'fetch failed (attempt {attempt+1}): {e}'
+            # 412 限速时多等
+            if '412' in str(e) or '429' in str(e):
+                time.sleep(3 + attempt * 2)
+            else:
+                time.sleep(0.5)
+    else:
+        return [], last_err
 
     videos = []
     for r in data.get('data', {}).get('result', []):
@@ -434,10 +445,10 @@ def main():
         else:
             print('✗ no result')
             failed.append(concept)
-        # 每 20 个写盘
-        if (len(results) - len(existing)) % 20 == 0 and results:
+        # 每 10 个写盘 (频繁一些, 避免 crash 丢失)
+        if (len(results) - len(existing)) % 10 == 0 and results:
             save(results, len(existing), len(results) - len(existing), len(failed), fallback_count)
-        time.sleep(0.4)
+        time.sleep(1.2)  # 慢一点避免 412 限速
 
     save(results, len(existing), len(results) - len(existing), len(failed), fallback_count)
     print(f'\n=== 完成 ===')
