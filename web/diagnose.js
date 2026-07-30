@@ -66,6 +66,7 @@ let QUICK_SCORE = 60;   // slider 默认 60
 
 // V4.1 多学科模式 (test.html 跳过来)
 let MULTI_MODE = null;  // { subjects: [], stage, grade, count }
+let MULTI_EXS = [];     // 当前混合题列表 (subject 来自 concept_id 前缀)
 
 // 学科 ID 前缀 → 学科 key (从 concept_id 推)
 function subjFromConceptId(cid) {
@@ -83,11 +84,78 @@ function subjFromConceptId(cid) {
   return map[prefix] || null;
 }
 
-// 年级 (M_G4_GM_08 → 4)
+// 概念 id → 该题适合的"代表年级" (用 GRAPH.nodes 查 grade_start/grade_end, 不依赖 ID 格式)
 function gradeFromConceptId(cid) {
   if (!cid) return null;
-  const m = cid.match(/^M?_?G(\d+)_/);
-  return m ? parseInt(m[1], 10) : null;
+  const n = getConceptById(cid);
+  if (!n) return null;
+  // 优先用 grade_start (节点的"起始年级"), 4 年级就匹配 grade_start <= 4 <= grade_end
+  // 这里返回"该概念主要归属的年级": grade_start
+  return n.grade_start || null;
+}
+
+// 概念 id → 该题是否适合给定年级 (用 grade_start/grade_end 范围匹配, 兼容 chinese stage 字段)
+function conceptMatchesGrade(cid, grade) {
+  if (!grade) return true;  // 没指定 grade 不过滤
+  const n = getConceptById(cid);
+  if (!n) return false;
+  // 数学/物理/化学等: grade_start / grade_end 字段 (1-12)
+  if (n.grade_start && n.grade_end) {
+    return grade >= n.grade_start && grade <= n.grade_end;
+  }
+  // chinese/english 等: stage 字段 (1=1-2, 2=3-4, 3=5-6, 4=7-9)
+  if (n.stage) {
+    // 4 年级 → 包含在 stage 2 (3-4) 或 stage 1 (1-2) 的话... 直接把 grade 转 stage 反向查
+    // 实际: 4 年级 → stage 2 (3-4), 7 年级 → stage 4 (7-9)
+    // 这里粗略: grade 落在该 stage 对应的范围内
+    const stageRanges = { 1: [1, 2], 2: [3, 4], 3: [5, 6], 4: [7, 9] };
+    const r = stageRanges[n.stage];
+    return r ? grade >= r[0] && grade <= r[1] : true;
+  }
+  return true;  // 没有 grade 信息的不过滤
+}
+
+// V4.1.1 多学科抽题: 按学科均匀抽 N 道 (用 quick pick 概念池优先, 不足时用全部)
+function pickMultiExercises(subjects, count, grade) {
+  // 每学科目标题数: 平均分配, 前几个学科 +1
+  // 例 count=5 subjects=2 → [3, 2]; count=10 subjects=3 → [4, 3, 3]
+  const base = Math.floor(count / subjects.length);
+  const extra = count - base * subjects.length;
+  const perCounts = subjects.map((_, i) => base + (i < extra ? 1 : 0));
+  const out = [];
+  subjects.forEach((subj, idx) => {
+    const perSubj = perCounts[idx];
+    // 该学科的所有题 (优先用该年级, 不足时 fallback 到全学科)
+    let pool = EXERCISES.filter(e => subjFromConceptId(e.concept_id) === subj);
+    if (grade) {
+      const gradePool = pool.filter(e => conceptMatchesGrade(e.concept_id, grade));
+      if (gradePool.length >= perSubj) pool = gradePool;
+      // 否则保留全学科池 (题不够时兜底)
+    }
+    // 按 concept_id 均匀: 每概念先抽 1, 不足时再每概念抽 2...
+    const byCid = {};
+    pool.forEach(e => {
+      if (!byCid[e.concept_id]) byCid[e.concept_id] = [];
+      byCid[e.concept_id].push(e);
+    });
+    const cids = Object.keys(byCid);
+    const picked = [];
+    for (let round = 0; picked.length < perSubj && round < 5; round++) {
+      // 每轮: 每个未用完的概念抽 1 题
+      let added = false;
+      for (const cid of cids) {
+        if (picked.length >= perSubj) break;
+        if (byCid[cid].length > round) {
+          picked.push(byCid[cid][round]);
+          added = true;
+        }
+      }
+      if (!added) break;  // 所有概念都没题了
+    }
+    out.push(...picked);
+  });
+  // 打乱顺序
+  return out.sort(() => Math.random() - 0.5).slice(0, count);
 }
 
 // --- 工具 ---
@@ -308,12 +376,245 @@ function renderMultiLanding() {
   c.innerHTML = `
     <div class="multi-chip" style="background: var(--primary-soft, #e6f5ee); border: 1px solid var(--primary, #00875a); color: var(--primary, #00875a); padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 16px;">📚 多学科模式 · ${esc(stageNm)} ${mm.grade || '?'} 年级 · ${esc(subjList)} · ${mm.count} 道题</div>
     <h2>${mm.count} 道题找出薄弱在哪儿</h2>
-    <p class="lead">你先选了 ${mm.subjects.length} 个学科。先测 [${SUBJECT_CN[firstQuick.reason] || firstQuick.reason}] 的 "${esc(concept ? concept.title : firstQuick.id)}",5 道题测完后会帮你列各学科的薄弱清单。</p>
+    <p class="lead">按 ${mm.subjects.length} 个学科均匀出题 (每学科 ${Math.floor(mm.count / mm.subjects.length)} 道)。答完会按学科分组告诉你每个学科的薄弱状态。</p>
     <div class="quick-pick" style="margin-top: 24px;">
-      <button class="btn" style="background: var(--primary, #00875a); color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;" onclick="pickConcept('${firstQuick.id}')">开始测试 ${SUBJECT_CN[firstQuick.reason] || firstQuick.reason} · "${esc(concept ? concept.title : firstQuick.id)}" →</button>
-      <button class="btn" style="background: transparent; color: var(--text-2, #4a4a4a); border: 1px solid var(--border, #e8e0cc); padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-left: 8px;" onclick="renderStep1()">换学科/概念</button>
+      <button class="btn" style="background: var(--primary, #00875a); color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;" onclick="startMultiTest()">开始 ${mm.count} 道题测试 →</button>
+      <button class="btn" style="background: transparent; color: var(--text-2, #4a4a4a); border: 1px solid var(--border, #e8e0cc); padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-left: 8px;" onclick="window.location.href='./test.html'">重选学段/学科</button>
     </div>
-    <p style="color: var(--text-3, #8a8a8a); font-size: 12px; margin-top: 24px;">⏳ 这次先帮你测第一个学科。测完后可点"换学科/概念"再测下一个,把各学科的薄弱都收齐。</p>
+  `;
+}
+
+// V4.1.1 多学科模式: 选学科+年级+题数 → 抽混合题 → step2
+function startMultiTest() {
+  if (!MULTI_MODE) { renderStep1(); return; }
+  const { subjects, count, grade } = MULTI_MODE;
+  MULTI_EXS = pickMultiExercises(subjects, count, grade);
+  if (MULTI_EXS.length < count) {
+    // 题不够, 提示用户
+    const c = document.getElementById('content');
+    c.innerHTML = `<div class="err">混合题抽取不足 (需要 ${count} 道, 实际 ${MULTI_EXS.length} 道)。请先回 test.html 减少学科数或题数。</div>`;
+    return;
+  }
+  USER_ANSWERS = {};
+  renderMultiStep2();
+}
+
+// V4.1.1 多学科模式 step2: 混合题展示, 每题带学科 chip
+function renderMultiStep2() {
+  setStep(2);
+  const c = document.getElementById('content');
+  c.className = 'container step2';
+  const mm = MULTI_MODE;
+  const subjList = mm.subjects.map(s => SUBJECT_CN[s] || s).join(' + ');
+  c.innerHTML = `
+    <div class="multi-chip" style="background: var(--primary-soft, #e6f5ee); border: 1px solid var(--primary, #00875a); color: var(--primary, #00875a); padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 16px;">📚 多学科 · ${esc(subjList)} · ${MULTI_EXS.length} 道</div>
+    <h2>${MULTI_EXS.length} 道题混合测试</h2>
+    <p class="lead">// 每道题可能来自不同学科, 看学科 chip 判断. 客观题自动判分, 简答题只计"答了没".</p>
+    <div id="q-list">
+      ${MULTI_EXS.map((ex, i) => renderMultiQuestion(ex, i)).join('')}
+    </div>
+    <div class="actions">
+      <button class="btn secondary" onclick="backToMultiLanding()">← 重选学段/学科</button>
+      <button class="btn" onclick="submitMultiTest()">提交混合题 →</button>
+    </div>
+  `;
+}
+
+// V4.1.1 多学科模式: 单题渲染,带学科 chip
+function renderMultiQuestion(ex, i) {
+  const num = i + 1;
+  const typeLabel = TYPE_LABEL[ex.type] || ex.type;
+  const typeClass = TYPE_CLASS[ex.type] || 'short';
+  const subj = subjFromConceptId(ex.concept_id);
+  const subjCn = SUBJECT_CN[subj] || '';
+  const subjColor = PALETTE[subj] || '#888';
+  const concept = getConceptById(ex.concept_id);
+  const conceptName = concept ? concept.title : ex.concept_id;
+  const diff = ex.difficulty ? `<span class="q-diff d${ex.difficulty}">难 ${esc(ex.difficulty)}</span>` : '';
+  const real = ex.is_real_exam ? `<span class="q-real">📋 真题</span>` : '';
+  const bloom = ex.bloom ? `<span class="q-bloom">${esc(ex.bloom)}</span>` : '';
+  let input = '';
+  if (ex.type === 'multiple_choice' && ex.options) {
+    let opts;
+    if (typeof ex.options === 'string') {
+      try { opts = JSON.parse(ex.options); } catch (e) { opts = []; }
+    } else if (Array.isArray(ex.options)) {
+      opts = ex.options;
+    } else {
+      opts = [];
+    }
+    const stripPrefix = (s, j) => {
+      const expected = String.fromCharCode(65 + j) + '.';
+      if (typeof s === 'string' && s.startsWith(expected)) return s.slice(expected.length).trim();
+      return s;
+    };
+    input = `<div class="q-options">
+      ${opts.map((opt, j) => {
+        const letter = String.fromCharCode(65 + j);
+        return `<div class="q-opt" data-exid="${esc(ex.id)}" data-letter="${letter}" onclick="selectChoice('${esc(ex.id)}', '${letter}')">
+          <span class="letter">${letter}.</span>
+          <span>${esc(stripPrefix(opt, j))}</span>
+        </div>`;
+      }).join('')}
+    </div>`;
+  } else if (ex.type === 'fill_blank') {
+    input = `<input type="text" class="q-fill-input" data-exid="${esc(ex.id)}" placeholder="输入你的答案…" oninput="setFillAnswer('${esc(ex.id)}', this.value)">`;
+  } else {
+    input = `<textarea class="q-ta" data-exid="${esc(ex.id)}" placeholder="简要写出你的思路/答案… (简答题只计'答了没', 不判分)" oninput="setShortAnswer('${esc(ex.id)}', this.value)"></textarea>`;
+  }
+  return `<div class="q-card" id="qcard-${esc(ex.id)}">
+    <div class="q-head">
+      <span class="q-num">Q${num}</span>
+      <span class="q-subj-chip" style="background: ${subjColor}; color: #fff; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700;">${esc(subjCn)}</span>
+      <span class="q-type ${typeClass}">${esc(typeLabel)}</span>
+      <span class="q-concept">${esc(conceptName)}</span>
+      ${bloom}${diff}${real}
+    </div>
+    <div class="q-question">${esc(ex.question)}</div>
+    ${input}
+  </div>`;
+}
+
+function backToMultiLanding() {
+  renderMultiLanding();
+}
+
+// V4.1.1 多学科模式: 评分
+function gradeMultiAnswers() {
+  const toStr = v => v == null ? '' : (Array.isArray(v) ? v.join('|') : String(v));
+  const norm = s => toStr(s).replace(/[\s，。、,.!?！？;；:：]/g, '').toLowerCase();
+  return MULTI_EXS.map(ex => {
+    const ua = USER_ANSWERS[ex.id];
+    if (!ua) return false;
+    if (ex.type === 'multiple_choice') {
+      const correct = toStr(ex.answer).trim().toUpperCase();
+      return toStr(ua.value).trim().toUpperCase() === correct;
+    } else if (ex.type === 'fill_blank') {
+      const candidates = Array.isArray(ex.answer) ? ex.answer : [ex.answer];
+      const user = norm(ua.value);
+      if (!user) return false;
+      return candidates.some(c => {
+        const cN = norm(c);
+        return user === cN || user.includes(cN) || cN.includes(user);
+      });
+    } else {
+      return toStr(ua.value).trim().length > 5;
+    }
+  });
+}
+
+// V4.1.1 多学科模式: 提交 → 写 history + 错题本 + 渲染按学科分组结果
+function submitMultiTest() {
+  const answers = gradeMultiAnswers();
+  // 写错题本: 每道错题按学科入
+  MULTI_EXS.forEach((ex, i) => {
+    if (answers[i] === false) {
+      const ua = USER_ANSWERS[ex.id] || {};
+      const concept = getConceptById(ex.concept_id);
+      window.HistoryStore.recordWrong({
+        exercise_id: ex.id,
+        concept_id: ex.concept_id,
+        concept_title: concept ? concept.title : '',
+        subject: subjFromConceptId(ex.concept_id) || '',
+        question: ex.question,
+        user_answer: toStrUser(ua.value),
+        correct_answer: toStrCorrect(ex.answer),
+        type: ex.type,
+        difficulty: ex.difficulty,
+        ts: Date.now(),
+      });
+    }
+  });
+  // 写诊断历史: 每学科一份 (用首个答对的 concept_id 作代表)
+  const bySubj = groupBySubject(MULTI_EXS, answers);
+  Object.keys(bySubj).forEach(subj => {
+    const list = bySubj[subj];
+    const correct = list.filter(x => x.correct).length;
+    const total = list.length;
+    const scorePct = Math.round((correct / total) * 100);
+    // 阈值用难度 1 默认 (简化: 多学科统一用 70%)
+    let status = 'mastered';
+    if (scorePct < 50) status = 'weak';
+    else if (scorePct < 70) status = 'consolidate';
+    // 用该学科首道题的 concept_id 作代表
+    const rep = list[0];
+    window.HistoryStore.recordDiagnosis({
+      concept_id: rep.ex.concept_id,
+      concept_title: (getConceptById(rep.ex.concept_id) || { title: SUBJECT_CN[subj] || subj }).title,
+      subject: subj,
+      score: correct,
+      score_pct: scorePct,
+      status: status,
+      entry: 'multi',
+      subjects: MULTI_MODE.subjects,
+    });
+  });
+  renderMultiStep3(answers);
+}
+
+function groupBySubject(exs, answers) {
+  const out = {};
+  exs.forEach((ex, i) => {
+    const subj = subjFromConceptId(ex.concept_id);
+    if (!subj) return;
+    if (!out[subj]) out[subj] = [];
+    out[subj].push({ ex, correct: answers[i] });
+  });
+  return out;
+}
+
+// V4.1.1 多学科模式: 渲染按学科分组结果
+function renderMultiStep3(answers) {
+  setStep(3);
+  const c = document.getElementById('content');
+  c.className = 'container step3';
+  const bySubj = groupBySubject(MULTI_EXS, answers);
+  const subjects = Object.keys(bySubj);
+  // 算每学科 status
+  const subjResults = subjects.map(subj => {
+    const list = bySubj[subj];
+    const correct = list.filter(x => x.correct).length;
+    const total = list.length;
+    const scorePct = Math.round((correct / total) * 100);
+    let status = 'mastered';
+    if (scorePct < 50) status = 'weak';
+    else if (scorePct < 70) status = 'consolidate';
+    return { subj, correct, total, scorePct, status, list };
+  });
+  // 整体 = 最差
+  const STATUS_ORDER = { 'mastered': 3, 'consolidate': 2, 'weak': 1 };
+  const overallStatus = subjResults.reduce((a, b) => STATUS_ORDER[a.status] < STATUS_ORDER[b.status] ? a : b).status;
+  const totalCorrect = subjResults.reduce((s, r) => s + r.correct, 0);
+  const totalAll = subjResults.reduce((s, r) => s + r.total, 0);
+  const overallPct = Math.round((totalCorrect / totalAll) * 100);
+  // 状态中文 + emoji
+  const STATUS_LABEL = { mastered: { cn: '已掌握', emoji: '🎉' }, consolidate: { cn: '巩固', emoji: '👍' }, weak: { cn: '薄弱', emoji: '📌' } };
+  const overall = STATUS_LABEL[overallStatus];
+  // 整体 banner
+  c.innerHTML = `
+    <div class="result-banner ${overallStatus}" style="padding: 32px; border-radius: 12px; text-align: center; margin-bottom: 24px;">
+      <div class="emoji" style="font-size: 56px; line-height: 1; margin-bottom: 12px;">${overall.emoji}</div>
+      <div class="status-text" style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">${overall.cn}</div>
+      <div class="score-big" style="font-size: 16px; color: var(--text-2, #4a4a4a);">多学科 ${subjects.length} 个 · ${totalCorrect}/${totalAll} (${overallPct}%)</div>
+    </div>
+    <div class="explanation" style="background: var(--bg-elevated, #fff); border: 1px solid var(--border, #e8e0cc); border-radius: 10px; padding: 20px 24px; margin-bottom: 20px;">
+      <h3 style="font-size: 14px; color: var(--text-2, #4a4a4a); margin-bottom: 12px;">// 按学科分组结果</h3>
+      ${subjResults.map(r => {
+        const subjCn = SUBJECT_CN[r.subj] || r.subj;
+        const subjColor = PALETTE[r.subj] || '#888';
+        const st = STATUS_LABEL[r.status];
+        return `<div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border, #e8e0cc);">
+          <span style="background: ${subjColor}; color: #fff; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; min-width: 60px; text-align: center;">${esc(subjCn)}</span>
+          <span style="font-size: 18px;">${st.emoji}</span>
+          <span style="font-size: 16px; font-weight: 700;">${st.cn}</span>
+          <span style="font-size: 13px; color: var(--text-3, #8a8a8a); margin-left: auto;">${r.correct}/${r.total} (${r.scorePct}%)</span>
+        </div>`;
+      }).join('')}
+    </div>
+    <div class="actions" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <button class="btn" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--primary, #00875a); color: #fff; border: 1px solid var(--primary, #00875a); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./test.html'">再测一次 (换学段/学科)</button>
+      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./wrongbook.html'">看错题本 →</button>
+    </div>
   `;
 }
 
