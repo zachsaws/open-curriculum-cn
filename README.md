@@ -255,7 +255,15 @@ open-curriculum-cn/
 - [x] **V4.0.3**: 诊断历史 + 错题本 + 全 14 学科 — localStorage 持久化 (history/wrongbook 2 store) + 错题本页 (重做/移除) + 19 个全学科 quick pick + 诊断结果页加历史区 + 修 2 bug (JSON.parse/list 适配)
 - [x] **V4.0.4**: 完整 canvas 进度趋势图 (替换 V4.0.3 占位) + 个性化推荐 (B 站 18 条手挑真实视频 + 人教版教材 + Khan Academy) — 19 quick pick 概念静态推荐表 + 长尾 1887 概念走 B 站搜索 fallback + trend.js / rec.js 独立文件避 V4.0.3 syntax 坑
 - [x] **V4.1**: 全站 V4.1 浅色风 (Brilliant 风: 米黄 #faf6ee + 深色 #0a0d18 + V4.1 primary 绿 #00875a) — 主页 14 学科加 emoji icon + 双 CTA (5 分钟测出 + 备一节课) + 新加 test.html (3 步选学段+学科+题数) + 5 核心页 (explore/funnel/diagnose/exercise/wrongbook) 浅色 + 3D 球/漏斗 canvas 内部米黄底 + diagnose 多学科模式 (test.html 跳转目标) + 视频 frame 装饰 + funnel 详情面板文字对比度修复 + 14 学科卡 hover 上移 + V4.1 主页存 /preview/, 根 /index.html 留 V3.6 对比
-- [ ] **V4.0.5** (候选): 多学科"按学科均匀出题 + 分组结果" + PDF 报告导出 + IRT 自适应难度 + 7 天复习计划 + 错题本重做模式 + 200 高频概念手挑真实 B 站视频
+- [x] **V4.1.1 phase 1.1**: 录 V4.1 浅色版演示视频 (Playwright headless 录屏 + ffmpeg 转 mp4/gif + 抽关键帧做 poster)
+- [x] **V4.1.1 phase 1.2**: 跨学科混合题闭环 (test.html 选学段+学科+题数 → diagnose 多学科模式, 按学科均匀出题 [3+2] + 按学科分组结果 + grade 过滤, 答对自动移除)
+- [x] **V4.1.1 phase 1.3**: 移动端响应式 (5 核心页 + 主页 + test.html 加 @media (max-width: 480px), 375x812 mobile 无水平滚动, 错题本 hero 不压, 3D 球加桌面访问提示)
+- [x] **V4.1.1 phase 1.4**: 根 / 覆盖 V4.1 (dev 预览结束, web/index.html + web/test.html 落地, 保留 web/preview/ 作为历史快照)
+- [x] **V4.0.5 phase 2.1**: PDF 报告导出 (window.print() + @media print CSS, 诊断 step3 + 错题本主页加 🖨 导出 PDF 按钮, 报告头部 ::before + 尾部 ::after 注入)
+- [x] **V4.0.5 phase 2.2**: IRT 自适应难度 (5 题动态换题, 答对→更难题 / 答错→更易题, 加权算分, 阈值 80/70/60/50% 按 difficulty 1-5)
+- [x] **V4.0.5 phase 2.3**: 7 天复习计划 (基于 history 里的薄弱/巩固概念, 每天 3 个, 7 天日程, 兼容 status 中英文, 可导出 PDF)
+- [x] **V4.0.5 phase 2.4**: 错题本重做模式 (错题卡按 exercise_id 找原题, 答对自动从错题本移除, 反馈条 + 解释 + 3 状态 banner)
+- [ ] **V4.0.5 phase 2.5**: 200 高频概念手挑真实 B 站视频 (3-5 天, 天祥手挑数据) — 候选清单见 docs/v412_video_picks.csv + 挑选指南 docs/V412_VIDEO_PICKS_GUIDE.md
 - [ ] **V4.0 短期 (3 个月)**:
   - 知乎/公众号文章（让老师/教研员/家长知道这玩意）
   - 演示视频/GIF（让 5 秒看懂）
