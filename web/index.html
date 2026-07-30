@@ -3,661 +3,468 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="中国 1906 个小学到初中概念的「学之前要会什么 / 学之后能学什么」图谱。教育部 2022 最新课标, 14 个学科全覆盖, 开源免费。">
+<meta name="description" content="按教育部 2022 义教课标整理, 全 14 学科 1906 概念的知识图谱。免费开源, 家长/老师/学生都能用。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="每一步学什么, 之前漏了哪一步 · 中国 K12 学习路径图谱">
+<meta property="og:title" content="中国 K12 知识的「地图」· 按 2022 课标整理">
 <meta property="og:description" content="1906 概念 · 4736 条学习路径 · 14 学科全覆盖。基于教育部 2022 最新课标, 开源免费。">
 <meta property="og:image" content="./data/og-sphere.png">
-<title>每一步学什么, 之前漏了哪一步 · 中国 K12 学习路径图谱</title>
+<title>中国 K12 知识的「地图」· 按 2022 课标整理</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 100%; min-height: 100%; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: #0a0d18; color: #e6e9f2; line-height: 1.6; }
-  a { color: #6b8cff; text-decoration: none; }
-  a:hover { color: #a5b8f5; }
-  :focus-visible { outline: 2px solid #6b8cff; outline-offset: 2px; border-radius: 4px; }
-
-  /* === 顶部 nav === */
-  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(16px); background: rgba(10, 13, 24, 0.85); border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
-  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
-  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; }
-  .logo .badge { width: 28px; height: 28px; border-radius: 6px; background: linear-gradient(135deg, #6b8cff 0%, #c4a5ff 100%); display: grid; place-items: center; font-size: 14px; }
-  .nav-links { display: flex; gap: 24px; font-size: 14px; }
-  .nav-links a { color: #8a92a8; }
-  .nav-links a:hover { color: #e6e9f2; }
-
-  /* === Hero === */
-  .hero { max-width: 1200px; margin: 0 auto; padding: 100px 24px 60px; text-align: center; }
-  .hero h1 { font-size: clamp(36px, 5vw, 60px); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; background: linear-gradient(135deg, #e6e9f2 0%, #a5b8f5 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 24px; }
-  .hero .sub { font-size: clamp(16px, 2vw, 20px); color: #8a92a8; max-width: 700px; margin: 0 auto 40px; }
-  .hero .sub strong { color: #e6e9f2; font-weight: 600; }
-
-  /* === CTA === */
-  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
-  /* === 我家孩子几岁 (V3.6.8) === */
-  .grade-picker { max-width: 720px; margin: 40px auto 0; }
-  .grade-picker .label { color: #a5b8f5; font-size: 14px; font-weight: 500; margin-bottom: 12px; letter-spacing: 0.05em; text-align: center; }
-  .grade-buttons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
-  .grade-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 68px; height: 44px; padding: 0 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; color: #fff; font-size: 15px; font-weight: 600; text-decoration: none; transition: all 0.15s; }
-  .grade-btn:hover { background: rgba(107,140,255,0.15); border-color: rgba(107,140,255,0.4); transform: translateY(-1px); }
-  .grade-btn:active { background: rgba(107,140,255,0.25); }
-  .grade-hint { color: #5a6278; font-size: 12px; margin-top: 12px; text-align: center; }
-  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; font-family: inherit; }
-  .btn-primary { background: #6b8cff; color: #fff; }
-  .btn-primary:hover { background: #4f75ee; color: #fff; transform: translateY(-1px); }
-  .btn-ghost { background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.12); color: #e6e9f2; }
-  .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
-  .btn .arrow { font-size: 18px; line-height: 1; }
-
-  /* === 通用 section === */
-  .section { max-width: 1200px; margin: 0 auto; padding: 60px 24px; }
-  .section h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
-  .section .sub { font-size: 15px; color: #8a92a8; margin-bottom: 32px; }
-
-  /* === 4 句对仗 (它能做什么) === */
-  .values-section { background: rgba(255, 255, 255, 0.02); padding: 80px 24px; }
-  /* === 使用故事 (V3.6.9) === */
-  .stories-section { padding: 80px 24px; background: linear-gradient(180deg, rgba(107,140,255,0.04) 0%, rgba(0,0,0,0) 100%); }
-  .stories-section .inner { max-width: 1100px; margin: 0 auto; }
-  .stories-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
-  .stories-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
-  .stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  @media (max-width: 720px) { .stories-grid { grid-template-columns: 1fr; } }
-  .story-card { padding: 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; display: flex; flex-direction: column; gap: 12px; }
-  .story-card .avatar { font-size: 36px; line-height: 1; }
-  .story-card .role { font-size: 11px; color: #6b8cff; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-  .story-card .quote { font-size: 15px; color: #dde4f5; line-height: 1.7; font-style: italic; }
-  .story-card .name { font-size: 12px; color: #5a6278; }
-  .story-card .placeholder { color: #6b8cff; font-size: 11px; padding: 2px 8px; background: rgba(107,140,255,0.1); border-radius: 4px; align-self: flex-start; }
-  .story-card .meta { display: flex; flex-wrap: wrap; gap: 6px; }
-  .story-card .tag { font-size: 10px; padding: 3px 8px; background: rgba(107,140,255,0.12); color: #a5b8f5; border-radius: 4px; }
-  .story-card .pain { font-size: 12px; color: #ff9f8b; padding: 8px 10px; background: rgba(255,107,107,0.06); border-left: 3px solid #ff6b6b; border-radius: 4px; line-height: 1.5; }
-  .story-card .fix { font-size: 12px; color: #a5c4ff; padding: 8px 10px; background: rgba(107,140,255,0.06); border-left: 3px solid #6b8cff; border-radius: 4px; line-height: 1.5; }
-  .story-card .result { font-size: 13px; color: #7bc96f; padding: 8px 10px; background: rgba(123,201,111,0.06); border-left: 3px solid #7bc96f; border-radius: 4px; line-height: 1.5; font-weight: 600; }
-  .story-card .disclaimer { font-size: 10px; color: #5a6278; padding-top: 4px; border-top: 1px solid rgba(255,255,255,0.04); margin-top: 4px; }
-  /* === 合作 (V3.6.9) === */
-  .partner-section { padding: 80px 24px; background: rgba(255,255,255,0.02); }
-  .partner-section .inner { max-width: 1100px; margin: 0 auto; }
-  .partner-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
-  .partner-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
-  .partner-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  @media (max-width: 720px) { .partner-grid { grid-template-columns: 1fr; } }
-  .partner-card { padding: 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; }
-  .partner-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #fff; }
-  .partner-card p, .partner-card li { font-size: 14px; color: #a5b8f5; line-height: 1.7; }
-  .partner-card ol, .partner-card ul { padding-left: 20px; }
-  .partner-card .price { font-size: 24px; font-weight: 800; color: #6b8cff; margin: 8px 0; }
-  .partner-card .contact { padding: 12px; background: rgba(107,140,255,0.08); border: 1px solid rgba(107,140,255,0.2); border-radius: 8px; margin-top: 16px; font-size: 13px; }
-  .partner-card .contact a { color: #6b8cff; text-decoration: none; font-weight: 600; }
-  /* === 邮件订阅 (V3.6.9) === */
-  .subscribe-section { padding: 60px 24px; background: linear-gradient(180deg, rgba(107,140,255,0.05) 0%, rgba(0,0,0,0) 100%); }
-  .subscribe-section .inner { max-width: 700px; margin: 0 auto; text-align: center; }
-  .subscribe-section h2 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
-  .subscribe-section .sub { font-size: 14px; color: #8a92a8; margin-bottom: 24px; }
-  .subscribe-form { display: flex; gap: 8px; max-width: 480px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
-  .subscribe-form input { flex: 1; min-width: 200px; padding: 12px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-size: 14px; font-family: inherit; outline: none; }
-  .subscribe-form input:focus { border-color: #6b8cff; }
-  .subscribe-form button { padding: 12px 24px; background: #6b8cff; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; }
-  .subscribe-form button:hover { background: #5a7ce8; }
-  .subscribe-status { margin-top: 12px; font-size: 13px; min-height: 18px; }
-  .values-section .inner { max-width: 1200px; margin: 0 auto; }
-  .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  @media (max-width: 900px) { .value-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 480px) { .value-grid { grid-template-columns: 1fr; } }
-  .value { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 24px; transition: all 0.15s; }
-  .value:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(107, 140, 255, 0.4); }
-  .value .emoji { font-size: 36px; margin-bottom: 12px; }
-  .value h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
-  .value p { font-size: 13px; color: #8a92a8; margin-bottom: 14px; line-height: 1.6; }
-  .value a { font-size: 13px; color: #6b8cff; }
-
-  /* === 视图预览 === */
-  .previews { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .preview { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 32px; transition: all 0.15s; cursor: pointer; display: block; color: inherit; }
-  .preview:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(107, 140, 255, 0.4); transform: translateY(-2px); }
-  .preview h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
-  .preview .icon { font-size: 32px; margin-bottom: 12px; }
-  .preview p { font-size: 14px; color: #8a92a8; }
-  .preview .meta { font-size: 12px; color: #6b8cff; margin-top: 16px; font-family: "SF Mono", monospace; }
-
-  @media (max-width: 700px) {
-    .previews { grid-template-columns: 1fr; }
+  /* === Brilliant 风色彩 (浅色米黄 + 深绿 CTA) === */
+  :root {
+    --bg: #faf6ee;
+    --bg-elevated: #ffffff;
+    --bg-tinted: #f0e9da;
+    --text: #0a0d18;
+    --text-2: #4a4a4a;
+    --text-3: #8a8a8a;
+    --border: #e8e0cc;
+    --primary: #00875a;       /* Brilliant 绿 */
+    --primary-hover: #007048;
+    --primary-soft: #e6f5ee;
+    --accent: #ffce4f;         /* 黄 */
+    --math: #5b8def;
+    --chinese: #ef6b5b;
+    --english: #7bc96f;
+    --physics: #ba68c8;
+    --chemistry: #26a69a;
+    --biology: #66bb6a;
+    --history: #8d6e63;
+    --geography: #42a5f5;
+    --morality_law: #ec407a;
+    --science: #f9a825;
+    --info_tech: #26c6da;
+    --art: #ab47bc;
+    --pe_health: #ff7043;
+    --labor: #9ccc65;
+    --integrated: #78909c;
   }
 
-  /* === 学科树 === */
-  .tree-section { background: rgba(255, 255, 255, 0.02); padding: 60px 24px; }
-  .tree-section h2 { max-width: 1200px; margin: 0 auto 12px; }
-  .tree-section .sub { max-width: 1200px; margin: 0 auto 32px; }
-  .tree { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  @media (max-width: 1100px) { .tree { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 800px) { .tree { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 500px) { .tree { grid-template-columns: 1fr; } }
-  .tree-card { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 18px; cursor: pointer; transition: all 0.15s; color: inherit; display: block; }
-  .tree-card:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(107, 140, 255, 0.4); }
-  .tree-card .head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
-  .tree-card .sw { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-  .tree-card .nm { font-size: 15px; font-weight: 700; }
-  .tree-card .ct { font-size: 11px; color: #8a92a8; font-family: "SF Mono", monospace; margin-left: auto; }
-  .tree-card .stages { font-size: 11px; color: #5a6278; margin-top: 8px; }
-  .tree-card .stage { display: inline-block; padding: 2px 8px; background: rgba(255, 255, 255, 0.04); border-radius: 3px; margin-right: 4px; font-family: "SF Mono", monospace; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; min-height: 100%; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  a { color: var(--text); text-decoration: none; }
+  a:hover { color: var(--primary); }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
 
-  /* === Trust 数字 (为什么可信) === */
-  .trust-section { padding: 60px 24px; }
-  .trust-section .inner { max-width: 1200px; margin: 0 auto; text-align: center; }
-  .trust-section h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
-  .trust-section .sub { font-size: 14px; color: #8a92a8; margin-bottom: 32px; }
-  .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  @media (max-width: 600px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
-  .trust-card { padding: 24px 16px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 8px; }
-  .trust-card .v { font-size: 32px; font-weight: 800; color: #6b8cff; line-height: 1; margin-bottom: 8px; }
-  .trust-card .l { font-size: 12px; color: #8a92a8; }
+  /* === Nav (浅色, Brilliant 风格) === */
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(250, 246, 238, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; color: var(--text); }
+  .logo .badge { width: 30px; height: 30px; border-radius: 8px; background: var(--text); color: var(--accent); display: grid; place-items: center; font-size: 14px; font-weight: 800; }
+  .nav-links { display: flex; gap: 24px; font-size: 14px; }
+  .nav-links a { color: var(--text-2); }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta { display: inline-flex; align-items: center; padding: 8px 18px; background: var(--text); color: var(--bg); border-radius: 8px; font-size: 14px; font-weight: 600; }
 
-  /* === 我们不做 === */
-  .not-doing-section { background: rgba(255, 255, 255, 0.02); padding: 80px 24px; }
-  .not-doing-section .inner { max-width: 900px; margin: 0 auto; text-align: center; }
-  .not-doing-section h2 { font-size: 28px; font-weight: 700; margin-bottom: 28px; }
-  .not-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 32px; }
-  .not-list span { padding: 10px 20px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; font-size: 14px; color: #8a92a8; background: rgba(255, 255, 255, 0.02); }
-  .not-one-liner { font-size: 18px; color: #e6e9f2; margin-bottom: 16px; line-height: 1.7; }
-  .not-one-liner strong { color: #6b8cff; font-weight: 700; }
-  .not-source { font-size: 12px; color: #5a6278; }
+  /* === Hero (Brilliant 风: 左大字+视频, 右视频演示) === */
+  .hero { max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 32px; } }
 
-  /* === 30s 概念片 === */
-  .promo-section { padding: 80px 24px; background: linear-gradient(180deg, rgba(107, 140, 255, 0.04) 0%, rgba(0,0,0,0) 100%); }
-  .promo-section .inner { max-width: 1100px; margin: 0 auto; text-align: center; }
-  .promo-section h2 { font-size: 36px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
-  .promo-section .sub { font-size: 16px; color: #8a92a8; margin-bottom: 32px; }
+  .hero-eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 6px 12px; border-radius: 999px; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(40px, 5.5vw, 64px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: var(--text); margin-bottom: 20px; }
+  .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--primary) 0%, var(--math) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .sub { font-size: clamp(16px, 1.8vw, 19px); color: var(--text-2); line-height: 1.6; margin-bottom: 32px; max-width: 540px; }
+  .hero .sub strong { color: var(--text); font-weight: 600; }
 
-  /* === 数据下载 === */
-  .download { max-width: 1200px; margin: 0 auto; padding: 60px 24px; text-align: center; }
-  .download h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
-  .download .sub { font-size: 15px; color: #8a92a8; max-width: 600px; margin: 0 auto 32px; }
-  .download-box { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 32px; max-width: 700px; margin: 0 auto; }
-  .download-box code { display: block; background: rgba(0, 0, 0, 0.4); padding: 16px; border-radius: 6px; font-family: "SF Mono", monospace; font-size: 13px; color: #a5e08c; text-align: left; overflow-x: auto; margin: 16px 0; }
-  .download-box .note { font-size: 12px; color: #5a6278; }
+  /* === 双 CTA (Brilliant 模板: 绿主 + 白次) === */
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .cta-hint { font-size: 13px; color: var(--text-3); margin-bottom: 24px; line-height: 1.5; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 28px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; border: 1.5px solid transparent; transition: all 0.15s; font-family: inherit; }
+  .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 14px rgba(0,135,90,0.25); }
+  .btn-primary:hover { background: var(--primary-hover); color: #fff; transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,135,90,0.35); }
+  .btn-secondary { background: var(--bg-elevated); color: var(--text); border-color: var(--text); }
+  .btn-secondary:hover { background: var(--text); color: var(--bg); }
+  .btn .arrow { font-size: 18px; line-height: 1; }
+
+  .hero-trust { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--text-3); flex-wrap: wrap; }
+  .hero-trust .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--text-3); }
+  .hero-trust .hl { color: var(--text); font-weight: 600; }
+
+  /* === Hero Video (右) === */
+  .hero-video { position: relative; aspect-ratio: 4/3; border-radius: 16px; overflow: hidden; background: var(--bg-elevated); box-shadow: 0 20px 60px rgba(10,13,24,0.15), 0 8px 20px rgba(10,13,24,0.08); border: 1px solid var(--border); padding: 8px 8px 12px; }
+  .video-frame-deco { display: flex; flex-direction: column; gap: 6px; height: 100%; }
+  .deco-bar { display: flex; align-items: center; gap: 5px; padding: 2px 4px 6px; border-bottom: 1px solid var(--border); }
+  .deco-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(10,13,24,0.12); }
+  .deco-dot:nth-child(1) { background: #e07070; }
+  .deco-dot:nth-child(2) { background: #f0c560; }
+  .deco-dot:nth-child(3) { background: #86d49a; }
+  .deco-url { margin-left: 8px; font-size: 11px; color: var(--text-3); font-family: "SF Mono", monospace; }
+  .deco-screen { position: relative; flex: 1; border-radius: 8px; overflow: hidden; background: #faf6ee; min-height: 0; }
+  .deco-screen video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .deco-screen .play-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; background: rgba(255,255,255,0.95); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,0.15); cursor: pointer; }
+  .deco-screen .play-overlay svg { width: 28px; height: 28px; fill: var(--text); margin-left: 4px; }
+  .deco-foot { display: flex; align-items: center; gap: 8px; padding: 4px 4px 0; }
+  .deco-tag { font-size: 11px; font-weight: 600; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; }
+  .deco-tip { font-size: 12px; color: var(--text-2); }
+
+  /* === 14 学科网格 (色块入口) === */
+  .subjects { background: var(--bg-elevated); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 64px 24px; }
+  .subjects .inner { max-width: 1200px; margin: 0 auto; }
+  .subjects h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em; }
+  .subjects .sub { font-size: 15px; color: var(--text-2); margin-bottom: 32px; }
+  .subjects .sub strong { color: var(--text); font-weight: 600; }
+  .subjects-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; }
+  @media (max-width: 1100px) { .subjects-grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 600px) { .subjects-grid { grid-template-columns: repeat(2, 1fr); } }
+  .subject-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 14px; padding: 16px 14px 14px; text-decoration: none; color: var(--text); transition: transform 0.18s cubic-bezier(0.2,0.8,0.2,1), box-shadow 0.18s, border-color 0.18s; display: flex; flex-direction: column; gap: 6px; cursor: pointer; position: relative; overflow: hidden; }
+  .subject-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--sw-color, var(--text)); opacity: 0; transition: opacity 0.2s; }
+  .subject-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(10,13,24,0.1); border-color: var(--sw-color, var(--text)); }
+  .subject-card:hover::before { opacity: 1; }
+  .subject-card .sw { width: 44px; height: 44px; border-radius: 12px; margin-bottom: 6px; display: grid; place-items: center; font-size: 22px; line-height: 1; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+  .subject-card .nm { font-size: 14px; font-weight: 700; color: var(--text); }
+  .subject-card .ct { font-size: 11px; color: var(--text-3); }
+
+  /* === 4 大功能 (测 / 查 / 学 / 打印) === */
+  .features { padding: 80px 24px; }
+  .features .inner { max-width: 1200px; margin: 0 auto; }
+  .features h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em; text-align: center; }
+  .features .sub { font-size: 15px; color: var(--text-2); margin-bottom: 48px; text-align: center; }
+  .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .features-grid { grid-template-columns: 1fr; } }
+  .feature-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 14px; padding: 28px 24px; text-decoration: none; color: var(--text); transition: all 0.15s; display: flex; flex-direction: column; gap: 12px; }
+  .feature-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10,13,24,0.08); border-color: var(--text-2); }
+  .feature-card .icon { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; font-size: 22px; }
+  .feature-card h3 { font-size: 17px; font-weight: 700; color: var(--text); }
+  .feature-card p { font-size: 13px; color: var(--text-2); line-height: 1.6; }
+  .feature-card .meta { font-size: 11px; color: var(--text-3); font-family: "SF Mono", monospace; margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); }
+
+  /* === 课标覆盖 (为什么可信) === */
+  .trust { background: var(--bg-elevated); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 64px 24px; }
+  .trust .inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+  .trust h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em; }
+  .trust .sub { font-size: 15px; color: var(--text-2); margin-bottom: 40px; }
+  .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  @media (max-width: 700px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
+  .trust-card { padding: 24px 20px; }
+  .trust-card .v { font-size: 36px; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 8px; }
+  .trust-card .l { font-size: 13px; color: var(--text-2); }
+
+  /* === 谁在用 (3 个故事) === */
+  .stories { padding: 80px 24px; }
+  .stories .inner { max-width: 1200px; margin: 0 auto; }
+  .stories h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em; text-align: center; }
+  .stories .sub { font-size: 15px; color: var(--text-2); margin-bottom: 48px; text-align: center; }
+  .stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 800px) { .stories-grid { grid-template-columns: 1fr; } }
+  .story-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 14px; padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; }
+  .story-card .role { font-size: 12px; color: var(--primary); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .story-card .quote { font-size: 16px; color: var(--text); line-height: 1.7; font-style: italic; }
+  .story-card .pain, .story-card .fix, .story-card .result { font-size: 12px; padding: 10px 12px; border-radius: 6px; line-height: 1.5; }
+  .story-card .pain { color: #b85a3a; background: rgba(239,107,91,0.08); border-left: 3px solid var(--chinese); }
+  .story-card .fix { color: var(--math); background: rgba(91,141,239,0.08); border-left: 3px solid var(--math); }
+  .story-card .result { color: var(--primary); background: var(--primary-soft); border-left: 3px solid var(--primary); font-weight: 600; }
+  .story-card .disclaimer { font-size: 10px; color: var(--text-3); padding-top: 8px; border-top: 1px solid var(--border); }
 
   /* === Footer === */
-  .footer { max-width: 1200px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid rgba(255, 255, 255, 0.06); text-align: center; font-size: 12px; color: #5a6278; }
-  /* === 课标覆盖度矩阵 (V3.6.9) === */
-  .coverage-section { padding: 80px 24px; }
-  .coverage-section .inner { max-width: 1200px; margin: 0 auto; }
-  .coverage-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
-  .coverage-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
-  .coverage-table { width: 100%; max-width: 900px; margin: 0 auto; border-collapse: separate; border-spacing: 4px; font-size: 13px; }
-  .coverage-table th, .coverage-table td { padding: 10px 8px; text-align: center; border-radius: 6px; }
-  .coverage-table th { background: rgba(255,255,255,0.05); color: #a5b8f5; font-weight: 600; font-size: 12px; }
-  .coverage-table th.row-h { text-align: left; padding-left: 16px; }
-  .coverage-table td.cell { background: rgba(255,255,255,0.04); color: #dde4f5; font-weight: 700; font-size: 15px; }
-  .coverage-table td.cell.zero { color: #5a6278; opacity: 0.6; }
-  .coverage-table td.total { background: rgba(107,140,255,0.12); color: #a5b8f5; font-weight: 800; }
-  .coverage-table .sw { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
-  .coverage-table .subj-name { color: #fff; }
-  .coverage-table .subj-en { color: #5a6278; font-size: 10px; margin-left: 6px; font-family: "SF Mono", monospace; }
-  /* === 关于 (V3.6.8) === */
-  .about-section { padding: 80px 24px; background: rgba(255,255,255,0.02); }
-  .about-section .inner { max-width: 1100px; margin: 0 auto; }
-  .about-section h2 { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 8px; letter-spacing: -0.02em; }
-  .about-section .sub { font-size: 14px; color: #8a92a8; text-align: center; margin-bottom: 40px; }
-  .about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  @media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
-  .about-card { padding: 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; }
-  .about-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
-  .about-card p, .about-card li { font-size: 14px; color: #a5b8f5; line-height: 1.7; }
-  .about-card a { color: #6b8cff; text-decoration: none; }
-  .about-card a:hover { text-decoration: underline; }
-  .footer a { color: #8a92a8; }
-  .footer .row { margin: 6px 0; }
+  .footer { background: var(--text); color: var(--bg); padding: 60px 24px 32px; }
+  .footer .inner { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+  @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+
+  /* 移动端 (≤ 480px) — V4.1.1 phase 1.3 增强 */
+  @media (max-width: 480px) {
+    .top { padding: 10px 12px; gap: 8px; }
+    .nav-links { display: none; }
+    .container { padding: 16px; }
+    .hero h1 { font-size: 26px; }
+    .hero .lead { font-size: 14px; }
+    .cta-row { flex-direction: column; gap: 8px; }
+    .cta-row .btn { width: 100%; padding: 14px 16px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .video-frame .video-meta { display: none; }
+  }
+  .footer h4 { font-size: 13px; font-weight: 700; color: var(--bg); margin-bottom: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .footer .brand p { font-size: 13px; color: rgba(250,246,238,0.6); line-height: 1.6; max-width: 320px; }
+  .footer .brand .logo { color: var(--bg); margin-bottom: 12px; }
+  .footer .brand .logo .badge { background: var(--accent); color: var(--text); }
+  .footer ul { list-style: none; }
+  .footer ul li { margin-bottom: 8px; }
+  .footer ul li a { font-size: 13px; color: rgba(250,246,238,0.7); }
+  .footer ul li a:hover { color: var(--bg); }
+  .footer .bottom { padding-top: 24px; border-top: 1px solid rgba(250,246,238,0.1); font-size: 12px; color: rgba(250,246,238,0.5); text-align: center; }
+  .footer .bottom a { color: rgba(250,246,238,0.7); }
 </style>
 </head>
 <body>
+
 <nav class="nav">
   <div class="nav-inner">
-    <div class="logo">
+    <a class="logo" href="index.html">
       <span class="badge">课</span>
-      <span>中国 K12 学习路径图谱</span>
-    </div>
+      <span>中国 K12 知识图谱</span>
+    </a>
     <div class="nav-links">
-      <a href="#values">能做什么</a>
-      <a href="#tree">学科</a>
-      <a href="#download">下载</a>
-      <a href="#about">关于</a>
+      <a href="#subjects">14 学科</a>
+      <a href="#features">4 大功能</a>
+      <a href="#stories">谁在用</a>
+      <a href="https://github.com/zachsaws/open-curriculum-cn">GitHub</a>
     </div>
+    <a class="nav-cta" href="./test.html">测一下 →</a>
   </div>
 </nav>
 
 <header class="hero">
-  <h1>每一步学什么,<br>之前漏了哪一步</h1>
-  <p class="sub">中国 1906 个小学到初中概念的<strong>「学之前要会什么 / 学之后能学什么」</strong>图谱。<br>教师、家长、学生都能用。开源免费。</p>
+  <div class="hero-grid">
+    <div>
+      <span class="hero-eyebrow">V4.0 · 2026 课标版</span>
+      <h1>中国 K12 知识的<br><em>「地图」</em></h1>
+      <p class="sub">按 <strong>教育部 2022 义教课标</strong> 整理, <strong>全 14 学科 1906 概念</strong>。每个概念的「学之前要会什么 / 学之后能学什么」一目了然。</p>
 
-  <div class="grade-picker">
-    <div class="label">我家孩子在</div>
-    <div class="grade-buttons">
-      <a class="grade-btn" href="./funnel.html?grade=1">1 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=2">2 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=3">3 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=4">4 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=5">5 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=6">6 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=7">7 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=8">8 年级</a>
-      <a class="grade-btn" href="./funnel.html?grade=9">9 年级</a>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="./test.html">5 分钟测出孩子薄弱在哪儿 →</a>
+        <a class="btn btn-secondary" href="./funnel.html">备一节课: 看整本教材怎么搭 →</a>
+      </div>
+      <p class="cta-hint">家长/学生先选学段+学科, 5 道题找出薄弱概念; 老师直接进 14 学科概念图。</p>
+
+      <div class="hero-trust">
+        <span class="hl">免费</span>
+        <span class="dot"></span>
+        <span>无登录</span>
+        <span class="dot"></span>
+        <span>无广告</span>
+        <span class="dot"></span>
+        <span>开源 CC-BY-SA 4.0</span>
+      </div>
     </div>
-    <div class="grade-hint">点完直接进该年级漏斗, 自动挑 1 个代表概念展开完整学习路径</div>
-  </div>
 
-  <div class="cta-row">
-    <a class="btn btn-primary" href="./explore.html">进入探索 <span class="arrow">→</span></a>
-    <a class="btn btn-ghost" href="./diagnose.html">🩺 智能诊断</a>
-    <a class="btn btn-ghost" href="./wrongbook.html">❌ 错题本</a>
-    <a class="btn btn-ghost" href="#download">下载数据</a>
+    <div class="hero-video" id="hero-video">
+      <div class="video-frame-deco">
+        <div class="deco-bar">
+          <span class="deco-dot"></span>
+          <span class="deco-dot"></span>
+          <span class="deco-dot"></span>
+          <span class="deco-url">diagnose.html · V4.1 浅色演示</span>
+        </div>
+        <div class="deco-screen">
+          <video src="./data/diagnose_demo.mp4" controls preload="metadata" poster="./data/diagnose_demo_poster.png"></video>
+          <div class="play-overlay" onclick="document.querySelector('#hero-video video').play()">
+            <svg viewBox="0 0 24 24"><path d="M3 0.233887L15.9437 8.00008L3 15.7663V0.233887Z"/></svg>
+          </div>
+        </div>
+        <div class="deco-foot">
+          <span class="deco-tag">📹 5 秒演示</span>
+          <span class="deco-tip">3 步 5 道题找出薄弱</span>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<section class="promo-section" id="promo">
+<section class="subjects" id="subjects">
   <div class="inner">
-    <h2>30 秒看懂这是什么</h2>
-    <p class="sub">孩子说不会，但说不上哪里不会 —— 这就是答案</p>
-    <div class="demo-video-wrap">
-      <video src="./data/promo_30s.mp4" controls preload="metadata" poster="./data/hero_thumb.gif" style="width:100%; display:block;"></video>
+    <h2>14 个学科, 1 张图</h2>
+    <p class="sub">从小学一年级到初中三年级, 课标里的 <strong>1906 个概念</strong> 按学科全部画在一张图谱上。<br>点任意学科进图, 看这个学科里所有概念的依赖关系。</p>
+    <div class="subjects-grid">
+      <a class="subject-card" href="./explore.html?subject=math" style="--sw-color: var(--math)">
+        <div class="sw" style="background: var(--math)">🔢</div>
+        <div class="nm">数学</div>
+        <div class="ct">337 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=chinese" style="--sw-color: var(--chinese)">
+        <div class="sw" style="background: var(--chinese)">📖</div>
+        <div class="nm">语文</div>
+        <div class="ct">209 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=english" style="--sw-color: var(--english)">
+        <div class="sw" style="background: var(--english)">🔤</div>
+        <div class="nm">英语</div>
+        <div class="ct">296 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=physics" style="--sw-color: var(--physics)">
+        <div class="sw" style="background: var(--physics)">⚛️</div>
+        <div class="nm">物理</div>
+        <div class="ct">121 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=chemistry" style="--sw-color: var(--chemistry)">
+        <div class="sw" style="background: var(--chemistry)">🧪</div>
+        <div class="nm">化学</div>
+        <div class="ct">62 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=biology" style="--sw-color: var(--biology)">
+        <div class="sw" style="background: var(--biology)">🧬</div>
+        <div class="nm">生物</div>
+        <div class="ct">71 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=history" style="--sw-color: var(--history)">
+        <div class="sw" style="background: var(--history)">🏛️</div>
+        <div class="nm">历史</div>
+        <div class="ct">136 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=geography" style="--sw-color: var(--geography)">
+        <div class="sw" style="background: var(--geography)">🌍</div>
+        <div class="nm">地理</div>
+        <div class="ct">91 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=morality_law" style="--sw-color: var(--morality_law)">
+        <div class="sw" style="background: var(--morality_law)">⚖️</div>
+        <div class="nm">道德与法治</div>
+        <div class="ct">115 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=science" style="--sw-color: var(--science)">
+        <div class="sw" style="background: var(--science)">🔬</div>
+        <div class="nm">科学</div>
+        <div class="ct">121 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=info_tech" style="--sw-color: var(--info_tech)">
+        <div class="sw" style="background: var(--info_tech)">💻</div>
+        <div class="nm">信息科技</div>
+        <div class="ct">97 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=art" style="--sw-color: var(--art)">
+        <div class="sw" style="background: var(--art)">🎨</div>
+        <div class="nm">艺术</div>
+        <div class="ct">78 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=pe_health" style="--sw-color: var(--pe_health)">
+        <div class="sw" style="background: var(--pe_health)">⚽</div>
+        <div class="nm">体育与健康</div>
+        <div class="ct">87 概念</div>
+      </a>
+      <a class="subject-card" href="./explore.html?subject=labor" style="--sw-color: var(--labor)">
+        <div class="sw" style="background: var(--labor)">🛠️</div>
+        <div class="nm">劳动</div>
+        <div class="ct">85 概念</div>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="stories-section" id="stories">
+<section class="features" id="features">
   <div class="inner">
-    <h2>谁在用</h2>
-    <p class="sub">3 个虚构场景, 基于公开教研案例和 K12 教育痛点研究改编 (1.8 亿中国 K12 学生的真实需求是它的存在理由)</p>
+    <h2>4 件事, 家长/老师/学生都能用</h2>
+    <p class="sub">同一个图谱, 4 种用法。点进去看演示。</p>
+    <div class="features-grid">
+      <a class="feature-card" href="./diagnose.html">
+        <div class="icon" style="background: var(--primary-soft); color: var(--primary)">🩺</div>
+        <h3>智能诊断</h3>
+        <p>5 道题测出孩子在这个概念的薄弱程度, 标"薄弱 / 巩固 / 已掌握"。薄弱时自动给 B 站视频 + 人教版教材章节 + Khan Academy 链接。</p>
+        <div class="meta">5 道题 · 30 秒 · 全 19 quick pick 概念</div>
+      </a>
+      <a class="feature-card" href="./wrongbook.html">
+        <div class="icon" style="background: rgba(239,107,91,0.1); color: var(--chinese)">❌</div>
+        <h3>错题本</h3>
+        <p>答错的题自动入错题本, 按概念分类, 显示你的答案 vs 正答。可重做、移除、清空。本地存储, 不上传。</p>
+        <div class="meta">最多 1000 题 · 按概念分组 · 4 统计卡</div>
+      </a>
+      <a class="feature-card" href="./explore.html">
+        <div class="icon" style="background: rgba(91,141,239,0.1); color: var(--math)">🔍</div>
+        <h3>概念图谱</h3>
+        <p>3D 球 / 漏斗 / 列表 3 种视图, 展示 1906 概念和 4736 条先决关系。点概念看完整学习路径, 鼠标拖动旋转。</p>
+        <div class="meta">3D 球 · 漏斗 · 概念卡片</div>
+      </a>
+      <a class="feature-card" href="./exercise.html">
+        <div class="icon" style="background: rgba(123,201,111,0.1); color: var(--english)">✏️</div>
+        <h3>题目练习</h3>
+        <p>每个概念 5 道题 (选择 / 填空 / 简答 / 应用真题 / 综合压轴), 共 9259 题。自动判分, 错题入错题本。</p>
+        <div class="meta">9259 题 · 14 学科全覆盖 · Bloom 标签</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="trust">
+  <div class="inner">
+    <h2>为什么这个图谱可信</h2>
+    <p class="sub">不是营销话术, 是数据。</p>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="v">1,906</div>
+        <div class="l">课标概念<br>全 14 学科</div>
+      </div>
+      <div class="trust-card">
+        <div class="v">4,736</div>
+        <div class="l">学习路径<br>先决关系</div>
+      </div>
+      <div class="trust-card">
+        <div class="v">9,259</div>
+        <div class="l">题库<br>含 13 道真题</div>
+      </div>
+      <div class="trust-card">
+        <div class="v">100%</div>
+        <div class="l">2022 课标<br>覆盖度</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stories" id="stories">
+  <div class="inner">
+    <h2>谁在用, 怎么用</h2>
+    <p class="sub">3 个虚构场景, 基于公开教研案例和 K12 教育痛点研究改编。</p>
     <div class="stories-grid">
       <div class="story-card">
-        <div class="role">👩 家长</div>
-        <div class="avatar">🆘</div>
-        <div class="meta">
-          <span class="tag">上海 · 一二线</span>
-          <span class="tag">孩子 4 年级</span>
-          <span class="tag">数学</span>
-        </div>
-        <div class="quote">"我家孩子数学应用题做不对, 我自己看了也讲不清该先补哪个知识点, 网上搜出来的全是广告。"</div>
-        <div class="pain">痛点 · 5 年级分水岭前, 家长投入大量补习费, 但 60%+ 家长不知道孩子具体卡在哪个前置概念, 只能"全面补课", 费钱也费孩子时间</div>
-        <div class="fix">做法 · 在主页点 "4 年级" 按钮进漏斗, 自动展开 5 个代表概念, 看到 "分数除法" 有 7 个直接前置, 其中 "倒数" 和 "分数乘法" 孩子没学透, 周末重点补</div>
+        <div class="role">👩 上海 一二线家长</div>
+        <div class="quote">"孩子数学应用题做不对, 我看了也讲不清该先补哪个, 网上搜出来的全是广告。"</div>
+        <div class="pain">痛点 · 家长投入大量补习费, 但 60%+ 不知道孩子具体卡在哪个前置概念, 只能"全面补课"。</div>
+        <div class="fix">做法 · 在主页点 "5 分钟测出" 进诊断, 自动推 B 站视频 + 人教版教材章节 + Khan Academy 链接, 周末重点补 2 个前置概念。</div>
         <div class="result">3 周后单元测验 78 → 91 分, 补习费减少 1/3</div>
-        <div class="disclaimer">虚构 · 改编自知乎 K12 家长调研 (2024) + Jyn "老师&家长篇" 访谈</div>
+        <div class="disclaimer">虚构 · 改编自知乎 K12 家长调研 (2024) + 公开访谈</div>
       </div>
       <div class="story-card">
-        <div class="role">👨‍🏫 老师</div>
-        <div class="avatar">📖</div>
-        <div class="meta">
-          <span class="tag">县城小学</span>
-          <span class="tag">5 年级数学</span>
-          <span class="tag">30 人班级</span>
-        </div>
-        <div class="quote">"期末复习时发现 8 个孩子不会分数除法, 但每个人卡的地方不一样, 过去只能让他们整本书重看, 时间根本不够。"</div>
-        <div class="pain">痛点 · 县城师资有限, 一个老师教 4-5 个班, 期末复习只能按统一进度走, 顾不上"分层补缺"; 8 个学生卡在 4-5 个不同前置, 没工具对症下药</div>
-        <div class="fix">做法 · 打开"分数除法" 概念打印版 (A4 黑白), 看到 5 个核心前置; 用 3D 球 lineage 找出 8 个孩子各自缺哪 1-2 个, 分 3 组针对性补; 错题本按概念归类, 不用整本重做</div>
-        <div class="result">期末通过率 67% → 94%, 复习时间省一半</div>
-        <div class="disclaimer">虚构 · 改编自中国教师研修网公开教研案例 (2023 县域质量提升)</div>
+        <div class="role">👨‍🏫 县城小学 5 年级数学老师</div>
+        <div class="quote">"我班上 30 个孩子, 每个人都卡在不同的地方, 一节课只能照顾一半。"</div>
+        <div class="pain">痛点 · 大班教学无法精准定位每个孩子的薄弱前置, 错题讲 N 遍还是会错。</div>
+        <div class="fix">做法 · 用错题本按概念分组, 看到"分数除法"错了 12 人, 反查图谱找到 7 个直接前置, 课前 5 分钟集中补 2 个最高频错的。</div>
+        <div class="result">3 周后单元测验班级平均分 +9 分, 错题重复率下降 40%</div>
+        <div class="disclaimer">虚构 · 改编自 K12 教研报告 (2024)</div>
       </div>
       <div class="story-card">
-        <div class="role">🧑‍💼 教研员 / 校长</div>
-        <div class="avatar">📊</div>
-        <div class="meta">
-          <span class="tag">西南某区教研室</span>
-          <span class="tag">12 所学校</span>
-          <span class="tag">4 年级数学</span>
-        </div>
-        <div class="quote">"区里 12 所学校进度参差不齐, 期中统考 4 年级数学平均分差 15 分, 我想统一复习但不知道补哪里。"</div>
-        <div class="pain">痛点 · 教研员日常: 看 12 份试卷 + 12 份教学进度表 + 12 份薄弱点分析, 时间紧、信息散; 找共性薄弱点靠经验, 不够系统也不够快</div>
-        <div class="fix">做法 · 用首页 "课标覆盖度报告" 14×4 矩阵, 锁定 4 年级数学核心 37 个概念; 拉出 12 校 5 月统考错题, 用图谱反查命中概念, 找出 5 个共性薄弱点 (集中在"分数乘除法" lineage); 打印 5 个概念卡发到 12 校统一复习</div>
-        <div class="result">期末区统考 4 年级数学平均分涨 8 分, 12 校差距缩到 5 分内</div>
-        <div class="disclaimer">虚构 · 改编自区教研室"区域教学质量提升"项目 (2022 公开论文)</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="values-section" id="values">
-  <div class="inner">
-    <h2>它能做什么</h2>
-    <p class="sub">4 个最常见的使用场景</p>
-    <div class="value-grid">
-      <div class="value">
-        <div class="emoji">🆘</div>
-        <h3>孩子卡在某个知识点</h3>
-        <p>看看之前漏了哪一步。翻这条概念的所有前置知识点, 从小学到初中。</p>
-        <a href="./funnel.html">了解详情 <span class="arrow">→</span></a>
-      </div>
-      <div class="value">
-        <div class="emoji">📖</div>
-        <h3>老师备课</h3>
-        <p>翻完整的学习路径。一个知识点之前要会什么、之后能学什么, 全部列出来。</p>
-        <a href="./funnel.html">了解详情 <span class="arrow">→</span></a>
-      </div>
-      <div class="value">
-        <div class="emoji">🧒</div>
-        <h3>学生想提前学</h3>
-        <p>一眼看到先后顺序。这个概念之前要会什么、之后能学什么。</p>
-        <a href="./explore.html">了解详情 <span class="arrow">→</span></a>
-      </div>
-      <div class="value">
-        <div class="emoji">🔗</div>
-        <h3>找学科之间的连接</h3>
-        <p>看到概念之间怎么连。跨学科找相关知识点, 看课程设计空间。</p>
-        <a href="./funnel.html">了解详情 <span class="arrow">→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2>两种视图, 不同切入点</h2>
-  <p class="sub">球面看概念全貌, 漏斗看学习路径。点开任意一个进入。</p>
-  <div class="previews">
-    <a class="preview" href="./explore.html">
-      <div class="icon">🔮</div>
-      <h3>3D 球面视图</h3>
-      <p>1906 概念按 Fibonacci 球面分布, 14 学科配色, 鼠标拖动旋转, 滚轮缩放。适合"看概念全貌, 找相关概念"。</p>
-      <div class="meta">Three.js · 60 FPS · 桌面 + 移动</div>
-    </a>
-    <a class="preview" href="./funnel.html">
-      <div class="icon">▼</div>
-      <h3>漏斗学习路径</h3>
-      <p>从入门到进阶的倒漏斗, 选节点后反向追溯所有前置。适合"看学习顺序, 找'为了学这个要学什么'"。</p>
-      <div class="meta">Canvas 2D · lineage trace · 桌面 + 移动</div>
-    </a>
-  </div>
-</section>
-
-<section class="tree-section" id="tree">
-  <h2>14 个学科, 按学段展开</h2>
-  <p class="sub">点开任意学科进入漏斗视图, 可看该学科的学习路径。</p>
-  <div class="tree" id="tree">
-    <div class="tree-card" style="grid-column: 1 / -1; text-align: center; color: #5a6278; padding: 24px;">正在加载学科数据...</div>
-  </div>
-</section>
-
-<section class="trust-section" id="trust">
-  <div class="inner">
-    <h2>为什么可信</h2>
-    <p class="sub">一手数据, 公开授权, 持续维护</p>
-    <div class="trust-grid">
-      <div class="trust-card"><div class="v">1906</div><div class="l">核心概念</div></div>
-      <div class="trust-card"><div class="v">14</div><div class="l">学科全覆盖</div></div>
-      <div class="trust-card"><div class="v">4736</div><div class="l">学习路径</div></div>
-      <div class="trust-card"><div class="v">开源</div><div class="l">CC-BY-SA 4.0</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="coverage-section" id="coverage">
-  <div class="inner">
-    <h2>课标覆盖度报告</h2>
-    <p class="sub">14 学科 × 4 学段 · 教育部 2022 义教课标</p>
-    <div id="coverage-table-wrap">
-      <table class="coverage-table" id="coverage-table">
-        <thead>
-          <tr>
-            <th class="row-h">学科</th>
-            <th>1-2 年级</th>
-            <th>3-4 年级</th>
-            <th>5-6 年级</th>
-            <th>7-9 年级</th>
-            <th>合计</th>
-          </tr>
-        </thead>
-        <tbody id="coverage-tbody">
-          <tr><td colspan="6" style="text-align:center; padding:32px; color:#5a6278;">加载中...</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="not-doing-section" id="about">
-  <div class="inner">
-    <h2>我们不做</h2>
-    <div class="not-list">
-      <span>不是题库</span>
-      <span>不是网课</span>
-      <span>不是 AI 老师</span>
-      <span>不是学习机</span>
-    </div>
-    <p class="not-one-liner">就是一份  <strong>学之前要会什么 / 学之后能学什么</strong>  的图谱</p>
-    <p class="not-source">数据来自教育部 2022 最新课标 · 开源免费 · CC-BY-SA 4.0</p>
-  </div>
-</section>
-
-<section class="download" id="download">
-  <h2>数据下载</h2>
-  <p class="sub">整文件 graph.json (3.8 MB, 含 1906 概念 + 4736 学习路径 + 学科配色 + 中心度)。<br>CC-BY-SA 4.0, 可下载使用, 注明出处即可。</p>
-  <div class="download-box">
-    <code>curl -O https://&lt;当前公网域名&gt;/data/graph.json</code>
-    <p class="note">或直接 <a href="./data/graph.json" download>点此下载 graph.json</a> · 8 KB 缩略: <a href="./data/graph.json.gz">graph.json.gz</a></p>
-  </div>
-</section>
-
-<section class="partner-section" id="partner">
-  <div class="inner">
-    <h2>教育局 / 学校合作</h2>
-    <p class="sub">想要 B 端 SaaS、私有部署、定制数据、教研合作? 我们聊聊</p>
-    <div class="partner-grid">
-      <div class="partner-card">
-        <h3>🏫 区/校 SaaS 接入</h3>
-        <p>把 1906 概念 + 4736 学习路径接入你们自己的教务系统、教研平台、家校沟通 App。</p>
-        <ul>
-          <li>提供 JSON 数据 + REST API</li>
-          <li>可定制学科范围 (例如只看本区开设的)</li>
-          <li>支持私有化部署 (内网环境)</li>
-        </ul>
-        <div class="price">¥ ? <span style="font-size:13px; font-weight:500; color:#8a92a8;">/ 区 / 年</span></div>
-        <div class="contact">📧 <a href="mailto:zachsaws@gamil.com?subject=B端SaaS咨询">zachsaws@gamil.com</a> · 邮件附「区/校名 + 接入场景」</div>
-      </div>
-      <div class="partner-card">
-        <h3>📚 教研 / 出版合作</h3>
-        <p>教研员、出版社、教师培训机构的合作场景: 用我们的图谱做教研参考、教师培训材料、教材配套资源。</p>
-        <ul>
-          <li>CC-BY-SA 4.0 (注明出处免费用)</li>
-          <li>可定制化概念 + 学段切片</li>
-          <li>教师培训 PPT / 视频联合出品</li>
-        </ul>
-        <div class="price">免费 / 联名 / 分成</div>
-        <div class="contact">📧 <a href="mailto:zachsaws@gamil.com?subject=教研合作">zachsaws@gamil.com</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="subscribe-section">
-  <div class="inner">
-    <h2>📬 概念日报</h2>
-    <p class="sub">每周一封邮件: 1 个核心概念 + 1 个 lineage 反向追溯 + 1 个跨学科连接。免费, 不打扰。</p>
-    <form class="subscribe-form" id="subscribe-form">
-      <input type="email" id="subscribe-email" placeholder="你的邮箱" required autocomplete="email" />
-      <button type="submit">订阅</button>
-    </form>
-    <div class="subscribe-status" id="subscribe-status"></div>
-  </div>
-</section>
-
-<section class="about-section" id="about">
-  <div class="inner">
-    <h2>关于</h2>
-    <p class="sub">一个独立开源项目, 不是任何公司的产品线</p>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>🛠 这是什么</h3>
-        <p>中国 K12 (小学到初中) 知识图谱 + 漏斗 + 3D 球 3 种可视化, 全部前端 + 开源数据。</p>
-        <p>基于教育部 2022 最新义务教育课程方案, 14 个学科 1906 核心概念 4736 条学习路径。</p>
-      </div>
-      <div class="about-card">
-        <h3>📞 怎么联系</h3>
-        <ul style="list-style:none; padding:0; margin:0;">
-          <li>🐛 <a href="https://github.com/zachsaws/open-curriculum-cn/issues" target="_blank">GitHub Issue</a> — 提 bug / 建议</li>
-          <li>💬 <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">GitHub Repo</a> — Star / Fork / PR</li>
-          <li>🏫 教育局 / 学校合作 — 邮件 <a href="mailto:zachsaws@gamil.com">zachsaws@gamil.com</a></li>
-        </ul>
-      </div>
-      <div class="about-card">
-        <h3>📄 授权</h3>
-        <p>内容: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a> (注明出处可转载/修改)</p>
-        <p>数据库: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0</a> (无限制使用)</p>
-        <p>课标原文: 教育部 2022 义务教育课程方案 (公开政策文件)</p>
+        <div class="role">🧑‍🎓 初二学生</div>
+        <div class="quote">"我数学不算差, 但学新课时老觉得跳跃, 不知道老师为什么突然讲这个。"</div>
+        <div class="pain">痛点 · 课本和老师不告诉你"这章在图谱的哪里 / 之后会解锁什么", 学完没方向感。</div>
+        <div class="fix">做法 · 打开图谱, 点 "二次函数" → 看完整学习路径: 7 个直接前置 / 11 个解锁的后续。知道自己在哪, 知道学完能干嘛。</div>
+        <div class="result">3 个月后主动跟图谱预习 4 个单元, 期中班级第 3</div>
+        <div class="disclaimer">虚构 · 改编自公开学生访谈</div>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="row">中国 K12 学习路径图谱 · 基于教育部 2022 最新课标</div>
-  <div class="row">数据 1906 概念 / 4736 学习路径 / 14 学科 / 4 学段</div>
-  <div class="row">License: 内容 CC-BY-SA 4.0 · 数据库 CC0 · 基于 2022 教育部义务教育课程方案</div>
-  <div class="row">V3.6.8 入口个人化 · 反馈: <a href="https://github.com/zachsaws/open-curriculum-cn/issues" target="_blank">GitHub Issue</a> · <a href="mailto:zachsaws@gamil.com">Email</a></div>
+  <div class="inner">
+    <div class="footer-grid">
+      <div class="brand">
+        <div class="logo">
+          <span class="badge">课</span>
+          <span>中国 K12 知识图谱</span>
+        </div>
+        <p>按教育部 2022 义教课标整理, 全 14 学科 1906 概念, 4736 条先决关系, 9259 题题库。开源免费, CC-BY-SA 4.0。</p>
+      </div>
+      <div>
+        <h4>产品</h4>
+        <ul>
+          <li><a href="./explore.html">概念图谱</a></li>
+          <li><a href="./diagnose.html">智能诊断</a></li>
+          <li><a href="./wrongbook.html">错题本</a></li>
+          <li><a href="./exercise.html">题目练习</a></li>
+          <li><a href="./funnel.html">年级漏斗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>数据</h4>
+        <ul>
+          <li><a href="https://github.com/zachsaws/open-curriculum-cn">GitHub</a></li>
+          <li><a href="https://github.com/zachsaws/open-curriculum-cn/releases">Releases</a></li>
+          <li><a href="https://github.com/zachsaws/open-curriculum-cn/blob/main/docs/schema.md">Schema</a></li>
+          <li><a href="https://github.com/zachsaws/open-curriculum-cn/blob/main/README.md">README</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li><a href="mailto:zachsaws@gamil.com">zachsaws@gamil.com</a></li>
+          <li><a href="./data/recommendations.json">B 端 SaaS API</a></li>
+          <li><a href="https://github.com/zachsaws/open-curriculum-cn/issues">Issues</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>© 2026 中国 K12 知识图谱 · 内容采用 CC-BY-SA 4.0 · 数据库采用 CC0 1.0 · 数据来源: 教育部 2022 义教课标 + 公开教研资料</p>
+    </div>
+  </div>
 </footer>
 
-<script src="./data-cache.js"></script>
-<script>
-// 主页: 学科树 + 课标覆盖度 (一次 load, 两处用) — V3.6.9 改用 loadGraphData() 共享 localStorage 缓存
-const PALETTE = {
-  math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
-  science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
-  biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
-  morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
-  pe_health: '#ff7043', labor: '#9ccc65'
-};
-const SUBJ_CN = {
-  math: '数学', chinese: '语文', english: '英语',
-  physics: '物理', chemistry: '化学', biology: '生物',
-  science: '科学', geography: '地理', history: '历史',
-  morality_law: '道德与法治', info_tech: '信息科技',
-  pe_health: '体育与健康', art: '艺术', labor: '劳动'
-};
-const STAGE_LBL = { 1: '1-2 年级', 2: '3-4 年级', 3: '5-6 年级', 4: '7-9 年级' };
-const SUBJ_ORDER = ['math','chinese','english','physics','chemistry','biology','science','geography','history','morality_law','info_tech','pe_health','art','labor'];
-
-function stageOf(g) {
-  if (!g) return 0;
-  if (g <= 2) return 1;
-  if (g <= 4) return 2;
-  if (g <= 6) return 3;
-  return 4;
-}
-
-(async () => {
-  let nodes = [];
-  try {
-    const d = await loadGraphData();
-    nodes = d.nodes || [];
-  } catch (e) {
-    document.getElementById('tree').innerHTML = `<div class="tree-card" style="grid-column:1/-1;text-align:center;color:#ff6b6b;padding:24px;">学科数据加载失败: ${e.message}</div>`;
-    document.getElementById('coverage-tbody').innerHTML = `<tr><td colspan="6" style="text-align:center; padding:32px; color:#ff6b6b;">覆盖度数据加载失败: ${e.message}</td></tr>`;
-    return;
-  }
-
-  // 1) 学科树: 按学科 + 学段 分组
-  const bySubj = {};
-  for (const n of nodes) {
-    const s = n.subject || '?';
-    const g = n.grade_start;
-    if (!bySubj[s]) bySubj[s] = { count: 0, stages: new Set() };
-    bySubj[s].count++;
-    if (g) bySubj[s].stages.add(stageOf(g));
-  }
-  const tree = document.getElementById('tree');
-  tree.innerHTML = '';
-  const sorted = Object.entries(bySubj).sort((a, b) => b[1].count - a[1].count);
-  for (const [s, info] of sorted) {
-    const card = document.createElement('a');
-    card.className = 'tree-card';
-    card.href = `./funnel.html?subject=${s}`;
-    const stagesArr = [...info.stages].sort();
-    const stagesHTML = stagesArr.map(st => `<span class="stage">${STAGE_LBL[st] || 'S'+st}</span>`).join('');
-    card.innerHTML = `
-      <div class="head">
-        <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
-        <span class="nm">${SUBJ_CN[s] || s}</span>
-        <span class="ct">${info.count}</span>
-      </div>
-      <div class="stages">${stagesHTML}</div>
-    `;
-    tree.appendChild(card);
-  }
-
-  // 2) 课标覆盖度: 14 学科 × 4 学段
-  const counts = {};
-  SUBJ_ORDER.forEach(s => counts[s] = [0, 0, 0, 0]);
-  for (const n of nodes) {
-    const s = n.subject;
-    const st = stageOf(n.grade_start);
-    if (counts[s] && st >= 1) counts[s][st - 1]++;
-  }
-  const tbody = document.getElementById('coverage-tbody');
-  tbody.innerHTML = '';
-  for (const s of SUBJ_ORDER) {
-    const row = counts[s];
-    const total = row.reduce((a, b) => a + b, 0);
-    if (total === 0) continue;
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td class="row-h" style="text-align:left; padding-left:16px;">
-        <span class="sw" style="background:${PALETTE[s] || '#888'}"></span>
-        <span class="subj-name">${SUBJ_CN[s] || s}</span>
-        <span class="subj-en">${s}</span>
-      </td>
-      ${row.map(c => `<td class="cell${c === 0 ? ' zero' : ''}">${c}</td>`).join('')}
-      <td class="total">${total}</td>
-    `;
-    tbody.appendChild(tr);
-  }
-  // 合计行
-  const grandTotal = SUBJ_ORDER.reduce((a, s) => a + counts[s].reduce((x, y) => x + y, 0), 0);
-  const stageTotals = [0, 0, 0, 0];
-  for (const s of SUBJ_ORDER) counts[s].forEach((c, i) => stageTotals[i] += c);
-  const tr = document.createElement('tr');
-  tr.style.borderTop = '1px solid rgba(255,255,255,0.1)';
-  tr.innerHTML = `
-    <td class="row-h" style="text-align:left; padding-left:16px; color:#a5b8f5; font-weight:700;">合计</td>
-    ${stageTotals.map(c => `<td class="cell" style="color:#a5b8f5;">${c}</td>`).join('')}
-    <td class="total" style="background:rgba(107,140,255,0.25); color:#fff;">${grandTotal}</td>
-  `;
-  tbody.appendChild(tr);
-})();
-
-// 概念日报邮件订阅 (V3.6.9 FormSubmit.co) — AJAX POST 转邮件到 zachsaws@gamil.com
-// 零 signup, 用户无感; 首次会触发 FormSubmit 确认链接, 点一下后永久生效
-document.getElementById('subscribe-form')?.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const email = document.getElementById('subscribe-email').value.trim();
-  const status = document.getElementById('subscribe-status');
-  if (!email || !email.includes('@') || email.length < 5) {
-    status.style.color = '#ff6b6b';
-    status.textContent = '请输入有效邮箱';
-    return;
-  }
-  status.style.color = '#a5b8f5';
-  status.textContent = '提交中...';
-  try {
-    const r = await fetch('https://formsubmit.co/ajax/zachsaws@gamil.com', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        _subject: '【订阅】概念日报',
-        _template: 'table',
-        _captcha: 'false',
-        email: email,
-        project: '中国 K12 学习路径图谱 · 概念日报',
-        timestamp: new Date().toISOString(),
-        source: window.location.href
-      })
-    });
-    if (r.ok) {
-      status.style.color = '#7bc96f';
-      status.textContent = '✅ 订阅成功! 每周一发, 介绍本周新增/调整的概念和学习路径';
-      document.getElementById('subscribe-email').value = '';
-    } else {
-      throw new Error('HTTP ' + r.status);
-    }
-  } catch (err) {
-    status.style.color = '#ff9f43';
-    status.textContent = '⚠️ 提交失败, 请直接发邮件到 zachsaws@gamil.com (主题: 订阅概念日报)';
-  }
-});
-</script>
 </body>
 </html>

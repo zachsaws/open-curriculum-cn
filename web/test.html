@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="5 分钟测出孩子薄弱在哪儿。选学段、选学科、出 5 道题找出薄弱概念,自动给 B 站视频 + 教材章节 + 复习路径。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="智能诊断 · 5 分钟测出孩子薄弱在哪儿">
+<meta property="og:description" content="按教育部 2022 义教课标,选学段+学科,出 5 道题找出薄弱概念,自动给学习路径。">
+<title>智能诊断 · 5 分钟测出孩子薄弱在哪儿 · 中国 K12 知识图谱</title>
+<style>
+  :root {
+    --bg: #faf6ee;
+    --bg-elevated: #ffffff;
+    --bg-tinted: #f0e9da;
+    --text: #0a0d18;
+    --text-2: #4a4a4a;
+    --text-3: #8a8a8a;
+    --border: #e8e0cc;
+    --primary: #00875a;
+    --primary-hover: #007048;
+    --primary-soft: #e6f5ee;
+    --accent: #ffce4f;
+    --math: #5b8def;
+    --chinese: #ef6b5b;
+    --english: #7bc96f;
+    --physics: #ba68c8;
+    --chemistry: #26a69a;
+    --biology: #66bb6a;
+    --history: #8d6e63;
+    --geography: #42a5f5;
+    --morality_law: #ec407a;
+    --science: #f9a825;
+    --info_tech: #26c6da;
+    --art: #ab47bc;
+    --pe_health: #ff7043;
+    --labor: #9ccc65;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; min-height: 100%; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  a { color: var(--text); text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+
+  /* Nav */
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(250, 246, 238, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; color: var(--text); }
+  .logo .badge { width: 30px; height: 30px; border-radius: 8px; background: var(--text); color: var(--accent); display: grid; place-items: center; font-size: 14px; font-weight: 800; }
+  .nav-links { display: flex; gap: 24px; font-size: 14px; }
+  .nav-links a { color: var(--text-2); }
+  .nav-cta { display: inline-flex; align-items: center; padding: 8px 18px; background: var(--text); color: var(--bg); border-radius: 8px; font-size: 14px; font-weight: 600; }
+
+  /* Page */
+  .page { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  /* Step block */
+  .step { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; margin-bottom: 20px; }
+  .step-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--primary-soft); color: var(--primary); font-size: 14px; font-weight: 800; margin-bottom: 8px; }
+  .step h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .step .sub { font-size: 13px; color: var(--text-3); margin-bottom: 18px; }
+
+  /* Stage radios */
+  .stage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .stage-card { display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border: 2px solid var(--border); border-radius: 12px; cursor: pointer; transition: all 0.15s; background: var(--bg-elevated); }
+  .stage-card:hover { border-color: var(--text-2); }
+  .stage-card input[type="radio"] { display: none; }
+  .stage-card.selected { border-color: var(--primary); background: var(--primary-soft); }
+  .stage-card .nm { font-size: 16px; font-weight: 700; }
+  .stage-card .meta { font-size: 12px; color: var(--text-3); }
+  .stage-card .range { font-size: 24px; font-weight: 800; color: var(--text); margin-bottom: 2px; }
+  .stage-card .range small { font-size: 12px; color: var(--text-3); font-weight: 500; }
+
+  /* Grade slider (小学/初中 1-9 年级) */
+  .grade-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .grade-pill { padding: 8px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.12s; background: var(--bg-elevated); color: var(--text-2); }
+  .grade-pill:hover { border-color: var(--text-2); }
+  .grade-pill.selected { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .grade-pill.disabled { opacity: 0.3; cursor: not-allowed; }
+
+  /* Subject chips */
+  .subj-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  @media (max-width: 700px) { .subj-grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 420px) { .subj-grid { grid-template-columns: repeat(2, 1fr); } }
+  .subj-chip { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 4px 10px; border: 2px solid var(--border); border-radius: 12px; cursor: pointer; transition: all 0.12s; background: var(--bg-elevated); }
+  .subj-chip:hover { border-color: var(--text-2); }
+  .subj-chip.selected { border-color: var(--primary); background: var(--primary-soft); }
+  .subj-chip input { display: none; }
+  .subj-chip .em { font-size: 22px; line-height: 1; }
+  .subj-chip .nm { font-size: 11px; font-weight: 600; color: var(--text); }
+  .subj-row { display: flex; gap: 8px; margin-top: 12px; }
+  .subj-mini { font-size: 12px; color: var(--text-3); padding: 4px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-elevated); cursor: pointer; }
+  .subj-mini:hover { color: var(--text); border-color: var(--text-2); }
+
+  /* Count radios */
+  .count-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .count-card { padding: 16px 14px; border: 2px solid var(--border); border-radius: 12px; cursor: pointer; text-align: left; transition: all 0.12s; background: var(--bg-elevated); position: relative; }
+  .count-card:hover { border-color: var(--text-2); }
+  .count-card input { display: none; }
+  .count-card.selected { border-color: var(--primary); background: var(--primary-soft); }
+  .count-card.selected::after { content: '✓'; position: absolute; top: 8px; right: 12px; color: var(--primary); font-weight: 800; font-size: 14px; }
+  .count-card .nm { font-size: 15px; font-weight: 700; }
+  .count-card .meta { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+  .count-card .recommend { display: inline-block; font-size: 10px; color: var(--primary); background: #fff; padding: 1px 6px; border-radius: 999px; margin-left: 4px; }
+
+  /* Submit */
+  .submit-row { margin-top: 28px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; border-radius: 12px; font-size: 16px; font-weight: 700; border: 2px solid transparent; transition: all 0.15s; cursor: pointer; }
+  .btn-primary { background: var(--primary); color: #fff; width: 100%; box-shadow: 0 4px 14px rgba(0,135,90,0.25); }
+  .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,135,90,0.35); }
+  .btn-primary:disabled { background: var(--text-3); box-shadow: none; cursor: not-allowed; transform: none; }
+
+  .alt { margin-top: 16px; text-align: center; font-size: 13px; color: var(--text-3); }
+  .alt a { color: var(--text); text-decoration: underline; }
+
+  .preview-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-2); background: var(--bg-tinted); padding: 4px 10px; border-radius: 999px; margin-top: 8px; }
+
+  /* 移动端 (≤ 480px) — V4.1.1 phase 1.3 */
+  @media (max-width: 480px) {
+    .top { padding: 10px 12px; flex-wrap: wrap; }
+    .nav-links { display: none; }  /* 移动端隐藏 nav, 留 logo + 主页按钮 */
+    .brand-text { font-size: 13px; }
+    .container { padding: 16px; }
+    .hero h1 { font-size: 22px; }
+    .stage-card { padding: 14px 16px; }
+    .grade-row { flex-wrap: wrap; }
+    .grade-pill { padding: 6px 10px; font-size: 12px; }
+    .count-card { padding: 12px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">
+      <span class="badge">课</span>
+      <span>中国 K12 知识图谱</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#subjects">14 学科</a>
+      <a href="index.html#features">4 大功能</a>
+      <a href="index.html#stories">谁在用</a>
+      <a href="https://github.com/zachsaws/open-curriculum-cn">GitHub</a>
+    </div>
+    <a class="nav-cta" href="index.html">← 主页</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <h1 style="font-size: clamp(28px, 4vw, 36px); font-weight: 800; line-height: 1.2; margin-bottom: 8px;">5 分钟测出孩子薄弱在哪儿</h1>
+  <p style="color: var(--text-2); font-size: 16px; margin-bottom: 28px;">选学段, 选学科, 出 5 道题找出薄弱概念, 自动给学习路径。</p>
+
+  <!-- Step 1: 选学段 + 年级 -->
+  <div class="step">
+    <span class="step-num">1</span>
+    <h2>选学段</h2>
+    <p class="sub">不同学段的题不一样, 选对孩子所在的年级。</p>
+    <div class="stage-grid">
+      <label class="stage-card" data-stage="primary">
+        <div class="range">1-6 <small>年级</small></div>
+        <div class="nm">小学</div>
+        <div class="meta">基础概念 · 趣味题型</div>
+      </label>
+      <label class="stage-card" data-stage="junior">
+        <div class="range">7-9 <small>年级</small></div>
+        <div class="nm">初中</div>
+        <div class="meta">跨学科 · 综合应用</div>
+      </label>
+    </div>
+    <div id="grade-area" style="display: none; margin-top: 18px;">
+      <div style="font-size: 13px; color: var(--text-2); margin-bottom: 8px; font-weight: 600;">具体年级</div>
+      <div class="grade-row" id="grade-row"></div>
+    </div>
+  </div>
+
+  <!-- Step 2: 选学科 -->
+  <div class="step">
+    <span class="step-num">2</span>
+    <h2>选学科 <span style="font-size: 13px; color: var(--text-3); font-weight: 500;">(可多选, 跨学科也行)</span></h2>
+    <p class="sub">新课标本来就交叉, 选多科能测出"复合题"的薄弱点。</p>
+    <div class="subj-grid" id="subj-grid"></div>
+    <div class="subj-row">
+      <span class="subj-mini" id="subj-all">全选</span>
+      <span class="subj-mini" id="subj-none">全不选</span>
+    </div>
+  </div>
+
+  <!-- Step 3: 题目数量 -->
+  <div class="step">
+    <span class="step-num">3</span>
+    <h2>测试强度</h2>
+    <p class="sub">题越多越准, 第一次先用 5 道快速测。</p>
+    <div class="count-grid">
+      <label class="count-card selected" data-count="5">
+        <div class="nm">5 道题 <span class="recommend">推荐</span></div>
+        <div class="meta">约 2 分钟 · 快速定位</div>
+      </label>
+      <label class="count-card" data-count="10">
+        <div class="nm">10 道题</div>
+        <div class="meta">约 4 分钟 · 跨学科综合</div>
+      </label>
+      <label class="count-card" data-count="20">
+        <div class="nm">20 道题</div>
+        <div class="meta">约 8 分钟 · 完整诊断</div>
+      </label>
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <div class="submit-row">
+    <button class="btn btn-primary" id="submit-btn" disabled>先选学段和学科 →</button>
+    <p class="preview-chip" id="preview-chip">还没选完</p>
+  </div>
+
+  <p class="alt">选错了? <a href="./explore.html">我是老师, 直接进 14 学科概念图 →</a></p>
+
+</div>
+
+<script>
+  // ===== 学科数据 (跟主页 14 学科同步) =====
+  const SUBJECTS = [
+    { id: 'math',          name: '数学',     emoji: '🔢', stage: 'both' },
+    { id: 'chinese',       name: '语文',     emoji: '📖', stage: 'both' },
+    { id: 'english',       name: '英语',     emoji: '🔤', stage: 'both' },
+    { id: 'science',       name: '科学',     emoji: '🔬', stage: 'primary' },
+    { id: 'physics',       name: '物理',     emoji: '⚛️', stage: 'junior' },
+    { id: 'chemistry',     name: '化学',     emoji: '🧪', stage: 'junior' },
+    { id: 'biology',       name: '生物',     emoji: '🧬', stage: 'junior' },
+    { id: 'history',       name: '历史',     emoji: '🏛️', stage: 'both' },
+    { id: 'geography',     name: '地理',     emoji: '🌍', stage: 'both' },
+    { id: 'morality_law',  name: '道德与法治', emoji: '⚖️', stage: 'both' },
+    { id: 'info_tech',     name: '信息科技', emoji: '💻', stage: 'both' },
+    { id: 'art',           name: '艺术',     emoji: '🎨', stage: 'both' },
+    { id: 'pe_health',     name: '体育与健康', emoji: '⚽', stage: 'both' },
+    { id: 'labor',         name: '劳动',     emoji: '🛠️', stage: 'both' },
+  ];
+
+  const STAGE = { primary: [1,2,3,4,5,6], junior: [7,8,9] };
+  const state = { stage: null, grade: null, subjects: new Set(), count: 5 };
+
+  // ===== Stage 选择 =====
+  document.querySelectorAll('.stage-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.stage-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      state.stage = card.dataset.stage;
+      state.grade = STAGE[state.stage][0]; // 默认第一个年级
+      renderGrades();
+      renderSubjects();
+      updatePreview();
+    });
+  });
+
+  function renderGrades() {
+    const row = document.getElementById('grade-row');
+    const area = document.getElementById('grade-area');
+    if (!state.stage) { area.style.display = 'none'; return; }
+    area.style.display = 'block';
+    const grades = STAGE[state.stage];
+    row.innerHTML = grades.map(g => `<span class="grade-pill${g === state.grade ? ' selected' : ''}" data-grade="${g}">${g} 年级</span>`).join('');
+    row.querySelectorAll('.grade-pill').forEach(p => {
+      p.addEventListener('click', () => {
+        row.querySelectorAll('.grade-pill').forEach(x => x.classList.remove('selected'));
+        p.classList.add('selected');
+        state.grade = parseInt(p.dataset.grade, 10);
+        updatePreview();
+      });
+    });
+  }
+
+  // ===== 学科 chip =====
+  function renderSubjects() {
+    const grid = document.getElementById('subj-grid');
+    if (!state.stage) {
+      grid.innerHTML = '<div style="grid-column: 1/-1; padding: 24px; text-align: center; color: var(--text-3); font-size: 13px;">先选学段</div>';
+      return;
+    }
+    grid.innerHTML = SUBJECTS.filter(s => s.stage === 'both' || s.stage === state.stage).map(s => `
+      <label class="subj-chip${state.subjects.has(s.id) ? ' selected' : ''}" data-id="${s.id}">
+        <span class="em">${s.emoji}</span>
+        <span class="nm">${s.name}</span>
+      </label>
+    `).join('');
+    grid.querySelectorAll('.subj-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const id = chip.dataset.id;
+        if (state.subjects.has(id)) state.subjects.delete(id);
+        else state.subjects.add(id);
+        chip.classList.toggle('selected');
+        updatePreview();
+      });
+    });
+  }
+
+  document.getElementById('subj-all').addEventListener('click', () => {
+    SUBJECTS.filter(s => s.stage === 'both' || s.stage === state.stage).forEach(s => state.subjects.add(s.id));
+    renderSubjects();
+    updatePreview();
+  });
+  document.getElementById('subj-none').addEventListener('click', () => {
+    state.subjects.clear();
+    renderSubjects();
+    updatePreview();
+  });
+
+  // ===== 题目数量 =====
+  document.querySelectorAll('.count-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.count-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      state.count = parseInt(card.dataset.count, 10);
+      updatePreview();
+    });
+  });
+
+  // ===== 提交 =====
+  document.getElementById('submit-btn').addEventListener('click', () => {
+    if (!state.stage || state.subjects.size === 0) return;
+    const params = new URLSearchParams({
+      test: 'multi',
+      stage: state.stage,
+      grade: state.grade,
+      subjects: Array.from(state.subjects).join(','),
+      count: state.count,
+    });
+    window.location.href = './diagnose.html?' + params.toString();
+  });
+
+  // ===== Preview chip =====
+  function updatePreview() {
+    const btn = document.getElementById('submit-btn');
+    const chip = document.getElementById('preview-chip');
+    if (!state.stage) {
+      btn.disabled = true; btn.textContent = '先选学段 →';
+      chip.textContent = '还没选完';
+      return;
+    }
+    if (state.subjects.size === 0) {
+      btn.disabled = true; btn.textContent = '选至少 1 个学科 →';
+      chip.textContent = `${state.stage === 'primary' ? '小学' : '初中'} ${state.grade} 年级 · 待选学科`;
+      return;
+    }
+    btn.disabled = false;
+    const subs = Array.from(state.subjects).map(id => SUBJECTS.find(s => s.id === id).name).join(' + ');
+    const stageNm = state.stage === 'primary' ? '小学' : '初中';
+    btn.textContent = `开始 ${state.count} 道题测试 →`;
+    chip.textContent = `${stageNm} ${state.grade} 年级 · ${subs} · ${state.count} 题`;
+  }
+
+  // 初始
+  renderGrades();
+  renderSubjects();
+  updatePreview();
+</script>
+
+</body>
+</html>
