@@ -336,6 +336,17 @@
       transition-duration: 0.01ms !important;
     }
   }
+  /* 移动端 (≤ 480px) — V4.1.1 phase 1.3 */
+  @media (max-width: 480px) {
+    .header h1 { font-size: 13px; }
+    .header .sub { display: none; }
+    .stage-info { padding: 12px 14px; }
+    .stage-info h2 { font-size: 16px; }
+    .stage-info .actions { flex-wrap: wrap; }
+    .stage-info .actions > * { flex: 1; min-width: 0; }
+    /* 漏斗 canvas 移动端太高 → 限制 */
+    .funnel-wrap { max-height: 60vh; }
+  }
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="漏斗学习路径 · 中国 K12 知识图谱">
