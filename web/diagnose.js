@@ -344,6 +344,11 @@ function render() {
       return;
     }
   }
+  // V4.0.5 phase 2.3: ?plan=7d 直接进 7 天复习计划
+  if (getQueryParam('plan') === '7d') {
+    render7DayPlan();
+    return;
+  }
   // URL ?concept_id= 直接进 Step 2 (兼容从概念卡点进来)
   const directConcept = getQueryParam('concept_id');
   if (directConcept && getConceptById(directConcept)) {
@@ -614,6 +619,7 @@ function renderMultiStep3(answers) {
     <div class="actions" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
       <button class="btn" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--primary, #00875a); color: #fff; border: 1px solid var(--primary, #00875a); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./test.html'">再测一次 (换学段/学科)</button>
       <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./wrongbook.html'">看错题本 →</button>
+      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./diagnose.html?plan=7d'">📅 7 天复习计划</button>
       <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
     </div>
   `;
@@ -633,6 +639,14 @@ function renderStep1() {
   c.innerHTML = `
     <h2>选一个概念开始诊断</h2>
     <p class="lead">PoC 范围: math 5 核心考点. 先选 1 个, 5 分钟测出你的薄弱程度.</p>
+    <div style="margin: 16px 0 20px; padding: 12px 16px; background: rgba(0,135,90,0.06); border: 1px solid rgba(0,135,90,0.2); border-radius: 8px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+      <span style="font-size: 24px;">📅</span>
+      <div style="flex: 1; min-width: 200px;">
+        <div style="font-size: 14px; font-weight: 700; color: #0a0d18;">已经测过一些概念?</div>
+        <div style="font-size: 12px; color: #4a4a4a; margin-top: 2px;">基于诊断历史生成 7 天复习计划, 每天 3 个概念, 薄弱优先</div>
+      </div>
+      <a class="btn" href="./diagnose.html?plan=7d" style="background: #00875a; color: #fff; border: 1px solid #00875a; padding: 10px 18px; border-radius: 6px; font-size: 13px; font-weight: 600; text-decoration: none;">看 7 天复习计划 →</a>
+    </div>
     <div class="quick-pick-label">// MATH 5 大常考</div>
     <div class="quick-pick">
       ${QUICK_PICKS.map(q => {
@@ -967,6 +981,7 @@ function showResult(result) {
     <div class="actions" style="margin-top: 32px;">
       <button class="btn secondary" onclick="goBack()">← 测另一个概念</button>
       <button class="btn secondary" onclick="location.href='./wrongbook.html'">❌ 错题本 (${window.HistoryStore.getWrongbookStats().total})</button>
+      <button class="btn secondary" onclick="location.href='./diagnose.html?plan=7d'">📅 7 天复习计划</button>
       <button class="btn secondary" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
       <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">📝 直接做 5 道题</button>
     </div>
@@ -1045,5 +1060,118 @@ function renderHistorySection(conceptId) {
   '</div>';
 }
 
+// V4.0.5 phase 2.3: 7 天复习计划
+// 输入: history 里的薄弱/巩固概念 + 它们的先决链
+// 输出: 7 天日程, 每天 3-5 个概念, 按 status 优先级 + 难度 排
+function render7DayPlan() {
+  setStep(3);
+  const c = document.getElementById('content');
+  c.className = 'container step3';
+  const hist = window.HistoryStore ? window.HistoryStore.getAllHistory() : [];
+  if (hist.length === 0) {
+    c.innerHTML = `<div class="empty" style="padding: 60px 20px; text-align: center; color: #8a8a8a;">
+      <p style="font-size: 48px; margin-bottom: 16px;">📅</p>
+      <p style="font-size: 16px; color: #4a4a4a; margin-bottom: 8px;">还没有诊断记录</p>
+      <p style="font-size: 13px; color: #8a8a8a; margin-bottom: 24px;">先去测几个概念, 找出薄弱在哪儿, 才有 7 天计划</p>
+      <a class="btn" href="./diagnose.html" style="display:inline-block; padding: 10px 20px; font-size: 13px; background: rgba(0,135,90,0.15); border: 1px solid rgba(0,135,90,0.3); color: #0a0d18; border-radius: 6px; text-decoration: none;">🩺 去诊断</a>
+    </div>`;
+    return;
+  }
+  // 收集待复习概念 (按 status 优先级 + 难度)
+  // 兼容 status 中英文 (历史可能是 'weak'/'consolidate' 也可能是 '薄弱'/'巩固')
+  const statusWeight = { weak: 0, 薄弱: 0, consolidate: 1, 巩固: 1, mastered: 2, 已掌握: 2 };
+  const todo = hist
+    .filter(h => {
+      const w = statusWeight[h.status];
+      return w === 0 || w === 1;  // 只看薄弱/巩固
+    })
+    .sort((a, b) => {
+      // 优先按 status (weak 先), 然后按概念 title 长度 / 难度
+      const wA = statusWeight[a.status] || 1;
+      const wB = statusWeight[b.status] || 1;
+      if (wA !== wB) return wA - wB;
+      return (a.concept_title || '').localeCompare(b.concept_title || '');
+    })
+    .slice(0, 21)  // 7 天 × 3 个, 最多 21 个
+    .map(h => {
+      const n = getConceptById(h.concept_id);
+      // 把中文 status 归一为 'weak' / 'consolidate' (用于显示色)
+      const sKey = statusWeight[h.status] === 0 ? 'weak' : 'consolidate';
+      return {
+        id: h.concept_id,
+        title: h.concept_title || (n ? n.title : h.concept_id),
+        status: sKey,
+        subject: h.subject,
+        difficulty: n ? n.difficulty : 1,
+        subjectCn: SUBJECT_CN[h.subject] || h.subject,
+        subjectColor: PALETTE[h.subject] || '#888',
+      };
+    });
+  if (todo.length === 0) {
+    c.innerHTML = `<div class="empty" style="padding: 60px 20px; text-align: center; color: #8a8a8a;">
+      <p style="font-size: 48px; margin-bottom: 16px;">🎉</p>
+      <p style="font-size: 16px; color: #4a4a4a;">你的薄弱清单已清空!</p>
+      <p style="font-size: 13px; color: #8a8a8a; margin-top: 12px;">所有诊断过的概念都已掌握, 继续保持。</p>
+    </div>
+    <div class="actions" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <button class="btn secondary" onclick="goBack()" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;">← 测另一个概念</button>
+    </div>`;
+    return;
+  }
+  // 按每天 3 个分 7 天 (不足 3 个时合并)
+  const perDay = 3;
+  const days = [];
+  for (let i = 0; i < todo.length; i += perDay) {
+    days.push(todo.slice(i, i + perDay));
+  }
+  while (days.length < 7) days.push([]);
+  // 计算日期 (从今天起)
+  const dayNames = ['今天', '明天', '第 3 天', '第 4 天', '第 5 天', '第 6 天', '第 7 天'];
+  const today = new Date();
+  const dayDate = (offset) => {
+    const d = new Date(today);
+    d.setDate(d.getDate() + offset);
+    return d.toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric', weekday: 'short' });
+  };
+  c.innerHTML = `
+    <div style="background: linear-gradient(135deg, #00875a 0%, #00a86b 100%); color: #fff; padding: 18px 24px; border-radius: 12px; margin-bottom: 20px;">
+      <h2 style="font-size: 20px; font-weight: 800; margin-bottom: 4px;">📅 你的 7 天复习计划</h2>
+      <p style="font-size: 13px; opacity: 0.9;">基于 ${hist.length} 次诊断历史,挑出 ${todo.length} 个薄弱/巩固概念。每天 3 个,按薄弱优先 + 难度从低到高排。</p>
+    </div>
+    <div class="week-plan">
+      ${days.map((day, di) => `
+        <div class="day-row" style="display: flex; gap: 16px; align-items: stretch; margin-bottom: 12px; padding: 16px; background: rgba(10,13,24,0.03); border: 1px solid rgba(10,13,24,0.08); border-radius: 10px; ${di === 0 ? 'border-color: #00875a; background: rgba(0,135,90,0.06);' : ''}">
+          <div class="day-label" style="min-width: 80px; display: flex; flex-direction: column; justify-content: center; ${di === 0 ? 'color: #00875a;' : ''}">
+            <div style="font-size: 16px; font-weight: 800;">${dayNames[di]}</div>
+            <div style="font-size: 11px; color: #8a8a8a; font-family: 'SF Mono', monospace; margin-top: 2px;">${dayDate(di)}</div>
+          </div>
+          <div class="day-concepts" style="flex: 1; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+            ${day.length === 0
+              ? '<span style="color: #a5a5a5; font-size: 13px; padding: 8px;">— 休息 / 自由复习 —</span>'
+              : day.map(c => {
+                const statusBg = c.status === 'weak' ? 'rgba(239,107,91,0.12)' : 'rgba(249,168,37,0.12)';
+                const statusBorder = c.status === 'weak' ? 'rgba(239,107,91,0.3)' : 'rgba(249,168,37,0.3)';
+                const statusIcon = c.status === 'weak' ? '📌' : '👍';
+                return `<a href="./diagnose.html?concept_id=${esc(c.id)}" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; background: ${statusBg}; border: 1px solid ${statusBorder}; border-radius: 6px; text-decoration: none; color: #0a0d18; font-size: 13px; transition: all 0.12s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+                  <span style="background: ${c.subjectColor}; color: #fff; padding: 1px 6px; border-radius: 3px; font-size: 10px; font-weight: 700;">${esc(c.subjectCn)}</span>
+                  <span>${esc(c.title)}</span>
+                  <span style="opacity: 0.6; font-size: 11px;">${statusIcon} 难 ${c.difficulty}</span>
+                </a>`;
+              }).join('')
+            }
+          </div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="actions" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <button class="btn secondary" onclick="goBack()" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;">← 测另一个概念</button>
+      <button class="btn" onclick="exportDiagnosisReport()" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--primary, #00875a); color: #fff; border: 1px solid var(--primary, #00875a); border-radius: 8px; cursor: pointer;">🖨 导出 7 天计划 (PDF)</button>
+    </div>
+  `;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+window.render7DayPlan = render7DayPlan;
+
 // --- 启动 ---
+loadData();
 loadData();
