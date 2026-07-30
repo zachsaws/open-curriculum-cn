@@ -614,6 +614,7 @@ function renderMultiStep3(answers) {
     <div class="actions" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
       <button class="btn" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--primary, #00875a); color: #fff; border: 1px solid var(--primary, #00875a); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./test.html'">再测一次 (换学段/学科)</button>
       <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./wrongbook.html'">看错题本 →</button>
+      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
     </div>
   `;
 }
@@ -966,6 +967,7 @@ function showResult(result) {
     <div class="actions" style="margin-top: 32px;">
       <button class="btn secondary" onclick="goBack()">← 测另一个概念</button>
       <button class="btn secondary" onclick="location.href='./wrongbook.html'">❌ 错题本 (${window.HistoryStore.getWrongbookStats().total})</button>
+      <button class="btn secondary" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
       <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">📝 直接做 5 道题</button>
     </div>
     ${renderHistorySection(result.concept_id)}
@@ -1002,6 +1004,16 @@ function showResult(result) {
   // 滚动到顶
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// V4.0.5 phase 2.1: 导出诊断报告为 PDF (用 window.print() + print CSS)
+function exportDiagnosisReport() {
+  // 把当前日期写到 .container.step3 的 data-pdf-date 属性
+  const c = document.querySelector('.container.step3') || document.getElementById('content');
+  if (c) c.setAttribute('data-pdf-date', new Date().toLocaleString('zh-CN', { hour12: false }));
+  // 触发打印 (浏览器内置, 用户可另存为 PDF)
+  window.print();
+}
+window.exportDiagnosisReport = exportDiagnosisReport;
 
 // --- V4.0.4 历史区 (错题列表 + 完整 canvas 趋势图 + 推荐区) ---
 function renderHistorySection(conceptId) {
