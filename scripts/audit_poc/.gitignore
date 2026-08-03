@@ -1,0 +1,6 @@
+audit_progress.json
+fix_progress.json
+exercises_fixed.json
+__pycache__/
+results_v*.json
+sample_50.json
