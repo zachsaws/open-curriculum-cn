@@ -13,8 +13,8 @@ FULL = ROOT / 'web/data/graph.json'
 LITE = ROOT / 'web/data/graph_lite.json'
 LITE_GZ = ROOT / 'web/data/graph_lite.json.gz'
 
-# 3D 球 + detail panel 字段 (~3.9MB / 1MB gz, 比 full 7.8MB 快 7 倍)
-# 含 3D 渲染 + detail 必要字段, 仍 fetch 单次, 不分两步
+# 3D 球 + detail panel 字段 (~4.5MB / 1.3MB gz, 比 full 7.8MB 快 6 倍)
+# 含 3D 渲染 + detail 全部字段, 不分两步
 LITE_FIELDS = [
     # 3D 球核心
     'id', 'subject', 'title', 'grade_start', 'grade_end', 'centrality',
@@ -23,7 +23,8 @@ LITE_FIELDS = [
     'content_req', 'academic_req', 'assessment_prompt',
     'key_points', 'examples', 'src_page',
     'teaching_voice', 'description', 'summary',
-    # 不含: real_examples / common_mistakes / teaching_activity (3 个最大字段, ~600KB)
+    # V3.3.4 教师用书级 (老师备课核心)
+    'real_examples', 'common_mistakes', 'teaching_activity',
 ]
 
 # 边保留 (3D 球画线)
