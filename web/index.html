@@ -3,11 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="按教育部 2022 义教课标整理, 全 14 学科 1906 概念的知识图谱。免费开源, 家长/老师/学生都能用。">
+<meta name="description" content="按教育部 2022 义教课标整理, 全 14 学科 1906 概念的知识图谱, 9264 道题库, 1008 个 B 站讲解视频。免费开源, 家长/老师/学生都能用。">
+<meta name="keywords" content="中国 K12 知识图谱, 教育部 2022 课标, 义教课标, 知识图谱, 学习路径, 数学, 语文, 英语, 物理, 化学, 生物, 历史, 地理, 道德与法治, 信息科技, 艺术, 体育, 劳动, 3D 球面, 漏斗视图, 智能诊断, 错题本, 概念先决关系, 教育部 课标 2022 知识图谱, 家长 孩子 学习">
+<meta name="author" content="Open Curriculum CN">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#00875a">
+<link rel="canonical" href="https://zachsaws.github.io/open-curriculum-cn/">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Open Curriculum CN Releases" href="https://github.com/zachsaws/open-curriculum-cn/releases.atom">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="中国 K12 知识图谱">
 <meta property="og:title" content="中国 K12 知识的「地图」· 按 2022 课标整理">
-<meta property="og:description" content="1906 概念 · 4736 条学习路径 · 14 学科全覆盖。基于教育部 2022 最新课标, 开源免费。">
+<meta property="og:description" content="按教育部 2022 义教课标整理 · 14 学科 1906 概念 · 4736 条学习路径 · 9264 道题 · 1008 视频。免费开源。">
 <meta property="og:image" content="./data/og-sphere.png">
+<meta property="og:url" content="https://zachsaws.github.io/open-curriculum-cn/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="中国 K12 知识的「地图」· 按 2022 课标整理">
+<meta name="twitter:description" content="按教育部 2022 义教课标整理 · 14 学科 1906 概念 · 4736 条学习路径。免费开源。">
+<meta name="twitter:image" content="./data/og-sphere.png">
 <title>中国 K12 知识的「地图」· 按 2022 课标整理</title>
 <style>
   /* === Brilliant 风色彩 (浅色米黄 + 深绿 CTA) === */
@@ -62,6 +76,28 @@
   @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 32px; } }
 
   .hero-eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 6px 12px; border-radius: 999px; margin-bottom: 20px; }
+
+  /* === V1.0 Release Banner (公告条, 可关闭) === */
+  .v10-banner { max-width: 1200px; margin: 0 auto; padding: 12px 24px 0; }
+  .v10-banner-inner { display: flex; align-items: center; gap: 12px; background: var(--primary-soft); border: 1px solid var(--primary); border-radius: 10px; padding: 12px 16px; font-size: 14px; color: var(--text); }
+  .v10-banner .badge-v { background: var(--primary); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; }
+  .v10-banner .txt { flex: 1; line-height: 1.5; }
+  .v10-banner .txt strong { color: var(--primary); }
+  .v10-banner .link { color: var(--primary); font-weight: 600; white-space: nowrap; }
+  .v10-banner .link:hover { text-decoration: underline; }
+  .v10-banner .close { background: transparent; border: 0; color: var(--text-3); font-size: 18px; cursor: pointer; padding: 0 4px; line-height: 1; }
+  .v10-banner .close:hover { color: var(--text); }
+  .v10-banner.hidden { display: none; }
+  @media (max-width: 600px) { .v10-banner-inner { flex-wrap: wrap; padding: 10px 12px; } .v10-banner .link { margin-left: auto; } }
+
+  /* === 反馈按钮 (右上角常驻) === */
+  .feedback-fab { position: fixed; right: 20px; bottom: 20px; z-index: 100; display: flex; flex-direction: column; gap: 8px; }
+  .feedback-fab a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; background: var(--text); color: var(--bg); border-radius: 999px; font-size: 13px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 12px rgba(10,13,24,0.18); transition: transform 0.15s, box-shadow 0.15s; }
+  .feedback-fab a:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(10,13,24,0.25); color: var(--bg); }
+  .feedback-fab .secondary { background: var(--bg-elevated); color: var(--text); border: 1px solid var(--border); }
+  .feedback-fab .secondary:hover { background: var(--bg-tinted); color: var(--text); }
+  .feedback-fab .icon { font-size: 14px; }
+  @media (max-width: 480px) { .feedback-fab { right: 12px; bottom: 12px; } .feedback-fab a { padding: 8px 14px; font-size: 12px; } .feedback-fab .secondary { display: none; } }
   .hero h1 { font-size: clamp(40px, 5.5vw, 64px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: var(--text); margin-bottom: 20px; }
   .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--primary) 0%, var(--math) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .hero .sub { font-size: clamp(16px, 1.8vw, 19px); color: var(--text-2); line-height: 1.6; margin-bottom: 32px; max-width: 540px; }
@@ -205,10 +241,19 @@
   </div>
 </nav>
 
+<aside class="v10-banner" id="v10-banner">
+  <div class="v10-banner-inner">
+    <span class="badge-v">V1.0</span>
+    <span class="txt"><strong>正式版发布</strong> · 1,906 概念 / 4,736 学习路径 / 9,264 题 / 1,008 视频，全部按 2022 课标整理，免费开源。</span>
+    <a class="link" href="./CHANGELOG.md" target="_blank" rel="noopener">看更新 →</a>
+    <button class="close" type="button" aria-label="关闭" onclick="document.getElementById('v10-banner').classList.add('hidden'); try { localStorage.setItem('occ_v10_dismissed', '1'); } catch (e) {}">×</button>
+  </div>
+</aside>
+
 <header class="hero">
   <div class="hero-grid">
     <div>
-      <span class="hero-eyebrow">V4.0 · 2026 课标版</span>
+      <span class="hero-eyebrow">V1.0 正式版 · 2026 课标版</span>
       <h1>中国 K12 知识的<br><em>「地图」</em></h1>
       <p class="sub">按 <strong>教育部 2022 义教课标</strong> 整理, <strong>全 14 学科 1906 概念</strong>。每个概念的「学之前要会什么 / 学之后能学什么」一目了然。</p>
 
@@ -351,14 +396,14 @@
       <a class="feature-card" href="./explore.html">
         <div class="icon" style="background: rgba(91,141,239,0.1); color: var(--math)">🔍</div>
         <h3>概念图谱</h3>
-        <p>3D 球 / 漏斗 / 列表 3 种视图, 展示 1906 概念和 4736 条先决关系。点概念看完整学习路径, 鼠标拖动旋转。</p>
+        <p>3D 球 / 漏斗 / 列表 3 种视图, 展示 1,906 概念和 4,736 条先决关系。点概念看完整学习路径, 鼠标拖动旋转。</p>
         <div class="meta">3D 球 · 漏斗 · 概念卡片</div>
       </a>
       <a class="feature-card" href="./exercise.html">
         <div class="icon" style="background: rgba(123,201,111,0.1); color: var(--english)">✏️</div>
         <h3>题目练习</h3>
-        <p>每个概念 5 道题 (选择 / 填空 / 简答 / 应用真题 / 综合压轴), 共 9259 题。自动判分, 错题入错题本。</p>
-        <div class="meta">9259 题 · 14 学科全覆盖 · Bloom 标签</div>
+        <p>每个概念 5 道题 (选择 / 填空 / 简答 / 应用真题 / 综合压轴), 共 9,264 题。自动判分, 错题入错题本。</p>
+        <div class="meta">9,264 题 · 14 学科全覆盖 · Bloom 标签</div>
       </a>
     </div>
   </div>
@@ -378,12 +423,12 @@
         <div class="l">学习路径<br>先决关系</div>
       </div>
       <div class="trust-card">
-        <div class="v">9,259</div>
+        <div class="v">9,264</div>
         <div class="l">题库<br>含 13 道真题</div>
       </div>
       <div class="trust-card">
-        <div class="v">100%</div>
-        <div class="l">2022 课标<br>覆盖度</div>
+        <div class="v">1,008</div>
+        <div class="l">B 站视频<br>14 学科全覆盖</div>
       </div>
     </div>
   </div>
@@ -461,10 +506,25 @@
       </div>
     </div>
     <div class="bottom">
-      <p>© 2026 中国 K12 知识图谱 · 内容采用 CC-BY-SA 4.0 · 数据库采用 CC0 1.0 · 数据来源: 教育部 2022 义教课标 + 公开教研资料</p>
+      <p>© 2026 中国 K12 知识图谱 · V1.0 正式版 · <a href="./privacy.html">隐私</a> · <a href="https://github.com/zachsaws/open-curriculum-cn/blob/main/CHANGELOG.md">更新日志</a></p>
+      <p style="margin-top: 6px;">内容采用 CC-BY-SA 4.0 · 数据库采用 CC0 1.0 · 数据来源: 教育部 2022 义教课标 + 公开教研资料</p>
     </div>
   </div>
 </footer>
+
+<nav class="feedback-fab" aria-label="反馈入口">
+  <a href="https://github.com/zachsaws/open-curriculum-cn/issues/new" target="_blank" rel="noopener"><span class="icon">💬</span>反馈 / 报错</a>
+  <a class="secondary" href="mailto:zachsaws@gamil.com"><span class="icon">📧</span>邮件联系</a>
+</nav>
+
+<script>
+  // V1.0 公告条: 用户关过后不再显示
+  try {
+    if (localStorage.getItem('occ_v10_dismissed') === '1') {
+      document.getElementById('v10-banner').classList.add('hidden');
+    }
+  } catch (e) {}
+</script>
 
 </body>
 </html>

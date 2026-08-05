@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>中国 K12 知识图谱</title>
+  <desc>中国教育部 2022 义教课标知识图谱品牌 icon</desc>
+
+  <!-- 背景: 深绿主色 (#00875a) 圆角方块 -->
+  <rect x="0" y="0" width="64" height="64" rx="14" ry="14" fill="#00875a"/>
+
+  <!-- 高光: 左上角微亮渐变 -->
+  <defs>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="64" height="64" rx="14" ry="14" fill="url(#shine)"/>
+
+  <!-- 主体: 黄"课"字 (#ffce4f) -->
+  <text x="32" y="46" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif" font-size="38" font-weight="800" fill="#ffce4f" text-anchor="middle" letter-spacing="-1">课</text>
+
+  <!-- 装饰: 14 学科节点 (小圆点) 暗示"图谱" -->
+  <g fill="#ffce4f" opacity="0.45">
+    <circle cx="14" cy="14" r="1.8"/>
+    <circle cx="50" cy="14" r="1.8"/>
+    <circle cx="50" cy="50" r="1.8"/>
+    <circle cx="14" cy="50" r="1.8"/>
+  </g>
+
+  <!-- 装饰: 节点连线 (浅黄) 暗示先决关系 -->
+  <g stroke="#ffce4f" stroke-width="0.8" opacity="0.3" fill="none">
+    <line x1="14" y1="14" x2="50" y2="14"/>
+    <line x1="50" y1="14" x2="50" y2="50"/>
+    <line x1="50" y1="50" x2="14" y2="50"/>
+    <line x1="14" y1="50" x2="14" y2="14"/>
+  </g>
+</svg>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="中国 K12 知识图谱隐私政策 — 本地存储, 不上传, 不卖数据">
+<meta name="robots" content="index, follow">
+<title>隐私政策 · 中国 K12 知识图谱</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<style>
+  :root {
+    --bg: #faf6ee;
+    --bg-elevated: #ffffff;
+    --bg-tinted: #f0e9da;
+    --border: #e8e0cc;
+    --text: #0a0d18;
+    --text-2: #4a4a4a;
+    --text-3: #8a8a8a;
+    --primary: #00875a;
+    --primary-soft: #e6f5ee;
+    --accent: #ffce4f;
+    --warn: #b85a3a;
+    --warn-soft: rgba(239,107,91,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; min-height: 100%; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+
+  .nav { background: rgba(250, 246, 238, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-inner { max-width: 1000px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; color: var(--text); }
+  .logo .badge { width: 30px; height: 30px; border-radius: 8px; background: var(--text); color: var(--accent); display: grid; place-items: center; font-size: 14px; font-weight: 800; }
+  .nav-back { font-size: 14px; color: var(--text-2); }
+
+  main { max-width: 800px; margin: 0 auto; padding: 56px 24px 40px; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .sub { font-size: 15px; color: var(--text-3); margin-bottom: 32px; }
+  h2 { font-size: 22px; font-weight: 700; margin-top: 40px; margin-bottom: 14px; padding-top: 24px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 17px; font-weight: 700; margin-top: 24px; margin-bottom: 10px; }
+  p { font-size: 15px; color: var(--text-2); margin-bottom: 14px; }
+  ul, ol { margin: 0 0 14px 24px; font-size: 15px; color: var(--text-2); }
+  li { margin-bottom: 6px; }
+  strong { color: var(--text); font-weight: 600; }
+  code { font-family: "SF Mono", "Monaco", monospace; font-size: 13px; background: var(--bg-tinted); padding: 2px 6px; border-radius: 4px; color: var(--text); }
+
+  .callout { padding: 16px 20px; border-radius: 10px; margin: 20px 0; font-size: 14px; line-height: 1.65; }
+  .callout.green { background: var(--primary-soft); border-left: 3px solid var(--primary); color: var(--text); }
+  .callout.warn { background: var(--warn-soft); border-left: 3px solid var(--warn); color: var(--text); }
+  .callout strong { display: block; margin-bottom: 6px; }
+
+  .toc { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 32px; }
+  .toc h3 { font-size: 13px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 12px; }
+  .toc ul { list-style: none; margin: 0; }
+  .toc li { margin: 0; }
+  .toc a { font-size: 14px; color: var(--text-2); display: block; padding: 4px 0; }
+  .toc a:hover { color: var(--primary); text-decoration: none; }
+
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
+  th { background: var(--bg-tinted); font-weight: 600; color: var(--text); }
+  td { color: var(--text-2); }
+
+  footer { padding: 32px 24px; text-align: center; font-size: 12px; color: var(--text-3); border-top: 1px solid var(--border); margin-top: 60px; }
+  footer a { color: var(--text-2); }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    main { padding: 32px 16px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="./index.html">
+      <span class="badge">课</span>
+      <span>中国 K12 知识图谱</span>
+    </a>
+    <a class="nav-back" href="./index.html">← 回到首页</a>
+  </div>
+</nav>
+
+<main>
+  <h1>隐私政策</h1>
+  <p class="sub">最后更新：2026-08-05 · 适用于 V1.0 正式版</p>
+
+  <div class="callout green">
+    <strong>🟢 一句话承诺</strong>
+    本网站<strong>不收集你的个人信息</strong>，<strong>不上传你的学习数据</strong>，<strong>不卖数据给第三方</strong>。所有答题记录、错题本、诊断历史都存在你<strong>自己浏览器</strong>的 localStorage 里，<strong>关掉浏览器就清空</strong>，我们永远看不到。
+  </div>
+
+  <div class="toc">
+    <h3>目录</h3>
+    <ul>
+      <li><a href="#collect">1. 我们不收集什么</a></li>
+      <li><a href="#storage">2. 本地存储 (localStorage) 说明</a></li>
+      <li><a href="#network">3. 网络请求清单</a></li>
+      <li><a href="#third-party">4. 第三方资源</a></li>
+      <li><a href="#children">5. 未成年人保护</a></li>
+      <li><a href="#data-rights">6. 你的数据权利</a></li>
+      <li><a href="#open-source">7. 开源透明</a></li>
+      <li><a href="#changes">8. 政策变更</a></li>
+      <li><a href="#contact">9. 联系我们</a></li>
+    </ul>
+  </div>
+
+  <h2 id="collect">1. 我们不收集什么</h2>
+
+  <p>本网站是<strong>纯静态站点</strong>，部署在 GitHub Pages 上。<strong>我们（项目作者）没有任何服务器后端可以收集你的数据</strong>。</p>
+
+  <h3>不收集</h3>
+  <ul>
+    <li>❌ 姓名 / 邮箱 / 手机号（无需注册登录）</li>
+    <li>❌ 答题记录（错题本 / 诊断历史）</li>
+    <li>❌ 学习行为（点击 / 浏览 / 停留时长）</li>
+    <li>❌ 设备指纹 / IP 地址 / User-Agent（除了 GitHub Pages 默认的访问日志）</li>
+    <li>❌ 地理位置 / 学校 / 年级（除非你主动填）</li>
+  </ul>
+
+  <h3>GitHub Pages 默认日志</h3>
+  <p>GitHub Pages 出于安全和反爬虫目的，会记录访问者的 IP 地址和请求路径，<strong>这些日志由 GitHub 持有，30 天后自动清除</strong>，我们无法查看详细访问记录（只能看到聚合 PV/UV 数据用于统计）。详见 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">GitHub Pages Data Collection</a>。</p>
+
+  <h2 id="storage">2. 本地存储 (localStorage) 说明</h2>
+
+  <p>为了提供"错题本"和"诊断历史"功能，本网站使用浏览器的 <code>localStorage</code> API 存储以下数据：</p>
+
+  <table>
+    <thead>
+      <tr><th>存储 Key</th><th>内容</th><th>大小</th><th>目的</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>occ_history_v1</code></td><td>诊断历史（最近 500 条）</td><td>~1MB</td><td>显示进度趋势图</td></tr>
+      <tr><td><code>occ_wrongbook_v1</code></td><td>错题本（最多 1000 题）</td><td>~2MB</td><td>回顾错题 / 重做</td></tr>
+      <tr><td><code>occ_user_v1</code></td><td>当前用户 ID（V1.1 班级模式）</td><td>&lt;1KB</td><td>区分本地用户</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout green">
+    <strong>🔒 关键事实</strong>
+    localStorage 数据<strong>只存在你当前浏览器的这个域名下</strong>：
+    <ul style="margin-top: 8px;">
+      <li>换浏览器 / 换设备 = 数据不见（除非用同一浏览器的同步功能）</li>
+      <li>清浏览器缓存 / Cookie = 数据主动清空</li>
+      <li>我们（包括项目作者）<strong>没有任何方式</strong>读取你浏览器里的 localStorage</li>
+    </ul>
+  </div>
+
+  <h3>如何清空本地数据</h3>
+  <p>浏览器 DevTools → Application 标签 → Local Storage → 选 <code>zachsaws.github.io</code> → 点"Clear All"。或直接在浏览器设置里清缓存。</p>
+
+  <h2 id="network">3. 网络请求清单</h2>
+
+  <p>本网站<strong>只对外发 3 类请求</strong>，全部明示：</p>
+
+  <table>
+    <thead>
+      <tr><th>请求类型</th><th>目标</th><th>触发条件</th><th>是否必需</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>静态资源</td><td><code>zachsaws.github.io/open-curriculum-cn/</code></td><td>每次访问</td><td>必需（页面本身）</td></tr>
+      <tr><td>B 站视频 iframe</td><td><code>bilibili.com</code> / <code>player.bilibili.com</code></td><td>点"📺 看讲解视频"按钮</td><td>可选</td></tr>
+      <tr><td>B 站搜索（fallback）</td><td><code>api.bilibili.com</code></td><td>长尾概念无推荐视频时</td><td>可选</td></tr>
+    </tbody>
+  </table>
+
+  <h3>不发送的内容</h3>
+  <ul>
+    <li>❌ 不发送你的答题记录</li>
+    <li>❌ 不发送你的错题本</li>
+    <li>❌ 不发送你的诊断历史</li>
+    <li>❌ 不发送任何可识别你身份的信息</li>
+  </ul>
+
+  <h2 id="third-party">4. 第三方资源</h2>
+
+  <h3>B 站视频播放器</h3>
+  <p>点击"📺 看讲解视频"按钮时，会加载 B 站官方 iframe 播放器。B 站可能在播放器加载时收集你的 IP / UA / Cookie。<strong>这是 B 站的隐私政策，不是我们的</strong>。详见 <a href="https://www.bilibili.com/blackboard/privacy-pc.html">B 站隐私政策</a>。</p>
+
+  <p><strong>如果你是未成年人</strong>，且不希望留下 B 站访问记录，可以：</p>
+  <ul>
+    <li>不点"看视频"按钮（视频链接是公开的 B 站资源）</li>
+    <li>退出 B 站登录态后再看</li>
+  </ul>
+
+  <h3>其他第三方</h3>
+  <p>本站<strong>不使用</strong>：</p>
+  <ul>
+    <li>❌ 任何广告 SDK（百度 / 巨量 / 穿山甲）</li>
+    <li>❌ 任何统计 SDK（Google Analytics / 百度统计 / 神策）</li>
+    <li>❌ 任何社交分享 SDK（微博 / 微信）</li>
+    <li>❌ 任何 A/B 测试 SDK</li>
+  </ul>
+
+  <h2 id="children">5. 未成年人保护</h2>
+
+  <p>本项目主要面向 K12 学生（6-18 岁）。我们承诺：</p>
+
+  <ul>
+    <li>🟢 <strong>不收集任何未成年人个人信息</strong></li>
+    <li>🟢 <strong>不展示任何商业广告</strong></li>
+    <li>🟢 <strong>不引导填写个人信息</strong>（无注册 / 无登录）</li>
+    <li>🟢 <strong>不接入可能追踪未成年人的第三方 SDK</strong></li>
+  </ul>
+
+  <p>建议家长 / 监护人：</p>
+  <ul>
+    <li>陪伴孩子首次使用时，浏览"使用说明"</li>
+    <li>如不希望 B 站视频被观看，可点错题卡时跳过视频</li>
+    <li>定期清浏览器缓存以清空本地错题本</li>
+  </ul>
+
+  <h2 id="data-rights">6. 你的数据权利</h2>
+
+  <p>由于我们<strong>不收集任何数据</strong>，你<strong>自动拥有</strong>以下权利：</p>
+
+  <ul>
+    <li>✅ <strong>访问权</strong> — 你的数据在 localStorage 里，DevTools 直接可看</li>
+    <li>✅ <strong>删除权</strong> — 清浏览器缓存即删除全部本地数据</li>
+    <li>✅ <strong>导出权</strong> — 错题本支持"导出 PDF"（在错题本主页 🖨 按钮）</li>
+    <li>✅ <strong>更正权</strong> — 错题可手动从错题本移除</li>
+    <li>✅ <strong>拒绝权</strong> — 不用即不受影响（无强制账号）</li>
+  </ul>
+
+  <h2 id="open-source">7. 开源透明</h2>
+
+  <p>本网站<strong>所有代码 + 数据 + 题目库 + 视频清单</strong>全部开源：</p>
+
+  <ul>
+    <li>📦 <a href="https://github.com/zachsaws/open-curriculum-cn">GitHub 仓库</a>（Apache 2.0 / CC-BY-SA 4.0）</li>
+    <li>📜 <a href="https://github.com/zachsaws/open-curriculum-cn/blob/main/CHANGELOG.md">更新日志</a></li>
+    <li>📋 <a href="https://github.com/zachsaws/open-curriculum-cn/blob/main/docs/schema.md">数据 Schema</a></li>
+  </ul>
+
+  <p><strong>任何人都可以审计</strong>我们的网络请求、localStorage 使用、第三方资源加载。Issue / PR 都欢迎。</p>
+
+  <h2 id="changes">8. 政策变更</h2>
+
+  <p>如果隐私政策发生重大变更，会：</p>
+  <ol>
+    <li>在本页面顶部更新"最后更新"日期</li>
+    <li>在 <a href="./CHANGELOG.md">CHANGELOG.md</a> 记录变更内容</li>
+    <li>在 GitHub Releases 发版本说明</li>
+  </ol>
+
+  <p>微小修订（如修正错别字、补充说明）<strong>不会另行通知</strong>。</p>
+
+  <h2 id="contact">9. 联系我们</h2>
+
+  <p>如有隐私相关问题：</p>
+  <ul>
+    <li>📧 邮件：<a href="mailto:zachsaws@gamil.com">zachsaws@gamil.com</a></li>
+    <li>💬 GitHub Issue：<a href="https://github.com/zachsaws/open-curriculum-cn/issues">提交 Issue</a>（推荐，可公开讨论）</li>
+    <li>📦 GitHub Discussion：<a href="https://github.com/zachsaws/open-curriculum-cn/discussions">讨论区</a></li>
+  </ul>
+
+  <div class="callout warn">
+    <strong>⚠️ 友情提醒</strong>
+    邮件回复可能 1-3 天，紧急问题请用 GitHub Issue 公开提交（其他人也可见，避免重复问）。
+  </div>
+
+</main>
+
+<footer>
+  <p>中国 K12 知识图谱 · V1.0 正式版 · <a href="./index.html">首页</a> · <a href="https://github.com/zachsaws/open-curriculum-cn">GitHub</a> · <a href="./privacy.html">隐私</a></p>
+  <p style="margin-top: 8px;">数据采用 CC-BY-SA 4.0 + CC0 1.0 · 课标原文版权归人教社</p>
+</footer>
+
+</body>
+</html>

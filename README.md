@@ -2,23 +2,26 @@
 
 > **每一步学什么，之前漏了哪一步。**
 
-中国教育部 2022 最新课标 · **14 学科 · 1906 核心概念 · 4736 条学习路径 · 9264 道题目 · 1008 视频** · 开源免费。
+🎉 **V1.0 正式版发布**（2026-08-05） — 第一次以正式版形态发布。中国教育部 2022 最新课标 · **14 学科 · 1,906 核心概念 · 4,736 条学习路径 · 9,264 道题目 · 1,008 视频** · 开源免费。
 
 🎬 **5 秒看明白**：
 
 [![5 秒看明白](https://zachsaws.github.io/open-curriculum-cn/data/hero_thumb.gif)](https://zachsaws.github.io/open-curriculum-cn/explore.html)
 *↑ 主页 8s 缩略 · 完整 30s 概念片在 demo 段*
 
-🆕 **V4.1.2 视频接入**：点节点 → 📺 讲解视频 → 答错 5 题 → 复习路径 → 错题本 chip
+🆕 **V1.0 视频接入**：点节点 → 📺 B 站讲解视频 → 答错 5 题 → 复习路径 → 错题本 chip
 
-![V4.1.2 演示](https://zachsaws.github.io/open-curriculum-cn/preview/v4.1.2-collage.png)
-*↑ 3 核心考点 (勾股定理/整本书阅读/光的反射定律) × 3 页面 (explore/diagnose/wrongbook) — B 站 API 自动挑的 1008 真教学视频 (跑题率 < 5%)*
+![V1.0 演示](https://zachsaws.github.io/open-curriculum-cn/preview/v4.1.2-collage.png)
+*↑ 3 核心考点 (勾股定理/整本书阅读/光的反射定律) × 3 页面 (explore/diagnose/wrongbook) — B 站 API 自动挑的 1,008 真教学视频 (跑题率 < 5%)*
 
-🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [题目练习](https://zachsaws.github.io/open-curriculum-cn/exercise.html?id=M_G4_GM_08) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
+🔗 **[3D 球面 demo](https://zachsaws.github.io/open-curriculum-cn/explore.html)** · [漏斗视图](https://zachsaws.github.io/open-curriculum-cn/funnel.html) · [智能诊断](https://zachsaws.github.io/open-curriculum-cn/diagnose.html?concept_id=M_G4_GM_08) · [题目练习](https://zachsaws.github.io/open-curriculum-cn/exercise.html?id=M_G4_GM_08) · [首页](https://zachsaws.github.io/open-curriculum-cn/)
 
 [![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Version: V1.0](https://img.shields.io/badge/version-V1.0-brightgreen)](https://github.com/zachsaws/open-curriculum-cn/releases)
 [![Concepts: 1906](https://img.shields.io/badge/concepts-1906-green)]()
 [![Learning paths: 4736](https://img.shields.io/badge/learning%20paths-4736-blue)]()
+[![Exercises: 9264](https://img.shields.io/badge/exercises-9264-orange)]()
+[![Videos: 1008](https://img.shields.io/badge/videos-1008-red)]()
 [![Subjects: 14](https://img.shields.io/badge/subjects-14-green)]()
 [![Coverage: G1--G9](https://img.shields.io/badge/coverage-G1--G9-blue)]()
 
@@ -187,10 +190,10 @@ open-curriculum-cn/
 ├── data/
 │   ├── raw/curriculum_2022/   # 17 本 PDF（人教社下载）
 │   ├── parsed/                # OCR 解析
-│   ├── graph/                 # 知识图谱 JSON
+│   ├── graph/                 # 知识图谱 JSON（中间产物）
 │   │   ├── all_v3.7_p1.json   # V3.7 P1 final (含 teaching_voice 100%)
 │   │   └── {subject}_v3*.json # 学科 + V3.3.5 LLM 增强
-│   └── exercises/             # 题目库
+│   └── exercises/             # 题目库（中间产物）
 │       └── exercises_v1.json  # 5000+ 题 (LLM 自动 + 8 道经典常考)
 ├── src/
 │   ├── extract/               # PDF 下载 + OCR
@@ -200,17 +203,48 @@ open-curriculum-cn/
 │   ├── build_p1.py            # teaching_voice 跑批
 │   ├── build_p2.py            # 题目库跑批（5 道题/概念互补设计）
 │   └── add_real_exams.py      # 经典常考题手动入库
-├── web/                       # 静态前端
-│   ├── index.html             # 主页（产品化 V3.6.1）
+├── scripts/                   # 工具脚本
+│   ├── auto_pick_videos.py    # B 站 wbi 自动挑视频 (V4.1.2)
+│   ├── gen_graph_lite.py      # 生成 graph_lite.json (V4.1.3)
+│   ├── l2_loop.sh             # L2 概念补视频续跑
+│   └── audit_poc/             # 题目 AI 评估 (V4.0.6)
+│       ├── prompts.py         # 4 prompt 模板
+│       ├── audit.py           # 50 题 PoC
+│       ├── audit_full.py      # 9188 题全量
+│       ├── fix_full.py        # 改写
+│       ├── fix_retry.py       # 失败重跑
+│       ├── regression.py      # 改写后回归
+│       ├── diff_full.py       # 难度校准
+│       ├── fix_art.py         # art 学科定制改写
+│       └── *.md               # 4 份报告
+├── web/                       # 静态前端 (V4.1.3 lite 优化)
+│   ├── index.html             # 主页 (V4.1.1 phase 1.4 落地)
+│   ├── test.html              # 跨学科测试 (V4.1 新增)
 │   ├── explore.html           # 3D 球面视图
 │   ├── 3d.js                  # Three.js r160 + lineage + camera tween + depth fog
 │   ├── funnel.html            # 漏斗视图
 │   ├── funnel.js              # Canvas 2D + lineage BFS
 │   ├── print.html             # A4 黑白打印版
-│   ├── exercise.html          # 题目练习页（V4.0.1 新增）
-│   ├── diagnose.html          # 智能诊断页（V4.0.2 新增）
+│   ├── exercise.html          # 题目练习页
+│   ├── diagnose.html          # 智能诊断页
 │   ├── diagnose.js            # 客户端 BFS + 自适应阈值算法
-│   └── subject-cn.js          # 14 学科中文名共享字典
+│   ├── wrongbook.html         # 错题本 (V4.0.3)
+│   ├── video-admin.html       # 视频入库工具 (V4.1.2)
+│   ├── 404.html               # GitHub Pages 404 (V1.0)
+│   ├── privacy.html           # 隐私政策 (V1.0)
+│   ├── favicon.svg            # 品牌 icon (V1.0)
+│   ├── subject-cn.js          # 14 学科中文名共享字典
+│   ├── data-cache.js          # 3 API: loadGraphLite/Full/prefetchFull
+│   ├── trend.js / rec.js       # 进度趋势 + 个性化推荐
+│   └── data/                  # 公网数据
+│       ├── graph.json (7.8MB) / graph_lite.json (5.5MB) / .gz (1.7MB)
+│       ├── exercises.json (9264 题)
+│       ├── exercises_quality.json (5 维标签)
+│       ├── exercises_diff.json (难度校准)
+│       ├── videos.json (1008 视频)
+│       ├── recommendations.json
+│       └── diagnose_demo.mp4 / hero_thumb.gif / og-sphere.png
+├── web/preview/               # V3.6 历史快照（保留）
 ├── api/                       # FastAPI B 端 REST（本地，暂未上公网）
 ├── docs/
 │   ├── schema.md
@@ -269,17 +303,28 @@ open-curriculum-cn/
 - [x] **V4.0.5 phase 2.3**: 7 天复习计划 (基于 history 里的薄弱/巩固概念, 每天 3 个, 7 天日程, 兼容 status 中英文, 可导出 PDF)
 - [x] **V4.0.5 phase 2.4**: 错题本重做模式 (错题卡按 exercise_id 找原题, 答对自动从错题本移除, 反馈条 + 解释 + 3 状态 banner)
 - [x] **V4.1.2 phase 1-3**: 视频接入框架 (3 处显示: explore 概念卡 / diagnose 复习路径 / wrongbook 错题卡 chip) + B 站 wbi 签名自动挑选 1008 视频 (508 核心 + 500 L2 概念, 跑题率 < 5%, 全 14 学科覆盖) — auto_pick_videos.py 学科化 query + 评分 (关键词 + 白/黑名单 + 播放数 log + 时长适中) + 候选清单 docs/v412_video_picks.csv (514) + docs/v412_video_picks_l2.csv (950 L2) + 拼图 web/preview/v4.1.2-collage.png
-- [ ] **V4.0 短期 (3 个月)**:
-  - 知乎/公众号文章（让老师/教研员/家长知道这玩意）
-  - 演示视频/GIF（让 5 秒看懂）
-  - B 端 SaaS 模板（教培机构接入）
-- [ ] **V4.0 中期 (6 个月)**:
-  - 智能诊断全量（V4.0.3 扩全 14 学科 + 诊断历史持久化 + 错题本 + 进度趋势；V4.0.4 加 PDF 报告导出 + IRT 自适应难度 + 7 天复习计划；**V4.0.4 已交付 趋势图 + 推荐**）
-  - 个性化学习路径推荐
-  - 区域学情分析
-- [ ] **V4.0 远期 (12 个月)**:
-  - 海外华人 K12 市场（Marble 中文版）
-  - 高校先修课图谱（衔接 K12 + 大学）
+- [x] **V4.0.6**: 题目 AI 评估 + 改写 (50 题 PoC 选 v1_strict_5d prompt, 9,188/9,264 评估 [low 86% / medium 11% / high 3%], 278 high 题改写 96% 修复 [235+32], 52 题仍 high 回滚, 9 题 concept_id 改, art 学科定制 prompt 4/9 题, 2,652 题难度全量校准 [1 worker 串行 10 题/min]) — `scripts/audit_poc/` 7 个脚本 + 4 份报告
+- [x] **V4.1.3**: 3D 球加载性能优化 (graph_lite.json 5.5MB + .gz 1.7MB, 24 字段精简版, 首屏 10-20s → 3-6s 快 4 倍) — data-cache.js 新 API (loadGraphLite/Full/prefetchFull) + 3d.js/funnel.js/print.html/diagnose.js/exercise.html 全部改用 lite + 修复 9 orphan concept_id + 加回 real_examples/common_mistakes/teaching_activity 3 字段
+- [x] **V1.0**: 正式版打包 — CHANGELOG.md + favicon.svg + 404.html + privacy.html + 8 个 HTML 页 SEO + 反馈 + 版本号
+
+### 下一阶段
+
+- [ ] **V1.1 (1-2 月) B 端班级模式 PoC**:
+  - users.json / classes.json (mock 5-10 用户 + 2-3 班级)
+  - 教师视图 teacher.html (班级错题汇总 + 答对率分布)
+  - 学生加入班级流程（邀请码）
+  - 错题本/诊断 history 按 user_id 隔离
+- [ ] **V1.1 (1-2 月) 埋点 + 反馈闭环**:
+  - 用户行为数据 (PV/UV/诊断完成率/错题率/视频点击)
+  - 反馈常驻入口 + GitHub Issues 模板
+- [ ] **V1.2 (3-6 月) 教师视角 dashboard**:
+  - 班级学情全景 (班级薄弱概念 Top 10 / 个人错题分布 / 趋势)
+  - 国家中小学智慧教育平台接入
+  - 真题库扩充
+- [ ] **V1.3 (6-12 月) 海外华人 + 高校先修**:
+  - 海外华人 K12 i18n (Marble 中文版)
+  - 高校先修课图谱 (K12 → 大学衔接)
+  - 视频扩充到 2,000+
 
 ## 贡献
 
@@ -300,4 +345,13 @@ open-curriculum-cn/
 
 - 教育部 / 人教社 2022 义教课程标准
 - [Marble](https://withmarble.com/) 范式启发
-- tesseract OCR / Three.js / Canvas 2D / FastAPI
+- tesseract OCR / Three.js / Canvas 2D / FastAPI / Playwright
+- 1,008 个 B 站教学视频创作者（视频数据按视频创作者版权展示在视频卡片）
+- 9,264 道题的 LLM 出题 + AI 评估改写管线
+
+## V1.0 配套资源
+
+- [CHANGELOG.md](CHANGELOG.md) — 完整更新日志
+- [隐私政策](https://zachsaws.github.io/open-curriculum-cn/privacy.html) — localStorage / 不上传 / 不卖数据
+- [GitHub Releases V1.0](https://github.com/zachsaws/open-curriculum-cn/releases/tag/v1.0) — 正式版下载 / 数据 schema
+- [V1.0 演示拼图](https://zachsaws.github.io/open-curriculum-cn/preview/v4.1.2-collage.png) — 3 核心考点 × 3 页面
