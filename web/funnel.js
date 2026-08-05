@@ -100,7 +100,7 @@ async function init() {
 
   // 1) 加载数据 (V3.6.9: 用 data-cache.js 共享 localStorage 缓存)
   try {
-    DATA = await loadGraphData();
+    DATA = await loadGraphLite();  // V4.1.3: lite 版 (1MB gz, 快 1 倍)
   } catch (e) {
     const msg = document.getElementById('loadingMsg');
     msg.innerHTML = `<div class="err">${'未找到图谱数据 (graph.json)'}<br><br>${e.message}</div>`;

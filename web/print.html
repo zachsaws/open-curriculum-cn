@@ -238,7 +238,7 @@ function render(node, ctx) {
 
   try {
     // V3.6.9: 用 data-cache.js 共享 localStorage 缓存
-    const data = await loadGraphData();
+    const data = await loadGraphLite();  // V4.1.3: lite 版 (1MB gz, 快 1 倍)
     const node = data.nodes.find(n => n.id === id);
     if (!node) {
       content.innerHTML = `<div class="err">找不到 ID 为 <code>${esc(id)}</code> 的概念. <a href="./funnel.html" target="_blank">回漏斗找</a></div>`;
