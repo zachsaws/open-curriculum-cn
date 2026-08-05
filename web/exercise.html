@@ -460,10 +460,10 @@ async function main() {
     return;
   }
 
-  // 加载概念数据 (从 graph.json)
+  // 加载概念数据 (V4.1.3: 用 lite, 1.7MB gz 比 full 7.8MB 快 4 倍)
   let concept = null;
   try {
-    const graphRes = await fetch('./data/graph.json');
+    const graphRes = await fetch('./data/graph_lite.json');
     const graph = await graphRes.json();
     concept = (graph.nodes || []).find(n => n.id === conceptId);
   } catch (e) {

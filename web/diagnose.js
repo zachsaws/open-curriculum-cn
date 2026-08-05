@@ -179,18 +179,17 @@ function getConceptById(id) {
 // --- 数据加载 ---
 async function loadData() {
   try {
-    // V4.0.4: 并行加载 3 份数据 (graph + exercises + recommendations)
+    // V4.0.4 + V4.1.3: 并行加载 3 份数据 (graph_lite + exercises + recommendations)
     const [gRes, eRes, rRes] = await Promise.all([
-      fetch('./data/graph.json'),
+      fetch('./data/graph_lite.json'),  // V4.1.3: lite 版 (1.7MB gz, 比 full 7.8MB 快 4 倍)
       fetch('./data/exercises.json'),
-      fetch('./data/recommendations.json').catch(() => null),  // 推荐数据非关键, 失败 fallback
+      fetch('./data/recommendations.json').catch(() => null),
     ]);
-    if (!gRes.ok) throw new Error(`graph.json ${gRes.status}`);
+    if (!gRes.ok) throw new Error(`graph_lite.json ${gRes.status}`);
     if (!eRes.ok) throw new Error(`exercises.json ${eRes.status}`);
     GRAPH = await gRes.json();
     const eData = await eRes.json();
     EXERCISES = eData.exercises || [];
-    // 按 concept_id 索引
     EXERCISES.forEach(e => {
       if (!EXERCISES_BY_CONCEPT[e.concept_id]) EXERCISES_BY_CONCEPT[e.concept_id] = [];
       EXERCISES_BY_CONCEPT[e.concept_id].push(e);
