@@ -109,10 +109,13 @@ async function init() {
   isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
   document.getElementById('loadingMsg').textContent = '加载 3D 球面知识图谱...';
 
-  // 1) 加载数据
+  // 1) 加载数据 (V4.1.3: 用 lite 版, 80KB gz 快 100 倍)
   await loadData();
   await loadVideos();  // V4.1.2
   if (!DATA) return;
+
+  // V4.1.3: 后台预取 full graph (detail panel 用)
+  if (typeof window.prefetchFull === 'function') window.prefetchFull();
 
   // 2) 搭建场景
   setupScene();
@@ -141,21 +144,25 @@ async function init() {
 
 // ============== 数据加载 ==============
 async function loadData() {
-  // V3.6.9: 用 data-cache.js 共享 localStorage 缓存 (冷启 <1s 热, 30s+ 冷)
+  // V4.1.3: 用 lite 版 (80KB gz, 快 100 倍) — 3D 球只需 12 字段
   try {
-    DATA = await loadGraphData();
+    DATA = await loadGraphLite();
   } catch (e) {
-    const msg = document.getElementById('loadingMsg');
-    msg.innerHTML = `<div class="err">未找到图谱数据 (graph.json / .gz)<br><br>${e.message}</div>`;
-    console.error(e);
-    return;
+    // lite 加载失败, fallback 到 full
+    console.warn('[3d] lite 失败, fallback full:', e.message);
+    try {
+      DATA = await loadGraphData();
+    } catch (e2) {
+      const msg = document.getElementById('loadingMsg');
+      msg.innerHTML = `<div class="err">未找到图谱数据 (graph.json / .gz)<br><br>${e2.message}</div>`;
+      console.error(e2);
+      return;
+    }
   }
   GROUPS = [...new Set(DATA.nodes.map(n => n.subject))].sort();
   activeGroups = new Set(GROUPS);
   // 缓存原始 title (用于繁简切换)
   DATA.nodes.forEach(n => { titleOrig.set(n.id, n.title); });
-
-  // V3.6.10b: 删掉 nCount/eCount/gCount 更新 (不显示给用户)
 }
 
 // ============== 场景 ==============
@@ -774,7 +781,6 @@ function applyFilterToColors() {
   }
   pointsMesh.geometry.attributes.color.needsUpdate = true;
 }
-
 // ============== UI: 卡片 ==============
 // 复用 2D app.js 的 showCard 逻辑, 但用 3D 的邻接表
 function showCard(node) {
