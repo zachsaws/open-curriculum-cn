@@ -176,6 +176,33 @@ function getConceptById(id) {
   return GRAPH.nodes.find(n => n.id === id);
 }
 
+// --- 知识卡桥接 (M1: 让诊断结果也能生成可分享卡) ---
+// 复用现有 share.js 的 showShareCard(node)，node 自带 _pre/_nxt，避免依赖内部 adjTo 格式
+function buildShareNode(conceptId) {
+  const c = getConceptById(conceptId);
+  if (!c) return null;
+  const pre = [], nxt = [];
+  for (const e of (GRAPH.edges || [])) {
+    if (e.rel !== 'prerequisite') continue;
+    if (e.to === conceptId) pre.push(e.from);
+    if (e.from === conceptId) nxt.push(e.to);
+  }
+  const titleOf = id => { const n = getConceptById(id); return n ? n.title : id; };
+  return {
+    raw: c, id: c.id, t: c.title,
+    _pre: pre.slice(0, 4).map(id => ({ t: titleOf(id), id })),
+    _nxt: nxt.slice(0, 4).map(id => ({ t: titleOf(id), id })),
+  };
+}
+function openShareCard(conceptId) {
+  const id = conceptId || SELECTED_CONCEPT;
+  if (!id) return;
+  const node = buildShareNode(id);
+  if (!node) return;
+  if (typeof showShareCard === 'function') showShareCard(node);
+  else alert('分享模块未加载，请刷新页面');
+}
+
 // --- 数据加载 ---
 async function loadData() {
   try {
@@ -642,7 +669,7 @@ function renderStep1() {
   };
   c.innerHTML = `
     <h2>选一个概念开始诊断</h2>
-    <p class="lead">PoC 范围: math 5 核心考点. 先选 1 个, 5 分钟测出你的薄弱程度.</p>
+    <p class="lead">全 14 学科 · 1,906 概念. 先选 1 个, 5 分钟测出你的薄弱程度.</p>
     <div style="margin: 16px 0 20px; padding: 12px 16px; background: rgba(0,135,90,0.06); border: 1px solid rgba(0,135,90,0.2); border-radius: 8px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
       <span style="font-size: 24px;">📅</span>
       <div style="flex: 1; min-width: 200px;">
@@ -1133,7 +1160,7 @@ function renderStep2Quick() {
   const subjCn = SUBJECT_CN[concept.subject] || '';
   c.innerHTML = `
     <h2>手输答对率</h2>
-    <p class="lead">// 适合"已经会但懒得做 5 道题"的人, 或快速粗测. V4.0.2 PoC 也做了这个入口.</p>
+    <p class="lead">// 适合"已经会但懒得做 5 道题"的人, 或快速粗测.</p>
     <div class="concept-banner">
       <div class="name">${esc(concept.title)}</div>
       <div class="meta">${esc(subjCn)} · ${esc(concept.grade_start || '')}-${esc(concept.grade_end || '')}年级 · 难度 ${esc(concept.difficulty || '?')}</div>
@@ -1227,6 +1254,7 @@ function showResult(result) {
       <button class="btn secondary" onclick="location.href='./diagnose.html?plan=7d'">📅 7 天复习计划</button>
       <button class="btn secondary" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
       <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">📝 直接做 5 道题</button>
+      <button class="btn" onclick="openShareCard('${esc(result.concept_id)}')">📇 生成知识卡 · 转发</button>
     </div>
     ${renderHistorySection(result.concept_id)}
   `;

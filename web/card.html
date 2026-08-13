@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>概念知识卡 · 开放课程图谱</title>
+<style>
+  :root{
+    --bg:#0a0d18; --bg2:#121834; --card:#161c38; --line:rgba(255,255,255,.08);
+    --txt:#e6e9f2; --muted:#8a92a8; --accent:#6b8cff; --green:#7bc96f;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0; padding:0; background:var(--bg); color:var(--txt);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;}
+  body{max-width:480px; margin:0 auto; min-height:100vh; position:relative;}
+  .top{position:sticky; top:0; z-index:20; background:linear-gradient(180deg,#0a0d18 70%,rgba(10,13,24,.92));
+    padding:14px 16px 10px; border-bottom:1px solid var(--line);}
+  .brand{font-size:13px; color:var(--muted); letter-spacing:.04em; margin-bottom:8px;}
+  .brand b{color:var(--txt); font-weight:700;}
+  .search{display:flex; gap:8px;}
+  .search input{flex:1; background:var(--bg2); border:1px solid var(--line); color:var(--txt);
+    border-radius:12px; padding:12px 14px; font-size:15px; outline:none;}
+  .search input:focus{border-color:var(--accent);}
+  .chips{display:flex; gap:6px; overflow-x:auto; padding:10px 0 2px; scrollbar-width:none;}
+  .chips::-webkit-scrollbar{display:none;}
+  .chip{flex:0 0 auto; padding:6px 12px; border-radius:20px; font-size:12.5px;
+    background:var(--bg2); border:1px solid var(--line); color:var(--muted); white-space:nowrap; cursor:pointer;}
+  .chip.on{background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600;}
+  .count{font-size:12px; color:var(--muted); padding:8px 4px 2px;}
+
+  .list{padding:6px 12px 90px;}
+  .item{display:flex; align-items:center; gap:12px; padding:13px 12px; border-radius:14px;
+    border:1px solid transparent; cursor:pointer;}
+  .item:active{background:var(--card);}
+  .dot{width:10px; height:10px; border-radius:3px; flex:0 0 auto;}
+  .item .t{font-size:15px; font-weight:600; line-height:1.3;}
+  .item .m{font-size:12px; color:var(--muted); margin-top:3px;}
+
+  /* detail */
+  .detail{position:fixed; inset:0; z-index:40; background:var(--bg); display:none; flex-direction:column;}
+  .detail.on{display:flex;}
+  .dbar{display:flex; align-items:center; gap:10px; padding:14px 14px; border-bottom:1px solid var(--line);
+    background:var(--bg);}
+  .back{background:var(--bg2); border:1px solid var(--line); color:var(--txt); border-radius:10px;
+    padding:8px 12px; font-size:14px; cursor:pointer;}
+  .dbody{flex:1; overflow:auto; padding:16px 16px 0;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;}
+  .tag{display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:18px;
+    font-size:13px; background:var(--bg2); border:1px solid var(--line); color:#a5b8f5;}
+  .tag .d{letter-spacing:2px; color:var(--green);}
+  .htitle{font-size:26px; font-weight:900; line-height:1.2; margin:2px 0 6px;}
+  .summary{font-size:14px; color:var(--muted); line-height:1.6; margin-bottom:16px;}
+  .sec{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:14px;}
+  .sec h3{margin:0 0 10px; font-size:14px; font-weight:700; display:flex; align-items:center; gap:8px;}
+  .sec h3 .bar{width:4px; height:14px; border-radius:2px; background:var(--accent);}
+  .sec.voice h3 .bar{background:var(--green);}
+  .voice p{margin:0; font-size:14px; line-height:1.75; color:#dde4f5;}
+  .kp{margin:0; padding-left:18px; font-size:13.5px; line-height:1.9; color:#dde4f5;}
+  .chain{display:flex; flex-wrap:wrap; gap:8px;}
+  .pill{padding:8px 12px; border-radius:12px; font-size:13.5px; background:var(--bg2);
+    border:1px solid var(--line); color:var(--txt); cursor:pointer;}
+  .pill:active{transform:scale(.97);}
+  .pill.pre{border-color:rgba(107,140,255,.4);}
+  .pill.nxt{border-color:rgba(123,201,111,.4);}
+  .empty{font-size:13px; color:var(--muted);}
+  .dfoot{padding:12px 16px calc(12px + env(safe-area-inset-bottom)); border-top:1px solid var(--line);
+    background:var(--bg); display:flex; gap:10px;}
+  .btn{flex:1; padding:14px; border-radius:14px; font-size:15px; font-weight:700; border:none; cursor:pointer;}
+  .btn.primary{background:var(--accent); color:#fff;}
+  .btn.ghost{background:var(--bg2); color:var(--txt); border:1px solid var(--line); flex:0 0 auto;}
+  .loading{padding:40px; text-align:center; color:var(--muted); font-size:14px;}
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand">开放课程图谱 · <b>概念知识卡</b></div>
+    <div class="search">
+      <input id="q" placeholder="搜概念，如：分数 / 函数 / 比喻" autocomplete="off">
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div class="list" id="list"><div class="loading">加载图谱中…</div></div>
+
+  <!-- detail -->
+  <div class="detail" id="detail">
+    <div class="dbar">
+      <button class="back" id="back">← 返回</button>
+    </div>
+    <div class="dbody" id="dbody"></div>
+    <div class="dfoot">
+      <button class="btn ghost" id="copy">📋 复制图</button>
+      <button class="btn primary" id="share">⬇ 生成分享图</button>
+    </div>
+  </div>
+
+  <script src="subject-cn.js"></script>
+  <script src="share.js"></script>
+  <script>
+  // 复用漏斗视图的学科配色，保证与分享图一致
+  const PALETTE = {
+    math:'#5b8def', chinese:'#ef6b5b', english:'#7bc96f', science:'#f9a825',
+    physics:'#ba68c8', chemistry:'#26a69a', biology:'#66bb6a', history:'#8d6e63',
+    geography:'#42a5f5', morality_law:'#ec407a', info_tech:'#26c6da', art:'#ab47bc',
+    pe_health:'#ff7043', labor:'#9ccc65', integrated:'#78909c'
+  };
+
+  let NODES = [];           // share.js 期望: [{raw, t, id}]
+  let idxById = {};         // conceptId -> NODES index
+  let preMap = {}, nxtMap = {}; // id -> [prereqId], id -> [succId]
+  let allNodes = [];
+  let curId = null, curFilter = 'all';
+
+  const $ = s => document.querySelector(s);
+  const col = s => PALETTE[s] || '#5b8def';
+  const scn = s => (typeof SUBJECT_CN!=='undefined' && SUBJECT_CN[s]) || s;
+
+  function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function grade(r){ return (r.grade_start||0)===(r.grade_end||0) ? ('G'+r.grade_start) : ('G'+r.grade_start+'-'+r.grade_end); }
+  function dots(d){ d=d||0; return '●'.repeat(d)+'○'.repeat(5-d); }
+
+  async function boot(){
+    let data;
+    try {
+      const res = await fetch('./data/graph_lite.json');
+      data = await res.json();
+    } catch(e){
+      $('#list').innerHTML = '<div class="loading">图谱加载失败：请通过本地服务器打开（file:// 不支持 fetch）。<br><br>'+esc(e.message)+'</div>';
+      return;
+    }
+    const nodes = data.nodes, edges = data.edges;
+    NODES = nodes.map(n => ({ raw:n, t:n.title, id:n.id }));
+    NODES.forEach((n,i)=> idxById[n.id]=i);
+    // 整数下标 EDGES，喂给 share.js 的 getPreNxtForNode
+    const E = [];
+    preMap={}; nxtMap={};
+    for (const e of edges){
+      if (e.rel !== 'prerequisite') continue;
+      const fi = idxById[e.from], ti = idxById[e.to];
+      if (fi==null || ti==null) continue;
+      E.push([fi, ti, 'prerequisite']);
+      (preMap[e.to]=preMap[e.to]||[]).push(e.from);
+      (nxtMap[e.from]=nxtMap[e.from]||[]).push(e.to);
+    }
+    window.EDGES = E;
+    allNodes = nodes;
+    buildChips(nodes);
+    render('');
+  }
+
+  function buildChips(nodes){
+    const subs = [...new Set(nodes.map(n=>n.subject))];
+    const c = $('#chips'); c.innerHTML='';
+    const mk=(k,label)=>{ const el=document.createElement('div'); el.className='chip'+(k===curFilter?' on':'');
+      el.textContent=label; el.onclick=()=>{curFilter=k; [...c.children].forEach(x=>x.classList.remove('on')); el.classList.add('on'); render($('#q').value);};
+      c.appendChild(el); };
+    mk('all','全部'); subs.forEach(s=>mk(s, scn(s)));
+  }
+
+  function render(q){
+    q=(q||'').trim();
+    const list = allNodes.filter(n=>{
+      if (curFilter!=='all' && n.subject!==curFilter) return false;
+      if (q && !n.title.includes(q) && !(n.domain||'').includes(q) && !(n.subdomain||'').includes(q)) return false;
+      return true;
+    }).slice(0, 200);
+    $('#count').textContent = q||curFilter!=='all' ? ('匹配 '+list.length+' 个概念') : ('共 '+allNodes.length+' 个概念 · 点击查看知识卡');
+    const L = $('#list');
+    if (!list.length){ L.innerHTML='<div class="loading">没找到，换个词试试</div>'; return; }
+    L.innerHTML = list.map(n=>{
+      const preN=(preMap[n.id]||[]).length, nxtN=(nxtMap[n.id]||[]).length;
+      return `<div class="item" data-id="${esc(n.id)}">
+        <span class="dot" style="background:${col(n.subject)}"></span>
+        <div><div class="t">${esc(n.title)}</div>
+        <div class="m">${esc(scn(n.subject))} · ${grade(n)} · 前驱${preN} 后继${nxtN}</div></div>
+      </div>`;
+    }).join('');
+    L.querySelectorAll('.item').forEach(el=> el.onclick=()=>openDetail(el.dataset.id));
+  }
+
+  function chainHTML(ids, kind){
+    if (!ids || !ids.length) return '<div class="empty">暂无（可能是起点 / 终点概念）</div>';
+    const byId = {}; NODES.forEach(n=>byId[n.id]=n);
+    return '<div class="chain">'+ids.map(id=>{
+      const n=byId[id]; if(!n) return '';
+      return `<span class="pill ${kind}" data-id="${esc(id)}">${esc(n.t)}</span>`;
+    }).join('')+'</div>';
+  }
+
+  function openDetail(id){
+    const n = NODES[idxById[id]].raw; curId=id;
+    const pre=preMap[id]||[], nxt=nxtMap[id]||[];
+    const kp = Array.isArray(n.key_points)? n.key_points : (n.key_points? [n.key_points]:[]);
+    const ex = Array.isArray(n.real_examples)? n.real_examples : (n.real_examples? [n.real_examples]:[]);
+    const cm = Array.isArray(n.common_mistakes)? n.common_mistakes : (n.common_mistakes? [n.common_mistakes]:[]);
+    const voice = n.teaching_voice || n.description || '';
+    $('#dbody').innerHTML = `
+      <div class="tags">
+        <span class="tag"><span class="dot" style="background:${col(n.subject)};width:10px;height:10px;border-radius:3px;display:inline-block"></span>${esc(scn(n.subject))}</span>
+        <span class="tag">${grade(n)}</span>
+        ${n.estimated_minutes?`<span class="tag">⏱ ${n.estimated_minutes} 分钟</span>`:''}
+        <span class="tag"><span class="d">${dots(n.difficulty)}</span> 难度</span>
+        ${n.domain?`<span class="tag">${esc(n.domain)}</span>`:''}
+      </div>
+      <div class="htitle">${esc(n.title)}</div>
+      ${n.summary?`<div class="summary">${esc(n.summary)}</div>`:''}
+      ${voice?`<div class="sec voice"><h3><span class="bar"></span>🎓 这步怎么教</h3><p>${esc(voice)}</p></div>`:''}
+      ${kp.length?`<div class="sec"><h3><span class="bar"></span>核心要点</h3><ul class="kp">${kp.map(k=>`<li>${esc(k)}</li>`).join('')}</ul></div>`:''}
+      ${ex.length?`<div class="sec"><h3><span class="bar"></span>真实例子</h3><ul class="kp">${ex.map(k=>`<li>${esc(k)}</li>`).join('')}</ul></div>`:''}
+      ${cm.length?`<div class="sec"><h3><span class="bar"></span>常见误区</h3><ul class="kp">${cm.map(k=>`<li>${esc(k)}</li>`).join('')}</ul></div>`:''}
+      <div class="sec"><h3><span class="bar" style="background:var(--accent)"></span>⬅ 之前要学（卡住常在这）</h3>${chainHTML(pre,'pre')}</div>
+      <div class="sec"><h3><span class="bar" style="background:var(--green)"></span>➡ 之后能学</h3>${chainHTML(nxt,'nxt')}</div>
+      <div style="height:8px"></div>
+    `;
+    $('#dbody').querySelectorAll('.pill').forEach(p=> p.onclick=()=>openDetail(p.dataset.id));
+    $('#detail').classList.add('on');
+    $('#detail').scrollTop=0; $('#dbody').scrollTop=0;
+  }
+
+  $('#back').onclick = ()=> $('#detail').classList.remove('on');
+  $('#q').addEventListener('input', e=> render(e.target.value));
+  $('#share').onclick = ()=>{ if(curId!=null && typeof showShareCard==='function') showShareCard(NODES[idxById[curId]], NODES); };
+  $('#copy').onclick = async ()=>{
+    if(curId==null) return;
+    try{ await copyShareImage(NODES[idxById[curId]]); $('#copy').textContent='✅ 已复制'; setTimeout(()=>$('#copy').textContent='📋 复制图',2000);}
+    catch(e){ alert('复制失败：'+e.message); }
+  };
+
+  boot();
+  </script>
+</body>
+</html>
