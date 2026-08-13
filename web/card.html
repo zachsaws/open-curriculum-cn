@@ -96,6 +96,7 @@
   </div>
 
   <script src="subject-cn.js"></script>
+  <script src="vendor/qrcode-generator.js"></script>
   <script src="share.js"></script>
   <script>
   // 复用漏斗视图的学科配色，保证与分享图一致
@@ -147,6 +148,16 @@
     allNodes = nodes;
     buildChips(nodes);
     render('');
+    // 裂变回流: ?concept_id= 深链直达知识卡, from=share 记录归因 (供 M3 埋点)
+    const sp = new URLSearchParams(location.search);
+    const deepId = sp.get('concept_id');
+    if (deepId && idxById[deepId] != null) {
+      openDetail(deepId);
+      if (sp.get('from') === 'share') {
+        try { localStorage.setItem('occ_ref_' + deepId, String(Date.now())); } catch (e) {}
+        if (typeof window.trackEvent === 'function') window.trackEvent('share_referral_land', { concept_id: deepId });
+      }
+    }
   }
 
   function buildChips(nodes){

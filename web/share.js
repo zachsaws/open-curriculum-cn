@@ -40,6 +40,62 @@ function wrapText(text, max) {
   return result;
 }
 
+// ===== 裂变: 知识卡嵌入二维码 + 回流深链 (T7) =====
+const SHARE_SITE_BASE = 'https://zachsaws.github.io/open-curriculum-cn';
+
+// 回流深链: 扫码 → 该概念知识卡页, 带 from=share 标记 (供 M3 归因)
+function shareReferralUrl(node) {
+  const r = node.raw || node;
+  const id = r.id || node.id || '';
+  if (!id) return SHARE_SITE_BASE + '/card.html';
+  return SHARE_SITE_BASE + '/card.html?concept_id=' + encodeURIComponent(id) + '&from=share';
+}
+
+// qrcode-generator (vendor/qrcode-generator.js) 暴露全局 qrcode; 缺失则优雅降级
+function buildQrMatrix(text) {
+  if (typeof qrcode === 'undefined') return null;
+  try {
+    const qr = qrcode(0, 'M'); // 0=自动版本, M=中等纠错
+    qr.addData(text);
+    qr.make();
+    return qr;
+  } catch (e) { return null; }
+}
+
+// SVG 路径: 内联嵌套 <svg> (rect 矩阵) — foreignObject→Image 光栅化下可可靠渲染且不污染画布
+function qrSvgInline(text, size) {
+  const qr = buildQrMatrix(text);
+  if (!qr) return '';
+  const count = qr.getModuleCount();
+  const cell = (size / count).toFixed(3);
+  let rects = '';
+  for (let row = 0; row < count; row++) {
+    for (let colm = 0; colm < count; colm++) {
+      if (qr.isDark(row, colm)) {
+        rects += '<rect x="' + (colm * size / count).toFixed(2) + '" y="' + (row * size / count).toFixed(2) + '" width="' + cell + '" height="' + cell + '"/>';
+      }
+    }
+  }
+  return '<svg xmlns="http://www.w3.org/2000/svg" width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '"><rect width="' + size + '" height="' + size + '" fill="#ffffff"/><g fill="#0a0d18">' + rects + '</g></svg>';
+}
+
+// Canvas 路径: 直接用 fillRect 画矩阵 (同步, 不污染画布)
+function drawQrOnCanvas(ctx, text, x, y, px) {
+  const qr = buildQrMatrix(text);
+  if (!qr) return false;
+  const count = qr.getModuleCount();
+  const ms = px / count;
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(x, y, px, px);
+  ctx.fillStyle = '#0a0d18';
+  for (let row = 0; row < count; row++) {
+    for (let colm = 0; colm < count; colm++) {
+      if (qr.isDark(row, colm)) ctx.fillRect(x + colm * ms, y + row * ms, ms + 0.6, ms + 0.6);
+    }
+  }
+  return true;
+}
+
 function generateShareSVG(node) {
   const r = node.raw || node;
   const col = (typeof PALETTE !== 'undefined' && PALETTE[r.subject]) || '#5b8def';
@@ -56,6 +112,10 @@ function generateShareSVG(node) {
   const description = escHtml(r.description || '');
   const siteUrl = 'zachsaws.github.io/open-curriculum-cn';
   const conceptId = escHtml(r.id || '');
+
+  const referralUrl = shareReferralUrl(node);
+  const referralDisp = escHtml(referralUrl.replace(/^https?:\/\//, ''));
+  const qrSvg = qrSvgInline(referralUrl, 160);
 
   // 取前置 + 后继节点
   const preNames = (node._pre || []).slice(0, 4).map(n => escHtml(n.t || n.id || ''));
@@ -126,10 +186,14 @@ function generateShareSVG(node) {
         ` : ''}
       </div>
 
-      <!-- 底部 -->
-      <div style="margin-top:32px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; align-items:center;">
-        <div style="font-size:20px; color:#8a92a8; font-family:'SF Mono', monospace;">${siteUrl}</div>
-        <div style="font-size:18px; color:#5a6278; font-family:'SF Mono', monospace;">${conceptId}</div>
+      <!-- 底部: 裂变二维码 + 回流深链 -->
+      <div style="margin-top:36px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; gap:24px;">
+        <div style="flex:1; min-width:0;">
+          <div style="font-size:30px; font-weight:800; color:#fff; margin-bottom:10px;">📲 扫码看这个知识点</div>
+          <div style="font-size:16px; color:#a5b8f5; line-height:1.5; word-break:break-all; font-family:'SF Mono', monospace;">${referralDisp}</div>
+          <div style="font-size:16px; color:#5a6278; margin-top:10px;">开放课程图谱 · 全 1,906 概念免费学</div>
+        </div>
+        ${qrSvg ? `<div style="flex:0 0 auto; width:184px; height:184px; background:#fff; border-radius:14px; padding:12px; box-sizing:border-box;">${qrSvg}</div>` : ''}
       </div>
     </div>
   </foreignObject>
@@ -174,6 +238,8 @@ async function svgToPngBlob(svgString) {
 // Fallback: 直接用 Canvas 2D 渲染 (避免 foreignObject taint 问题)
 function renderToCanvas(node, canvas) {
   const r = node.raw || node;
+  const referralUrl = shareReferralUrl(node);
+  const referralDisp = referralUrl.replace(/^https?:\/\//, '');
   const col = (typeof PALETTE !== 'undefined' && PALETTE[r.subject]) || '#5b8def';
   const subjectCn = SUBJECT_CN[r.subject] || r.subject || '';
   const gradeRange = (r.grade_start || 0) === (r.grade_end || 0)
@@ -356,21 +422,34 @@ function renderToCanvas(node, canvas) {
     y += boxH + 20;
   }
 
-  // 底部
+  // 底部: 裂变二维码 + 回流深链
+  const borderY = H - 250;
   ctx.strokeStyle = 'rgba(255,255,255,0.08)';
   ctx.beginPath();
-  ctx.moveTo(80, H - 80);
-  ctx.lineTo(W - 80, H - 80);
+  ctx.moveTo(80, borderY);
+  ctx.lineTo(W - 80, borderY);
   ctx.stroke();
-  ctx.fillStyle = '#8a92a8';
-  ctx.font = `400 22px ${FONT_MONO}`;
+  const qrSize = 160;
+  const qrX = W - 80 - qrSize;
+  const qrY = borderY + 20;
+  ctx.fillStyle = '#fff';
+  drawRoundRect(ctx, qrX - 12, qrY - 12, qrSize + 24, qrSize + 24, 16);
+  ctx.fill();
+  drawQrOnCanvas(ctx, referralUrl, qrX, qrY, qrSize);
   ctx.textBaseline = 'top';
-  ctx.fillText('zachsaws.github.io/open-curriculum-cn', 80, H - 60);
+  ctx.fillStyle = '#fff';
+  ctx.font = `800 30px ${FONT_FAMILY}`;
+  ctx.fillText('📲 扫码看这个知识点', 80, borderY + 22);
+  ctx.fillStyle = '#a5b8f5';
+  ctx.font = `400 16px ${FONT_MONO}`;
+  const maxW = qrX - 24 - 80;
+  let disp = referralDisp;
+  while (ctx.measureText(disp).width > maxW && disp.length > 8) disp = disp.slice(0, -1);
+  if (disp !== referralDisp) disp += '…';
+  ctx.fillText(disp, 80, borderY + 64);
   ctx.fillStyle = '#5a6278';
-  ctx.font = `400 20px ${FONT_MONO}`;
-  const idText = r.id || '';
-  const idW = ctx.measureText(idText).width;
-  ctx.fillText(idText, W - 80 - idW, H - 60);
+  ctx.font = `400 16px ${FONT_FAMILY}`;
+  ctx.fillText('开放课程图谱 · 全 1,906 概念免费学', 80, borderY + 94);
 }
 
 function drawRoundRect(ctx, x, y, w, h, r) {
