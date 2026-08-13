@@ -1259,6 +1259,17 @@ function showResult(result) {
     ${renderHistorySection(result.concept_id)}
   `;
 
+  if (typeof trackEvent === 'function') {
+    trackEvent('diagnose_complete', {
+      concept_id: result.concept_id,
+      status: result.status,
+      score_pct: result.score_pct,
+      difficulty: result.difficulty,
+      weak_count: (result.weak_concepts || []).length,
+      from: (new URLSearchParams(location.search).get('from') || 'direct')
+    });
+  }
+
   // V4.0.4: 渲染完整 canvas 趋势图 + 个性化推荐
   // 延迟 50ms 等 innerHTML 注入 + layout 完, 才能拿到 canvas 真实尺寸
   setTimeout(() => {

@@ -566,6 +566,7 @@ function getPreNxtViaBFS(targetId, NODES) {
 function showShareModal(node, NODES) {
   // 关闭已有
   document.getElementById('share-modal')?.remove();
+  if (typeof trackEvent === 'function') trackEvent('share_card_open', { concept_id: (node.raw && node.raw.id) || node.id });
   // 准备数据
   let idx = -1;
   if (typeof NODES !== 'undefined') {
@@ -609,6 +610,7 @@ function showShareModal(node, NODES) {
     try {
       await downloadShareImage(nodeWithRel);
       status.textContent = '✅ 已下载';
+      if (typeof trackEvent === 'function') trackEvent('share_card_download', { concept_id: (nodeWithRel.raw && nodeWithRel.raw.id) || nodeWithRel.id });
       setTimeout(() => status.textContent = '', 2000);
     } catch (e) {
       status.textContent = '❌ ' + e.message;
@@ -620,6 +622,7 @@ function showShareModal(node, NODES) {
     try {
       await copyShareImage(nodeWithRel);
       status.textContent = '✅ 已复制到剪贴板';
+      if (typeof trackEvent === 'function') trackEvent('share_card_copy', { concept_id: (nodeWithRel.raw && nodeWithRel.raw.id) || nodeWithRel.id });
       setTimeout(() => status.textContent = '', 2000);
     } catch (e) {
       status.textContent = '❌ ' + e.message;
