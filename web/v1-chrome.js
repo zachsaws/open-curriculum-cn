@@ -3,6 +3,9 @@
 //   <script src="./v1-chrome.js"></script>
 
 (function() {
+  // 首页内嵌 3D 图时，由首页提供唯一的操作入口，避免浮钮遮挡视觉。
+  if (new URLSearchParams(location.search).get('embed') === '1') return;
+
   if (window.__V1_CHROME_LOADED__) return;
   window.__V1_CHROME_LOADED__ = true;
 

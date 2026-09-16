@@ -372,6 +372,19 @@
       color: #8a8a8a; font-size: 10px; margin-bottom: 4px;
     }
   }
+
+  /* 首页内嵌的真实 3D 图：只保留图本身，由首页承担品牌与导航。 */
+  body.embed { background: #10151f; }
+  body.embed .header,
+  body.embed .stats,
+  body.embed .search,
+  body.embed .legend,
+  body.embed .view-toggle,
+  body.embed .lang-switch,
+  body.embed .skip-link { display: none; }
+  body.embed #loading { background: #10151f; }
+  body.embed #loading .msg { color: rgba(255,255,255,.62); }
+  body.embed #loading .spinner { border-color: rgba(255,255,255,.16); border-top-color: #d9b56e; }
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="中国 K12 知识图谱 · 教育部 2022 最新课标">
@@ -380,6 +393,11 @@
 <meta name="description" content="中国 K12 知识图谱: 基于教育部 2022 最新课标, 覆盖 14 个学科 1906 个核心概念, 4736 条学习路径, 3D 球面 + 漏斗两种视图。">
 </head>
 <body>
+<script>
+  if (new URLSearchParams(location.search).get('embed') === '1') {
+    document.body.classList.add('embed');
+  }
+</script>
 <a href="#three-canvas" class="skip-link">跳到主内容</a>
 
 <div id="loading" role="status" aria-live="polite">

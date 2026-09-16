@@ -13,6 +13,7 @@ const EDGE_SEGMENTS = 32;          // 每条边采样段数 (用户 spec: 32 →
 const EDGE_BASE_OPACITY = 0.07;    // 常态边透明度 (球面不能太糊)
 const EDGE_NEIGHBOR_OPACITY = 0.55; // 邻居边透明度 (选中节点时)
 const POINT_RAYCAST_THRESHOLD = 1.5; // 鼠标点击命中半径 (世界单位, 经 OrbitControls 后会按缩放调整)
+const EMBED_MODE = new URLSearchParams(location.search).get('embed') === '1';
 
 // 14 学科配色 — 与 web/app.js PALETTE 完全一致
 const PALETTE = {
@@ -39,7 +40,7 @@ let edgesFromTo = new Map();    // fromIdx -> [{toIdx, rel, reason, edgeIdx}, ..
 let edgesToFrom = new Map();
 let neighborMap = new Map();    // idx -> Set
 // V4.1 浅色风: 边线从浅灰蓝 → 深色 (在米黄背景上清晰)
-let edgeBaseColor = new THREE.Color(0x0a0d18);
+let edgeBaseColor = new THREE.Color(EMBED_MODE ? 0xaec1ee : 0x0a0d18);
 
 // ============== 谱系 (lineage) — BFS 反向追溯所有直接+间接先决 (V3.6.2) ==============
 let lineageNodes = new Set();    // idx set
@@ -168,8 +169,8 @@ async function loadData() {
 function setupScene() {
   const container = document.getElementById('three-canvas');
   scene = new THREE.Scene();
-  // V4.1 浅色风: canvas 背景跟主页米黄统一
-  scene.background = new THREE.Color(0xfaf6ee);
+  // 首页内嵌时用深色舞台，让真实知识球成为首屏，而不是一张装饰图。
+  scene.background = new THREE.Color(EMBED_MODE ? 0x10151f : 0xfaf6ee);
 
   const w = window.innerWidth;
   const h = window.innerHeight;
@@ -213,7 +214,7 @@ function makeReferenceLines() {
     eqPts.push(new THREE.Vector3(Math.cos(a) * r, 0, Math.sin(a) * r));
   }
   const eqGeo = new THREE.BufferGeometry().setFromPoints(eqPts);
-  const eqMat = new THREE.LineBasicMaterial({ color: 0x0a0d18, transparent: true, opacity: 0.06 });
+  const eqMat = new THREE.LineBasicMaterial({ color: EMBED_MODE ? 0xcbd8ff : 0x0a0d18, transparent: true, opacity: 0.06 });
   group.add(new THREE.Line(eqGeo, eqMat));
 
   // 一条经线 (x=0 平面)
@@ -223,7 +224,7 @@ function makeReferenceLines() {
     mePts.push(new THREE.Vector3(0, Math.cos(a) * r, Math.sin(a) * r));
   }
   const meGeo = new THREE.BufferGeometry().setFromPoints(mePts);
-  const meMat = new THREE.LineBasicMaterial({ color: 0x0a0d18, transparent: true, opacity: 0.05 });
+  const meMat = new THREE.LineBasicMaterial({ color: EMBED_MODE ? 0xcbd8ff : 0x0a0d18, transparent: true, opacity: 0.05 });
   group.add(new THREE.Line(meGeo, meMat));
   return group;
 }
