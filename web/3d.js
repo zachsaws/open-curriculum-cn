@@ -194,7 +194,7 @@ function setupScene() {
   controls.minDistance = 130;
   controls.maxDistance = 600;
   controls.autoRotate = true;
-  controls.autoRotateSpeed = 0.4;
+  controls.autoRotateSpeed = 1.0;
   controls.rotateSpeed = 0.5;
   controls.zoomSpeed = 0.7;
 
@@ -731,6 +731,19 @@ function selectNode(idx) {
   focusNode(idx);
   document.body.classList.add('has-selection');
   renderLocalRelationship(idx);
+  ensureFullDetails().then(() => {
+    if (selectedNodeIdx === idx) showCard(DATA.nodes[idx]);
+  });
+}
+
+let fullDetailsPromise = null;
+function ensureFullDetails() {
+  if (fullDetailsPromise) return fullDetailsPromise;
+  fullDetailsPromise = loadGraphFull().then(full => {
+    const byId = new Map(full.nodes.map(n => [n.id, n]));
+    DATA.nodes.forEach((n, i) => Object.assign(n, byId.get(n.id) || {}));
+  }).catch(() => {});
+  return fullDetailsPromise;
 }
 
 function clearSelection() {
@@ -752,6 +765,8 @@ function clearSelection() {
   buildHighlightEdgeMesh();
   buildLineageEdgeMesh();
 }
+
+window.__returnToMap = clearSelection;
 
 function highlightNode(idx) {
   // V3.6.2: 沿 edgesFromTo BFS 反向追溯所有直接 + 间接先决
@@ -1123,10 +1138,11 @@ function renderLocalRelationship(idx) {
     const x = cx + Math.cos(a) * 215, y = cy + Math.sin(a) * 175;
     const col = PALETTE[DATA.nodes[n].subject] || '#7ba7ff';
     parts.push(`<path d="M ${cx} ${cy} Q ${(cx+x)/2} ${(cy+y)/2-32} ${x} ${y}" stroke="${col}" stroke-opacity=".72" fill="none"/>`);
-    parts.push(`<circle cx="${x}" cy="${y}" r="11" fill="${col}"/><text x="${x}" y="${y+31}" text-anchor="middle">${escapeXml(DATA.nodes[n].title)}</text>`);
+    parts.push(`<g class="relation-node" data-index="${n}"><circle cx="${x}" cy="${y}" r="11" fill="${col}"/><text x="${x}" y="${y+31}" text-anchor="middle">${escapeXml(DATA.nodes[n].title)}</text></g>`);
   });
   parts.push(`<circle cx="${cx}" cy="${cy}" r="29" class="root"/><text x="${cx}" y="${cy+60}" text-anchor="middle" class="root-label">${escapeXml(node.title)}</text></svg>`);
   root.innerHTML = parts.join('');
+  root.querySelectorAll('.relation-node').forEach(el => el.addEventListener('click', () => selectNode(Number(el.dataset.index))));
 }
 function escapeXml(value) { return String(value || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
 

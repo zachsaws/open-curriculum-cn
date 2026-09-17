@@ -448,10 +448,17 @@
   #relation-local text { fill:#dce6f6; font:600 15px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; paint-order:stroke; stroke:#121720; stroke-width:5px; stroke-linejoin:round; }
   #relation-local .root { fill:#7ba7ff; stroke:#e2ebff; stroke-width:2; filter:drop-shadow(0 0 14px rgba(104,151,255,.68)); }
   #relation-local .root-label { font-size:19px; fill:#fff; }
+  #relation-local .relation-node { pointer-events:auto; cursor:pointer; }
+  #relation-local .relation-node:hover circle { filter:brightness(1.25); transform-box:fill-box; transform-origin:center; transform:scale(1.15); }
+  .back-to-map { display:none; }
+  body.embed.has-selection .back-to-map { display:block; position:fixed; z-index:20; left:38px; top:72px; background:transparent; border:0; color:#cbd5e1; font:13px inherit; cursor:pointer; }
+  body.embed.has-selection .back-to-map:hover { color:#fff; }
   body.embed.has-selection #card-content-req-block,
   body.embed.has-selection #card-academic-req-block,
   body.embed.has-selection #card-key-points-block,
   body.embed.has-selection #card-examples-block { display:block!important; }
+  body.embed.has-selection #card .card-actions { display:flex!important; flex-wrap:wrap; }
+  body.embed.has-selection #card .card-action { color:#dce6f6; border-color:rgba(220,229,241,.2); background:rgba(255,255,255,.04); }
   body.embed.has-selection #card .block { background:transparent; border:0; border-top:1px solid rgba(220,229,241,.13); border-radius:0; padding:16px 0 0; }
   body.embed.has-selection #card .block-body, body.embed.has-selection #card .kp { color:#c9d1dc; }
   body.embed.has-selection #card .block-title { margin-bottom:9px; }
@@ -499,6 +506,7 @@
   <div id="stage-subtitle">从一个知识点开始。</div>
 </div>
 <div id="relation-local" aria-live="polite"></div>
+<button class="back-to-map" type="button" onclick="window.__returnToMap && window.__returnToMap()">← 返回全貌</button>
 
 <a href="./funnel.html" class="view-toggle" aria-label="切换到学习路径视图" title="看完整学习路径, 从小学到初中展开">
   <span class="icon">📊</span><span>学习路径</span>
