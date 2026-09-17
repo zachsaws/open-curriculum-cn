@@ -7,10 +7,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // ============== 常量 ==============
 const SPHERE_RADIUS = 100;
-const NODE_BASE_SIZE = 4.0;        // 最小节点 size (无 centrality 时的像素缩放)
-const CENTRALITY_SIZE_GAIN = 14.0; // centrality 0.5 时的最大 size 加成
+const NODE_BASE_SIZE = 3.1;        // 节点是图谱本身，不做霓虹粒子
+const CENTRALITY_SIZE_GAIN = 10.0;
 const EDGE_SEGMENTS = 32;          // 每条边采样段数 (用户 spec: 32 → 151K 段)
-const EDGE_BASE_OPACITY = 0.07;    // 常态边透明度 (球面不能太糊)
+const EDGE_BASE_OPACITY = 0.012;   // 全貌只读出结构，不抢节点
 const EDGE_NEIGHBOR_OPACITY = 0.55; // 邻居边透明度 (选中节点时)
 const POINT_RAYCAST_THRESHOLD = 1.5; // 鼠标点击命中半径 (世界单位, 经 OrbitControls 后会按缩放调整)
 const EMBED_MODE = new URLSearchParams(location.search).get('embed') === '1';
@@ -175,7 +175,7 @@ function setupScene() {
   const w = window.innerWidth;
   const h = window.innerHeight;
   camera = new THREE.PerspectiveCamera(50, w / h, 1, 2000);
-  camera.position.set(50, 80, 260);
+  camera.position.set(50, 80, 310);
   camera.lookAt(0, 0, 0);
 
   renderer = new THREE.WebGLRenderer({
@@ -280,8 +280,8 @@ function makeNodeSprite() {
   const ctx = c.getContext('2d');
   const g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
   g.addColorStop(0, 'rgba(255,255,255,1)');
-  g.addColorStop(0.4, 'rgba(255,255,255,0.92)');
-  g.addColorStop(0.75, 'rgba(255,255,255,0.32)');
+  g.addColorStop(0.42, 'rgba(255,255,255,0.86)');
+  g.addColorStop(0.7, 'rgba(255,255,255,0.13)');
   g.addColorStop(1, 'rgba(255,255,255,0)');
   ctx.fillStyle = g;
   ctx.beginPath();
@@ -373,7 +373,12 @@ function buildNodeMesh() {
 
 // 大圆弧 slerp 插值 (精确公式, 不用 user 提供的近似)
 function slerpArc(A, B, segments) {
-  const omega = Math.acos(Math.max(-1, Math.min(1, A.dot(B))));
+  // A/B 是半径为 100 的位置向量；必须先归一化再取夹角。
+  // 之前直接 dot 会几乎总被 clamp 到 1，且用 Line 会把相邻两条边错误连起来。
+  const radius = (A.length() + B.length()) / 2;
+  const aUnit = A.clone().normalize();
+  const bUnit = B.clone().normalize();
+  const omega = Math.acos(THREE.MathUtils.clamp(aUnit.dot(bUnit), -1, 1));
   if (omega < 1e-5) {
     // 几乎重合 — 直接返回
     return [A.clone(), B.clone()];
@@ -384,14 +389,14 @@ function slerpArc(A, B, segments) {
     const t = i / segments;
     const a = Math.sin((1 - t) * omega) / sinOmega;
     const b = Math.sin(t * omega) / sinOmega;
-    out[i] = A.clone().multiplyScalar(a).add(B.clone().multiplyScalar(b));
+    out[i] = aUnit.clone().multiplyScalar(a).addScaledVector(bUnit, b).normalize().multiplyScalar(radius);
   }
   return out;
 }
 
 function buildEdgeMesh() {
   const segments = EDGE_SEGMENTS;
-  const totalPts = edgesData.length * (segments + 1);
+  const totalPts = edgesData.length * segments * 2;
   const linePositions = new Float32Array(totalPts * 3);
 
   let pIdx = 0;
@@ -401,11 +406,13 @@ function buildEdgeMesh() {
     A.set(nodePositions[e.fromIdx*3], nodePositions[e.fromIdx*3+1], nodePositions[e.fromIdx*3+2]);
     B.set(nodePositions[e.toIdx*3], nodePositions[e.toIdx*3+1], nodePositions[e.toIdx*3+2]);
     const arc = slerpArc(A, B, segments);
-    for (const p of arc) {
-      linePositions[pIdx*3] = p.x;
-      linePositions[pIdx*3+1] = p.y;
-      linePositions[pIdx*3+2] = p.z;
-      pIdx++;
+    for (let i = 0; i < arc.length - 1; i++) {
+      for (const p of [arc[i], arc[i + 1]]) {
+        linePositions[pIdx*3] = p.x;
+        linePositions[pIdx*3+1] = p.y;
+        linePositions[pIdx*3+2] = p.z;
+        pIdx++;
+      }
     }
   }
 
@@ -417,7 +424,7 @@ function buildEdgeMesh() {
     opacity: EDGE_BASE_OPACITY,
     depthWrite: false,
   });
-  linesMesh = new THREE.Line(geo, mat);
+  linesMesh = new THREE.LineSegments(geo, mat);
   linesMesh.frustumCulled = false;
   scene.add(linesMesh);
 }
@@ -443,7 +450,7 @@ function buildHighlightEdgeMesh() {
   const selEdges = edgesData.filter(e =>
     e.fromIdx === selectedNodeIdx || e.toIdx === selectedNodeIdx
   );
-  const totalPts = selEdges.length * (segments + 1);
+  const totalPts = selEdges.length * segments * 2;
   const linePositions = new Float32Array(totalPts * 3);
   let pIdx = 0;
   const A = new THREE.Vector3();
@@ -452,11 +459,13 @@ function buildHighlightEdgeMesh() {
     A.set(nodePositions[e.fromIdx*3], nodePositions[e.fromIdx*3+1], nodePositions[e.fromIdx*3+2]);
     B.set(nodePositions[e.toIdx*3], nodePositions[e.toIdx*3+1], nodePositions[e.toIdx*3+2]);
     const arc = slerpArc(A, B, segments);
-    for (const p of arc) {
-      linePositions[pIdx*3] = p.x;
-      linePositions[pIdx*3+1] = p.y;
-      linePositions[pIdx*3+2] = p.z;
-      pIdx++;
+    for (let i = 0; i < arc.length - 1; i++) {
+      for (const p of [arc[i], arc[i + 1]]) {
+        linePositions[pIdx*3] = p.x;
+        linePositions[pIdx*3+1] = p.y;
+        linePositions[pIdx*3+2] = p.z;
+        pIdx++;
+      }
     }
   }
   const geo = new THREE.BufferGeometry();
@@ -469,7 +478,7 @@ function buildHighlightEdgeMesh() {
     opacity: EDGE_NEIGHBOR_OPACITY,
     depthWrite: false,
   });
-  linesHighlightMesh = new THREE.Line(geo, mat);
+  linesHighlightMesh = new THREE.LineSegments(geo, mat);
   linesHighlightMesh.frustumCulled = false;
   scene.add(linesHighlightMesh);
 }
@@ -511,12 +520,14 @@ function buildLineageEdgeMesh() {
     lineageMesh.geometry.dispose();
     lineageMesh.material.dispose();
   }
-  if (selectedNodeIdx === null || lineageEdgeIdxs.size === 0) {
+  // 首页的“关系”状态只展示所选概念的一跳关系。完整谱系仍用于面板计数，
+  // 但不把全部历史路径同时画在球上。
+  if (EMBED_MODE || selectedNodeIdx === null || lineageEdgeIdxs.size === 0) {
     lineageMesh = null;
     return;
   }
   const segments = EDGE_SEGMENTS;
-  const totalPts = lineageEdgeIdxs.size * (segments + 1);
+  const totalPts = lineageEdgeIdxs.size * segments * 2;
   const linePositions = new Float32Array(totalPts * 3);
   let pIdx = 0;
   const A = new THREE.Vector3();
@@ -526,11 +537,13 @@ function buildLineageEdgeMesh() {
     A.set(nodePositions[e.fromIdx*3], nodePositions[e.fromIdx*3+1], nodePositions[e.fromIdx*3+2]);
     B.set(nodePositions[e.toIdx*3], nodePositions[e.toIdx*3+1], nodePositions[e.toIdx*3+2]);
     const arc = slerpArc(A, B, segments);
-    for (const p of arc) {
-      linePositions[pIdx*3] = p.x;
-      linePositions[pIdx*3+1] = p.y;
-      linePositions[pIdx*3+2] = p.z;
-      pIdx++;
+    for (let i = 0; i < arc.length - 1; i++) {
+      for (const p of [arc[i], arc[i + 1]]) {
+        linePositions[pIdx*3] = p.x;
+        linePositions[pIdx*3+1] = p.y;
+        linePositions[pIdx*3+2] = p.z;
+        pIdx++;
+      }
     }
   }
   const geo = new THREE.BufferGeometry();
@@ -542,7 +555,7 @@ function buildLineageEdgeMesh() {
     opacity: 0.75,
     depthWrite: false,
   });
-  lineageMesh = new THREE.Line(geo, mat);
+  lineageMesh = new THREE.LineSegments(geo, mat);
   lineageMesh.frustumCulled = false;
   scene.add(lineageMesh);
 }
@@ -709,6 +722,7 @@ function selectNode(idx) {
   // V3.6.3: 相机 tween + 选中节点放大
   setFocusGainTarget(idx);
   focusNode(idx);
+  document.body.classList.add('has-selection');
 }
 
 function clearSelection() {
@@ -717,6 +731,7 @@ function clearSelection() {
   window._currentNode = null;
   document.getElementById('card').classList.remove('on');
   document.getElementById('card').setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('has-selection');
   // V3.6.2: 清掉 lineage 状态
   lineageNodes = new Set();
   lineageEdgeIdxs = new Set();
@@ -740,12 +755,14 @@ function highlightNode(idx) {
       colors[i*3] = Math.min(1, c.r * 0.5 + 0.85);
       colors[i*3+1] = Math.min(1, c.g * 0.5 + 0.85);
       colors[i*3+2] = Math.min(1, c.b * 0.5 + 0.85);
+    } else if (EMBED_MODE && (neighborMap.get(idx) || new Set()).has(i)) {
+      colors[i*3] = c.r; colors[i*3+1] = c.g; colors[i*3+2] = c.b;
     } else if (lineageHighRisk.has(i)) {
       // V3.6.9: 高危节点 (lineage 中心度 Top 3): 偏红
       colors[i*3] = Math.min(1, c.r * 0.5 + 0.95 * 0.4);
       colors[i*3+1] = Math.min(1, c.g * 0.2);
       colors[i*3+2] = Math.min(1, c.b * 0.2);
-    } else if (lineageNodes.has(i)) {
+    } else if (!EMBED_MODE && lineageNodes.has(i)) {
       // lineage 节点 (含直接邻居 + 间接先决): 保持原色
       colors[i*3] = c.r; colors[i*3+1] = c.g; colors[i*3+2] = c.b;
     } else {
@@ -1041,15 +1058,18 @@ function setupCardClose() {
 function buildLegend() {
   const legend = document.getElementById('legend');
   legend.innerHTML = '';
-  // V3.6.10: legend 前面加一句引导 (从开发者话改人话)
-  const hint = document.createElement('div');
-  hint.className = 'legend-hint';
-  hint.textContent = '想看哪个学科? 点节点开卡片';
-  legend.appendChild(hint);
+  const all = document.createElement('button');
+  all.className = 'chip active';
+  all.type = 'button';
+  all.textContent = '全部';
+  all.onclick = () => setSubjectView(null);
+  legend.appendChild(all);
   const counts = GROUPS.map(s => DATA.nodes.filter(n => n.subject === s).length);
   GROUPS.forEach((s, i) => {
-    const el = document.createElement('div');
+    const el = document.createElement('button');
+    if (!['math', 'chinese', 'english', 'science'].includes(s)) return;
     el.className = 'chip';
+    el.type = 'button';
     el.dataset.subject = s;
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
@@ -1057,18 +1077,29 @@ function buildLegend() {
     const nameCn = SUBJECT_CN[s] || s;
     el.setAttribute('aria-label', `切换 ${nameCn} ${counts[i]} 个概念`);
     el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${nameCn}</span><span class="ct">${counts[i]}</span>`;
-    el.onclick = () => {
-      el.classList.toggle('off');
-      el.setAttribute('aria-pressed', el.classList.contains('off') ? 'false' : 'true');
-      if (el.classList.contains('off')) activeGroups.delete(s);
-      else activeGroups.add(s);
-      applyFilterToColors();
-    };
+    el.onclick = () => setSubjectView(s);
     el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
     });
     legend.appendChild(el);
   });
+}
+
+function setSubjectView(subject) {
+  activeGroups = subject ? new Set([subject]) : new Set(GROUPS);
+  document.querySelectorAll('#legend .chip').forEach(el => {
+    const chosen = subject ? el.dataset.subject === subject : !el.dataset.subject;
+    el.classList.toggle('active', chosen);
+    el.setAttribute('aria-pressed', chosen ? 'true' : 'false');
+  });
+  const stage = document.getElementById('stage-title');
+  const sub = document.getElementById('stage-subtitle');
+  if (stage) stage.textContent = subject ? (SUBJECT_CN[subject] || subject) : '看看知识之间，怎样相连。';
+  if (sub) sub.textContent = subject ? '在图中查看这一学科的知识连接。' : '从一个知识点开始。';
+  document.body.classList.toggle('has-subject', Boolean(subject));
+  // 学科状态保留真实节点的位置作为全貌语境；连线留给进入具体关系时再展开，避免 4,000 多条线变成背景噪音。
+  if (linesMesh) linesMesh.visible = !subject;
+  applyFilterToColors();
 }
 
 // ============== UI: 搜索 ==============

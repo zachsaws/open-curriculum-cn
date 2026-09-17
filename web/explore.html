@@ -385,6 +385,73 @@
   body.embed #loading { background: #10151f; }
   body.embed #loading .msg { color: rgba(255,255,255,.62); }
   body.embed #loading .spinner { border-color: rgba(255,255,255,.16); border-top-color: #d9b56e; }
+
+  /* 首页模式：把真实图谱作为主体，而不是给旧工具界面换一层皮。 */
+  body.embed { color: #f4f6f9; background: #11151b; }
+  body.embed .header { display:block; padding: 28px 38px; background:none; }
+  body.embed .header h1 { font-size:14px; letter-spacing:.01em; }
+  body.embed .title-link { color:#f4f6f9; }
+  body.embed .title-logo, body.embed .title-sub { display:none; }
+  body.embed .header .sub { display:none; }
+  body.embed .header::after { content:'探索　 关于　 开源'; position:fixed; right:38px; top:30px; color:#b7bfca; font-size:12px; letter-spacing:.04em; }
+  body.embed .search { display:block; top:23px; right:164px; left:auto; width:164px; }
+  body.embed .search::before { display:none; }
+  body.embed .search input { height:30px; padding:6px 10px; border-radius:0; color:#f4f6f9; background:rgba(17,21,27,.42); border:1px solid rgba(214,224,239,.18); font-size:11px; }
+  body.embed .search input::placeholder { color:#9da8b7; }
+  body.embed .search .results { background:#1b2029; border-color:#303947; }
+  body.embed .search .r-item:hover { background:#252e3c; }
+  body.embed .stage-copy { display:block; position:fixed; z-index:11; left:7.1vw; top:29vh; pointer-events:none; max-width:390px; }
+  body.embed .stage-kicker { display:none; }
+  body.embed #stage-title { font-size:clamp(42px,3.5vw,52px); letter-spacing:-.065em; line-height:1.08; font-weight:550; max-width:410px; }
+  body.embed #stage-title span { display:block; white-space:nowrap; }
+  body.embed #stage-subtitle { margin-top:20px; color:#aeb7c4; font-size:14px; letter-spacing:.01em; }
+  body.embed .legend { display:flex; align-items:center; justify-content:center; flex-wrap:nowrap; gap:4px; bottom:26px; left:50%; transform:translateX(-50%); max-width:none; width:max-content; padding:4px; border:1px solid rgba(220,229,241,.13); background:rgba(16,20,27,.64); backdrop-filter:blur(12px); border-radius:999px; }
+  body.embed .legend-hint { display:none; }
+  body.embed .chip { border:0; border-radius:999px; background:transparent; color:#94a0ae; padding:7px 12px; font:inherit; font-size:11px; cursor:pointer; }
+  body.embed .chip .sw, body.embed .chip .ct { display:none; }
+  body.embed .chip .nm { color:inherit; }
+  body.embed .chip.active { background:#eef2f7; color:#151a22; }
+  body.embed .chip.active .nm { color:#151a22; }
+  body.embed .chip:hover { background:rgba(255,255,255,.10); }
+  body.embed .chip.active:hover { background:#fff; }
+  body.embed .stats { display:block; z-index:12; top:auto; bottom:26px; right:36px; padding:0; max-width:none; background:none; backdrop-filter:none; }
+  body.embed .stats .hint-row { display:none; }
+  body.embed .stats::before { display:none!important; }
+  body.embed #toggleAutoRotate { width:30px; height:30px; overflow:hidden; padding:0!important; color:transparent!important; border-radius:50%!important; border-color:rgba(220,229,241,.24)!important; background:rgba(16,20,27,.64)!important; position:relative; }
+  body.embed #toggleAutoRotate::after { content:'Ⅱ'; position:absolute; inset:6px; color:#dce3ec; font-size:11px; line-height:16px; }
+  body.embed #tip { color:#eef3f9; background:#171c25; border-color:#303947; box-shadow:none; border-radius:2px; }
+  body.embed #tip .ts { color:#9da8b7; }
+  body.embed #card { width:min(34vw,470px); color:#edf1f7; background:rgba(21,26,35,.96); border-left:1px solid rgba(220,229,241,.14); padding:42px 32px 28px; gap:18px; box-shadow:none; }
+  body.embed #card .close { color:#bdc6d1; font-size:22px; }
+  body.embed #card .head { padding-top:0; }
+  body.embed #card .cs, body.embed #card .block-title, body.embed #card .sec .label, body.embed #card .sec .k { color:#9aa6b6; }
+  body.embed #card .ctl { font-size:30px; letter-spacing:-.04em; }
+  body.embed #card .tag-row { display:none; }
+  body.embed #card .block, body.embed #card .lin-stats, body.embed #card .reason-list, body.embed #card .card-actions,
+  body.embed #card-video-block, body.embed #card-content-req-block, body.embed #card-academic-req-block, body.embed #card-key-points-block,
+  body.embed #card-real-examples-block, body.embed #card-common-mistakes-block, body.embed #card-teaching-activity-block,
+  body.embed #card-examples-block, body.embed #card-assessment-block, body.embed #card-meta-block { display:none!important; }
+  body.embed #card-teaching-voice-block { display:block!important; padding:0; border:0; background:none; }
+  body.embed .teaching-voice .block-body { padding:0; border:0; background:none; color:#c9d1dc; font-size:14px; line-height:1.75; }
+  body.embed #card .sec { border-top:1px solid rgba(220,229,241,.13); padding-top:17px; }
+  body.embed #card .rows { gap:7px; }
+  body.embed #card .row { background:transparent; border:0; padding:4px 0; color:#e8edf4; }
+  body.embed #card .row:hover { background:transparent; color:#fff; }
+  body.embed #card .row .rt { font-size:13px; }
+  body.embed #card .row .ra { color:#8d99a9; }
+  body.embed.has-selection .stage-copy { opacity:.22; transform:translateX(-8px); transition:.3s ease; }
+  @media (max-width: 700px) {
+    body.embed .header { padding:20px; }
+    body.embed .header::after { right:20px; top:21px; font-size:10px; }
+    body.embed .search { display:none; }
+    body.embed .stage-copy { left:24px; top:15vh; right:24px; }
+    body.embed #stage-title { font-size:clamp(34px,10vw,48px); max-width:290px; }
+    body.embed #stage-subtitle { font-size:13px; margin-top:13px; }
+    body.embed .legend { left:16px; right:16px; transform:none; bottom:19px; width:auto; overflow:auto; justify-content:flex-start; }
+    body.embed .chip { padding:7px 10px; white-space:nowrap; }
+    body.embed .stats { right:18px; bottom:69px; }
+    body.embed #card { width:100%; padding:50px 24px 28px; }
+  }
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="中国 K12 知识图谱 · 教育部 2022 最新课标">
@@ -408,8 +475,13 @@
 <div id="three-canvas" tabindex="0" role="application" aria-label="3D 球面概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情"></div>
 
 <div class="header header-3d">
-  <h1 id="headerTitle3d"><a href="./index.html" class="title-link" aria-label="返回首页" title="返回 Open Curriculum CN 首页"><span class="title-logo">K12</span><span>中国知识图谱</span><span class="title-sub">· 3D 球面视图</span></a></h1>
-  <div class="sub" id="headerSub3d">教育部 2022 最新课标 · 14 个学科全覆盖 · 拖动旋转 / 缩放, 点节点看学习路径</div>
+  <h1 id="headerTitle3d"><a href="./index.html" class="title-link" aria-label="返回首页"><span>中国 K12 知识图谱</span></a></h1>
+</div>
+
+<div class="stage-copy" aria-live="polite">
+  <div class="stage-kicker">中国 K12 知识图谱</div>
+  <div id="stage-title"><span>看看知识之间，</span><span>怎样相连。</span></div>
+  <div id="stage-subtitle">从一个知识点开始。</div>
 </div>
 
 <a href="./funnel.html" class="view-toggle" aria-label="切换到学习路径视图" title="看完整学习路径, 从小学到初中展开">

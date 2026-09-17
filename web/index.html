@@ -3,64 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="中国 K12 知识图谱：按教育部 2022 年义务教育课程标准整理。转动这张图，探索 14 门学科、1,906 个概念和它们之间的学习关系。">
-  <meta name="keywords" content="中国 K12 知识图谱, 新课标, 学习地图, 知识关系, 3D 知识图谱">
-  <meta name="author" content="Open Curriculum CN">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#10151f">
-  <link rel="canonical" href="https://zachsaws.github.io/open-curriculum-cn/">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <meta name="description" content="中国 K12 知识图谱：按教育部 2022 年义务教育课程标准整理的可探索知识关系图。">
+  <meta name="theme-color" content="#11151b">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="中国 K12 知识图谱">
-  <meta property="og:title" content="把知识，转成一张可以走进去的图。">
-  <meta property="og:description" content="按教育部 2022 年义务教育课程标准整理。转动这张图，探索知识之间的关系。">
+  <meta property="og:title" content="看看知识之间，怎样相连。">
+  <meta property="og:description" content="从一个知识点开始。">
   <meta property="og:image" content="./data/og-sphere.png">
-  <meta property="og:url" content="https://zachsaws.github.io/open-curriculum-cn/">
-  <meta property="og:locale" content="zh_CN">
-  <meta name="twitter:card" content="summary_large_image">
   <title>中国 K12 知识图谱</title>
-  <style>
-    :root { --ink:#10151f; --paper:#f2efe8; --paper-white:#fcfbf8; --line:rgba(16,21,31,.17); --soft:#667085; --gold:#d9b56e; --blue:#4969d6; --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; --serif:"Songti SC","Noto Serif SC","STSong",Georgia,serif; }
-    * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--ink); background:var(--paper); font-family:var(--sans); } a { color:inherit; text-decoration:none; } :focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
-    .scene { min-height:100svh; background:var(--ink); overflow:hidden; position:relative; color:#fff; }
-    .scene-poster, .scene-frame { position:absolute; inset:0; width:100%; height:100%; border:0; }
-    .scene-poster { object-fit:cover; opacity:.43; filter:saturate(.8) brightness(.78); transition:opacity .55s ease; }
-    .scene-frame { z-index:1; }
-    .scene.ready .scene-poster { opacity:0; }
-    .shade { position:absolute; inset:0; z-index:2; pointer-events:none; background:linear-gradient(90deg,rgba(16,21,31,.78) 0%,rgba(16,21,31,.34) 33%,rgba(16,21,31,.02) 68%),linear-gradient(0deg,rgba(16,21,31,.7) 0%,transparent 28%); }
-    .topbar { position:absolute; z-index:3; left:0; right:0; top:0; padding:25px clamp(20px,4.4vw,70px); display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand { display:flex; align-items:center; gap:11px; font-size:14px; letter-spacing:.02em; font-weight:650; }.brand-mark { width:28px; height:28px; border:1px solid rgba(255,255,255,.72); border-radius:50%; display:grid; place-items:center; font:17px var(--serif); }
-    .top-links { display:flex; align-items:center; gap:25px; font-size:13px; color:rgba(255,255,255,.76); }.top-links a:hover { color:#fff; }.top-links a:last-child { color:#fff; border-bottom:1px solid rgba(255,255,255,.56); padding-bottom:2px; }
-    .scene-copy { position:absolute; z-index:3; left:clamp(20px,8vw,142px); top:50%; transform:translateY(-40%); max-width:390px; pointer-events:none; }
-    .eyebrow { font-size:11px; letter-spacing:.16em; color:var(--gold); margin-bottom:20px; }.scene h1 { font:400 clamp(42px,5.2vw,76px)/1.12 var(--serif); letter-spacing:-.07em; margin:0 0 19px; }.scene-copy p { margin:0; color:rgba(255,255,255,.7); font-size:16px; line-height:1.75; }
-    .scene-instruction { position:absolute; z-index:3; bottom:31px; left:clamp(20px,4.4vw,70px); display:flex; gap:15px; align-items:center; color:rgba(255,255,255,.68); font-size:12px; letter-spacing:.02em; pointer-events:none; }.cursor { width:8px; height:8px; border:1px solid var(--gold); border-radius:50%; position:relative; }.cursor::after { content:""; position:absolute; width:18px; height:18px; border:1px solid rgba(217,181,110,.35); border-radius:50%; inset:-6px; animation:pulse 2.8s ease-out infinite; } @keyframes pulse { 0%,100%{transform:scale(.7);opacity:.25} 50%{transform:scale(1.25);opacity:1} }
-    .enter { position:absolute; z-index:4; bottom:25px; right:clamp(20px,4.4vw,70px); background:rgba(16,21,31,.58); color:#fff; border:1px solid rgba(255,255,255,.48); backdrop-filter:blur(10px); padding:13px 17px; font-size:13px; transition:background .2s ease,transform .2s ease; }.enter:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}
-    .opening { max-width:1120px; margin:0 auto; padding:clamp(82px,12vw,164px) 28px; display:grid; grid-template-columns:.75fr 1.16fr; gap:82px; }.tag { font-size:12px; letter-spacing:.12em; color:var(--blue); font-weight:700; }.opening h2 { font:400 clamp(36px,4.4vw,64px)/1.2 var(--serif); letter-spacing:-.055em; margin:13px 0 0; }.opening-copy { align-self:end; }.opening-copy p { font-size:clamp(17px,1.65vw,21px); line-height:1.85; color:#344054; margin:0; }.opening-copy p+p { margin-top:20px; color:var(--soft); font-size:15px; }
-    .facts { background:var(--paper-white); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }.facts-inner { max-width:1120px; margin:0 auto; padding:clamp(68px,9vw,120px) 28px; }.facts-header { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:45px; }.facts h2 { font:400 clamp(32px,3.6vw,53px)/1.2 var(--serif); letter-spacing:-.055em; margin:12px 0 0; }.facts-header p { max-width:310px; margin:0; color:var(--soft); font-size:14px; line-height:1.75; }.fact-grid { border-top:1px solid var(--line); display:grid; grid-template-columns:repeat(3,1fr); }.fact { padding:21px 25px 25px 0; border-bottom:1px solid var(--line); }.fact+.fact { padding-left:25px; border-left:1px solid var(--line); }.fact strong { font:400 clamp(26px,2.4vw,36px) var(--serif); display:block; letter-spacing:-.04em; margin-bottom:10px; }.fact span { color:var(--soft); font-size:14px; line-height:1.7; }.note { font-size:12px; color:var(--soft); line-height:1.75; margin:22px 0 0; max-width:740px; }
-    .next { background:var(--ink); color:#fff; text-align:center; padding:clamp(82px,12vw,150px) 28px; }.next h2 { font:400 clamp(38px,5vw,71px)/1.15 var(--serif); letter-spacing:-.065em; margin:0 0 23px; }.next p { color:rgba(255,255,255,.66); line-height:1.8; margin:0 auto 32px; max-width:440px; font-size:15px; }.next a { display:inline-flex; align-items:center; min-height:49px; padding:0 22px; color:var(--ink); background:var(--gold); font-weight:700; font-size:14px; transition:transform .2s ease,background .2s ease; }.next a:hover { transform:translateY(-2px); background:#eed18f; }
-    footer { background:#0a0e15; color:rgba(255,255,255,.64); padding:28px; font-size:12px; }.footer-inner { max-width:1120px; margin:0 auto; display:flex; justify-content:space-between; gap:20px; }.footer-inner a { color:#fff; border-bottom:1px solid rgba(255,255,255,.4); }
-    @media(max-width:760px){.top-links a:not(:last-child){display:none}.scene-copy{left:24px;right:24px;top:auto;bottom:113px;transform:none;max-width:330px}.scene h1{font-size:45px}.scene-copy p{font-size:14px}.shade{background:linear-gradient(0deg,rgba(16,21,31,.88) 0%,rgba(16,21,31,.31) 60%,rgba(16,21,31,.08) 100%)}.scene-instruction{bottom:27px;left:24px}.enter{top:78px;bottom:auto;right:20px;padding:9px 12px;font-size:12px}.opening{grid-template-columns:1fr;gap:31px}.facts-header{display:block}.facts-header p{margin-top:18px}.fact-grid{grid-template-columns:1fr}.fact+.fact{padding-left:0;border-left:0}.footer-inner{display:block;line-height:2}.topbar{padding:18px 20px}.brand{font-size:13px}}
-  </style>
+  <style>*{box-sizing:border-box}html,body,main{margin:0;width:100%;height:100%;overflow:hidden;background:#11151b}iframe{display:block;width:100%;height:100%;border:0;background:#11151b}</style>
 </head>
-<body>
-  <main>
-    <section class="scene" id="scene" aria-labelledby="scene-title">
-      <img class="scene-poster" src="./data/og-sphere.png" alt="" aria-hidden="true">
-      <iframe class="scene-frame" title="可交互的中国 K12 知识图谱" src="./explore.html?embed=1"></iframe>
-      <div class="shade" aria-hidden="true"></div>
-      <nav class="topbar" aria-label="主导航"><a class="brand" href="./index.html"><span class="brand-mark">知</span><span>中国 K12 知识图谱</span></a><div class="top-links"><a href="#about">关于这张图</a><a href="#facts">数据与来源</a><a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank" rel="noopener">开源项目 ↗</a></div></nav>
-      <div class="scene-copy"><div class="eyebrow">按 2022 年义务教育课程标准整理</div><h1 id="scene-title">把知识，转成一张<br>可以走进去的图。</h1><p>拖动、旋转，任选一个知识点。<br>看看它从哪里来，又会通向哪里。</p></div>
-      <div class="scene-instruction"><span class="cursor"></span><span>拖动探索 · 点击节点看关系</span></div>
-      <a class="enter" href="./explore.html">全屏探索 ↗</a>
-    </section>
-    <section class="opening" id="about"><div><div class="tag">为什么是“图谱”</div><h2>题目告诉你错了。<br>关系才可能告诉你，<br>哪里还没有连上。</h2></div><div class="opening-copy"><p>学习不是把更多知识塞进去，而是在恰当的时候重新看见它们之间的关系。一个孩子卡住，也许不是不会，而是前面某个环节还没有真正成为自己的理解。</p><p>这张图不替任何人下结论。它把课程标准、概念与学习路径摊开，让家长、老师和学习者可以从一个具体问题开始，一起讨论下一步。</p></div></section>
-    <section class="facts" id="facts"><div class="facts-inner"><div class="facts-header"><div><div class="tag">一份可被校对的公共尝试</div><h2>这张图里有什么。</h2></div><p>它不是封闭的“AI 诊断黑箱”。数据、关系和项目过程公开可见，也欢迎被使用、被质疑和被继续完善。</p></div><div class="fact-grid"><div class="fact"><strong>14 门学科</strong><span>从数学、语文、英语到科学、艺术、信息科技与更多。</span></div><div class="fact"><strong>1,906 个概念</strong><span>按课程标准整理，成为可搜索、可连接、可继续讨论的知识节点。</span></div><div class="fact"><strong>4,736 条路径</strong><span>呈现概念之间的学习关系，而不是把它们放在孤立的题库里。</span></div></div><p class="note">基础结构按教育部 2022 年义务教育课程方案和课程标准整理。练习与视频用于探索，不等同于对学习状况的结论；请结合真实学习过程与专业判断。</p></div></section>
-    <section class="next"><h2>从一个想弄懂的地方开始。</h2><p>这张图已经在转动。接下来，选一个你关心的知识点。</p><a href="./explore.html">打开完整知识图谱&nbsp; →</a></section>
-  </main>
-  <footer><div class="footer-inner"><span>中国 K12 知识图谱 · Open Curriculum CN</span><span>基于教育部 2022 年义务教育课程标准整理 · <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank" rel="noopener">查看 GitHub ↗</a></span></div></footer>
-  <script>
-    const frame = document.querySelector('.scene-frame');
-    frame.addEventListener('load', () => document.querySelector('.scene').classList.add('ready'), { once:true });
-  </script>
-</body>
+<body><main><iframe title="中国 K12 知识图谱" src="./explore.html?embed=1"></iframe></main></body>
 </html>
