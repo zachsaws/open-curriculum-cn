@@ -394,15 +394,22 @@ function slerpArc(A, B, segments) {
   return out;
 }
 
-function buildEdgeMesh() {
+function buildEdgeMesh(subject = null) {
+  if (linesMesh) { scene.remove(linesMesh); linesMesh.geometry.dispose(); linesMesh.material.dispose(); }
   const segments = EDGE_SEGMENTS;
-  const totalPts = edgesData.length * segments * 2;
+  // 真实关系不等于每一条都必须同时上屏；以稳定抽样呈现结构骨架。
+  const visibleEdges = edgesData.filter(e => {
+    const sameSubject = !subject || (DATA.nodes[e.fromIdx].subject === subject && DATA.nodes[e.toIdx].subject === subject);
+    if (!sameSubject) return false;
+    return subject ? e.edgeIdx % 3 === 0 : e.edgeIdx % 11 === 0;
+  });
+  const totalPts = visibleEdges.length * segments * 2;
   const linePositions = new Float32Array(totalPts * 3);
 
   let pIdx = 0;
   const A = new THREE.Vector3();
   const B = new THREE.Vector3();
-  for (const e of edgesData) {
+  for (const e of visibleEdges) {
     A.set(nodePositions[e.fromIdx*3], nodePositions[e.fromIdx*3+1], nodePositions[e.fromIdx*3+2]);
     B.set(nodePositions[e.toIdx*3], nodePositions[e.toIdx*3+1], nodePositions[e.toIdx*3+2]);
     const arc = slerpArc(A, B, segments);
@@ -723,6 +730,7 @@ function selectNode(idx) {
   setFocusGainTarget(idx);
   focusNode(idx);
   document.body.classList.add('has-selection');
+  renderLocalRelationship(idx);
 }
 
 function clearSelection() {
@@ -732,6 +740,7 @@ function clearSelection() {
   document.getElementById('card').classList.remove('on');
   document.getElementById('card').setAttribute('aria-hidden', 'true');
   document.body.classList.remove('has-selection');
+  document.getElementById('relation-local').innerHTML = '';
   // V3.6.2: 清掉 lineage 状态
   lineageNodes = new Set();
   lineageEdgeIdxs = new Set();
@@ -1098,9 +1107,28 @@ function setSubjectView(subject) {
   if (sub) sub.textContent = subject ? '在图中查看这一学科的知识连接。' : '从一个知识点开始。';
   document.body.classList.toggle('has-subject', Boolean(subject));
   // 学科状态保留真实节点的位置作为全貌语境；连线留给进入具体关系时再展开，避免 4,000 多条线变成背景噪音。
-  if (linesMesh) linesMesh.visible = !subject;
+  buildEdgeMesh(subject);
   applyFilterToColors();
 }
+
+function renderLocalRelationship(idx) {
+  const root = document.getElementById('relation-local');
+  if (!root || !EMBED_MODE) return;
+  const direct = [...(neighborMap.get(idx) || new Set())].slice(0, 8);
+  const node = DATA.nodes[idx];
+  const W = 760, H = 620, cx = 385, cy = 320;
+  const parts = [`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${node.title} 的直接知识关系">`];
+  direct.forEach((n, i) => {
+    const a = -Math.PI / 2 + i * Math.PI * 2 / Math.max(direct.length, 1);
+    const x = cx + Math.cos(a) * 215, y = cy + Math.sin(a) * 175;
+    const col = PALETTE[DATA.nodes[n].subject] || '#7ba7ff';
+    parts.push(`<path d="M ${cx} ${cy} Q ${(cx+x)/2} ${(cy+y)/2-32} ${x} ${y}" stroke="${col}" stroke-opacity=".72" fill="none"/>`);
+    parts.push(`<circle cx="${x}" cy="${y}" r="11" fill="${col}"/><text x="${x}" y="${y+31}" text-anchor="middle">${escapeXml(DATA.nodes[n].title)}</text>`);
+  });
+  parts.push(`<circle cx="${cx}" cy="${cy}" r="29" class="root"/><text x="${cx}" y="${cy+60}" text-anchor="middle" class="root-label">${escapeXml(node.title)}</text></svg>`);
+  root.innerHTML = parts.join('');
+}
+function escapeXml(value) { return String(value || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
 
 // ============== UI: 搜索 ==============
 function setupSearch() {

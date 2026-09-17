@@ -440,6 +440,21 @@
   body.embed #card .row .rt { font-size:13px; }
   body.embed #card .row .ra { color:#8d99a9; }
   body.embed.has-selection .stage-copy { opacity:.22; transform:translateX(-8px); transition:.3s ease; }
+  body.embed.has-selection #three-canvas { opacity:.12; transition:opacity .3s ease; }
+  #relation-local { display:none; }
+  body.embed.has-selection #relation-local { display:block; position:fixed; z-index:8; left:6vw; top:16vh; width:min(56vw,820px); height:70vh; pointer-events:none; }
+  #relation-local svg { width:100%; height:100%; overflow:visible; }
+  #relation-local path { stroke-width:1.5; }
+  #relation-local text { fill:#dce6f6; font:600 15px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; paint-order:stroke; stroke:#121720; stroke-width:5px; stroke-linejoin:round; }
+  #relation-local .root { fill:#7ba7ff; stroke:#e2ebff; stroke-width:2; filter:drop-shadow(0 0 14px rgba(104,151,255,.68)); }
+  #relation-local .root-label { font-size:19px; fill:#fff; }
+  body.embed.has-selection #card-content-req-block,
+  body.embed.has-selection #card-academic-req-block,
+  body.embed.has-selection #card-key-points-block,
+  body.embed.has-selection #card-examples-block { display:block!important; }
+  body.embed.has-selection #card .block { background:transparent; border:0; border-top:1px solid rgba(220,229,241,.13); border-radius:0; padding:16px 0 0; }
+  body.embed.has-selection #card .block-body, body.embed.has-selection #card .kp { color:#c9d1dc; }
+  body.embed.has-selection #card .block-title { margin-bottom:9px; }
   @media (max-width: 700px) {
     body.embed .header { padding:20px; }
     body.embed .header::after { right:20px; top:21px; font-size:10px; }
@@ -483,6 +498,7 @@
   <div id="stage-title"><span>看看知识之间，</span><span>怎样相连。</span></div>
   <div id="stage-subtitle">从一个知识点开始。</div>
 </div>
+<div id="relation-local" aria-live="polite"></div>
 
 <a href="./funnel.html" class="view-toggle" aria-label="切换到学习路径视图" title="看完整学习路径, 从小学到初中展开">
   <span class="icon">📊</span><span>学习路径</span>
