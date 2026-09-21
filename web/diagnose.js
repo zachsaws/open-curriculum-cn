@@ -1,6 +1,6 @@
 // V4.0.2 智能诊断 PoC — 客户端版本 (GitHub Pages 静态部署)
 // 算法跟 api/diagnose.py 保持一致, 避免 doc/API drift
-// V4.0.5 phase 2.2: IRT 自适应难度 (动态题调整 + 加权算分)
+// 五题自测：根据已选题目给出复习线索，不把结果表述为经过效度验证的能力诊断。
 'use strict';
 
 // 难度 1-5 → 薄弱/巩固阈值
@@ -132,11 +132,8 @@ function pickMultiExercises(subjects, count, grade) {
     const perSubj = perCounts[idx];
     // 该学科的所有题 (优先用该年级, 不足时 fallback 到全学科)
     let pool = EXERCISES.filter(e => subjFromConceptId(e.concept_id) === subj);
-    if (grade) {
-      const gradePool = pool.filter(e => conceptMatchesGrade(e.concept_id, grade));
-      if (gradePool.length >= perSubj) pool = gradePool;
-      // 否则保留全学科池 (题不够时兜底)
-    }
+    // 年级是用户明确选择的边界；题目不足时宁可如实提示，也不能静默混入其他年级。
+    if (grade) pool = pool.filter(e => conceptMatchesGrade(e.concept_id, grade));
     // 按 concept_id 均匀: 每概念先抽 1, 不足时再每概念抽 2...
     const byCid = {};
     pool.forEach(e => {
@@ -322,30 +319,28 @@ function buildHumanExplanation(status, scorePct, title, subjectCn, gradeRange, d
   const actions = [];
 
   if (status === '薄弱') {
-    summary = `「${title}」对你来说还有点早，${scorePct}% 的答对率说明基础没打牢。`;
-    why = `${title}是${subjectCn}${gradeRange}的${d <= 3 ? '核心' : '拔高'}考点，通常需要先掌握 ${recommendPath.length} 个前置概念。`;
+    summary = `这组「${title}」题里，答对率是 ${scorePct}%。可以先回看概念，再决定要不要继续做题。`;
+    why = recommendPath.length
+      ? `图谱里有 ${recommendPath.length} 个相连概念可供回看；它们是复习线索，不替代老师或教材的学习判断。`
+      : `这是一组快速自测结果，只反映本次作答，不代表完整的学习水平。`;
     const direct = recommendPath.filter(r => r.distance === 1).slice(0, 3);
     if (direct.length) {
-      actions.push({
-        type: 'review',
-        icon: '📚',
-        text: `先回看这 ${direct.length} 个直接基础: ${direct.map(r => r.title).join('、')}`,
-      });
+      actions.push({ type: 'review', icon: '↗', text: `回到图谱看相连概念：${direct.map(r => r.title).join('、')}` });
     }
-    actions.push({ type: 'concept', icon: '🔍', text: `看「${title}」概念卡 + 先决复习` });
-    actions.push({ type: 'exercise', icon: '✏️', text: `重新做 5 道「${title}」练习题 (客观题自动判分)` });
+    actions.push({ type: 'concept', icon: '◌', text: `看「${title}」的概念卡与相连知识点` });
+    actions.push({ type: 'exercise', icon: '✦', text: `再做一组「${title}」练习题，对照答案复盘思路` });
   } else if (status === '巩固') {
-    summary = `「${title}」你掌握了一部分（${scorePct}%），再练练就能稳。`;
-    why = `${title}是${subjectCn}${gradeRange}的重要概念，你已经有基础但细节和综合应用还差点意思。`;
-    actions.push({ type: 'exercise', icon: '✏️', text: `再做 5 道「${title}」综合题 (T4/T5 应用+压轴)` });
-    actions.push({ type: 'review', icon: '🎯', text: '重点看错题解析, 标记易错点' });
+    summary = `这组「${title}」题里，答对率是 ${scorePct}%。你可以对照答案，挑一两处不确定的地方再看。`;
+    why = `这是一组题目的即时反馈，不等同于对能力或掌握程度的评估。`;
+    actions.push({ type: 'exercise', icon: '✦', text: `再做一组「${title}」练习，比较这次和上次的思路` });
+    actions.push({ type: 'review', icon: '↗', text: '回到图谱，看看和它直接相连的概念' });
   } else {
-    summary = `「${title}」你掌握得不错（${scorePct}%），可以放心往后走。`;
-    why = `${title}这层你已经稳了，可以去看它后面解锁的概念，或者挑战更高难度的真题。`;
-    actions.push({ type: 'next', icon: '🚀', text: `查看「${title}」解锁的后续概念` });
-    actions.push({ type: 'challenge', icon: '📋', text: `挑战 5 道「${title}」真题 (is_real_exam=true)` });
+    summary = `这组「${title}」题里，答对率是 ${scorePct}%。如果你愿意，可以顺着图谱继续看相关概念。`;
+    why = `本次题目数量有限，结果适合用来决定下一步看什么，不作为正式测评。`;
+    actions.push({ type: 'next', icon: '↗', text: `在图谱中继续探索「${title}」的相关概念` });
+    actions.push({ type: 'challenge', icon: '✦', text: `再做一组练习，看看不同题型里的思路` });
   }
-  const emoji = { 薄弱: '😟', 巩固: '🙂', 已掌握: '🎉' }[status] || '🤔';
+  const emoji = { 薄弱: '↗', 巩固: '◌', 已掌握: '✦' }[status] || '◌';
   return { summary, why, actions, status_emoji: emoji };
 }
 
@@ -411,10 +406,10 @@ function renderMultiLanding() {
   const stageNm = mm.stage === 'primary' ? '小学' : (mm.stage === 'junior' ? '初中' : '学段');
   c.innerHTML = `
     <div class="multi-chip" style="background: var(--primary-soft, #e6f5ee); border: 1px solid var(--primary, #00875a); color: var(--primary, #00875a); padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 16px;">📚 多学科模式 · ${esc(stageNm)} ${mm.grade || '?'} 年级 · ${esc(subjList)} · ${mm.count} 道题</div>
-    <h2>${mm.count} 道题找出薄弱在哪儿</h2>
-    <p class="lead">按 ${mm.subjects.length} 个学科均匀出题 (每学科 ${Math.floor(mm.count / mm.subjects.length)} 道)。答完会按学科分组告诉你每个学科的薄弱状态。</p>
+    <h2>${mm.count} 道题自测</h2>
+    <p class="lead">题目会尽量均匀覆盖所选学科；完成后按学科整理本次练习结果和相关概念。</p>
     <div class="quick-pick" style="margin-top: 24px;">
-      <button class="btn" style="background: var(--primary, #00875a); color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;" onclick="startMultiTest()">开始 ${mm.count} 道题测试 →</button>
+      <button class="btn" style="background: var(--primary, #00875a); color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer;" onclick="startMultiTest()">开始 ${mm.count} 道题自测 →</button>
       <button class="btn" style="background: transparent; color: var(--text-2, #4a4a4a); border: 1px solid var(--border, #e8e0cc); padding: 14px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-left: 8px;" onclick="window.location.href='./test.html'">重选学段/学科</button>
     </div>
   `;
@@ -444,14 +439,14 @@ function renderMultiStep2() {
   const subjList = mm.subjects.map(s => SUBJECT_CN[s] || s).join(' + ');
   c.innerHTML = `
     <div class="multi-chip" style="background: var(--primary-soft, #e6f5ee); border: 1px solid var(--primary, #00875a); color: var(--primary, #00875a); padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 16px;">📚 多学科 · ${esc(subjList)} · ${MULTI_EXS.length} 道</div>
-    <h2>${MULTI_EXS.length} 道题混合测试</h2>
-    <p class="lead">// 每道题可能来自不同学科, 看学科 chip 判断. 客观题自动判分, 简答题只计"答了没".</p>
+    <h2>${MULTI_EXS.length} 道题自测</h2>
+    <p class="lead">每道题可能来自不同学科。选择和填空题会显示对照答案，简答题供你自己比对。</p>
     <div id="q-list">
       ${MULTI_EXS.map((ex, i) => renderMultiQuestion(ex, i)).join('')}
     </div>
     <div class="actions">
       <button class="btn secondary" onclick="backToMultiLanding()">← 重选学段/学科</button>
-      <button class="btn" onclick="submitMultiTest()">提交混合题 →</button>
+      <button class="btn" onclick="submitMultiTest()">查看本次结果 →</button>
     </div>
   `;
 }
@@ -624,17 +619,17 @@ function renderMultiStep3(answers) {
   const totalAll = subjResults.reduce((s, r) => s + r.total, 0);
   const overallPct = Math.round((totalCorrect / totalAll) * 100);
   // 状态中文 + emoji
-  const STATUS_LABEL = { mastered: { cn: '已掌握', emoji: '🎉' }, consolidate: { cn: '巩固', emoji: '👍' }, weak: { cn: '薄弱', emoji: '📌' } };
+  const STATUS_LABEL = { mastered: { cn: '可以延伸', emoji: '✦' }, consolidate: { cn: '继续探索', emoji: '◌' }, weak: { cn: '建议回看', emoji: '↗' } };
   const overall = STATUS_LABEL[overallStatus];
   // 整体 banner
   c.innerHTML = `
     <div class="result-banner ${overallStatus}" style="padding: 32px; border-radius: 12px; text-align: center; margin-bottom: 24px;">
       <div class="emoji" style="font-size: 56px; line-height: 1; margin-bottom: 12px;">${overall.emoji}</div>
       <div class="status-text" style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">${overall.cn}</div>
-      <div class="score-big" style="font-size: 16px; color: var(--text-2, #4a4a4a);">多学科 ${subjects.length} 个 · ${totalCorrect}/${totalAll} (${overallPct}%)</div>
+      <div class="score-big" style="font-size: 16px; color: var(--text-2, #4a4a4a);">本次自测 · ${subjects.length} 个学科 · ${totalCorrect}/${totalAll} (${overallPct}%)</div>
     </div>
     <div class="explanation" style="background: var(--bg-elevated, #fff); border: 1px solid var(--border, #e8e0cc); border-radius: 10px; padding: 20px 24px; margin-bottom: 20px;">
-      <h3 style="font-size: 14px; color: var(--text-2, #4a4a4a); margin-bottom: 12px;">// 按学科分组结果</h3>
+      <h3 style="font-size: 14px; color: var(--text-2, #4a4a4a); margin-bottom: 12px;">按学科查看</h3>
       ${subjResults.map(r => {
         const subjCn = SUBJECT_CN[r.subj] || r.subj;
         const subjColor = PALETTE[r.subj] || '#888';
@@ -648,10 +643,8 @@ function renderMultiStep3(answers) {
       }).join('')}
     </div>
     <div class="actions" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
-      <button class="btn" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--primary, #00875a); color: #fff; border: 1px solid var(--primary, #00875a); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./test.html'">再测一次 (换学段/学科)</button>
-      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./wrongbook.html'">看错题本 →</button>
-      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./diagnose.html?plan=7d'">📅 7 天复习计划</button>
-      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
+      <button class="btn" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--primary, #00875a); color: #fff; border: 1px solid var(--primary, #00875a); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./test.html'">换一组题</button>
+      <button class="btn secondary" style="flex: 1; padding: 14px 20px; font-size: 14px; font-weight: 600; background: var(--bg-elevated, #fff); color: var(--text, #0a0d18); border: 1px solid var(--border, #e8e0cc); border-radius: 8px; cursor: pointer;" onclick="window.location.href='./index.html'">回到图谱</button>
     </div>
   `;
 }
@@ -668,24 +661,16 @@ function renderStep1() {
     'M_G3_GM_04': '圆的面积',
   };
   c.innerHTML = `
-    <h2>选一个概念开始诊断</h2>
-    <p class="lead">全 14 学科 · 1,906 概念. 先选 1 个, 5 分钟测出你的薄弱程度.</p>
-    <div style="margin: 16px 0 20px; padding: 12px 16px; background: rgba(0,135,90,0.06); border: 1px solid rgba(0,135,90,0.2); border-radius: 8px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-      <span style="font-size: 24px;">📅</span>
-      <div style="flex: 1; min-width: 200px;">
-        <div style="font-size: 14px; font-weight: 700; color: #0a0d18;">已经测过一些概念?</div>
-        <div style="font-size: 12px; color: #4a4a4a; margin-top: 2px;">基于诊断历史生成 7 天复习计划, 每天 3 个概念, 薄弱优先</div>
-      </div>
-      <a class="btn" href="./diagnose.html?plan=7d" style="background: #00875a; color: #fff; border: 1px solid #00875a; padding: 10px 18px; border-radius: 6px; font-size: 13px; font-weight: 600; text-decoration: none;">看 7 天复习计划 →</a>
-    </div>
-    <div class="quick-pick-label">// MATH 5 大常考</div>
+    <h2>选一个概念开始自测</h2>
+    <p class="lead">从一个概念开始，完成 5 道题后回到图谱继续探索。结果只反映这一次作答。</p>
+    <div class="quick-pick-label">常用入口</div>
     <div class="quick-pick">
       ${QUICK_PICKS.map(q => {
         const t = titleMap[q.id] || q.id;
         return `<button class="qp-btn" onclick="pickConcept('${q.id}')">${esc(t)}<span class="badge">${esc(q.reason)}</span></button>`;
       }).join('')}
     </div>
-    <div class="quick-pick-label">// 或搜索任意概念 (全 14 学科 1906 概念)</div>
+    <div class="quick-pick-label">或搜索任意概念</div>
     <div class="search-box">
       <input type="text" id="search-input" placeholder="输入概念名/关键词, 如 '分数' '牛顿' '古诗'…" oninput="onSearch(this.value)">
     </div>
@@ -725,7 +710,7 @@ function pickConcept(id) {
 function toggleMode() {
   MODE = MODE === 'test' ? 'quick' : 'test';
   const btn = document.getElementById('mode-toggle');
-  btn.textContent = MODE === 'test' ? '📊 切到手输答对率' : '📝 切到 5 道题测试';
+  btn.textContent = MODE === 'test' ? '手动记录结果' : '回到 5 题自测';
   btn.classList.toggle('on', MODE === 'quick');
   // 如果已选概念, 重渲染
   if (SELECTED_CONCEPT) {
@@ -748,17 +733,17 @@ function renderStep2() {
         <div class="name">${esc(concept.title)}</div>
         <div class="meta">${esc(SUBJECT_CN[concept.subject] || '')} · ${esc(concept.grade_start || '')}-${esc(concept.grade_end || '')}年级 · 难度 ${esc(concept.difficulty || '?')}</div>
       </div>
-      <div class="err">该概念题目不够 5 道 (只有 ${exs.length} 道), 请先选其他概念, 或 V4.0.3 全学科覆盖后回来.</div>
+      <div class="err">这个概念目前只有 ${exs.length} 道可用练习，暂时无法完成 5 题自测。你可以先返回图谱，选择另一个概念。</div>
     `;
     return;
   }
   USER_ANSWERS = {};
-  // V4.0.5 phase 2.2: IRT 初始化 — 5 题按 difficulty 平均抽, 答完 1 题后动态换
+  // 选取 5 道覆盖不同难度的题，供一次快速自测。
   IRT_CURRENT = initIRTSession(SELECTED_CONCEPT, exs, 5);
   const subjCn = SUBJECT_CN[concept.subject] || '';
   c.innerHTML = `
-    <h2>5 道题快速测试 <span style="font-size: 12px; font-weight: 500; color: #00875a; background: rgba(0,135,90,0.10); padding: 3px 10px; border-radius: 12px; margin-left: 8px;">🎯 IRT 自适应</span></h2>
-    <p class="lead">// 客观题 (选择/填空) 自动判分, 简答题只计"答了没". 每答 1 题, 下一题会按你的水平自动调难度.</p>
+    <h2>5 题快速自测</h2>
+    <p class="lead">选择和填空题会显示对照答案；简答题供你自己比对。完成后可以回到相关概念继续复习。</p>
     <div class="concept-banner">
       <div class="name">${esc(concept.title)}</div>
       <div class="meta">${esc(subjCn)} · ${esc(concept.grade_start || '')}-${esc(concept.grade_end || '')}年级 · 难度 ${esc(concept.difficulty || '?')}</div>
@@ -768,7 +753,7 @@ function renderStep2() {
     </div>
     <div class="actions">
       <button class="btn secondary" onclick="goBack()">← 重选概念</button>
-      <button class="btn" onclick="submitIRTStep()">提交诊断 →</button>
+      <button class="btn" onclick="submitIRTStep()">查看自测结果 →</button>
     </div>
   `;
 }
@@ -1175,7 +1160,7 @@ function renderStep2Quick() {
     </div>
     <div class="actions">
       <button class="btn secondary" onclick="goBack()">← 重选概念</button>
-      <button class="btn" onclick="submitQuick()">看诊断结果 →</button>
+      <button class="btn" onclick="submitQuick()">看本次结果 →</button>
     </div>
   `;
 }
@@ -1207,23 +1192,24 @@ function showResult(result) {
 
   const statusClass = { 薄弱: 'weak', 巩固: 'consolidate', 已掌握: 'mastered' }[result.status] || 'weak';
   const explain = result.human_explanation;
+  const resultLabel = { 薄弱: '建议回看', 巩固: '继续探索', 已掌握: '可以延伸' }[result.status] || '本次自测';
 
   c.innerHTML = `
     <div class="result-banner ${statusClass}">
       <div class="emoji">${explain.status_emoji}</div>
-      <div class="status-text">${result.status} · 「${esc(result.concept_title)}」</div>
-      <div class="score-big">答对率 ${result.score_pct}% (${result.score * 5}/5)</div>
-      <div class="threshold-hint">// 自适应阈值: 难度 ${result.difficulty} → 薄弱线 ${result.weak_threshold}% / 巩固线 ${result.consolidate_threshold}%</div>
+      <div class="status-text">${resultLabel} · 「${esc(result.concept_title)}」</div>
+      <div class="score-big">本次答对 ${result.score * 5}/5 · ${result.score_pct}%</div>
+      <div class="threshold-hint">5 题快速自测 · 结果只用于提供下一步探索线索</div>
     </div>
 
     <div class="explanation">
-      <h3>// 诊断结果</h3>
+      <h3>本次自测</h3>
       <div class="summary-text">${esc(explain.summary)}</div>
       <div class="why-text">${esc(explain.why)}</div>
     </div>
 
     <div class="explanation">
-      <h3>// 建议动作</h3>
+      <h3>下一步</h3>
       <div class="actions-list">
         ${explain.actions.map(a => `<div class="action-item ${a.type}">
           <span class="icon">${a.icon}</span>
@@ -1234,14 +1220,14 @@ function showResult(result) {
 
     ${result.recommend_path.length > 0 ? `
       <div class="path-section">
-        <h3>// 复习路径 (${result.weak_concepts.length} 个先决, 按距离+难度排序, 取前 ${result.recommend_path.length})</h3>
+        <h3>图谱中的相连概念</h3>
         <div class="path-list">
           ${result.recommend_path.map((r, i) => `
-            <a class="path-row distance-${Math.min(3, r.distance)}" href="./print.html?id=${esc(r.id)}" target="_blank">
+            <a class="path-row distance-${Math.min(3, r.distance)}" href="./index.html?concept=${esc(r.id)}">
               <span class="order">${i + 1}</span>
               <span class="name">${esc(r.title)}</span>
-              <span class="meta">${esc(SUBJECT_CN[r.subject] || '')} · 距离 ${r.distance} · 难 ${r.difficulty || '?'}</span>
-              <span class="path-video" data-concept-id="${esc(r.id)}" style="margin-left: auto; font-size: 11px; color: #00875a;"></span>
+              <span class="meta">${esc(SUBJECT_CN[r.subject] || '')} · 图谱关系 ${r.distance} 层</span>
+              <span class="path-video" data-concept-id="${esc(r.id)}" style="margin-left: auto; font-size: 11px; color: var(--accent);"></span>
             </a>
           `).join('')}
         </div>
@@ -1249,14 +1235,10 @@ function showResult(result) {
     ` : ''}
 
     <div class="actions" style="margin-top: 32px;">
-      <button class="btn secondary" onclick="goBack()">← 测另一个概念</button>
-      <button class="btn secondary" onclick="location.href='./wrongbook.html'">❌ 错题本 (${window.HistoryStore.getWrongbookStats().total})</button>
-      <button class="btn secondary" onclick="location.href='./diagnose.html?plan=7d'">📅 7 天复习计划</button>
-      <button class="btn secondary" onclick="exportDiagnosisReport()">🖨 导出报告 (PDF)</button>
-      <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">📝 直接做 5 道题</button>
-      <button class="btn" onclick="openShareCard('${esc(result.concept_id)}')">📇 生成知识卡 · 转发</button>
+      <button class="btn secondary" onclick="goBack()">← 换一个概念</button>
+      <button class="btn secondary" onclick="location.href='./index.html?concept=${esc(result.concept_id)}'">回到图谱</button>
+      <button class="btn" onclick="location.href='./exercise.html?id=${esc(result.concept_id)}'">继续做题</button>
     </div>
-    ${renderHistorySection(result.concept_id)}
   `;
 
   if (typeof trackEvent === 'function') {
@@ -1270,33 +1252,8 @@ function showResult(result) {
     });
   }
 
-  // V4.0.4: 渲染完整 canvas 趋势图 + 个性化推荐
-  // 延迟 50ms 等 innerHTML 注入 + layout 完, 才能拿到 canvas 真实尺寸
+  // 延迟加载路径中的公开视频标记；结果页只保留本次自测和下一步，避免把历史和第三方推荐混成同一结论。
   setTimeout(() => {
-    try {
-      if (typeof window.TrendChart !== 'undefined') {
-        const hist = window.HistoryStore.getConceptHistory(result.concept_id);
-        window.TrendChart.render(
-          'trend-canvas',
-          hist,
-          result.weak_threshold,
-          result.consolidate_threshold
-        );
-      }
-    } catch (e) { console.error('TrendChart render failed:', e); }
-    try {
-      if (typeof window.Recommender !== 'undefined') {
-        const concept = getConceptById(result.concept_id);
-        window.Recommender.render(
-          'rec-area',
-          REC_DATA,
-          result.concept_id,
-          result.status,
-          concept ? concept.title : result.concept_title
-        );
-      }
-    } catch (e) { console.error('Recommender render failed:', e); }
-    // V4.1.2 视频图标
     try { renderPathVideos(); } catch (e) { console.error('renderPathVideos failed:', e); }
   }, 50);
 

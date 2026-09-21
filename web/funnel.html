@@ -347,6 +347,67 @@
     /* 漏斗 canvas 移动端太高 → 限制 */
     .funnel-wrap { max-height: 60vh; }
   }
+
+  /* 学习路径页：与知识球共享同一套深色舞台和详情语言。 */
+  html, body { background:#10151f; color:#edf1f7; }
+  .header { padding:28px 38px; background:none; }
+  .header h1 { font-size:14px; letter-spacing:.01em; }
+  .title-link { color:#f4f6f9; }
+  .title-logo, .title-sub, .header .sub { display:none; }
+  .view-toggle { top:28px; right:38px; z-index:22; padding:0; border:0; background:none; color:#b7bfca; font:12px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; letter-spacing:.04em; }
+  .view-toggle .icon { display:none; }
+  .view-toggle:hover { background:none; border:0; color:#fff; }
+  .funnel-copy { position:fixed; z-index:10; left:7.1vw; top:29vh; pointer-events:none; max-width:280px; }
+  .funnel-copy h2 { margin:0; color:#f4f6f9; font-size:clamp(36px,3.2vw,48px); font-weight:550; letter-spacing:-.065em; line-height:1.08; }
+  .funnel-copy p { margin:18px 0 0; color:#aeb7c4; font-size:14px; line-height:1.7; }
+  .stats { top:auto; bottom:26px; right:36px; padding:0; max-width:none; background:none; backdrop-filter:none; }
+  .stats .hint-row { display:none; }
+  .stats .hint-row:first-child { display:block; color:#8f9bac; font-size:11px; }
+  .search { top:23px; left:auto; right:166px; width:164px; }
+  .search::before { display:none; }
+  .search input { height:30px; padding:6px 10px; border-radius:0; color:#f4f6f9; background:rgba(17,21,27,.42); border-color:rgba(214,224,239,.18); font-size:11px; }
+  .search input::placeholder { color:#9da8b7; }
+  .search .results { background:#1b2029; border-color:#303947; }
+  .search .r-item:hover, .search .r-item.active { background:#252e3c; }
+  .legend { bottom:26px; left:50%; transform:translateX(-50%); width:max-content; max-width:min(90vw,820px); padding:4px; gap:4px; border:1px solid rgba(220,229,241,.13); border-radius:999px; background:rgba(16,20,27,.64); backdrop-filter:blur(12px); }
+  .legend-hint, .chip .ct { display:none; }
+  .chip { padding:7px 12px; border:0; border-radius:999px; background:transparent; color:#94a0ae; font-size:11px; }
+  .chip .sw { width:5px; height:5px; }
+  .chip .nm { color:inherit; }
+  .chip:hover { background:rgba(255,255,255,.1); }
+  #tip { color:#eef3f9; background:#171c25; border-color:#303947; box-shadow:none; border-radius:2px; }
+  #tip .ts, #tip .q { color:#9da8b7; }
+  #card { width:min(34vw,470px); color:#edf1f7; background:rgba(21,26,35,.98); border-left:1px solid rgba(220,229,241,.14); padding:42px 32px 28px; gap:18px; box-shadow:none; }
+  #card .close { color:#bdc6d1; font-size:22px; }
+  #card .back { top:72px; left:38px; background:transparent; border:0; color:#cbd5e1; padding:0; font:13px inherit; }
+  #card .back:hover { background:transparent; color:#fff; }
+  #card .head { padding-top:0; }
+  #card .cs, #card .block-title, #card .sec .label, #card .sec .k { color:#9aa6b6; }
+  #card .ctl { font-size:30px; letter-spacing:-.04em; }
+  #card .tag-row, #card .lin-stats { display:none!important; }
+  #card .teaching-voice { display:block!important; padding:0; border:0; background:none; }
+  #card .teaching-voice .block-body { padding:0; border:0; background:none; color:#c9d1dc; font-size:14px; line-height:1.75; }
+  #card .block { background:transparent; border:0; border-top:1px solid rgba(220,229,241,.13); border-radius:0; padding:16px 0 0; }
+  #card .block-body, #card .kp { color:#c9d1dc; }
+  #card .kp::before { color:#78a6ff; }
+  #card .card-action { color:#dce6f6; border-color:rgba(220,229,241,.2); background:rgba(255,255,255,.04); }
+  #card #card-diagnose-btn { order:-1; color:#111722; background:#7ba7ff; border-color:#7ba7ff; font-weight:700; }
+  #card .sec { border-top:1px solid rgba(220,229,241,.13); padding-top:17px; }
+  #card .row { padding:4px 0; border:0; border-radius:0; background:transparent; color:#e8edf4; }
+  #card .row:hover { background:transparent; color:#fff; }
+  #card .row .ra { color:#8d99a9; }
+  #loading { background:#10151f; }
+  #loading .msg { color:rgba(255,255,255,.62); }
+  #loading .spinner { border-color:rgba(255,255,255,.16); border-top-color:#d9b56e; }
+  @media (max-width:700px) {
+    .header { padding:20px; }
+    .view-toggle { top:21px; right:20px; font-size:10px; }
+    .search { top:58px; left:20px; right:20px; width:auto; }
+    .funnel-copy { left:24px; top:19vh; right:24px; }
+    .funnel-copy h2 { font-size:clamp(32px,10vw,44px); }
+    .legend { max-width:calc(100vw - 24px); overflow-x:auto; }
+    #card { width:100vw; padding:42px 24px 26px; }
+  }
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="漏斗学习路径 · 中国 K12 知识图谱">
@@ -365,12 +426,17 @@
 <div id="wrap" tabindex="0" role="application" aria-label="倒漏斗概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情和看之前要学什么"></div>
 
 <div class="header header-funnel">
-  <h1 id="headerTitleFunnel"><a href="./index.html" class="title-link" aria-label="返回首页" title="返回 Open Curriculum CN 首页"><span class="title-logo">K12</span><span>中国知识图谱</span><span class="title-sub">· 学习路径</span></a></h1>
+  <h1 id="headerTitleFunnel"><a href="./index.html" class="title-link" aria-label="返回首页" title="返回 Open Curriculum CN 首页"><span class="title-logo">K12</span><span>中国 K12 知识图谱</span><span class="title-sub">· 学习路径</span></a></h1>
   <div class="sub" id="headerSubFunnel">教育部 2022 最新课标 · 14 个学科全覆盖 · 点节点看完整前置和后续</div>
 </div>
 
-<a href="./explore.html" class="view-toggle" aria-label="切换到 3D 球面视图" title="3D 球面看学科分布">
-  <span class="icon">🌐</span><span>3D 球面</span>
+<div class="funnel-copy" aria-hidden="true">
+  <h2>从学会，<br>到会用。</h2>
+  <p>按年级展开，沿着知识关系回看每一步。</p>
+</div>
+
+<a href="./index.html" class="view-toggle" aria-label="返回知识图谱全貌" title="返回知识图谱全貌">
+  <span class="icon">🌐</span><span>返回全貌</span>
 </a>
 
 

@@ -14,14 +14,17 @@ const EDGE_BASE_OPACITY = 0.012;   // 全貌只读出结构，不抢节点
 const EDGE_NEIGHBOR_OPACITY = 0.55; // 邻居边透明度 (选中节点时)
 const POINT_RAYCAST_THRESHOLD = 1.5; // 鼠标点击命中半径 (世界单位, 经 OrbitControls 后会按缩放调整)
 const EMBED_MODE = new URLSearchParams(location.search).get('embed') === '1';
+const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+const PRIMARY_SUBJECTS = ['math', 'chinese', 'english', 'science'];
+const SUBJECT_ORDER = ['math', 'chinese', 'english', 'science', 'physics', 'chemistry', 'biology', 'history', 'geography', 'morality_law', 'info_tech', 'art', 'pe_health', 'labor'];
 
 // 14 学科配色 — 与 web/app.js PALETTE 完全一致
 const PALETTE = {
-  math: '#5b8def', chinese: '#ef6b5b', english: '#7bc96f',
-  science: '#f9a825', physics: '#ba68c8', chemistry: '#26a69a',
-  biology: '#66bb6a', history: '#8d6e63', geography: '#42a5f5',
-  morality_law: '#ec407a', info_tech: '#26c6da', art: '#ab47bc',
-  pe_health: '#ff7043', labor: '#9ccc65', integrated: '#78909c',
+  math: '#6c9cff', chinese: '#55d2c0', english: '#f08a75',
+  science: '#75e1d1', physics: '#cfd6e2', chemistry: '#cfd6e2',
+  biology: '#cfd6e2', history: '#aeb8c7', geography: '#cfd6e2',
+  morality_law: '#aeb8c7', info_tech: '#cfd6e2', art: '#aeb8c7',
+  pe_health: '#cfd6e2', labor: '#aeb8c7', integrated: '#aeb8c7',
 };
 
 // ============== 全局状态 ==============
@@ -32,6 +35,8 @@ window._currentNode = null;
 
 let scene, camera, renderer, controls;
 let pointsMesh, linesMesh, linesHighlightMesh;
+let subjectLabelsGroup;
+let subjectCenterVectors = new Map();
 let nodePositions = [];         // flat [x,y,z, ...]
 let nodeBaseColors = [];        // THREE.Color per node
 let nodeIdToIndex = new Map();
@@ -64,6 +69,51 @@ const titleOrig = new Map(); // nodeId -> 原始 title (用于繁简切换)
 
 // V4.1.2 视频数据 (按 concept_id 索引)
 let VIDEOS_BY_CONCEPT = {};
+let CARD_EXERCISES = new Map();
+let cardExercisesPromise = null;
+
+// data-cache.js 提供浏览器缓存；但 3D 入口不能依赖它一定已执行。
+// 某些本地预览会命中旧的 iframe/script 缓存，导致全局加载器尚未挂载。
+// 此处保留网络直读兜底，让图谱始终可打开。
+async function fetchGraphPayload(jsonPath, gzPath) {
+  try {
+    const response = await fetch(gzPath, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const stream = response.body.pipeThrough(new DecompressionStream('gzip'));
+    return JSON.parse(await new Response(stream).text());
+  } catch (gzipError) {
+    const response = await fetch(jsonPath, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`${jsonPath} HTTP ${response.status}`);
+    return response.json();
+  }
+}
+
+async function loadGraphForMap(kind) {
+  const loader = window[kind === 'lite' ? 'loadGraphLite' : 'loadGraphFull'];
+  if (typeof loader === 'function') return loader();
+  return kind === 'lite'
+    ? fetchGraphPayload('./data/graph_lite.json', './data/graph_lite.json.gz')
+    : fetchGraphPayload('./data/graph.json', './data/graph.json.gz');
+}
+
+function ensureCardExercises() {
+  if (cardExercisesPromise) return cardExercisesPromise;
+  cardExercisesPromise = (async () => {
+    let payload;
+    try {
+      const res = await fetch('./data/exercises.json.gz');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      payload = JSON.parse(await new Response(res.body.pipeThrough(new DecompressionStream('gzip'))).text());
+    } catch (_) {
+      payload = await (await fetch('./data/exercises.json')).json();
+    }
+    (payload.exercises || []).forEach(ex => {
+      if (!CARD_EXERCISES.has(ex.concept_id)) CARD_EXERCISES.set(ex.concept_id, []);
+      CARD_EXERCISES.get(ex.concept_id).push(ex);
+    });
+  })();
+  return cardExercisesPromise;
+}
 
 // V4.1.2 加载 videos.json
 async function loadVideos() {
@@ -112,11 +162,14 @@ async function init() {
 
   // 1) 加载数据 (V4.1.3: 用 lite 版, 80KB gz 快 100 倍)
   await loadData();
-  await loadVideos();  // V4.1.2
   if (!DATA) return;
 
-  // V4.1.3: 后台预取 full graph (detail panel 用)
-  if (typeof window.prefetchFull === 'function') window.prefetchFull();
+  // 视频只在详情里使用，不应阻塞用户先看见图谱。
+  loadVideos().then(() => {
+    if (selectedNodeIdx !== null) renderCardVideo(DATA.nodes[selectedNodeIdx].id);
+  });
+
+  // 课标详情只在用户点开概念后加载，避免占用首次浏览的带宽。
 
   // 2) 搭建场景
   setupScene();
@@ -128,6 +181,15 @@ async function init() {
   setupSearch();
   setupCardClose();
   setupAutoRotateToggle();
+  setupExplorePanel();
+  setupAboutPanel();
+
+  // 从练习、自测页返回时，恢复原来的知识点与关系图。
+  const requestedConcept = new URLSearchParams(location.search).get('concept');
+  if (requestedConcept) {
+    const idx = DATA.nodes.findIndex(node => node.id === requestedConcept);
+    if (idx >= 0) setTimeout(() => selectNode(idx), 180);
+  }
 
   // 4) FPS 计数 + 渲染循环
   document.getElementById('loading').classList.add('done');
@@ -146,12 +208,12 @@ async function init() {
 async function loadData() {
   // V4.1.3: 用 lite 版 (80KB gz, 快 100 倍) — 3D 球只需 12 字段
   try {
-    DATA = await loadGraphLite();
+    DATA = await loadGraphForMap('lite');
   } catch (e) {
     // lite 加载失败, fallback 到 full
     console.warn('[3d] lite 失败, fallback full:', e.message);
     try {
-      DATA = await loadGraphData();
+      DATA = await loadGraphForMap('full');
     } catch (e2) {
       const msg = document.getElementById('loadingMsg');
       msg.innerHTML = `<div class="err">未找到图谱数据 (graph.json / .gz)<br><br>${e2.message}</div>`;
@@ -175,7 +237,7 @@ function setupScene() {
   const w = window.innerWidth;
   const h = window.innerHeight;
   camera = new THREE.PerspectiveCamera(50, w / h, 1, 2000);
-  camera.position.set(50, 80, 310);
+  camera.position.set(isMobile ? 60 : 50, isMobile ? 85 : 80, isMobile ? 560 : 310);
   camera.lookAt(0, 0, 0);
 
   renderer = new THREE.WebGLRenderer({
@@ -193,7 +255,7 @@ function setupScene() {
   controls.enablePan = false;
   controls.minDistance = 130;
   controls.maxDistance = 600;
-  controls.autoRotate = true;
+  controls.autoRotate = !REDUCED_MOTION;
   controls.autoRotateSpeed = 1.0;
   controls.rotateSpeed = 0.5;
   controls.zoomSpeed = 0.7;
@@ -234,17 +296,41 @@ function buildGraph() {
   const N = DATA.nodes.length;
   const golden_angle = Math.PI * (1 + Math.sqrt(5));
 
+  // 学科簇：仍位于同一个球面，但同学科节点围绕各自的球面中心分布。
+  // 这样颜色表达“学科”时，用户能从空间结构直接读懂，而不是随机彩点。
+  const subjectMembers = new Map();
+  DATA.nodes.forEach((n, i) => {
+    if (!subjectMembers.has(n.subject)) subjectMembers.set(n.subject, []);
+    subjectMembers.get(n.subject).push(i);
+  });
+  const localIndex = new Map();
+  subjectMembers.forEach(members => members.forEach((idx, i) => localIndex.set(idx, i)));
+  const subjectCenters = new Map();
+  GROUPS.forEach((subject, i) => {
+    const y = 1 - 2 * (i + .5) / GROUPS.length;
+    const r = Math.sqrt(Math.max(0, 1 - y * y));
+    const a = golden_angle * i;
+    subjectCenters.set(subject, new THREE.Vector3(r * Math.cos(a), y, r * Math.sin(a)).normalize());
+  });
+  subjectCenterVectors = subjectCenters;
+
   // ---- 节点位置 (Fibonacci 球分布) ----
   for (let i = 0; i < N; i++) {
-    const phi = Math.acos(1 - 2 * (i + 0.5) / N);
-    const theta = golden_angle * i;
-    // 球面坐标: y 是极轴 (Three.js 默认 y-up)
-    const x = SPHERE_RADIUS * Math.sin(phi) * Math.cos(theta);
-    const y = SPHERE_RADIUS * Math.cos(phi);
-    const z = SPHERE_RADIUS * Math.sin(phi) * Math.sin(theta);
+    const subject = DATA.nodes[i].subject;
+    const center = subjectCenters.get(subject);
+    const members = subjectMembers.get(subject);
+    const li = localIndex.get(i);
+    const tangentA = new THREE.Vector3().crossVectors(center, Math.abs(center.y) < .9 ? new THREE.Vector3(0,1,0) : new THREE.Vector3(1,0,0)).normalize();
+    const tangentB = new THREE.Vector3().crossVectors(center, tangentA).normalize();
+    const spread = .47 * Math.sqrt((li + .5) / members.length);
+    const angle = golden_angle * li;
+    const pos = center.clone().multiplyScalar(Math.cos(spread))
+      .addScaledVector(tangentA, Math.sin(spread) * Math.cos(angle))
+      .addScaledVector(tangentB, Math.sin(spread) * Math.sin(angle))
+      .normalize().multiplyScalar(SPHERE_RADIUS);
+    const x = pos.x, y = pos.y, z = pos.z;
     nodePositions.push(x, y, z);
 
-    const subject = DATA.nodes[i].subject;
     const hex = PALETTE[subject] || '#888888';
     nodeBaseColors.push(new THREE.Color(hex));
     nodeIdToIndex.set(DATA.nodes[i].id, i);
@@ -270,8 +356,29 @@ function buildGraph() {
   });
 
   buildNodeMesh();
+  buildSubjectLabels(subjectCenters);
   buildEdgeMesh();
   buildHighlightEdgeMesh();
+}
+
+function buildSubjectLabels(subjectCenters) {
+  subjectLabelsGroup = new THREE.Group();
+  ['math', 'chinese', 'english', 'science'].forEach(subject => {
+    const center = subjectCenters.get(subject);
+    if (!center) return;
+    const canvas = document.createElement('canvas');
+    canvas.width = 256; canvas.height = 64;
+    const ctx = canvas.getContext('2d');
+    ctx.font = '600 25px -apple-system, BlinkMacSystemFont, PingFang SC, sans-serif';
+    ctx.fillStyle = '#f2f5fa'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(SUBJECT_CN[subject] || subject, 128, 32);
+    const texture = new THREE.CanvasTexture(canvas);
+    const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false, opacity: .9 }));
+    sprite.position.copy(center).multiplyScalar(SPHERE_RADIUS * 1.15);
+    sprite.scale.set(40, 10, 1);
+    subjectLabelsGroup.add(sprite);
+  });
+  scene.add(subjectLabelsGroup);
 }
 
 function makeNodeSprite() {
@@ -731,7 +838,7 @@ function selectNode(idx) {
   focusNode(idx);
   document.body.classList.add('has-selection');
   renderLocalRelationship(idx);
-  ensureFullDetails().then(() => {
+  Promise.all([ensureFullDetails(), ensureCardExercises()]).then(() => {
     if (selectedNodeIdx === idx) showCard(DATA.nodes[idx]);
   });
 }
@@ -739,7 +846,7 @@ function selectNode(idx) {
 let fullDetailsPromise = null;
 function ensureFullDetails() {
   if (fullDetailsPromise) return fullDetailsPromise;
-  fullDetailsPromise = loadGraphFull().then(full => {
+  fullDetailsPromise = loadGraphForMap('full').then(full => {
     const byId = new Map(full.nodes.map(n => [n.id, n]));
     DATA.nodes.forEach((n, i) => Object.assign(n, byId.get(n.id) || {}));
   }).catch(() => {});
@@ -766,7 +873,7 @@ function clearSelection() {
   buildLineageEdgeMesh();
 }
 
-window.__returnToMap = clearSelection;
+window.__returnToMap = () => { clearSelection(); setSubjectView(null); };
 
 function highlightNode(idx) {
   // V3.6.2: 沿 edgesFromTo BFS 反向追溯所有直接 + 间接先决
@@ -948,10 +1055,19 @@ function showCard(node) {
   const exRow = document.getElementById('card-examples');
   const exBlock = document.getElementById('card-examples-block');
   exRow.innerHTML = '';
-  if (node.examples && node.examples.length) {
+  const exercises = CARD_EXERCISES.get(node.id) || [];
+  if (exercises.length) {
+    exercises.slice(0, 2).forEach((ex, i) => {
+      const t = document.createElement('div');
+      t.className = 'exercise-preview';
+      t.innerHTML = `<span class="exercise-index">${i + 1}</span><span>${escapeXml(ex.question)}</span>`;
+      exRow.appendChild(t);
+    });
+    exBlock.style.display = '';
+  } else if (node.examples && node.examples.length) {
     node.examples.forEach(ex => {
-      const t = document.createElement('span');
-      t.className = 'ex';
+      const t = document.createElement('div');
+      t.className = 'exercise-preview';
       t.textContent = ex;
       exRow.appendChild(t);
     });
@@ -1088,25 +1204,36 @@ function buildLegend() {
   all.textContent = '全部';
   all.onclick = () => setSubjectView(null);
   legend.appendChild(all);
-  const counts = GROUPS.map(s => DATA.nodes.filter(n => n.subject === s).length);
-  GROUPS.forEach((s, i) => {
+  const orderedGroups = SUBJECT_ORDER.filter(s => GROUPS.includes(s)).concat(GROUPS.filter(s => !SUBJECT_ORDER.includes(s)));
+  orderedGroups.forEach(s => {
+    const count = DATA.nodes.filter(n => n.subject === s).length;
     const el = document.createElement('button');
-    if (!['math', 'chinese', 'english', 'science'].includes(s)) return;
-    el.className = 'chip';
+    el.className = `chip ${PRIMARY_SUBJECTS.includes(s) ? 'core-chip' : 'more-chip'}`;
     el.type = 'button';
     el.dataset.subject = s;
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
     el.setAttribute('aria-pressed', 'true');
     const nameCn = SUBJECT_CN[s] || s;
-    el.setAttribute('aria-label', `切换 ${nameCn} ${counts[i]} 个概念`);
-    el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${nameCn}</span><span class="ct">${counts[i]}</span>`;
+    el.setAttribute('aria-label', `切换 ${nameCn} ${count} 个概念`);
+    el.innerHTML = `<span class="sw" style="background:${PALETTE[s]}"></span><span class="nm">${nameCn}</span><span class="ct">${count}</span>`;
     el.onclick = () => setSubjectView(s);
     el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
     });
     legend.appendChild(el);
   });
+  const more = document.createElement('button');
+  more.className = 'chip more-toggle';
+  more.type = 'button';
+  more.textContent = '更多学科 +';
+  more.setAttribute('aria-expanded', 'false');
+  more.onclick = () => {
+    const expanded = legend.classList.toggle('legend-expanded');
+    more.textContent = expanded ? '收起学科 −' : '更多学科 +';
+    more.setAttribute('aria-expanded', String(expanded));
+  };
+  legend.insertBefore(more, legend.querySelector('.more-chip'));
 }
 
 function setSubjectView(subject) {
@@ -1118,19 +1245,60 @@ function setSubjectView(subject) {
   });
   const stage = document.getElementById('stage-title');
   const sub = document.getElementById('stage-subtitle');
-  if (stage) stage.textContent = subject ? (SUBJECT_CN[subject] || subject) : '看看知识之间，怎样相连。';
+  if (stage) {
+    if (subject) stage.textContent = SUBJECT_CN[subject] || subject;
+    else stage.innerHTML = '<span>看看知识之间，</span><span>怎样相连。</span>';
+  }
   if (sub) sub.textContent = subject ? '在图中查看这一学科的知识连接。' : '从一个知识点开始。';
   document.body.classList.toggle('has-subject', Boolean(subject));
+  if (subjectLabelsGroup) subjectLabelsGroup.visible = !subject;
+  renderSubjectHighlights(subject);
+  const direction = subject ? subjectCenterVectors.get(subject) : new THREE.Vector3(50, 80, 310).normalize();
+  if (direction) {
+    const distance = subject ? (isMobile ? 380 : 270) : (isMobile ? 560 : 325);
+    cameraTween = {
+      startPos: camera.position.clone(),
+      endPos: direction.clone().multiplyScalar(distance),
+      startTime: performance.now(),
+      duration: 650,
+    };
+    controls.enabled = false;
+    controls.autoRotate = !subject;
+  }
   // 学科状态保留真实节点的位置作为全貌语境；连线留给进入具体关系时再展开，避免 4,000 多条线变成背景噪音。
   buildEdgeMesh(subject);
   applyFilterToColors();
 }
 
+function renderSubjectHighlights(subject) {
+  const root = document.getElementById('subject-highlights');
+  if (!root) return;
+  root.innerHTML = '';
+  if (!subject) return;
+  const groups = new Map();
+  DATA.nodes.forEach((node, idx) => {
+    if (node.subject !== subject) return;
+    const label = node.domain || node.subdomain;
+    if (!label) return;
+    const current = groups.get(label);
+    if (!current || (node.centrality || 0) > (current.node.centrality || 0)) groups.set(label, { node, idx });
+  });
+  [...groups.entries()].sort((a,b)=>(b[1].node.centrality||0)-(a[1].node.centrality||0)).slice(0,4).forEach(([label, item], i) => {
+    const btn = document.createElement('button');
+    btn.type = 'button'; btn.className = `subject-anchor anchor-${i}`;
+    btn.innerHTML = `<span></span>${escapeXml(label)}`;
+    btn.onclick = () => selectNode(item.idx);
+    root.appendChild(btn);
+  });
+}
+
 function renderLocalRelationship(idx) {
   const root = document.getElementById('relation-local');
   if (!root || !EMBED_MODE) return;
-  const direct = [...(neighborMap.get(idx) || new Set())].slice(0, 8);
   const node = DATA.nodes[idx];
+  const direct = [...(neighborMap.get(idx) || new Set())]
+    .filter(n => DATA.nodes[n].subject === node.subject)
+    .slice(0, 7);
   const W = 760, H = 620, cx = 385, cy = 320;
   const parts = [`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${node.title} 的直接知识关系">`];
   direct.forEach((n, i) => {
@@ -1142,7 +1310,11 @@ function renderLocalRelationship(idx) {
   });
   parts.push(`<circle cx="${cx}" cy="${cy}" r="29" class="root"/><text x="${cx}" y="${cy+60}" text-anchor="middle" class="root-label">${escapeXml(node.title)}</text></svg>`);
   root.innerHTML = parts.join('');
-  root.querySelectorAll('.relation-node').forEach(el => el.addEventListener('click', () => selectNode(Number(el.dataset.index))));
+  root.querySelectorAll('.relation-node').forEach(el => el.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    selectNode(Number(el.dataset.index));
+  }));
 }
 function escapeXml(value) { return String(value || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
 
@@ -1200,6 +1372,58 @@ function setupAutoRotateToggle() {
     btn.textContent = controls.autoRotate ? '⏸ 暂停旋转' : '▶ 自动旋转';
     btn.setAttribute('aria-pressed', controls.autoRotate ? 'true' : 'false');
   };
+  if (REDUCED_MOTION) {
+    btn.textContent = '▶ 自动旋转';
+    btn.setAttribute('aria-pressed', 'false');
+  }
+}
+
+function setupAboutPanel() {
+  const trigger = document.getElementById('about-toggle');
+  const panel = document.getElementById('about-panel');
+  const close = panel?.querySelector('.about-close');
+  if (!trigger || !panel || !close) return;
+  const setOpen = open => {
+    panel.classList.toggle('on', open);
+    panel.setAttribute('aria-hidden', String(!open));
+    trigger.setAttribute('aria-expanded', String(open));
+    if (open) close.focus();
+  };
+  trigger.onclick = () => setOpen(!panel.classList.contains('on'));
+  close.onclick = () => setOpen(false);
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
+  document.addEventListener('click', event => {
+    if (!panel.classList.contains('on')) return;
+    if (!panel.contains(event.target) && !trigger.contains(event.target)) setOpen(false);
+  });
+}
+
+function setupExplorePanel() {
+  const trigger = document.getElementById('explore-toggle');
+  const panel = document.getElementById('explore-panel');
+  if (!trigger || !panel) return;
+  const setOpen = open => {
+    panel.classList.toggle('on', open);
+    panel.setAttribute('aria-hidden', String(!open));
+    trigger.setAttribute('aria-expanded', String(open));
+  };
+  trigger.onclick = () => setOpen(!panel.classList.contains('on'));
+  panel.querySelector('[data-explore-action="search"]')?.addEventListener('click', () => {
+    setOpen(false);
+    const input = document.getElementById('searchInput');
+    input?.focus();
+  });
+  panel.querySelectorAll('[data-explore-subject]').forEach(button => {
+    button.addEventListener('click', () => {
+      setOpen(false);
+      setSubjectView(button.dataset.exploreSubject);
+    });
+  });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
+  document.addEventListener('click', event => {
+    if (!panel.classList.contains('on')) return;
+    if (!panel.contains(event.target) && !trigger.contains(event.target)) setOpen(false);
+  });
 }
 
 // ============== Resize / Loop ==============

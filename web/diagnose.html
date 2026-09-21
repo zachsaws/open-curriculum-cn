@@ -2,8 +2,9 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>智能诊断 · K12 知识图谱</title>
+<title>学习自测 · K12 知识图谱</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./learning-shell.css">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { color: #0a0d18; background: #faf6ee; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; }
@@ -430,25 +431,25 @@
 </style>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="中国 K12 知识图谱">
-<meta property="og:title" content="智能诊断 · 中国 K12 知识图谱">
-<meta property="og:description" content="5 分钟测出薄弱点, 顺着先决关系补齐知识链。14 学科 1906 概念, 全免费。">
+<meta property="og:title" content="学习自测 · 中国 K12 知识图谱">
+<meta property="og:description" content="从几道题开始，回到相关知识点继续探索。14 学科知识图谱，免费公开使用。">
 <meta property="og:image" content="https://zachsaws.github.io/open-curriculum-cn/assets/og-cover.png">
 <meta property="og:url" content="https://zachsaws.github.io/open-curriculum-cn/diagnose.html">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="智能诊断 · 中国 K12 知识图谱">
-<meta name="twitter:description" content="5 分钟测出薄弱点, 顺着先决关系补齐知识链。全免费。">
+<meta name="twitter:title" content="学习自测 · 中国 K12 知识图谱">
+<meta name="twitter:description" content="从几道题开始，回到相关知识点继续探索。">
 <meta name="twitter:image" content="https://zachsaws.github.io/open-curriculum-cn/assets/og-cover.png">
 </head>
-<body>
+<body class="learning-shell">
 <div class="top">
   <a class="back" href="./index.html">← 返回主页</a>
   <div class="title">
-    <h1>🩺 智能诊断</h1>
-    <div class="sub">全 14 学科 · 1,906 概念 · BFS 先决链 + 自适应阈值</div>
+    <h1>学习自测</h1>
+    <div class="sub">从一个概念或一组题开始，回到相关知识点继续探索</div>
   </div>
   <a class="mode-toggle" href="./index.html" style="text-decoration:none">📚 14 学科</a>
-  <button class="mode-toggle" id="mode-toggle" onclick="toggleMode()">📊 切到手输答对率</button>
+  <button class="mode-toggle" id="mode-toggle" onclick="toggleMode()">手动记录结果</button>
 </div>
 
 <div class="progress">
@@ -463,7 +464,7 @@
 
 <div class="footer">
   数据来源: <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">open-curriculum-cn</a> ·
-  算法: BFS 找先决链 + 自适应阈值按难度 (80/70/60/50%) · CC-BY-SA 4.0
+  本次结果仅作自测与复习线索 · CC-BY-SA 4.0
 </div>
 
 <script src="./history.js"></script>

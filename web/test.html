@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="5 分钟测出孩子薄弱在哪儿。选学段、选学科、出 5 道题找出薄弱概念,自动给 B 站视频 + 教材章节 + 复习路径。">
+<meta name="description" content="选择年级与学科，完成一组自测，再回到相关知识点继续探索。中国 K12 知识图谱，免费公开使用。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="智能诊断 · 5 分钟测出孩子薄弱在哪儿">
-<meta property="og:description" content="按教育部 2022 义教课标,选学段+学科,出 5 道题找出薄弱概念,自动给学习路径。">
-<title>智能诊断 · 5 分钟测出孩子薄弱在哪儿 · 中国 K12 知识图谱</title>
+<meta property="og:title" content="学习自测 · 中国 K12 知识图谱">
+<meta property="og:description" content="从一组题开始，再回到相关知识点继续探索。">
+<title>学习自测 · 中国 K12 知识图谱</title>
+<link rel="stylesheet" href="./learning-shell.css">
 <style>
   :root {
     --bg: #faf6ee;
@@ -128,7 +129,7 @@
   }
 </style>
 </head>
-<body>
+<body class="learning-shell">
 
 <nav class="nav">
   <div class="nav-inner">
@@ -137,9 +138,8 @@
       <span>中国 K12 知识图谱</span>
     </a>
     <div class="nav-links">
-      <a href="index.html#subjects">14 学科</a>
-      <a href="index.html#features">4 大功能</a>
-      <a href="index.html#stories">谁在用</a>
+      <a href="index.html">探索图谱</a>
+      <a href="./funnel.html">学习路径</a>
       <a href="https://github.com/zachsaws/open-curriculum-cn">GitHub</a>
     </div>
     <a class="nav-cta" href="index.html">← 主页</a>
@@ -148,8 +148,8 @@
 
 <div class="page">
 
-  <h1 style="font-size: clamp(28px, 4vw, 36px); font-weight: 800; line-height: 1.2; margin-bottom: 8px;">5 分钟测出孩子薄弱在哪儿</h1>
-  <p style="color: var(--text-2); font-size: 16px; margin-bottom: 28px;">选学段, 选学科, 出 5 道题找出薄弱概念, 自动给学习路径。</p>
+  <h1 style="font-size: clamp(28px, 4vw, 36px); font-weight: 800; line-height: 1.2; margin-bottom: 8px;">从几道题开始，<br>看看下一步学什么。</h1>
+  <p style="color: var(--text-2); font-size: 16px; margin-bottom: 28px;">选择年级和学科，完成一组自测；结果会回到相关知识点和复习线索。</p>
 
   <!-- Step 1: 选学段 + 年级 -->
   <div class="step">
@@ -178,7 +178,7 @@
   <div class="step">
     <span class="step-num">2</span>
     <h2>选学科 <span style="font-size: 13px; color: var(--text-3); font-weight: 500;">(可多选, 跨学科也行)</span></h2>
-    <p class="sub">新课标本来就交叉, 选多科能测出"复合题"的薄弱点。</p>
+    <p class="sub">可以选一科，也可以同时选几科；题目会按你的选择组织。</p>
     <div class="subj-grid" id="subj-grid"></div>
     <div class="subj-row">
       <span class="subj-mini" id="subj-all">全选</span>
@@ -190,11 +190,11 @@
   <div class="step">
     <span class="step-num">3</span>
     <h2>测试强度</h2>
-    <p class="sub">题越多越准, 第一次先用 5 道快速测。</p>
+    <p class="sub">第一次建议从 5 题开始；更多题目只会让这次自测覆盖得更广。</p>
     <div class="count-grid">
       <label class="count-card selected" data-count="5">
         <div class="nm">5 道题 <span class="recommend">推荐</span></div>
-        <div class="meta">约 2 分钟 · 快速定位</div>
+        <div class="meta">约 2 分钟 · 快速自测</div>
       </label>
       <label class="count-card" data-count="10">
         <div class="nm">10 道题</div>
@@ -202,7 +202,7 @@
       </label>
       <label class="count-card" data-count="20">
         <div class="nm">20 道题</div>
-        <div class="meta">约 8 分钟 · 完整诊断</div>
+        <div class="meta">约 8 分钟 · 更广覆盖</div>
       </label>
     </div>
   </div>

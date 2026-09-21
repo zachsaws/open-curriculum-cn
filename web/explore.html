@@ -393,7 +393,25 @@
   body.embed .title-link { color:#f4f6f9; }
   body.embed .title-logo, body.embed .title-sub { display:none; }
   body.embed .header .sub { display:none; }
-  body.embed .header::after { content:'探索　 关于　 开源'; position:fixed; right:38px; top:30px; color:#b7bfca; font-size:12px; letter-spacing:.04em; }
+  body.embed .top-nav { position:fixed; z-index:22; top:28px; right:38px; display:flex; align-items:center; gap:22px; }
+  body.embed .top-nav a, body.embed .top-nav button { border:0; padding:0; background:transparent; color:#b7bfca; font:12px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; letter-spacing:.04em; text-decoration:none; cursor:pointer; }
+  body.embed .top-nav a:hover, body.embed .top-nav button:hover { color:#fff; }
+  body.embed .explore-panel { position:fixed; z-index:25; top:62px; right:38px; width:272px; padding:14px; color:#e8edf4; background:rgba(23,28,37,.98); border:1px solid rgba(220,229,241,.15); border-radius:10px; box-shadow:0 18px 50px rgba(0,0,0,.28); transform:translateY(-6px); opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease; }
+  body.embed .explore-panel.on { opacity:1; transform:none; pointer-events:auto; }
+  body.embed .explore-title { margin:0 0 10px; color:#9aa6b6; font-size:11px; }
+  body.embed .explore-action { display:block; width:100%; padding:9px 10px; margin:0 0 5px; border:1px solid rgba(220,229,241,.1); border-radius:7px; background:rgba(255,255,255,.035); color:#e8edf4; text-align:left; text-decoration:none; font:600 13px inherit; cursor:pointer; }
+  body.embed .explore-action:hover { background:rgba(123,167,255,.12); border-color:rgba(123,167,255,.34); color:#fff; }
+  body.embed .explore-caption { display:block; margin-top:3px; color:#9aa6b6; font-size:11px; font-weight:400; }
+  body.embed .subject-shortcuts { display:grid; grid-template-columns:repeat(4,1fr); gap:5px; margin-top:8px; }
+  body.embed .subject-shortcuts button { padding:7px 4px; border:1px solid rgba(220,229,241,.1); border-radius:6px; background:transparent; color:#cbd5e1; font:12px inherit; cursor:pointer; }
+  body.embed .subject-shortcuts button:hover { color:#fff; border-color:rgba(123,167,255,.45); }
+  body.embed .about-panel { position:fixed; z-index:25; top:62px; right:38px; width:300px; padding:20px; color:#d7dee8; background:rgba(23,28,37,.98); border:1px solid rgba(220,229,241,.15); transform:translateY(-6px); opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease; }
+  body.embed .about-panel.on { opacity:1; transform:none; pointer-events:auto; }
+  body.embed .about-panel .about-close { position:absolute; top:10px; right:12px; border:0; color:#98a4b3; background:transparent; font-size:18px; cursor:pointer; }
+  body.embed .about-panel h2 { margin:0 0 10px; color:#f4f6f9; font-size:17px; font-weight:600; letter-spacing:-.02em; }
+  body.embed .about-panel p { margin:0; color:#acb6c4; font-size:13px; line-height:1.7; }
+  body.embed .about-meta { display:flex; gap:14px; margin:16px 0; padding:14px 0; border-top:1px solid rgba(220,229,241,.13); border-bottom:1px solid rgba(220,229,241,.13); color:#dce4ee; font-size:12px; }
+  body.embed .about-panel a { color:#86abff; font-size:12px; text-decoration:none; }
   body.embed .search { display:block; top:23px; right:164px; left:auto; width:164px; }
   body.embed .search::before { display:none; }
   body.embed .search input { height:30px; padding:6px 10px; border-radius:0; color:#f4f6f9; background:rgba(17,21,27,.42); border:1px solid rgba(214,224,239,.18); font-size:11px; }
@@ -404,13 +422,20 @@
   body.embed .stage-kicker { display:none; }
   body.embed #stage-title { font-size:clamp(42px,3.5vw,52px); letter-spacing:-.065em; line-height:1.08; font-weight:550; max-width:410px; }
   body.embed #stage-title span { display:block; white-space:nowrap; }
+  body.embed.has-subject #stage-title::after { content:""; display:block; width:32px; height:2px; margin-top:16px; background:#6c9cff; }
   body.embed #stage-subtitle { margin-top:20px; color:#aeb7c4; font-size:14px; letter-spacing:.01em; }
-  body.embed .legend { display:flex; align-items:center; justify-content:center; flex-wrap:nowrap; gap:4px; bottom:26px; left:50%; transform:translateX(-50%); max-width:none; width:max-content; padding:4px; border:1px solid rgba(220,229,241,.13); background:rgba(16,20,27,.64); backdrop-filter:blur(12px); border-radius:999px; }
+  body.embed .legend { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:4px; bottom:26px; left:50%; transform:translateX(-50%); max-width:min(90vw,820px); width:max-content; padding:4px; border:1px solid rgba(220,229,241,.13); background:rgba(16,20,27,.64); backdrop-filter:blur(12px); border-radius:999px; }
   body.embed .legend-hint { display:none; }
   body.embed .chip { border:0; border-radius:999px; background:transparent; color:#94a0ae; padding:7px 12px; font:inherit; font-size:11px; cursor:pointer; }
-  body.embed .chip .sw, body.embed .chip .ct { display:none; }
+  body.embed .chip .ct { display:none; }
+  body.embed .chip .sw { display:inline-block; width:5px; height:5px; }
   body.embed .chip .nm { color:inherit; }
   body.embed .chip.active { background:#eef2f7; color:#151a22; }
+  body.embed .chip.active .sw { box-shadow:0 0 0 2px rgba(21,26,34,.12); }
+  body.embed .more-chip { display:none; }
+  body.embed .legend.legend-expanded { border-radius:16px; }
+  body.embed .legend.legend-expanded .more-chip { display:flex; }
+  body.embed .more-toggle { color:#aab5c4; }
   body.embed .chip.active .nm { color:#151a22; }
   body.embed .chip:hover { background:rgba(255,255,255,.10); }
   body.embed .chip.active:hover { background:#fff; }
@@ -419,6 +444,8 @@
   body.embed .stats::before { display:none!important; }
   body.embed #toggleAutoRotate { width:30px; height:30px; overflow:hidden; padding:0!important; color:transparent!important; border-radius:50%!important; border-color:rgba(220,229,241,.24)!important; background:rgba(16,20,27,.64)!important; position:relative; }
   body.embed #toggleAutoRotate::after { content:'Ⅱ'; position:absolute; inset:6px; color:#dce3ec; font-size:11px; line-height:16px; }
+  body.embed .explore-hint { position:fixed; z-index:12; right:78px; bottom:34px; color:#8794a5; font-size:11px; letter-spacing:.02em; transition:opacity .2s ease; pointer-events:none; }
+  body.embed.has-selection .explore-hint { opacity:0; }
   body.embed #tip { color:#eef3f9; background:#171c25; border-color:#303947; box-shadow:none; border-radius:2px; }
   body.embed #tip .ts { color:#9da8b7; }
   body.embed #card { width:min(34vw,470px); color:#edf1f7; background:rgba(21,26,35,.96); border-left:1px solid rgba(220,229,241,.14); padding:42px 32px 28px; gap:18px; box-shadow:none; }
@@ -427,10 +454,7 @@
   body.embed #card .cs, body.embed #card .block-title, body.embed #card .sec .label, body.embed #card .sec .k { color:#9aa6b6; }
   body.embed #card .ctl { font-size:30px; letter-spacing:-.04em; }
   body.embed #card .tag-row { display:none; }
-  body.embed #card .block, body.embed #card .lin-stats, body.embed #card .reason-list, body.embed #card .card-actions,
-  body.embed #card-video-block, body.embed #card-content-req-block, body.embed #card-academic-req-block, body.embed #card-key-points-block,
-  body.embed #card-real-examples-block, body.embed #card-common-mistakes-block, body.embed #card-teaching-activity-block,
-  body.embed #card-examples-block, body.embed #card-assessment-block, body.embed #card-meta-block { display:none!important; }
+  body.embed #card .lin-stats, body.embed #card .reason-list { display:none!important; }
   body.embed #card-teaching-voice-block { display:block!important; padding:0; border:0; background:none; }
   body.embed .teaching-voice .block-body { padding:0; border:0; background:none; color:#c9d1dc; font-size:14px; line-height:1.75; }
   body.embed #card .sec { border-top:1px solid rgba(220,229,241,.13); padding-top:17px; }
@@ -442,10 +466,16 @@
   body.embed.has-selection .stage-copy { opacity:.22; transform:translateX(-8px); transition:.3s ease; }
   body.embed.has-selection #three-canvas { opacity:.12; transition:opacity .3s ease; }
   #relation-local { display:none; }
-  body.embed.has-selection #relation-local { display:block; position:fixed; z-index:8; left:6vw; top:16vh; width:min(56vw,820px); height:70vh; pointer-events:none; }
+  #subject-highlights { display:none; }
+  body.embed.has-subject:not(.has-selection) #subject-highlights { display:block; position:fixed; z-index:9; left:40%; top:20%; width:46vw; height:55vh; pointer-events:none; }
+  .subject-anchor { position:absolute; pointer-events:auto; border:0; background:transparent; color:#eef3fa; font:600 13px inherit; cursor:pointer; text-shadow:0 1px 8px #0d1118; }
+  .subject-anchor span { display:inline-block; width:11px; height:11px; margin-right:8px; border-radius:50%; background:#6c9cff; box-shadow:0 0 14px rgba(108,156,255,.8); vertical-align:-1px; }
+  .subject-anchor:hover { color:#fff; transform:translateY(-1px); }
+  .anchor-0 { left:18%; top:22%; } .anchor-1 { right:12%; top:34%; } .anchor-2 { left:8%; bottom:20%; } .anchor-3 { right:26%; bottom:8%; }
+  body.embed.has-selection #relation-local { display:block; position:fixed; z-index:8; left:6vw; top:16vh; width:min(56vw,820px); height:70vh; pointer-events:auto; }
   #relation-local svg { width:100%; height:100%; overflow:visible; }
-  #relation-local path { stroke-width:1.5; }
-  #relation-local text { fill:#dce6f6; font:600 15px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; paint-order:stroke; stroke:#121720; stroke-width:5px; stroke-linejoin:round; }
+  #relation-local path { stroke-width:1.5; pointer-events:none; }
+  #relation-local text { fill:#dce6f6; font:600 15px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; paint-order:stroke; stroke:#121720; stroke-width:5px; stroke-linejoin:round; pointer-events:none; }
   #relation-local .root { fill:#7ba7ff; stroke:#e2ebff; stroke-width:2; filter:drop-shadow(0 0 14px rgba(104,151,255,.68)); }
   #relation-local .root-label { font-size:19px; fill:#fff; }
   #relation-local .relation-node { pointer-events:auto; cursor:pointer; }
@@ -453,26 +483,50 @@
   .back-to-map { display:none; }
   body.embed.has-selection .back-to-map { display:block; position:fixed; z-index:20; left:38px; top:72px; background:transparent; border:0; color:#cbd5e1; font:13px inherit; cursor:pointer; }
   body.embed.has-selection .back-to-map:hover { color:#fff; }
-  body.embed.has-selection #card-content-req-block,
-  body.embed.has-selection #card-academic-req-block,
-  body.embed.has-selection #card-key-points-block,
-  body.embed.has-selection #card-examples-block { display:block!important; }
-  body.embed.has-selection #card .card-actions { display:flex!important; flex-wrap:wrap; }
+  body.embed.has-selection #card .card-actions { display:flex; flex-wrap:wrap; }
   body.embed.has-selection #card .card-action { color:#dce6f6; border-color:rgba(220,229,241,.2); background:rgba(255,255,255,.04); }
+  body.embed.has-selection #card #card-diagnose-btn { order:-1; color:#111722; background:#7ba7ff; border-color:#7ba7ff; font-weight:700; }
+  body.embed.has-selection #card #card-diagnose-btn:hover { background:#95b9ff; border-color:#95b9ff; }
   body.embed.has-selection #card .block { background:transparent; border:0; border-top:1px solid rgba(220,229,241,.13); border-radius:0; padding:16px 0 0; }
   body.embed.has-selection #card .block-body, body.embed.has-selection #card .kp { color:#c9d1dc; }
   body.embed.has-selection #card .block-title { margin-bottom:9px; }
+  body.embed #card .ex-row { display:grid; gap:8px; }
+  body.embed #card .exercise-preview { display:grid; grid-template-columns:22px 1fr; gap:9px; color:#d8e0eb; font-size:13px; line-height:1.6; }
+  body.embed #card .exercise-index { width:20px; height:20px; display:grid; place-items:center; border:1px solid rgba(123,167,255,.45); border-radius:50%; color:#8fb5ff; font-size:10px; }
+  /* Detail card is part of the dark graph, including metadata generated by legacy data fields. */
+  body.embed #card .tag { color:#cbd5e1; background:rgba(255,255,255,.055); border:1px solid rgba(220,229,241,.12); }
+  body.embed #card .tag.min { color:#9aa6b6; background:rgba(255,255,255,.035); }
+  body.embed #card .tag.diff-1, body.embed #card .tag.diff-2, body.embed #card .tag.diff-3,
+  body.embed #card .tag.diff-4, body.embed #card .tag.diff-5 { color:#cbd5e1; }
+  body.embed #card .meta-row { gap:7px; padding:0; }
+  body.embed #card .meta-tag { color:#cbd5e1; background:rgba(255,255,255,.055); border:1px solid rgba(220,229,241,.12); }
+  body.embed #card .meta-tag.type-conceptual,
+  body.embed #card .meta-tag.type-procedural,
+  body.embed #card .meta-tag.type-factual,
+  body.embed #card .meta-tag.bloom-tag { color:#d8e5ff; background:rgba(123,167,255,.12); border-color:rgba(123,167,255,.24); }
+  body.embed #card .src-link { color:#8fb5ff; }
+  body.embed #card .card-action-row button { color:#dce6f6; background:rgba(123,167,255,.10); border-color:rgba(123,167,255,.27); }
+  body.embed #card .card-action-row button:hover { color:#fff; background:rgba(123,167,255,.20); }
+  body.embed #card-video-link { color:#e8edf4!important; background:rgba(123,167,255,.07)!important; border-color:rgba(123,167,255,.22)!important; }
+  body.embed #card-video-title { color:#eef3fa!important; }
+  body.embed #card-video-pub, body.embed #card-video-meta { color:#9aa6b6!important; }
+  body.embed #card-video-link > div:last-child { color:#8fb5ff!important; }
   @media (max-width: 700px) {
     body.embed .header { padding:20px; }
-    body.embed .header::after { right:20px; top:21px; font-size:10px; }
-    body.embed .search { display:none; }
-    body.embed .stage-copy { left:24px; top:15vh; right:24px; }
+    body.embed .top-nav { top:21px; right:20px; gap:14px; }
+    body.embed .top-nav a, body.embed .top-nav button { font-size:10px; }
+    body.embed .about-panel { top:52px; right:16px; width:min(320px,calc(100vw - 32px)); }
+    body.embed .explore-panel { top:52px; right:16px; width:min(272px,calc(100vw - 32px)); }
+    body.embed .search { display:block; top:58px; left:20px; right:20px; width:auto; }
+    body.embed .stage-copy { left:24px; top:19vh; right:24px; }
     body.embed #stage-title { font-size:clamp(34px,10vw,48px); max-width:290px; }
     body.embed #stage-subtitle { font-size:13px; margin-top:13px; }
-    body.embed .legend { left:16px; right:16px; transform:none; bottom:19px; width:auto; overflow:auto; justify-content:flex-start; }
+    body.embed .legend { left:16px; right:16px; transform:none; bottom:19px; width:auto; max-width:none; overflow:auto; justify-content:flex-start; flex-wrap:nowrap; }
     body.embed .chip { padding:7px 10px; white-space:nowrap; }
     body.embed .stats { right:18px; bottom:69px; }
+    body.embed .explore-hint { left:18px; right:auto; bottom:72px; font-size:10px; }
     body.embed #card { width:100%; padding:50px 24px 28px; }
+    body.embed.has-subject:not(.has-selection) #subject-highlights { display:none; }
   }
 </style>
 <meta property="og:type" content="website">
@@ -497,8 +551,31 @@
 <div id="three-canvas" tabindex="0" role="application" aria-label="3D 球面概念关系图, 1906 节点, 4736 边, 14 学科, 鼠标拖动旋转, 滚轮缩放, 单击节点查看详情"></div>
 
 <div class="header header-3d">
-  <h1 id="headerTitle3d"><a href="./index.html" class="title-link" aria-label="返回首页"><span>中国 K12 知识图谱</span></a></h1>
+  <h1 id="headerTitle3d"><a href="./index.html" target="_top" class="title-link" aria-label="返回首页"><span>中国 K12 知识图谱</span></a></h1>
 </div>
+<nav class="top-nav" aria-label="项目导航">
+  <button type="button" id="explore-toggle" aria-expanded="false" aria-controls="explore-panel">探索</button>
+  <button type="button" id="about-toggle" aria-expanded="false" aria-controls="about-panel">关于</button>
+  <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank" rel="noreferrer">开源</a>
+</nav>
+<aside class="explore-panel" id="explore-panel" aria-hidden="true">
+  <p class="explore-title">从一个入口开始</p>
+  <button type="button" class="explore-action" data-explore-action="search">搜索知识点<span class="explore-caption">按名称、年级或学科寻找</span></button>
+  <a class="explore-action" href="./test.html" target="_top">按年级随机测 5 题<span class="explore-caption">选择小学 / 初中、年级与学科</span></a>
+  <div class="subject-shortcuts" aria-label="按学科探索">
+    <button type="button" data-explore-subject="math">数学</button>
+    <button type="button" data-explore-subject="chinese">语文</button>
+    <button type="button" data-explore-subject="english">英语</button>
+    <button type="button" data-explore-subject="science">科学</button>
+  </div>
+</aside>
+<aside class="about-panel" id="about-panel" aria-hidden="true">
+  <button class="about-close" type="button" aria-label="关闭项目说明">×</button>
+  <h2>中国 K12 知识图谱</h2>
+  <p>从新课标中的一个知识点开始，看见它的前置、延伸与可练习的路径。</p>
+  <div class="about-meta"><span>14 学科</span><span>1,906 概念</span><span>4,736 关系</span></div>
+  <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank" rel="noreferrer">查看数据与方法 →</a>
+</aside>
 
 <div class="stage-copy" aria-live="polite">
   <div class="stage-kicker">中国 K12 知识图谱</div>
@@ -506,6 +583,7 @@
   <div id="stage-subtitle">从一个知识点开始。</div>
 </div>
 <div id="relation-local" aria-live="polite"></div>
+<div id="subject-highlights" aria-label="学科核心领域"></div>
 <button class="back-to-map" type="button" onclick="window.__returnToMap && window.__returnToMap()">← 返回全貌</button>
 
 <a href="./funnel.html" class="view-toggle" aria-label="切换到学习路径视图" title="看完整学习路径, 从小学到初中展开">
@@ -522,6 +600,7 @@
     <button id="toggleAutoRotate" aria-pressed="true" style="background:rgba(0,135,90,0.15); border:1px solid rgba(0,135,90,0.3); color:#0a0d18; padding:4px 10px; border-radius:4px; font-size:11px; cursor:pointer; font-weight:600;">⏸ 暂停旋转</button>
   </div>
 </div>
+<div class="explore-hint" aria-hidden="true">拖动旋转 · 点击节点查看关系</div>
 
 <div class="search">
   <input type="text" id="searchInput" placeholder="搜索概念 ID / 标题 / 标签..." autocomplete="off"
@@ -547,8 +626,8 @@
   <div class="tag-row" id="card-tags"></div>
 
   <div class="card-actions">
-    <a class="card-action" id="card-exercise-btn" target="_blank" title="做几道题 - 选择/填空/简答, 5 道题互补">📝 做几道题</a>
-    <a class="card-action" id="card-diagnose-btn" target="_blank" title="智能诊断 - 5 题快速测出薄弱程度 + 复习路径">🩺 智能诊断</a>
+    <a class="card-action" id="card-exercise-btn" target="_top" title="做几道题 - 选择/填空/简答, 5 道题互补">📝 做几道题</a>
+    <a class="card-action" id="card-diagnose-btn" target="_top" title="完成 5 题自测，回到相关概念继续复习">开始 5 题自测</a>
     <a class="card-action" id="card-video-btn" target="_blank" title="B 站 / YouTube 优质讲解视频" style="display:none;">📺 讲解视频</a>
     <a class="card-action" id="card-print-btn" target="_blank" title="打开 A4 黑白打印版">🖨 打印版</a>
     <a class="card-action" id="card-share-btn" href="javascript:void(0)" title="生成可分享的 1080×1440 学习卡">📤 分享学习卡</a>
@@ -637,8 +716,8 @@
 <script type="importmap">
 {
   "imports": {
-    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    "three": "./vendor/three-r160/three.module.js",
+    "three/addons/": "./vendor/three-r160/"
   }
 }
 </script>
@@ -646,8 +725,8 @@
 <script src="./vendor/qrcode-generator.js"></script>
 <script src="./analytics.js"></script>
 <script src="./share.js"></script>
-<script src="./data-cache.js"></script>
-<script type="module" src="3d.js"></script>
+<script src="./data-cache.js?v=4.1.5"></script>
+<script type="module" src="3d.js?v=4.1.5"></script>
 <script src="./v1-chrome.js"></script>
 </body>
 </html>

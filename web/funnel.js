@@ -27,6 +27,8 @@ const PALETTE = {
 
 // ============== 全局状态 ==============
 let DATA = null;
+// 首屏只取轻量图谱；用户选中概念后再补齐课标与练习详情，避免把首屏加载又变重。
+let fullDetailsPromise = null;
 let NODES = [];            // 计算布局后的节点: { x, y, z, py, c, g, col, dm, a, t, q, raw, id }
 let EDGES = [];            // 紧凑数组 [fromIdx, toIdx, rel, reason, weight]
 let H_HALF = H / 2;
@@ -381,8 +383,26 @@ function selectNode(i, push) {
   selected = i;
   buildLineage(i);
   showCard(i);
+  // graph_lite 只保留绘图所需字段。右侧卡片必须使用完整图谱，不能把空字段当成内容。
+  ensureFullDetails().then(() => {
+    if (selected === i) showCard(i);
+  });
   focusNode(i);
   hideTip();
+}
+
+function ensureFullDetails() {
+  if (fullDetailsPromise) return fullDetailsPromise;
+  fullDetailsPromise = loadGraphFull().then(full => {
+    const byId = new Map((full.nodes || []).map(node => [node.id, node]));
+    DATA.nodes.forEach(node => {
+      const detailed = byId.get(node.id);
+      if (detailed) Object.assign(node, detailed);
+    });
+  }).catch(error => {
+    console.warn('完整知识点详情加载失败', error);
+  });
+  return fullDetailsPromise;
 }
 
 function goBack() {
@@ -404,8 +424,8 @@ function clearSel() {
 function draw() {
   ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
   ctx.clearRect(0, 0, VW, VH);
-  // V4.1 浅色风: 米黄背景 (跟主页统一)
-  ctx.fillStyle = '#faf6ee';
+  // 与知识球共用深色舞台；路径是另一种观察真实图谱的方式。
+  ctx.fillStyle = '#10151f';
   ctx.fillRect(0, 0, VW, VH);
   project();
 
@@ -432,8 +452,8 @@ function draw() {
     if (col) {
       ctx.strokeStyle = `rgba(${col},${alpha})`;
     } else {
-      // V4.1 浅色风: 默认边从浅灰蓝 → 深色 (米黄背景上清晰)
-      ctx.strokeStyle = `rgba(10,13,24,${alpha * depth * 2.5})`;
+      // 深色舞台上保留很轻的冷灰连线，让结构可见但不抢走节点。
+      ctx.strokeStyle = `rgba(151,171,201,${alpha * depth * 2.5})`;
     }
     ctx.lineWidth = lw;
     ctx.beginPath();

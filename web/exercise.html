@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>做几道题 · K12 知识图谱</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./learning-shell.css">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { color: #0a0d18; background: #faf6ee; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.7; }
@@ -163,9 +164,9 @@
   }
 </style>
 </head>
-<body>
+<body class="learning-shell">
 <div class="top">
-  <a class="back" id="back-link" href="./explore.html">← 返回 3D 球</a>
+  <a class="back" id="back-link" href="./index.html">← 返回知识图谱</a>
   <div class="concept-info">
     <div class="concept-title" id="concept-title">加载中…</div>
     <div class="concept-meta" id="concept-meta"></div>
@@ -268,7 +269,7 @@ function checkAnswer(ex, userVal) {
   } else if (ex.type === 'fill_blank') {
     if (!userVal || !userVal.text) return false;
     const userTokens = userVal.text.split(/[、,，\s]+/).map(s => s.trim()).filter(Boolean);
-    const correctTokens = (ex.answer || []).map(s => String(s).trim());
+    const correctTokens = answerTokens(ex.answer);
     // 简单匹配: 每个正确 token 至少被一个 user token 包含, 或反之
     if (userTokens.length !== correctTokens.length) {
       // 长度不同, 模糊匹配
@@ -281,6 +282,11 @@ function checkAnswer(ex, userVal) {
   }
   // short_answer 不判断对错
   return null;
+}
+
+function answerTokens(answer) {
+  const values = Array.isArray(answer) ? answer : (answer == null ? [] : [answer]);
+  return values.map(value => String(value).trim()).filter(Boolean);
 }
 
 function renderQuestion(ex, i) {
@@ -305,7 +311,7 @@ function renderQuestion(ex, i) {
   if (ex.type === 'multiple_choice') {
     ansHtml = `<div class="a-label">✓ 正确答案</div><div class="a-content">${esc(ex.answer)}${ex.options ? ' — ' + esc(ex.options.find(o => o.startsWith(ex.answer + '.')) || '') : ''}</div>`;
   } else if (ex.type === 'fill_blank') {
-    ansHtml = `<div class="a-label">✓ 正确答案</div><div class="a-content">${(ex.answer || []).map(a => esc(a)).join('、')}</div>`;
+    ansHtml = `<div class="a-label">✓ 正确答案</div><div class="a-content">${answerTokens(ex.answer).map(a => esc(a)).join('、')}</div>`;
   } else {
     ansHtml = `<div class="a-label">✓ 参考答案</div><div class="a-content">${esc(ex.answer)}</div>`;
   }
@@ -503,7 +509,7 @@ async function main() {
     ${subjCn} · G${concept.grade_start || '?'}-${concept.grade_end || '?'}
   `;
   document.title = `${concept.title} · 做几道题`;
-  document.getElementById('back-link').href = `./explore.html#${conceptId}`;
+  document.getElementById('back-link').href = `./index.html?concept=${encodeURIComponent(conceptId)}`;
 
   renderAll();
 }

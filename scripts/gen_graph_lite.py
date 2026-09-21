@@ -13,18 +13,12 @@ FULL = ROOT / 'web/data/graph.json'
 LITE = ROOT / 'web/data/graph_lite.json'
 LITE_GZ = ROOT / 'web/data/graph_lite.json.gz'
 
-# 3D 球 + detail panel 字段 (~4.5MB / 1.3MB gz, 比 full 7.8MB 快 6 倍)
-# 含 3D 渲染 + detail 全部字段, 不分两步
+# 首屏只保留构建球面、学科筛选与搜索所需字段。
+# 详情在用户点开概念后才从 graph.json 按需合并，避免把整套课标文本塞进首屏。
 LITE_FIELDS = [
     # 3D 球核心
     'id', 'subject', 'title', 'grade_start', 'grade_end', 'centrality',
     'difficulty', 'bloom', 'type', 'estimated_minutes', 'subdomain', 'domain',
-    # detail panel 必要
-    'content_req', 'academic_req', 'assessment_prompt',
-    'key_points', 'examples', 'src_page',
-    'teaching_voice', 'description', 'summary',
-    # V3.3.4 教师用书级 (老师备课核心)
-    'real_examples', 'common_mistakes', 'teaching_activity',
 ]
 
 # 边保留 (3D 球画线)
@@ -37,7 +31,7 @@ def main():
 
     lite = {
         'version': full.get('version', ''),
-        'note': 'V4.1.3: graph_lite, 3D 球 + detail panel 核心字段',
+        'note': 'V4.1.5: 首屏球面与搜索字段；详情在点开概念后按需加载',
         'nodes': [
             {k: n.get(k) for k in LITE_FIELDS if k in n}
             for n in full['nodes']

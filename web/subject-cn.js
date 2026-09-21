@@ -3,7 +3,7 @@
 // 用 var 顶层声明, 挂到 window, 让 share.js / funnel.js / 3d.js / print.html 共享
 // (如果用 const, 多个 script 顶层声明会冲突: "Identifier 'SUBJECT_CN' has already been declared")
 
-var SUBJECT_CN = {
+window.SUBJECT_CN = {
   math: '数学', chinese: '语文', english: '英语',
   science: '科学', physics: '物理', chemistry: '化学',
   biology: '生物', history: '历史', geography: '地理',

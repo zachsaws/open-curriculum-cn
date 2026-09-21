@@ -7,8 +7,9 @@
 
 'use strict';
 
-const CACHE_KEY = 'occ_graph_v3_3_5_gz';   // v3.3.5 数据版本, 数据升级时改名让缓存失效
-const CACHE_VERSION = '3.3.5';
+// 4.1.5: 首屏使用真正的轻量图谱；详情由点击后按需合并 full graph。
+const CACHE_KEY = 'occ_graph_v4_1_5_gz';
+const CACHE_VERSION = '4.1.5';
 const CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;  // 7 天
 
 let _lastSource = null;  // 'cache' | 'network' | null
