@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>概念详情 · 打印版</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -43,17 +44,19 @@
   .err { padding: 40px; text-align: center; color: #c00; }
   .loading { padding: 40px; text-align: center; color: #666; }
 
+  @media screen and (max-width:600px) { body {padding:90px 22px 30px} .toolbar{position:absolute} .ref-list{grid-template-columns:1fr} }
   @media print {
     body { padding: 16mm 18mm; }
     .toolbar { display: none !important; }
-    .section { page-break-inside: avoid; }
+    .section { break-inside: avoid; }
+    h1,h2 {break-after:avoid} .ref-item{break-inside:avoid}
     @page { size: A4; margin: 0; }
   }
 </style>
 </head>
 <body>
 <div class="toolbar">
-  <a class="secondary" href="./funnel.html" target="_blank">← 返回漏斗</a>
+  <a class="secondary" id="print-back" href="./index.html">← 返回知识地图</a>
   <button onclick="window.print()">🖨 打印</button>
 </div>
 
@@ -103,32 +106,6 @@ function render(node, ctx) {
     if (e.from === r.id) nxtSet.add(e.to);
   });
 
-  // BFS for full lineage
-  const visitedPre = new Set([r.id]);
-  const visitedNxt = new Set([r.id]);
-  const queuePre = [r.id];
-  const queueNxt = [r.id];
-  const allEdges = ctx.edges;
-  while (queuePre.length) {
-    const cur = queuePre.shift();
-    allEdges.forEach(e => {
-      if (e.to === cur && e.rel !== 'relates_to' && !visitedPre.has(e.from)) {
-        visitedPre.add(e.from);
-        preSet.add(e.from);
-        queuePre.push(e.from);
-      }
-    });
-  }
-  while (queueNxt.length) {
-    const cur = queueNxt.shift();
-    allEdges.forEach(e => {
-      if (e.from === cur && e.rel !== 'relates_to' && !visitedNxt.has(e.to)) {
-        visitedNxt.add(e.to);
-        nxtSet.add(e.to);
-        queueNxt.push(e.to);
-      }
-    });
-  }
   const preTotal = preSet.size;
   const nxtTotal = nxtSet.size;
 
@@ -161,22 +138,22 @@ function render(node, ctx) {
     ${r.summary ? `<p class="subtitle">${esc(r.summary)}</p>` : ''}
 
     <div class="lin-stats-print">
-      <div class="stat"><div class="v">${preTotal}</div><div class="l">之前要学的概念 (含直接 + 间接)</div></div>
-      <div class="stat"><div class="v">${nxtTotal}</div><div class="l">之后能学的概念 (含直接 + 间接)</div></div>
-      <div class="stat"><div class="v">${preSet.size - 1}</div><div class="l">直接前置</div></div>
-      <div class="stat"><div class="v">${nxtSet.size - 1}</div><div class="l">直接后继</div></div>
+      <div class="stat"><div class="v">${preTotal}</div><div class="l">直接入向关系 · 待复核</div></div>
+      <div class="stat"><div class="v">${nxtTotal}</div><div class="l">直接出向关系 · 待复核</div></div>
+      <div class="stat"><div class="v">${preSet.size}</div><div class="l">直接前置</div></div>
+      <div class="stat"><div class="v">${nxtSet.size}</div><div class="l">直接后继</div></div>
     </div>
 
     ${r.description ? `
       <div class="section">
-        <h2>🎓 这步怎么教 <span style="font-weight:400; font-size:11px; color:#888; margin-left:6px;">老师口吻 · 3 句话讲明白</span></h2>
+        <h2>🎓 概念讲解参考 <span style="font-weight:400; font-size:11px; color:#888; margin-left:6px;">AI 整理 · 待复核</span></h2>
         <p class="voice">${esc(r.description)}</p>
       </div>
     ` : ''}
 
     ${r.content_req ? `
       <div class="section">
-        <h2>📋 课标内容要求 ${r.src_page ? `<span style="font-weight:400; font-size:11px; color:#888; margin-left:6px;">P${r.src_page} 课标原文</span>` : ''}</h2>
+        <h2>📋 课标相关片段 · OCR 待核对 ${r.src_page ? `<span style="font-weight:400; font-size:11px; color:#888; margin-left:6px;">P${r.src_page} 参考页码</span>` : ''}</h2>
         <p>${esc(r.content_req)}</p>
       </div>
     ` : ''}
@@ -190,38 +167,38 @@ function render(node, ctx) {
 
     ${r.real_examples ? `
       <div class="section">
-        <h2>📖 真实课例</h2>
+        <h2>📖 课例参考 · 待核验</h2>
         <p>${esc(r.real_examples)}</p>
       </div>
     ` : ''}
 
     ${r.common_mistakes ? `
       <div class="section">
-        <h2>⚠️ 常见错误</h2>
+        <h2>⚠️ 易错点参考 · 待核验</h2>
         <p>${esc(r.common_mistakes)}</p>
       </div>
     ` : ''}
 
     ${r.teaching_activity ? `
       <div class="section">
-        <h2>🎲 教学活动</h2>
+        <h2>🎲 活动建议 · 待核验</h2>
         <p>${esc(r.teaching_activity)}</p>
       </div>
     ` : ''}
 
     <div class="section">
-      <h2>⬅ 之前要学的概念 (${preSet.size - 1} 个直接)</h2>
+      <h2>⬅ 入向关系 (${preSet.size} 个 · 待复核)</h2>
       ${renderRefList(preSet)}
     </div>
 
     <div class="section">
-      <h2>➡ 之后能学的概念 (${nxtSet.size - 1} 个直接)</h2>
+      <h2>➡ 出向关系 (${nxtSet.size} 个 · 待复核)</h2>
       ${renderRefList(nxtSet)}
     </div>
 
     <div class="footer">
       <p>来源: <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">Open Curriculum CN</a> · 教育部 2022 义务教育课程方案 · License: CC-BY-SA 4.0</p>
-      <p>概念 ID: <code>${esc(r.id)}</code> · 数据版本: V3.6.9</p>
+      <p>概念 ID: <code>${esc(r.id)}</code> · AI 辅助整理 · 尚待专业复核</p>
     </div>
   `;
 }
@@ -239,9 +216,12 @@ function render(node, ctx) {
   try {
     // V3.6.9: 用 data-cache.js 共享 localStorage 缓存
     const data = await loadGraphLite();  // V4.1.3: lite 版 (1MB gz, 快 1 倍)
-    const node = data.nodes.find(n => n.id === id);
+    const payloadRes = await fetch('./data/concepts/' + encodeURIComponent(id) + '.json', {cache:'no-cache'});
+    if (!payloadRes.ok) throw new Error('知识点详情暂时不可用');
+    const node = (await payloadRes.json()).node;
+    document.getElementById('print-back').href = './index.html?concept=' + encodeURIComponent(id);
     if (!node) {
-      content.innerHTML = `<div class="err">找不到 ID 为 <code>${esc(id)}</code> 的概念. <a href="./funnel.html" target="_blank">回漏斗找</a></div>`;
+      content.innerHTML = `<div class="err">找不到 ID 为 <code>${esc(id)}</code> 的概念. <a href="./index.html">返回知识地图</a></div>`;
       return;
     }
     content.innerHTML = render(node, { nodes: data.nodes, edges: data.edges });

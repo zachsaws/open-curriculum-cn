@@ -13,7 +13,7 @@ const EDGE_SEGMENTS = 32;          // 每条边采样段数 (用户 spec: 32 →
 const EDGE_BASE_OPACITY = 0.012;   // 全貌只读出结构，不抢节点
 const EDGE_NEIGHBOR_OPACITY = 0.55; // 邻居边透明度 (选中节点时)
 const POINT_RAYCAST_THRESHOLD = 1.5; // 鼠标点击命中半径 (世界单位, 经 OrbitControls 后会按缩放调整)
-const EMBED_MODE = new URLSearchParams(location.search).get('embed') === '1';
+const EMBED_MODE = true;
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 const PRIMARY_SUBJECTS = ['math', 'chinese', 'english', 'science'];
 const SUBJECT_ORDER = ['math', 'chinese', 'english', 'science', 'physics', 'chemistry', 'biology', 'history', 'geography', 'morality_law', 'info_tech', 'art', 'pe_health', 'labor'];
@@ -96,23 +96,33 @@ async function loadGraphForMap(kind) {
     : fetchGraphPayload('./data/graph.json', './data/graph.json.gz');
 }
 
-function ensureCardExercises() {
-  if (cardExercisesPromise) return cardExercisesPromise;
-  cardExercisesPromise = (async () => {
-    let payload;
-    try {
-      const res = await fetch('./data/exercises.json.gz');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      payload = JSON.parse(await new Response(res.body.pipeThrough(new DecompressionStream('gzip'))).text());
-    } catch (_) {
-      payload = await (await fetch('./data/exercises.json')).json();
-    }
-    (payload.exercises || []).forEach(ex => {
-      if (!CARD_EXERCISES.has(ex.concept_id)) CARD_EXERCISES.set(ex.concept_id, []);
-      CARD_EXERCISES.get(ex.concept_id).push(ex);
-    });
-  })();
-  return cardExercisesPromise;
+const conceptPayloads = new Map();
+function loadConceptPayload(id) {
+  if (!conceptPayloads.has(id)) {
+    const pending = fetch(`./data/concepts/${encodeURIComponent(id)}.json`).then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    }).catch(error => { conceptPayloads.delete(id); throw error; });
+    conceptPayloads.set(id, pending);
+  }
+  return conceptPayloads.get(id);
+}
+function ensureCardExercises(id) {
+  return loadConceptPayload(id).then(payload => CARD_EXERCISES.set(id, payload.exercises || []));
+}
+function cardLoadStatus(message, retryIdx) {
+  let status = document.getElementById('card-load-status');
+  if (!status) {
+    status = document.createElement('div');
+    status.id = 'card-load-status'; status.setAttribute('role', 'status');
+    document.getElementById('card').appendChild(status);
+  }
+  status.textContent = message;
+  if (retryIdx !== undefined) {
+    const button = document.createElement('button');
+    button.textContent = '重新加载'; button.addEventListener('click', () => selectNode(retryIdx));
+    status.appendChild(button);
+  }
 }
 
 // V4.1.2 加载 videos.json
@@ -838,19 +848,20 @@ function selectNode(idx) {
   focusNode(idx);
   document.body.classList.add('has-selection');
   renderLocalRelationship(idx);
-  Promise.all([ensureFullDetails(), ensureCardExercises()]).then(() => {
-    if (selectedNodeIdx === idx) showCard(DATA.nodes[idx]);
+  cardLoadStatus('正在加载这个知识点的讲解与练习…');
+  Promise.all([ensureFullDetails(node.id), ensureCardExercises(node.id)]).then(() => {
+    if (selectedNodeIdx !== idx) return;
+    showCard(DATA.nodes[idx]); cardLoadStatus('讲解、课标对应关系与练习由 AI 辅助整理，尚待教育专业人员复核。');
+  }).catch(() => {
+    if (selectedNodeIdx === idx) cardLoadStatus('讲解与练习暂时未能加载，请重试。', idx);
   });
 }
 
-let fullDetailsPromise = null;
-function ensureFullDetails() {
-  if (fullDetailsPromise) return fullDetailsPromise;
-  fullDetailsPromise = loadGraphForMap('full').then(full => {
-    const byId = new Map(full.nodes.map(n => [n.id, n]));
-    DATA.nodes.forEach((n, i) => Object.assign(n, byId.get(n.id) || {}));
-  }).catch(() => {});
-  return fullDetailsPromise;
+function ensureFullDetails(id) {
+  return loadConceptPayload(id).then(payload => {
+    const index = nodeIdToIndex.get(id);
+    if (index !== undefined) Object.assign(DATA.nodes[index], payload.node);
+  });
 }
 
 function clearSelection() {
@@ -978,7 +989,7 @@ function showCard(node) {
   const pageLink = document.getElementById('card-page-link');
   if (node.src_page) {
     const srcText = "...";
-    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank">P${node.src_page} 查看</a>`;
+    pageLink.innerHTML = ` · <a class="src-link" href="https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/index.html" target="_blank" rel="noopener noreferrer">参考页码 P${node.src_page} · 查看课标资源</a>`;
   } else pageLink.textContent = '';
 
   // 学业要求
@@ -1077,7 +1088,7 @@ function showCard(node) {
   // 评估提示
   const assBlock = document.getElementById('card-assessment-block');
   const ass = document.getElementById('card-assessment');
-  if (node.assessment_prompt) { ass.textContent = node.assessment_prompt; assBlock.style.display = ''; }
+  if (node.assessment_prompt) { ass.textContent = node.assessment_prompt.replaceAll('{{name}}', '学习者'); assBlock.style.display = ''; }
   else { assBlock.style.display = 'none'; }
 
   // 元信息 — V3.6.10c: 标签用户化 (FACTUAL/中心度/6-7 岁 改成中文+更直白)

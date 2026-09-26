@@ -180,7 +180,7 @@
 
 <div class="footer">
   数据来源: <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank">open-curriculum-cn</a> ·
-  题目按 <a href="./funnel.html">漏斗</a> 选学
+  也可以 <a href="./diagnose.html">按年级与学科选题</a>
 </div>
 
 <script src="./subject-cn.js"></script>
@@ -357,7 +357,7 @@ function renderChoice(ex) {
     } else if (isSelected) {
       cls += ' selected';
     }
-    return `<div class="${cls}" onclick="chooseOpt('${ex.id}', '${letter}')">${esc(o)}</div>`;
+    return `<div role="button" tabindex="0" aria-pressed="${isSelected}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" class="${cls}" onclick="chooseOpt('${ex.id}', '${letter}')">${esc(o)}</div>`;
   }).join('')}</div>`;
 }
 
@@ -485,7 +485,7 @@ async function main() {
 
   // 加载题目
   try {
-    const exRes = await fetch('./data/exercises.json');
+    const exRes = await fetch(`./data/concepts/${encodeURIComponent(conceptId)}.json`);
     const exData = await exRes.json();
     exercises = (exData.exercises || []).filter(e => e.concept_id === conceptId);
     // 排序: 真题优先, 然后按 type 顺序

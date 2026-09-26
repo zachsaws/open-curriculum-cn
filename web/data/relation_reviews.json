@@ -1,0 +1,6 @@
+{
+  "version": "2026-09-17",
+  "policy": "hold_unreviewed_prerequisites",
+  "message": "当前没有经来源核验和教师复核的前置关系可用于推荐。本次仅提供快速自测，不据此判断你缺少哪个前置概念。",
+  "reviews": []
+}

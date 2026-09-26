@@ -1,7 +1,7 @@
 /* Shared learning surfaces — graph, self-check and practice are one product. */
-:root { --ink:#edf1f7; --muted:#9aa6b6; --quiet:#687386; --bg:#10151f; --surface:#151a23; --surface-2:#1b2230; --line:rgba(220,229,241,.14); --line-strong:rgba(144,172,222,.42); --accent:#7ba7ff; --accent-ink:#111722; --accent-soft:rgba(123,167,255,.13); --danger:#ff917f; --success:#7bd4a2; }
+:root { --ink:#edf1f7; --muted:#9aa6b6; --quiet:#94a1b4; --bg:#10151f; --surface:#151a23; --surface-2:#1b2230; --line:rgba(220,229,241,.14); --line-strong:rgba(144,172,222,.42); --accent:#7ba7ff; --accent-ink:#111722; --accent-soft:rgba(123,167,255,.13); --danger:#ff917f; --success:#7bd4a2; }
 html:has(body.learning-shell),body.learning-shell { min-height:100%; background:#10151f; color:var(--ink); }
-body.learning-shell { --bg:#10151f; --primary:#7ba7ff; --primary-hover:#96b9ff; --primary-soft:rgba(123,167,255,.13); --accent:#7ba7ff; --text:#edf1f7; --text-2:#9aa6b6; --text-3:#687386; --border:rgba(220,229,241,.14); --bg-elevated:#151a23; --bg-tinted:#1b2230; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+body.learning-shell { --bg:#10151f; --primary:#7ba7ff; --primary-hover:#96b9ff; --primary-soft:rgba(123,167,255,.13); --accent:#7ba7ff; --text:#edf1f7; --text-2:#9aa6b6; --text-3:#94a1b4; --border:rgba(220,229,241,.14); --bg-elevated:#151a23; --bg-tinted:#1b2230; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
 body.learning-shell a { color:inherit; }
 body.learning-shell .v10-banner,body.learning-shell .v10-badge,body.learning-shell .feedback-fab { display:none!important; }
 body.learning-shell .nav,body.learning-shell .top { background:rgba(16,21,31,.92); border-color:var(--line); backdrop-filter:blur(16px); }

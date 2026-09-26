@@ -1,0 +1,30 @@
+{
+  "version": "2026-09-17",
+  "policy": "student_recommendation_hold",
+  "message": "该概念正在进行年级与内容一致性复核，暂不进入学生诊断、练习推荐或视频推荐。",
+  "blocked_concept_ids": [
+    "P_G12_EX_01",
+    "P_G12_EX_02",
+    "P_G12_EX_03",
+    "P_G12_EX_04",
+    "P_G12_MA_01",
+    "P_G12_EX_05",
+    "CH_G12_EX_01",
+    "CH_G12_EX_02",
+    "CH_G12_EX_03",
+    "CH_G12_EX_04",
+    "CH_G12_EX_05",
+    "CH_G12_EX_06",
+    "CH_G12_EX_07",
+    "CH_G12_EX_08",
+    "CH_G12_EX_09",
+    "B_G12_CP_01",
+    "B_G12_CP_02",
+    "B_G12_CP_03",
+    "B_G12_CP_04",
+    "B_G12_CP_05",
+    "B_G12_CP_06",
+    "B_G12_CP_07",
+    "ML_G56_NT_03"
+  ]
+}

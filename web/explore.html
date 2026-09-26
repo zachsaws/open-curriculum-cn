@@ -534,10 +534,16 @@
 <meta property="og:description" content="1906 核心概念 · 4736 条学习路径 · 14 个学科全覆盖。教育部 2022 最新课标。" />
 <meta property="og:image" content="./data/og-sphere.png">
 <meta name="description" content="中国 K12 知识图谱: 基于教育部 2022 最新课标, 覆盖 14 个学科 1906 个核心概念, 4736 条学习路径, 3D 球面 + 漏斗两种视图。">
-</head>
+<style>
+#card .v10-badge, .feedback-fab { display:none!important; }
+body.has-selection .stage-copy { display:none!important; }
+#card-load-status { color:#abb8c9; padding:18px 24px; font-size:12px; line-height:1.7; }
+#card-load-status button { margin-left:12px; background:transparent; border:1px solid #7ba7ff; color:#dbe7ff; border-radius:6px; padding:5px 10px; cursor:pointer; }
+#card .meta-tag { color:#bac5d4; }
+</style></head>
 <body>
 <script>
-  if (new URLSearchParams(location.search).get('embed') === '1') {
+  if (true) {
     document.body.classList.add('embed');
   }
 </script>
@@ -594,7 +600,7 @@
 
 <!-- V3.6.10b: 移除开发者 .stats 框 (FPS/概念数/边数/学科数), 改成操作引导 (不显示开发者指标) -->
 <div class="stats" aria-label="操作引导">
-  <div class="hint-row">💡 <strong>点击任意节点</strong>查看完整学习路径</div>
+  <div class="hint-row">💡 <strong>点击任意节点</strong>查看知识关系</div>
   <div class="hint-row">👆 <strong>拖动</strong>旋转球 · <strong>滚轮</strong>缩放</div>
   <div style="margin-top:6px;">
     <button id="toggleAutoRotate" aria-pressed="true" style="background:rgba(0,135,90,0.15); border:1px solid rgba(0,135,90,0.3); color:#0a0d18; padding:4px 10px; border-radius:4px; font-size:11px; cursor:pointer; font-weight:600;">⏸ 暂停旋转</button>
@@ -627,7 +633,7 @@
 
   <div class="card-actions">
     <a class="card-action" id="card-exercise-btn" target="_top" title="做几道题 - 选择/填空/简答, 5 道题互补">📝 做几道题</a>
-    <a class="card-action" id="card-diagnose-btn" target="_top" title="完成 5 题自测，回到相关概念继续复习">开始 5 题自测</a>
+    <a class="card-action" id="card-diagnose-btn" target="_top" title="完成可计分题自测，回到相关概念继续复习">开始自测</a>
     <a class="card-action" id="card-video-btn" target="_blank" title="B 站 / YouTube 优质讲解视频" style="display:none;">📺 讲解视频</a>
     <a class="card-action" id="card-print-btn" target="_blank" title="打开 A4 黑白打印版">🖨 打印版</a>
     <a class="card-action" id="card-share-btn" href="javascript:void(0)" title="生成可分享的 1080×1440 学习卡">📤 分享学习卡</a>
@@ -648,39 +654,39 @@
   </div>
 
   <div class="block teaching-voice" id="card-teaching-voice-block">
-    <div class="block-title">🎓 这步怎么教 <span style="font-weight:400; font-size:11px; color:#8a8a8a; margin-left:6px;">老师口吻 · 3 句话讲明白</span></div>
+    <div class="block-title">🎓 概念讲解 <span style="font-weight:400; font-size:11px; color:#8a8a8a; margin-left:6px;">AI 辅助整理 · 待专业复核</span></div>
     <div class="block-body" id="card-teaching-voice"></div>
   </div>
 
   <div class="block" id="card-content-req-block">
-    <div class="block-title"><span data-i18n="card_content_req">📋 课标内容要求</span> <span class="num" id="card-page-link"></span></div>
+    <div class="block-title"><span>📋 课标相关片段 · OCR 待核对</span> <span class="num" id="card-page-link"></span></div>
     <div class="block-body" id="card-content-req"></div>
   </div>
 
   <div class="block" id="card-academic-req-block">
-    <div class="block-title" data-i18n="card_academic_req">🎯 课标学业要求</div>
+    <div class="block-title" >🎯 学习要求参考 · 待核对</div>
     <div class="block-body" id="card-academic-req"></div>
   </div>
 
   <div class="block" id="card-key-points-block">
-    <div class="block-title" data-i18n="card_key_points">💡 知识要点</div>
+    <div class="block-title" >💡 知识要点 · AI 整理</div>
     <div class="kp-list" id="card-key-points"></div>
   </div>
   <div class="block" id="card-real-examples-block" style="display:none">
-    <div class="block-title">📖 真实课例</div>
+    <div class="block-title">📖 课例参考 · 待核验</div>
     <div class="block-body" id="card-real-examples"></div>
   </div>
   <div class="block" id="card-common-mistakes-block" style="display:none">
-    <div class="block-title">⚠️ 常见错误</div>
+    <div class="block-title">⚠️ 易错点参考 · 待核验</div>
     <div class="block-body" id="card-common-mistakes"></div>
   </div>
   <div class="block" id="card-teaching-activity-block" style="display:none">
-    <div class="block-title">🎲 教学活动</div>
+    <div class="block-title">🎲 活动建议 · 待核验</div>
     <div class="block-body" id="card-teaching-activity"></div>
   </div>
 
   <div class="block" id="card-examples-block" style="display:none">
-    <div class="block-title" data-i18n="card_examples">📚 课标例题</div>
+    <div class="block-title" data-i18n="card_examples">📚 练习题 · AI 辅助整理</div>
     <div class="ex-row" id="card-examples"></div>
   </div>
 

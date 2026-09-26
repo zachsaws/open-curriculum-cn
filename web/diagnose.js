@@ -204,16 +204,19 @@ function openShareCard(conceptId) {
 async function loadData() {
   try {
     // V4.0.4 + V4.1.3: 并行加载 3 份数据 (graph_lite + exercises + recommendations)
-    const [gRes, eRes, rRes] = await Promise.all([
+    const [gRes, eRes, rRes, qRes] = await Promise.all([
       fetch('./data/graph_lite.json'),  // V4.1.3: lite 版 (1.7MB gz, 比 full 7.8MB 快 4 倍)
-      fetch('./data/exercises.json'),
+      fetch('./data/selftest_pool.json'),
       fetch('./data/recommendations.json').catch(() => null),
+      fetch('./data/quality_flags.json'),
     ]);
     if (!gRes.ok) throw new Error(`graph_lite.json ${gRes.status}`);
-    if (!eRes.ok) throw new Error(`exercises.json ${eRes.status}`);
+    if (!eRes.ok) throw new Error(`selftest_pool.json ${eRes.status}`);
     GRAPH = await gRes.json();
     const eData = await eRes.json();
-    EXERCISES = eData.exercises || [];
+    if (!qRes.ok) throw new Error('质量标记暂时不可用');
+    const blocked = new Set((await qRes.json()).blocked_concept_ids || []);
+    EXERCISES = (eData.exercises || []).filter(e => !blocked.has(e.concept_id) && e.type === 'multiple_choice' && ['A','B','C','D'].includes(String(e.answer).trim()) && Array.isArray(e.options) && e.options.length === 4);
     EXERCISES.forEach(e => {
       if (!EXERCISES_BY_CONCEPT[e.concept_id]) EXERCISES_BY_CONCEPT[e.concept_id] = [];
       EXERCISES_BY_CONCEPT[e.concept_id].push(e);
@@ -224,7 +227,7 @@ async function loadData() {
     render();
   } catch (e) {
     document.getElementById('content').innerHTML =
-      `<div class="err">数据加载失败: ${esc(e.message)}<br>请检查网络 (GitHub Pages 静态站)</div>`;
+      `<div class="err">数据加载失败: ${esc(e.message)}<br>请检查网络，然后重试。<br><button type="button" onclick="loadData()">重新加载</button></div>`;
   }
 }
 
@@ -246,15 +249,8 @@ function bfsPrereqsWithDepth(conceptId, adjTo) {
 }
 
 function buildAdjTo() {
-  const adj = {};
-  for (const e of GRAPH.edges) {
-    const rel = e.rel || (e.type === 1 ? 'prerequisite' : 'relates_to');
-    if (rel === 'prerequisite' || rel === 'progresses_to') {
-      if (!adj[e.to]) adj[e.to] = [];
-      adj[e.to].push(e.from);
-    }
-  }
-  return adj;
+  // No prerequisite relation is yet professionally reviewed for diagnostic use.
+  return {};
 }
 
 function diagnose(conceptId, answers, score) {
@@ -263,8 +259,8 @@ function diagnose(conceptId, answers, score) {
 
   // 1. 算 score
   if (answers) {
-    if (answers.length !== 5) return { error: `answers 必须 5 道, 实际 ${answers.length} 道` };
-    score = answers.filter(a => a).length / 5.0;
+    if (!answers.length) return { error: '当前没有可计分题目' };
+    score = answers.filter(a => a).length / answers.length;
   } else if (score == null) {
     return { error: '必须传 score 或 answers' };
   }
@@ -440,7 +436,7 @@ function renderMultiStep2() {
   c.innerHTML = `
     <div class="multi-chip" style="background: var(--primary-soft, #e6f5ee); border: 1px solid var(--primary, #00875a); color: var(--primary, #00875a); padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 16px;">📚 多学科 · ${esc(subjList)} · ${MULTI_EXS.length} 道</div>
     <h2>${MULTI_EXS.length} 道题自测</h2>
-    <p class="lead">每道题可能来自不同学科。选择和填空题会显示对照答案，简答题供你自己比对。</p>
+    <p class="lead">本组为有明确选项答案的选择题。提交后查看本次作答结果；题目尚待教师审核。</p>
     <div id="q-list">
       ${MULTI_EXS.map((ex, i) => renderMultiQuestion(ex, i)).join('')}
     </div>
@@ -529,7 +525,7 @@ function gradeMultiAnswers() {
         return user === cN || user.includes(cN) || cN.includes(user);
       });
     } else {
-      return toStr(ua.value).trim().length > 5;
+      return null;
     }
   });
 }
@@ -662,12 +658,12 @@ function renderStep1() {
   };
   c.innerHTML = `
     <h2>选一个概念开始自测</h2>
-    <p class="lead">从一个概念开始，完成 5 道题后回到图谱继续探索。结果只反映这一次作答。</p>
-    <div class="quick-pick-label">常用入口</div>
+    <p class="lead">从一个概念开始，完成可计分题后回到图谱继续探索。结果只反映这一次作答。</p>
+    <p><a class="btn" href="./test.html">按年级与学科随机选题 →</a></p><div class="quick-pick-label">常用入口</div>
     <div class="quick-pick">
-      ${QUICK_PICKS.map(q => {
-        const t = titleMap[q.id] || q.id;
-        return `<button class="qp-btn" onclick="pickConcept('${q.id}')">${esc(t)}<span class="badge">${esc(q.reason)}</span></button>`;
+      ${QUICK_PICKS.filter(q => getConceptById(q.id) && (EXERCISES_BY_CONCEPT[q.id] || []).length).map(q => {
+        const t = getConceptById(q.id).title || titleMap[q.id];
+        return `<button class="qp-btn" onclick="pickConcept('${q.id}')">${esc(t)}<span class="badge">${esc(SUBJECT_CN[q.reason] || q.reason)}</span></button>`;
       }).join('')}
     </div>
     <div class="quick-pick-label">或搜索任意概念</div>
@@ -710,7 +706,7 @@ function pickConcept(id) {
 function toggleMode() {
   MODE = MODE === 'test' ? 'quick' : 'test';
   const btn = document.getElementById('mode-toggle');
-  btn.textContent = MODE === 'test' ? '手动记录结果' : '回到 5 题自测';
+  btn.textContent = MODE === 'test' ? '手动记录结果' : '回到自测';
   btn.classList.toggle('on', MODE === 'quick');
   // 如果已选概念, 重渲染
   if (SELECTED_CONCEPT) {
@@ -727,23 +723,23 @@ function renderStep2() {
   if (!concept) { c.innerHTML = '<div class="err">概念不存在</div>'; return; }
   // 拿 5 道题
   const exs = (EXERCISES_BY_CONCEPT[SELECTED_CONCEPT] || []).slice(0, 5);
-  if (exs.length < 5) {
+  if (!exs.length) {
     c.innerHTML = `
       <div class="concept-banner">
         <div class="name">${esc(concept.title)}</div>
         <div class="meta">${esc(SUBJECT_CN[concept.subject] || '')} · ${esc(concept.grade_start || '')}-${esc(concept.grade_end || '')}年级 · 难度 ${esc(concept.difficulty || '?')}</div>
       </div>
-      <div class="err">这个概念目前只有 ${exs.length} 道可用练习，暂时无法完成 5 题自测。你可以先返回图谱，选择另一个概念。</div>
+      <div class="err">这个概念目前只有 ${exs.length} 道可用练习，暂时没有可自动计分的题目。你可以先返回图谱，选择另一个概念。</div>
     `;
     return;
   }
   USER_ANSWERS = {};
   // 选取 5 道覆盖不同难度的题，供一次快速自测。
-  IRT_CURRENT = initIRTSession(SELECTED_CONCEPT, exs, 5);
+  IRT_CURRENT = initIRTSession(SELECTED_CONCEPT, exs, exs.length);
   const subjCn = SUBJECT_CN[concept.subject] || '';
   c.innerHTML = `
-    <h2>5 题快速自测</h2>
-    <p class="lead">选择和填空题会显示对照答案；简答题供你自己比对。完成后可以回到相关概念继续复习。</p>
+    <h2>${exs.length} 题快速自测</h2>
+    <p class="lead">本次只计分有明确选项答案的题目。题目尚待教师审核，少量题目的表现不等于完整掌握情况；简答练习请在练习页对照参考答案。</p>
     <div class="concept-banner">
       <div class="name">${esc(concept.title)}</div>
       <div class="meta">${esc(subjCn)} · ${esc(concept.grade_start || '')}-${esc(concept.grade_end || '')}年级 · 难度 ${esc(concept.difficulty || '?')}</div>
@@ -976,7 +972,7 @@ function gradeOneEx(ex, ua) {
       return user === cN || user.includes(cN) || cN.includes(user);
     });
   } else {
-    return toStr(ua.value).trim().length > 5;
+    return null;
   }
 }
 
@@ -1082,7 +1078,7 @@ function gradeAnswers() {
       });
     } else {
       // short_answer: 只计"答了没" (写 > 5 字算答了)
-      return toStr(ua.value).trim().length > 5;
+      return null;
     }
   });
 }
@@ -1192,14 +1188,14 @@ function showResult(result) {
 
   const statusClass = { 薄弱: 'weak', 巩固: 'consolidate', 已掌握: 'mastered' }[result.status] || 'weak';
   const explain = result.human_explanation;
-  const resultLabel = { 薄弱: '建议回看', 巩固: '继续探索', 已掌握: '可以延伸' }[result.status] || '本次自测';
+  const resultLabel = { 薄弱: '本组正确率较低', 巩固: '需对照复习', 已掌握: '本组答题顺利' }[result.status] || '本次自测';
 
   c.innerHTML = `
     <div class="result-banner ${statusClass}">
       <div class="emoji">${explain.status_emoji}</div>
       <div class="status-text">${resultLabel} · 「${esc(result.concept_title)}」</div>
-      <div class="score-big">本次答对 ${result.score * 5}/5 · ${result.score_pct}%</div>
-      <div class="threshold-hint">5 题快速自测 · 结果只用于提供下一步探索线索</div>
+      <div class="score-big">${result.irt ? `本次答对 ${result.irt.answers.filter(a => a.correct).length}/${result.irt.maxQ}` : '手动记录'} · ${result.score_pct}%</div>
+      <div class="threshold-hint">${result.irt ? result.irt.maxQ + ' 题快速自测' : '手动记录'} · 结果不代表完整掌握情况</div>
     </div>
 
     <div class="explanation">

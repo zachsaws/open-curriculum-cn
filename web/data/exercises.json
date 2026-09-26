@@ -1426,7 +1426,7 @@
     {
       "id": "EX_PE_G12_BM_07_002",
       "concept_id": "PE_G12_BM_07",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "在双脚连续跳练习中，要求10米以内不踩线、不摔倒，跳的时候双脚应当如何起跳和落地？",
       "answer": "B",
@@ -1444,10 +1444,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "双脚连续跳要求10米以内不踩线、不摔倒,跳的时候要像______一样双脚一起跳进方格再跳出来。",
       "_original_answer": "['小兔子']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_PE_G12_BM_07_003",
@@ -7170,7 +7171,7 @@
     {
       "id": "EX_B_G12_CP_04_002",
       "concept_id": "B_G12_CP_04",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "我们的身体由眼、耳、手、脚等多个部分组成，它们各管一种功能，相互配合才能完成多种活动。下列活动中，不属于身体各部分相互配合才能完成的是？",
       "answer": "D",
@@ -7188,10 +7189,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "我们的身体由眼、耳、手、脚等多个部分组成，它们各管一种功能，合起来才能____、____、看、听。",
       "_original_answer": "['跑', '跳']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_B_G12_CP_04_003",
@@ -7614,7 +7616,7 @@
     {
       "id": "EX_CH_C2_02_002",
       "concept_id": "CH_C2_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "关于金属活动性顺序的应用，下列说法正确的是（  ）",
       "answer": "D",
@@ -7632,10 +7634,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "在金属活动性顺序中，金属的位置越靠前，其活动性越____；位于____前面的金属才能把位于其后面的金属从它们的盐溶液中置换出来。",
       "_original_answer": "['强', '氢']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CH_C2_02_003",
@@ -10404,7 +10407,7 @@
     {
       "id": "EX_ART_A1_05_002",
       "concept_id": "ART_A1_05",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 3,
       "question": "录音中小柯把第3小节删成了2秒静音，播放时他发现乐句出现了断裂感。若该小节原本的旋律走向是 sol-la-____-____，下列哪种填补方式最有可能使旋律重新连贯且符合创作中的自然流畅原则？",
       "answer": "A",
@@ -10422,8 +10425,8 @@
       "_patched_by": "audit_fix_v1_art",
       "_original_question": "录音中小柯把第 3 小节删成了 2 秒静音，播放时他发现乐句出现了断裂感。若该小节原本的旋律走向是 sol-la-____-____，他应该用 ____ 拍、____ 音来填补这个空缺，使旋律重新连贯",
       "_original_answer": "A",
-      "_auto_fix_status": "success",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_auto_fix_risk": "art_prompt",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
@@ -10940,7 +10943,7 @@
     {
       "id": "EX_ART_A3_03_002",
       "concept_id": "ART_A3_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "新疆维吾尔族民间舞《青春舞曲》常用 24 拍短舞形式进行课堂编排，通常将 24 拍均分为三段 8 拍，由三位舞者各领一段完成动作。关于该短舞的编排原则，下列说法正确的是：",
       "answer": "B",
@@ -10958,8 +10961,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "《青春舞曲》24 拍短舞可以拆分为三段 8 拍，第 9—16 拍的动作是转身加拍手两下，第 1—8 拍是左脚迈步加右手画圈，那么第 17—24 拍对应的动作是______，这段舞由______人共同完",
       "_original_answer": "['后退 3 步 + 头顶动作', '3']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ART_A3_03_003",
@@ -11040,7 +11044,7 @@
     {
       "id": "EX_ART_A4_02_002",
       "concept_id": "ART_A4_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "课本剧编排中，演员除了台词之外，还可以通过丰富多样的____和细腻的____来塑造人物形象，增强舞台表现力。",
       "answer": "A",
@@ -11058,10 +11062,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "课本剧编排中，要把3页对话压缩成5分钟剧本，并加入黄包车上坡的动作戏，旁白的功能是配合祥子弯腰拉车的动作营造氛围；为强化舞台画面，演员应通过____和____来丰富表现力。",
       "_original_answer": "['站位移动', '走位变化']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ART_A4_02_003",
@@ -11146,7 +11151,7 @@
     {
       "id": "EX_ART_A5_02_002",
       "concept_id": "ART_A5_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 4,
       "question": "拍摄「课间 10 分钟」60 秒短视频时,如果主要采用跟拍镜头跟随学生从教室走向操场,以下哪种镜头组合作为补充基础镜头最合理?",
       "answer": "A",
@@ -11164,10 +11169,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "拍摄「课间 10 分钟」60 秒短视频时,除了跟拍镜头外,还必须用到的两种基础镜头是____和____。",
       "_original_answer": "['固定机位', '俯拍']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ART_A5_02_003",
@@ -11910,7 +11916,7 @@
     {
       "id": "EX_ART_G12_AR_01_002",
       "concept_id": "ART_G12_AR_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "画小植物时, 先用铅笔勾出 1 根弯弯的主茎, 再在主茎上分出若干根小枝作为骨架。下列分枝数量中, 最适合表现画面层次的是哪一种?",
       "answer": "C",
@@ -11928,8 +11934,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "画小植物时, 先用铅笔勾出 1 根弯弯的主茎, 再分出 ____ 根小枝当骨架。",
       "_original_answer": "['3']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -13381,7 +13387,7 @@
     {
       "id": "EX_ART_G56_MU_04_002",
       "concept_id": "ART_G56_MU_04",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "《百鸟朝凤》是一首以____为主奏乐器、模仿百鸟齐鸣的乐曲,而《野蜂飞舞》则是一首以____为主奏乐器、表现蜂群急速飞舞的乐曲。",
       "answer": "A",
@@ -13399,8 +13405,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "《百鸟朝凤》是____演奏的,《野蜂飞舞》是____演奏的。",
       "_original_answer": "['唢呐', '电子乐']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ART_G56_MU_04_003",
@@ -13980,7 +13987,7 @@
     {
       "id": "EX_L_L1_01_002",
       "concept_id": "L_L1_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "晚上睡觉前,小朋友们应该把校服对折后叠好,放进固定的____里,这样第二天穿起来既方便又整洁。",
       "answer": "A",
@@ -13998,10 +14005,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "晚上睡前,要把校服对折后叠好,放进____旁边。",
       "_original_answer": "['床头']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_L_L1_01_003",
@@ -14743,7 +14751,7 @@
     {
       "id": "EX_L_L8_01_002",
       "concept_id": "L_L8_01",
-      "type": "fill_blank",
+      "type": "short_answer",
       "difficulty": 2,
       "question": "小明班级每周进行一次校园值日服务劳动,6人为一组,合理分工应包含哪些劳动任务?(多选)",
       "answer": "A,B,C,D",
@@ -14751,20 +14759,15 @@
       "tags": [],
       "bloom": "理解",
       "is_real_exam": false,
-      "options": [
-        "A. 擦黑板",
-        "B. 摆桌椅",
-        "C. 拖地",
-        "D. 擦窗户"
-      ],
       "_patched_at": "2026-08-03",
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "学校值日每周一次,6人一组分工擦黑板、摆桌椅、____,时间一般为____分钟。",
       "_original_answer": "['拖地', '10']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "原题包含多答案/多选契约，当前单选组件无法可靠自动评分；降为参考答案题，待学科教师重写。"
     },
     {
       "id": "EX_L_L8_01_003",
@@ -15218,7 +15221,7 @@
     {
       "id": "EX_L_G12_CH_06_002",
       "concept_id": "L_G12_CH_06",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "擦桌子时,湿抹布每擦一张桌子应该____一次,以免桌面留下水渍。",
       "answer": "B",
@@ -15236,8 +15239,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "擦桌子的时候,湿抹布每张桌子要____一次,而且不能跟别的桌子____,这样桌面才不会留水渍。",
       "_original_answer": "['搓', '混擦']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_L_G12_CH_06_003",
@@ -15274,7 +15278,7 @@
     {
       "id": "EX_L_G12_CH_07_002",
       "concept_id": "L_G12_CH_07",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "校园大扫除时，低年级同学在教学楼前花坛主要捡拾哪些东西？",
       "answer": "A",
@@ -15292,8 +15296,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "校园大扫除分工中，低年级同学负责教学楼前花坛，任务是捡拾落叶和____；每人发一双____和一个垃圾袋。",
       "_original_answer": "['塑料袋', '一次性手套']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_L_G12_CH_07_003",
@@ -15925,7 +15930,7 @@
     {
       "id": "EX_L_G12_VL_01_002",
       "concept_id": "L_G12_VL_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "下列哪项行为属于参与校园公益劳动的正确做法？",
       "answer": "A",
@@ -15943,10 +15948,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "校园公益就是要让学校变得又____又____。",
       "_original_answer": "['干净', '漂亮']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_L_G12_VL_01_003",
@@ -17434,7 +17440,7 @@
     {
       "id": "EX_L_G56_NT_07_002",
       "concept_id": "L_G56_NT_07",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 3,
       "question": "在《VR 虚拟种植》课程中,学生通过 VR 头盔观察番茄种子萌发过程后,摘下头盔在真花盆里埋 ____ 粒番茄种子,浇 ____ mL 水,并贴上日期标签进行为期两周的连续观察。",
       "answer": "B",
@@ -17452,8 +17458,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "摘下 VR 头盔后,在真花盆里埋 ____ 粒番茄种子,浇 ____ mL 水,并贴上日期标签。",
       "_original_answer": "['3', '100']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 3
     },
@@ -18020,7 +18026,7 @@
     {
       "id": "EX_G_G1_01_002",
       "concept_id": "G_G1_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "地球赤道的周长大约是多少万千米？",
       "answer": "C",
@@ -18038,10 +18044,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "地球赤道的周长大约是____公里，所以从北京飞纽约再飞回来，刚好差不多绕地球____圈。",
       "_original_answer": "['4万', '一']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 1
+      "_diff_old": 1,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_G_G1_01_003",
@@ -18685,7 +18692,7 @@
     {
       "id": "EX_G_G5_01_002",
       "concept_id": "G_G5_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "亚洲东到____海峡与北美洲分界，西到____与非洲分界，北临北冰洋，南至____群岛。",
       "answer": "A",
@@ -18703,8 +18710,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "亚洲东到____海峡,西到____,北到北冰洋,南到印尼。",
       "_original_answer": "['白令', '地中海']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "medium"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "medium",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_G_G5_01_003",
@@ -20423,7 +20431,7 @@
     {
       "id": "EX_G_G79_WC_01_002",
       "concept_id": "G_G79_WC_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "天气预报中常用的四项基本要素包括最高气温、最低气温、降水情况以及____。",
       "answer": "A",
@@ -20441,8 +20449,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "天气预报的四项基本要素包括最高温、最低温、降水和____。",
       "_original_answer": "['风力等级']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_G_G79_WC_01_003",
@@ -23345,7 +23354,7 @@
     {
       "id": "EX_IT_G12_DA_02_002",
       "concept_id": "IT_G12_DA_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "以下哪一项最准确说明了信息具有价值的基本条件？",
       "answer": "A",
@@ -23363,8 +23372,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "信息越____、越准就越有价值,过期不看的信息就像旧____一样没人看。",
       "_original_answer": "['新', '报纸']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "medium"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "medium",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_IT_G12_DA_02_003",
@@ -38179,7 +38189,7 @@
     {
       "id": "EX_ML_ML_G2_01_002",
       "concept_id": "ML_ML_G2_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "奶奶指着老照片告诉小明,菜场往东那家店以前是修车铺,现在变成了奶茶店,这是家乡店铺 ________ 的变化。",
       "answer": "B",
@@ -38197,8 +38207,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "奶奶指着老照片告诉小明,菜场往东那家店以前是修车铺,现在变成了奶茶店,这是家乡 ________ 的变化。",
       "_original_answer": "['店铺']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_ML_G2_01_003",
@@ -38287,7 +38298,7 @@
     {
       "id": "EX_ML_ML_G2_03_002",
       "concept_id": "ML_ML_G2_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "小学阶段最重要的财商不是\"会赚\",而是\"____\",学会把钱先用在最需要的地方,才是真正会花钱。",
       "answer": "A",
@@ -38305,10 +38316,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "小学阶段最重要的财商不是\"会赚\",而是\"____\",忍住今天不乱买的本事最值钱。",
       "_original_answer": "['会等']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_ML_G2_03_003",
@@ -38440,7 +38452,7 @@
     {
       "id": "EX_ML_ML_G3_03_002",
       "concept_id": "ML_ML_G3_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "课文《家》中写道：家不是「讲理的地方」，而是「你____也有人给你____」的地方。请根据原文填空。",
       "answer": "B",
@@ -38458,8 +38470,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "家不是「讲理的地方」，而是「你____也有人给你____」地方。",
       "_original_answer": "['再错', '留灯']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_ML_G3_03_003",
@@ -38543,7 +38556,7 @@
     {
       "id": "EX_ML_ML_G4_01_002",
       "concept_id": "ML_ML_G4_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "与同伴\"友好相处\"不是指面对____的同伴时也能好好相处,而是指面对____的同伴也能好好说话、好好相处。",
       "answer": "A",
@@ -38561,10 +38574,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "与同伴\"友好相处\"不是指____,而是指____也能好好说话。",
       "_original_answer": "['永远不生气', '生气了']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "medium",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_ML_G4_01_003",
@@ -39122,7 +39136,7 @@
     {
       "id": "EX_ML_ML_G7_03_002",
       "concept_id": "ML_ML_G7_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "关于生命的特性,下列说法正确的是____。",
       "answer": "A",
@@ -39140,10 +39154,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "本课讲到生命中有三件事是不可逆的,分别是:身体损伤、言语伤害,以及____。",
       "_original_answer": "['时间流逝']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_ML_G7_03_003",
@@ -39311,7 +39326,7 @@
     {
       "id": "EX_ML_ML_G8_03_002",
       "concept_id": "ML_ML_G8_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "国家利益不是空洞的口号，而是体现在手机有信号、家中不停电、出国能获得____等具体公共服务中。这些24小时在线的'后台'说明，____是个人利益实现的前提和保障。",
       "answer": "A",
@@ -39329,10 +39344,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "国家利益不是空洞的口号,而是体现在手机有信号、家中不停电、出国____等具体公共服务中,这些24小时在线的'后台'说明____是个人利益实现的前提和保障。",
       "_original_answer": "['有人帮', '国家利益']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_ML_G8_03_003",
@@ -39661,7 +39677,7 @@
     {
       "id": "EX_ML_G12_GR_03_002",
       "concept_id": "ML_G12_GR_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "养成良好习惯是一个循序渐进的过程。下列关于好习惯养成的做法,最恰当的一项是",
       "answer": "C",
@@ -39679,10 +39695,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "好习惯不是贴在墙上的作息表,而是每天自己去做的小事。坚持____天,行为就能初步变成习惯;坚持____天,习惯才能真正长在自己身上。",
       "_original_answer": "['21', '90']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_G12_GR_03_003",
@@ -39954,7 +39971,7 @@
     {
       "id": "EX_ML_G12_HJ_01_002",
       "concept_id": "ML_G12_HJ_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "关于家乡的物产，下列说法正确的是（　　）",
       "answer": "B",
@@ -39972,10 +39989,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "我们家乡有好多好东西，你能说出家乡的 ______ 种特产吗？（填一个数字）",
       "_original_answer": "['3']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_G12_HJ_01_003",
@@ -40910,7 +40928,7 @@
     {
       "id": "EX_ML_G34_FM_01_002",
       "concept_id": "ML_G34_FM_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "孝敬父母最恰当的方式是（  ）",
       "answer": "B",
@@ -40928,10 +40946,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "孝敬父母不是只在母亲节才表演，而是把爱变成 ____、____ 的具体小行动。",
       "_original_answer": "['每天', '一个具体动作']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_G34_FM_01_003",
@@ -41579,7 +41598,7 @@
     {
       "id": "EX_ML_G56_NT_01_002",
       "concept_id": "ML_G56_NT_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 3,
       "question": "当你在国际交流活动中向外国朋友介绍自己的家乡时，下列哪种表达方式最能体现「爱我中华」的情感？",
       "answer": "B",
@@ -41597,10 +41616,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "在外国同学面前大方说出「我来自中国____」(填一个城市名), 是「爱我中华」的体现之一。",
       "_original_answer": "['北京']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "medium",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_ML_G56_NT_01_003",
@@ -41916,7 +41936,7 @@
     {
       "id": "EX_ML_G56_CU_02_002",
       "concept_id": "ML_G56_CU_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "文化遗产承载着一个民族的历史记忆与文化身份,丢了任何一样,中华5000年文化就断了____截。",
       "answer": "A",
@@ -41934,8 +41954,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "文化遗产承载着一个民族的历史记忆与文化身份,丢了任何一样,中华5000年文化就断了____截。",
       "_original_answer": "['1']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -43028,7 +43048,7 @@
       "concept_id": "EN_E2_PH_03",
       "type": "multiple_choice",
       "difficulty": 2,
-      "question": "在英语句子 'I like apples' 中, 根据句子重音规则, 哪些词通常需要重读? (可多选)",
+      "question": "在英语句子 'I like apples' 中, 根据句子重音规则, 哪一种说法正确概括了通常需要重读的词？",
       "answer": "D",
       "explanation": "英语句子重音规则中, 实词(名词、动词、形容词、副词等)一般都需要重读, 虚词(冠词、介词、连词、代词等)一般弱读。句中 'I' 是人称代词(虚词), 弱读; 'like' 是实词动词, 需要重读; 'apples' 是实词名词, 也需要重读。因此 'like' 和 'apples' 都要重读, 选 D。",
       "tags": [],
@@ -43044,8 +43064,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "读英语句子 \"I like apples\" 时, 哪个词应该读得最重、最慢?",
       "_original_answer": "B",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "D 为组合答案，移除与单选组件冲突的多选表述。"
     },
     {
       "id": "EX_EN_E2_PH_03_002",
@@ -43153,7 +43174,7 @@
     {
       "id": "EX_EN_E3_PH_02_002",
       "concept_id": "EN_E3_PH_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "在短语 \"not at all\" 的朗读中,前后两个 /t/ 都应该 ____ 发音,而中间那个 /t/ 因为处于两词之间,应该 ____,只保留口型。",
       "answer": "B",
@@ -43171,10 +43192,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "朗读 \"not at all\" 时,中间那个 t 应该 ____,前后两个 t 要 ____,这样听起来才像英语母语者的自然读法。",
       "_original_answer": "['不发音(只做口型)', '完整读出']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_E3_PH_02_003",
@@ -43336,7 +43358,7 @@
     {
       "id": "EX_EN_E1_VB_01_002",
       "concept_id": "EN_E1_VB_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "晚饭这顿饭用英文说是 ____.",
       "answer": "C",
@@ -43354,10 +43376,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "晚饭吃的是米饭和菜, 这个饭用英文说是 ____.",
       "_original_answer": "['dinner']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_E1_VB_01_003",
@@ -43741,7 +43764,7 @@
     {
       "id": "EX_EN_E4_VB_02_002",
       "concept_id": "EN_E4_VB_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "请用 say / tell / speak / talk 的正确形式填空: He _____ English fluently and can _____ a story clearly to the children.",
       "answer": "A",
@@ -43759,10 +43782,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "请用 say / tell / speak 的正确形式填空: He _____ English fluently and can _____ a speech in front of hundreds",
       "_original_answer": "['speaks', 'give']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_E4_VB_02_003",
@@ -43799,7 +43823,7 @@
     {
       "id": "EX_EN_E1_GR_01_002",
       "concept_id": "EN_E1_GR_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "选出正确的句子:'妈妈在喝牛奶。'用英文应该怎么说?",
       "answer": "A",
@@ -43817,8 +43841,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "看图补全句子:Mom ____ ____(妈妈在喝牛奶)",
       "_original_answer": "['drinks', 'milk']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_E1_GR_01_003",
@@ -44426,7 +44451,7 @@
     {
       "id": "EX_EN_E4_GR_03_002",
       "concept_id": "EN_E4_GR_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "Fill in the blanks with because / although / if / so: Tom was late for school ____ the bus broke down. ____ he ran very fast, he still missed the morning test.",
       "answer": "C",
@@ -44444,10 +44469,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "Fill in the blanks with because / although / if: Tom was late ____ the bus broke down, ____ he didn'",
       "_original_answer": "['because', 'although', 'becau",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目实际提供选项，改为选择题以匹配答案 C 和自动评分器。"
     },
     {
       "id": "EX_EN_E4_GR_03_003",
@@ -45103,7 +45129,7 @@
     {
       "id": "EX_EN_E2_SK_03_002",
       "concept_id": "EN_E2_SK_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "请选择正确选项补全句子:Mine cat ____ black. ____ name is Mimi.",
       "answer": "A",
@@ -45121,8 +45147,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "请帮我把这句介绍小猫的话补完整:Mine cat ____ black. ____ name is Mimi.",
       "_original_answer": "['is', 'Its']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_orphan_fixed": true
     },
     {
@@ -45352,7 +45378,7 @@
     {
       "id": "EX_EN_E4_SK_03_002",
       "concept_id": "EN_E4_SK_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "Tom 喜欢打篮球。请根据图片（一个男孩在打篮球）补全短文：My _____ name is Tom. His _____ is playing basketball. He often _____ basketball with his friends after school.",
       "answer": "C",
@@ -45370,8 +45396,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "把《My Hero》模板换成《My Hobby — Reading》，需替换主语和细节。请填空：My ____ is ____. She is ____. She ____ for me every ",
       "_original_answer": "['hobby', 'reading', 'my favor",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -45928,7 +45954,7 @@
     {
       "id": "EX_EN_E3_TP_02_002",
       "concept_id": "EN_E3_TP_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "Look at the picture of a space station. There are three words in the box: phone / robot / electric car. Which word can complete BOTH sentences? 'This is a ____. It can help astronauts work on the space station.' AND 'A ____ can also help people do housework at home.'",
       "answer": "B",
@@ -45946,8 +45972,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "Look at the picture of a space station. Complete the sentence using two words from the box: phone / ",
       "_original_answer": "['robot', 'robot']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_E3_TP_02_003",
@@ -46109,16 +46136,15 @@
       "concept_id": "EN_E3_ST_01",
       "type": "multiple_choice",
       "difficulty": 2,
-      "question": "Anna 把单词分成三堆:nouns 堆有 cat、apple、teacher;verbs 堆有 run、jump、eat;adjectives 堆有 beautiful、quick、happy。下面哪个单词被她分错了?",
-      "answer": "无正确答案(原题设计有误,以下为修订版)",
-      "explanation": "修订后题目:Anna 把单词分成三堆:nouns 堆有 cat、apple、teacher;verbs 堆有 run、jump、eat;adjectives 堆有 beautiful、quickly、happy。下面哪个单词被她分错了? A. cat(放在 nouns 堆) B. run(放在 verbs 堆) C. quickly(放在 adjectives 堆) D. happy(放在 adjectives 堆) 答案:C。quickly 是副词,不是形容词,应放入副词堆。",
+      "question": "Anna 把单词分成三堆：nouns 堆有 cat、apple、teacher；verbs 堆有 run、jump、eat；adjectives 堆有 beautiful、quickly、happy。下面哪个单词被她分错了？",
+      "answer": "C",
+      "explanation": "quickly 是副词，不是形容词，应放入副词堆；其余三个单词的词性与分组一致。",
       "tags": [],
       "options": [
-        "A. teacher(放在 nouns 堆)",
-        "B. jump(放在 verbs 堆)",
-        "C. happy(放在 adjectives 堆)",
-        "D. beautiful(放在 adjectives 堆)",
-        "E. run(放在 verbs 堆)"
+        "A. teacher（放在 nouns 堆）",
+        "B. jump（放在 verbs 堆）",
+        "C. quickly（放在 adjectives 堆）",
+        "D. beautiful（放在 adjectives 堆）"
       ],
       "bloom": "理解",
       "is_real_exam": false,
@@ -46126,8 +46152,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "Anna 把单词分成三堆:nouns 堆有 cat、apple、teacher;verbs 堆有 run、jump、eat;adjectives 堆有 beautiful、quick、happy。下面",
       "_original_answer": "C",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "修正题干、选项与单选答案契约。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -46669,7 +46695,7 @@
     {
       "id": "EX_EN_G12_PH_10_002",
       "concept_id": "EN_G12_PH_10",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "看句子选词填空:I _____ a boy. (从 the / am / you / and 中选一个填入横线)",
       "answer": "B",
@@ -46687,11 +46713,12 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "看句子填空:I ____ a boy. (从 the / is / you / and 中选一个填入横线)",
       "_original_answer": "['is']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2,
-      "_orphan_fixed": true
+      "_orphan_fixed": true,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G12_PH_10_003",
@@ -51017,7 +51044,7 @@
     {
       "id": "EX_EN_G34_DI_01_002",
       "concept_id": "EN_G34_DI_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "Read the passage. 'Lily wakes up late. She brushes her teeth quickly and runs to school. She gets to class just in time. The teacher says, 'Don't be late again.' What is the main idea of the passage?",
       "answer": "B",
@@ -51035,10 +51062,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "Read the passage. 'Lily wakes up late. She brushes her teeth quickly and runs to school. She gets to",
       "_original_answer": "['almost']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G34_DI_01_003",
@@ -52443,7 +52471,7 @@
     {
       "id": "EX_EN_G56_PH_03_002",
       "concept_id": "EN_G56_PH_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "单词 \"beautiful\" 应正确划分为几个音节?请选出正确的音节划分方式。",
       "answer": "A",
@@ -52461,10 +52489,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "单词 \"beautiful\" 中,字母组合 \"ea\" 和 \"ou\" 各发一个音,不能分开断词。请把这个单词正确划分为两个音节:beau、____ 。(填第二部分)",
       "_original_answer": "['ti', 'ful']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G56_PH_03_003",
@@ -52501,7 +52530,7 @@
     {
       "id": "EX_EN_G56_PH_04_002",
       "concept_id": "EN_G56_PH_04",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "朗读短语 \"turn it off\" 时, 词与词之间可以自然连读。关于这个短语的连读方式, 下列说法正确的是 ______。",
       "answer": "A",
@@ -52519,11 +52548,12 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "朗读短语 \"turn it off\" 时, 应该把它自然地连读为 ______。",
       "_original_answer": "['tur-ni-toff']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "medium",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2,
-      "_orphan_fixed": true
+      "_orphan_fixed": true,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G56_PH_04_003",
@@ -54416,7 +54446,7 @@
     {
       "id": "EX_EN_G56_SK_10_002",
       "concept_id": "EN_G56_SK_10",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "续写故事时，需要注意保持人物性格和情节线索与原文一致，同时续写的内容要（  ），（  ）。",
       "answer": "A",
@@ -54434,10 +54464,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "续写故事时,要保持人物性格和情节线索与原文一致,还要写出 ____、____ 个合理的后续句子。",
       "_original_answer": "['3', '5']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G56_SK_10_003",
@@ -55118,7 +55149,7 @@
     {
       "id": "EX_EN_G79_VO_01_002",
       "concept_id": "EN_G79_VO_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "According to the 7–9 grade curriculum standard, a student who has accumulated a vocabulary of 2,600 words should be able to recognize the core meaning of a new word within ____ seconds.",
       "answer": "C",
@@ -55136,8 +55167,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "According to the 7–9 grade requirement, a student who has reached \"累计词汇 2600 词\" should be able to re",
       "_original_answer": "['30', '3']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -55554,7 +55585,7 @@
     {
       "id": "EX_EN_G79_GR_06_002",
       "concept_id": "EN_G79_GR_06",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "用动词不定式作主语改写句子:Learning English is very useful for us. (学英语对我们很有用) 请将主语改写为动词不定式形式,写出完整的不定式短语____,并说明该不定式短语在句中作____成分。",
       "answer": "A",
@@ -55572,10 +55603,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "用动词不定式作主语改写句子。____(学英语) is very useful for us. 请写出 To 后的动词原形和句子主语部分的中心词____、____。",
       "_original_answer": "['learn', 'To learn English', ",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G79_GR_06_003",
@@ -56046,7 +56078,7 @@
     {
       "id": "EX_EN_G79_SK_02_002",
       "concept_id": "EN_G79_SK_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "在英语听力或阅读中，抓住主要信息的三个核心问题可以帮助你快速理解材料大意。这三个关键问题分别是：提问 ___(1)___ 可以找出人物，提问 ___(2)___ 可以明确事件，提问 ___(3)___ 可以了解原因。请从下列选项中选择正确的英文疑问词填入空格。",
       "answer": "A",
@@ -56064,10 +56096,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "小李听完一段 2 分钟的 TED-Ed 动画后, 凭一次记忆写下 3 条要点。请补全他笔记里的关键词: 主角是 ____, 他要做的事情是 ____, 做这件事的原因是 ____。",
       "_original_answer": "['who(谁/主角)', 'what(做什么)', 'wh",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G79_SK_02_003",
@@ -56195,7 +56228,7 @@
     {
       "id": "EX_EN_G79_SK_05_002",
       "concept_id": "EN_G79_SK_05",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "Read the dialogue and choose the best response to fill in the blank.\n\nA: What do you think of the \"double reduction\" policy (双减政策)? It reduces students' homework and off-campus tutoring.\nB: _____________________. I think it helps kids have more time to rest and develop hobbies.\n",
       "answer": "A",
@@ -56213,10 +56246,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "Complete the dialogue about \"双减\"(homework reduction policy). Use the given first letters as hints.",
       "_original_answer": "['I', 'disagree']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G79_SK_05_003",
@@ -56443,7 +56477,7 @@
     {
       "id": "EX_EN_G79_SK_10_002",
       "concept_id": "EN_G79_SK_10",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "写英文读后感时,要避免中式写法'This article tells us ___',更好的写法是先引用一处具体情节,再写出自己的真实感受,并说明换作自己会怎样做。下列哪个选项体现了这种更地道的英文读后感写法?",
       "answer": "B",
@@ -56461,10 +56495,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "写英文读后感时,要避免中式写法'This article tells us ___'. 更好的写法是先引用一处具体情节,再写出自己的真实感受,并说明换作自己会 ____、____。",
       "_original_answer": "['(something)', 'do', 'differe",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_EN_G79_SK_10_003",
@@ -56552,7 +56587,7 @@
     {
       "id": "EX_EN_G79_CU_02_002",
       "concept_id": "EN_G79_CU_02",
-      "type": "fill_blank",
+      "type": "short_answer",
       "difficulty": 2,
       "question": "在跨文化交际中，当遇到外籍友人不握手而是双手合十或轻触胸口以示问候时，造成这种礼仪差异的两个主要原因通常是 ____ 和 ____ 。",
       "answer": "AC",
@@ -56560,22 +56595,15 @@
       "tags": [],
       "bloom": "理解",
       "is_real_exam": false,
-      "options": [
-        "A. 宗教信仰",
-        "B. 天气原因",
-        "C. 文化传统",
-        "D. 语言障碍",
-        "E. 个人性格",
-        "F. 年龄差异"
-      ],
       "_patched_at": "2026-08-03",
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "When meeting a British exchange student who makes a cross gesture on his chest instead of shaking ha",
       "_original_answer": "['宗教信仰', '个人习惯或文化传统']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "原题包含多答案/多选契约，当前单选组件无法可靠自动评分；降为参考答案题，待学科教师重写。"
     },
     {
       "id": "EX_EN_G79_CU_02_003",
@@ -56912,7 +56940,7 @@
     {
       "id": "EX_CN_C1_AL_02_002",
       "concept_id": "CN_C1_AL_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "老师每天站在讲台上给我们上____。",
       "answer": "A",
@@ -56930,10 +56958,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "老师每天站在讲台上给我们上____,____里还有校长和门卫叔叔。",
       "_original_answer": "['课', '学校']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_C1_AL_02_003",
@@ -57436,7 +57465,7 @@
     {
       "id": "EX_CN_C1_PR_03_002",
       "concept_id": "CN_C1_PR_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "在《我们的学校》这则短文中，下课后同学们最常去的两个地方分别是哪里？请用文中的词语作答。",
       "answer": "A",
@@ -57454,8 +57483,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "阅读《我们的学校》短文时，下课后同学们喜欢去的两个地方是 ____ 和 ____。",
       "_original_answer": "['操场', '图书角']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -57507,7 +57536,7 @@
     {
       "id": "EX_CN_C1_PR_04_002",
       "concept_id": "CN_C1_PR_04",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "在公共场所的文明行为中,下列哪一项最能体现对他人的尊重与温暖?",
       "answer": "B",
@@ -57525,8 +57554,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "读《公共生活》这类短文,我们常能看到「____」和「____」这些体现温暖的文明行为。",
       "_original_answer": "['让座', '排队']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_C1_PR_04_003",
@@ -57563,7 +57593,7 @@
     {
       "id": "EX_CN_C1_PR_05_002",
       "concept_id": "CN_C1_PR_05",
-      "type": "fill_blank",
+      "type": "short_answer",
       "difficulty": 2,
       "question": "小红的见闻可以是周末在公园看到的趣事,讲述时除了说出事情,还要加上自己眼睛看到的细节,以下哪两个细节最适合加进去?(多选)",
       "answer": "AC",
@@ -57571,20 +57601,15 @@
       "tags": [],
       "bloom": "理解",
       "is_real_exam": false,
-      "options": [
-        "A. 小鸟在枝头蹦蹦跳跳的样子",
-        "B. 我觉得今天天气真好",
-        "C. 草坪上有人在放风筝,五颜六色的",
-        "D. 因为公园很大,所以很好玩"
-      ],
       "_patched_at": "2026-08-03",
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "小红的见闻可以是周末在公园看到的趣事,讲述时除了说出事情,还要加上 ____ 和 ____ 两处自己眼睛看到的好玩细节。",
       "_original_answer": "['动物的样子', '动物的动作']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "原题包含多答案/多选契约，当前单选组件无法可靠自动评分；降为参考答案题，待学科教师重写。"
     },
     {
       "id": "EX_CN_C1_PR_05_003",
@@ -57621,7 +57646,7 @@
     {
       "id": "EX_CN_C1_PR_06_002",
       "concept_id": "CN_C1_PR_06",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "把郊游看到的事情告诉别人,除了用嘴说,还可以用图画、____、____和文字等方式表达。",
       "answer": "A",
@@ -57639,8 +57664,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "把郊游看到的事情告诉别人,除了用嘴说,还可以用图画、符号、____和____等方式表达。",
       "_original_answer": "['文字', '语音']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -58529,7 +58554,7 @@
     {
       "id": "EX_CN_C2_LR_04_002",
       "concept_id": "CN_C2_LR_04",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 3,
       "question": "请模仿儿童诗《我想》的反复起句结构「我想把____变成____」,写出一节完整的诗句,使诗歌富有节奏感和韵律美。示例参考:我想把小手 / 变成嫩绿的小草。",
       "answer": "B",
@@ -58547,10 +58572,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "儿童诗常用「我想把____变成____」这样的反复起句,一节一节往下编,让诗读起来有节奏感。",
       "_original_answer": "['小手', '嫩绿的小草']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "medium",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_C2_LR_04_003",
@@ -58916,7 +58942,7 @@
     {
       "id": "EX_CN_C3_PR_01_002",
       "concept_id": "CN_C3_PR_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 3,
       "question": "阅读《十万个为什么》中'月亮为啥有圆缺'这类说明性文章时,我们主要需要关注文章运用的____和说明的____。",
       "answer": "B",
@@ -58934,10 +58960,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "阅读《十万个为什么》中\"月亮为啥有圆缺\"这类文章时,我们主要抓取的是____和____。",
       "_original_answer": "['原因', '数据']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 3
+      "_diff_old": 3,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_C3_PR_01_003",
@@ -59311,7 +59338,7 @@
     {
       "id": "EX_CN_C3_WR_03_002",
       "concept_id": "CN_C3_WR_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "五(2)班要写一份向体育组借篮球的通知,通知里必须写清楚三个要素:借的东西、____和找谁借。",
       "answer": "B",
@@ -59329,10 +59356,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "五(2)班要写一份向体育组借篮球的通知,通知里必须写清楚三个要素:借的东西、____和找谁借。",
       "_original_answer": "['借的时间', '体育组']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 1
+      "_diff_old": 1,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_C3_WR_03_003",
@@ -59718,7 +59746,7 @@
     {
       "id": "EX_CN_C4_PR_02_002",
       "concept_id": "CN_C4_PR_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "调整表达时主要考虑两个维度:一是内容上要____信息零件,二是方式上要变换____与措辞。",
       "answer": "B",
@@ -59736,10 +59764,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "调整表达时主要考虑两个维度:一是内容上要____信息零件,二是方式上要变换____与措辞。",
       "_original_answer": "['增减', '语序']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_C4_PR_02_003",
@@ -61433,7 +61462,7 @@
     {
       "id": "EX_CN_G12_LR_01_002",
       "concept_id": "CN_G12_LR_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "阅读科普短文《鱼为什么会打哈欠》时，遇到「鳃」字，可以借助「鱼」字旁猜出它与鱼类有关；遇到「____」字，可以借助「气」字旁猜出它与气体有关。这种猜字方法体现了形声字的什么特点？",
       "answer": "A",
@@ -61451,8 +61480,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "读「鱼为什么会打哈欠」这一段，可以认识「鳃」和「____」这两个新字。",
       "_original_answer": "['氧气']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "medium"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "medium",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_G12_LR_01_003",
@@ -61816,7 +61846,7 @@
     {
       "id": "EX_CN_G12_PR_01_002",
       "concept_id": "CN_G12_PR_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "妈妈做蛋糕的说明书上写着'先____,再____',这两步分别表示做蛋糕过程中哪两个环节?",
       "answer": "A",
@@ -61834,8 +61864,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "说明书上写着\"先____,再____\",表示做这件事要按先后两步来。",
       "_original_answer": "['做什么(第一步)', '做什么(第二步)']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -62739,7 +62769,7 @@
     {
       "id": "EX_CN_G34_AL_08_002",
       "concept_id": "CN_G34_AL_08",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "汉字书写的基本要求不包括下列哪一项?",
       "answer": "D",
@@ -62757,10 +62787,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "汉字书写有三项基本要求,分别是:横平竖直、撇捺舒展和____。",
       "_original_answer": "['卷面整洁']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_G34_AL_08_003",
@@ -64454,9 +64485,7 @@
         "A. 作者是第一次来草原，心情激动",
         "B. 作者之前曾来过但未能看到，这次终于看到了",
         "C. 草原景色辽阔，作者眼界大开",
-        "D. 草原景色与上次相比变化很大",
-        "C. ...",
-        "D. ..."
+        "D. 草原景色与上次相比变化很大"
       ],
       "bloom": "理解",
       "is_real_exam": false,
@@ -64464,8 +64493,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "老舍在《草原》中写道：“这次，我看到了草原。”句中“这次”一词最能体现的表达效果是？",
       "_original_answer": "B",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "移除重复占位选项。"
     },
     {
       "id": "EX_CN_G56_LR_03_002",
@@ -65447,7 +65477,7 @@
     {
       "id": "EX_CN_G79_AL_07_002",
       "concept_id": "CN_G79_AL_07",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "下列哪一项不属于常见的病句类型？",
       "answer": "D",
@@ -65465,10 +65495,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "修改病句通常从____和____两个方面入手,例如删掉多余的介词或调整前后矛盾的词语。",
       "_original_answer": "['成分残缺', '前后矛盾']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "medium",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_CN_G79_AL_07_003",
@@ -65652,7 +65683,7 @@
     {
       "id": "EX_CN_G79_LR_03_002",
       "concept_id": "CN_G79_LR_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 3,
       "question": "阅读《故乡》中描写闰土少年与中年两段文字，结合具体内容对闰土这一人物作出自己的评价，最关键的是先指出他少年时____与中年时____的具体变化，再说出你对其变化的____及理由。",
       "answer": "A",
@@ -65670,8 +65701,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "对《故乡》中的闰土作出自己的评价时，需先识别他少年时____、中年时____的具体描写，再说出你对其变化的____与所持看法的理由。",
       "_original_answer": "['外貌语言行为', '外貌语言行为', '喜恶（态度）']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -66231,7 +66262,7 @@
     {
       "id": "EX_M_G1_NS_03_002",
       "concept_id": "M_G1_NS_03",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "用算盘表示 4060 时,千位拨 4 颗下珠,十位拨 1 颗上珠和 1 颗下珠,那么百位和个位要拨____,因为中间没有数字的档也要____。",
       "answer": "B",
@@ -66249,8 +66280,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "用算盘表示 4060 时,千位拨 4 颗下珠,十位拨 1 颗上珠加 1 颗下珠,那么百位和个位要拨____,因为中间没有数字的档也要____。",
       "_original_answer": "['不拨珠', '占位']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_M_G1_NS_03_003",
@@ -67930,7 +67962,7 @@
     {
       "id": "EX_M_G1_PR_01_002",
       "concept_id": "M_G1_PR_01",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "在数学课上，我们可以一边（　　）一边学。比如用七巧板拼图形，或者玩（　　）游戏。",
       "answer": "C",
@@ -67948,8 +67980,8 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "数学课不只有算题，还可以一边 ____ 一边学，比如用七巧板拼图形，或者玩 ____ 游戏。",
       "_original_answer": "['玩', '数独']",
-      "_auto_fix_status": "failed",
-      "_auto_fix_note": "AI 改写后仍 high, 需人工审核",
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。",
       "_diff_recalibrated_at": "2026-08-04",
       "_diff_old": 2
     },
@@ -70843,14 +70875,14 @@
       "concept_id": "M_G3_NS_05",
       "type": "multiple_choice",
       "difficulty": 3,
-      "question": "一个披萨切成 8 块,小明先吃了其中的 3 块,剩下的披萨又被平均分成了 2 份,小明又吃了其中 1 份。小明一共吃了这个披萨的几分之几?",
+      "question": "一个披萨平均切成 8 块，小明先吃了其中的 3 块，再吃了剩余披萨的一半。下面哪个式子表示他一共吃掉的比例？",
       "answer": "C",
-      "explanation": "先吃 3/8,剩下 5/8 平均分成 2 份,每份是 5/8×1/2=5/16,再吃一份 5/16,共 3/8+5/16=11/16。A 错在剩下的是 5/8 而非整个披萨;B 把两次吃法弄混;D 错误地把 8 当成每份的大小。",
+      "explanation": "剩下的部分是 5/8，再吃其中的一半是 5/16；共吃 3/8 + 5/8 × 1/2 = 11/16。",
       "tags": [],
       "options": [
         "A. 3/8 + 1/2",
         "B. 3/8 × 1/2",
-        "C. 3/8 + 1/2 × 1/2",
+        "C. 3/8 + 5/8 × 1/2",
         "D. 3/8 + 1/2 × 8"
       ],
       "bloom": "理解",
@@ -75918,7 +75950,7 @@
     {
       "id": "EX_M_G4_ST_08_002",
       "concept_id": "M_G4_ST_08",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 2,
       "question": "将一枚均匀硬币连续抛掷两次,用列表法列出所有可能的结果,共有几种?分别是哪几种?",
       "answer": "B",
@@ -75936,8 +75968,9 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "将一枚均匀硬币连续抛掷两次,用列表法列出所有可能的结果为____、____、____。",
       "_original_answer": "['(正,正)', '(正,反)', '(反,正)']",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_M_G4_ST_08_003",
@@ -85367,7 +85400,7 @@
     {
       "id": "EX_SC_G12_LS_02_002",
       "concept_id": "SC_G12_LS_02",
-      "type": "fill_blank",
+      "type": "multiple_choice",
       "difficulty": 1,
       "question": "一棵完整的开花植物通常由根、茎、叶和____四部分组成，生长在植物顶端的繁殖器官。",
       "answer": "B",
@@ -85385,10 +85418,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "一棵完整的植物由 4 部分组成,它们分别是根、茎、叶和____(顶上的部分)。",
       "_original_answer": "['花和果实']",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "题目带四个选项及 A-D 答案，改为选择题以匹配交互和评分器。"
     },
     {
       "id": "EX_SC_G12_LS_02_003",
@@ -92154,7 +92188,7 @@
       "type": "short_answer",
       "difficulty": 3,
       "question": "小明在超市帮妈妈挑选商品。他看到一瓶 1.25 升装的果汁售价 20 元，旁边有一瓶 5/4 升装的同款果汁也售价 20 元。售货员说\"这两瓶果汁每升价格一样\"，请你用分数、小数、百分数互化的知识，验证售货员的说法是否正确，并解释为什么。",
-      "answer": "审题：已知两瓶果汁容量分别为 1.25 升和 5/4 升，售价都是 20 元，需验证每升单价是否相同。\n分析：先把 5/4 化成小数，再分别计算每升价格，最后比较。\n解答：5/4 = 5÷4 = 1.25（升），所以两瓶果汁容量相同；每升价格 = 20÷1.25 = 16 元，两瓶每升都是 16 元 = 100%，售货员说法正确。分数 5/4、小数 1.25、百分数 125% 表示的是同一数量，本题中两瓶果汁实质等价。",
+      "answer": "5/4 升 = 1.25 升，两瓶容量相同，售价也相同。每升价格都是 20 ÷ 1.25 = 16 元。125% 只能表示相对于 1 升的容量比例，不能把 16 元直接写成 100%。",
       "explanation": "1. 准确将假分数 5/4 化为小数 1.25（分子÷分母），理解 5/4 = 1.25 = 125% 是同一数量的三种表达；2. 运用除法求单价，并能用百分数描述比例关系；3. 综合判断两商品等价，说明互化知识在实际购物情境中的应用。",
       "bloom": "评价",
       "is_real_exam": false,
@@ -96645,24 +96679,25 @@
       "concept_id": "M_G79_GG_02",
       "type": "multiple_choice",
       "difficulty": 2,
-      "question": "下列关于原命题与逆命题的说法中,正确的是(  )",
-      "answer": "BC",
-      "explanation": "B对,逆命题的定义就是把原命题的条件和结论对调得到的命题;C对,原命题的条件是\"两条直线平行\",结论是\"内错角相等\",对调后即为\"内错角相等,两条直线平行\",符合逆命题的定义。A错,原命题为真,逆命题不一定为真,需另行证明;D错,并非所有定理的逆命题都成立,例如\"对顶角相等\"的逆命题不成立。",
+      "question": "下列关于逆命题的说法中，正确的是（  ）",
+      "answer": "B",
+      "explanation": "B 正确：逆命题是将原命题的条件和结论对调。A、D 都把逆命题是否成立绝对化；C 把逆命题的结论错误地改成“两条直线垂直”。",
       "bloom": "理解",
       "is_real_exam": false,
       "tags": [],
       "options": [
-        "A. 若原命题是真命题,则它的逆命题一定也是真命题",
+        "A. 若原命题是真命题，则它的逆命题一定也是真命题",
         "B. 把原命题的条件和结论对调后得到的命题叫做逆命题",
-        "C. \"两条直线平行,内错角相等\"的逆命题是\"内错角相等,两条直线平行\"",
-        "D. 所有定理都有逆命题,且逆命题都成立"
+        "C. “两条直线平行，内错角相等”的逆命题是“内错角相等，两条直线垂直”",
+        "D. 所有定理的逆命题都成立"
       ],
       "_patched_at": "2026-08-03",
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "下列关于原命题与逆命题的说法中,正确的是(  )",
       "_original_answer": "B",
-      "_auto_fix_status": "success",
-      "_auto_fix_risk": "low"
+      "_auto_fix_status": "manual_fix_2026_09_16",
+      "_auto_fix_risk": "low",
+      "_auto_fix_note": "将多选题改为单选，匹配当前单选交互与评分器。"
     },
     {
       "id": "EX_M_G79_GG_02_002",
@@ -118838,9 +118873,9 @@
       "concept_id": "H_G79_CA_38",
       "type": "multiple_choice",
       "difficulty": 1,
-      "question": "明太祖朱元璋为加强皇权,在中央和地方分别采取了哪些措施?(可多选)",
-      "answer": "AB",
-      "explanation": "A项为明太祖在中央废除丞相制度和中书省,六部直接对皇帝负责,正确;B项为明太祖在地方设三司(承宣布政使司、提刑按察使司、都指挥使司)分割地方权力,正确;C项内阁大学士是明成祖朱棣设立的,非明太祖措施,错误;D项厂卫虽为特务机构,但不属于题目所问的'中央行政体制'和'地方行政体制'的对应措施,故选AB。",
+      "question": "下列哪一项是明太祖朱元璋为加强中央皇权而采取的中央行政措施？",
+      "answer": "A",
+      "explanation": "A 正确：明太祖废除丞相制度和中书省，六部直接对皇帝负责。B 是地方分权措施；C 为明成祖时期设立内阁的相关史实；D 不属于题干所问的中央行政体制措施。",
       "bloom": "理解",
       "is_real_exam": false,
       "tags": [],
@@ -118854,10 +118889,11 @@
       "_patched_by": "audit_fix_v1_retry",
       "_original_question": "明太祖朱元璋为加强皇权, 在中央和地方分别采取了什么措施?",
       "_original_answer": "A",
-      "_auto_fix_status": "success",
+      "_auto_fix_status": "manual_fix_2026_09_16",
       "_auto_fix_risk": "low",
       "_diff_recalibrated_at": "2026-08-04",
-      "_diff_old": 2
+      "_diff_old": 2,
+      "_auto_fix_note": "将多选题改为单选，限定为中央行政措施。"
     },
     {
       "id": "EX_H_G79_CA_38_002",

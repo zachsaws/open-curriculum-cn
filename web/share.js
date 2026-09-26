@@ -47,8 +47,8 @@ const SHARE_SITE_BASE = 'https://zachsaws.github.io/open-curriculum-cn';
 function shareReferralUrl(node) {
   const r = node.raw || node;
   const id = r.id || node.id || '';
-  if (!id) return SHARE_SITE_BASE + '/card.html';
-  return SHARE_SITE_BASE + '/card.html?concept_id=' + encodeURIComponent(id) + '&from=share';
+  if (!id) return SHARE_SITE_BASE + '/index.html';
+  return SHARE_SITE_BASE + '/index.html?concept=' + encodeURIComponent(id) + '&from=share';
 }
 
 // qrcode-generator (vendor/qrcode-generator.js) 暴露全局 qrcode; 缺失则优雅降级
@@ -191,7 +191,7 @@ function generateShareSVG(node) {
         <div style="flex:1; min-width:0;">
           <div style="font-size:30px; font-weight:800; color:#fff; margin-bottom:10px;">📲 扫码看这个知识点</div>
           <div style="font-size:16px; color:#a5b8f5; line-height:1.5; word-break:break-all; font-family:'SF Mono', monospace;">${referralDisp}</div>
-          <div style="font-size:16px; color:#5a6278; margin-top:10px;">开放课程图谱 · 全 1,906 概念免费学</div>
+          <div style="font-size:16px; color:#a5b8f5; margin-top:10px;">AI 辅助整理 · 尚待专业复核</div>
         </div>
         ${qrSvg ? `<div style="flex:0 0 auto; width:184px; height:184px; background:#fff; border-radius:14px; padding:12px; box-sizing:border-box;">${qrSvg}</div>` : ''}
       </div>
@@ -447,9 +447,9 @@ function renderToCanvas(node, canvas) {
   while (ctx.measureText(disp).width > maxW && disp.length > 8) disp = disp.slice(0, -1);
   if (disp !== referralDisp) disp += '…';
   ctx.fillText(disp, 80, borderY + 64);
-  ctx.fillStyle = '#5a6278';
+  ctx.fillStyle = '#a5b8f5';
   ctx.font = `400 16px ${FONT_FAMILY}`;
-  ctx.fillText('开放课程图谱 · 全 1,906 概念免费学', 80, borderY + 94);
+  ctx.fillText('AI 辅助整理 · 尚待专业复核', 80, borderY + 94);
 }
 
 function drawRoundRect(ctx, x, y, w, h, r) {
