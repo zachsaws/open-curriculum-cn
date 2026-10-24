@@ -14,6 +14,7 @@ const EDGE_BASE_OPACITY = 0.012;   // 全貌只读出结构，不抢节点
 const EDGE_NEIGHBOR_OPACITY = 0.55; // 邻居边透明度 (选中节点时)
 const POINT_RAYCAST_THRESHOLD = 1.5; // 鼠标点击命中半径 (世界单位, 经 OrbitControls 后会按缩放调整)
 const EMBED_MODE = true;
+const PRODUCT_STAGE = new URLSearchParams(location.search).get('surface') === 'product' && parent !== window;
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 const PRIMARY_SUBJECTS = ['math', 'chinese', 'english', 'science'];
 const SUBJECT_ORDER = ['math', 'chinese', 'english', 'science', 'physics', 'chemistry', 'biology', 'history', 'geography', 'morality_law', 'info_tech', 'art', 'pe_health', 'labor'];
@@ -167,7 +168,7 @@ function renderCardVideo(conceptId) {
 
 // ============== 启动 ==============
 async function init() {
-  isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+  isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) || (PRODUCT_STAGE && innerWidth <= 700);
   document.getElementById('loadingMsg').textContent = '加载 3D 球面知识图谱...';
 
   // 1) 加载数据 (V4.1.3: 用 lite 版, 80KB gz 快 100 倍)
@@ -273,6 +274,20 @@ function setupScene() {
   // 视觉参考: 赤道 + 一条经线 (subtle)
   scene.add(makeReferenceLines());
 
+  if (PRODUCT_STAGE) container.addEventListener('keydown', event => {
+    if (!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','=','-','0'].includes(event.key)) return;
+    event.preventDefault(); cameraTween = null; controls.enabled = true; controls.autoRotate = false;
+    const toggle = document.getElementById('toggleAutoRotate');
+    toggle.setAttribute('aria-pressed','false'); toggle.textContent = '▶ 自动旋转';
+    if (event.key === '0') camera.position.set(isMobile ? 60 : 50, isMobile ? 85 : 80, isMobile ? 560 : 310);
+    else if (['+','=','-'].includes(event.key)) camera.position.setLength(THREE.MathUtils.clamp(camera.position.length() * (event.key === '-' ? 1.1 : .9), controls.minDistance, controls.maxDistance));
+    else {
+      const horizontal = event.key === 'ArrowLeft' || event.key === 'ArrowRight';
+      const axis = horizontal ? camera.up.clone() : new THREE.Vector3().crossVectors(camera.position, camera.up).normalize();
+      camera.position.applyAxisAngle(axis, ['ArrowLeft','ArrowUp'].includes(event.key) ? .1 : -.1);
+    }
+    controls.update();
+  });
   window.addEventListener('resize', onResize);
 }
 
@@ -1274,7 +1289,12 @@ function setSubjectView(subject) {
       duration: 650,
     };
     controls.enabled = false;
-    controls.autoRotate = !subject;
+    controls.autoRotate = !subject && (!PRODUCT_STAGE || !REDUCED_MOTION);
+    if (PRODUCT_STAGE) {
+      const toggle = document.getElementById('toggleAutoRotate');
+      toggle.setAttribute('aria-pressed', String(controls.autoRotate));
+      toggle.textContent = controls.autoRotate ? '⏸ 暂停旋转' : '▶ 自动旋转';
+    }
   }
   // 学科状态保留真实节点的位置作为全貌语境；连线留给进入具体关系时再展开，避免 4,000 多条线变成背景噪音。
   buildEdgeMesh(subject);
@@ -1348,16 +1368,17 @@ function setupSearch() {
     results.innerHTML = '';
     const count = document.createElement('div');
     count.className = 'r-count';
-    count.textContent = `${matches.length} ${"..." || '匹配'}`;
+    count.textContent = `${matches.length} ${PRODUCT_STAGE ? '个结果' : ("..." || '匹配')}`;
     results.appendChild(count);
     if (matches.length === 0) {
       const e = document.createElement('div');
       e.className = 'r-empty';
-      e.textContent = "..." || '无匹配概念';
+      e.textContent = PRODUCT_STAGE ? '没找到，换个词试试。' : ("..." || '无匹配概念');
       results.appendChild(e);
     } else {
       matches.slice(0, 50).forEach((m, k) => {
-        const it = document.createElement('div');
+        const it = document.createElement(PRODUCT_STAGE ? 'button' : 'div');
+        if (PRODUCT_STAGE) { it.type = 'button'; it.setAttribute('role', 'option'); }
         it.className = 'r-item';
         it.innerHTML = `<span class="r-dot" style="background:${PALETTE[m.node.subject] || '#888'}"></span><span class="r-t">${m.node.title}</span><span class="r-m">G${m.node.grade_start || ''}</span>`;
         it.onclick = () => {
@@ -1439,6 +1460,11 @@ function setupExplorePanel() {
 
 // ============== Resize / Loop ==============
 function onResize() {
+  if (PRODUCT_STAGE) {
+    const nextMobile = innerWidth <= 700 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+    if (nextMobile !== isMobile && selectedNodeIdx === null) camera.position.set(nextMobile ? 60 : 50, nextMobile ? 85 : 80, nextMobile ? 560 : 310);
+    isMobile = nextMobile;
+  }
   const w = window.innerWidth;
   const h = window.innerHeight;
   camera.aspect = w / h;
@@ -1448,6 +1474,7 @@ function onResize() {
 
 function animate() {
   requestAnimationFrame(animate);
+  if (PRODUCT_STAGE && (document.hidden || window.__occProductVisible === false)) return;
   // V3.6.3: camera tween + focusGain 缓动
   updateCameraTween();
   updateFocusGain();

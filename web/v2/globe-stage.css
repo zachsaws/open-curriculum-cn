@@ -1,0 +1,34 @@
+/* Only the new product iframe opts into these overrides. */
+body.product-stage .header,body.product-stage .top-nav,body.product-stage .explore-panel,body.product-stage .about-panel{display:none!important}
+body.product-stage .search{top:20px;right:28px;width:200px}
+body.product-stage .search .r-item{width:100%;text-align:left;border:0;font:inherit;cursor:pointer}
+body.product-stage .search .r-item:focus-visible{outline:2px solid #a1c0f2;outline-offset:-3px;background:#252e3c}
+body.product-stage .search input{min-height:36px;border-radius:5px;font-size:12px}
+body.product-stage #card-diagnose-btn,body.product-stage #card-exercise-btn,body.product-stage #card-share-btn{display:none!important}
+body.product-stage .product-learning-entry{font:inherit;font-size:13px;cursor:pointer;min-height:44px;padding:10px 15px;border:1px solid #a8c4ec!important;background:#b6cdee!important;color:#10151f!important;border-radius:6px}
+body.product-stage #toggleAutoRotate{width:40px;height:40px}
+body.product-stage #toggleAutoRotate::after{inset:11px}
+body.product-stage #toggleAutoRotate[aria-pressed=false]::after{content:'▷'}
+body.product-stage .legend .chip{min-height:40px}
+body.product-stage .stats{bottom:22px}
+body.product-stage .explore-hint{bottom:36px;right:86px}
+body.product-stage .back-to-map{top:22px}
+@media(max-width:700px){
+ body.product-stage .search{top:auto;bottom:123px;left:24px;right:24px;width:auto}
+ body.product-stage .search .results{bottom:42px;top:auto;max-height:35vh}
+ body.product-stage .stage-copy{top:24px;left:24px;right:24px}
+ body.product-stage #stage-title{font-size:34px;line-height:1.15;max-width:300px}
+ body.product-stage #stage-subtitle{margin-top:12px;font-size:12px}
+ body.product-stage .legend{bottom:12px}
+ body.product-stage .stats{bottom:65px;right:19px}
+ body.product-stage .explore-hint{bottom:79px;left:24px;font-size:10px}
+ body.product-stage .back-to-map{top:18px;left:24px}
+ body.product-stage #card{padding-top:52px}
+}
+
+body.product-stage #card .block,body.product-stage #card .sec,body.product-stage #card .card-meta,body.product-stage #card-load-status,body.product-stage #card .card-actions>a{display:none!important}
+body.product-stage .product-concept-summary{color:#bcc9db;font-size:14px;line-height:1.95;margin:0}
+body.product-stage .product-original-link{color:#adc4e5;font-size:12px;min-height:44px;display:flex;align-items:center;margin-top:8px}
+body.product-stage #loading.done{display:none}
+body.product-stage .stats{left:auto}
+@media(min-width:701px) and (max-width:1100px){body.product-stage .stage-copy{top:28px;left:32px}}

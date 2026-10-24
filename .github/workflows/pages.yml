@@ -1,4 +1,4 @@
-name: 部署 3D 球 demo 到 GitHub Pages
+name: 发布问游到 GitHub Pages
 
 on:
   push:
@@ -26,6 +26,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 发布前验证
+        run: |
+          python3 tools/validate_learning_quality.py
+          python3 tools/build_learning_relations.py --check
+          for f in web/*.js web/*.mjs web/v2/*.mjs web/planet/*.mjs tools/serve_planet.mjs; do node --check "$f"; done
+          node --test tests/*.test.mjs
 
       - name: 准备 web/ 目录 (排除 .DS_Store 和大文件, 加 .nojekyll 防 Jekyll 跑)
         run: |
