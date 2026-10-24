@@ -34,7 +34,14 @@ export const TOPICS=[
   challenge:{prompt:'一张长方形的长和宽都变成原来的 3 倍，它的面积会变成几倍？',choices:['3 倍','6 倍','9 倍'],answer:2,explanation:'长变为 3 倍，宽也变为 3 倍，面积变为 3 × 3 = 9 倍。'},
   next:['如果只把长放大两倍，面积会怎样？','体积的变化也能这样数出来吗？'],
   sources:[{id:'openstax-area',title:'OpenStax · 长方形与面积',url:'https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids',supports:'长方形面积等于长乘宽，单位为平方单位。'}],
-  relations:[['长方形面积','用行数乘每行格数求出面积。'],['面积单位','每个单位格覆盖相同面积，便于比较。'],['比例','两条边按相同倍数变化，观察面积的变化。']]}
+  relations:[['长方形面积','用行数乘每行格数求出面积。'],['面积单位','每个单位格覆盖相同面积，便于比较。'],['比例','两条边按相同倍数变化，观察面积的变化。']]},
+ {id:'flagpole',number:'04',title:'不爬上去，能测出旗杆多高吗？',short:'用影子测高',subject:'science',tag:'科学 × 数学',intro:'带一根知道高度的木杆，去操场找一找答案。',invitation:'比较两条影子，试着推算旗杆高度。',concepts:['SC_S2_MS_05','M_G3_NS_11','M_G3_NS_13'],defaultModel:{angle:45,rodHeight:1,poleHeight:6,sameLight:true},
+ prediction:'除了直接爬上去，你会怎样测量？',guesses:['比较旗杆和木杆的影子','只量旗杆的影子就够了','先动手找找办法'],task:'在相同光线下，比较已知高度的木杆和旗杆的影子。改变光线，再看看哪些关系保持不变。',explain:'怎样从影子推算高度？这个办法需要什么条件？',placeholder:'我比较了……，发现……。使用这个方法，需要……',
+ takeaway:'在平坦地面上，两根竖直杆接受相同方向的平行光线时，高度的倍数和影长的倍数相同。可以用旗杆影长与木杆影长的倍数，乘木杆高度，推算旗杆高度。光线不同时，这个推算可能失效。',condition:'简化模型：平坦地面、两杆竖直、平行光线；通常需要同一时刻在邻近地点测量。数值为模型计算的近似值，不是现实测量。切换不同光线用于检验这个方法的边界。',
+ hints:['先把两根杆设在相同光线下。旗杆影长是木杆影长的几倍？','保持两根杆不变，改变共同光线角度；再让木杆单独换一种光线，比较推算结果。'],
+ challenge:{prompt:'上午量木杆的影子，下午量旗杆的影子，能直接用影长倍数算高度吗？',choices:['能，都是同一天','不能直接算，需要确认光线方向相同','只要木杆是1米就能'],answer:1,explanation:'一天中光线方向会变化。应在同一时刻、相近地点和适合的地面条件下测量，或先确认两次光线方向相同。'},next:['地面有坡度，还能直接用这个办法吗？','如果看不到影子的末端，可以换什么方法？'],
+ sources:[{id:'openstax-shadow-proportion',title:'OpenStax · 用影子和比例测高',url:'https://openstax.org/books/elementary-algebra/pages/8-7-solve-proportion-and-similar-figure-applications',supports:'Example 8.80：同一时刻，利用已知物体的高度、影长与另一物体的影长建立比例求高度。'}],relations:[['光与影子','同方向光线决定影子与物体高度的对应关系。'],['比的意义','比较两条影子的长度，得到倍数。'],['正比例','相同光线下，影长与高度按相同倍数变化。']]}
+
 ];
 export const BY_ID=new Map(TOPICS.map(t=>[t.id,t]));
 export const topicForConcept=id=>TOPICS.filter(t=>t.concepts.includes(id));
