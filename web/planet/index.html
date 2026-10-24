@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="问游：带着问题探索世界。旋转知识球、动手做实验，留下自己的发现。首版为五六年级设计。">
+ <meta name="theme-color" content="#f4f7fc"><title>问游 · 从一个为什么开始</title>
+ <link rel="icon" href="./mark.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+ <script type="importmap">{"imports":{"three":"../vendor/three-r160/three.module.js","three/addons/":"../vendor/three-r160/"}}</script>
+</head>
+<body>
+ <a class="skip" href="#main">跳到内容</a>
+ <header class="site-header"><a class="brand" href="#/" aria-label="问游首页"><img src="./mark.svg" alt="" width="30" height="30"><span>问游<span class="brand-en">wenyo</span></span></a><nav aria-label="主导航"><a href="#/explore" data-nav="explore">探索</a><a href="#/discoveries" data-nav="discoveries">我的发现<span class="nav-dot" hidden></span></a></nav><button class="search-trigger" data-search aria-label="搜索知识"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span>搜索知识</span></button></header>
+ <main id="main" tabindex="-1"><div class="page-loading"><span class="loading-orbit"></span><p>正在打开问游…</p><a href="./">重新打开</a></div></main>
+ <footer class="site-footer"><a href="#/" class="footer-brand">问游</a><span>从一个为什么开始。</span><div><a href="#/family">给家长 · 探索摘要</a><a href="#/about">关于与内容来源</a></div></footer>
+ <dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">你想了解什么？</h2><button data-close aria-label="关闭搜索">×</button></div><label class="sr-only" for="search-input">搜索概念或问题</label><input id="search-input" type="search" placeholder="试试：分数、光、面积…" autocomplete="off"><div id="search-results" class="search-results" aria-live="polite"></div></dialog>
+ <dialog id="question-dialog" aria-labelledby="new-question-title"><div class="dialog-top"><h2 id="new-question-title">留下一个问题</h2><button data-close aria-label="关闭问题记录">×</button></div><form id="new-question-form"><label for="new-question">有什么还想弄明白？</label><textarea id="new-question" maxlength="300" required placeholder="为什么……？如果……会怎样？"></textarea><p class="field-note">保存在当前设备，下次可以接着想。</p><button class="button" type="submit">记下这个问题 <span>↗</span></button></form></dialog>
+ <div id="toast" role="status" aria-live="polite"></div><div id="announce" class="sr-only" aria-live="polite"></div>
+ <noscript><p>需要开启 JavaScript 才能旋转星球和操作实验。可查看<a href="../legacy.html">原版知识地图</a>。</p></noscript>
+ <script type="module">
+  const showBootError=()=>{document.querySelector('#main').innerHTML='<div class="page-loading"><h1>问游暂时没有打开。</h1><p>可以重新打开，原有记录仍保存在当前浏览器。</p><a class="button" href="./">重新打开 →</a></div>';};
+  const bootTimer=setTimeout(showBootError,12000);
+  import('./app.mjs').then(()=>clearTimeout(bootTimer)).catch(()=>{clearTimeout(bootTimer);showBootError();});
+ </script>
+</body>
+</html>

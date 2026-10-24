@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="找到正在学习的概念，查看直接关系与来源，做一题并记录自己的理解。中国 K12 知识图谱学习工作台。">
+  <title>学习工作台 · 中国 K12 知识图谱</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./learning-workspace.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace-main">跳到学习内容</a>
+  <div class="workspace-app">
+    <aside class="library" id="library" aria-label="概念查找">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">⌘</span><span>中国 K12 知识图谱<small>OPEN CURRICULUM CN</small></span></a>
+      <button id="close-library" class="close-library quiet-button" aria-label="关闭概念查找">×</button>
+      <div class="library-body">
+        <div class="nav-label">学习空间</div>
+        <div class="library-views" aria-label="概念列表范围">
+          <button class="library-view active" data-view="all" aria-pressed="true"><span aria-hidden="true">▧</span>全部概念<span class="view-count" id="total-count">—</span></button>
+          <button class="library-view" data-view="review" aria-pressed="false"><span aria-hidden="true">◷</span>待复习<span class="view-count" id="review-count">0</span></button>
+        </div>
+        <div class="library-heading"><span>查找概念</span><kbd>/</kbd></div>
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="concept-search" type="search" aria-label="搜索概念" placeholder="搜索概念或编号" autocomplete="off"></div>
+        <div class="filters"><select id="subject-filter" aria-label="筛选学科"><option value="">全部学科</option></select><select id="grade-filter" aria-label="筛选年级"><option value="">全部年级</option></select></div>
+        <div class="results-summary" id="results-summary" aria-live="polite">正在加载概念…</div>
+        <div class="concept-list" id="concept-list"><div class="skeleton-line"></div><div class="skeleton-line"></div><div class="skeleton-line"></div></div>
+      </div>
+      <div class="library-footer"><a href="./explore.html">◌&nbsp; 全貌探索 <span>↗</span></a><span class="experiment-dot">公开实验 · 内容待专业复核</span></div>
+    </aside>
+    <button class="drawer-backdrop" id="drawer-backdrop" aria-label="关闭概念查找" hidden></button>
+    <main id="workspace-main" class="workspace-main" tabindex="-1">
+      <header class="workspace-header">
+        <div class="header-start"><button id="open-library" class="quiet-button open-library" aria-label="打开概念查找" aria-controls="library" aria-expanded="false">☰</button><span class="workspace-name">学习工作台</span><span class="header-divider">/</span><span id="breadcrumb">从一个概念开始</span></div>
+        <a id="original-map" class="header-link" href="./explore.html">在全貌中查看 ↗</a>
+      </header>
+      <div class="learning-surface">
+        <section class="map-area" aria-label="概念关系工作区">
+          <div class="map-topbar"><div><span class="eyebrow">知识关系</span><span id="map-caption" class="map-caption">一次看清一层联系</span></div><label class="related-toggle"><input id="related-toggle" type="checkbox">显示关联</label></div>
+          <div class="map-title-row"><div><h1 id="map-title">从正在学的概念开始</h1><p id="map-subtitle">在左侧搜索，或选择一个例子。</p></div><button id="back-concept" class="quiet-button" aria-label="返回上一个概念" disabled>← 返回</button></div>
+          <div class="map-viewport" id="map-viewport" aria-label="局部关系画布">
+            <div class="map-world" id="map-world"></div>
+            <div class="map-empty" id="map-empty"><span class="empty-map-symbol" aria-hidden="true">◎</span><h2>今天，想弄懂什么？</h2><p>选一个概念，看讲解、查关系，再做一题。</p><div id="starter-concepts" class="starter-concepts"></div></div>
+          </div>
+          <div class="map-toolbar"><div class="zoom-controls"><button id="zoom-out" aria-label="缩小关系图">−</button><output id="zoom-level" aria-label="缩放比例">100%</output><button id="zoom-in" aria-label="放大关系图">+</button><span class="tool-separator"></span><button id="fit-map" aria-label="复位关系图">⊡</button></div><button id="show-relations" class="quiet-button">关系列表 <span aria-hidden="true">↗</span></button></div>
+          <div class="map-footnote"><span><i class="legend-line"></i>前置 / 进阶记录</span><span><i class="legend-line dotted"></i>关联记录</span><span>关系待复核，供探索参考</span></div>
+        </section>
+        <aside class="inspector" aria-label="概念阅读与练习">
+          <div class="inspector-tabs" role="tablist" aria-label="学习内容"><button role="tab" aria-selected="true" aria-controls="inspector-content" id="tab-concept" data-tab="concept">讲解</button><button role="tab" aria-selected="false" aria-controls="inspector-content" id="tab-practice" data-tab="practice" tabindex="-1">练一题</button><button role="tab" aria-selected="false" aria-controls="inspector-content" id="tab-source" data-tab="source" tabindex="-1">来源</button></div>
+          <div id="inspector-content" class="inspector-content" role="tabpanel" aria-labelledby="tab-concept"><div class="inspector-welcome"><span class="eyebrow">从关系中理解</span><h2>每个概念，<br>都有来处和去处。</h2><p>选中概念后，讲解、练习与来源会出现在这里。</p><div class="welcome-steps"><span>01&nbsp; 找到概念</span><span>02&nbsp; 看懂联系</span><span>03&nbsp; 作答与回看</span></div></div></div>
+          <div class="storage-status" id="storage-status" role="status">笔记与学习记录仅保存在本机浏览器</div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">学习工作台需要 JavaScript。你仍可查看<a href="./print.html?id=M_G3_NS_01">概念打印页</a>与<a href="https://github.com/zachsaws/open-curriculum-cn">公开数据</a>。</p></noscript>
+  <script type="module" src="./learning-workspace.mjs"></script>
+</body>
+</html>

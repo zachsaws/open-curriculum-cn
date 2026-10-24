@@ -540,11 +540,14 @@ body.has-selection .stage-copy { display:none!important; }
 #card-load-status { color:#abb8c9; padding:18px 24px; font-size:12px; line-height:1.7; }
 #card-load-status button { margin-left:12px; background:transparent; border:1px solid #7ba7ff; color:#dbe7ff; border-radius:6px; padding:5px 10px; cursor:pointer; }
 #card .meta-tag { color:#bac5d4; }
-</style></head>
+</style>
+<link rel="stylesheet" href="./v2/globe-stage.css">
+</head>
 <body>
 <script>
   if (true) {
     document.body.classList.add('embed');
+    if (new URLSearchParams(location.search).get('surface') === 'product' && parent !== window) document.body.classList.add('product-stage');
   }
 </script>
 <a href="#three-canvas" class="skip-link">跳到主内容</a>
@@ -734,5 +737,6 @@ body.has-selection .stage-copy { display:none!important; }
 <script src="./data-cache.js?v=4.1.5"></script>
 <script type="module" src="3d.js?v=4.1.5"></script>
 <script src="./v1-chrome.js"></script>
+<script type="module" src="./v2/globe-bridge.mjs"></script>
 </body>
 </html>

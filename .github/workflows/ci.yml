@@ -8,6 +8,8 @@ on:
       - 'data/graph/**'
       - 'src/**'
       - 'api/**'
+      - 'tools/**'
+      - 'tests/**'
       - '.github/workflows/ci.yml'
   pull_request:
     branches: [main]
@@ -31,7 +33,7 @@ jobs:
 
       - name: JS 语法 (web/*.js)
         run: |
-          for f in web/*.js; do
+          for f in web/*.js web/*.mjs web/v2/*.mjs web/planet/*.mjs tools/serve_planet.mjs; do
             if [ -f "$f" ]; then
               node --check "$f" || (echo "JS 语法错: $f" && exit 1)
             fi
@@ -45,9 +47,17 @@ jobs:
           done
           echo "✓ Python 语法通过"
 
+      - name: 发布数据契约（不代表教师语义审核）
+        run: python3 tools/validate_learning_quality.py
+
+      - name: 学习工作台数据与交互规则回归
+        run: |
+          python3 tools/build_learning_relations.py --check
+          node --test tests/*.test.mjs
+
       - name: HTML 基础校验 (web/*.html 有 </html> 结尾)
         run: |
-          for f in web/*.html; do
+          for f in web/*.html web/v2/*.html web/planet/*.html; do
             if [ -f "$f" ]; then
               tail -3 "$f" | grep -q "</html>" || (echo "HTML 缺 </html>: $f" && exit 1)
             fi

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="用互动图解、知识联系和练习，理解分数、小数与百分数。孩子自主学习，家长可以辅助。">
+<meta name="theme-color" content="#f5f6f2"><title>知识地图 · 把知识连起来</title>
+<link rel="icon" href="../favicon.svg"><link rel="stylesheet" href="./app.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<header class="site-header"><a class="brand" href="#/" aria-label="知识地图首页"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 8.5 14 4l9 4.5v11L14 24l-9-4.5zM5 8.5l9 4.5 9-4.5M14 13v11"/></svg><span>知识地图</span></a><nav aria-label="主导航"><a href="#/topics" data-nav="topics">学习主题</a><a href="#/my" data-nav="my">我的学习<span id="progress-dot" hidden></span></a></nav><a class="header-action" href="#/unit">开始学习 <span aria-hidden="true">↗</span></a></header>
+<main id="main" tabindex="-1"><div class="loading-state"><span class="loader"></span><p>正在打开知识地图…</p><a href="./">重新打开</a></div></main>
+<footer class="site-footer"><a class="footer-brand" href="#/">知识地图</a><span>从一个问题开始，自己想明白。</span><div><a href="#/about">学习实验 · 内容说明</a><a href="../explore.html" target="_blank" rel="noopener">原版地图 ↗</a></div></footer>
+<dialog id="note-dialog" aria-labelledby="note-title"><div class="dialog-heading"><h2 id="note-title">记下我的理解</h2><button data-close-note aria-label="关闭笔记">×</button></div><p id="note-context"></p><label class="sr-only" for="note-input">笔记内容</label><textarea id="note-input" maxlength="4000" placeholder="我想明白了什么？还有什么没弄懂？"></textarea><div class="dialog-bottom"><small>保存在这台设备</small><button class="button" data-save-note>保存笔记</button></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div><div id="announce" class="sr-only" aria-live="polite"></div>
+<noscript><p class="notice">学习区需要开启 JavaScript。也可以查看<a href="../index.html">原版知识地图</a>。</p></noscript>
+<script type="module" src="./app.mjs"></script>
+</body></html>
